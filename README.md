@@ -9,7 +9,7 @@ Find us at http://pimoroni.com
 
 Devices:
 
-- SN3218: 16 channel PWM driver (QFN24)
+- SN3218: 18 channel PWM driver (QFN24)
 - LPD8806: 6 channel PWM driver (SOIC16)
 - 74LVC245: 8-bit logic level converter (SOP20W)
 - ATTINY1634: 8-bit AVR (SOP20W/WQFN)

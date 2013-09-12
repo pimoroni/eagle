@@ -215,6 +215,6 @@ pip-log.txt
 .mr.developer.cfg
 
 #Eagle temp files
-.b#*
-.s#*
-.l#*
+*.b#*
+*.s#*
+*.l#*

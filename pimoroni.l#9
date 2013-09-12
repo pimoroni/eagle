@@ -2508,7 +2508,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <gate name="G$1" symbol="NCP700B" x="-7.62" y="-5.08"/>
 </gates>
 <devices>
-<device name="&quot;" package="SOT23-5">
+<device name="" package="SOT23-5">
 <connects>
 <connect gate="G$1" pin="BYP" pad="4"/>
 <connect gate="G$1" pin="EN" pad="3"/>

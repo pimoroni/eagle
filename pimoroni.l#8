@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1841,6 +1841,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="IN" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="VCC" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="COM" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<text x="-7.62" y="6.096" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-7.874" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2545,6 +2547,9 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </devices>
 </deviceset>
 <deviceset name="TS5A3157">
+<description>TS5A3157: 10-Ω SPDT ANALOG SWITCH
+
+The TS5A3157 is a single-pole double-throw (SPDT) analog switch that is designed to operate from 1.65V to 5.5V. This device can handle both digital and analog signals, and signals up to V+ can be transmitted in either direction.</description>
 <gates>
 <gate name="G$1" symbol="TS5A3157" x="0" y="0"/>
 </gates>

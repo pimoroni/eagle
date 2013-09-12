@@ -1828,7 +1828,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="OUT" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="IN2" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
-<text x="-7.62" y="6.096" size="1.778" layer="94">TPS2115A</text>
+<text x="-7.62" y="6.096" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-10.414" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="TS5A3157">
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>

@@ -2450,24 +2450,12 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="AUDIO-JACK2">
+<deviceset name="AUDIO-JACK-SWITCHED">
 <description>Stereo audio jack with bypass switches.</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PTH" package="AUDIO-JACK">
-<connects>
-<connect gate="G$1" pin="RING" pad="RING"/>
-<connect gate="G$1" pin="RSH" pad="RSH"/>
-<connect gate="G$1" pin="SLEEVE" pad="SLEEVE"/>
-<connect gate="G$1" pin="TIP" pad="TIP"/>
-<connect gate="G$1" pin="TSH" pad="TSH"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="SMD" package="AUDIO-JACK-3.5MM-SMD">
 <connects>
 <connect gate="G$1" pin="RING" pad="RING"/>

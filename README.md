@@ -25,6 +25,11 @@ Devices:
 - PRTRV0U4D: Ultra low capacitance quadruple rail-to-rail ESD protection (TSOP6)
 - NCP5501: 500 mA LDO Voltage Regulator (DPAK 3)
 - GL850G-31: USB 2.0 Hub Controller (TSSOP28)
+- MCP3008: 10-bit ADC (SOIC16)
+- NCP700B: 200 mA, Ultra Low Noise, LDO Regulator (TSOP-5)
+- TPS2115A: Autoswitching Power MUX. (TSOP-8)
+- TS3USB221E: USB 2.0 1:2 Multiplexer/Demultiplexer Switch (UQFN-10)
+- TS5A3157: SPDT Analog Switch (SOT-6)
 
 Connectors
 
@@ -36,3 +41,4 @@ Connectors
 - PINHD-2X6: 0.1" 2x6 pin header
 - RPIGPIOPINHD-2X13: 0.1" 2x13 pin header with Raspberry Pi GPIO function labels
 - DCJACK: Adamtech ADC-015 DC Jack
+- AUDIO-JACK-SWITCHED: 3.5MM switch audio jack (35RASMT2BHNTRX)

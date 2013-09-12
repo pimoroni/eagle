@@ -1790,7 +1790,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="8.636" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="10.16" size="2.54" layer="94">TS3USB221E</text>
 <pin name="1D+" x="-10.16" y="5.08" visible="pin" length="short"/>
 <pin name="1D-" x="-10.16" y="2.54" visible="pin" length="short"/>
 <pin name="2D+" x="-10.16" y="0" visible="pin" length="short"/>
@@ -1801,7 +1801,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="D+" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="S" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="VCC" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
-<text x="-7.62" y="-10.414" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="NCP700B">
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -1813,10 +1812,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="EN" x="-10.16" y="-2.54" visible="pin" length="short"/>
 <pin name="BYP" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="OUT" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
-<text x="-7.62" y="6.096" size="1.778" layer="94">&gt;NAME</text>
-<text x="-7.62" y="-7.874" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-7.62" y="6.096" size="1.27" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-7.366" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
-<symbol name="TPS2115A">
+<symbol name="TPS2115APWR">
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
@@ -1829,8 +1828,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="OUT" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="IN2" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
-<text x="-7.62" y="6.096" size="1.778" layer="94">&gt;NAME</text>
-<text x="-7.62" y="-10.414" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-7.62" y="6.096" size="1.778" layer="94">TPS2115A</text>
 </symbol>
 <symbol name="TS5A3157">
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -1843,8 +1841,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="IN" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="VCC" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="COM" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
-<text x="-7.62" y="6.096" size="1.778" layer="94">&gt;NAME</text>
-<text x="-7.62" y="-7.874" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2526,9 +2522,9 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS2115A">
+<deviceset name="TPS2115APWR">
 <gates>
-<gate name="G$1" symbol="TPS2115A" x="0" y="0"/>
+<gate name="G$1" symbol="TPS2115APWR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TSSOP-8">
@@ -2549,9 +2545,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </devices>
 </deviceset>
 <deviceset name="TS5A3157">
-<description>TS5A3157: 10-Ω SPDT ANALOG SWITCH
-
-The TS5A3157 is a single-pole double-throw (SPDT) analog switch that is designed to operate from 1.65V to 5.5V. This device can handle both digital and analog signals, and signals up to V+ can be transmitted in either direction.</description>
 <gates>
 <gate name="G$1" symbol="TS5A3157" x="0" y="0"/>
 </gates>

@@ -1790,7 +1790,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="8.636" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="10.16" size="2.54" layer="94">TS3USB221E</text>
 <pin name="1D+" x="-10.16" y="5.08" visible="pin" length="short"/>
 <pin name="1D-" x="-10.16" y="2.54" visible="pin" length="short"/>
 <pin name="2D+" x="-10.16" y="0" visible="pin" length="short"/>
@@ -1801,7 +1801,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="D+" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="S" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="VCC" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
-<text x="-7.62" y="-10.414" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="NCP700B">
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>

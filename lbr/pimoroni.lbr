@@ -4494,6 +4494,21 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <rectangle x1="-0.3937" y1="2.8067" x2="-0.3175" y2="2.8321" layer="21"/>
 <rectangle x1="-0.3937" y1="2.8321" x2="-0.3175" y2="2.8575" layer="21"/>
 </package>
+<package name="2MM-FIDUCIAL">
+<smd name="1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1.5" y="0" curve="90"/>
+<vertex x="0" y="-1.5" curve="90"/>
+<vertex x="1.5" y="0" curve="90"/>
+<vertex x="0" y="1.5" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1.5" y="0" curve="90"/>
+<vertex x="0" y="-1.5" curve="90"/>
+<vertex x="1.5" y="0" curve="90"/>
+<vertex x="0" y="1.5" curve="90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="FCI_89898_313LF_26P_CONNECTOR_SMT_FLIPPED">
@@ -5115,6 +5130,9 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 </symbol>
 <symbol name="LOGOS">
 <text x="-2.54" y="0" size="1.016" layer="94">[your logo here]</text>
+</symbol>
+<symbol name="DOT">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5993,6 +6011,19 @@ Built-in current-limit and thermal-shutdown functions prevent IC from damage in 
 </technologies>
 </device>
 <device name="PIMORONI" package="PIMORONILOGO">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL">
+<description>2mm fiducial for pick and place</description>
+<gates>
+<gate name="G$1" symbol="DOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2MM-FIDUCIAL">
 <technologies>
 <technology name=""/>
 </technologies>

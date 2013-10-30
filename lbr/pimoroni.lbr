@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -774,35 +774,35 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc4533.pdf</descripti
 <rectangle x1="-0.8" y1="2" x2="-0.5" y2="2.45" layer="51"/>
 <rectangle x1="-1.45" y1="2" x2="-1.15" y2="2.45" layer="51"/>
 </package>
-<package name="SOP20W">
+<package name="SOIC-20-W">
 <description>&lt;b&gt;SMALL OUTLINE PACKAGE&lt;/b&gt;</description>
-<wire x1="6.35" y1="3.175" x2="6.35" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="-3.175" x2="-6.35" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-6.35" y1="-3.175" x2="-6.35" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="-6.35" y1="3.175" x2="6.35" y2="3.175" width="0.2032" layer="21"/>
-<smd name="1" x="-5.715" y="-5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="2" x="-4.445" y="-5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="-3.175" y="-5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="-1.905" y="-5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="-0.635" y="-5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="-5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="1.905" y="-5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="3.175" y="-5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="9" x="4.445" y="-5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="10" x="5.715" y="-5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="11" x="5.715" y="5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="12" x="4.445" y="5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="13" x="3.175" y="5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="14" x="1.905" y="5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="15" x="0.635" y="5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="16" x="-0.635" y="5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="17" x="-1.905" y="5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="18" x="-3.175" y="5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="19" x="-4.445" y="5" dx="0.6" dy="2.2" layer="1"/>
-<smd name="20" x="-5.715" y="5" dx="0.6" dy="2.2" layer="1"/>
-<text x="-5.715" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.715" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="-5.08" y="-1.905" radius="0.635" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.675" x2="6.35" y2="-3.075" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-3.075" x2="-6.35" y2="-3.075" width="0.2032" layer="21"/>
+<wire x1="-6.35" y1="-3.075" x2="-6.35" y2="3.675" width="0.2032" layer="21"/>
+<wire x1="-6.35" y1="3.675" x2="6.35" y2="3.675" width="0.2032" layer="21"/>
+<smd name="1" x="-5.715" y="-4.5" dx="0.6" dy="2" layer="1"/>
+<smd name="2" x="-4.445" y="-4.5" dx="0.6" dy="2" layer="1"/>
+<smd name="3" x="-3.175" y="-4.5" dx="0.6" dy="2" layer="1"/>
+<smd name="4" x="-1.905" y="-4.5" dx="0.6" dy="2" layer="1"/>
+<smd name="5" x="-0.635" y="-4.5" dx="0.6" dy="2" layer="1"/>
+<smd name="6" x="0.635" y="-4.5" dx="0.6" dy="2" layer="1"/>
+<smd name="7" x="1.905" y="-4.5" dx="0.6" dy="2" layer="1"/>
+<smd name="8" x="3.175" y="-4.5" dx="0.6" dy="2" layer="1"/>
+<smd name="9" x="4.445" y="-4.5" dx="0.6" dy="2" layer="1"/>
+<smd name="10" x="5.715" y="-4.5" dx="0.6" dy="2" layer="1"/>
+<smd name="11" x="5.715" y="5.1" dx="0.6" dy="2" layer="1"/>
+<smd name="12" x="4.445" y="5.1" dx="0.6" dy="2" layer="1"/>
+<smd name="13" x="3.175" y="5.1" dx="0.6" dy="2" layer="1"/>
+<smd name="14" x="1.905" y="5.1" dx="0.6" dy="2" layer="1"/>
+<smd name="15" x="0.635" y="5.1" dx="0.6" dy="2" layer="1"/>
+<smd name="16" x="-0.635" y="5.1" dx="0.6" dy="2" layer="1"/>
+<smd name="17" x="-1.905" y="5.1" dx="0.6" dy="2" layer="1"/>
+<smd name="18" x="-3.175" y="5.1" dx="0.6" dy="2" layer="1"/>
+<smd name="19" x="-4.445" y="5.1" dx="0.6" dy="2" layer="1"/>
+<smd name="20" x="-5.715" y="5.1" dx="0.6" dy="2" layer="1"/>
+<text x="-6.115" y="7.135" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<text x="-6.115" y="-7.405" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
+<circle x="-7.38" y="-3.805" radius="0.2" width="0.4064" layer="21"/>
 </package>
 <package name="TSOP-6">
 <wire x1="0.1" y1="0" x2="3" y2="0" width="0.127" layer="21"/>
@@ -8448,10 +8448,10 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <rectangle x1="3.26215" y1="4.27835" x2="3.36375" y2="4.29105" layer="21"/>
 </package>
 <package name="FLOTILLA-HEADER-AVR">
-<pad name="GND" x="-3" y="-0.3" drill="0.9"/>
-<pad name="SCL/SCK" x="-1" y="-0.3" drill="0.9"/>
-<pad name="SDA/MOSI" x="1" y="-0.3" drill="0.9"/>
-<pad name="VCC" x="3" y="-0.3" drill="0.9"/>
+<pad name="SDA" x="-3" y="-0.3" drill="0.9"/>
+<pad name="VCC" x="-1" y="-0.3" drill="0.9"/>
+<pad name="GND" x="1" y="-0.3" drill="0.9"/>
+<pad name="SCL" x="3" y="-0.3" drill="0.9"/>
 <circle x="-4.1" y="1.635" radius="0.1" width="0.5" layer="21"/>
 <wire x1="-5" y1="-2.5" x2="-5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="-5" y1="2.5" x2="5" y2="2.5" width="0.127" layer="21"/>
@@ -8463,22 +8463,22 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <wire x1="-2" y1="-2.5" x2="-5" y2="-2.5" width="0.127" layer="21"/>
 <pad name="RESET" x="-5" y="-0.3" drill="0.9"/>
 <pad name="MISO" x="5" y="-0.3" drill="0.9"/>
-<text x="-3.59875" y="2.9338" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">GND</text>
-<text x="-1.5604" y="2.9057" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">SCL</text>
-<text x="0.4986" y="2.8757" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">SDA</text>
-<text x="2.6422" y="2.893" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">VCC</text>
-<wire x1="4.2672" y1="5.334" x2="3.937" y2="5.6642" width="0.3048" layer="21"/>
-<wire x1="3.937" y1="5.6642" x2="1.6256" y2="5.6642" width="0.3048" layer="21"/>
-<wire x1="-1.6256" y1="5.6896" x2="-3.937" y2="5.6896" width="0.3048" layer="21"/>
-<wire x1="-3.937" y1="5.6896" x2="-4.2672" y2="5.3594" width="0.3048" layer="21"/>
-<text x="-0.8796" y="5.3285" size="0.8128" layer="21" font="vector" ratio="11" rot="SR0">I C</text>
-<text x="-0.2954" y="5.9381" size="0.6604" layer="21" font="vector" ratio="11" rot="SR0">2</text>
+<text x="0.50125" y="2.7338" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">GND</text>
+<text x="2.4396" y="2.7057" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">SCL</text>
+<text x="-3.4014" y="2.6757" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">SDA</text>
+<text x="-1.4578" y="2.693" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">VCC</text>
+<wire x1="4.2672" y1="4.934" x2="3.937" y2="5.2642" width="0.3048" layer="21"/>
+<wire x1="3.937" y1="5.2642" x2="1.6256" y2="5.2642" width="0.3048" layer="21"/>
+<wire x1="-1.6256" y1="5.2896" x2="-3.937" y2="5.2896" width="0.3048" layer="21"/>
+<wire x1="-3.937" y1="5.2896" x2="-4.2672" y2="4.9594" width="0.3048" layer="21"/>
+<text x="-0.8796" y="4.9285" size="0.8128" layer="21" font="vector" ratio="11" rot="SR0">I C</text>
+<text x="-0.2954" y="5.5381" size="0.6604" layer="21" font="vector" ratio="11" rot="SR0">2</text>
 </package>
 <package name="FLOTILLA-HEADER">
-<pad name="GND" x="-3" y="-0.3" drill="0.9"/>
-<pad name="SCL" x="-1" y="-0.3" drill="0.9"/>
-<pad name="SDA" x="1" y="-0.3" drill="0.9"/>
-<pad name="VCC" x="3" y="-0.3" drill="0.9"/>
+<pad name="SDA" x="-3" y="-0.3" drill="0.9"/>
+<pad name="VCC" x="-1" y="-0.3" drill="0.9"/>
+<pad name="GND" x="1" y="-0.3" drill="0.9"/>
+<pad name="SCL" x="3" y="-0.3" drill="0.9"/>
 <circle x="-4.1" y="1.635" radius="0.1" width="0.5" layer="21"/>
 <wire x1="-5" y1="-2.5" x2="-5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="-5" y1="2.5" x2="5" y2="2.5" width="0.127" layer="21"/>
@@ -8488,16 +8488,16 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <wire x1="2" y1="-2.9" x2="-2" y2="-2.9" width="0.127" layer="21"/>
 <wire x1="-2" y1="-2.9" x2="-2" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-2" y1="-2.5" x2="-5" y2="-2.5" width="0.127" layer="21"/>
-<text x="-3.59875" y="2.9338" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">GND</text>
-<text x="-1.5604" y="2.9057" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">SCL</text>
-<text x="0.4986" y="2.8757" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">SDA</text>
-<text x="2.6422" y="2.893" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">VCC</text>
-<wire x1="4.2672" y1="5.334" x2="3.937" y2="5.6642" width="0.3048" layer="21"/>
-<wire x1="3.937" y1="5.6642" x2="1.6256" y2="5.6642" width="0.3048" layer="21"/>
-<wire x1="-1.6256" y1="5.6896" x2="-3.937" y2="5.6896" width="0.3048" layer="21"/>
-<wire x1="-3.937" y1="5.6896" x2="-4.2672" y2="5.3594" width="0.3048" layer="21"/>
-<text x="-0.8796" y="5.3285" size="0.8128" layer="21" font="vector" ratio="11" rot="SR0">I C</text>
-<text x="-0.2954" y="5.9381" size="0.6604" layer="21" font="vector" ratio="11" rot="SR0">2</text>
+<text x="0.40125" y="2.6338" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">GND</text>
+<text x="2.3396" y="2.7057" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">SCL</text>
+<text x="-3.4014" y="2.6757" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">SDA</text>
+<text x="-1.4578" y="2.693" size="0.8128" layer="21" font="vector" ratio="11" rot="SR45">VCC</text>
+<wire x1="4.2672" y1="4.934" x2="3.937" y2="5.2642" width="0.3048" layer="21"/>
+<wire x1="3.937" y1="5.2642" x2="1.6256" y2="5.2642" width="0.3048" layer="21"/>
+<wire x1="-1.6256" y1="5.2896" x2="-3.937" y2="5.2896" width="0.3048" layer="21"/>
+<wire x1="-3.937" y1="5.2896" x2="-4.2672" y2="4.9594" width="0.3048" layer="21"/>
+<text x="-0.8796" y="4.9285" size="0.8128" layer="21" font="vector" ratio="11" rot="SR0">I C</text>
+<text x="-0.2954" y="5.5381" size="0.6604" layer="21" font="vector" ratio="11" rot="SR0">2</text>
 </package>
 <package name="FIDUCIAL-1MM">
 <smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
@@ -8513,6 +8513,65 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <vertex x="1" y="0" curve="90"/>
 <vertex x="0" y="1" curve="90"/>
 </polygon>
+</package>
+<package name="TSSOP16">
+<description>&lt;b&gt;PW (R-PDSO-G8)&lt;/b&gt;&lt;p&gt;
+Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
+<wire x1="-2.15" y1="-2.7" x2="2.15" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="2.15" y1="-2.7" x2="2.15" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="2.15" y1="2.7" x2="-2.15" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="2.7" x2="-2.15" y2="-2.7" width="0.2032" layer="21"/>
+<circle x="-1.625" y="1.95" radius="0.325" width="0" layer="21"/>
+<smd name="1" x="-2.925" y="2.275" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="2" x="-2.925" y="1.625" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="3" x="-2.925" y="0.975" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="4" x="-2.925" y="0.325" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="5" x="-2.925" y="-0.325" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="6" x="-2.925" y="-0.975" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="7" x="-2.925" y="-1.625" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="8" x="-2.925" y="-2.275" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="9" x="2.925" y="-2.275" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="10" x="2.925" y="-1.625" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="11" x="2.925" y="-0.975" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="12" x="2.925" y="-0.325" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="13" x="2.925" y="0.325" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="14" x="2.925" y="0.975" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="15" x="2.925" y="1.625" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="16" x="2.925" y="2.275" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<text x="-2.2392" y="3.1536" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<text x="-2.234" y="-3.9964" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
+<rectangle x1="-3.3" y1="2.15" x2="-2.2" y2="2.4" layer="51"/>
+<rectangle x1="-3.3" y1="1.5" x2="-2.2" y2="1.75" layer="51"/>
+<rectangle x1="-3.3" y1="0.85" x2="-2.2" y2="1.1" layer="51"/>
+<rectangle x1="-3.3" y1="0.2" x2="-2.2" y2="0.45" layer="51"/>
+<rectangle x1="-3.3" y1="-0.45" x2="-2.2" y2="-0.2" layer="51" rot="R180"/>
+<rectangle x1="-3.3" y1="-1.1" x2="-2.2" y2="-0.85" layer="51" rot="R180"/>
+<rectangle x1="-3.3" y1="-1.75" x2="-2.2" y2="-1.5" layer="51" rot="R180"/>
+<rectangle x1="-3.3" y1="-2.4" x2="-2.2" y2="-2.15" layer="51" rot="R180"/>
+<rectangle x1="2.2" y1="-2.4" x2="3.3" y2="-2.15" layer="51" rot="R180"/>
+<rectangle x1="2.2" y1="-1.75" x2="3.3" y2="-1.5" layer="51" rot="R180"/>
+<rectangle x1="2.2" y1="-1.1" x2="3.3" y2="-0.85" layer="51" rot="R180"/>
+<rectangle x1="2.2" y1="-0.45" x2="3.3" y2="-0.2" layer="51" rot="R180"/>
+<rectangle x1="2.2" y1="0.2" x2="3.3" y2="0.45" layer="51"/>
+<rectangle x1="2.2" y1="0.85" x2="3.3" y2="1.1" layer="51"/>
+<rectangle x1="2.2" y1="1.5" x2="3.3" y2="1.75" layer="51"/>
+<rectangle x1="2.2" y1="2.15" x2="3.3" y2="2.4" layer="51"/>
+<rectangle x1="-3.15" y1="1.6" x2="-2.7" y2="2.95" layer="29" rot="R270"/>
+<rectangle x1="-3.15" y1="0.95" x2="-2.7" y2="2.3" layer="29" rot="R270"/>
+<rectangle x1="-3.15" y1="0.3" x2="-2.7" y2="1.65" layer="29" rot="R270"/>
+<rectangle x1="-3.15" y1="-0.35" x2="-2.7" y2="1" layer="29" rot="R270"/>
+<rectangle x1="-3.15" y1="-1" x2="-2.7" y2="0.35" layer="29" rot="R270"/>
+<rectangle x1="-3.15" y1="-1.65" x2="-2.7" y2="-0.3" layer="29" rot="R270"/>
+<rectangle x1="-3.15" y1="-2.3" x2="-2.7" y2="-0.95" layer="29" rot="R270"/>
+<rectangle x1="-3.15" y1="-2.95" x2="-2.7" y2="-1.6" layer="29" rot="R270"/>
+<rectangle x1="2.7" y1="-2.95" x2="3.15" y2="-1.6" layer="29" rot="R90"/>
+<rectangle x1="2.7" y1="-2.3" x2="3.15" y2="-0.95" layer="29" rot="R90"/>
+<rectangle x1="2.7" y1="-1.65" x2="3.15" y2="-0.3" layer="29" rot="R90"/>
+<rectangle x1="2.7" y1="-1" x2="3.15" y2="0.35" layer="29" rot="R90"/>
+<rectangle x1="2.7" y1="-0.35" x2="3.15" y2="1" layer="29" rot="R90"/>
+<rectangle x1="2.7" y1="0.3" x2="3.15" y2="1.65" layer="29" rot="R90"/>
+<rectangle x1="2.7" y1="0.95" x2="3.15" y2="2.3" layer="29" rot="R90"/>
+<rectangle x1="2.7" y1="1.6" x2="3.15" y2="2.95" layer="29" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -9153,6 +9212,29 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <pin name="RESET" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
 <pin name="MISO" x="10.16" y="-7.62" visible="pin" length="short" rot="R180"/>
 </symbol>
+<symbol name="PCA9546A">
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="A0" x="-12.7" y="10.16" visible="pin" length="short"/>
+<pin name="A1" x="-12.7" y="7.62" visible="pin" length="short"/>
+<pin name="RESET" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="SD0" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="SC0" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="SD1" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="SC1" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="VSS" x="-12.7" y="-7.62" visible="pin" length="short"/>
+<pin name="SD2" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SC2" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SD3" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SC3" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="A2" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="VDD" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="15.24" size="1.778" layer="94">PCA9546A</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RPIGPIOPINHD-2X13-SMD-FLIPPED">
@@ -9273,7 +9355,7 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <gate name="G$1" symbol="74LVC245" x="-10.16" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="SOP20W">
+<device name="" package="SOIC-20-W">
 <connects>
 <connect gate="G$1" pin="A1" pad="2"/>
 <connect gate="G$1" pin="A2" pad="3"/>
@@ -9461,7 +9543,7 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <gate name="G$1" symbol="ATTINY1634" x="-10.16" y="-2.54"/>
 </gates>
 <devices>
-<device name="SOP" package="SOP20W">
+<device name="-SOIC-20-W" package="SOIC-20-W">
 <connects>
 <connect gate="G$1" pin="GND" pad="10"/>
 <connect gate="G$1" pin="PA0/AREF" pad="9"/>
@@ -9491,7 +9573,7 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 </technology>
 </technologies>
 </device>
-<device name="MLF" package="MLF20-5X5-TH">
+<device name="-MLF-20" package="MLF20-5X5-TH">
 <connects>
 <connect gate="G$1" pin="GND" pad="8 EXP"/>
 <connect gate="G$1" pin="PA0/AREF" pad="7"/>
@@ -10100,9 +10182,39 @@ Built-in current-limit and thermal-shutdown functions prevent IC from damage in 
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="MISO" pad="MISO"/>
 <connect gate="G$1" pin="RESET" pad="RESET"/>
-<connect gate="G$1" pin="SCL/SCK" pad="SCL/SCK"/>
-<connect gate="G$1" pin="SDA/MOSI" pad="SDA/MOSI"/>
+<connect gate="G$1" pin="SCL/SCK" pad="SCL"/>
+<connect gate="G$1" pin="SDA/MOSI" pad="SDA"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCA9546A">
+<gates>
+<gate name="G$1" symbol="PCA9546A" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="TSSOP16">
+<connects>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="13"/>
+<connect gate="G$1" pin="RESET" pad="3"/>
+<connect gate="G$1" pin="SC0" pad="5"/>
+<connect gate="G$1" pin="SC1" pad="7"/>
+<connect gate="G$1" pin="SC2" pad="10"/>
+<connect gate="G$1" pin="SC3" pad="12"/>
+<connect gate="G$1" pin="SCL" pad="14"/>
+<connect gate="G$1" pin="SD0" pad="4"/>
+<connect gate="G$1" pin="SD1" pad="6"/>
+<connect gate="G$1" pin="SD2" pad="9"/>
+<connect gate="G$1" pin="SD3" pad="11"/>
+<connect gate="G$1" pin="SDA" pad="15"/>
+<connect gate="G$1" pin="VDD" pad="16"/>
+<connect gate="G$1" pin="VSS" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>

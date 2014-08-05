@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16544,6 +16544,65 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <wire x1="-3" y1="-2" x2="3" y2="-2" width="0.127" layer="21"/>
 <circle x="2.4" y="1.4" radius="0.22360625" width="0.127" layer="21"/>
 </package>
+<package name="WS2812B">
+<wire x1="-3" y1="3" x2="2" y2="3" width="0.127" layer="21"/>
+<wire x1="2" y1="3" x2="2" y2="-1" width="0.127" layer="21"/>
+<wire x1="2" y1="-1" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="1" y2="-2" width="0.127" layer="21"/>
+<wire x1="1" y1="-2" x2="-3" y2="-2" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2" x2="-3" y2="3" width="0.127" layer="21"/>
+<wire x1="1" y1="-2" x2="2" y2="-1" width="0.127" layer="21"/>
+<circle x="2.434" y="-2.188" radius="0.1414" width="0.127" layer="21"/>
+<circle x="-0.5" y="0.5" radius="2.1" width="0.127" layer="21"/>
+<smd name="VDD" x="-2.9" y="2.2" dx="1.5" dy="0.9" layer="1"/>
+<smd name="DOUT" x="-2.9" y="-1.2" dx="1.5" dy="0.9" layer="1"/>
+<smd name="VSS" x="1.9" y="-1.2" dx="1.5" dy="0.9" layer="1"/>
+<smd name="DIN" x="1.9" y="2.2" dx="1.5" dy="0.9" layer="1"/>
+<text x="-2.2" y="3.4" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.5" y="-3.6" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="FCI_89898_313LF_40P_CONNECTOR_SMT_FLIPPED">
+<smd name="P1_3V3" x="24.13" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P2_5V" x="24.13" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P3_GPIO2_SDA" x="21.59" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P4_5V" x="21.59" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P5_GPIO3_SCL" x="19.05" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P6_GND" x="19.05" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P7_GPIO4" x="16.51" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P8_GPIO14_UART0_TXD" x="16.51" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P9_GND" x="13.97" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P10_GPIO15_UART0_RXD" x="13.97" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P11_GPIO17" x="11.43" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P12_GPIO18" x="11.43" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P13_GPIO27" x="8.89" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P14_GND" x="8.89" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P15_GPIO22" x="6.35" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P16_GPIO23" x="6.35" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P17_3V3" x="3.81" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P18_GPIO24" x="3.81" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P19_GPIO10_SPI0_MOSI" x="1.27" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P20_GND" x="1.27" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P21_GPIO9_SPI0_MISO" x="-1.27" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P22_GPIO25" x="-1.27" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P23_GPIO11_SPI0_SCLK" x="-3.81" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P24_GPIO8_SPI0_CE0" x="-3.81" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P25_GND" x="-6.35" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P26_GPIO7_SPI0_CE1" x="-6.35" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P40_GPIO21" x="-24.13" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P39_GND" x="-24.13" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P38_GPIO20" x="-21.59" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P36_GPIO16" x="-19.05" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P34_GND" x="-16.51" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P32_GPIO12" x="-13.97" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P30_GND" x="-11.43" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P28_IDSC" x="-8.89" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P37_GPIO26" x="-21.59" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P35_GPIO19" x="-19.05" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P33_GPIO13" x="-16.51" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P31_GPIO6" x="-13.97" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P29_GPIO5" x="-11.43" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P27_IDSD" x="-8.89" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FCI_89898_313LF_26P_CONNECTOR_SMT_FLIPPED">
@@ -19622,6 +19681,63 @@ RX</text>
 <pin name="ROUTN" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
 <text x="-12.7" y="14.986" size="1.27" layer="94">&gt;NAME</text>
 <text x="-12.446" y="-16.256" size="1.27" layer="94">&gt;VALUE</text>
+<symbol name="WS2812B">
+<pin name="VDD" x="-2.54" y="12.7" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="DI" x="-10.16" y="7.62" visible="pad" length="short" direction="in"/>
+<pin name="GND" x="-5.08" y="0" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="DO" x="2.54" y="7.62" visible="pad" length="short" direction="out" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FCI_89898_313LF_40P_CONNECTOR_SMT_FLIPPED">
+<pin name="3V3" x="-10.16" y="17.78" visible="pin" length="short" direction="pwr"/>
+<wire x1="-7.62" y1="-38.1" x2="-7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-38.1" x2="-7.62" y2="-38.1" width="0.254" layer="94"/>
+<pin name="5V" x="15.24" y="17.78" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="2" x="-10.16" y="10.16" visible="pin" length="short"/>
+<pin name="3" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="4" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="14" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="15" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="17" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="18" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="27" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="22" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="23" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="24" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="10" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<pin name="GND" x="15.24" y="-35.56" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="9" x="-10.16" y="-10.16" visible="pin" length="short"/>
+<pin name="25" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="11" x="-10.16" y="-12.7" visible="pin" length="short"/>
+<pin name="8" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="7" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<text x="-2.794" y="10.668" size="1.016" layer="94" distance="150" align="top-left">SDA
+SCL</text>
+<text x="6.604" y="13.208" size="1.016" layer="94" distance="150" align="top-right">TX
+RX</text>
+<pin name="ID_SD" x="-12.7" y="-17.78" visible="pin" length="middle"/>
+<pin name="ID_SC" x="-12.7" y="-20.32" visible="pin" length="middle"/>
+<pin name="5" x="-12.7" y="-25.4" visible="pin" length="middle"/>
+<pin name="6" x="-12.7" y="-27.94" visible="pin" length="middle"/>
+<pin name="13" x="-12.7" y="-30.48" visible="pin" length="middle"/>
+<pin name="19" x="-12.7" y="-33.02" visible="pin" length="middle"/>
+<pin name="26" x="-12.7" y="-35.56" visible="pin" length="middle"/>
+<pin name="16" x="17.78" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="20" x="17.78" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="21" x="17.78" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="12" x="17.78" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<text x="7.366" y="-7.366" size="1.016" layer="94" distance="150" align="top-right">CE0
+CE1</text>
+<text x="-2.032" y="-7.112" size="1.016" layer="94" distance="150" align="top-left">MOSI
+MISO
+SCLK
+</text>
+
 </symbol>
 </symbols>
 <devicesets>
@@ -22101,6 +22217,62 @@ Joystick commonly found in PS2 controllers. Two pots and a select switch. Adapte
 <connect gate="G$1" pin="SD" pad="3"/>
 <connect gate="G$1" pin="UP" pad="4"/>
 <connect gate="G$1" pin="VDD" pad="9 16"/>
+<deviceset name="WS2812B" prefix="LED">
+<gates>
+<gate name="G$1" symbol="WS2812B" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="WS2812B">
+<connects>
+<connect gate="G$1" pin="DI" pad="DIN"/>
+<connect gate="G$1" pin="DO" pad="DOUT"/>
+<connect gate="G$1" pin="GND" pad="VSS"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPIGPIOPINHD-2X20-SMD-FLIPPED">
+<gates>
+<gate name="G$1" symbol="FCI_89898_313LF_40P_CONNECTOR_SMT_FLIPPED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FCI_89898_313LF_40P_CONNECTOR_SMT_FLIPPED">
+<connects>
+<connect gate="G$1" pin="10" pad="P19_GPIO10_SPI0_MOSI"/>
+<connect gate="G$1" pin="11" pad="P23_GPIO11_SPI0_SCLK"/>
+<connect gate="G$1" pin="12" pad="P32_GPIO12"/>
+<connect gate="G$1" pin="13" pad="P33_GPIO13"/>
+<connect gate="G$1" pin="14" pad="P8_GPIO14_UART0_TXD"/>
+<connect gate="G$1" pin="15" pad="P10_GPIO15_UART0_RXD"/>
+<connect gate="G$1" pin="16" pad="P36_GPIO16"/>
+<connect gate="G$1" pin="17" pad="P11_GPIO17"/>
+<connect gate="G$1" pin="18" pad="P12_GPIO18"/>
+<connect gate="G$1" pin="19" pad="P35_GPIO19"/>
+<connect gate="G$1" pin="2" pad="P3_GPIO2_SDA"/>
+<connect gate="G$1" pin="20" pad="P38_GPIO20"/>
+<connect gate="G$1" pin="21" pad="P40_GPIO21"/>
+<connect gate="G$1" pin="22" pad="P15_GPIO22"/>
+<connect gate="G$1" pin="23" pad="P16_GPIO23"/>
+<connect gate="G$1" pin="24" pad="P18_GPIO24"/>
+<connect gate="G$1" pin="25" pad="P22_GPIO25"/>
+<connect gate="G$1" pin="26" pad="P37_GPIO26"/>
+<connect gate="G$1" pin="27" pad="P13_GPIO27"/>
+<connect gate="G$1" pin="3" pad="P5_GPIO3_SCL"/>
+<connect gate="G$1" pin="3V3" pad="P1_3V3 P17_3V3"/>
+<connect gate="G$1" pin="4" pad="P7_GPIO4"/>
+<connect gate="G$1" pin="5" pad="P29_GPIO5"/>
+<connect gate="G$1" pin="5V" pad="P2_5V P4_5V"/>
+<connect gate="G$1" pin="6" pad="P31_GPIO6"/>
+<connect gate="G$1" pin="7" pad="P26_GPIO7_SPI0_CE1"/>
+<connect gate="G$1" pin="8" pad="P24_GPIO8_SPI0_CE0"/>
+<connect gate="G$1" pin="9" pad="P21_GPIO9_SPI0_MISO"/>
+<connect gate="G$1" pin="GND" pad="P6_GND P9_GND P14_GND P20_GND P25_GND P30_GND P34_GND P39_GND"/>
+<connect gate="G$1" pin="ID_SC" pad="P28_IDSC"/>
+<connect gate="G$1" pin="ID_SD" pad="P27_IDSD"/>
 </connects>
 <technologies>
 <technology name=""/>

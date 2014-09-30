@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17678,34 +17678,36 @@ RX</text>
 <text x="-7.62" y="-6.35" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="IS31FL3728">
-<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="10.16" y2="15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<pin name="SDA" x="-15.24" y="12.7" visible="pin" length="short"/>
-<pin name="SCL" x="-15.24" y="10.16" visible="pin" length="short"/>
-<pin name="SDB" x="-15.24" y="7.62" visible="pin" length="short"/>
-<pin name="IN" x="-15.24" y="5.08" visible="pin" length="short"/>
-<pin name="C_FILT" x="-15.24" y="2.54" visible="pin" length="short"/>
-<pin name="AD" x="-15.24" y="0" visible="pin" length="short"/>
-<pin name="R1" x="-15.24" y="-2.54" visible="pin" length="short"/>
-<pin name="R2" x="-15.24" y="-5.08" visible="pin" length="short"/>
-<pin name="R3" x="-15.24" y="-7.62" visible="pin" length="short"/>
-<pin name="R4" x="-15.24" y="-10.16" visible="pin" length="short"/>
-<pin name="VCC" x="-15.24" y="-12.7" visible="pin" length="short"/>
-<pin name="R5" x="-15.24" y="-15.24" visible="pin" length="short"/>
-<pin name="R6/C11" x="12.7" y="-15.24" visible="pin" length="short" rot="R180"/>
-<pin name="R7/C10" x="12.7" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="R8/C9" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="C8" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="C7" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="C6" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="C5" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="C4" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="C3" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="C2" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="C1" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
+<wire x1="-12.7" y1="20.32" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<pin name="SDA" x="-15.24" y="10.16" visible="pin" length="short"/>
+<pin name="SCL" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="SDB" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="IN" x="-15.24" y="-10.16" visible="pin" length="short"/>
+<pin name="C_FILT" x="-15.24" y="-12.7" visible="pin" length="short"/>
+<pin name="AD" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="R1" x="15.24" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="R2" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="R3" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="R4" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="-15.24" y="17.78" visible="pin" length="short"/>
+<pin name="R5" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="R6/C11" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="R7/C10" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="R8/C9" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="C8" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="C7" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="C6" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="C5" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-15.24" y="-20.32" visible="pin" length="short"/>
+<pin name="C4" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="C3" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="C2" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="C1" x="15.24" y="17.78" visible="pin" length="short" rot="R180"/>
+<text x="-12.7" y="22.86" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-27.94" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="DRV8833">
 <wire x1="-12.7" y1="15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>

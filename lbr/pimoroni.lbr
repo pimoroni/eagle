@@ -6,11 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<<<<<<< HEAD
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
-=======
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
->>>>>>> FETCH_HEAD
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -16450,7 +16446,6 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <pad name="1" x="-2.5" y="-7" drill="1"/>
 <pad name="2" x="0" y="-7" drill="1"/>
 <pad name="3" x="2.5" y="-7" drill="1"/>
-<<<<<<< HEAD
 <wire x1="-5.3" y1="1" x2="-5.3" y2="-1" width="0" layer="45"/>
 <wire x1="-5.3" y1="-1" x2="-3.5" y2="-1" width="0" layer="45"/>
 <wire x1="-3.5" y1="-1" x2="-3.5" y2="1" width="0" layer="45"/>
@@ -16461,8 +16456,6 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <wire x1="5.3" y1="1" x2="3.5" y2="1" width="0" layer="45"/>
 <smd name="CHASSIS_1" x="-4.4" y="0" dx="2.5" dy="2.5" layer="16"/>
 <smd name="CHASSIS_2" x="4.4" y="0" dx="2.5" dy="2.5" layer="16"/>
-=======
->>>>>>> FETCH_HEAD
 <wire x1="-4.9" y1="-5.1" x2="-4.9" y2="2.3" width="0.127" layer="21"/>
 <wire x1="-4.9" y1="2.3" x2="-4.9" y2="5.1" width="0.127" layer="21"/>
 <wire x1="-4.9" y1="5.1" x2="-4.3" y2="5.1" width="0.127" layer="21"/>
@@ -25978,15 +25971,11 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
-<<<<<<< HEAD
-<connect gate="G$1" pin="CHASSIS" pad="CHASSIS_1 CHASSIS_2"/>
-=======
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
->>>>>>> FETCH_HEAD
 </connects>
 <technologies>
 <technology name=""/>

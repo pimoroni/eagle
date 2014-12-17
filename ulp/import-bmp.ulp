@@ -1,0 +1,1035 @@
+#usage "en:<qt><nobr><b>Import a BitMaP image into an EAGLE drawing</b>"
+       "<p>"
+       "This ULP generates a SCRIPT file that draws rectangles of successional pixels with identical color.<br>"
+       "These rectangles serve as templates in order to draw the image with EAGLE commands like POLYGON, WIRE, CIRCLE, TEXT.</nobr>"
+       "Please note: If the generated rectangles are smaller than the half of the resolution of the output device, "
+       "(depending on the scale factor: screen: pixel, printer: diameter of the laser beam or ink jet dropplet), it is "
+       "not possible to display the result. Therefore use the EAGLE commands mentioned above to reduce the number of "
+       "elements (rectangles). Each element has to be drawn and calculated by the display device driver. The more elements "
+       "the slower the display will be.<br>"
+       "The ULP accepts BitMaP files with a maximum of 256 colors. You are allowed to select a maximum of 32 of them. "
+       "[Scan used colors] detects the used number of colors in the image. You have to reduce them to a maximum of 32 "
+       "in the following dialog.<br>"
+       "In the final dialog you can scale the image. Either in <i>Dots per Inch (DPI)</i>, <i>Pixel</i> in the units Inch, "
+       "Mil, Millimeter, Micron, or as <i>Aspect Ratio</i> (the width of the image in pixels in X) in Inch, Mil, "
+       "Millimeter, Micron. "
+       "In the case of Aspect ratio, please keep in mind that there should not be pixels in a non-selected color on "
+       "the left or right boarder of the image. Otherwise the resulting width of the image is not the same as the calculated one.<br>"
+       "The start layer for the template is set to 200. Each of the maximum of 32 selected colors will use a separate layer, "
+       "beginning with the start layer. So it is possible to have colored logos in the Schematic or Symbol Editor.<br>"
+       "Reduce the number of colors of an image to two (black/white), if the logo shall be displayed monochrome in one of the copper "
+       "layers. As soon as the image (logo) is drawn with the EAGLE commands (see above) you may delete the template with GROUP DELETE "
+       "and a right mouse click. The layers can be removed with <i>LAYER -number</i> afterwards."
+       "<p>"
+       "<author>Author: support@cadsoft.de</author></qt>"
+       ,
+       "de:<qt><nobr><b>Importiert ein BitMaP-Bild als Vorlage in eine EAGLE-Zeichnung</b>"
+       "<p>"
+       "Das ULP erzeugt eine SCRIPT-Datei, in der zusammenhängende gleichfarbige Pixel als Rechteck generiert werden.<br>"
+       "Diese Rechtecke dienen als Vorlage, um das Bild mit EAGLE-Werkzeugen wie POLYGON, WIRE, CIRLE, TEXT zu definieren.</nobr>"
+       "Bedenken Sie: Wenn die erzeugten Rechtecke kleiner sind als die Hälfte der Auflösung des Ausgabegerätes"
+       "(je nach Skalierungsfaktor: Bildschirm-Pixel, Drucker-Laserstrahlbreite oder Düsendurchmesser), kann das Ergebnis "
+       "nicht dargestellt werden. Definieren Sie deshalb feine Strukturen mit den oben erwähnten Werkzeugen, um die "
+       "Anzahl der Elemente (Rechtecke) zu reduzieren. Jedes Element muss vom Grafikkartentreiber gezeichnet und "
+       "berechnet werden. Bei sehr vielen Elementen wird die Anzeige entsprechend verlangsamt.<br>"
+       "Es werden nur BitMaP-Dateien mit maximal 256 Farben akzeptiert. Davon kann man bis zu 32 Farben auswählen.<br>"
+       "Mit [Scan used colors] können die benutzten Farben im Bild ermittelt werden. Im folgenden Menue muss man sie "
+       "auf maximal 32 reduzieren.<br>"
+       "Im abschliessenden Menue kann die Skalierung gewählt werden. Entweder <i>Dots per Inch (DPI)</i> oder <i>Pixel</i> in "
+       "der Maßeinheit Inch, Mil, Millimeter, Micron oder <i>Aspect Ratio</i> (die Breite des Bildes Pixel in X) in Inch, "
+       "Mil, Millimeter, Micron."
+       "Bei Aspect ratio sollte darauf geachtet werden, dass im Bild links und rechts keine Pixel in einer "
+       "nichtgewählten Farbe vorkommen. Ansonsten stimmt die Breite des Endergebnisses nicht mit der berechneten Breite überein.<br>"
+       "Der Startlayer für die Vorlage ist der Layer 200. Für jede, der bis zu max. 32 gewählten Farben, wird ein neuer Layer, "
+       "beginnend mit dem Sartlayer angelegt. So kann ein Logo im Schaltplan (Symbol) auch farbig definiert werden.<br>"
+       "Reduzieren Sie eine BitMaP auf 2 Farben (schwarz/weiss), wenn das Ergebnis in nur einer Farbe für einen Kupferlayer "
+       "dargestellt werden soll. Ist das Bild (Logo) mit EAGLE-Werkzeugen (siehe oben) definiert, können mit GROUP DELETE und rechter "
+       "Maustaste die 'Rechtecke' wieder gelöscht werden.<br>Die Layer selbst können dann mit <i>LAYER -nummer</i> entfernt werden."
+       "<p>"
+       "<author>Author: support@cadsoft.de</author></qt>"
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+
+
+//  1.0.3 - 2006-05-11 *** corrected for 4 bit (16 colors) ***  alf@cadsoft.de
+//                         only the first 4 of 16 colors was generated
+//                         set cselmax to maximal included colors of BitMaP
+//
+//  1.0.4 - 2007-03-30 --- Coral Draw sets wrong Byte Address Range, check length with address range.
+//
+//  1.0.5 - 2009-10-27 --- show colors by background color (table) not with Bit-MAP
+//  1.0.6 - 2010-05-20 --- showbmp() use Dialog to show complete image
+//                         Images now can 1280 pixels use
+//                         Check selected colors.
+//
+
+string Version = "1.0.6";
+
+// 2009-10-27 color definition in 16 color BitMap (4 bit)
+string colorBox16[];
+   colorBox16[000] = "#000000"; // 0000	0036
+   colorBox16[001] = "#800000"; // 0004	003A
+   colorBox16[002] = "#008000"; // 0008	003E
+   colorBox16[003] = "#808000"; // 000C	0042
+   colorBox16[004] = "#000080"; // 0010	0046
+   colorBox16[005] = "#800080"; // 0014	004A
+   colorBox16[006] = "#008080"; // 0018	004E
+   colorBox16[007] = "#C0C0C0"; // 001C	0052
+   colorBox16[008] = "#808080"; // 03E0	0416
+   colorBox16[009] = "#FF0000"; // 03E4	041A
+   colorBox16[010] = "#00FF00"; // 03E8	041E
+   colorBox16[011] = "#FFFF00"; // 03EC	0422
+   colorBox16[012] = "#0000FF"; // 03F0	0426
+   colorBox16[013] = "#FF00FF"; // 03F4	042A
+   colorBox16[014] = "#00FFFF"; // 03F8	042E
+   colorBox16[015] = "#FFFFFF"; // 03FC	0432
+
+
+string    colorBox[];         // colors of 8 bit / 256 color bit maplist
+   colorBox[000] = "#000000"; // 0000	0036
+   colorBox[001] = "#800000"; // 0004	003A
+   colorBox[002] = "#008000"; // 0008	003E
+   colorBox[003] = "#808000"; // 000C	0042
+   colorBox[004] = "#000080"; // 0010	0046
+   colorBox[005] = "#800080"; // 0014	004A
+   colorBox[006] = "#008080"; // 0018	004E
+   colorBox[007] = "#C0C0C0"; // 001C	0052
+   colorBox[008] = "#C0DCC0"; // 0020	0056
+   colorBox[009] = "#A6CAF0"; // 0024	005A
+   colorBox[010] = "#402000"; // 0028	005E
+   colorBox[011] = "#602000"; // 002C	0062
+   colorBox[012] = "#802000"; // 0030	0066
+   colorBox[013] = "#A02000"; // 0034	006A
+   colorBox[014] = "#C02000"; // 0038	006E
+   colorBox[015] = "#E02000"; // 003C	0072
+   colorBox[016] = "#004000"; // 0040	0076
+   colorBox[017] = "#204000"; // 0044	007A
+   colorBox[018] = "#404000"; // 0048	007E
+   colorBox[019] = "#604000"; // 004C	0082
+   colorBox[020] = "#804000"; // 0050	0086
+   colorBox[021] = "#A04000"; // 0054	008A
+   colorBox[022] = "#C04000"; // 0058	008E
+   colorBox[023] = "#E04000"; // 005C	0092
+   colorBox[024] = "#006000"; // 0060	0096
+   colorBox[025] = "#206000"; // 0064	009A
+   colorBox[026] = "#406000"; // 0068	009E
+   colorBox[027] = "#606000"; // 006C	00A2
+   colorBox[028] = "#806000"; // 0070	00A6
+   colorBox[029] = "#A06000"; // 0074	00AA
+   colorBox[030] = "#C06000"; // 0078	00AE
+   colorBox[031] = "#E06000"; // 007C	00B2
+   colorBox[032] = "#008000"; // 0080	00B6
+   colorBox[033] = "#208000"; // 0084	00BA
+   colorBox[034] = "#408000"; // 0088	00BE
+   colorBox[035] = "#608000"; // 008C	00C2
+   colorBox[036] = "#808000"; // 0090	00C6
+   colorBox[037] = "#A08000"; // 0094	00CA
+   colorBox[038] = "#C08000"; // 0098	00CE
+   colorBox[039] = "#E08000"; // 009C	00D2
+   colorBox[040] = "#00A000"; // 00A0	00D6
+   colorBox[041] = "#20A000"; // 00A4	00DA
+   colorBox[042] = "#40A000"; // 00A8	00DE
+   colorBox[043] = "#60A000"; // 00AC	00E2
+   colorBox[044] = "#80A000"; // 00B0	00E6
+   colorBox[045] = "#A0A000"; // 00B4	00EA
+   colorBox[046] = "#C0A000"; // 00B8	00EE
+   colorBox[047] = "#E0A000"; // 00BC	00F2
+   colorBox[048] = "#00C000"; // 00C0	00F6
+   colorBox[049] = "#20C000"; // 00C4	00FA
+   colorBox[050] = "#40C000"; // 00C8	00FE
+   colorBox[051] = "#60C000"; // 00CC	0102
+   colorBox[052] = "#80C000"; // 00D0	0106
+   colorBox[053] = "#A0C000"; // 00D4	010A
+   colorBox[054] = "#C0C000"; // 00D8	010E
+   colorBox[055] = "#E0C000"; // 00DC	0112
+   colorBox[056] = "#00E000"; // 00E0	0116
+   colorBox[057] = "#20E000"; // 00E4	011A
+   colorBox[058] = "#40E000"; // 00E8	011E
+   colorBox[059] = "#60E000"; // 00EC	0122
+   colorBox[060] = "#80E000"; // 00F0	0126
+   colorBox[061] = "#A0E000"; // 00F4	012A
+   colorBox[062] = "#C0E000"; // 00F8	012E
+   colorBox[063] = "#E0E000"; // 00FC	0132
+   colorBox[064] = "#000040"; // 0100	0136
+   colorBox[065] = "#200040"; // 0104	013A
+   colorBox[066] = "#400040"; // 0108	013E
+   colorBox[067] = "#600040"; // 010C	0142
+   colorBox[068] = "#800040"; // 0110	0146
+   colorBox[069] = "#A00040"; // 0114	014A
+   colorBox[070] = "#C00040"; // 0118	014E
+   colorBox[071] = "#E00040"; // 011C	0152
+   colorBox[072] = "#002040"; // 0120	0156
+   colorBox[073] = "#202040"; // 0124	015A
+   colorBox[074] = "#402040"; // 0128	015E
+   colorBox[075] = "#602040"; // 012C	0162
+   colorBox[076] = "#802040"; // 0130	0166
+   colorBox[077] = "#A02040"; // 0134	016A
+   colorBox[078] = "#C02040"; // 0138	016E
+   colorBox[079] = "#E02040"; // 013C	0172
+   colorBox[080] = "#004040"; // 0140	0176
+   colorBox[081] = "#204040"; // 0144	017A
+   colorBox[082] = "#404040"; // 0148	017E
+   colorBox[083] = "#604040"; // 014C	0182
+   colorBox[084] = "#804040"; // 0150	0186
+   colorBox[085] = "#A04040"; // 0154	018A
+   colorBox[086] = "#C04040"; // 0158	018E
+   colorBox[087] = "#E04040"; // 015C	0192
+   colorBox[088] = "#006040"; // 0160	0196
+   colorBox[089] = "#206040"; // 0164	019A
+   colorBox[090] = "#406040"; // 0168	019E
+   colorBox[091] = "#606040"; // 016C	01A2
+   colorBox[092] = "#806040"; // 0170	01A6
+   colorBox[093] = "#A06040"; // 0174	01AA
+   colorBox[094] = "#C06040"; // 0178	01AE
+   colorBox[095] = "#E06040"; // 017C	01B2
+   colorBox[096] = "#008040"; // 0180	01B6
+   colorBox[097] = "#208040"; // 0184	01BA
+   colorBox[098] = "#408040"; // 0188	01BE
+   colorBox[099] = "#608040"; // 018C	01C2
+   colorBox[100] = "#808040"; // 0190	01C6
+   colorBox[101] = "#A08040"; // 0194	01CA
+   colorBox[102] = "#C08040"; // 0198	01CE
+   colorBox[103] = "#E08040"; // 019C	01D2
+   colorBox[104] = "#00A040"; // 01A0	01D6
+   colorBox[105] = "#20A040"; // 01A4	01DA
+   colorBox[106] = "#40A040"; // 01A8	01DE
+   colorBox[107] = "#60A040"; // 01AC	01E2
+   colorBox[108] = "#80A040"; // 01B0	01E6
+   colorBox[109] = "#A0A040"; // 01B4	01EA
+   colorBox[110] = "#C0A040"; // 01B8	01EE
+   colorBox[111] = "#E0A040"; // 01BC	01F2
+   colorBox[112] = "#00C040"; // 01C0	01F6
+   colorBox[113] = "#20C040"; // 01C4	01FA
+   colorBox[114] = "#40C040"; // 01C8	01FE
+   colorBox[115] = "#60C040"; // 01CC	0202
+   colorBox[116] = "#80C040"; // 01D0	0206
+   colorBox[117] = "#A0C040"; // 01D4	020A
+   colorBox[118] = "#C0C040"; // 01D8	020E
+   colorBox[119] = "#E0C040"; // 01DC	0212
+   colorBox[120] = "#00E040"; // 01E0	0216
+   colorBox[121] = "#20E040"; // 01E4	021A
+   colorBox[122] = "#40E040"; // 01E8	021E
+   colorBox[123] = "#60E040"; // 01EC	0222
+   colorBox[124] = "#80E040"; // 01F0	0226
+   colorBox[125] = "#A0E040"; // 01F4	022A
+   colorBox[126] = "#C0E040"; // 01F8	022E
+   colorBox[127] = "#E0E040"; // 01FC	0232
+   colorBox[128] = "#000080"; // 0200	0236
+   colorBox[129] = "#200080"; // 0204	023A
+   colorBox[130] = "#400080"; // 0208	023E
+   colorBox[131] = "#600080"; // 020C	0242
+   colorBox[132] = "#800080"; // 0210	0246
+   colorBox[133] = "#A00080"; // 0214	024A
+   colorBox[134] = "#C00080"; // 0218	024E
+   colorBox[135] = "#E00080"; // 021C	0252
+   colorBox[136] = "#002080"; // 0220	0256
+   colorBox[137] = "#202080"; // 0224	025A
+   colorBox[138] = "#402080"; // 0228	025E
+   colorBox[139] = "#602080"; // 022C	0262
+   colorBox[140] = "#802080"; // 0230	0266
+   colorBox[141] = "#A02080"; // 0234	026A
+   colorBox[142] = "#C02080"; // 0238	026E
+   colorBox[143] = "#E02080"; // 023C	0272
+   colorBox[144] = "#004080"; // 0240	0276
+   colorBox[145] = "#204080"; // 0244	027A
+   colorBox[146] = "#404080"; // 0248	027E
+   colorBox[147] = "#604080"; // 024C	0282
+   colorBox[148] = "#804080"; // 0250	0286
+   colorBox[149] = "#A04080"; // 0254	028A
+   colorBox[150] = "#C04080"; // 0258	028E
+   colorBox[151] = "#E04080"; // 025C	0292
+   colorBox[152] = "#006080"; // 0260	0296
+   colorBox[153] = "#206080"; // 0264	029A
+   colorBox[154] = "#406080"; // 0268	029E
+   colorBox[155] = "#606080"; // 026C	02A2
+   colorBox[156] = "#806080"; // 0270	02A6
+   colorBox[157] = "#A06080"; // 0274	02AA
+   colorBox[158] = "#C06080"; // 0278	02AE
+   colorBox[159] = "#E06080"; // 027C	02B2
+   colorBox[160] = "#008080"; // 0280	02B6
+   colorBox[161] = "#208080"; // 0284	02BA
+   colorBox[162] = "#408080"; // 0288	02BE
+   colorBox[163] = "#608080"; // 028C	02C2
+   colorBox[164] = "#808080"; // 0290	02C6
+   colorBox[165] = "#A08080"; // 0294	02CA
+   colorBox[166] = "#C08080"; // 0298	02CE
+   colorBox[167] = "#E08080"; // 029C	02D2
+   colorBox[168] = "#00A080"; // 02A0	02D6
+   colorBox[169] = "#20A080"; // 02A4	02DA
+   colorBox[170] = "#40A080"; // 02A8	02DE
+   colorBox[171] = "#60A080"; // 02AC	02E2
+   colorBox[172] = "#80A080"; // 02B0	02E6
+   colorBox[173] = "#A0A080"; // 02B4	02EA
+   colorBox[174] = "#C0A080"; // 02B8	02EE
+   colorBox[175] = "#E0A080"; // 02BC	02F2
+   colorBox[176] = "#00C080"; // 02C0	02F6
+   colorBox[177] = "#20C080"; // 02C4	02FA
+   colorBox[178] = "#40C080"; // 02C8	02FE
+   colorBox[179] = "#60C080"; // 02CC	0302
+   colorBox[180] = "#80C080"; // 02D0	0306
+   colorBox[181] = "#A0C080"; // 02D4	030A
+   colorBox[182] = "#C0C080"; // 02D8	030E
+   colorBox[183] = "#E0C080"; // 02DC	0312
+   colorBox[184] = "#00E080"; // 02E0	0316
+   colorBox[185] = "#20E080"; // 02E4	031A
+   colorBox[186] = "#40E080"; // 02E8	031E
+   colorBox[187] = "#60E080"; // 02EC	0322
+   colorBox[188] = "#80E080"; // 02F0	0326
+   colorBox[189] = "#A0E080"; // 02F4	032A
+   colorBox[190] = "#C0E080"; // 02F8	032E
+   colorBox[191] = "#E0E080"; // 02FC	0332
+   colorBox[192] = "#0000C0"; // 0300	0336
+   colorBox[193] = "#2000C0"; // 0304	033A
+   colorBox[194] = "#4000C0"; // 0308	033E
+   colorBox[195] = "#6000C0"; // 030C	0342
+   colorBox[196] = "#8000C0"; // 0310	0346
+   colorBox[197] = "#A000C0"; // 0314	034A
+   colorBox[198] = "#C000C0"; // 0318	034E
+   colorBox[199] = "#E000C0"; // 031C	0352
+   colorBox[200] = "#0020C0"; // 0320	0356
+   colorBox[201] = "#2020C0"; // 0324	035A
+   colorBox[202] = "#4020C0"; // 0328	035E
+   colorBox[203] = "#6020C0"; // 032C	0362
+   colorBox[204] = "#8020C0"; // 0330	0366
+   colorBox[205] = "#A020C0"; // 0334	036A
+   colorBox[206] = "#C020C0"; // 0338	036E
+   colorBox[207] = "#E020C0"; // 033C	0372
+   colorBox[208] = "#0040C0"; // 0340	0376
+   colorBox[209] = "#2040C0"; // 0344	037A
+   colorBox[210] = "#4040C0"; // 0348	037E
+   colorBox[211] = "#6040C0"; // 034C	0382
+   colorBox[212] = "#8040C0"; // 0350	0386
+   colorBox[213] = "#A040C0"; // 0354	038A
+   colorBox[214] = "#C040C0"; // 0358	038E
+   colorBox[215] = "#E040C0"; // 035C	0392
+   colorBox[216] = "#0060C0"; // 0360	0396
+   colorBox[217] = "#2060C0"; // 0364	039A
+   colorBox[218] = "#4060C0"; // 0368	039E
+   colorBox[219] = "#6060C0"; // 036C	03A2
+   colorBox[220] = "#8060C0"; // 0370	03A6
+   colorBox[221] = "#A060C0"; // 0374	03AA
+   colorBox[222] = "#C060C0"; // 0378	03AE
+   colorBox[223] = "#E060C0"; // 037C	03B2
+   colorBox[224] = "#0080C0"; // 0380	03B6
+   colorBox[225] = "#2080C0"; // 0384	03BA
+   colorBox[226] = "#4080C0"; // 0388	03BE
+   colorBox[227] = "#6080C0"; // 038C	03C2
+   colorBox[228] = "#8080C0"; // 0390	03C6
+   colorBox[229] = "#A080C0"; // 0394	03CA
+   colorBox[230] = "#C080C0"; // 0398	03CE
+   colorBox[231] = "#E080C0"; // 039C	03D2
+   colorBox[232] = "#00A0C0"; // 03A0	03D6
+   colorBox[233] = "#20A0C0"; // 03A4	03DA
+   colorBox[234] = "#40A0C0"; // 03A8	03DE
+   colorBox[235] = "#60A0C0"; // 03AC	03E2
+   colorBox[236] = "#80A0C0"; // 03B0	03E6
+   colorBox[237] = "#A0A0C0"; // 03B4	03EA
+   colorBox[238] = "#C0A0C0"; // 03B8	03EE
+   colorBox[239] = "#E0A0C0"; // 03BC	03F2
+   colorBox[240] = "#00C0C0"; // 03C0	03F6
+   colorBox[241] = "#20C0C0"; // 03C4	03FA
+   colorBox[242] = "#40C0C0"; // 03C8	03FE
+   colorBox[243] = "#60C0C0"; // 03CC	0402
+   colorBox[244] = "#80C0C0"; // 03D0	0406
+   colorBox[245] = "#A0C0C0"; // 03D4	040A
+   colorBox[246] = "#FFFBF0"; // 03D8	040E
+   colorBox[247] = "#A0A0A4"; // 03DC	0412
+   colorBox[248] = "#808080"; // 03E0	0416
+   colorBox[249] = "#FF0000"; // 03E4	041A
+   colorBox[250] = "#00FF00"; // 03E8	041E
+   colorBox[251] = "#FFFF00"; // 03EC	0422
+   colorBox[252] = "#0000FF"; // 03F0	0426
+   colorBox[253] = "#FF00FF"; // 03F4	042A
+   colorBox[254] = "#00FFFF"; // 03F8	042E
+   colorBox[255] = "#FFFFFF"; // 03FC	0432
+
+
+
+string script_path;
+string bmpcolor[];
+string bmps[];
+
+string run_info = " ";
+string fileName;
+int nBytes = 0;                 // count bytes of file (fileName)
+int ColorBits = 0;              // used bits for color
+int AdrStart, AdrEnd = 0;       // Start & End of BITMAP-Data
+int length = 0;                 // length of bmp-Data
+int Byte4Group = 0;             // bmp-Data organized as 4-byte groups
+int Layer = 200;                // 1st used layer
+real xScale = 600;                // scale x
+real yScale = 1;                // scale y
+int X = 0;                      // count pixels x
+int Y = 0;                      // count pixels y
+string xy = "";
+int colorscan = 0;              // flag for color scanning
+int cselmax = 32;               // max 32 colors selectable
+int Result = 0;
+
+real Offset  = .5;              // offset Wire width
+
+int mBit[];                     // bit line for operating
+
+string grid[] = { "INCH",       // grid units
+                  "MIL",
+                  "MM",
+                  "MIC"
+                };
+int unit = 1;                   // default unit = mil
+int scaled = 0;                 // flag for DPI Scale Ratio
+real vmin[] = { 0.00001, 0.001, 0.0001, 0.1 };
+real vmax[] = { 30.0, 3000.0, 800.0, 800000.0 } ;
+
+string Grid = grid[unit];          // default grid
+
+   // get parameter PDI, Scale, Aspect Ratio, mic, mm, mil INCH ...
+   string menuedlg[] = {
+           "<b>D</b>ots <b>P</b>er <b>I</b>NCH",
+           "<b>Scale</b> factor for a pixel",
+           "Aspect/Ratio <b>m</b>"
+           } ;
+   string menuval0[] = {
+           "&Value between 1 and 10000 dots",
+           "&Value between 0.01 and 30.0 Inch",
+           "&Value between 0.01 and 30.0 Inch"
+           };
+
+   string menuval1[] = {
+           "&Value between 1 and 10000 dots",
+           "&Value between 0.001 and 3000.0 mil",
+           "&Value between 0.001 and 3000.0 mil"
+           };
+   string menuval2[] = {
+           "&Value between 1 and 10000 dots",
+           "&Value between 0.0001 and 800.0 mm",
+           "&Value between 0.0001 and 800.0 mm"
+           };
+   string menuval3[] = {
+           "&Value between 1 and 10000 dots",
+           "&Value between 0.1 and 800000.0 micron",
+           "&Value between 0.1 and 800000.0 micron"
+           };
+string menulbl = menuedlg[0];
+string menuinfo = menuval1[1];
+string ratiologo ;
+
+
+// table of used colors in BitMaP
+int colorUsed[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0
+                  };
+
+int colorSelect[] ;
+char  c[];                      // the file as Byte-Array
+
+// set / clear all colorUsed flags
+void setall(int set) {
+   for(int n = 0; n < pow(2, ColorBits); n++) {
+       colorUsed[n] = set;
+   }
+   return;
+}
+
+void ScriptLine(int Line) {
+   // *** corrected for 4 bit (16 colors) *** 2006.05.11 alf@cadsoft.de
+   for(int cs = 0; cs < cselmax; cs++) {          // extract max 32 colors
+      sprintf(run_info, "%d Line %d Color #%d ", Y, Line, cs);
+      dlgRedisplay();
+      if(colorSelect[cs] > -1) {                  // -1 color not used
+         int lineColor = colorSelect[cs];         // extraction color
+         int line = 0;
+         printf("change layer %d;\n", Layer + cs);
+         for(int z = 0; z < X; z++) {
+            if(mBit[z] == lineColor) {           // if color used
+               if(line == 0) {                   // start of line in script (rectangle)
+                  printf("RECT (%.4f ", (z - Offset) * xScale);
+                  printf("%.5f)", (Line - Offset) * yScale);
+                  line = 1;
+               }
+            }
+            else {
+               if(line == 1) {
+                  printf( "(%.4f ", (z - Offset) * xScale);
+                  // end of line in script (rectangle)
+                  printf( "%.5f);\n", (Line + Offset) * yScale);
+                  line = 0;
+               }
+            }
+         }
+         if(line == 1) {
+            printf( "(%.4f ", (z - Offset) * xScale);
+            // end of line in script(rectangle)
+            printf( "%.5f);\n", (Line + Offset) * yScale);
+            line = 0;
+         }
+      }
+   }
+   return;
+}
+
+// Generate Script from BitMaP
+void GenScript(void) {
+   int xByte = 4 * Byte4Group;                      // organised by groups of 4 bytes
+   int bmpBits;
+
+   for(int yRead = 0; yRead < Y; yRead++) {         // counter for  lines / Y
+      for(int xRead = 0; xRead < xByte; xRead ++) {
+         bmpBits = c[AdrStart + yRead * xByte + xRead];
+
+         switch (ColorBits) {
+            case  1 :  for(int bitcnt = 7; bitcnt > -1; bitcnt--) {
+                          mBit[(xRead * 8) + (7 - bitcnt)] = bmpBits;
+                          mBit[(xRead * 8) + (7 - bitcnt)] >>= bitcnt;
+                          mBit[(xRead * 8) + (7 - bitcnt)] &= 0X1;
+                       }
+                       break;
+
+            case  4 :  mBit[xRead * 2 ] = bmpBits;
+                       mBit[xRead * 2 + 1] = bmpBits;
+                       mBit[xRead * 2 ] >>= 4;
+                       mBit[xRead * 2 + 1] &= 0x0f;
+                       break;
+
+            case  8 :  mBit[xRead] = bmpBits;
+                       break;
+         }
+
+      }
+      if(colorscan) {
+         for(int z = 0; z < X; z++) {
+            colorUsed[mBit[z]]++;          // set flag for used color
+         }
+      }
+      else {
+         ScriptLine(yRead);                // generate Eagle Script line
+      }
+   }
+   return;
+}
+
+// bmp file info
+string bmpDaten(void) {                    // diagnostics
+   string st = "";
+   string cmd = "";
+   printf( "BitMaP Start \t = %d\n", AdrStart);
+   cmd = st;
+   printf( "BitMaP End \t = %d\n", AdrEnd);
+   cmd += st;
+   printf( "BitMaP length \t = %d\n", length);
+   cmd += st;
+   printf( "high / pixel - Y \t = %d\n", Y);
+   cmd += st;
+   printf( "wide / pixel - X \t = %d\n", X);
+   cmd += st;
+   printf( "4-Byte Group(s) \t = %d\n", Byte4Group);
+   cmd += st;
+   printf( "Bits / Color \t = %d  (Colors %.0f)\n", ColorBits, pow(2, ColorBits));
+   cmd += st;
+   printf( "File length \t = %d\n", nBytes);
+   cmd += st;
+   return cmd;
+}
+
+// Select menu for 2 color BitMaP
+void Cselect2(void) {
+   Result = dlgDialog("Select used colors in " + fileName) {
+      // 2009-10-27
+      dlgHBoxLayout {
+        dlgStretch(1);
+        dlgGridLayout {
+          dlgCell(1, 1) dlgCheckBox("", colorUsed[0]);
+          dlgCell(2, 1) dlgLabel("<table bgcolor=#000000><tr><td>&nbsp; &nbsp;</td></tr></table>");
+          dlgCell(1, 2) dlgCheckBox("", colorUsed[1]);
+          dlgCell(2, 2) dlgLabel("<table bgcolor=#FFFFFF><tr><td>&nbsp; &nbsp;</td></tr></table>");
+        }
+        dlgStretch(1);
+      }
+      dlgStretch(0);
+      dlgSpacing(20);
+      dlgLabel("<b> Select up to 2 colors </b>");
+      dlgStretch(0);
+      dlgHBoxLayout {
+         dlgPushButton("+OK") dlgAccept();
+         dlgPushButton("-Cancel") dlgReject();
+         dlgStretch(1);
+         dlgPushButton("&Set all") setall(1);
+         dlgPushButton("&Clear all") setall(0);
+      }
+      dlgStretch(1);
+   };
+   if (Result == 0) exit (0);
+   return;
+}
+
+// Select menu for 16 color BitMaP
+void Cselect16(void) {
+   Result = dlgDialog("Select used colors" + fileName) {
+      dlgStretch(0);
+      // 2009-10-27
+      dlgGridLayout {
+        for (int colum = 0 ; colum < 16; colum++) {
+          dlgCell(1, colum) dlgCheckBox("", colorUsed[colum]);
+          string s;
+          sprintf(s, "<table bgcolor=%s><tr><td>&nbsp; &nbsp;</td></tr></table>", colorBox16[colum]);
+          dlgCell(2, colum) dlgLabel(s);
+        }
+      }
+
+      dlgStretch(0);
+      dlgSpacing(20);
+      dlgLabel("<b> Select up to 16 colors </b>");
+      dlgStretch(0);
+      dlgHBoxLayout {
+         dlgPushButton("+OK") dlgAccept();
+         dlgPushButton("-Cancel") dlgReject();
+         dlgStretch(1);
+         dlgPushButton("&set all") { setall(1); dlgRedisplay();}
+         dlgPushButton("&clear all") { setall(0); dlgRedisplay();}
+      }
+      dlgStretch(1);
+   };
+   if (Result == 0) exit (0);
+   return;
+}
+
+// Select menu for 256 color BitMaP
+void Cselect256(void) {
+  Result = dlgDialog("Select used colors " + fileName) {
+    // 2009-10-27
+    dlgGridLayout {
+      for (int row = 0 ; row < 16; row++) {
+        for (int colum = 0 ; colum < 16; colum++) {
+          dlgCell(2*row, colum) dlgCheckBox("", colorUsed[row * 16 + colum]);
+          string s;
+          sprintf(s, "<table bgcolor=%s><tr><td>&nbsp; &nbsp;</td></tr></table>", colorBox[row*16+colum]);
+          dlgCell(2*row + 1, colum) dlgLabel(s);
+        }
+      }
+    }
+    dlgVBoxLayout {
+      dlgStretch(0);
+      dlgSpacing(20);
+      string hc;
+      sprintf( hc, "<b> Select up to %d colors </b>", cselmax);
+      dlgLabel(hc);
+      dlgStretch(0);
+      dlgHBoxLayout {
+        dlgStretch(0);
+        dlgPushButton("+OK") dlgAccept();
+        dlgStretch(0);
+        dlgPushButton("-Cancel") dlgReject();
+        dlgStretch(1);
+        dlgPushButton("&set all") setall(1);
+        dlgStretch(0);
+        dlgPushButton("&clear all") setall(0);
+        dlgStretch(0);
+      }
+      dlgStretch(1);
+    }
+   dlgStretch(1);
+  };
+  if (Result == 0) exit (0);
+  return;
+}
+
+// select colors
+int selectColors(void) {
+   switch (ColorBits) {
+      case 1 :  cselmax = 2;         // 2006.05.11 set max color for 2 colors
+                Cselect2();
+                break;
+      case 4 :  cselmax = 16;        // 2006.05.11 set max color for 16 colors
+                Cselect16();
+                break;
+      case 8 :  Cselect256();
+                break;
+   }
+   for(int n = 0; n < cselmax; n++) {
+      colorSelect[n] = -1;        // reset selected colors
+   }
+   int cs;
+   for(int s = 0; s < 256; s++) {
+      if(colorUsed[s]) {
+         colorSelect[cs] = s;
+         cs++;
+      }
+   }
+   return cs;
+}
+
+// select colors by scan array
+void selectMenue() {
+   int cs;
+   do {
+      cs = selectColors();
+      string hx;
+      if (cs > cselmax) {
+         sprintf( hx, "Do not use more than %d colors!", cselmax);
+         dlgMessageBox(hx, "OK");
+      }
+      if (cs < 1) {
+         sprintf( hx, "No colors selected!"); // 2010-05-20 alf@cadsoft.de
+         dlgMessageBox(hx, "OK");
+      }
+   } while (cs > cselmax || cs == 0);
+   return;
+}
+
+// header from Script, define Layer
+void scriptheader(void) {
+   printf("# generated with %s %s\n", argv[0], Version);
+   printf("# from %s\n", fileName);
+   printf("Grid %s %.6f ON;\n", Grid, xScale);
+
+   for(int cs = 0; cs < cselmax; cs++) {          // max 32 color extract
+      if(colorSelect[cs] > -1) {
+         if(Layer + cs > 99){                     // user defined layer
+            printf( "LAYER %d %dbmp;\n", Layer + cs, Layer + cs);
+            printf( "SET FILL_LAYER %d 10;\n", Layer + cs);
+            printf( "SET COLOR_LAYER %d %d;\n", Layer + cs, cs + 1);
+         }
+      }
+   }
+   printf( "CHANGE LAYER %d;\n", Layer);
+   printf("SET UNDO_LOG OFF;\n");
+   return;
+}
+
+// get flag for scan colors
+int scan(void) {
+   if (ColorBits == 1) return 0;
+   return (dlgDialog(filename(argv[0])) {
+      string st;
+      sprintf(st, "<nobr><b>%s</b>:<p>is a %.0f color BitMAP : ist eine %.0f-Farben-BitMAP</nobr>",
+                  fileName, pow(2, ColorBits), pow(2, ColorBits)
+             );
+      dlgHBoxLayout {
+         dlgStretch(0);
+         dlgVBoxLayout {
+            dlgGroup("Info") {
+               dlgLabel(st);
+               if (ColorBits == 4) {
+                  dlgGridLayout {
+                     for (int colum = 0 ; colum < 16; colum++) {
+                        string s;
+                        sprintf(s, "<table bgcolor=%s><tr><td>&nbsp; &nbsp;</td></tr></table>", colorBox16[colum]);
+                        dlgCell(1, colum) dlgLabel(s);
+                     }
+                  }
+               }
+               else dlgLabel(bmpcolor[ColorBits]);
+            }
+            dlgLabel(" ULP-Version " + Version);
+            dlgGroup("") {
+               dlgStretch(1);
+               dlgHBoxLayout {
+                  dlgPushButton("+Scan used colors") dlgAccept();
+                  dlgStretch(1);
+                  dlgPushButton("-No scan") dlgReject();
+                  dlgStretch(1);
+                  dlgPushButton("Cancel") { dlgReject(); exit(0); }
+               }
+               dlgStretch(0);
+            }
+            dlgStretch(1);
+         }
+         dlgStretch(1);
+      }
+      dlgStretch(1);
+   } );
+}
+
+void colors24(void) {
+  string st = "bmp file contains more than 256 colors, reduce colors before use.\n\n"
+   + "Die benutzte Anzahl der Farben in der bmp-Datei ist groesser 256.\n"
+   + "Verringern Sie zuerst die Anzahl der Farben in der bmp-Datei.\n\n";
+  dlgMessageBox(st, "&OK");
+  return;
+}
+
+void menuchange(void) {
+   menulbl = menuedlg[scaled];
+   switch (scaled) {
+      case 0 : ratiologo = "<img src=import-bmp-dpi.bmp>";
+            break;
+      case 1 : ratiologo = "<img src=import-bmp-scale.bmp>";
+            break;
+      case 2 : ratiologo = "<img src=import-bmp-ratio.bmp>";
+            break;
+   }
+
+   switch (unit) {
+      case 0 : menuinfo = menuval0[scaled];
+            break;
+      case 1 : menuinfo = menuval1[scaled];
+            break;
+      case 2 : menuinfo = menuval2[scaled];
+            break;
+      case 3 : menuinfo = menuval3[scaled];
+            break;
+   }
+   return ;
+}
+
+//---------------------------------
+void set_scale(void) {
+   switch(scaled) {
+       case 0 : Grid = grid[0];
+                yScale = 1 / xScale;        // Dots Per Inch
+                xScale = yScale;
+                break;
+
+       case 1 : Grid = Grid = grid[unit];
+                yScale = xScale;
+                break;
+
+       case 2 : Grid = Grid = grid[unit];
+                yScale = xScale / X;        // Aspect Ratio = Width / Pixel X
+                xScale = yScale;
+                break;
+   }
+   return;
+}
+
+
+void imp_bmp(void) {
+   colorscan = 0;                           // reset scanning mode
+   menuinfo = "Dot scale";
+   scriptheader();
+   GenScript();                             // generate script string
+
+   printf("SET UNDO_LOG ON;\n");
+   printf("WINDOW FIT;\n");
+   printf( "Change Size %.4f;\n", yScale * 2);
+   printf("CHANGE FONT VECTOR;\n");
+   printf( "TEXT '" + fileName + "' (0 %.4f);\n",  -5 * yScale );
+   return;
+}
+
+
+void runscript(void) {
+  string script;
+  int s = fileread(script, script_path + "bmp.scr");
+  Result = dlgDialog("Accept Script?") {
+     dlgHBoxLayout dlgSpacing(300);
+     dlgHBoxLayout {
+        dlgVBoxLayout dlgSpacing(300);
+        dlgTextEdit(script);
+     }
+     dlgLabel(" ULP-Version " + Version);
+     dlgHBoxLayout {
+        dlgStretch(0);
+        dlgPushButton("+Run script") dlgAccept();
+        dlgStretch(1);
+        dlgPushButton("-Cancel") dlgReject();
+        dlgStretch(0);
+     }
+  };
+
+  if (Result == 1) exit ("script '" + script_path + "bmp.scr'");
+  else exit (0);
+}
+
+
+void showbmp() {
+  if ( X <= 1280 && Y <= 1280) {
+    dlgDialog("File:'" + fileName + "'") {
+      dlgLabel("<img src=\"" + fileName + "\">");
+      dlgHBoxLayout {
+        dlgStretch(1);
+        dlgPushButton("OK") dlgAccept();
+        dlgStretch(1);
+      }
+    };
+  }
+  else dlgMessageBox("The BMP-File is to big to print complete on screen!", "OK");
+  return;
+}
+
+
+if (schematic) {
+  schematic(S) {
+    script_path = filedir(S.name);
+  }
+}
+if (board) {
+  board(B) {
+    script_path = filedir(B.name);
+  }
+}
+if (library) {
+  library(L) {
+    script_path = filedir(L.name);
+  }
+}
+
+
+int check_max(void) {
+  if (X * xScale > vmax[unit] || Y * yScale > vmax[unit]) {
+    string e;
+    sprintf(e, "The Value of X (%.4f) or Y (%.4f) is grater then EAGLE maximum coordinate range %.4f %s", X * xScale, Y * yScale, vmax[unit], grid[unit]);
+    dlgMessageBox(e, "OK");
+    return 0;
+  }
+  return 1;
+}
+
+// ***************** main ****************
+dlgMessageBox(usage, "OK");
+
+void main(void) {
+   ratiologo = "<img src=import-bmp-scale.bmp>";
+
+//   bmpcolor[1] = "<img src=import-bmp-c2.bmp>";
+//   bmpcolor[4] = "<img src=import-bmp-c16.bmp>";
+   bmpcolor[8] = "<img src=import-bmp-c256.bmp>";
+
+//   bmps[0] = "<img src=import-bmp-c256-0.bmp>";
+//   bmps[1] = "<img src=import-bmp-c256-1.bmp>";
+//   bmps[2] = "<img src=import-bmp-c256-2.bmp>";
+//   bmps[3] = "<img src=import-bmp-c256-3.bmp>",
+//   bmps[4] = "<img src=import-bmp-c256-4.bmp>";
+//   bmps[5] = "<img src=import-bmp-c256-5.bmp>";
+//   bmps[6] = "<img src=import-bmp-c256-6.bmp>";
+//   bmps[7] = "<img src=import-bmp-c256-7.bmp>";
+
+   fileName = dlgFileOpen("Select a bmp file", "", "*.bmp");
+   if (fileName == "") exit (0);
+   run_info = "Import File : " + filename(fileName);
+   nBytes = fileread(c, fileName);              // read file in array
+
+   // up to 31 bytes - not all used
+   if(c[0] != 'B') {
+      dlgMessageBox(fileName + ":\nis not a bmp file.\n\nist keine bmp-Datei.", "OK");
+      exit(0);
+   }
+   if(c[1] != 'M') {
+      dlgMessageBox(fileName + ":\nis not a bmp file.\n\nist keine bmp-Datei.", "OK");
+      exit(0);
+   }
+   if(c[21] > 0) {
+      dlgMessageBox(fileName + ":\nToo many pixels in x direction\n"
+                             + "\nAnzahl der Pixel in X zu gross\n", "OK");
+      exit (0);
+   }
+   if(c[25] > 0) {
+      dlgMessageBox(fileName + ":\nToo many pixels y direction\n"
+                             + "\nAnzahl der Pixel in Y zu gross\n", "OK");
+      exit (0);
+   }
+                                    // case 6 TO 9, 14 TO 17  not used
+
+   ColorBits = c[28];               // counter of ColorBits
+
+   if(ColorBits > 8) {
+      colors24();                   // to many colors, break
+      exit(0);
+   }
+
+   AdrEnd  = c[2] + c[3]  * 256 + c[4]  * 256 * 256 +  c[5] * 256 * 256 * 256;
+   AdrStart = c[10]+ c[11] * 256 + c[12] * 256 * 256 + c[13] * 256 * 256 * 256;
+   X = c[18] + c[19] * 256 + c[20] * 65536 + c[21] * 256 * 256 * 256;
+   Y = c[22] + c[23] * 256 + c[24] * 65536 + c[25] * 256 * 256 * 256;
+   sprintf(xy, " X = %5d Pixel\n Y = %5d Pixel", X, Y);
+
+   length = AdrEnd - AdrStart;              // BitMaP length
+   Byte4Group = length / Y / 4;
+
+   /*** 2007.03.30 Coral-Draw sets wrong address range in Byte upper Byte 18 (22 = $14) ***/
+   if (X > length || Y > length) {
+     dlgMessageBox("!BitMaP Format Error in Adress-Range (Byte 18+19+20 and 22+23+24) from:\n" + fileName +
+                   "\n\nCheck this bytes or load the BMP-File in Windows Paint-Brush and save it.",
+                   "OK");
+     exit(-1);
+   }
+
+   if(scan()) {                             // first scan used colors
+      colorscan = 1;
+      GenScript();
+   }
+
+   selectMenue();
+
+   //---------------------------------
+   int d = 1;
+   while(d) {
+      dlgDialog("Info "+ fileName) {
+         dlgLabel(" ULP-Version " + Version);
+         dlgHBoxLayout {
+            dlgVBoxLayout {
+               dlgGroup("File data") {
+                  dlgLabel(xy, 1);
+               }
+               dlgLabel(ratiologo, 1);
+               dlgStretch(1);
+            }
+            dlgVBoxLayout {
+               dlgGroup("Format") {
+                  dlgRadioButton("&DPI", scaled) { unit = 0; menuchange(); }
+                  dlgRadioButton("&Scaled", scaled) {menuchange(); }
+                  dlgRadioButton("&Aspect/Ratio m ", scaled) { menuchange(); }
+               }
+               dlgGroup("Unit") {
+                  dlgRadioButton("&Inch", unit) { menuchange(); dlgRedisplay();}
+                  dlgRadioButton("Mi&l", unit) { if ( scaled == 0) scaled = 1; menuchange(); }
+                  dlgRadioButton("&MM", unit) {  if ( scaled == 0) scaled = 1; menuchange(); }
+                  dlgRadioButton("Mi&cron", unit) {  if ( scaled == 0) scaled = 1; menuchange(); }
+               }
+               dlgPushButton("S&elected colors") selectMenue();
+               dlgStretch(1);
+            }
+         }
+         dlgHBoxLayout {
+            dlgVBoxLayout {
+               dlgLabel(menulbl, 1);
+               dlgLabel(menuinfo, 1);
+               dlgHBoxLayout {
+                  dlgRealEdit(xScale, vmin[unit], vmax[unit]);
+                  dlgSpacing(100);
+               }
+               dlgSpacing(10);
+               dlgLabel("Choose start layer for &1st selected color");
+               dlgHBoxLayout {
+                  dlgSpinBox(Layer, 1, 255);
+                  dlgSpacing(100);
+               }
+            }
+            dlgStretch(1);
+         }
+         dlgStretch(1);
+         dlgLabel(run_info, 1);
+         dlgHBoxLayout {
+            dlgPushButton("+OK") {
+               set_scale();
+               if (check_max()) {   // check of maximum EAGLE coodinates
+                  dlgAccept();
+                  output(script_path + "bmp.scr", "wtD") {
+                     d = 0;
+                     imp_bmp();
+                  }
+                  runscript();
+               }
+            }
+         dlgStretch(1);
+         dlgPushButton("-Cancel") exit(0);
+         dlgPushButton("show &BitMaP") showbmp();
+         }
+      };
+   }
+}
+

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -144,7 +144,7 @@ Find us at http://pimoroni.com
 &lt;br&gt;&lt;br&gt;
 &lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes.</description>
 <packages>
-	<package name="PIMORONIIDENT">
+<package name="PIMORONIIDENT">
 <rectangle x1="7.381240625" y1="0.079503125" x2="7.508240625" y2="0.111253125" layer="21"/>
 <rectangle x1="4.556759375" y1="0.111253125" x2="4.841240625" y2="0.142746875" layer="21"/>
 <rectangle x1="6.398259375" y1="0.111253125" x2="6.525259375" y2="0.142746875" layer="21"/>
@@ -1237,7 +1237,6 @@ Find us at http://pimoroni.com
 <rectangle x1="4.523740625" y1="2.746246875" x2="4.874259375" y2="2.778253125" layer="21"/>
 <rectangle x1="7.381240625" y1="2.746246875" x2="7.541259375" y2="2.778253125" layer="21"/>
 </package>
-
 <package name="FCI_89898_313LF_26P_CONNECTOR_SMT_FLIPPED">
 <smd name="P1_3V3" x="15.24" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
 <smd name="P2_5V" x="15.24" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
@@ -18145,6 +18144,18 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <smd name="19" x="-0.004" y="1.5052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
 <smd name="20" x="-0.502" y="1.5052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
 </package>
+<package name="ABMM-XXXMHZ-B2-T">
+<smd name="2" x="1.1" y="3.3" dx="2.2" dy="1.4" layer="1"/>
+<smd name="3" x="5.2" y="3.3" dx="2.2" dy="1.4" layer="1"/>
+<smd name="1" x="1.1" y="0.7" dx="2.2" dy="1.4" layer="1"/>
+<smd name="4" x="5.1" y="0.7" dx="2.4" dy="1.4" layer="1"/>
+<text x="-0.46" y="4.83" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<text x="-0.5" y="-1.83" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-0.45" y1="4.6" x2="6.75" y2="4.6" width="0.1" layer="21"/>
+<wire x1="6.75" y1="4.6" x2="6.75" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="6.75" y1="-0.6" x2="-0.45" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="-0.45" y1="-0.6" x2="-0.45" y2="4.6" width="0.1" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FCI_89898_313LF_26P_CONNECTOR_SMT_FLIPPED">
@@ -21494,6 +21505,23 @@ SCLK
 <text x="-12.7" y="20.32" size="1.778" layer="94">&gt;NAME</text>
 <text x="-12.7" y="-22.86" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="ABMM-XXXMHZ-B2-T">
+<wire x1="-1.08" y1="2.66" x2="1.08" y2="2.66" width="0.2" layer="94"/>
+<wire x1="1.08" y1="2.66" x2="1.08" y2="-2.66" width="0.2" layer="94"/>
+<wire x1="1.08" y1="-2.66" x2="0" y2="-2.66" width="0.2" layer="94"/>
+<wire x1="0" y1="-2.66" x2="-1.08" y2="-2.66" width="0.2" layer="94"/>
+<wire x1="-1.08" y1="-2.66" x2="-1.08" y2="2.66" width="0.2" layer="94"/>
+<wire x1="2.16" y1="2.66" x2="2.16" y2="0" width="0.2" layer="94"/>
+<pin name="3" x="7.78" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="1" x="-7.78" y="0" visible="off" length="middle"/>
+<wire x1="2.16" y1="0" x2="2.16" y2="-2.66" width="0.2" layer="94"/>
+<wire x1="-2.16" y1="2.66" x2="-2.16" y2="0" width="0.2" layer="94"/>
+<pin name="GND" x="0" y="-8.28" visible="off" length="middle" rot="R90"/>
+<wire x1="-2.16" y1="0" x2="-2.16" y2="-2.66" width="0.2" layer="94"/>
+<wire x1="0" y1="-2.66" x2="0" y2="-6.28" width="0.2" layer="94"/>
+<wire x1="-2.16" y1="0" x2="-6.78" y2="0" width="0.2" layer="94"/>
+<wire x1="2.16" y1="0" x2="6.78" y2="0" width="0.2" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RPIGPIOPINHD-2X13-SMD-FLIPPED">
@@ -24226,6 +24254,23 @@ Joystick commonly found in PS2 controllers. Two pots and a select switch. Adapte
 <connect gate="G$1" pin="SCL/SCK" pad="4"/>
 <connect gate="G$1" pin="SDA/MISO" pad="3"/>
 <connect gate="G$1" pin="VDD" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABMM-XXXMHZ-B2-T">
+<gates>
+<gate name="G$1" symbol="ABMM-XXXMHZ-B2-T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABMM-XXXMHZ-B2-T">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>

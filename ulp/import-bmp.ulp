@@ -816,8 +816,8 @@ void imp_bmp(void) {
    printf("SET UNDO_LOG ON;\n");
    printf("WINDOW FIT;\n");
    printf( "Change Size %.4f;\n", yScale * 2);
-   printf("CHANGE FONT VECTOR;\n");
-   printf( "TEXT '" + fileName + "' (0 %.4f);\n",  -5 * yScale );
+   // printf("CHANGE FONT VECTOR;\n");
+   // printf( "TEXT '" + fileName + "' (0 %.4f);\n",  -5 * yScale );
    return;
 }
 

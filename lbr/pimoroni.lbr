@@ -18534,6 +18534,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <smd name="1A" x="-0.65" y="-1.1" dx="0.35" dy="0.85" layer="1"/>
 <smd name="GND" x="0" y="-1.1" dx="0.35" dy="0.85" layer="1"/>
 <smd name="2A" x="0.65" y="-1.1" dx="0.35" dy="0.85" layer="1"/>
+<circle x="-0.65" y="-0.4" radius="0.14141875" width="0" layer="22"/>
 </package>
 </packages>
 <symbols>

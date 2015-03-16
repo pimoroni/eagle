@@ -18453,7 +18453,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <vertex x="-0.4" y="-2"/>
 <vertex x="-2" y="-2"/>
 </polygon>
-=======
+</package>
 <package name="MOUNT-M2.5">
 <pad name="PAD" x="0" y="0" drill="2.75" diameter="4.5"/>
 </package>
@@ -22066,6 +22066,7 @@ SCLK
 <pin name="VEE" x="-15.24" y="-7.62" visible="pin" length="short"/>
 <text x="-12.7" y="17.78" size="1.778" layer="94">74HC4051</text>
 <text x="-12.7" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 <symbol name="MOUNT-M2.5">
 <pin name="PAD" x="-5.08" y="0" length="middle"/>
 </symbol>
@@ -25051,6 +25052,10 @@ Joystick commonly found in PS2 controllers. Two pots and a select switch. Adapte
 <connect gate="G$1" pin="SCK/PC7" pad="17 P$17"/>
 <connect gate="G$1" pin="SS/PC4" pad="14 P$14"/>
 <connect gate="G$1" pin="VCC" pad="9 19 31 P$9 P$19 P$31"/>
+</connects>
+</device>
+</devices>
+</deviceset>
 <deviceset name="MOUNT-M2.5">
 <gates>
 <gate name="G$1" symbol="MOUNT-M2.5" x="0" y="0"/>
@@ -25089,6 +25094,10 @@ Joystick commonly found in PS2 controllers. Two pots and a select switch. Adapte
 <connect gate="G$1" pin="Y6" pad="2"/>
 <connect gate="G$1" pin="Y7" pad="4"/>
 <connect gate="G$1" pin="Z" pad="3"/>
+</connects>
+</device>
+</devices>
+</deviceset>
 <deviceset name="MOUNT-M3">
 <gates>
 <gate name="G$1" symbol="MOUNT-M2.5" x="0" y="0"/>

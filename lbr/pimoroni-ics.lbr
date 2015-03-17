@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -362,6 +362,19 @@
 <text x="0.0172" y="2.9956" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <text x="0.0172" y="-3.7862" size="0.8128" layer="27" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
 </package>
+<package name="DFN-6">
+<smd name="VDD" x="-1.1" y="0.9" dx="1.25" dy="0.4" layer="1"/>
+<smd name="ADDR" x="-1.1" y="0" dx="1.25" dy="0.4" layer="1"/>
+<smd name="GND" x="-1.1" y="-0.9" dx="1.25" dy="0.4" layer="1"/>
+<smd name="SCL" x="1.1" y="-0.9" dx="1.25" dy="0.4" layer="1"/>
+<smd name="INT" x="1.1" y="0" dx="1.25" dy="0.4" layer="1"/>
+<smd name="SDA" x="1.1" y="0.9" dx="1.25" dy="0.4" layer="1"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<text x="-2.6" y="2" size="0.8128" layer="21" font="vector" ratio="14">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -595,6 +608,18 @@
 <pin name="PA6" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="SCLK/SCL/PA7" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="PA5" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="TSL2561">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="SDA" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="ADDR" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="INT" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -880,6 +905,26 @@ Built-in current-limit and thermal-shutdown functions prevent IC from damage in 
 <connect gate="G$1" pin="RESET/PB3" pad="4"/>
 <connect gate="G$1" pin="SCLK/SCL/PA7" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TSL2561">
+<gates>
+<gate name="G$1" symbol="TSL2561" x="0" y="0"/>
+</gates>
+<devices>
+<device name="FN" package="DFN-6">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="ADDR"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INT" pad="INT"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VDD"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -873,12 +873,12 @@ Built-in current-limit and thermal-shutdown functions prevent IC from damage in 
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATTINY20-XU">
+<deviceset name="ATTINY20">
 <gates>
 <gate name="G$1" symbol="ATTINY20-XU" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TSSOP-14">
+<device name="-XU" package="TSSOP-14">
 <connects>
 <connect gate="G$1" pin="GND" pad="14"/>
 <connect gate="G$1" pin="MISO/PB2" pad="5"/>

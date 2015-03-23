@@ -424,6 +424,19 @@
 <text x="-1.7344" y="3.7448" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
 <text x="-2.182" y="-4.5132" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
 </package>
+<package name="LGA-8">
+<smd name="P2" x="0.8" y="0.325" dx="0.8" dy="0.35" layer="1" roundness="20"/>
+<smd name="P7" x="-0.8" y="0.325" dx="0.8" dy="0.35" layer="1" roundness="20"/>
+<smd name="P3" x="0.8" y="-0.325" dx="0.8" dy="0.35" layer="1" roundness="20"/>
+<smd name="P6" x="-0.8" y="-0.325" dx="0.8" dy="0.35" layer="1" roundness="20"/>
+<smd name="P8" x="-0.8" y="0.975" dx="0.8" dy="0.35" layer="1" roundness="20"/>
+<smd name="P1" x="0.8" y="0.975" dx="0.8" dy="0.35" layer="1" roundness="20"/>
+<smd name="P4" x="0.8" y="-0.975" dx="0.8" dy="0.35" layer="1" roundness="20"/>
+<smd name="P5" x="-0.8" y="-0.975" dx="0.8" dy="0.35" layer="1" roundness="20"/>
+<wire x1="-1" y1="-1.25" x2="1" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.25" x2="1" y2="1.25" width="0.127" layer="21"/>
+<circle x="1.325" y="1.4" radius="0.0559" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -706,6 +719,17 @@
 <pin name="PA1" x="15.24" y="33.02" visible="pin" length="short" rot="R180"/>
 <pin name="PA2" x="15.24" y="30.48" visible="pin" length="short" rot="R180"/>
 <pin name="PA3" x="15.24" y="27.94" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="BMP280">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="SDA" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="ADDR" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1056,6 +1080,33 @@ Built-in current-limit and thermal-shutdown functions prevent IC from damage in 
 <connect gate="G$1" pin="SCL/PC5" pad="28"/>
 <connect gate="G$1" pin="SDA/PC4" pad="27"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BMP280">
+<description>A 100nF capacitor is recommended between Vdd and GND,
+and also between Vddio and GND.
+
+Vdd &amp; Vddio 3.3v
+
+I2C Address:
+ADDR -&gt; Vddio = 0x77,
+ADDR -&gt; GND  = 0x76</description>
+<gates>
+<gate name="G$1" symbol="BMP280" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-8">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="P5"/>
+<connect gate="G$1" pin="GND" pad="P1 P7"/>
+<connect gate="G$1" pin="SCL" pad="P4"/>
+<connect gate="G$1" pin="SDA" pad="P3"/>
+<connect gate="G$1" pin="VCC" pad="P2 P6 P8"/>
 </connects>
 <technologies>
 <technology name=""/>

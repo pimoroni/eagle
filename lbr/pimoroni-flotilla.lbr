@@ -181,7 +181,7 @@
 <smd name="GND" x="-1.3" y="-2.65" dx="1.4" dy="0.35" layer="1" rot="R270"/>
 <smd name="SDA" x="0.65" y="-2.65" dx="1.4" dy="0.35" layer="1" rot="R270"/>
 <smd name="SCL" x="0" y="-2.65" dx="1.4" dy="0.35" layer="1" rot="R270"/>
-<smd name="#" x="-0.65" y="-2.65" dx="1.4" dy="0.35" layer="1" rot="R270"/>
+<smd name="MCLR" x="-0.65" y="-2.65" dx="1.4" dy="0.35" layer="1" rot="R270"/>
 <smd name="MT1" x="3.2512" y="-2.2352" dx="1.546" dy="1.9" layer="1" roundness="20" rot="R180"/>
 <smd name="MT2" x="-3.2258" y="-2.286" dx="1.546" dy="1.9" layer="1" roundness="20"/>
 <smd name="MT4" x="1.1938" y="0" dx="1.9" dy="1.9" layer="1" roundness="20" rot="R180"/>
@@ -240,10 +240,10 @@
 <symbol name="FLOTILLA-HEADER-DEVICE">
 <wire x1="5.842" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="6.096" y1="-12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-12.7" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="6.096" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <pin name="MOSI/SDA" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="VCC" x="7.62" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="7.62" y="-10.16" visible="pin" length="short" rot="R180"/>
@@ -251,6 +251,7 @@
 <pin name="RESET" x="7.62" y="-5.08" visible="pin" length="short" rot="R180"/>
 <pin name="MISO" x="7.62" y="-7.62" visible="pin" length="short" rot="R180"/>
 <text x="-10.16" y="6.096" size="1.27" layer="94">&gt;NAME</text>
+<pin name="MCLR" x="7.62" y="-12.7" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="FLOTILLA-HEADER-HOST">
 <wire x1="8.382" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
@@ -275,6 +276,7 @@
 <device name="-DEVICE" package="FLOTILLA-CONNECTOR-DEVICE">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND MT1 MT2 MT3 MT4 P$3 P$4"/>
+<connect gate="G$1" pin="MCLR" pad="MCLR"/>
 <connect gate="G$1" pin="MISO" pad="TMISO"/>
 <connect gate="G$1" pin="MOSI/SDA" pad="SDA"/>
 <connect gate="G$1" pin="RESET" pad="TRESET"/>

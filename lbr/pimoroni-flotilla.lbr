@@ -146,8 +146,6 @@
 <circle x="0" y="0" radius="3" width="0" layer="41"/>
 </package>
 <package name="FLOTILLA-CONNECTOR-DEVICE">
-<smd name="TMISO" x="-1.17" y="-0.015" dx="1.75" dy="1.75" layer="16" roundness="20" cream="no"/>
-<smd name="TRESET" x="1.2" y="0.01" dx="1.75" dy="1.75" layer="16" roundness="20" cream="no"/>
 <wire x1="-6.4666" y1="1.6632" x2="6.4374" y2="1.6632" width="0.127" layer="48" style="shortdash"/>
 <text x="3.9182" y="1.9154" size="0.4064" layer="48">PCB Edge</text>
 <wire x1="3.4" y1="2.15" x2="3" y2="2.15" width="0.127" layer="51"/>
@@ -240,16 +238,14 @@
 <symbol name="FLOTILLA-HEADER-DEVICE">
 <wire x1="5.842" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="6.096" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-15.24" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="MOSI/SDA" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="6.096" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="DAT/SDA" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="VCC" x="7.62" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="7.62" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="SCK/SCL" x="7.62" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="RESET" x="7.62" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="MISO" x="7.62" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="CLK/SCL" x="7.62" y="-2.54" visible="pin" length="short" rot="R180"/>
 <text x="-10.16" y="6.096" size="1.27" layer="94">&gt;NAME</text>
 <pin name="MCLR" x="7.62" y="-5.08" visible="pin" length="short" rot="R180"/>
 </symbol>
@@ -275,12 +271,10 @@
 <devices>
 <device name="-DEVICE" package="FLOTILLA-CONNECTOR-DEVICE">
 <connects>
+<connect gate="G$1" pin="CLK/SCL" pad="SCL"/>
+<connect gate="G$1" pin="DAT/SDA" pad="SDA"/>
 <connect gate="G$1" pin="GND" pad="GND MT1 MT2 MT3 MT4 P$3 P$4"/>
 <connect gate="G$1" pin="MCLR" pad="MCLR"/>
-<connect gate="G$1" pin="MISO" pad="TMISO"/>
-<connect gate="G$1" pin="MOSI/SDA" pad="SDA"/>
-<connect gate="G$1" pin="RESET" pad="TRESET"/>
-<connect gate="G$1" pin="SCK/SCL" pad="SCL"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>

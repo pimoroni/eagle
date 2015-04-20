@@ -1010,7 +1010,6 @@
 <pin name="RC4" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
 <pin name="RC5" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
 </symbol>
-<<<<<<< HEAD
 <symbol name="ATXMEGAXXA4U">
 <wire x1="-17.78" y1="-33.02" x2="-17.78" y2="30.48" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="30.48" x2="17.78" y2="30.48" width="0.254" layer="94"/>
@@ -1070,6 +1069,7 @@
 <pin name="VCC" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="ESD3" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
 <text x="-7.366" y="8.636" size="1.4224" layer="94">PRTR5V0U4D</text>
+</symbol>
 <symbol name="TCS3472">
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -1609,6 +1609,13 @@ ADDR -&gt; GND  = 0x76</description>
 <connect gate="G$1" pin="SCK/PC7" pad="17"/>
 <connect gate="G$1" pin="SS/PC4" pad="14"/>
 <connect gate="G$1" pin="VCC" pad="9 19 31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="TCS3472">
 <gates>
 <gate name="G$1" symbol="TCS3472" x="0" y="0"/>

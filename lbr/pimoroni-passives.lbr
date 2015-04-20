@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -92,6 +92,42 @@
 <wire x1="-0.5" y1="0" x2="-0.8" y2="0" width="0.127" layer="21"/>
 <wire x1="-0.8" y1="0" x2="-1.2" y2="-0.4" width="0.127" layer="21"/>
 </package>
+<package name="EXB-2HVXXXXX">
+<smd name="1" x="-1.8375" y="0.75" dx="0.425" dy="0.5" layer="1" rot="R180"/>
+<smd name="2" x="-1.25" y="0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="3" x="-0.75" y="0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="4" x="-0.25" y="0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="5" x="0.25" y="0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="6" x="0.75" y="0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="7" x="1.25" y="0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="8" x="1.8375" y="0.75" dx="0.425" dy="0.5" layer="1" rot="R180"/>
+<smd name="9" x="1.8375" y="-0.75" dx="0.425" dy="0.5" layer="1" rot="R180"/>
+<smd name="10" x="1.25" y="-0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="11" x="0.75" y="-0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="12" x="0.25" y="-0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="13" x="-0.25" y="-0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="14" x="-0.75" y="-0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="15" x="-1.25" y="-0.75" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="16" x="-1.8375" y="-0.75" dx="0.425" dy="0.5" layer="1" rot="R180"/>
+<wire x1="-1.9" y1="-0.3" x2="-1.9" y2="0.3" width="0.127" layer="21"/>
+<wire x1="1.9" y1="0.3" x2="1.9" y2="-0.3" width="0.127" layer="21"/>
+<text x="0" y="1.524" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.286" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
+</package>
+<package name="EXB-38VXXXXX">
+<smd name="1" x="-1.2" y="0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
+<smd name="2" x="-0.4" y="0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
+<smd name="3" x="0.4" y="0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
+<smd name="4" x="1.2" y="0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
+<smd name="5" x="1.2" y="-0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
+<smd name="6" x="0.4" y="-0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
+<smd name="7" x="-0.4" y="-0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
+<smd name="8" x="-1.2" y="-0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
+<wire x1="-1.55" y1="-0.275" x2="-1.55" y2="0.3" width="0.127" layer="21"/>
+<wire x1="1.55" y1="0.28" x2="1.55" y2="-0.27" width="0.127" layer="21"/>
+<text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.8" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="XTAL">
@@ -110,6 +146,14 @@
 <text x="0" y="4.318" size="1.778" layer="94" align="bottom-center">&gt;NAME</text>
 <pin name="GND" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
 </symbol>
+<symbol name="RESISTOR">
+<pin name="P$1" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="P$2" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
+<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0.762" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ABMM2-X.XXXMHZ-XX">
@@ -122,6 +166,68 @@
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EXB-2HVXXXXX">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="17.78" addlevel="always"/>
+<gate name="G$2" symbol="RESISTOR" x="0" y="12.7" addlevel="always"/>
+<gate name="G$3" symbol="RESISTOR" x="0" y="7.62" addlevel="always"/>
+<gate name="G$4" symbol="RESISTOR" x="0" y="2.54" addlevel="always"/>
+<gate name="G$5" symbol="RESISTOR" x="0" y="-2.54" addlevel="always"/>
+<gate name="G$6" symbol="RESISTOR" x="0" y="-7.62" addlevel="always"/>
+<gate name="G$7" symbol="RESISTOR" x="0" y="-12.7" addlevel="always"/>
+<gate name="G$8" symbol="RESISTOR" x="0" y="-17.78" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="EXB-2HVXXXXX">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="16"/>
+<connect gate="G$2" pin="P$1" pad="2"/>
+<connect gate="G$2" pin="P$2" pad="15"/>
+<connect gate="G$3" pin="P$1" pad="3"/>
+<connect gate="G$3" pin="P$2" pad="14"/>
+<connect gate="G$4" pin="P$1" pad="4"/>
+<connect gate="G$4" pin="P$2" pad="13"/>
+<connect gate="G$5" pin="P$1" pad="5"/>
+<connect gate="G$5" pin="P$2" pad="12"/>
+<connect gate="G$6" pin="P$1" pad="6"/>
+<connect gate="G$6" pin="P$2" pad="11"/>
+<connect gate="G$7" pin="P$1" pad="7"/>
+<connect gate="G$7" pin="P$2" pad="10"/>
+<connect gate="G$8" pin="P$1" pad="8"/>
+<connect gate="G$8" pin="P$2" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EXB-38VXXXXX">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="7.62" addlevel="always"/>
+<gate name="G$2" symbol="RESISTOR" x="0" y="2.54" addlevel="always"/>
+<gate name="G$3" symbol="RESISTOR" x="0" y="-2.54" addlevel="always"/>
+<gate name="G$4" symbol="RESISTOR" x="0" y="-7.62" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="EXB-38VXXXXX">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="8"/>
+<connect gate="G$2" pin="P$1" pad="2"/>
+<connect gate="G$2" pin="P$2" pad="7"/>
+<connect gate="G$3" pin="P$1" pad="3"/>
+<connect gate="G$3" pin="P$2" pad="6"/>
+<connect gate="G$4" pin="P$1" pad="4"/>
+<connect gate="G$4" pin="P$2" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>

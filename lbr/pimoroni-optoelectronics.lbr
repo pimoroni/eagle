@@ -498,6 +498,22 @@
 <wire x1="11" y1="-3.2" x2="11.6" y2="-3.2" width="0.254" layer="21"/>
 <wire x1="11.6" y1="-3.2" x2="11.3" y2="-3.5" width="0.254" layer="21"/>
 </package>
+<package name="LTST-C230XXXX">
+<smd name="A" x="-1.9" y="0" dx="1.6" dy="1.5" layer="16" rot="R180"/>
+<smd name="C" x="1.9" y="0" dx="1.6" dy="1.5" layer="16" rot="R180"/>
+<wire x1="-1.1" y1="0.6" x2="-1.1" y2="-0.6" width="0.127" layer="46"/>
+<wire x1="-1.1" y1="-0.6" x2="-0.6" y2="-1.1" width="0.127" layer="46" curve="90"/>
+<wire x1="-0.6" y1="-1.1" x2="0.6" y2="-1.1" width="0.127" layer="46"/>
+<wire x1="0.6" y1="-1.1" x2="1.1" y2="-0.6" width="0.127" layer="46" curve="90"/>
+<wire x1="1.1" y1="-0.6" x2="1.1" y2="0.6" width="0.127" layer="46"/>
+<wire x1="1.1" y1="0.6" x2="0.6" y2="1.1" width="0.127" layer="46" curve="90"/>
+<wire x1="0.6" y1="1.1" x2="-0.6" y2="1.1" width="0.127" layer="46"/>
+<wire x1="-0.6" y1="1.1" x2="-1.1" y2="0.6" width="0.127" layer="46" curve="90"/>
+<wire x1="-0.8" y1="0.8" x2="0.8" y2="0.8" width="0.05" layer="21"/>
+<wire x1="0.8" y1="0.8" x2="0.8" y2="-0.8" width="0.05" layer="21"/>
+<wire x1="0.8" y1="-0.8" x2="-0.8" y2="-0.8" width="0.05" layer="21"/>
+<wire x1="-0.8" y1="-0.8" x2="-0.8" y2="0.8" width="0.05" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED-RGB">
@@ -2032,6 +2048,26 @@
 <pin name="APOS-C" x="30.48" y="27.94" length="middle" rot="R270"/>
 <pin name="DIG1" x="-30.48" y="27.94" length="middle" rot="R270"/>
 </symbol>
+<symbol name="LED">
+<pin name="A" x="-2.54" y="0" visible="pad" length="short"/>
+<pin name="C" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
+<wire x1="0" y1="0" x2="0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="0.508" y1="0" x2="0.508" y2="1.016" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.016" x2="2.032" y2="0" width="0.254" layer="94"/>
+<wire x1="2.032" y1="0" x2="0.508" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-1.016" x2="0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="2.032" y1="0.762" x2="2.032" y2="0" width="0.254" layer="94"/>
+<wire x1="2.032" y1="0" x2="2.032" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="2.032" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.143" x2="1.27" y2="1.5875" width="0.1016" layer="94"/>
+<wire x1="1.27" y1="1.5875" x2="1.0795" y2="1.4605" width="0.1016" layer="94"/>
+<wire x1="1.0795" y1="1.4605" x2="1.27" y2="1.3335" width="0.1016" layer="94"/>
+<wire x1="1.27" y1="1.3335" x2="1.27" y2="1.5875" width="0.1016" layer="94"/>
+<wire x1="1.397" y1="0.889" x2="1.651" y2="1.3335" width="0.1016" layer="94"/>
+<wire x1="1.651" y1="1.3335" x2="1.4605" y2="1.2065" width="0.1016" layer="94"/>
+<wire x1="1.4605" y1="1.2065" x2="1.651" y2="1.0795" width="0.1016" layer="94"/>
+<wire x1="1.651" y1="1.0795" x2="1.651" y2="1.3335" width="0.1016" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TS-TSMD5050RGB">
@@ -2113,6 +2149,22 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connect gate="G$1" pin="E" pad="5"/>
 <connect gate="G$1" pin="F" pad="11"/>
 <connect gate="G$1" pin="G" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTST-C230XXXX">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTST-C230XXXX">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>

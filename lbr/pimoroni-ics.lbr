@@ -613,6 +613,71 @@
 <text x="0" y="5.08" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-5.715" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
 </package>
+<package name="FN-6-0.65MM">
+<smd name="PIN6" x="0.95" y="0.65" dx="1.4" dy="0.4" layer="1"/>
+<smd name="PIN5" x="0.95" y="0" dx="1.4" dy="0.4" layer="1"/>
+<smd name="PIN4" x="0.95" y="-0.65" dx="1.4" dy="0.4" layer="1"/>
+<smd name="PIN1" x="-0.95" y="0.65" dx="1.4" dy="0.4" layer="1"/>
+<smd name="PIN2" x="-0.95" y="0" dx="1.4" dy="0.4" layer="1"/>
+<smd name="PIN3" x="-0.95" y="-0.65" dx="1.4" dy="0.4" layer="1"/>
+<circle x="-2.25" y="1.5" radius="0.1" width="0.3" layer="21"/>
+</package>
+<package name="HTSSOP10">
+<circle x="-3.0622" y="1.5578" radius="0.1" width="0.3" layer="21"/>
+<smd name="1" x="-2.1" y="1" dx="1.2" dy="0.23" layer="1"/>
+<smd name="2" x="-2.1" y="0.5" dx="1.2" dy="0.23" layer="1"/>
+<smd name="3" x="-2.1" y="0" dx="1.2" dy="0.23" layer="1"/>
+<smd name="4" x="-2.1" y="-0.5" dx="1.2" dy="0.23" layer="1"/>
+<smd name="5" x="-2.1" y="-1" dx="1.2" dy="0.23" layer="1" rot="R180"/>
+<smd name="6" x="2.1" y="-1" dx="1.2" dy="0.23" layer="1" rot="R180"/>
+<smd name="7" x="2.1" y="-0.5" dx="1.2" dy="0.23" layer="1"/>
+<smd name="8" x="2.1" y="0" dx="1.2" dy="0.23" layer="1"/>
+<smd name="9" x="2.1" y="0.5" dx="1.2" dy="0.23" layer="1"/>
+<smd name="10" x="2.1" y="1" dx="1.2" dy="0.23" layer="1"/>
+<text x="-0.0328" y="1.8844" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="-0.0276" y="-1.8156" size="0.8128" layer="27" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
+<smd name="THERMAL5" x="0" y="0" dx="1.65" dy="2.4" layer="1" cream="no"/>
+<polygon width="0.002540625" layer="31">
+<vertex x="-0.05" y="1"/>
+<vertex x="-0.05" y="0.15" curve="-90"/>
+<vertex x="-0.15" y="0.05"/>
+<vertex x="-0.65" y="0.05" curve="-90"/>
+<vertex x="-0.75" y="0.15"/>
+<vertex x="-0.75" y="1" curve="-90"/>
+<vertex x="-0.65" y="1.1"/>
+<vertex x="-0.15" y="1.1" curve="-90"/>
+</polygon>
+<polygon width="0.002540625" layer="31">
+<vertex x="0.05" y="0.15"/>
+<vertex x="0.05" y="1" curve="-90"/>
+<vertex x="0.15" y="1.1"/>
+<vertex x="0.65" y="1.1" curve="-90"/>
+<vertex x="0.75" y="1"/>
+<vertex x="0.75" y="0.15" curve="-90"/>
+<vertex x="0.65" y="0.05"/>
+<vertex x="0.15" y="0.05" curve="-90"/>
+</polygon>
+<polygon width="0.002540625" layer="31">
+<vertex x="0.05" y="-1"/>
+<vertex x="0.05" y="-0.15" curve="-90"/>
+<vertex x="0.15" y="-0.05"/>
+<vertex x="0.65" y="-0.05" curve="-90"/>
+<vertex x="0.75" y="-0.15"/>
+<vertex x="0.75" y="-1" curve="-90"/>
+<vertex x="0.65" y="-1.1"/>
+<vertex x="0.15" y="-1.1" curve="-90"/>
+</polygon>
+<polygon width="0.002540625" layer="31">
+<vertex x="-0.05" y="-0.15"/>
+<vertex x="-0.05" y="-1" curve="-90"/>
+<vertex x="-0.15" y="-1.1"/>
+<vertex x="-0.65" y="-1.1" curve="-90"/>
+<vertex x="-0.75" y="-1"/>
+<vertex x="-0.75" y="-0.15" curve="-90"/>
+<vertex x="-0.65" y="-0.05"/>
+<vertex x="-0.15" y="-0.05" curve="-90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -945,6 +1010,7 @@
 <pin name="RC4" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
 <pin name="RC5" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
 </symbol>
+<<<<<<< HEAD
 <symbol name="ATXMEGAXXA4U">
 <wire x1="-17.78" y1="-33.02" x2="-17.78" y2="30.48" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="30.48" x2="17.78" y2="30.48" width="0.254" layer="94"/>
@@ -1004,6 +1070,46 @@
 <pin name="VCC" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="ESD3" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
 <text x="-7.366" y="8.636" size="1.4224" layer="94">PRTR5V0U4D</text>
+<symbol name="TCS3472">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="SDA" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="INT" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="TSL2581">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="SDA" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="ADDR" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="INT" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="DRV8830">
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="A0" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SDA" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="OUT2" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="A1" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="OUT1" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="NFAULT" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="VCC" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="GND" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="ISENSE" x="-15.24" y="5.08" visible="pin" length="short"/>
+<text x="-12.7" y="12.7" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1503,6 +1609,18 @@ ADDR -&gt; GND  = 0x76</description>
 <connect gate="G$1" pin="SCK/PC7" pad="17"/>
 <connect gate="G$1" pin="SS/PC4" pad="14"/>
 <connect gate="G$1" pin="VCC" pad="9 19 31"/>
+<deviceset name="TCS3472">
+<gates>
+<gate name="G$1" symbol="TCS3472" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FN-6-0.65MM">
+<connects>
+<connect gate="G$1" pin="GND" pad="PIN3"/>
+<connect gate="G$1" pin="INT" pad="PIN5"/>
+<connect gate="G$1" pin="SCL" pad="PIN2"/>
+<connect gate="G$1" pin="SDA" pad="PIN6"/>
+<connect gate="G$1" pin="VCC" pad="PIN1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1523,6 +1641,50 @@ ADDR -&gt; GND  = 0x76</description>
 <connect gate="PRTR5V0U4AD" pin="ESD4" pad="P$6"/>
 <connect gate="PRTR5V0U4AD" pin="GND" pad="P$2"/>
 <connect gate="PRTR5V0U4AD" pin="VCC" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TSL2581">
+<gates>
+<gate name="G$1" symbol="TSL2581" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FN-6-0.65MM">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="PIN2"/>
+<connect gate="G$1" pin="GND" pad="PIN3"/>
+<connect gate="G$1" pin="INT" pad="PIN5"/>
+<connect gate="G$1" pin="SCL" pad="PIN4"/>
+<connect gate="G$1" pin="SDA" pad="PIN6"/>
+<connect gate="G$1" pin="VCC" pad="PIN1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DRV8830">
+<gates>
+<gate name="G$1" symbol="DRV8830" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HTSSOP10">
+<connects>
+<connect gate="G$1" pin="A0" pad="7"/>
+<connect gate="G$1" pin="A1" pad="8"/>
+<connect gate="G$1" pin="GND" pad="5 THERMAL5"/>
+<connect gate="G$1" pin="ISENSE" pad="2"/>
+<connect gate="G$1" pin="NFAULT" pad="6"/>
+<connect gate="G$1" pin="OUT1" pad="3"/>
+<connect gate="G$1" pin="OUT2" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="10"/>
+<connect gate="G$1" pin="SDA" pad="9"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

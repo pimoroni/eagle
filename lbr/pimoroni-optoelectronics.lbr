@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -513,6 +513,38 @@
 <wire x1="0.8" y1="0.8" x2="0.8" y2="-0.8" width="0.05" layer="21"/>
 <wire x1="0.8" y1="-0.8" x2="-0.8" y2="-0.8" width="0.05" layer="21"/>
 <wire x1="-0.8" y1="-0.8" x2="-0.8" y2="0.8" width="0.05" layer="21"/>
+</package>
+<package name="GP2Y0A60SZ0F">
+<circle x="-6.93" y="0" radius="3.162275" width="0.2" layer="21"/>
+<circle x="7.07" y="0" radius="3.162275" width="0.2" layer="21"/>
+<smd name="P$1" x="-7.13" y="-4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$2" x="-3" y="-4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$3" x="-1.5" y="-4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$4" x="0" y="-4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$5" x="1.5" y="-4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$6" x="3" y="-4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$7" x="4.5" y="-4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$8" x="6" y="-4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$9" x="7.5" y="-4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$10" x="9" y="-4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$11" x="9" y="4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$12" x="7.5" y="4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$13" x="6" y="4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$14" x="4.5" y="4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$15" x="3" y="4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$16" x="1.5" y="4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$17" x="0" y="4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$18" x="-1.5" y="4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$19" x="-3" y="4.5" dx="0.4" dy="2" layer="1"/>
+<smd name="P$20" x="-7.13" y="4.5" dx="0.4" dy="2" layer="1"/>
+<wire x1="10" y1="4" x2="11" y2="4" width="0.2" layer="21"/>
+<wire x1="11" y1="4" x2="11" y2="-4" width="0.2" layer="21"/>
+<wire x1="11" y1="-4" x2="10" y2="-4" width="0.2" layer="21"/>
+<wire x1="-8" y1="4" x2="-11" y2="4" width="0.2" layer="21"/>
+<wire x1="-11" y1="-4" x2="-8" y2="-4" width="0.2" layer="21"/>
+<wire x1="-11" y1="4" x2="-11" y2="-4" width="0.2" layer="21"/>
+<wire x1="-6" y1="-4" x2="-4" y2="-4" width="0.2" layer="21"/>
+<wire x1="-4" y1="4" x2="-6" y2="4" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2068,6 +2100,27 @@
 <wire x1="1.4605" y1="1.2065" x2="1.651" y2="1.0795" width="0.1016" layer="94"/>
 <wire x1="1.651" y1="1.0795" x2="1.651" y2="1.3335" width="0.1016" layer="94"/>
 </symbol>
+<symbol name="GP2Y0A60SZXX">
+<wire x1="-10.16" y1="20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
+<pin name="CATHODE" x="12.7" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-12.7" y="-17.78" visible="pin" length="short"/>
+<pin name="ILEDFB" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="5VEN" x="-12.7" y="10.16" visible="pin" length="short"/>
+<pin name="AR" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="VCC" x="-12.7" y="17.78" visible="pin" length="short"/>
+<pin name="ENABLE" x="-12.7" y="12.7" visible="pin" length="short"/>
+<pin name="CHCAP1" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="REG" x="-12.7" y="-12.7" visible="pin" length="short"/>
+<pin name="CHCAP2" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="CINT" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="OUT" x="12.7" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="ILED" x="12.7" y="-17.78" visible="pin" length="short" rot="R180"/>
+<wire x1="1" y1="13.5" x2="2" y2="13.5" width="0.3" layer="95"/>
+<wire x1="-2" y1="9.5" x2="-1" y2="9.5" width="0.3" layer="95"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TS-TSMD5050RGB">
@@ -2165,6 +2218,33 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GP2Y0A60SZXX">
+<gates>
+<gate name="G$1" symbol="GP2Y0A60SZXX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GP2Y0A60SZ0F">
+<connects>
+<connect gate="G$1" pin="5VEN" pad="P$4"/>
+<connect gate="G$1" pin="AR" pad="P$5"/>
+<connect gate="G$1" pin="CATHODE" pad="P$1"/>
+<connect gate="G$1" pin="CHCAP1" pad="P$8"/>
+<connect gate="G$1" pin="CHCAP2" pad="P$13"/>
+<connect gate="G$1" pin="CINT" pad="P$15"/>
+<connect gate="G$1" pin="ENABLE" pad="P$7"/>
+<connect gate="G$1" pin="GND" pad="P$2 P$14 P$17 P$19"/>
+<connect gate="G$1" pin="ILED" pad="P$18"/>
+<connect gate="G$1" pin="ILEDFB" pad="P$3"/>
+<connect gate="G$1" pin="OUT" pad="P$16"/>
+<connect gate="G$1" pin="REG" pad="P$10 P$11"/>
+<connect gate="G$1" pin="VCC" pad="P$6 P$20"/>
 </connects>
 <technologies>
 <technology name=""/>

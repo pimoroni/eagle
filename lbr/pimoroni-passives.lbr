@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -128,6 +128,16 @@
 <text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.8" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
 </package>
+<package name="IFSC-1515AH-ER-XXX-XXX">
+<smd name="P$1" x="-1.4" y="0" dx="3.8" dy="1" layer="1" rot="R270"/>
+<smd name="P$2" x="1.4" y="0" dx="3.8" dy="1" layer="1" rot="R270"/>
+<wire x1="2.2" y1="1.8" x2="2.2" y2="2.2" width="0.127" layer="21"/>
+<wire x1="2.2" y1="2.2" x2="-2.2" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="2.2" x2="-2.2" y2="1.8" width="0.127" layer="21"/>
+<wire x1="2.2" y1="-1.8" x2="2.2" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="2.2" y1="-2.2" x2="-2.2" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-2.2" x2="-2.2" y2="-1.8" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="XTAL">
@@ -153,6 +163,23 @@
 <wire x1="2.54" y1="0.762" x2="2.54" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0.762" width="0.254" layer="94"/>
+</symbol>
+<symbol name="IFSC-1515AH-ER-XXX-XXX">
+<pin name="1" x="-8.89" y="0" visible="off" length="short"/>
+<pin name="2" x="8.89" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="6.35" y1="2.54" x2="-6.35" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="0" x2="-6.35" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-2.54" x2="6.35" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="6.35" y1="-2.54" x2="6.35" y2="0" width="0.254" layer="94"/>
+<text x="0" y="3.81" size="1.778" layer="94" align="bottom-center">&gt;NAME</text>
+<wire x1="6.35" y1="0" x2="6.35" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-5.08" y1="0" x2="-6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="6.35" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -228,6 +255,22 @@
 <connect gate="G$3" pin="P$2" pad="6"/>
 <connect gate="G$4" pin="P$1" pad="4"/>
 <connect gate="G$4" pin="P$2" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IFSC-1515AH-ER-XXX-XXX">
+<gates>
+<gate name="G$1" symbol="IFSC-1515AH-ER-XXX-XXX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IFSC-1515AH-ER-XXX-XXX">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

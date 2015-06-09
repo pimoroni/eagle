@@ -16514,17 +16514,17 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <wire x1="28.5" y1="14" x2="26.5" y2="14" width="0.127" layer="21"/>
 </package>
 <package name="APFA3010SEEZGQBDC">
-<smd name="4" x="-3.75" y="1.5" dx="0.8" dy="0.6" layer="1"/>
-<smd name="2" x="-2.75" y="1.85" dx="0.7" dy="0.5" layer="1" rot="R90"/>
-<smd name="1" x="-1.95" y="1.85" dx="0.7" dy="0.5" layer="1" rot="R90"/>
-<smd name="3" x="-0.95" y="1.5" dx="0.8" dy="0.6" layer="1" rot="R180"/>
-<wire x1="-4" y1="1.8" x2="-0.75" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-0.75" y1="1.8" x2="-0.75" y2="1.2" width="0.127" layer="21"/>
-<wire x1="-0.75" y1="1.2" x2="-1.4" y2="1.2" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="1.2" x2="-3.4" y2="1.2" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="1.2" x2="-4" y2="1.2" width="0.127" layer="21"/>
-<wire x1="-4" y1="1.2" x2="-4" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="1.2" x2="-3.4" y2="1.2" width="0.127" layer="21" curve="-180"/>
+<smd name="4" x="-1.35" y="0.4" dx="0.8" dy="0.6" layer="1"/>
+<smd name="2" x="-0.35" y="0.75" dx="0.7" dy="0.5" layer="1" rot="R90"/>
+<smd name="1" x="0.45" y="0.75" dx="0.7" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="1.45" y="0.4" dx="0.8" dy="0.6" layer="1" rot="R180"/>
+<wire x1="-1.6" y1="0.7" x2="1.65" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.65" y1="0.7" x2="1.65" y2="0.1" width="0.127" layer="21"/>
+<wire x1="1.65" y1="0.1" x2="1" y2="0.1" width="0.127" layer="21"/>
+<wire x1="1" y1="0.1" x2="-1" y2="0.1" width="0.127" layer="21"/>
+<wire x1="-1" y1="0.1" x2="-1.6" y2="0.1" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="0.1" x2="-1.6" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1" y1="0.1" x2="-1" y2="0.1" width="0.127" layer="21" curve="-180"/>
 </package>
 <package name="SKRHAXE010">
 <smd name="P$1" x="3.078425" y="2.931978125" dx="1.8" dy="2" layer="1" rot="R45"/>

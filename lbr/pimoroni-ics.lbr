@@ -694,6 +694,48 @@
 <smd name="PAD" x="0" y="0" dx="0.95" dy="1.7" layer="1"/>
 <text x="0" y="-2" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;NAME</text>
 </package>
+<package name="TQFP-32">
+<wire x1="-3.3" y1="2.7" x2="-2.7" y2="3.3" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="3.3" x2="3.3" y2="3.3" width="0.2032" layer="21"/>
+<wire x1="3.3" y1="3.3" x2="3.3" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="3.3" y1="-3.3" x2="-3.3" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-3.3" x2="-3.3" y2="2.7" width="0.2032" layer="21"/>
+<circle x="-3.8" y="3.9" radius="0.1" width="0.3" layer="21"/>
+<smd name="1" x="-4.5" y="2.8" dx="1.6" dy="0.3" layer="1"/>
+<smd name="2" x="-4.5" y="2" dx="1.6" dy="0.3" layer="1"/>
+<smd name="3" x="-4.5" y="1.2" dx="1.6" dy="0.3" layer="1"/>
+<smd name="4" x="-4.5" y="0.4" dx="1.6" dy="0.3" layer="1"/>
+<smd name="5" x="-4.5" y="-0.4" dx="1.6" dy="0.3" layer="1"/>
+<smd name="6" x="-4.5" y="-1.2" dx="1.6" dy="0.3" layer="1"/>
+<smd name="7" x="-4.5" y="-2" dx="1.6" dy="0.3" layer="1"/>
+<smd name="8" x="-4.5" y="-2.8" dx="1.6" dy="0.3" layer="1"/>
+<smd name="9" x="-2.8" y="-4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="10" x="-2" y="-4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="11" x="-1.2" y="-4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="12" x="-0.4" y="-4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="13" x="0.4" y="-4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="14" x="1.2" y="-4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="15" x="2" y="-4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="16" x="2.8" y="-4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="17" x="4.5" y="-2.8" dx="1.6" dy="0.3" layer="1"/>
+<smd name="18" x="4.5" y="-2" dx="1.6" dy="0.3" layer="1"/>
+<smd name="19" x="4.5" y="-1.2" dx="1.6" dy="0.3" layer="1"/>
+<smd name="20" x="4.5" y="-0.4" dx="1.6" dy="0.3" layer="1"/>
+<smd name="21" x="4.5" y="0.4" dx="1.6" dy="0.3" layer="1"/>
+<smd name="22" x="4.5" y="1.2" dx="1.6" dy="0.3" layer="1"/>
+<smd name="23" x="4.5" y="2" dx="1.6" dy="0.3" layer="1"/>
+<smd name="24" x="4.5" y="2.8" dx="1.6" dy="0.3" layer="1"/>
+<smd name="25" x="2.8" y="4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="26" x="2" y="4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="27" x="1.2" y="4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="28" x="0.4" y="4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="29" x="-0.4" y="4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="30" x="-1.2" y="4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="31" x="-2" y="4.5" dx="0.3" dy="1.6" layer="1"/>
+<smd name="32" x="-2.8" y="4.5" dx="0.3" dy="1.6" layer="1"/>
+<text x="0" y="6" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-7" size="0.8128" layer="27" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -1138,6 +1180,43 @@
 <pin name="FLAG" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
 <pin name="ILIM" x="-12.7" y="2.54" visible="pin" length="short"/>
 <pin name="EN" x="-12.7" y="0" visible="pin" length="short"/>
+</symbol>
+<symbol name="ATMEGA328P">
+<pin name="VCC" x="-17.78" y="38.1" visible="pin" length="short"/>
+<pin name="AVCC" x="-17.78" y="35.56" visible="pin" length="short"/>
+<pin name="AREF" x="-17.78" y="27.94" visible="pin" length="short"/>
+<pin name="PD4" x="27.94" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PD5" x="27.94" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PD6" x="27.94" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PD7" x="27.94" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="ADC6" x="27.94" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="ADC7" x="27.94" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-17.78" y="-7.62" visible="pin" length="short"/>
+<pin name="PD3" x="27.94" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PD2" x="27.94" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="TXD/PD1" x="27.94" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="RXD/PD0" x="27.94" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="!RESET!/PC6" x="27.94" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="SCL/ADC5/PC5" x="27.94" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="SDA/ADC4/PC4" x="27.94" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="ADC3/PC3" x="27.94" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="ADC2/PC2" x="27.94" y="33.02" visible="pin" length="short" rot="R180"/>
+<pin name="ADC1/PC1" x="27.94" y="35.56" visible="pin" length="short" rot="R180"/>
+<pin name="ADC0/PC0" x="27.94" y="38.1" visible="pin" length="short" rot="R180"/>
+<pin name="PB7/XTAL2" x="-17.78" y="2.54" visible="pin" length="short"/>
+<pin name="PB6/XTAL1" x="-17.78" y="5.08" visible="pin" length="short"/>
+<pin name="PB5/SCK" x="-17.78" y="7.62" visible="pin" length="short"/>
+<pin name="PB4/MISO" x="-17.78" y="10.16" visible="pin" length="short"/>
+<pin name="PB3/MOSI/OC2A" x="-17.78" y="12.7" visible="pin" length="short"/>
+<pin name="PB2/!SS!/OC1B" x="-17.78" y="15.24" visible="pin" length="short"/>
+<pin name="PB1/OC1A" x="-17.78" y="17.78" visible="pin" length="short"/>
+<pin name="PB0" x="-17.78" y="20.32" visible="pin" length="short"/>
+<wire x1="-15.24" y1="40.64" x2="25.4" y2="40.64" width="0.254" layer="94"/>
+<wire x1="25.4" y1="40.64" x2="25.4" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-10.16" x2="-15.24" y2="40.64" width="0.254" layer="94"/>
+<text x="-15.24" y="43.18" size="1.27" layer="94">&gt;NAME</text>
+<text x="-15.24" y="-15.24" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1740,6 +1819,49 @@ ADDR -&gt; GND  = 0x76</description>
 <connect gate="G$1" pin="ILIM" pad="2"/>
 <connect gate="G$1" pin="VIN" pad="6"/>
 <connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATMEGA328P">
+<gates>
+<gate name="G" symbol="ATMEGA328P" x="-5.08" y="-15.24"/>
+</gates>
+<devices>
+<device name="" package="TQFP-32">
+<connects>
+<connect gate="G" pin="!RESET!/PC6" pad="29"/>
+<connect gate="G" pin="ADC0/PC0" pad="23"/>
+<connect gate="G" pin="ADC1/PC1" pad="24"/>
+<connect gate="G" pin="ADC2/PC2" pad="25"/>
+<connect gate="G" pin="ADC3/PC3" pad="26"/>
+<connect gate="G" pin="ADC6" pad="19"/>
+<connect gate="G" pin="ADC7" pad="22"/>
+<connect gate="G" pin="AREF" pad="20"/>
+<connect gate="G" pin="AVCC" pad="18"/>
+<connect gate="G" pin="GND" pad="3 5 21"/>
+<connect gate="G" pin="PB0" pad="12"/>
+<connect gate="G" pin="PB1/OC1A" pad="13"/>
+<connect gate="G" pin="PB2/!SS!/OC1B" pad="14"/>
+<connect gate="G" pin="PB3/MOSI/OC2A" pad="15"/>
+<connect gate="G" pin="PB4/MISO" pad="16"/>
+<connect gate="G" pin="PB5/SCK" pad="17"/>
+<connect gate="G" pin="PB6/XTAL1" pad="7"/>
+<connect gate="G" pin="PB7/XTAL2" pad="8"/>
+<connect gate="G" pin="PD2" pad="32"/>
+<connect gate="G" pin="PD3" pad="1"/>
+<connect gate="G" pin="PD4" pad="2"/>
+<connect gate="G" pin="PD5" pad="9"/>
+<connect gate="G" pin="PD6" pad="10"/>
+<connect gate="G" pin="PD7" pad="11"/>
+<connect gate="G" pin="RXD/PD0" pad="30"/>
+<connect gate="G" pin="SCL/ADC5/PC5" pad="28"/>
+<connect gate="G" pin="SDA/ADC4/PC4" pad="27"/>
+<connect gate="G" pin="TXD/PD1" pad="31"/>
+<connect gate="G" pin="VCC" pad="4 6"/>
 </connects>
 <technologies>
 <technology name=""/>

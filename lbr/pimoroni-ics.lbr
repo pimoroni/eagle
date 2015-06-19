@@ -1224,9 +1224,9 @@
 <pin name="VIN" x="-12.7" y="5.08" visible="pin" length="short"/>
 <pin name="GND" x="-12.7" y="-5.08" visible="pin" length="short"/>
 <pin name="VOUT" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="FLAG" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="!FLAG" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
 <pin name="ILIM" x="-12.7" y="2.54" visible="pin" length="short"/>
-<pin name="EN" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="!EN" x="-12.7" y="0" visible="pin" length="short"/>
 </symbol>
 <symbol name="ATMEGA328P">
 <pin name="VCC" x="-17.78" y="38.1" visible="pin" length="short"/>
@@ -1333,6 +1333,27 @@
 <pin name="VDD" x="-15.24" y="20.32" visible="pin" length="short"/>
 <text x="-12.7" y="25.4" size="1.778" layer="94">&gt;NAME</text>
 <text x="-12.7" y="-27.94" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="CAP1208">
+<pin name="VCC" x="-12.7" y="7.62" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="SDA" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="SCL" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="!ALERT" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="CS1" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="CS2" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="CS3" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="CS4" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="CS5" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="CS6" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="CS7" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="CS8" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="12.7" size="1.778" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1929,8 +1950,8 @@ ADDR -&gt; GND  = 0x76</description>
 <devices>
 <device name="LMUAJAATBG" package="UDFN-6">
 <connects>
-<connect gate="G$1" pin="EN" pad="4"/>
-<connect gate="G$1" pin="FLAG" pad="3"/>
+<connect gate="G$1" pin="!EN" pad="4"/>
+<connect gate="G$1" pin="!FLAG" pad="3"/>
 <connect gate="G$1" pin="GND" pad="5 PAD"/>
 <connect gate="G$1" pin="ILIM" pad="2"/>
 <connect gate="G$1" pin="VIN" pad="6"/>
@@ -1944,40 +1965,40 @@ ADDR -&gt; GND  = 0x76</description>
 </deviceset>
 <deviceset name="ATMEGA328P">
 <gates>
-<gate name="G" symbol="ATMEGA328P" x="-5.08" y="-15.24"/>
+<gate name="$G1" symbol="ATMEGA328P" x="-5.08" y="-15.24"/>
 </gates>
 <devices>
 <device name="" package="TQFP-32">
 <connects>
-<connect gate="G" pin="!RESET!/PC6" pad="29"/>
-<connect gate="G" pin="ADC0/PC0" pad="23"/>
-<connect gate="G" pin="ADC1/PC1" pad="24"/>
-<connect gate="G" pin="ADC2/PC2" pad="25"/>
-<connect gate="G" pin="ADC3/PC3" pad="26"/>
-<connect gate="G" pin="ADC6" pad="19"/>
-<connect gate="G" pin="ADC7" pad="22"/>
-<connect gate="G" pin="AREF" pad="20"/>
-<connect gate="G" pin="AVCC" pad="18"/>
-<connect gate="G" pin="GND" pad="3 5 21"/>
-<connect gate="G" pin="PB0" pad="12"/>
-<connect gate="G" pin="PB1/OC1A" pad="13"/>
-<connect gate="G" pin="PB2/!SS!/OC1B" pad="14"/>
-<connect gate="G" pin="PB3/MOSI/OC2A" pad="15"/>
-<connect gate="G" pin="PB4/MISO" pad="16"/>
-<connect gate="G" pin="PB5/SCK" pad="17"/>
-<connect gate="G" pin="PB6/XTAL1" pad="7"/>
-<connect gate="G" pin="PB7/XTAL2" pad="8"/>
-<connect gate="G" pin="PD2" pad="32"/>
-<connect gate="G" pin="PD3" pad="1"/>
-<connect gate="G" pin="PD4" pad="2"/>
-<connect gate="G" pin="PD5" pad="9"/>
-<connect gate="G" pin="PD6" pad="10"/>
-<connect gate="G" pin="PD7" pad="11"/>
-<connect gate="G" pin="RXD/PD0" pad="30"/>
-<connect gate="G" pin="SCL/ADC5/PC5" pad="28"/>
-<connect gate="G" pin="SDA/ADC4/PC4" pad="27"/>
-<connect gate="G" pin="TXD/PD1" pad="31"/>
-<connect gate="G" pin="VCC" pad="4 6"/>
+<connect gate="$G1" pin="!RESET!/PC6" pad="29"/>
+<connect gate="$G1" pin="ADC0/PC0" pad="23"/>
+<connect gate="$G1" pin="ADC1/PC1" pad="24"/>
+<connect gate="$G1" pin="ADC2/PC2" pad="25"/>
+<connect gate="$G1" pin="ADC3/PC3" pad="26"/>
+<connect gate="$G1" pin="ADC6" pad="19"/>
+<connect gate="$G1" pin="ADC7" pad="22"/>
+<connect gate="$G1" pin="AREF" pad="20"/>
+<connect gate="$G1" pin="AVCC" pad="18"/>
+<connect gate="$G1" pin="GND" pad="3 5 21"/>
+<connect gate="$G1" pin="PB0" pad="12"/>
+<connect gate="$G1" pin="PB1/OC1A" pad="13"/>
+<connect gate="$G1" pin="PB2/!SS!/OC1B" pad="14"/>
+<connect gate="$G1" pin="PB3/MOSI/OC2A" pad="15"/>
+<connect gate="$G1" pin="PB4/MISO" pad="16"/>
+<connect gate="$G1" pin="PB5/SCK" pad="17"/>
+<connect gate="$G1" pin="PB6/XTAL1" pad="7"/>
+<connect gate="$G1" pin="PB7/XTAL2" pad="8"/>
+<connect gate="$G1" pin="PD2" pad="32"/>
+<connect gate="$G1" pin="PD3" pad="1"/>
+<connect gate="$G1" pin="PD4" pad="2"/>
+<connect gate="$G1" pin="PD5" pad="9"/>
+<connect gate="$G1" pin="PD6" pad="10"/>
+<connect gate="$G1" pin="PD7" pad="11"/>
+<connect gate="$G1" pin="RXD/PD0" pad="30"/>
+<connect gate="$G1" pin="SCL/ADC5/PC5" pad="28"/>
+<connect gate="$G1" pin="SDA/ADC4/PC4" pad="27"/>
+<connect gate="$G1" pin="TXD/PD1" pad="31"/>
+<connect gate="$G1" pin="VCC" pad="4 6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2065,6 +2086,33 @@ ADDR -&gt; GND  = 0x76</description>
 <connect gate="G$1" pin="SCL/SCK" pad="4"/>
 <connect gate="G$1" pin="SDA/MISO" pad="3"/>
 <connect gate="G$1" pin="VDD" pad="23"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAP1208">
+<gates>
+<gate name="G$1" symbol="CAP1208" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-16">
+<connects>
+<connect gate="G$1" pin="!ALERT" pad="1"/>
+<connect gate="G$1" pin="CS1" pad="16"/>
+<connect gate="G$1" pin="CS2" pad="15"/>
+<connect gate="G$1" pin="CS3" pad="14"/>
+<connect gate="G$1" pin="CS4" pad="13"/>
+<connect gate="G$1" pin="CS5" pad="12"/>
+<connect gate="G$1" pin="CS6" pad="11"/>
+<connect gate="G$1" pin="CS7" pad="10"/>
+<connect gate="G$1" pin="CS8" pad="9"/>
+<connect gate="G$1" pin="GND" pad="7 8 GND"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

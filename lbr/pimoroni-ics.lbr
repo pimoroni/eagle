@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -1300,6 +1301,39 @@
 <text x="-15.24" y="10.16" size="1.778" layer="94">&gt;NAME</text>
 <text x="-15.24" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="CAP1188">
+<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<pin name="ADDR" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="ALERT" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="CS" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="CS1" x="15.24" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="CS2" x="15.24" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="CS3" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="CS4" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="CS5" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="CS6" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="CS7" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="CS8" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-15.24" y="-15.24" visible="pin" length="short"/>
+<pin name="LED1" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="LED2" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="LED3" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="LED4" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="LED5" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="LED6" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="LED7" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="LED8" x="15.24" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="MOSI" x="-15.24" y="10.16" visible="pin" length="short"/>
+<pin name="RESET" x="-15.24" y="-10.16" visible="pin" length="short"/>
+<pin name="SCL/SCK" x="-15.24" y="15.24" visible="pin" length="short"/>
+<pin name="SDA/MISO" x="-15.24" y="12.7" visible="pin" length="short"/>
+<pin name="VDD" x="-15.24" y="20.32" visible="pin" length="short"/>
+<text x="-12.7" y="25.4" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-27.94" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F405XXX">
@@ -1992,6 +2026,45 @@ ADDR -&gt; GND  = 0x76</description>
 <connect gate="G$1" pin="IN" pad="2"/>
 <connect gate="G$1" pin="OUT" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAP1188">
+<gates>
+<gate name="G$1" symbol="CAP1188" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-24">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="14"/>
+<connect gate="G$1" pin="ALERT" pad="13"/>
+<connect gate="G$1" pin="CS" pad="1"/>
+<connect gate="G$1" pin="CS1" pad="22"/>
+<connect gate="G$1" pin="CS2" pad="21"/>
+<connect gate="G$1" pin="CS3" pad="20"/>
+<connect gate="G$1" pin="CS4" pad="19"/>
+<connect gate="G$1" pin="CS5" pad="18"/>
+<connect gate="G$1" pin="CS6" pad="17"/>
+<connect gate="G$1" pin="CS7" pad="16"/>
+<connect gate="G$1" pin="CS8" pad="15"/>
+<connect gate="G$1" pin="GND" pad="PAD"/>
+<connect gate="G$1" pin="LED1" pad="5"/>
+<connect gate="G$1" pin="LED2" pad="6"/>
+<connect gate="G$1" pin="LED3" pad="7"/>
+<connect gate="G$1" pin="LED4" pad="8"/>
+<connect gate="G$1" pin="LED5" pad="9"/>
+<connect gate="G$1" pin="LED6" pad="10"/>
+<connect gate="G$1" pin="LED7" pad="11"/>
+<connect gate="G$1" pin="LED8" pad="12"/>
+<connect gate="G$1" pin="MOSI" pad="2"/>
+<connect gate="G$1" pin="RESET" pad="24"/>
+<connect gate="G$1" pin="SCL/SCK" pad="4"/>
+<connect gate="G$1" pin="SDA/MISO" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="23"/>
 </connects>
 <technologies>
 <technology name=""/>

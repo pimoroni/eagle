@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -224,7 +224,6 @@
 <wire x1="-23" y1="-17" x2="-21" y2="-17" width="0.3048" layer="21"/>
 <wire x1="20" y1="-17" x2="22" y2="-17" width="0.3048" layer="21"/>
 <wire x1="22" y1="-17" x2="22" y2="-15" width="0.3048" layer="21"/>
-<text x="0" y="16" size="0.8128" layer="21" ratio="14" align="top-center">remove plastic backing and place 170pt breadboard here!</text>
 <wire x1="-20" y1="17" x2="-19" y2="17" width="0.3048" layer="21"/>
 <wire x1="-23" y1="14" x2="-23" y2="13" width="0.3048" layer="21"/>
 <wire x1="-23" y1="-14" x2="-23" y2="-13" width="0.3048" layer="21"/>

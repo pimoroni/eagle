@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -609,6 +609,21 @@
 <wire x1="1.4" y1="0.65" x2="1.5" y2="0.65" width="0.1" layer="21"/>
 <wire x1="1.4" y1="-0.65" x2="1.5" y2="-0.65" width="0.1" layer="21"/>
 <wire x1="-1.3" y1="0.4" x2="-0.7" y2="1" width="0.1" layer="21"/>
+</package>
+<package name="LTST_C230XXXX_NOHOLE">
+<smd name="A" x="-1.8" y="0" dx="1.6" dy="1.5" layer="16" rot="R180"/>
+<smd name="C" x="1.8" y="0" dx="1.6" dy="1.5" layer="16" rot="R180"/>
+<circle x="0" y="0" radius="0.8" width="0" layer="30"/>
+<circle x="0" y="0" radius="0.8" width="0" layer="29"/>
+<circle x="0" y="0" radius="0.8" width="0" layer="41"/>
+<circle x="0" y="0" radius="0.8" width="0" layer="42"/>
+</package>
+<package name="LS-T776-XXXX">
+<rectangle x1="1.8" y1="-2" x2="5.8" y2="2" layer="1"/>
+<rectangle x1="-5.8" y1="-2" x2="-1.8" y2="2" layer="1"/>
+<circle x="0" y="0" radius="1.4" width="0" layer="29"/>
+<smd name="P$2" x="2.4" y="0" dx="2.6" dy="1.2" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$3" x="-2.4" y="0" dx="2.6" dy="1.2" layer="1" rot="R90" thermals="no" cream="no"/>
 </package>
 </packages>
 <symbols>
@@ -2287,6 +2302,15 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <technology name=""/>
 </technologies>
 </device>
+<device name="NOHOLE" package="LTST_C230XXXX_NOHOLE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="GP2Y0A60SZ">
@@ -2345,6 +2369,22 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connects>
 <connect gate="G$1" pin="A" pad="ANODE"/>
 <connect gate="G$1" pin="C" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LS-T776-XXXX">
+<gates>
+<gate name="G$1" symbol="LED" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="LS-T776-XXXX">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -233,6 +233,45 @@
 <wire x1="22" y1="14" x2="22" y2="13" width="0.3048" layer="21"/>
 <wire x1="19" y1="17" x2="18" y2="17" width="0.3048" layer="21"/>
 </package>
+<package name="BAT-HLD-001-THM">
+<pad name="+VE_R_1" x="10.4" y="1.6" drill="1"/>
+<pad name="+VE_R_2" x="10.4" y="-1.6" drill="1"/>
+<pad name="+VE_L_1" x="-10.4" y="1.6" drill="1"/>
+<pad name="+VE_L_2" x="-10.4" y="-1.6" drill="1"/>
+<wire x1="-11" y1="-5" x2="-11" y2="4" width="0.127" layer="21"/>
+<wire x1="-11" y1="4" x2="-9" y2="6" width="0.127" layer="21"/>
+<wire x1="9" y1="6" x2="11" y2="4" width="0.127" layer="21"/>
+<wire x1="11" y1="4" x2="11" y2="-5" width="0.127" layer="21"/>
+<wire x1="11" y1="-5" x2="8.654928125" y2="-7.345071875" width="0.127" layer="21"/>
+<wire x1="8.654928125" y1="-7.345071875" x2="7.073790625" y2="-8" width="0.127" layer="21" curve="-45"/>
+<wire x1="7.073790625" y1="-8" x2="6" y2="-8" width="0.127" layer="21"/>
+<wire x1="6" y1="-8" x2="1.171571875" y2="-6" width="0.127" layer="21" curve="45"/>
+<wire x1="1.171571875" y1="-6" x2="-1.171571875" y2="-6" width="0.127" layer="21"/>
+<wire x1="-1.171571875" y1="-6" x2="-6" y2="-8" width="0.127" layer="21" curve="45"/>
+<wire x1="-6" y1="-8" x2="-6.828428125" y2="-8" width="0.127" layer="21"/>
+<wire x1="-6.828428125" y1="-8" x2="-8.828425" y2="-7.171575" width="0.127" layer="21" curve="-44.999955"/>
+<wire x1="-8.828425" y1="-7.171575" x2="-11" y2="-5" width="0.127" layer="21"/>
+<wire x1="-9" y1="6" x2="9" y2="6" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="9.5" width="0" layer="29"/>
+<wire x1="4.5" y1="-3.5" x2="4.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-0.7" x2="4.5" y2="2.0857875" width="0.127" layer="21"/>
+<wire x1="4.5" y1="2.0857875" x2="5.9142125" y2="3.5" width="0.127" layer="21" curve="-90"/>
+<wire x1="5.9142125" y1="3.5" x2="6.0857875" y2="3.5" width="0.127" layer="21"/>
+<wire x1="6.0857875" y1="3.5" x2="7.5" y2="2.0857875" width="0.127" layer="21" curve="-90"/>
+<wire x1="7.5" y1="2.0857875" x2="7.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-0.7" x2="7.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-3.5" x2="-7.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-0.7" x2="-7.5" y2="2.0857875" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="2.0857875" x2="-6.0857875" y2="3.5" width="0.127" layer="21" curve="-90"/>
+<wire x1="-6.0857875" y1="3.5" x2="-5.9142125" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-5.9142125" y1="3.5" x2="-4.5" y2="2.0857875" width="0.127" layer="21" curve="-90"/>
+<wire x1="-4.5" y1="2.0857875" x2="-4.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-0.7" x2="-4.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-0.7" x2="-4.5" y2="-0.7" width="0.127" layer="21" curve="-300.977003"/>
+<wire x1="4.5" y1="-0.7" x2="7.5" y2="-0.7" width="0.127" layer="21" curve="-300.977003"/>
+<circle x="0" y="0" radius="9.5" width="0" layer="41"/>
+<smd name="GND" x="0" y="0" dx="17.8" dy="17.8" layer="1" roundness="100"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-SPST">
@@ -261,6 +300,12 @@
 <pin name="3" x="10.16" y="2.54" visible="off" length="short" rot="R180"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 <pin name="CHASSIS" x="10.16" y="-5.08" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="BAT-HLD-001-THM">
+<rectangle x1="-2.54" y1="1.651" x2="2.54" y2="2.286" layer="94"/>
+<rectangle x1="-1.27" y1="0.381" x2="1.27" y2="1.016" layer="94"/>
+<pin name="+VE" x="0" y="7.62" length="middle" rot="R270"/>
+<pin name="-VE" x="0" y="-5.08" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -291,6 +336,22 @@
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="CHASSIS" pad="CHASSIS_1 CHASSIS_2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BAT-HLD-001-THM">
+<gates>
+<gate name="G$1" symbol="BAT-HLD-001-THM" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="BAT-HLD-001-THM">
+<connects>
+<connect gate="G$1" pin="+VE" pad="+VE_L_1 +VE_L_2 +VE_R_1 +VE_R_2"/>
+<connect gate="G$1" pin="-VE" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>

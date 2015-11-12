@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -829,6 +829,74 @@
 <smd name="12" x="2.9178" y="-3.25" dx="0.3" dy="1.4" layer="1" rot="R270"/>
 <smd name="11" x="2.9178" y="-3.9" dx="0.3" dy="1.4" layer="1" rot="R270"/>
 </package>
+<package name="VSON-10">
+<smd name="10" x="-1" y="1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
+<smd name="9" x="-0.5" y="1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
+<smd name="8" x="0" y="1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
+<smd name="7" x="0.5" y="1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
+<smd name="6" x="1" y="1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
+<smd name="5" x="1" y="-1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
+<smd name="4" x="0.5" y="-1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
+<smd name="3" x="0" y="-1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
+<smd name="2" x="-0.5" y="-1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
+<smd name="1" x="-1" y="-1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
+<polygon width="0.01" layer="1">
+<vertex x="-2.1" y="0.45"/>
+<vertex x="-1.4" y="0.45"/>
+<vertex x="-1.4" y="0.8"/>
+<vertex x="1.4" y="0.8"/>
+<vertex x="1.4" y="0.5"/>
+<vertex x="2.1" y="0.5"/>
+<vertex x="2.1" y="0.2"/>
+<vertex x="1.4" y="0.2"/>
+<vertex x="1.4" y="-0.2"/>
+<vertex x="2.1" y="-0.2"/>
+<vertex x="2.1" y="-0.5"/>
+<vertex x="1.4" y="-0.5"/>
+<vertex x="1.4" y="-0.8"/>
+<vertex x="-1.4" y="-0.8"/>
+<vertex x="-1.4" y="-0.45"/>
+<vertex x="-2.1" y="-0.45"/>
+<vertex x="-2.1" y="-0.15"/>
+<vertex x="-1.4" y="-0.15"/>
+<vertex x="-1.4" y="0.15"/>
+<vertex x="-2.1" y="0.15"/>
+</polygon>
+<pad name="GND5" x="0.9" y="-0.4" drill="0.3" diameter="0.4064"/>
+<pad name="GND2" x="-0.9" y="-0.4" drill="0.3" diameter="0.4064"/>
+<pad name="GND1" x="-0.9" y="0.4" drill="0.3" diameter="0.4064"/>
+<pad name="GND4" x="0.9" y="0.4" drill="0.3" diameter="0.4064"/>
+<pad name="GND3" x="0" y="0" drill="0.3" diameter="0.4064"/>
+<circle x="-1.8" y="-1.8" radius="0.09" width="0.18" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+</package>
+<package name="PVQFN-16">
+<smd name="PAD" x="0" y="0" dx="2.7" dy="2.7" layer="1" roundness="10" cream="no"/>
+<rectangle x1="0.1" y1="0.1" x2="1.2" y2="1.2" layer="31"/>
+<rectangle x1="-1.2" y1="0.1" x2="-0.1" y2="1.2" layer="31"/>
+<rectangle x1="-1.2" y1="-1.2" x2="-0.1" y2="-0.1" layer="31"/>
+<rectangle x1="0.1" y1="-1.2" x2="1.2" y2="-0.1" layer="31"/>
+<smd name="13" x="-2" y="0.975" dx="0.85" dy="0.35" layer="1" roundness="25"/>
+<smd name="14" x="-2" y="0.325" dx="0.85" dy="0.35" layer="1" roundness="25"/>
+<smd name="15" x="-2" y="-0.325" dx="0.85" dy="0.35" layer="1" roundness="25"/>
+<smd name="16" x="-2" y="-0.975" dx="0.85" dy="0.35" layer="1" roundness="25"/>
+<smd name="1" x="-0.975" y="-2" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="2" x="-0.325" y="-2" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="3" x="0.325" y="-2" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="4" x="0.975" y="-2" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="5" x="2" y="-0.975" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="6" x="2" y="-0.325" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="7" x="2" y="0.325" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="8" x="2" y="0.975" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="12" x="-0.975" y="2" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="11" x="-0.325" y="2" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="10" x="0.325" y="2" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="9" x="0.975" y="2" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<circle x="-1.905" y="-1.905" radius="0.127" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -1445,6 +1513,40 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="DGND" x="-12.7" y="-15.24" visible="pin" length="short"/>
 <pin name="DVDD" x="-12.7" y="15.24" visible="pin" length="short"/>
 <text x="-10.16" y="20.32" size="1.27" layer="94">PCM5102A</text>
+</symbol>
+<symbol name="TPS6120X">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="7.62" visible="pin" length="short"/>
+<pin name="EN" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="PS" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="UVLO" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-7.62" visible="pin" length="short"/>
+<pin name="PGND" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="L" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="VAUX" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="FB" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VOUT" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="12.7" size="1.778" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="TPS6103X">
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="SW" x="-12.7" y="10.16" visible="pin" length="short"/>
+<pin name="VBAT" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="EN" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="LBI" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="SYNC" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="PGND" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="LBO" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="FB" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VOUT" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2260,6 +2362,54 @@ ADDR -&gt; GND  = 0x76</description>
 <connect gate="G$1" pin="SCK" pad="12"/>
 <connect gate="G$1" pin="VNEG" pad="5"/>
 <connect gate="G$1" pin="XSMT" pad="17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS6120X">
+<gates>
+<gate name="G$1" symbol="TPS6120X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VSON-10">
+<connects>
+<connect gate="G$1" pin="EN" pad="6"/>
+<connect gate="G$1" pin="FB" pad="10"/>
+<connect gate="G$1" pin="GND" pad="9 GND1 GND2 GND3 GND4 GND5"/>
+<connect gate="G$1" pin="L" pad="3"/>
+<connect gate="G$1" pin="PGND" pad="4"/>
+<connect gate="G$1" pin="PS" pad="8"/>
+<connect gate="G$1" pin="UVLO" pad="7"/>
+<connect gate="G$1" pin="VAUX" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS6103X">
+<gates>
+<gate name="G$1" symbol="TPS6103X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PVQFN-16">
+<connects>
+<connect gate="G$1" pin="EN" pad="11"/>
+<connect gate="G$1" pin="FB" pad="14"/>
+<connect gate="G$1" pin="GND" pad="13"/>
+<connect gate="G$1" pin="LBI" pad="9"/>
+<connect gate="G$1" pin="LBO" pad="12"/>
+<connect gate="G$1" pin="PGND" pad="5 6 7 PAD"/>
+<connect gate="G$1" pin="SW" pad="3 4"/>
+<connect gate="G$1" pin="SYNC" pad="10"/>
+<connect gate="G$1" pin="VBAT" pad="8"/>
+<connect gate="G$1" pin="VOUT" pad="1 15 16"/>
 </connects>
 <technologies>
 <technology name=""/>

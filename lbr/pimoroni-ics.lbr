@@ -2314,6 +2314,9 @@ ADDR -&gt; GND  = 0x76</description>
 <connect gate="G$1" pin="SDA" pad="P$12"/>
 <connect gate="G$1" pin="SYNC" pad="P$9"/>
 <connect gate="G$1" pin="VCC" pad="P$17"/>
+</connects>
+</device>
+</devices>
 </deviceset>
 <deviceset name="MMA865XFC">
 <gates>

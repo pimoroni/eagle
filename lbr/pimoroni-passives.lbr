@@ -165,6 +165,29 @@
 <smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
 <smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
 </package>
+<package name="NRS8030">
+<smd name="1" x="-2.88" y="0" dx="1.8" dy="7.3" layer="1"/>
+<smd name="2" x="2.72" y="0" dx="1.8" dy="7.3" layer="1"/>
+<wire x1="4" y1="-3" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="2.8" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="2.8" y1="-3.5" x2="2.3" y2="-4" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-4" x2="-2.2" y2="-4" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-4" x2="-2.7" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-4" y2="-3" width="0.127" layer="21"/>
+<wire x1="-4" y1="-3" x2="-4" y2="3" width="0.127" layer="21"/>
+<wire x1="-4" y1="3" x2="-3.4" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="3.5" x2="-2.6" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="3.5" x2="-2.1" y2="4" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="4" x2="2.2" y2="4" width="0.127" layer="21"/>
+<wire x1="2.2" y1="4" x2="2.7" y2="3.5" width="0.127" layer="21"/>
+<wire x1="2.7" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="4" y2="3" width="0.127" layer="21"/>
+<wire x1="4" y1="3" x2="4" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="3.4" x2="-3.4" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="XTAL">
@@ -261,6 +284,16 @@
 <wire x1="-0.7366" y1="0.635" x2="-1.6256" y2="0.635" width="0.254" layer="94"/>
 <wire x1="-1.6256" y1="0.635" x2="-1.1176" y2="1.397" width="0.254" layer="94"/>
 <wire x1="-1.2192" y1="1.0668" x2="-0.9906" y2="0.8128" width="0.254" layer="94"/>
+</symbol>
+<symbol name="INDUCTOR">
+<pin name="1" x="-7.62" y="0" visible="pin" length="short"/>
+<pin name="2" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<text x="-5.08" y="2.54" size="1.27" layer="94">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -419,6 +452,22 @@
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRS8030TXRX">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NRS8030">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

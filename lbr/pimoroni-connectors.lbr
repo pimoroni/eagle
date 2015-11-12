@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -217,6 +217,48 @@
 <pad name="P$8" x="-3.3" y="0.7" drill="0.9"/>
 <pad name="P$9" x="3.3" y="0.7" drill="0.9"/>
 </package>
+<package name="DUAL-RCA">
+<pad name="2A" x="7.112" y="0" drill="2.2098"/>
+<pad name="1A" x="-6.858" y="0" drill="2.2098"/>
+<pad name="1B" x="-9.398" y="-4.826" drill="1.1938"/>
+<pad name="2B" x="4.572" y="-4.826" drill="1.1938"/>
+<wire x1="-12.7" y1="1.778" x2="-10.668" y2="1.778" width="0.127" layer="46"/>
+<wire x1="-10.668" y1="1.778" x2="-10.668" y2="-1.778" width="0.127" layer="46"/>
+<wire x1="-10.668" y1="-1.778" x2="-12.7" y2="-1.778" width="0.127" layer="46"/>
+<wire x1="-12.7" y1="-1.778" x2="-12.7" y2="1.778" width="0.127" layer="46"/>
+<wire x1="10.668" y1="1.778" x2="12.7" y2="1.778" width="0.127" layer="46"/>
+<wire x1="12.7" y1="1.778" x2="12.7" y2="-1.778" width="0.127" layer="46"/>
+<wire x1="12.7" y1="-1.778" x2="10.668" y2="-1.778" width="0.127" layer="46"/>
+<wire x1="10.668" y1="-1.778" x2="10.668" y2="1.778" width="0.127" layer="46"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="5.08" x2="-11.938" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-11.938" y1="5.08" x2="-2.54" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.127" layer="21"/>
+<wire x1="2.54" y1="5.08" x2="11.938" y2="5.08" width="0.127" layer="21"/>
+<wire x1="11.938" y1="5.08" x2="12.7" y2="5.08" width="0.127" layer="21"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-5.08" x2="-12.7" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="11.938" x2="-10.668" y2="12.7" width="0.127" layer="21" curve="-90"/>
+<wire x1="-10.668" y1="12.7" x2="-3.81" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="12.7" x2="-3.048" y2="11.938" width="0.127" layer="21" curve="-90"/>
+<wire x1="11.43" y1="11.938" x2="10.668" y2="12.7" width="0.127" layer="21" curve="90"/>
+<wire x1="10.668" y1="12.7" x2="3.81" y2="12.7" width="0.127" layer="21"/>
+<wire x1="3.81" y1="12.7" x2="3.048" y2="11.938" width="0.127" layer="21" curve="90"/>
+<wire x1="-11.938" y1="5.08" x2="-11.938" y2="6.604" width="0.127" layer="21"/>
+<wire x1="-11.938" y1="6.604" x2="-11.43" y2="6.604" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="6.604" x2="-3.048" y2="6.604" width="0.127" layer="21"/>
+<wire x1="-3.048" y1="6.604" x2="-2.54" y2="6.604" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="6.604" x2="-2.54" y2="5.08" width="0.127" layer="21"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="6.604" width="0.127" layer="21"/>
+<wire x1="2.54" y1="6.604" x2="3.048" y2="6.604" width="0.127" layer="21"/>
+<wire x1="3.048" y1="6.604" x2="11.43" y2="6.604" width="0.127" layer="21"/>
+<wire x1="11.43" y1="6.604" x2="11.938" y2="6.604" width="0.127" layer="21"/>
+<wire x1="11.938" y1="6.604" x2="11.938" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="11.938" x2="-11.43" y2="6.604" width="0.127" layer="21"/>
+<wire x1="-3.048" y1="11.938" x2="-3.048" y2="6.604" width="0.127" layer="21"/>
+<wire x1="3.048" y1="11.938" x2="3.048" y2="6.604" width="0.127" layer="21"/>
+<wire x1="11.43" y1="11.938" x2="11.43" y2="6.604" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -230,6 +272,20 @@
 <wire x1="5.08" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
 <text x="-5.08" y="-2.54" size="1.27" layer="94" rot="R90" align="bottom-center">USB</text>
 <pin name="SHIELD" x="7.62" y="-10.16" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="RCA">
+<wire x1="10.16" y1="-7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<pin name="B" x="-5.08" y="0" visible="pin" length="short"/>
+<pin name="A" x="-5.08" y="-7.62" visible="pin" length="short"/>
+<text x="-5.08" y="5.08" size="1.27" layer="94">&gt;NAME</text>
+<text x="-5.08" y="-12.7" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -259,6 +315,25 @@
 <connect gate="G$1" pin="ID" pad="ID"/>
 <connect gate="G$1" pin="SHIELD" pad="P$6 P$7 P$8 P$9"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="161-4218-E">
+<gates>
+<gate name="LEFT" symbol="RCA" x="0" y="17.78"/>
+<gate name="RIGHT" symbol="RCA" x="0" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="DUAL-RCA">
+<connects>
+<connect gate="LEFT" pin="A" pad="1A"/>
+<connect gate="LEFT" pin="B" pad="1B"/>
+<connect gate="RIGHT" pin="A" pad="2A"/>
+<connect gate="RIGHT" pin="B" pad="2B"/>
 </connects>
 <technologies>
 <technology name=""/>

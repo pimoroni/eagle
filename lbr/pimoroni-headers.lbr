@@ -1437,6 +1437,22 @@ GND</text>
 <rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
 <rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
 </package>
+<package name="1X9-SMT-RIGHT-ANGLE">
+<smd name="P$1" x="-10.16" y="-3.81" dx="2" dy="1.02" layer="1" rot="R90"/>
+<smd name="P$2" x="-7.62" y="-3.81" dx="2" dy="1.02" layer="1" rot="R90"/>
+<smd name="P$3" x="-5.08" y="-3.81" dx="2" dy="1.02" layer="1" rot="R90"/>
+<smd name="P$4" x="-2.54" y="-3.81" dx="2" dy="1.02" layer="1" rot="R90"/>
+<smd name="P$5" x="0" y="-3.81" dx="2" dy="1.02" layer="1" rot="R90"/>
+<smd name="P$6" x="2.54" y="-3.81" dx="2" dy="1.02" layer="1" rot="R90"/>
+<smd name="P$7" x="5.08" y="-3.81" dx="2" dy="1.02" layer="1" rot="R90"/>
+<smd name="P$8" x="7.62" y="-3.81" dx="2" dy="1.02" layer="1" rot="R90"/>
+<wire x1="-11.77" y1="7.19" x2="-11.77" y2="-1.31" width="0.127" layer="21"/>
+<wire x1="-11.77" y1="-1.31" x2="11.77" y2="-1.31" width="0.127" layer="21"/>
+<wire x1="11.77" y1="-1.31" x2="11.77" y2="7.19" width="0.127" layer="21"/>
+<wire x1="11.77" y1="7.19" x2="-11.77" y2="7.19" width="0.127" layer="21"/>
+<circle x="-10.77" y="-0.31" radius="0.5" width="0" layer="21"/>
+<smd name="P$9" x="10.16" y="-3.81" dx="2" dy="1.02" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1X2">
@@ -2425,6 +2441,29 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="GND" pad="6 9 14 20 25 30 34 39" route="any"/>
 <connect gate="G$1" pin="ID_SC" pad="28"/>
 <connect gate="G$1" pin="ID_SD" pad="27"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="9-WAY">
+<gates>
+<gate name="G$1" symbol="1X9" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X9-SMT-RIGHT-ANGLE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+<connect gate="G$1" pin="P$8" pad="P$8"/>
+<connect gate="G$1" pin="P$9" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>

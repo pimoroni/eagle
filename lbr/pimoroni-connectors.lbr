@@ -220,16 +220,16 @@
 <package name="DUAL-RCA">
 <pad name="2A" x="7.112" y="0" drill="2.2098"/>
 <pad name="1A" x="-6.858" y="0" drill="2.2098"/>
-<pad name="1B" x="-9.398" y="-4.826" drill="1.1938"/>
-<pad name="2B" x="4.572" y="-4.826" drill="1.1938"/>
-<wire x1="-12.7" y1="1.778" x2="-10.668" y2="1.778" width="0.127" layer="46"/>
-<wire x1="-10.668" y1="1.778" x2="-10.668" y2="-1.778" width="0.127" layer="46"/>
-<wire x1="-10.668" y1="-1.778" x2="-12.7" y2="-1.778" width="0.127" layer="46"/>
-<wire x1="-12.7" y1="-1.778" x2="-12.7" y2="1.778" width="0.127" layer="46"/>
-<wire x1="10.668" y1="1.778" x2="12.7" y2="1.778" width="0.127" layer="46"/>
-<wire x1="12.7" y1="1.778" x2="12.7" y2="-1.778" width="0.127" layer="46"/>
-<wire x1="12.7" y1="-1.778" x2="10.668" y2="-1.778" width="0.127" layer="46"/>
-<wire x1="10.668" y1="-1.778" x2="10.668" y2="1.778" width="0.127" layer="46"/>
+<pad name="1B" x="-10.906" y="-4.826" drill="1.1938"/>
+<pad name="2B" x="3.064" y="-4.826" drill="1.1938"/>
+<wire x1="-12.7" y1="1.878" x2="-10.668" y2="1.878" width="0.127" layer="46"/>
+<wire x1="-10.668" y1="1.878" x2="-10.668" y2="-1.878" width="0.127" layer="46"/>
+<wire x1="-10.668" y1="-1.878" x2="-12.7" y2="-1.878" width="0.127" layer="46"/>
+<wire x1="-12.7" y1="-1.878" x2="-12.7" y2="1.878" width="0.127" layer="46"/>
+<wire x1="10.668" y1="1.878" x2="12.7" y2="1.878" width="0.127" layer="46"/>
+<wire x1="12.7" y1="1.878" x2="12.7" y2="-1.878" width="0.127" layer="46"/>
+<wire x1="12.7" y1="-1.878" x2="10.668" y2="-1.878" width="0.127" layer="46"/>
+<wire x1="10.668" y1="-1.878" x2="10.668" y2="1.878" width="0.127" layer="46"/>
 <wire x1="-12.7" y1="-5.08" x2="-12.7" y2="5.08" width="0.127" layer="21"/>
 <wire x1="-12.7" y1="5.08" x2="-11.938" y2="5.08" width="0.127" layer="21"/>
 <wire x1="-11.938" y1="5.08" x2="-2.54" y2="5.08" width="0.127" layer="21"/>
@@ -330,10 +330,10 @@
 <devices>
 <device name="" package="DUAL-RCA">
 <connects>
-<connect gate="LEFT" pin="A" pad="1A"/>
-<connect gate="LEFT" pin="B" pad="1B"/>
-<connect gate="RIGHT" pin="A" pad="2A"/>
-<connect gate="RIGHT" pin="B" pad="2B"/>
+<connect gate="LEFT" pin="A" pad="2A"/>
+<connect gate="LEFT" pin="B" pad="2B"/>
+<connect gate="RIGHT" pin="A" pad="1A"/>
+<connect gate="RIGHT" pin="B" pad="1B"/>
 </connects>
 <technologies>
 <technology name=""/>

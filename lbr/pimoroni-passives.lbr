@@ -188,6 +188,24 @@
 <wire x1="-3.5" y1="3.4" x2="-3.4" y2="3.5" width="0.127" layer="21"/>
 <wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
 </package>
+<package name="2515">
+<smd name="1" x="-1" y="0" dx="0.8" dy="2" layer="1"/>
+<smd name="2" x="1" y="0" dx="0.8" dy="2" layer="1"/>
+<text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;NAME</text>
+</package>
+<package name="NRS5030">
+<smd name="1" x="-1.8" y="0" dx="1.5" dy="4" layer="1"/>
+<smd name="2" x="1.8" y="0" dx="1.5" dy="4" layer="1"/>
+<text x="0" y="3" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
+<wire x1="-1.7" y1="-2.5" x2="1.7" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="2.5" x2="1.7" y2="2.5" width="0.127" layer="21"/>
+<wire x1="1.7" y1="2.5" x2="2" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="2.5" x2="-2" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="-2.5" x2="-2" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="1.7" y1="-2.5" x2="2" y2="-2.2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="XTAL">
@@ -465,6 +483,22 @@
 </gates>
 <devices>
 <device name="" package="NRS8030">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRS5030T1R0NMGJ">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NRS5030">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

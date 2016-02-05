@@ -781,6 +781,48 @@
 <smd name="1" x="0.95" y="1.1" dx="0.65" dy="1.1" layer="1"/>
 <smd name="3" x="-0.95" y="1.1" dx="0.65" dy="1.1" layer="1"/>
 </package>
+<package name="UQFN-28">
+<smd name="P$1" x="-2.1" y="1.2" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$2" x="-2.1" y="0.8" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$3" x="-2.1" y="0.4" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$4" x="-2.1" y="0" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$5" x="-2.1" y="-0.4" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$6" x="-2.1" y="-0.8" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$7" x="-2.1" y="-1.2" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$8" x="-1.2" y="-2.1" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$9" x="-0.8" y="-2.1" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$10" x="-0.4" y="-2.1" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$11" x="0" y="-2.1" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$12" x="0.4" y="-2.1" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$13" x="0.8" y="-2.1" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$14" x="1.2" y="-2.1" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$15" x="2.1" y="-1.2" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$16" x="2.1" y="-0.8" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$17" x="2.1" y="-0.4" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$18" x="2.1" y="0" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$19" x="2.1" y="0.4" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$20" x="2.1" y="0.8" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$21" x="2.1" y="1.2" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$22" x="1.2" y="2.1" dx="0.2" dy="0.8" layer="1"/>
+<smd name="P$23" x="0.8" y="2.1" dx="0.2" dy="0.8" layer="1"/>
+<smd name="P$24" x="0.4" y="2.1" dx="0.2" dy="0.8" layer="1"/>
+<smd name="P$25" x="0" y="2.1" dx="0.2" dy="0.8" layer="1"/>
+<smd name="P$26" x="-0.4" y="2.1" dx="0.2" dy="0.8" layer="1"/>
+<smd name="P$27" x="-0.8" y="2.1" dx="0.2" dy="0.8" layer="1"/>
+<smd name="P$28" x="-1.2" y="2.1" dx="0.2" dy="0.8" layer="1"/>
+<smd name="P$29" x="0" y="0" dx="2.35" dy="2.35" layer="1" rot="R270"/>
+<wire x1="-1.6" y1="2.1" x2="-2.1" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="2.1" x2="-2.1" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.6" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="21"/>
+<wire x1="2.1" y1="2.1" x2="2.1" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.1" y1="-1.6" x2="2.1" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="2.1" y1="-2.1" x2="1.6" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-2.1" x2="-2.1" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="-1.6" width="0.127" layer="21"/>
+<circle x="-2.6" y="1.9" radius="0.1" width="0.127" layer="21"/>
+<text x="-2" y="3" size="1.27" layer="21">&gt;NAME</text>
+<text x="-2" y="-4" size="1.27" layer="21">&gt;VALUE</text>
+</package>
 <package name="DFN-10">
 <smd name="2" x="-1" y="0.4" dx="0.6" dy="0.225" layer="1"/>
 <smd name="3" x="-1" y="0" dx="0.6" dy="0.225" layer="1"/>
@@ -841,37 +883,20 @@
 <smd name="2" x="-0.5" y="-1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
 <smd name="1" x="-1" y="-1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
 <polygon width="0.01" layer="1">
-<vertex x="-2.1" y="0.45"/>
-<vertex x="-1.4" y="0.45"/>
-<vertex x="-1.4" y="0.8"/>
 <vertex x="1.4" y="0.8"/>
-<vertex x="1.4" y="0.5"/>
-<vertex x="2.1" y="0.5"/>
-<vertex x="2.1" y="0.2"/>
 <vertex x="1.4" y="0.2"/>
 <vertex x="1.4" y="-0.2"/>
-<vertex x="2.1" y="-0.2"/>
-<vertex x="2.1" y="-0.5"/>
 <vertex x="1.4" y="-0.5"/>
 <vertex x="1.4" y="-0.8"/>
-<vertex x="-1.4" y="-0.8"/>
-<vertex x="-1.4" y="-0.45"/>
-<vertex x="-2.1" y="-0.45"/>
-<vertex x="-2.1" y="-0.15"/>
-<vertex x="-1.4" y="-0.15"/>
-<vertex x="-1.4" y="0.15"/>
-<vertex x="-2.1" y="0.15"/>
 </polygon>
-<pad name="GND5" x="0.9" y="-0.4" drill="0.3" diameter="0.4064"/>
-<pad name="GND2" x="-0.9" y="-0.4" drill="0.3" diameter="0.4064"/>
-<pad name="GND1" x="-0.9" y="0.4" drill="0.3" diameter="0.4064"/>
-<pad name="GND4" x="0.9" y="0.4" drill="0.3" diameter="0.4064"/>
-<pad name="GND3" x="0" y="0" drill="0.3" diameter="0.4064"/>
 <circle x="-1.8" y="-1.8" radius="0.09" width="0.18" layer="21"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<smd name="PAD" x="0" y="0" dx="2.15" dy="1.6" layer="1"/>
+<text x="0" y="2.54" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
 </package>
 <package name="PVQFN-16">
 <smd name="PAD" x="0" y="0" dx="2.7" dy="2.7" layer="1" roundness="10" cream="no"/>
@@ -1502,6 +1527,37 @@
 <text x="-10.16" y="12.7" size="1.778" layer="94">&gt;NAME</text>
 <text x="-10.16" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="MTCH6102">
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<pin name="RX11" x="17.78" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="RX12" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="NC" x="-17.78" y="-12.7" visible="pin" length="middle"/>
+<pin name="RX13" x="17.78" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="-17.78" y="-17.78" visible="pin" length="middle"/>
+<pin name="INT" x="-17.78" y="10.16" visible="pin" length="middle"/>
+<pin name="SYNC" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="RX14" x="17.78" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="SDA" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="RX0" x="17.78" y="17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="RX1" x="17.78" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="RX2" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC" x="-17.78" y="17.78" visible="pin" length="middle"/>
+<pin name="RX3" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="RX4" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="RX5" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="RX6" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RX7" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="RX8" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RESET" x="-17.78" y="15.24" visible="pin" length="middle"/>
+<pin name="RX9" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="RX10" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<text x="-12.7" y="22.86" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-25.4" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 <symbol name="MMA865XFC">
 <description>MMA8652FC / MMA8653FC - Accelerometers 3-axis 2g/4g/8g 12 bit.
 The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined accelerometer with 10 bits of resolution. This accelerometer is packed with embedded functions with flexible user-programmable options, configurable to two interrupt pins. Embedded interrupt functions enable overall power savings, by relieving the host processor from continuously polling data. There is access to either low-pass or high-pass filtered data, which minimizes the data analysis required for jolt detection and faster transitions. The device can be configured to generate inertial wake-up interrupt signals from any combination of the configurable embedded functions, enabling the MMA8653FC to monitor inertial events while remaining in a low-power mode during periods of inactivity. The MMA8653FC is available in a small 10-pin DFN package (2 mm x 2 mm x 1 mm).</description>
@@ -1645,6 +1701,22 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="PR0" x="-17.78" y="15.24" visible="pin" length="short"/>
 <pin name="AVCC" x="-17.78" y="20.32" visible="pin" length="short"/>
 <pin name="VCC" x="-17.78" y="22.86" visible="pin" length="short"/>
+<symbol name="TPS6123X">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="EN" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="HYS" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="SS" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="PG" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="FB" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="VOUT" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SW" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="10.16" size="1.778" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2411,6 +2483,43 @@ ADDR -&gt; GND  = 0x76</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MTCH6102">
+<gates>
+<gate name="G$1" symbol="MTCH6102" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UQFN-28">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$5 P$16"/>
+<connect gate="G$1" pin="INT" pad="P$8"/>
+<connect gate="G$1" pin="NC" pad="P$3 P$6 P$7 P$24 P$25 P$29" route="any"/>
+<connect gate="G$1" pin="RESET" pad="P$26"/>
+<connect gate="G$1" pin="RX0" pad="P$13"/>
+<connect gate="G$1" pin="RX1" pad="P$14"/>
+<connect gate="G$1" pin="RX10" pad="P$28"/>
+<connect gate="G$1" pin="RX11" pad="P$1"/>
+<connect gate="G$1" pin="RX12" pad="P$2"/>
+<connect gate="G$1" pin="RX13" pad="P$4"/>
+<connect gate="G$1" pin="RX14" pad="P$10"/>
+<connect gate="G$1" pin="RX2" pad="P$15"/>
+<connect gate="G$1" pin="RX3" pad="P$18"/>
+<connect gate="G$1" pin="RX4" pad="P$19"/>
+<connect gate="G$1" pin="RX5" pad="P$20"/>
+<connect gate="G$1" pin="RX6" pad="P$21"/>
+<connect gate="G$1" pin="RX7" pad="P$22"/>
+<connect gate="G$1" pin="RX8" pad="P$23"/>
+<connect gate="G$1" pin="RX9" pad="P$27"/>
+<connect gate="G$1" pin="SCL" pad="P$11"/>
+<connect gate="G$1" pin="SDA" pad="P$12"/>
+<connect gate="G$1" pin="SYNC" pad="P$9"/>
+<connect gate="G$1" pin="VCC" pad="P$17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="MMA865XFC">
 <gates>
 <gate name="G$1" symbol="MMA865XFC" x="2.54" y="0"/>
@@ -2476,7 +2585,7 @@ ADDR -&gt; GND  = 0x76</description>
 <connects>
 <connect gate="G$1" pin="EN" pad="6"/>
 <connect gate="G$1" pin="FB" pad="10"/>
-<connect gate="G$1" pin="GND" pad="9 GND1 GND2 GND3 GND4 GND5"/>
+<connect gate="G$1" pin="GND" pad="9"/>
 <connect gate="G$1" pin="L" pad="3"/>
 <connect gate="G$1" pin="PGND" pad="4"/>
 <connect gate="G$1" pin="PS" pad="8"/>
@@ -2602,6 +2711,22 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="PR0" pad="20"/>
 <connect gate="G$1" pin="PR1" pad="19"/>
 <connect gate="G$1" pin="VCC" pad="17"/>
+<deviceset name="TPS6123X">
+<gates>
+<gate name="G$1" symbol="TPS6123X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VSON-10">
+<connects>
+<connect gate="G$1" pin="EN" pad="9"/>
+<connect gate="G$1" pin="FB" pad="7"/>
+<connect gate="G$1" pin="GND" pad="PAD"/>
+<connect gate="G$1" pin="HYS" pad="8"/>
+<connect gate="G$1" pin="PG" pad="5"/>
+<connect gate="G$1" pin="SS" pad="6"/>
+<connect gate="G$1" pin="SW" pad="1 2"/>
+<connect gate="G$1" pin="VIN" pad="10"/>
+<connect gate="G$1" pin="VOUT" pad="3 4"/>
 </connects>
 <technologies>
 <technology name=""/>

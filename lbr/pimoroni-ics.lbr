@@ -1770,6 +1770,28 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <text x="-7.62" y="11.176" size="1.778" layer="94">&gt;NAME</text>
 <text x="-7.62" y="-12.954" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="SN74AHCT125">
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="12.7" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="!OE!1" x="-12.7" y="7.62" visible="pin" length="short"/>
+<pin name="!OE!2" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="!OE!3" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="!OE!4" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="A1" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="Y1" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="A2" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="Y2" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="A3" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="Y3" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="A4" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="Y4" x="12.7" y="-12.7" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="17.78" size="1.778" layer="94">SN74AHCT125</text>
+<text x="-10.16" y="-20.32" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F405XXX">
@@ -2823,6 +2845,34 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="IN2" pad="6"/>
 <connect gate="G$1" pin="OUT" pad="7"/>
 <connect gate="G$1" pin="STAT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74AHCT125">
+<gates>
+<gate name="G$1" symbol="SN74AHCT125" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PWR" package="TSSOP-14">
+<connects>
+<connect gate="G$1" pin="!OE!1" pad="1"/>
+<connect gate="G$1" pin="!OE!2" pad="4"/>
+<connect gate="G$1" pin="!OE!3" pad="10"/>
+<connect gate="G$1" pin="!OE!4" pad="13"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="5"/>
+<connect gate="G$1" pin="A3" pad="9"/>
+<connect gate="G$1" pin="A4" pad="12"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="14"/>
+<connect gate="G$1" pin="Y1" pad="3"/>
+<connect gate="G$1" pin="Y2" pad="6"/>
+<connect gate="G$1" pin="Y3" pad="8"/>
+<connect gate="G$1" pin="Y4" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>

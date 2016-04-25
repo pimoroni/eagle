@@ -922,6 +922,97 @@
 <smd name="9" x="0.975" y="2" dx="0.85" dy="0.35" layer="1" roundness="25" rot="R90"/>
 <circle x="-1.905" y="-1.905" radius="0.127" width="0.254" layer="21"/>
 </package>
+<package name="TDFN-14">
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.2032" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.2032" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.2032" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.2032" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.2032" layer="21"/>
+<circle x="-1.85" y="1.85" radius="0.1" width="0.2032" layer="21"/>
+<smd name="1" x="-1.5594625" y="1.207621875" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="15" x="0" y="0" dx="1.78" dy="2.35" layer="1" stop="no" cream="no"/>
+<smd name="2" x="-1.5594625" y="0.807621875" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="3" x="-1.5594625" y="0.407621875" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="4" x="-1.5594625" y="0.007621875" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="5" x="-1.5594625" y="-0.392378125" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="6" x="-1.5594625" y="-0.792378125" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="7" x="-1.5594625" y="-1.192378125" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="8" x="1.552159375" y="-1.19508125" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="9" x="1.552159375" y="-0.79508125" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="10" x="1.552159375" y="-0.39508125" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="11" x="1.552159375" y="0.00491875" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="12" x="1.552159375" y="0.40491875" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="13" x="1.552159375" y="0.80491875" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<smd name="14" x="1.552159375" y="1.20491875" dx="0.7" dy="0.2" layer="1" thermals="no"/>
+<rectangle x1="-0.9375" y1="-1.25" x2="0.9375" y2="1.25" layer="29"/>
+<text x="0.005" y="2.235" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.34" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
+<rectangle x1="0.1" y1="0.1" x2="0.8" y2="1.1" layer="31"/>
+<rectangle x1="-0.8" y1="0.1" x2="-0.1" y2="1.1" layer="31"/>
+<rectangle x1="-0.8" y1="-1.1" x2="-0.1" y2="-0.1" layer="31"/>
+<rectangle x1="0.1" y1="-1.1" x2="0.8" y2="-0.1" layer="31"/>
+</package>
+<package name="TSSOP-8">
+<wire x1="-1.4" y1="2.2" x2="-1" y2="2.2" width="0.2032" layer="21"/>
+<wire x1="-1" y1="2.2" x2="1.4" y2="2.2" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="2.2" x2="1.4" y2="-2.2" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-2.2" x2="-1.4" y2="-2.2" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-2.2" x2="-1.4" y2="2.2" width="0.2032" layer="21"/>
+<wire x1="-0.8" y1="-1.1" x2="-0.8" y2="-0.5" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-0.8" y1="-0.5" x2="-0.8" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-1" y1="2.2" x2="-1.1" y2="2.2" width="0.127" layer="21"/>
+<smd name="1" x="-0.975" y="-2.8131" dx="0.25" dy="1" layer="1"/>
+<smd name="2" x="-0.325" y="-2.8131" dx="0.25" dy="1" layer="1"/>
+<smd name="3" x="0.325" y="-2.8131" dx="0.25" dy="1" layer="1"/>
+<smd name="4" x="0.975" y="-2.8131" dx="0.25" dy="1" layer="1"/>
+<smd name="5" x="0.975" y="2.8131" dx="0.25" dy="1" layer="1" rot="R180"/>
+<smd name="6" x="0.325" y="2.8131" dx="0.25" dy="1" layer="1" rot="R180"/>
+<smd name="7" x="-0.325" y="2.8131" dx="0.25" dy="1" layer="1" rot="R180"/>
+<smd name="8" x="-0.975" y="2.8131" dx="0.25" dy="1" layer="1" rot="R180"/>
+<text x="-1.8" y="-2.9" size="1.016" layer="21" font="vector" rot="R90">&gt;NAME</text>
+</package>
+<package name="SON-8">
+<smd name="PAD" x="0" y="0" dx="2.4" dy="1.65" layer="1" cream="no"/>
+<smd name="4" x="-0.975" y="1.5" dx="0.85" dy="0.35" layer="1" roundness="100" rot="R90"/>
+<smd name="3" x="-0.325" y="1.5" dx="0.85" dy="0.35" layer="1" roundness="100" rot="R90"/>
+<smd name="2" x="0.325" y="1.5" dx="0.85" dy="0.35" layer="1" roundness="100" rot="R90"/>
+<smd name="1" x="0.975" y="1.5" dx="0.85" dy="0.35" layer="1" roundness="100" rot="R90"/>
+<smd name="5" x="-0.975" y="-1.5" dx="0.85" dy="0.35" layer="1" roundness="100" rot="R90"/>
+<smd name="6" x="-0.325" y="-1.5" dx="0.85" dy="0.35" layer="1" roundness="100" rot="R90"/>
+<smd name="7" x="0.325" y="-1.5" dx="0.85" dy="0.35" layer="1" roundness="100" rot="R90"/>
+<smd name="8" x="0.975" y="-1.5" dx="0.85" dy="0.35" layer="1" roundness="100" rot="R90"/>
+<circle x="1.65" y="1.25" radius="0.070709375" width="0.2" layer="21"/>
+<rectangle x1="0.1" y1="0.1" x2="1.1" y2="0.7" layer="31"/>
+<rectangle x1="0.1" y1="-0.7" x2="1.1" y2="-0.1" layer="31"/>
+<rectangle x1="-1.1" y1="-0.7" x2="-0.1" y2="-0.1" layer="31"/>
+<rectangle x1="-1.1" y1="0.1" x2="-0.1" y2="0.7" layer="31"/>
+</package>
+<package name="TSSOP-16">
+<wire x1="-2.2828" y1="2.8396" x2="-2.2828" y2="-2.8396" width="0.1524" layer="51"/>
+<wire x1="2.2828" y1="-2.8396" x2="-2.2828" y2="-2.8396" width="0.1524" layer="21"/>
+<wire x1="2.2828" y1="-2.8396" x2="2.2828" y2="2.8396" width="0.1524" layer="51"/>
+<wire x1="-2.2828" y1="2.8396" x2="2.2828" y2="2.8396" width="0.1524" layer="21"/>
+<circle x="-2.8192" y="3.3506" radius="0.1" width="0.3" layer="21"/>
+<smd name="1" x="-2.9178" y="2.275" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="3" x="-2.9178" y="0.975" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="4" x="-2.9178" y="0.325" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="5" x="-2.9178" y="-0.325" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="6" x="-2.9178" y="-0.975" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="7" x="-2.9178" y="-1.625" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="8" x="-2.9178" y="-2.275" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="9" x="2.9178" y="-2.275" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="10" x="2.9178" y="-1.625" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="11" x="2.9178" y="-0.975" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="12" x="2.9178" y="-0.325" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="13" x="2.9178" y="0.325" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="14" x="2.9178" y="0.975" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="16" x="2.9178" y="2.275" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<text x="0.0172" y="3.3206" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0.0172" y="-4.1112" size="0.8128" layer="27" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
+<smd name="2" x="-2.9178" y="1.625" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+<smd name="15" x="2.9178" y="1.625" dx="0.3" dy="1.4" layer="1" rot="R270"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -1169,41 +1260,43 @@
 <pin name="INT" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="ATTINY88">
-<wire x1="-12.7" y1="43.18" x2="-12.7" y2="-43.18" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-43.18" x2="12.7" y2="-43.18" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-43.18" x2="12.7" y2="43.18" width="0.254" layer="94"/>
-<wire x1="12.7" y1="43.18" x2="-12.7" y2="43.18" width="0.254" layer="94"/>
-<pin name="PD1" x="15.24" y="-25.4" visible="pin" length="short" rot="R180"/>
-<pin name="PD0" x="15.24" y="-22.86" visible="pin" length="short" rot="R180"/>
-<pin name="VCC" x="-15.24" y="40.64" visible="pin" length="short"/>
-<pin name="GND" x="-15.24" y="-40.64" visible="pin" length="short"/>
-<pin name="PB0" x="15.24" y="22.86" visible="pin" length="short" rot="R180"/>
-<pin name="PB1" x="15.24" y="20.32" visible="pin" length="short" rot="R180"/>
-<pin name="PB2" x="15.24" y="17.78" visible="pin" length="short" rot="R180"/>
-<pin name="MOSI/PB3" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
-<pin name="MISO/PB4" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="SCK/PB5" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="PB6" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="PB7" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="PD2" x="15.24" y="-27.94" visible="pin" length="short" rot="R180"/>
-<pin name="PD3" x="15.24" y="-30.48" visible="pin" length="short" rot="R180"/>
-<pin name="PD4" x="15.24" y="-33.02" visible="pin" length="short" rot="R180"/>
-<pin name="PD5" x="15.24" y="-35.56" visible="pin" length="short" rot="R180"/>
-<pin name="PD6" x="15.24" y="-38.1" visible="pin" length="short" rot="R180"/>
-<pin name="PD7" x="15.24" y="-40.64" visible="pin" length="short" rot="R180"/>
-<pin name="PC0" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="PC1" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="PC2" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="PC3" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="SDA/PC4" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="SCL/PC5" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="RESET/PC6" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
-<pin name="PC7" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
-<pin name="AVCC" x="15.24" y="40.64" visible="pin" length="short" rot="R180"/>
-<pin name="PA0" x="15.24" y="35.56" visible="pin" length="short" rot="R180"/>
-<pin name="PA1" x="15.24" y="33.02" visible="pin" length="short" rot="R180"/>
-<pin name="PA2" x="15.24" y="30.48" visible="pin" length="short" rot="R180"/>
-<pin name="PA3" x="15.24" y="27.94" visible="pin" length="short" rot="R180"/>
+<wire x1="-12.7" y1="25.4" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="25.4" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
+<pin name="PD1" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PD0" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="-15.24" y="22.86" visible="pin" length="short"/>
+<pin name="GND" x="-15.24" y="-20.32" visible="pin" length="short"/>
+<pin name="PB0" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="PB1" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="PB2" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="MOSI/PB3" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="MISO/PB4" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="SCK/PB5" x="-15.24" y="-10.16" visible="pin" length="short"/>
+<pin name="PB6" x="-15.24" y="-12.7" visible="pin" length="short"/>
+<pin name="PB7" x="-15.24" y="-15.24" visible="pin" length="short"/>
+<pin name="PD2" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PD3" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PD4" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PD5" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="PD6" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PD7" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PC0" x="15.24" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="PC1" x="15.24" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="PC2" x="15.24" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PC3" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="SDA/PC4" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SCL/PC5" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="RESET/PC6" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PC7" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="AVCC" x="-15.24" y="20.32" visible="pin" length="short"/>
+<pin name="PA0" x="-15.24" y="15.24" visible="pin" length="short"/>
+<pin name="PA1" x="-15.24" y="12.7" visible="pin" length="short"/>
+<pin name="PA2" x="-15.24" y="10.16" visible="pin" length="short"/>
+<pin name="PA3" x="-15.24" y="7.62" visible="pin" length="short"/>
+<text x="-12.7" y="27.94" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-27.94" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="BMP280">
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -1604,6 +1697,71 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="FB" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="VOUT" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
 </symbol>
+<symbol name="MAX98306">
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.127" layer="94"/>
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<text x="10.16" y="-20.32" size="1.778" layer="95" rot="MR0">&gt;NAME</text>
+<text x="-10.16" y="20.32" size="1.778" layer="95" rot="MR180">&gt;VALUE</text>
+<text x="-6.858" y="-15.748" size="1.4224" layer="95" ratio="10">THERMAL PAD</text>
+<pin name="VDD@2" x="15.24" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="INL+" x="-15.24" y="7.62" length="middle"/>
+<pin name="INL-" x="-15.24" y="5.08" length="middle"/>
+<pin name="GND@1" x="15.24" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUTL+" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="OUTL-" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="SHDN" x="-15.24" y="12.7" length="middle" direction="in" function="dot"/>
+<pin name="GND@3" x="15.24" y="-15.24" visible="off" length="middle" direction="pwr" rot="R180"/>
+<pin name="GAIN" x="-15.24" y="-7.62" length="middle" direction="pas"/>
+<pin name="INR+" x="-15.24" y="0" length="middle"/>
+<pin name="INR-" x="-15.24" y="-2.54" length="middle"/>
+<pin name="OUTR+" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="OUTR-" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND@2" x="15.24" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD@1" x="15.24" y="15.24" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="ATXMEGAXXE5">
+<wire x1="-15.24" y1="25.4" x2="15.24" y2="25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="25.4" x2="15.24" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-25.4" x2="-15.24" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-25.4" x2="-15.24" y2="25.4" width="0.254" layer="94"/>
+<pin name="PR1" x="-17.78" y="12.7" visible="pin" length="short"/>
+<pin name="PA0" x="-17.78" y="0" visible="pin" length="short"/>
+<pin name="PA1" x="-17.78" y="-2.54" visible="pin" length="short"/>
+<pin name="PA2" x="-17.78" y="-5.08" visible="pin" length="short"/>
+<pin name="PA3" x="-17.78" y="-7.62" visible="pin" length="short"/>
+<pin name="PA4" x="-17.78" y="-10.16" visible="pin" length="short"/>
+<pin name="PA5" x="-17.78" y="-12.7" visible="pin" length="short"/>
+<pin name="PA6" x="-17.78" y="-15.24" visible="pin" length="short"/>
+<pin name="PA7" x="-17.78" y="-17.78" visible="pin" length="short"/>
+<pin name="PDI/!RESET" x="-17.78" y="5.08" visible="pin" length="short"/>
+<pin name="PDI" x="-17.78" y="7.62" visible="pin" length="short"/>
+<pin name="GND" x="-17.78" y="-22.86" visible="pin" length="short"/>
+<pin name="PD7" x="17.78" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PD6" x="17.78" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PD5" x="17.78" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="PD4" x="17.78" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PD3" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PD2" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PD1" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PD0" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PC7" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PC6" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PC5" x="17.78" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PC4" x="17.78" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="PC3" x="17.78" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PC2" x="17.78" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PC1" x="17.78" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="PC0" x="17.78" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="PR0" x="-17.78" y="15.24" visible="pin" length="short"/>
+<pin name="AVCC" x="-17.78" y="20.32" visible="pin" length="short"/>
+<pin name="VCC" x="-17.78" y="22.86" visible="pin" length="short"/>
+</symbol>
 <symbol name="TPS6123X">
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -1620,6 +1778,79 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="SW" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
 <text x="-10.16" y="10.16" size="1.778" layer="94">&gt;NAME</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="TPS2115A">
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<pin name="STAT" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="D0" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="D1" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="ILIM" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="IN1" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="OUT" x="10.16" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="IN2" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="GND" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<text x="-7.62" y="11.176" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-12.954" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="SN74AHCT125">
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="12.7" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="!OE!1" x="-12.7" y="7.62" visible="pin" length="short"/>
+<pin name="!OE!2" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="!OE!3" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="!OE!4" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="A1" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="Y1" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="A2" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="Y2" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="A3" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="Y3" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="A4" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="Y4" x="12.7" y="-12.7" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="17.78" size="1.778" layer="94">SN74AHCT125</text>
+<text x="-10.16" y="-20.32" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="FAN5331">
+<pin name="VCC" x="-12.7" y="2.54" length="short"/>
+<pin name="!SHDN" x="-12.7" y="0" length="short"/>
+<pin name="GND" x="-12.7" y="-2.54" length="short"/>
+<pin name="SW" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="FB" x="12.7" y="-2.54" length="short" rot="R180"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="74HC4050">
+<pin name="VCC" x="-10.16" y="12.7" visible="pin" length="short"/>
+<pin name="1A" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="2A" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="3A" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="4A" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="5A" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="6A" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="GND" x="-10.16" y="-10.16" visible="pin" length="short"/>
+<pin name="1Y" x="10.16" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="2Y" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="3Y" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="4Y" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="5Y" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="6Y" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<text x="-7.62" y="17.78" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2527,6 +2758,100 @@ ADDR -&gt; GND  = 0x76</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MAX98306" prefix="U">
+<description>&lt;b&gt;Stereo 3.7W Class D Amplifier&lt;/b&gt;&lt;p&gt;
+
+Datasheet: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX98306.pdf"&gt;http://datasheets.maxim-ic.com/en/ds/MAX98306.pdf&lt;/a&gt;&lt;p&gt;
+
+The MAX98306 stereo 3.7W Class D amplifier provides
+Class AB audio performance with Class D efficiency.
+This device offers five selectable gain settings (6dB,
+9dB, 12dB, 15dB, and 18dB) set by a single gain-select
+input (GAIN).
+Active emissions limiting, edge-rate, and overshoot control
+circuitry combined with a filterless spread-spectrum
+modulation scheme (SSM) provide excellent EMI performance
+while eliminating the need for output filtering found
+in traditional Class D devices. These features reduce
+application component count.
+The IC's 2.0mA quiescent current with a 3.7V supply
+extends battery life in portable applications.
+The IC is available in a 14-pin TDFN (3mm x 3mm x
+0.75mm) package specified over the extended -40NC to
++85NC temperature range.</description>
+<gates>
+<gate name="G$1" symbol="MAX98306" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ETD+" package="TDFN-14">
+<connects>
+<connect gate="G$1" pin="GAIN" pad="5"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@2" pad="8"/>
+<connect gate="G$1" pin="GND@3" pad="15"/>
+<connect gate="G$1" pin="INL+" pad="3"/>
+<connect gate="G$1" pin="INL-" pad="4"/>
+<connect gate="G$1" pin="INR+" pad="7"/>
+<connect gate="G$1" pin="INR-" pad="6"/>
+<connect gate="G$1" pin="OUTL+" pad="13"/>
+<connect gate="G$1" pin="OUTL-" pad="14"/>
+<connect gate="G$1" pin="OUTR+" pad="10"/>
+<connect gate="G$1" pin="OUTR-" pad="9"/>
+<connect gate="G$1" pin="SHDN" pad="2"/>
+<connect gate="G$1" pin="VDD@1" pad="11"/>
+<connect gate="G$1" pin="VDD@2" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATXMEGAXXE5">
+<gates>
+<gate name="G$1" symbol="ATXMEGAXXE5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFP-32">
+<connects>
+<connect gate="G$1" pin="AVCC" pad="32"/>
+<connect gate="G$1" pin="GND" pad="1 18"/>
+<connect gate="G$1" pin="PA0" pad="6"/>
+<connect gate="G$1" pin="PA1" pad="5"/>
+<connect gate="G$1" pin="PA2" pad="4"/>
+<connect gate="G$1" pin="PA3" pad="3"/>
+<connect gate="G$1" pin="PA4" pad="2"/>
+<connect gate="G$1" pin="PA5" pad="31"/>
+<connect gate="G$1" pin="PA6" pad="30"/>
+<connect gate="G$1" pin="PA7" pad="29"/>
+<connect gate="G$1" pin="PC0" pad="16"/>
+<connect gate="G$1" pin="PC1" pad="15"/>
+<connect gate="G$1" pin="PC2" pad="14"/>
+<connect gate="G$1" pin="PC3" pad="13"/>
+<connect gate="G$1" pin="PC4" pad="12"/>
+<connect gate="G$1" pin="PC5" pad="11"/>
+<connect gate="G$1" pin="PC6" pad="10"/>
+<connect gate="G$1" pin="PC7" pad="9"/>
+<connect gate="G$1" pin="PD0" pad="28"/>
+<connect gate="G$1" pin="PD1" pad="27"/>
+<connect gate="G$1" pin="PD2" pad="26"/>
+<connect gate="G$1" pin="PD3" pad="25"/>
+<connect gate="G$1" pin="PD4" pad="24"/>
+<connect gate="G$1" pin="PD5" pad="23"/>
+<connect gate="G$1" pin="PD6" pad="22"/>
+<connect gate="G$1" pin="PD7" pad="21"/>
+<connect gate="G$1" pin="PDI" pad="7"/>
+<connect gate="G$1" pin="PDI/!RESET" pad="8"/>
+<connect gate="G$1" pin="PR0" pad="20"/>
+<connect gate="G$1" pin="PR1" pad="19"/>
+<connect gate="G$1" pin="VCC" pad="17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="TPS6123X">
 <gates>
 <gate name="G$1" symbol="TPS6123X" x="0" y="0"/>
@@ -2543,6 +2868,118 @@ ADDR -&gt; GND  = 0x76</description>
 <connect gate="G$1" pin="SW" pad="1 2"/>
 <connect gate="G$1" pin="VIN" pad="10"/>
 <connect gate="G$1" pin="VOUT" pad="3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS2115A">
+<gates>
+<gate name="G$1" symbol="TPS2115A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PW" package="TSSOP-8">
+<connects>
+<connect gate="G$1" pin="D0" pad="2"/>
+<connect gate="G$1" pin="D1" pad="3"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="ILIM" pad="4"/>
+<connect gate="G$1" pin="IN1" pad="8"/>
+<connect gate="G$1" pin="IN2" pad="6"/>
+<connect gate="G$1" pin="OUT" pad="7"/>
+<connect gate="G$1" pin="STAT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DRB" package="SON-8">
+<connects>
+<connect gate="G$1" pin="D0" pad="2"/>
+<connect gate="G$1" pin="D1" pad="3"/>
+<connect gate="G$1" pin="GND" pad="5 PAD"/>
+<connect gate="G$1" pin="ILIM" pad="4"/>
+<connect gate="G$1" pin="IN1" pad="8"/>
+<connect gate="G$1" pin="IN2" pad="6"/>
+<connect gate="G$1" pin="OUT" pad="7"/>
+<connect gate="G$1" pin="STAT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74AHCT125">
+<gates>
+<gate name="G$1" symbol="SN74AHCT125" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PWR" package="TSSOP-14">
+<connects>
+<connect gate="G$1" pin="!OE!1" pad="1"/>
+<connect gate="G$1" pin="!OE!2" pad="4"/>
+<connect gate="G$1" pin="!OE!3" pad="10"/>
+<connect gate="G$1" pin="!OE!4" pad="13"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="5"/>
+<connect gate="G$1" pin="A3" pad="9"/>
+<connect gate="G$1" pin="A4" pad="12"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="14"/>
+<connect gate="G$1" pin="Y1" pad="3"/>
+<connect gate="G$1" pin="Y2" pad="6"/>
+<connect gate="G$1" pin="Y3" pad="8"/>
+<connect gate="G$1" pin="Y4" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FAN5331">
+<gates>
+<gate name="G$1" symbol="FAN5331" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="!SHDN" pad="4"/>
+<connect gate="G$1" pin="FB" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SW" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74HC4050">
+<gates>
+<gate name="G$1" symbol="74HC4050" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-16">
+<connects>
+<connect gate="G$1" pin="1A" pad="3"/>
+<connect gate="G$1" pin="1Y" pad="2"/>
+<connect gate="G$1" pin="2A" pad="5"/>
+<connect gate="G$1" pin="2Y" pad="4"/>
+<connect gate="G$1" pin="3A" pad="7"/>
+<connect gate="G$1" pin="3Y" pad="6"/>
+<connect gate="G$1" pin="4A" pad="9"/>
+<connect gate="G$1" pin="4Y" pad="10"/>
+<connect gate="G$1" pin="5A" pad="11"/>
+<connect gate="G$1" pin="5Y" pad="12"/>
+<connect gate="G$1" pin="6A" pad="14"/>
+<connect gate="G$1" pin="6Y" pad="15"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

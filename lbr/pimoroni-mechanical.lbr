@@ -252,7 +252,7 @@
 <wire x1="-6.828428125" y1="-8" x2="-8.828425" y2="-7.171575" width="0.127" layer="21" curve="-44.999955"/>
 <wire x1="-8.828425" y1="-7.171575" x2="-11" y2="-5" width="0.127" layer="21"/>
 <wire x1="-9" y1="6" x2="9" y2="6" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="9.5" width="0" layer="29"/>
+<circle x="0" y="0" radius="8.9" width="0" layer="29"/>
 <wire x1="4.5" y1="-3.5" x2="4.5" y2="-0.7" width="0.127" layer="21"/>
 <wire x1="4.5" y1="-0.7" x2="4.5" y2="2.0857875" width="0.127" layer="21"/>
 <wire x1="4.5" y1="2.0857875" x2="5.9142125" y2="3.5" width="0.127" layer="21" curve="-90"/>
@@ -269,7 +269,7 @@
 <wire x1="-4.5" y1="-0.7" x2="-4.5" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="-7.5" y1="-0.7" x2="-4.5" y2="-0.7" width="0.127" layer="21" curve="-300.977003"/>
 <wire x1="4.5" y1="-0.7" x2="7.5" y2="-0.7" width="0.127" layer="21" curve="-300.977003"/>
-<circle x="0" y="0" radius="9.5" width="0" layer="41"/>
+<circle x="0.01" y="-0.1" radius="8.9" width="0" layer="41"/>
 <smd name="GND" x="0" y="0" dx="17.8" dy="17.8" layer="1" roundness="100"/>
 </package>
 <package name="SSSS8">

@@ -3030,7 +3030,7 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 </device>
 </devices>
 </deviceset>
-<deviceset name="PAM2306AYPKE">
+<deviceset name="PAM2306AYPKE" prefix="U">
 <gates>
 <gate name="G$1" symbol="PAM2306AYPKE" x="0" y="7.62"/>
 </gates>

@@ -206,6 +206,24 @@
 <wire x1="-1.7" y1="-2.5" x2="-2" y2="-2.2" width="0.127" layer="21"/>
 <wire x1="1.7" y1="-2.5" x2="2" y2="-2.2" width="0.127" layer="21"/>
 </package>
+<package name="SRN4018">
+<smd name="1" x="-1.525" y="0" dx="1.5" dy="3.6" layer="1"/>
+<smd name="2" x="1.525" y="0" dx="1.5" dy="3.6" layer="1"/>
+<text x="0" y="3" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
+<wire x1="-1" y1="2" x2="1" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-2" x2="-1" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="2" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="2" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-2" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+</package>
 <package name="NRS6020">
 <smd name="1" x="-2.38" y="0" dx="1.6" dy="5.7" layer="1"/>
 <smd name="2" x="2.42" y="0" dx="1.6" dy="5.7" layer="1"/>
@@ -528,6 +546,22 @@
 </gates>
 <devices>
 <device name="" package="NRS6020">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRN4018-4R7M">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SRN4018">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

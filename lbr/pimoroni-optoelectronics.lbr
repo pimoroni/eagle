@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -638,6 +638,22 @@
 <circle x="0" y="0" radius="1.4142125" width="0.127" layer="21"/>
 <circle x="-2" y="2" radius="0.08" width="0.18" layer="21"/>
 <wire x1="-1.2954" y1="1.7272" x2="-1.7526" y2="1.27" width="0.127" layer="21"/>
+</package>
+<package name="LTP-305">
+<pad name="PAD1" x="-3.81" y="7.62" drill="0.6" diameter="0.9"/>
+<pad name="PAD2" x="-3.81" y="5.08" drill="0.6" diameter="0.9"/>
+<pad name="PAD3" x="-3.81" y="2.54" drill="0.6" diameter="0.9"/>
+<pad name="PAD4" x="-3.81" y="0" drill="0.6" diameter="0.9"/>
+<pad name="PAD5" x="-3.81" y="-2.54" drill="0.6" diameter="0.9"/>
+<pad name="PAD7" x="-3.81" y="-7.62" drill="0.6" diameter="0.9"/>
+<pad name="PAD8" x="3.81" y="-7.62" drill="0.6" diameter="0.9"/>
+<pad name="PAD9" x="3.81" y="-5.08" drill="0.6" diameter="0.9"/>
+<pad name="PAD10" x="3.81" y="-2.54" drill="0.6" diameter="0.9"/>
+<pad name="PAD11" x="3.81" y="0" drill="0.6" diameter="0.9"/>
+<pad name="PAD12" x="3.81" y="2.54" drill="0.6" diameter="0.9"/>
+<pad name="PAD13" x="3.81" y="5.08" drill="0.6" diameter="0.9"/>
+<pad name="PAD14" x="3.81" y="7.62" drill="0.6" diameter="0.9"/>
+<circle x="-2.032" y="7.62" radius="0.359209375" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2232,6 +2248,25 @@
 <wire x1="7.366" y1="1.27" x2="6.858" y2="1.778" width="0.2032" layer="95"/>
 <wire x1="7.366" y1="1.27" x2="6.858" y2="0.762" width="0.2032" layer="95"/>
 </symbol>
+<symbol name="LTP-305">
+<wire x1="-7.62" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<pin name="C1" x="-12.7" y="12.7" visible="pin" length="middle"/>
+<pin name="C2" x="-12.7" y="10.16" visible="pin" length="middle"/>
+<pin name="C3" x="-12.7" y="7.62" visible="pin" length="middle"/>
+<pin name="C4" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="C5" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="DECIMAL" x="-12.7" y="-10.16" visible="pin" length="middle"/>
+<pin name="R7" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="R6" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="R5" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="R4" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="R3" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="R2" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="R1" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TS-TSMD5050RGB">
@@ -2435,6 +2470,33 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connect gate="G$1" pin="DO" pad="4"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="VDD" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTP-305">
+<gates>
+<gate name="G$1" symbol="LTP-305" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTP-305">
+<connects>
+<connect gate="G$1" pin="C1" pad="PAD5"/>
+<connect gate="G$1" pin="C2" pad="PAD1"/>
+<connect gate="G$1" pin="C3" pad="PAD8"/>
+<connect gate="G$1" pin="C4" pad="PAD14"/>
+<connect gate="G$1" pin="C5" pad="PAD13"/>
+<connect gate="G$1" pin="DECIMAL" pad="PAD7"/>
+<connect gate="G$1" pin="R1" pad="PAD2"/>
+<connect gate="G$1" pin="R2" pad="PAD12"/>
+<connect gate="G$1" pin="R3" pad="PAD3"/>
+<connect gate="G$1" pin="R4" pad="PAD4"/>
+<connect gate="G$1" pin="R5" pad="PAD11"/>
+<connect gate="G$1" pin="R6" pad="PAD10"/>
+<connect gate="G$1" pin="R7" pad="PAD9"/>
 </connects>
 <technologies>
 <technology name=""/>

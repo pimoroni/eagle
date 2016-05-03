@@ -1013,6 +1013,28 @@
 <smd name="2" x="-2.9178" y="1.625" dx="0.3" dy="1.4" layer="1" rot="R270"/>
 <smd name="15" x="2.9178" y="1.625" dx="0.3" dy="1.4" layer="1" rot="R270"/>
 </package>
+<package name="WDFN-12L">
+<smd name="PAD" x="0" y="0" dx="1.7" dy="2.5" layer="1"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<smd name="1" x="-1.7" y="1.125" dx="1" dy="0.25" layer="1"/>
+<smd name="2" x="-1.7" y="0.675" dx="1" dy="0.25" layer="1"/>
+<smd name="3" x="-1.7" y="0.225" dx="1" dy="0.25" layer="1"/>
+<smd name="4" x="-1.7" y="-0.225" dx="1" dy="0.25" layer="1"/>
+<smd name="5" x="-1.7" y="-0.675" dx="1" dy="0.25" layer="1"/>
+<smd name="6" x="-1.7" y="-1.125" dx="1" dy="0.25" layer="1"/>
+<smd name="7" x="1.7" y="-1.125" dx="1" dy="0.25" layer="1"/>
+<smd name="8" x="1.7" y="-0.675" dx="1" dy="0.25" layer="1"/>
+<smd name="9" x="1.7" y="-0.225" dx="1" dy="0.25" layer="1"/>
+<smd name="10" x="1.7" y="0.225" dx="1" dy="0.25" layer="1"/>
+<smd name="11" x="1.7" y="0.675" dx="1" dy="0.25" layer="1"/>
+<smd name="12" x="1.7" y="1.125" dx="1" dy="0.25" layer="1"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-0.8" y="0.8" radius="0.282840625" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -1851,6 +1873,27 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
 <text x="-7.62" y="17.78" size="1.778" layer="94">&gt;NAME</text>
 <text x="-7.62" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="PAM2306AYPKE">
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="VIN2" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="LX2" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@1" x="-15.24" y="-17.78" length="middle" direction="pwr"/>
+<pin name="FB1" x="15.24" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="NC@0" x="-15.24" y="-7.62" length="middle" direction="nc"/>
+<pin name="EN1" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="VIN1" x="-15.24" y="7.62" length="middle" direction="pwr"/>
+<pin name="LX1" x="15.24" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="-15.24" y="-15.24" length="middle" direction="pwr"/>
+<pin name="FB2" x="15.24" y="-5.08" length="middle" direction="in" rot="R180"/>
+<pin name="NC@1" x="-15.24" y="-10.16" length="middle" direction="nc"/>
+<pin name="EN2" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="GND@0" x="-15.24" y="-20.32" length="middle" direction="pwr"/>
+<text x="-7.62" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2980,6 +3023,33 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="6Y" pad="15"/>
 <connect gate="G$1" pin="GND" pad="8"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAM2306AYPKE" prefix="U">
+<gates>
+<gate name="G$1" symbol="PAM2306AYPKE" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="WDFN-12L">
+<connects>
+<connect gate="G$1" pin="EN1" pad="6"/>
+<connect gate="G$1" pin="EN2" pad="12"/>
+<connect gate="G$1" pin="FB1" pad="4"/>
+<connect gate="G$1" pin="FB2" pad="10"/>
+<connect gate="G$1" pin="GND@0" pad="PAD"/>
+<connect gate="G$1" pin="GND@1" pad="3"/>
+<connect gate="G$1" pin="GND@2" pad="9"/>
+<connect gate="G$1" pin="LX1" pad="8"/>
+<connect gate="G$1" pin="LX2" pad="2"/>
+<connect gate="G$1" pin="NC@0" pad="5"/>
+<connect gate="G$1" pin="NC@1" pad="11"/>
+<connect gate="G$1" pin="VIN1" pad="7"/>
+<connect gate="G$1" pin="VIN2" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

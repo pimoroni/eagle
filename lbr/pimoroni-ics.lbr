@@ -140,6 +140,65 @@
 </layers>
 <library>
 <packages>
+<package name="TSSOP-16-TI">
+<description>&lt;b&gt;PW (R-PDSO-G8)&lt;/b&gt;&lt;p&gt;
+Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
+<wire x1="-2.15" y1="-2.7" x2="2.15" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="2.15" y1="-2.7" x2="2.15" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="2.15" y1="2.7" x2="-2.15" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="2.7" x2="-2.15" y2="-2.7" width="0.2032" layer="21"/>
+<circle x="-1.625" y="1.95" radius="0.325" width="0" layer="21"/>
+<smd name="1" x="-2.808159375" y="2.275" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="2" x="-2.808159375" y="1.625" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="3" x="-2.808159375" y="0.975" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="4" x="-2.808159375" y="0.325" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="5" x="-2.808159375" y="-0.325" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="6" x="-2.808159375" y="-0.975" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="7" x="-2.808159375" y="-1.625" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="8" x="-2.808159375" y="-2.275" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="9" x="2.795459375" y="-2.275" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="10" x="2.795459375" y="-1.625" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="11" x="2.795459375" y="-0.975" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="12" x="2.795459375" y="-0.325" dx="1.2" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="13" x="2.795459375" y="0.325" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="14" x="2.795459375" y="0.975" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="15" x="2.795459375" y="1.625" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<smd name="16" x="2.795459375" y="2.275" dx="1.2" dy="0.35" layer="1" stop="no"/>
+<text x="-2.2392" y="3.1536" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<text x="-2.234" y="-3.9964" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
+<rectangle x1="-3.183159375" y1="2.15" x2="-2.083159375" y2="2.4" layer="51"/>
+<rectangle x1="-3.183159375" y1="1.5" x2="-2.083159375" y2="1.75" layer="51"/>
+<rectangle x1="-3.183159375" y1="0.85" x2="-2.083159375" y2="1.1" layer="51"/>
+<rectangle x1="-3.183159375" y1="0.2" x2="-2.083159375" y2="0.45" layer="51"/>
+<rectangle x1="-3.183159375" y1="-0.45" x2="-2.083159375" y2="-0.2" layer="51" rot="R180"/>
+<rectangle x1="-3.183159375" y1="-1.1" x2="-2.083159375" y2="-0.85" layer="51" rot="R180"/>
+<rectangle x1="-3.183159375" y1="-1.75" x2="-2.083159375" y2="-1.5" layer="51" rot="R180"/>
+<rectangle x1="-3.183159375" y1="-2.4" x2="-2.083159375" y2="-2.15" layer="51" rot="R180"/>
+<rectangle x1="2.070459375" y1="-2.4" x2="3.170459375" y2="-2.15" layer="51" rot="R180"/>
+<rectangle x1="2.070459375" y1="-1.75" x2="3.170459375" y2="-1.5" layer="51" rot="R180"/>
+<rectangle x1="2.070459375" y1="-1.1" x2="3.170459375" y2="-0.85" layer="51" rot="R180"/>
+<rectangle x1="2.070459375" y1="-0.45" x2="3.170459375" y2="-0.2" layer="51" rot="R180"/>
+<rectangle x1="2.070459375" y1="0.2" x2="3.170459375" y2="0.45" layer="51"/>
+<rectangle x1="2.070459375" y1="0.85" x2="3.170459375" y2="1.1" layer="51"/>
+<rectangle x1="2.070459375" y1="1.5" x2="3.170459375" y2="1.75" layer="51"/>
+<rectangle x1="2.070459375" y1="2.15" x2="3.170459375" y2="2.4" layer="51"/>
+<rectangle x1="-3.033159375" y1="1.6" x2="-2.583159375" y2="2.95" layer="29" rot="R270"/>
+<rectangle x1="-3.033159375" y1="0.95" x2="-2.583159375" y2="2.3" layer="29" rot="R270"/>
+<rectangle x1="-3.033159375" y1="0.3" x2="-2.583159375" y2="1.65" layer="29" rot="R270"/>
+<rectangle x1="-3.033159375" y1="-0.35" x2="-2.583159375" y2="1" layer="29" rot="R270"/>
+<rectangle x1="-3.033159375" y1="-1" x2="-2.583159375" y2="0.35" layer="29" rot="R270"/>
+<rectangle x1="-3.033159375" y1="-1.65" x2="-2.583159375" y2="-0.3" layer="29" rot="R270"/>
+<rectangle x1="-3.033159375" y1="-2.3" x2="-2.583159375" y2="-0.95" layer="29" rot="R270"/>
+<rectangle x1="-3.033159375" y1="-2.95" x2="-2.583159375" y2="-1.6" layer="29" rot="R270"/>
+<rectangle x1="2.570459375" y1="-2.95" x2="3.020459375" y2="-1.6" layer="29" rot="R90"/>
+<rectangle x1="2.570459375" y1="-2.3" x2="3.020459375" y2="-0.95" layer="29" rot="R90"/>
+<rectangle x1="2.570459375" y1="-1.65" x2="3.020459375" y2="-0.3" layer="29" rot="R90"/>
+<rectangle x1="2.570459375" y1="-1" x2="3.020459375" y2="0.35" layer="29" rot="R90"/>
+<rectangle x1="2.570459375" y1="-0.35" x2="3.020459375" y2="1" layer="29" rot="R90"/>
+<rectangle x1="2.570459375" y1="0.3" x2="3.020459375" y2="1.65" layer="29" rot="R90"/>
+<rectangle x1="2.570459375" y1="0.95" x2="3.020459375" y2="2.3" layer="29" rot="R90"/>
+<rectangle x1="2.570459375" y1="1.6" x2="3.020459375" y2="2.95" layer="29" rot="R90"/>
+</package>
 <package name="QFP-64">
 <wire x1="-5" y1="-4" x2="-4" y2="-5" width="0.127" layer="21"/>
 <circle x="-5" y="-5" radius="0.1" width="0.3" layer="21"/>
@@ -1104,6 +1163,30 @@
 <text x="0" y="45.72" size="1.27" layer="94" align="bottom-center">STM32F405RXXX</text>
 <pin name="PD2" x="-17.78" y="10.16" visible="pin" length="short"/>
 </symbol>
+<symbol name="ULN2003A">
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<pin name="IN7" x="-12.7" y="-7.62" visible="pin" length="short"/>
+<pin name="IN6" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="IN5" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="IN4" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="IN3" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="IN2" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="IN1" x="-12.7" y="7.62" visible="pin" length="short"/>
+<pin name="OUT7" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="OUT6" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="OUT5" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="OUT4" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="OUT3" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="OUT2" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="OUT1" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-12.7" y="-12.7" visible="pin" length="short"/>
+<pin name="COM" x="-12.7" y="12.7" visible="pin" length="short"/>
+<text x="-10.16" y="17.78" size="1.778" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-20.32" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 <symbol name="SN3218A">
 <wire x1="-12.7" y1="22.46" x2="12.7" y2="22.46" width="0.254" layer="94"/>
 <wire x1="12.7" y1="22.46" x2="12.7" y2="-25.54" width="0.254" layer="94"/>
@@ -1897,6 +1980,36 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="ULN2003A">
+<gates>
+<gate name="G$1" symbol="ULN2003A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-16-TI">
+<connects>
+<connect gate="G$1" pin="COM" pad="9"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="2"/>
+<connect gate="G$1" pin="IN3" pad="3"/>
+<connect gate="G$1" pin="IN4" pad="4"/>
+<connect gate="G$1" pin="IN5" pad="5"/>
+<connect gate="G$1" pin="IN6" pad="6"/>
+<connect gate="G$1" pin="IN7" pad="7"/>
+<connect gate="G$1" pin="OUT1" pad="16"/>
+<connect gate="G$1" pin="OUT2" pad="15"/>
+<connect gate="G$1" pin="OUT3" pad="14"/>
+<connect gate="G$1" pin="OUT4" pad="13"/>
+<connect gate="G$1" pin="OUT5" pad="12"/>
+<connect gate="G$1" pin="OUT6" pad="11"/>
+<connect gate="G$1" pin="OUT7" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="STM32F405XXX">
 <gates>
 <gate name="G$1" symbol="STM32F405RXXX" x="0" y="0"/>

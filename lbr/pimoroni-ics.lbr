@@ -1094,6 +1094,38 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 <circle x="-0.8" y="0.8" radius="0.282840625" width="0.127" layer="21"/>
 </package>
+<package name="QFN-20-NOPAD">
+<wire x1="-1.39" y1="-1.74" x2="-1.74" y2="-1.74" width="0.2032" layer="21"/>
+<wire x1="-1.74" y1="-1.74" x2="-1.74" y2="-1.39" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="1.4" x2="-1.4" y2="1.75" width="0.2032" layer="21"/>
+<wire x1="1.39" y1="1.75" x2="1.74" y2="1.75" width="0.2032" layer="21"/>
+<wire x1="1.74" y1="1.75" x2="1.74" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="1.72" y1="-1.37" x2="1.72" y2="-1.72" width="0.2032" layer="21"/>
+<wire x1="1.72" y1="-1.72" x2="1.37" y2="-1.72" width="0.2032" layer="21"/>
+<circle x="-1.85" y="1.84" radius="0.12" width="0" layer="21"/>
+<smd name="1" x="-2.0052" y="1" dx="1" dy="0.25" layer="1" roundness="25"/>
+<smd name="2" x="-2.0052" y="0.502" dx="1" dy="0.25" layer="1" roundness="25"/>
+<smd name="3" x="-2.0052" y="0.004" dx="1" dy="0.25" layer="1" roundness="25"/>
+<smd name="4" x="-2.0052" y="-0.504" dx="1" dy="0.25" layer="1" roundness="25"/>
+<smd name="5" x="-2.0052" y="-1.002" dx="1" dy="0.25" layer="1" roundness="25"/>
+<text x="-1.806" y="2.98" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<text x="-2.132" y="-3.79" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
+<smd name="6" x="-1" y="-2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R90"/>
+<smd name="7" x="-0.502" y="-2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R90"/>
+<smd name="8" x="-0.004" y="-2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R90"/>
+<smd name="9" x="0.504" y="-2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R90"/>
+<smd name="10" x="1.002" y="-2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R90"/>
+<smd name="11" x="2.0052" y="-0.99" dx="1" dy="0.25" layer="1" roundness="25" rot="R180"/>
+<smd name="12" x="2.0052" y="-0.492" dx="1" dy="0.25" layer="1" roundness="25" rot="R180"/>
+<smd name="13" x="2.0052" y="0.006" dx="1" dy="0.25" layer="1" roundness="25" rot="R180"/>
+<smd name="14" x="2.0052" y="0.514" dx="1" dy="0.25" layer="1" roundness="25" rot="R180"/>
+<smd name="15" x="2.0052" y="1.012" dx="1" dy="0.25" layer="1" roundness="25" rot="R180"/>
+<smd name="16" x="1" y="2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
+<smd name="17" x="0.502" y="2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
+<smd name="18" x="0.004" y="2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
+<smd name="19" x="-0.504" y="2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
+<smd name="20" x="-1.002" y="2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -1977,6 +2009,29 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="GND@0" x="-15.24" y="-20.32" length="middle" direction="pwr"/>
 <text x="-7.62" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="NRF24L01+">
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<pin name="CE" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="CSN" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SCK" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="MOSI" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="MISO" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="IRQ" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="VDD" x="-12.7" y="12.7" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="XC1" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="XC2" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="VDD_PA" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="ANT1" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="ANT2" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="IREF" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="DVDD" x="-12.7" y="10.16" visible="pin" length="short"/>
+<text x="-10.16" y="17.78" size="1.27" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.27" layer="94">nRF24L01+</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3163,6 +3218,35 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="NC@1" pad="11"/>
 <connect gate="G$1" pin="VIN1" pad="7"/>
 <connect gate="G$1" pin="VIN2" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRF24L01+">
+<gates>
+<gate name="G$1" symbol="NRF24L01+" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="QFN-20-NOPAD">
+<connects>
+<connect gate="G$1" pin="ANT1" pad="12"/>
+<connect gate="G$1" pin="ANT2" pad="13"/>
+<connect gate="G$1" pin="CE" pad="1"/>
+<connect gate="G$1" pin="CSN" pad="2"/>
+<connect gate="G$1" pin="DVDD" pad="19"/>
+<connect gate="G$1" pin="GND" pad="8 14 17 20"/>
+<connect gate="G$1" pin="IREF" pad="16"/>
+<connect gate="G$1" pin="IRQ" pad="6"/>
+<connect gate="G$1" pin="MISO" pad="5"/>
+<connect gate="G$1" pin="MOSI" pad="4"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="7 15 18"/>
+<connect gate="G$1" pin="VDD_PA" pad="11"/>
+<connect gate="G$1" pin="XC1" pad="10"/>
+<connect gate="G$1" pin="XC2" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>

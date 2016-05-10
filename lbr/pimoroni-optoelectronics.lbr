@@ -524,6 +524,22 @@
 <vertex x="-1.1" y="-1.1"/>
 </polygon>
 </package>
+<package name="LTST-C230XXXX_BSTOP">
+<smd name="A" x="-1.8" y="0" dx="1.5" dy="1.6" layer="16" rot="R180"/>
+<smd name="C" x="1.8" y="0" dx="1.5" dy="1.6" layer="16" rot="R180"/>
+<polygon width="0.127" layer="42">
+<vertex x="-0.97" y="0.75"/>
+<vertex x="0.97" y="0.75"/>
+<vertex x="0.97" y="-0.75"/>
+<vertex x="-0.97" y="-0.75"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-0.97" y="0.6"/>
+<vertex x="0.97" y="0.6"/>
+<vertex x="0.97" y="-0.6"/>
+<vertex x="-0.97" y="-0.6"/>
+</polygon>
+</package>
 <package name="GP2Y0A60SZ0F">
 <circle x="-6.93" y="0" radius="3.162275" width="0.2" layer="21"/>
 <circle x="7.07" y="0" radius="3.162275" width="0.2" layer="21"/>
@@ -2208,6 +2224,8 @@
 <wire x1="1.651" y1="1.3335" x2="1.4605" y2="1.2065" width="0.1016" layer="94"/>
 <wire x1="1.4605" y1="1.2065" x2="1.651" y2="1.0795" width="0.1016" layer="94"/>
 <wire x1="1.651" y1="1.0795" x2="1.651" y2="1.3335" width="0.1016" layer="94"/>
+<text x="-2.54" y="2.032" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="GP2Y0A60SZXX">
 <wire x1="-10.16" y1="20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
@@ -2355,7 +2373,7 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTST-C230XXXX">
+<deviceset name="LTST-C230XXXX" prefix="LED" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -2370,6 +2388,15 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 </technologies>
 </device>
 <device name="NOHOLE" package="LTST_C230XXXX_NOHOLE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BSTOP" package="LTST-C230XXXX_BSTOP">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>

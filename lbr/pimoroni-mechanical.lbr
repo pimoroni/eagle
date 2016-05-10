@@ -306,6 +306,22 @@
 <circle x="16" y="-13.75" radius="3" width="0.127" layer="42"/>
 <circle x="-16" y="-13.75" radius="3" width="0.127" layer="42"/>
 </package>
+<package name="RELAY-EE2">
+<wire x1="-7.5" y1="3.75" x2="7.5" y2="3.75" width="0.127" layer="21"/>
+<wire x1="7.5" y1="3.75" x2="7.5" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-3.75" x2="-7.5" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-3.75" x2="-7.5" y2="3.75" width="0.127" layer="21"/>
+<smd name="1" x="-6.45" y="-3.645" dx="1.11" dy="3" layer="1"/>
+<smd name="3" x="-1.37" y="-3.645" dx="1.11" dy="3" layer="1"/>
+<smd name="4" x="1.17" y="-3.645" dx="1.11" dy="3" layer="1"/>
+<smd name="5" x="3.71" y="-3.645" dx="1.11" dy="3" layer="1"/>
+<smd name="12" x="-6.45" y="3.645" dx="1.11" dy="3" layer="1"/>
+<smd name="10" x="-1.37" y="3.645" dx="1.11" dy="3" layer="1"/>
+<smd name="9" x="1.17" y="3.645" dx="1.11" dy="3" layer="1"/>
+<smd name="8" x="3.71" y="3.645" dx="1.11" dy="3" layer="1"/>
+<text x="-6.5" y="0.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6.5" y="-1.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-SPST">
@@ -352,6 +368,59 @@
 <wire x1="3.048" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
 <pin name="1" x="7.62" y="2.54" visible="pad" length="short" rot="R180"/>
 <circle x="2.54" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
+</symbol>
+<symbol name="RELAY-DPDT">
+<wire x1="5.08" y1="15.24" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.778" x2="-5.08" y2="5.08" width="0.254" layer="94" curve="171.202589"/>
+<wire x1="-5.08" y1="3.302" x2="-5.08" y2="1.778" width="0.254" layer="94" curve="212.527339"/>
+<wire x1="-5.08" y1="-0.762" x2="-5.08" y2="3.302" width="0.254" layer="94" curve="148.582724"/>
+<wire x1="-5.08" y1="0.762" x2="-5.08" y2="-0.762" width="0.254" layer="94" curve="212.527339"/>
+<wire x1="-5.08" y1="-3.302" x2="-5.08" y2="0.762" width="0.254" layer="94" curve="147.477858"/>
+<wire x1="-5.08" y1="-1.778" x2="-5.08" y2="-3.302" width="0.254" layer="94" curve="212.527339"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-1.778" width="0.254" layer="94" curve="171.202589"/>
+<wire x1="5.08" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="0.762" y2="9.398" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="0.762" y2="10.922" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="-0.762" y2="10.922" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0.762" y2="4.318" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="-0.762" y2="4.318" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="15.748" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;Value</text>
+<pin name="COIL-" x="-10.16" y="-5.08" visible="off" length="short"/>
+<pin name="MAIN1" x="7.62" y="7.62" visible="off" length="short" rot="R180"/>
+<pin name="OFF1" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="ON1" x="7.62" y="12.7" visible="off" length="short" rot="R180"/>
+<pin name="COIL+" x="-10.16" y="5.08" visible="off" length="short"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="0.762" y2="-5.842" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0.762" y2="-4.318" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-0.762" y2="-4.318" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0.762" y2="-10.922" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="-0.762" y2="-10.922" width="0.254" layer="94"/>
+<pin name="MAIN2" x="7.62" y="-7.62" visible="off" length="short" rot="R180"/>
+<pin name="OFF2" x="7.62" y="-12.7" visible="off" length="short" rot="R180"/>
+<pin name="ON2" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
+<wire x1="5.08" y1="-15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -415,6 +484,28 @@
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 <connect gate="G$1" pin="3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_EE2" prefix="K" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RELAY-DPDT" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="RELAY-EE2">
+<connects>
+<connect gate="G$1" pin="COIL+" pad="1"/>
+<connect gate="G$1" pin="COIL-" pad="12"/>
+<connect gate="G$1" pin="MAIN1" pad="4"/>
+<connect gate="G$1" pin="MAIN2" pad="9"/>
+<connect gate="G$1" pin="OFF1" pad="5"/>
+<connect gate="G$1" pin="OFF2" pad="8"/>
+<connect gate="G$1" pin="ON1" pad="3"/>
+<connect gate="G$1" pin="ON2" pad="10"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -324,6 +324,48 @@
 <wire x1="8" y1="4" x2="8.55" y2="4" width="0.127" layer="21"/>
 <wire x1="8.55" y1="4" x2="8.55" y2="5.3" width="0.127" layer="21"/>
 </package>
+<package name="FPC_1.0X30">
+<smd name="1" x="-14.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="MT1" x="-17.3" y="1.5" dx="2" dy="2.5" layer="1"/>
+<smd name="MT2" x="17.3" y="1.5" dx="2" dy="2.5" layer="1"/>
+<smd name="2" x="-13.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="3" x="-12.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="4" x="-11.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="5" x="-10.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="6" x="-9.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="7" x="-8.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="8" x="-7.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="9" x="-6.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="10" x="-5.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<wire x1="-18" y1="0" x2="18" y2="0" width="0.127" layer="21"/>
+<wire x1="-18.55" y1="5.3" x2="18.55" y2="5.3" width="0.127" layer="21"/>
+<wire x1="-18" y1="0" x2="-18" y2="4" width="0.127" layer="21"/>
+<wire x1="-18" y1="4" x2="-18.55" y2="4" width="0.127" layer="21"/>
+<wire x1="-18.55" y1="4" x2="-18.55" y2="5.3" width="0.127" layer="21"/>
+<wire x1="18" y1="0" x2="18" y2="4" width="0.127" layer="21"/>
+<wire x1="18" y1="4" x2="18.55" y2="4" width="0.127" layer="21"/>
+<wire x1="18.55" y1="4" x2="18.55" y2="5.3" width="0.127" layer="21"/>
+<smd name="11" x="-4.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="12" x="-3.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="13" x="-2.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="14" x="-1.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="15" x="-0.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="16" x="0.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="17" x="1.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="18" x="2.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="19" x="3.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="20" x="4.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="21" x="5.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="22" x="6.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="23" x="7.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="24" x="8.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="25" x="9.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="26" x="10.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="27" x="11.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="28" x="12.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="29" x="13.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="30" x="14.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -397,6 +439,44 @@
 <pin name="P$10" x="10.16" y="-12.7" visible="pin" length="short" rot="R180"/>
 <pin name="MT1" x="10.16" y="-17.78" length="short" rot="R180"/>
 <pin name="MT2" x="10.16" y="-20.32" length="short" rot="R180"/>
+</symbol>
+<symbol name="1X30_W_MOUNTS">
+<pin name="P$1" x="10.16" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="P$2" x="10.16" y="7.62" visible="pin" length="short" rot="R180"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-73.66" width="0.254" layer="94"/>
+<text x="0" y="15.24" size="1.778" layer="94">&gt;NAME</text>
+<wire x1="7.62" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-73.66" x2="0" y2="-73.66" width="0.254" layer="94"/>
+<pin name="P$3" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="P$4" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="P$5" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="P$6" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="P$7" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="P$8" x="10.16" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="P$9" x="10.16" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="P$10" x="10.16" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="MT1" x="10.16" y="-68.58" visible="pin" length="short" rot="R180"/>
+<pin name="MT2" x="10.16" y="-71.12" visible="pin" length="short" rot="R180"/>
+<pin name="P$11" x="10.16" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="P$12" x="10.16" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="P$13" x="10.16" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="P$14" x="10.16" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="P$15" x="10.16" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="P$16" x="10.16" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="P$17" x="10.16" y="-30.48" visible="pin" length="short" rot="R180"/>
+<pin name="P$18" x="10.16" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="P$19" x="10.16" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="P$20" x="10.16" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="P$21" x="10.16" y="-40.64" visible="pin" length="short" rot="R180"/>
+<pin name="P$22" x="10.16" y="-43.18" visible="pin" length="short" rot="R180"/>
+<pin name="P$23" x="10.16" y="-45.72" visible="pin" length="short" rot="R180"/>
+<pin name="P$24" x="10.16" y="-48.26" visible="pin" length="short" rot="R180"/>
+<pin name="P$25" x="10.16" y="-50.8" visible="pin" length="short" rot="R180"/>
+<pin name="P$26" x="10.16" y="-53.34" visible="pin" length="short" rot="R180"/>
+<pin name="P$27" x="10.16" y="-55.88" visible="pin" length="short" rot="R180"/>
+<pin name="P$28" x="10.16" y="-58.42" visible="pin" length="short" rot="R180"/>
+<pin name="P$29" x="10.16" y="-60.96" visible="pin" length="short" rot="R180"/>
+<pin name="P$30" x="10.16" y="-63.5" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -499,6 +579,52 @@
 <connect gate="G$1" pin="P$10" pad="10"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
 <connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+<connect gate="G$1" pin="P$6" pad="6"/>
+<connect gate="G$1" pin="P$7" pad="7"/>
+<connect gate="G$1" pin="P$8" pad="8"/>
+<connect gate="G$1" pin="P$9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FPC-1.0X30" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="1X30_W_MOUNTS" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="FPC_1.0X30">
+<connects>
+<connect gate="G$1" pin="MT1" pad="MT1"/>
+<connect gate="G$1" pin="MT2" pad="MT2"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$10" pad="10"/>
+<connect gate="G$1" pin="P$11" pad="11"/>
+<connect gate="G$1" pin="P$12" pad="12"/>
+<connect gate="G$1" pin="P$13" pad="13"/>
+<connect gate="G$1" pin="P$14" pad="14"/>
+<connect gate="G$1" pin="P$15" pad="15"/>
+<connect gate="G$1" pin="P$16" pad="16"/>
+<connect gate="G$1" pin="P$17" pad="17"/>
+<connect gate="G$1" pin="P$18" pad="18"/>
+<connect gate="G$1" pin="P$19" pad="19"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$20" pad="20"/>
+<connect gate="G$1" pin="P$21" pad="21"/>
+<connect gate="G$1" pin="P$22" pad="22"/>
+<connect gate="G$1" pin="P$23" pad="23"/>
+<connect gate="G$1" pin="P$24" pad="24"/>
+<connect gate="G$1" pin="P$25" pad="25"/>
+<connect gate="G$1" pin="P$26" pad="26"/>
+<connect gate="G$1" pin="P$27" pad="27"/>
+<connect gate="G$1" pin="P$28" pad="28"/>
+<connect gate="G$1" pin="P$29" pad="29"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$30" pad="30"/>
 <connect gate="G$1" pin="P$4" pad="4"/>
 <connect gate="G$1" pin="P$5" pad="5"/>
 <connect gate="G$1" pin="P$6" pad="6"/>

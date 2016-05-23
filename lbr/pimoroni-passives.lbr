@@ -209,8 +209,8 @@
 <package name="NR4018">
 <smd name="1" x="-1.4" y="0" dx="1.2" dy="3.7" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.2" dy="3.7" layer="1"/>
-<text x="0" y="3" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
+<text x="0" y="3" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3" size="0.8128" layer="27" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
 <wire x1="-1" y1="2" x2="1" y2="2" width="0.127" layer="21"/>
 <wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1" y1="-2" x2="-1" y2="-2" width="0.127" layer="21"/>

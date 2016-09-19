@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.02" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1126,6 +1126,29 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="19" x="-0.504" y="2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
 <smd name="20" x="-1.002" y="2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
 </package>
+<package name="SOT363_INFINEON">
+<description>&lt;b&gt;Small Outline Transistor; 6 leads&lt;/b&gt; Reflow soldering&lt;p&gt;
+INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
+<wire x1="-1" y1="0.55" x2="1" y2="0.55" width="0.2032" layer="51"/>
+<wire x1="1" y1="0.55" x2="1" y2="-0.55" width="0.2032" layer="21"/>
+<wire x1="1" y1="-0.55" x2="-1" y2="-0.55" width="0.2032" layer="51"/>
+<wire x1="-1" y1="-0.55" x2="-1" y2="0.55" width="0.2032" layer="21"/>
+<circle x="-0.7" y="-0.25" radius="0.15" width="0" layer="21"/>
+<smd name="1" x="-0.65" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="2" x="0" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="3" x="0.65" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="4" x="0.65" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="5" x="0" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="6" x="-0.65" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<text x="-1.1" y="1.45" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-2.7" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
+<rectangle x1="-0.15" y1="0.6" x2="0.15" y2="1.1" layer="51"/>
+<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -2032,6 +2055,46 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="DVDD" x="-12.7" y="10.16" visible="pin" length="short"/>
 <text x="-10.16" y="17.78" size="1.27" layer="94">&gt;NAME</text>
 <text x="-10.16" y="-17.78" size="1.27" layer="94">nRF24L01+</text>
+</symbol>
+<symbol name="BC857BS">
+<pin name="E1" x="-15.24" y="5.08" length="middle"/>
+<pin name="B1" x="-15.24" y="0" length="middle"/>
+<pin name="C2" x="-15.24" y="-5.08" length="middle"/>
+<pin name="E2" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="B2" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="C1" x="15.24" y="5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-6.604" y="8.636" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.366" y="-9.906" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="-4.572" y1="5.08" x2="-4.064" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="5.08" x2="-2.54" y2="3.556" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.556" x2="-2.54" y2="4.064" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="4.064" x2="-3.048" y2="3.556" width="0.254" layer="94"/>
+<wire x1="-3.048" y1="3.556" x2="-2.54" y2="3.556" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.556" x2="-1.524" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.016" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="2.54" x2="-0.508" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="2.54" x2="0.508" y2="2.54" width="0.254" layer="94"/>
+<wire x1="4.572" y1="5.08" x2="2.032" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.032" y1="5.08" x2="-0.508" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="2.54" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0" x2="-4.572" y2="0" width="0.254" layer="94"/>
+<wire x1="4.572" y1="-5.08" x2="4.064" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-5.08" x2="2.54" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.556" x2="2.54" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-4.064" x2="3.048" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-3.556" x2="2.54" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.556" x2="1.524" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.016" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-2.54" x2="0.508" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-2.54" x2="-0.508" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="-5.08" x2="-2.032" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="-5.08" x2="0.508" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-2.54" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="1.016" y1="0" x2="4.572" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3285,6 +3348,26 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="VDD_PA" pad="11"/>
 <connect gate="G$1" pin="XC1" pad="10"/>
 <connect gate="G$1" pin="XC2" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BC857BS">
+<gates>
+<gate name="G$1" symbol="BC857BS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT363_INFINEON">
+<connects>
+<connect gate="G$1" pin="B1" pad="2"/>
+<connect gate="G$1" pin="B2" pad="5"/>
+<connect gate="G$1" pin="C1" pad="6"/>
+<connect gate="G$1" pin="C2" pad="3"/>
+<connect gate="G$1" pin="E1" pad="1"/>
+<connect gate="G$1" pin="E2" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

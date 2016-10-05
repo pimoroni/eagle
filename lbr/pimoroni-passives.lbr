@@ -635,7 +635,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="TSX-3225">
+<deviceset name="TSX-3225" prefix="Y" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="XTAL" x="0" y="0"/>
 </gates>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1126,6 +1126,43 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="19" x="-0.504" y="2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
 <smd name="20" x="-1.002" y="2.0052" dx="1" dy="0.25" layer="1" roundness="25" rot="R270"/>
 </package>
+<package name="SOP28-300MIL">
+<wire x1="-8.8" y1="-3.5" x2="8.8" y2="-3.5" width="0.4064" layer="51"/>
+<wire x1="8.8" y1="3.5" x2="-8.8" y2="3.5" width="0.4064" layer="21"/>
+<wire x1="-8.8" y1="3.5" x2="-8.8" y2="-3.5" width="0.4064" layer="21"/>
+<wire x1="8.8" y1="-3.5" x2="8.8" y2="3.5" width="0.4064" layer="21"/>
+<circle x="-9.62" y="-4.386" radius="0.254" width="0.5" layer="21"/>
+<smd name="P$1" x="-8.255" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$2" x="-6.985" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$3" x="-5.715" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$4" x="-4.445" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$5" x="-3.175" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$6" x="-1.905" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$7" x="-0.635" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$8" x="0.635" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$9" x="1.905" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$10" x="3.175" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$11" x="4.445" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$12" x="5.715" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$13" x="6.985" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$14" x="8.255" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$15" x="8.255" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$16" x="6.985" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$17" x="5.715" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$18" x="4.445" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$19" x="3.175" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$20" x="1.905" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$21" x="0.635" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$22" x="-0.635" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$23" x="-1.905" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$24" x="-3.175" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$25" x="-4.445" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$26" x="-5.715" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$27" x="-6.985" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$28" x="-8.255" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<text x="-8.62" y="6.37" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<text x="-8.62" y="-7.2" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -2032,6 +2069,48 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="DVDD" x="-12.7" y="10.16" visible="pin" length="short"/>
 <text x="-10.16" y="17.78" size="1.27" layer="94">&gt;NAME</text>
 <text x="-10.16" y="-17.78" size="1.27" layer="94">nRF24L01+</text>
+</symbol>
+<symbol name="HT16K33_28PIN">
+<wire x1="-12.7" y1="38.1" x2="12.7" y2="38.1" width="0.254" layer="94"/>
+<wire x1="12.7" y1="38.1" x2="12.7" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-40.64" x2="-12.7" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-40.64" x2="-12.7" y2="27.94" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="27.94" x2="-12.7" y2="38.1" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="27.94" x2="12.7" y2="27.94" width="0.254" layer="94" style="shortdash"/>
+<text x="-12.7" y="40.64" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-43.18" size="1.27" layer="95">&gt;VALUE</text>
+<text x="-10.16" y="35.56" size="1.27" layer="94">HT16K33 LED Driver</text>
+<text x="-7.62" y="30.48" size="1.27" layer="94">VDD:</text>
+<text x="0" y="30.48" size="1.27" layer="94">4.5-5.5V</text>
+<text x="-7.62" y="33.02" size="1.27" layer="94">16 Step Dimming</text>
+<pin name="VSS" x="-15.24" y="-38.1" length="short"/>
+<pin name="COM0/AD" x="15.24" y="-20.32" length="short" rot="R180"/>
+<pin name="COM1/KS0" x="15.24" y="-22.86" length="short" rot="R180"/>
+<pin name="COM2/KS1" x="15.24" y="-25.4" length="short" rot="R180"/>
+<pin name="COM3/KS2" x="15.24" y="-27.94" length="short" rot="R180"/>
+<pin name="COM4" x="15.24" y="-30.48" length="short" rot="R180"/>
+<pin name="COM5" x="15.24" y="-33.02" length="short" rot="R180"/>
+<pin name="COM6" x="15.24" y="-35.56" length="short" rot="R180"/>
+<pin name="COM7" x="15.24" y="-38.1" length="short" rot="R180"/>
+<pin name="ROW15/K13/INT" x="15.24" y="-12.7" length="short" rot="R180"/>
+<pin name="ROW6/K4" x="15.24" y="10.16" length="short" rot="R180"/>
+<pin name="ROW5/K3" x="15.24" y="12.7" length="short" rot="R180"/>
+<pin name="ROW4/K2" x="15.24" y="15.24" length="short" rot="R180"/>
+<pin name="ROW3/K1" x="15.24" y="17.78" length="short" rot="R180"/>
+<pin name="ROW2/A0" x="15.24" y="20.32" length="short" rot="R180"/>
+<pin name="ROW1/A1" x="15.24" y="22.86" length="short" rot="R180"/>
+<pin name="ROW0/A2" x="15.24" y="25.4" length="short" rot="R180"/>
+<pin name="SCL" x="-15.24" y="17.78" length="short"/>
+<pin name="SDA" x="-15.24" y="15.24" length="short"/>
+<pin name="VDD" x="-15.24" y="25.4" length="short"/>
+<pin name="ROW14/K12" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="ROW13/K11" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="ROW8/K6" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="ROW7/K5" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="ROW12/K10" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="ROW11/K9" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="ROW10/K8" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="ROW9/K7" x="15.24" y="2.54" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3247,6 +3326,48 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="VDD_PA" pad="11"/>
 <connect gate="G$1" pin="XC1" pad="10"/>
 <connect gate="G$1" pin="XC2" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HT16K33_SOP28" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="HT16K33_28PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP28-300MIL">
+<connects>
+<connect gate="G$1" pin="COM0/AD" pad="P$2"/>
+<connect gate="G$1" pin="COM1/KS0" pad="P$3"/>
+<connect gate="G$1" pin="COM2/KS1" pad="P$4"/>
+<connect gate="G$1" pin="COM3/KS2" pad="P$5"/>
+<connect gate="G$1" pin="COM4" pad="P$6"/>
+<connect gate="G$1" pin="COM5" pad="P$7"/>
+<connect gate="G$1" pin="COM6" pad="P$8"/>
+<connect gate="G$1" pin="COM7" pad="P$9"/>
+<connect gate="G$1" pin="ROW0/A2" pad="P$25"/>
+<connect gate="G$1" pin="ROW1/A1" pad="P$24"/>
+<connect gate="G$1" pin="ROW10/K8" pad="P$15"/>
+<connect gate="G$1" pin="ROW11/K9" pad="P$14"/>
+<connect gate="G$1" pin="ROW12/K10" pad="P$13"/>
+<connect gate="G$1" pin="ROW13/K11" pad="P$12"/>
+<connect gate="G$1" pin="ROW14/K12" pad="P$11"/>
+<connect gate="G$1" pin="ROW15/K13/INT" pad="P$10"/>
+<connect gate="G$1" pin="ROW2/A0" pad="P$23"/>
+<connect gate="G$1" pin="ROW3/K1" pad="P$22"/>
+<connect gate="G$1" pin="ROW4/K2" pad="P$21"/>
+<connect gate="G$1" pin="ROW5/K3" pad="P$20"/>
+<connect gate="G$1" pin="ROW6/K4" pad="P$19"/>
+<connect gate="G$1" pin="ROW7/K5" pad="P$18"/>
+<connect gate="G$1" pin="ROW8/K6" pad="P$17"/>
+<connect gate="G$1" pin="ROW9/K7" pad="P$16"/>
+<connect gate="G$1" pin="SCL" pad="P$26"/>
+<connect gate="G$1" pin="SDA" pad="P$27"/>
+<connect gate="G$1" pin="VDD" pad="P$28"/>
+<connect gate="G$1" pin="VSS" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>

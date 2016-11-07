@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2217,6 +2217,22 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="KEY2" x="20.32" y="7.62" visible="pin" length="short" rot="R180"/>
 <pin name="KEY1" x="20.32" y="10.16" visible="pin" length="short" rot="R180"/>
 <pin name="KEY0" x="20.32" y="12.7" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="LIS2HH12">
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<pin name="VDD" x="-15.24" y="12.7" visible="pin" length="short"/>
+<pin name="VDDIO" x="-15.24" y="10.16" visible="pin" length="short"/>
+<pin name="INT1" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="INT2" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-15.24" y="-10.16" visible="pin" length="short"/>
+<pin name="RES" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="SDA/SDI/SDO" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SDO/SA0" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="CS" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SPC/SCL" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>

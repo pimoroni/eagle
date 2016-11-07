@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1238,6 +1238,69 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="21"/>
 <wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
 </package>
+<package name="SPU0410LR5H">
+<smd name="OUT" x="-2.5" y="2.5" dx="0.723" dy="0.723" layer="1" roundness="100"/>
+<smd name="VCC" x="-0.5" y="2.5" dx="0.723" dy="0.723" layer="1" roundness="100"/>
+<smd name="GND5" x="-1.5" y="2.5" dx="0.612" dy="0.612" layer="1" roundness="100"/>
+<smd name="GND2" x="-2.5" y="-0.2" dx="0.562" dy="0.562" layer="1" roundness="100"/>
+<smd name="GND3" x="-0.5" y="-0.2" dx="0.562" dy="0.562" layer="1" roundness="100"/>
+<polygon width="0.01" layer="1">
+<vertex x="-1.5" y="1"/>
+<vertex x="-1.5" y="0.7" curve="90"/>
+<vertex x="-1.8" y="0.4" curve="90"/>
+<vertex x="-1.5" y="0.1" curve="90"/>
+<vertex x="-1.2" y="0.4" curve="90"/>
+<vertex x="-1.5" y="0.7"/>
+<vertex x="-1.5" y="1" curve="-90"/>
+<vertex x="-0.9" y="0.4" curve="-90"/>
+<vertex x="-1.5" y="-0.2" curve="-90"/>
+<vertex x="-2.1" y="0.4" curve="-90"/>
+</polygon>
+<smd name="GND6" x="-1.05" y="0.4" dx="0.25" dy="0.25" layer="1" stop="no" thermals="no" cream="no"/>
+<polygon width="0.01" layer="29">
+<vertex x="-1.5" y="1.05"/>
+<vertex x="-1.5" y="0.65" curve="90"/>
+<vertex x="-1.75" y="0.4" curve="90"/>
+<vertex x="-1.5" y="0.15" curve="90"/>
+<vertex x="-1.25" y="0.4" curve="90"/>
+<vertex x="-1.5" y="0.65"/>
+<vertex x="-1.5" y="1.05" curve="-90"/>
+<vertex x="-0.85" y="0.4" curve="-90"/>
+<vertex x="-1.5" y="-0.25" curve="-90"/>
+<vertex x="-2.15" y="0.4" curve="-90"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="-1.6" y="1" curve="70"/>
+<vertex x="-2.1" y="0.5"/>
+<vertex x="-1.8" y="0.45" curve="-70"/>
+<vertex x="-1.55" y="0.7"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="-2.1" y="0.3" curve="70"/>
+<vertex x="-1.6" y="-0.2"/>
+<vertex x="-1.55" y="0.1" curve="-70"/>
+<vertex x="-1.8" y="0.35"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="-1.4" y="-0.2" curve="70"/>
+<vertex x="-0.9" y="0.3"/>
+<vertex x="-1.2" y="0.35" curve="-70"/>
+<vertex x="-1.45" y="0.1"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="-0.9" y="0.5" curve="70"/>
+<vertex x="-1.4" y="1"/>
+<vertex x="-1.45" y="0.7" curve="-70"/>
+<vertex x="-1.2" y="0.45"/>
+</polygon>
+<wire x1="-3" y1="3" x2="0" y2="3" width="0.127" layer="21"/>
+<wire x1="0" y1="3" x2="0" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.6" x2="-3" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-3" y1="-0.6" x2="-3" y2="3" width="0.127" layer="21"/>
+<circle x="-3.3" y="3.3" radius="0.05" width="0.2" layer="21"/>
+<text x="-3" y="3.3" size="0.8128" layer="21" ratio="14" distance="0">&gt;NAME</text>
+<text x="-3" y="-1.7" size="0.8128" layer="21" ratio="14" distance="0">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F405RXXX">
@@ -2248,20 +2311,22 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="KEY0" x="20.32" y="12.7" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="LIS2HH12">
-<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<pin name="VDD" x="-15.24" y="12.7" visible="pin" length="short"/>
-<pin name="VDDIO" x="-15.24" y="10.16" visible="pin" length="short"/>
-<pin name="INT1" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="INT2" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="-15.24" y="-10.16" visible="pin" length="short"/>
-<pin name="RES" x="-15.24" y="-5.08" visible="pin" length="short"/>
-<pin name="SDA/SDI/SDO" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="SDO/SA0" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="CS" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="SPC/SCL" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="VDD" x="-17.78" y="12.7" visible="pin" length="short"/>
+<pin name="VDDIO" x="-17.78" y="10.16" visible="pin" length="short"/>
+<pin name="INT1" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="INT2" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-17.78" y="-10.16" visible="pin" length="short"/>
+<pin name="RES" x="-17.78" y="-5.08" visible="pin" length="short"/>
+<pin name="SDI/SDO/SDA" x="17.78" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SDO/SA0" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="CS" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SPC/SCL" x="17.78" y="12.7" visible="pin" length="short" rot="R180"/>
+<text x="-15.24" y="17.78" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="TC1047">
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -2271,6 +2336,8 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="VDD" x="-10.16" y="2.54" visible="pin" length="short"/>
 <pin name="GND" x="-10.16" y="-2.54" visible="pin" length="short"/>
 <pin name="VOUT" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<text x="-7.62" y="7.62" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="LTR-329ALS-01">
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -2281,6 +2348,19 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="GND" x="-10.16" y="-2.54" visible="pin" length="short"/>
 <pin name="SDA" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="SCL" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<text x="-7.62" y="7.62" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="SPU0410LR5H">
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="VOUT" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="7.62" size="1.27" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3678,7 +3758,7 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="INT1" pad="12"/>
 <connect gate="G$1" pin="INT2" pad="11"/>
 <connect gate="G$1" pin="RES" pad="5"/>
-<connect gate="G$1" pin="SDA/SDI/SDO" pad="4"/>
+<connect gate="G$1" pin="SDI/SDO/SDA" pad="4"/>
 <connect gate="G$1" pin="SDO/SA0" pad="3"/>
 <connect gate="G$1" pin="SPC/SCL" pad="1"/>
 <connect gate="G$1" pin="VDD" pad="9"/>

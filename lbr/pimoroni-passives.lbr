@@ -344,6 +344,7 @@
 <wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.127" layer="21"/>
 <wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.127" layer="21"/>
+</package>
 <package name="SOD-128">
 <smd name="C" x="-2.2" y="0" dx="1.4" dy="2.1" layer="1"/>
 <smd name="A" x="2.2" y="0" dx="1.4" dy="2.1" layer="1"/>
@@ -537,6 +538,7 @@
 <wire x1="0.762" y1="-2.032" x2="-0.762" y2="-2.032" width="0.254" layer="94"/>
 <wire x1="-0.762" y1="-2.032" x2="-0.762" y2="2.032" width="0.254" layer="94"/>
 <text x="0" y="4.318" size="1.778" layer="94" align="bottom-center">&gt;NAME</text>
+</symbol>
 <symbol name="TVS_DIODE">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
@@ -822,6 +824,13 @@
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="TVS_DIODE">
 <gates>
 <gate name="G$1" symbol="TVS_DIODE" x="0" y="0"/>

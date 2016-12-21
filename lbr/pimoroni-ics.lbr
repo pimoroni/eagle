@@ -840,6 +840,20 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="1" x="0.95" y="1.1" dx="0.65" dy="1.1" layer="1"/>
 <smd name="3" x="-0.95" y="1.1" dx="0.65" dy="1.1" layer="1"/>
 </package>
+<package name="SOT-23-6">
+<wire x1="1.5724" y1="0.8604" x2="1.5724" y2="-0.8604" width="0.1524" layer="51"/>
+<wire x1="1.5724" y1="-0.8604" x2="-1.5724" y2="-0.8604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="-0.8604" x2="-1.5724" y2="0.8604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="0.8604" x2="1.5724" y2="0.8604" width="0.1524" layer="51"/>
+<smd name="2" x="0" y="1.1" dx="0.65" dy="1.1" layer="1"/>
+<smd name="5" x="0" y="-1.1" dx="0.65" dy="1.1" layer="1"/>
+<smd name="4" x="-0.95" y="-1.1" dx="0.65" dy="1.1" layer="1"/>
+<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="1" x="0.95" y="1.1" dx="0.65" dy="1.1" layer="1"/>
+<smd name="3" x="-0.95" y="1.1" dx="0.65" dy="1.1" layer="1"/>
+<smd name="6" x="0.95" y="-1.1" dx="0.65" dy="1.1" layer="1"/>
+</package>
 <package name="UQFN-28">
 <smd name="P$1" x="-2.1" y="1.2" dx="0.2" dy="0.8" layer="1" rot="R90"/>
 <smd name="P$2" x="-2.1" y="0.8" dx="0.2" dy="0.8" layer="1" rot="R90"/>
@@ -2660,6 +2674,20 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <text x="-10.16" y="7.62" size="1.27" layer="94">&gt;NAME</text>
 <text x="-10.16" y="-10.16" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="TPS563200">
+<pin name="VIN" x="-15.24" y="5.08" length="middle"/>
+<pin name="EN" x="-15.24" y="0" length="middle"/>
+<pin name="VFB" x="-15.24" y="-5.08" length="middle"/>
+<pin name="SW" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="VBST" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="97"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="97"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="97"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="97"/>
+<text x="-7.62" y="10.16" size="1.27" layer="97">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.27" layer="97">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F030C6">
@@ -4206,7 +4234,33 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 </device>
 </devices>
 </deviceset>
+<deviceset name="TPS563200">
+<gates>
+<gate name="G$1" symbol="TPS563200" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-6">
+<connects>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SW" pad="2"/>
+<connect gate="G$1" pin="VBST" pad="6"/>
+<connect gate="G$1" pin="VFB" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

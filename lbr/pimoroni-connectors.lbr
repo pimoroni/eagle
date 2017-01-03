@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.15" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -636,6 +636,19 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <text x="-7.62" y="3.81" size="1.27" layer="51">1</text>
 <text x="-7.62" y="-5.08" size="1.27" layer="51">36</text>
 </package>
+<package name="DC00920">
+<smd name="MT1" x="2.25" y="3.05" dx="2.5" dy="2.3" layer="1"/>
+<smd name="MT2" x="2.3" y="-4.25" dx="2.5" dy="2.3" layer="1"/>
+<hole x="2.5" y="0" drill="1.6"/>
+<hole x="6.5" y="0" drill="1.6"/>
+<smd name="2" x="8.25" y="-4.25" dx="2.5" dy="2.3" layer="1"/>
+<smd name="1" x="8.25" y="3.05" dx="2.5" dy="2.3" layer="1"/>
+<smd name="3" x="9.65" y="0" dx="2.5" dy="2.3" layer="1"/>
+<wire x1="0" y1="2.4" x2="9" y2="2.4" width="0.1" layer="51"/>
+<wire x1="9" y1="2.4" x2="9" y2="-3.6" width="0.1" layer="51"/>
+<wire x1="9" y1="-3.6" x2="0" y2="-3.6" width="0.1" layer="51"/>
+<wire x1="0" y1="-3.6" x2="0" y2="2.4" width="0.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -935,6 +948,25 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <pin name="MT2" x="-12.7" y="-53.34" length="middle"/>
 <pin name="MT3" x="-12.7" y="-55.88" length="middle"/>
 <pin name="MT4" x="-12.7" y="-58.42" length="middle"/>
+</symbol>
+<symbol name="DCJACK">
+<pin name="1" x="5.08" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="2" x="5.08" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="3" x="5.08" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="-4.445" y1="1.27" x2="-4.445" y2="2.54" width="0.127" layer="94"/>
+<wire x1="-4.445" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.127" layer="94"/>
+<wire x1="1.905" y1="0" x2="1.905" y2="-1.27" width="0.127" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-0.635" y2="-1.27" width="0.127" layer="94"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-2.54" width="0.127" layer="94"/>
+<rectangle x1="-5.08" y1="-2.54" x2="-3.81" y2="1.27" layer="94"/>
+<polygon width="0.127" layer="94">
+<vertex x="1.27" y="-1.27"/>
+<vertex x="2.54" y="-1.27"/>
+<vertex x="1.905" y="-2.54"/>
+</polygon>
+<pin name="MT" x="5.08" y="-5.08" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1367,6 +1399,24 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <connect gate="G$1" pin="MT2" pad="MT2"/>
 <connect gate="G$1" pin="MT3" pad="MT3"/>
 <connect gate="G$1" pin="MT4" pad="MT4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCJACK" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="DCJACK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DC00920">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="2"/>
+<connect gate="G$1" pin="MT" pad="MT1 MT2"/>
 </connects>
 <technologies>
 <technology name=""/>

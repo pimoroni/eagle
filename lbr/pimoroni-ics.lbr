@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -272,7 +272,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="62" x="-6" y="-2.75" dx="1.6" dy="0.3" layer="1"/>
 <smd name="63" x="-6" y="-3.25" dx="1.6" dy="0.3" layer="1"/>
 <smd name="64" x="-6" y="-3.75" dx="1.6" dy="0.3" layer="1"/>
-<text x="0" y="8" size="1.016" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="8" size="1.016" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="QFN-24">
 <wire x1="-1.68" y1="-1.95" x2="-1.95" y2="-1.95" width="0.2032" layer="21"/>
@@ -433,7 +433,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
-<text x="-2.6" y="2" size="0.8128" layer="21" font="vector" ratio="14">&gt;NAME</text>
+<text x="-2.6" y="2" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
 </package>
 <package name="QFN-32">
 <smd name="9" x="-1.75" y="-2.654" dx="1.108" dy="0.254" layer="1" roundness="25" rot="R90"/>
@@ -515,8 +515,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="P$7" x="0.215" y="0.615" dx="0.58" dy="0.25" layer="1" rot="R270" stop="no"/>
 <smd name="P$6" x="0.715" y="0.615" dx="0.58" dy="0.3" layer="1" rot="R270" stop="no"/>
 <circle x="-1.1985" y="-0.967" radius="0.05" width="0.127" layer="21"/>
-<text x="-0.935" y="1.17" size="0.8128" layer="21" font="vector" ratio="12">&gt;NAME</text>
-<text x="-0.935" y="-2.005" size="0.8128" layer="21" font="vector" ratio="12">&gt;VALUE</text>
+<text x="-0.935" y="1.17" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-0.935" y="-2.005" size="0.8128" layer="27" font="vector" ratio="12">&gt;VALUE</text>
 <rectangle x1="-0.9753625" y1="0.29971875" x2="-0.5943625" y2="0.93471875" layer="29"/>
 <rectangle x1="0.52831875" y1="0.2946375" x2="0.90931875" y2="0.9296375" layer="29"/>
 <rectangle x1="-1.08331875" y1="-0.372096875" x2="-0.68705625" y2="0.301003125" layer="29" rot="R90"/>
@@ -670,8 +670,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="P$43" x="-2.01" y="3.61" dx="1.108" dy="0.254" layer="1" rot="R270"/>
 <smd name="P$44" x="-2.51" y="3.61" dx="1.108" dy="0.254" layer="1" rot="R270"/>
 <smd name="PAD" x="0" y="0" dx="5.1" dy="5.1" layer="1"/>
-<text x="0" y="5.08" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-5.715" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="5.08" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.715" size="0.8128" layer="27" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="FN-6-0.65MM">
 <smd name="PIN6" x="0.95" y="0.65" dx="1.4" dy="0.4" layer="1"/>
@@ -743,12 +743,12 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="4" x="1.015" y="-0.65" dx="0.67" dy="0.4" layer="1"/>
 <smd name="5" x="1.015" y="0" dx="0.67" dy="0.4" layer="1"/>
 <smd name="6" x="1.015" y="0.65" dx="0.67" dy="0.4" layer="1"/>
-<text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="2" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <smd name="2" x="-1.015" y="0" dx="0.67" dy="0.4" layer="1"/>
 <smd name="3" x="-1.015" y="-0.65" dx="0.67" dy="0.4" layer="1"/>
 <circle x="-1.45" y="1.14" radius="0.12" width="0" layer="21"/>
 <smd name="PAD" x="0" y="0" dx="0.95" dy="1.7" layer="1"/>
-<text x="0" y="-2" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;NAME</text>
+<text x="0" y="-2" size="0.8128" layer="25" font="vector" ratio="14" align="top-center">&gt;NAME</text>
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.1" layer="21"/>
 <wire x1="-1" y1="-1" x2="1" y2="-1" width="0.1" layer="21"/>
 </package>
@@ -893,8 +893,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <wire x1="-1.6" y1="-2.1" x2="-2.1" y2="-2.1" width="0.127" layer="21"/>
 <wire x1="-2.1" y1="-2.1" x2="-2.1" y2="-1.6" width="0.127" layer="21"/>
 <circle x="-2.6" y="1.9" radius="0.1" width="0.127" layer="21"/>
-<text x="-2" y="3" size="1.27" layer="21">&gt;NAME</text>
-<text x="-2" y="-4" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-2" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-4" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="DFN-10">
 <smd name="2" x="-1" y="0.4" dx="0.6" dy="0.225" layer="1"/>
@@ -907,13 +907,13 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
 <wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
 <wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
-<text x="-1.9" y="1.5" size="0.8128" layer="21" font="vector" ratio="14">&gt;NAME</text>
+<text x="-1.9" y="1.5" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
 <smd name="1" x="-1" y="0.8" dx="0.6" dy="0.225" layer="1"/>
 <smd name="5" x="-1" y="-0.8" dx="0.6" dy="0.225" layer="1"/>
 <smd name="7" x="1" y="-0.4" dx="0.6" dy="0.225" layer="1"/>
 <smd name="9" x="1" y="0.4" dx="0.6" dy="0.225" layer="1"/>
 <circle x="-1.4" y="1.1" radius="0.08" width="0.15" layer="21"/>
-<text x="-2.2" y="-2.4" size="0.8128" layer="21" font="vector" ratio="14">&gt;VALUE</text>
+<text x="-2.2" y="-2.4" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
 </package>
 <package name="TSSOP-20">
 <wire x1="-2.2828" y1="2.5146" x2="-2.2828" y2="-4.3746" width="0.1524" layer="51"/>
@@ -968,8 +968,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <smd name="PAD" x="0" y="0" dx="2.15" dy="1.6" layer="1"/>
-<text x="0" y="2.54" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.54" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="0.8128" layer="27" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
 </package>
 <package name="PVQFN-16">
 <smd name="PAD" x="0" y="0" dx="2.7" dy="2.7" layer="1" roundness="10" cream="no"/>
@@ -1019,8 +1019,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="13" x="1.552159375" y="0.80491875" dx="0.7" dy="0.2" layer="1" thermals="no"/>
 <smd name="14" x="1.552159375" y="1.20491875" dx="0.7" dy="0.2" layer="1" thermals="no"/>
 <rectangle x1="-0.9375" y1="-1.25" x2="0.9375" y2="1.25" layer="29"/>
-<text x="0.005" y="2.235" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.34" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
+<text x="0.005" y="2.235" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.34" size="0.8128" layer="27" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
 <rectangle x1="0.1" y1="0.1" x2="0.8" y2="1.1" layer="31"/>
 <rectangle x1="-0.8" y1="0.1" x2="-0.1" y2="1.1" layer="31"/>
 <rectangle x1="-0.8" y1="-1.1" x2="-0.1" y2="-0.1" layer="31"/>
@@ -1043,7 +1043,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="6" x="0.325" y="2.8131" dx="0.25" dy="1" layer="1" rot="R180"/>
 <smd name="7" x="-0.325" y="2.8131" dx="0.25" dy="1" layer="1" rot="R180"/>
 <smd name="8" x="-0.975" y="2.8131" dx="0.25" dy="1" layer="1" rot="R180"/>
-<text x="-1.8" y="-2.9" size="1.016" layer="21" font="vector" rot="R90">&gt;NAME</text>
+<text x="-1.8" y="-2.9" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
 </package>
 <package name="SON-8">
 <smd name="PAD" x="0" y="0" dx="2.4" dy="1.65" layer="1" cream="no"/>
@@ -1220,8 +1220,8 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <smd name="13" x="2.54" y="2.54" dx="0.6" dy="1.2" layer="1" rot="R90"/>
 <smd name="14" x="2.54" y="3.81" dx="0.6" dy="1.2" layer="1" rot="R90"/>
 <circle x="-2.45" y="4.75" radius="0.111803125" width="0.254" layer="21"/>
-<text x="-2.54" y="5.08" size="0.8128" layer="21" font="vector" ratio="14">&gt;NAME</text>
-<text x="-2.54" y="-6.35" size="0.8128" layer="21" font="vector" ratio="14">&gt;VALUE</text>
+<text x="-2.54" y="5.08" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
 </package>
 <package name="CHIPLED-4">
 <smd name="2" x="-0.6" y="-0.7" dx="0.75" dy="0.7" layer="1" rot="R90"/>
@@ -1312,8 +1312,8 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="0" y1="-0.6" x2="-3" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="-3" y1="-0.6" x2="-3" y2="3" width="0.127" layer="21"/>
 <circle x="-3.3" y="3.3" radius="0.05" width="0.2" layer="21"/>
-<text x="-3" y="3.3" size="0.8128" layer="21" ratio="14" distance="0">&gt;NAME</text>
-<text x="-3" y="-1.7" size="0.8128" layer="21" ratio="14" distance="0">&gt;VALUE</text>
+<text x="-3" y="3.3" size="0.8128" layer="25" ratio="14" distance="0">&gt;NAME</text>
+<text x="-3" y="-1.7" size="0.8128" layer="27" ratio="14" distance="0">&gt;VALUE</text>
 </package>
 <package name="TSSOP24_WITH_PAD">
 <description>&lt;b&gt;Thin Shrink Small Outline Plastic 24&lt;/b&gt;&lt;p&gt;

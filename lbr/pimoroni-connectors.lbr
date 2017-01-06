@@ -632,7 +632,7 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="-8.2" y1="-2.5" x2="8.2" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="8.2" y1="-2.5" x2="8.2" y2="2.6" width="0.127" layer="21"/>
 <wire x1="8.2" y1="2.6" x2="-8.2" y2="2.6" width="0.127" layer="21"/>
-<text x="-7" y="-0.4" size="1.27" layer="21">&gt;NAME</text>
+<text x="-7" y="-0.4" size="1.27" layer="25">&gt;NAME</text>
 <text x="-7.62" y="3.81" size="1.27" layer="51">1</text>
 <text x="-7.62" y="-5.08" size="1.27" layer="51">36</text>
 </package>

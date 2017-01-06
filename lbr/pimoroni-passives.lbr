@@ -180,8 +180,8 @@
 <smd name="16" x="-1.8375" y="-0.75" dx="0.425" dy="0.5" layer="1" rot="R180"/>
 <wire x1="-1.9" y1="-0.3" x2="-1.9" y2="0.3" width="0.127" layer="21"/>
 <wire x1="1.9" y1="0.3" x2="1.9" y2="-0.3" width="0.127" layer="21"/>
-<text x="0" y="1.524" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.286" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="1.524" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.286" size="0.8128" layer="27" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="EXB-38VXXXXX">
 <smd name="1" x="-1.2" y="0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
@@ -194,8 +194,8 @@
 <smd name="8" x="-1.2" y="-0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
 <wire x1="-1.55" y1="-0.275" x2="-1.55" y2="0.3" width="0.127" layer="21"/>
 <wire x1="1.55" y1="0.28" x2="1.55" y2="-0.27" width="0.127" layer="21"/>
-<text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.8" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="2" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.8" size="0.8128" layer="27" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="IFSC-1515AH-ER-XXX-XXX">
 <smd name="P$1" x="-1.4" y="0" dx="3.8" dy="1" layer="1" rot="R270"/>
@@ -225,8 +225,8 @@
 <smd name="A" x="3.3" y="5.95" dx="3.6" dy="1.8" layer="1" rot="R90"/>
 <smd name="C" x="3.3" y="0.7" dx="3.6" dy="1.8" layer="1" rot="R90"/>
 <rectangle x1="0" y1="0" x2="6.5" y2="1" layer="21"/>
-<text x="0" y="9" size="1.27" layer="21">&gt;NAME</text>
-<text x="0" y="-3" size="1.27" layer="21">&gt;VALUE</text>
+<text x="0" y="9" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="TSX-3225">
 <smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
@@ -260,14 +260,14 @@
 <package name="2515">
 <smd name="1" x="-1" y="0" dx="0.8" dy="2" layer="1"/>
 <smd name="2" x="1" y="0" dx="0.8" dy="2" layer="1"/>
-<text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;NAME</text>
+<text x="0" y="2" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2" size="0.8128" layer="25" font="vector" ratio="14" align="top-center">&gt;NAME</text>
 </package>
 <package name="NRS5030">
 <smd name="1" x="-1.8" y="0" dx="1.5" dy="4" layer="1"/>
 <smd name="2" x="1.8" y="0" dx="1.5" dy="4" layer="1"/>
-<text x="0" y="3" size="0.8128" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
+<text x="0" y="3" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3" size="0.8128" layer="27" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
 <wire x1="-1.7" y1="-2.5" x2="1.7" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-1.7" y1="2.5" x2="1.7" y2="2.5" width="0.127" layer="21"/>
 <wire x1="1.7" y1="2.5" x2="2" y2="2.2" width="0.127" layer="21"/>

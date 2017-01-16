@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.15" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -649,6 +649,16 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="9" y1="-3.6" x2="0" y2="-3.6" width="0.1" layer="51"/>
 <wire x1="0" y1="-3.6" x2="0" y2="2.4" width="0.1" layer="51"/>
 </package>
+<package name="SPRING_2P">
+<smd name="1A" x="3" y="2" dx="6" dy="2" layer="1"/>
+<smd name="2A" x="3" y="-2" dx="6" dy="2" layer="1"/>
+<wire x1="0.5" y1="3.95" x2="12" y2="3.95" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-3.95" x2="12" y2="-3.95" width="0.127" layer="51"/>
+<smd name="1B" x="12.25" y="2" dx="3.5" dy="2" layer="1"/>
+<smd name="2B" x="12.25" y="-2" dx="3.5" dy="2" layer="1"/>
+<wire x1="12" y1="3.95" x2="12" y2="-3.95" width="0.127" layer="51"/>
+<wire x1="0.5" y1="3.95" x2="0.5" y2="-3.95" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -967,6 +977,14 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <vertex x="1.905" y="-2.54"/>
 </polygon>
 <pin name="MT" x="5.08" y="-5.08" length="short" rot="R180"/>
+</symbol>
+<symbol name="2P">
+<pin name="1" x="-5.08" y="2.54" length="middle"/>
+<pin name="2" x="-5.08" y="-2.54" length="middle"/>
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1417,6 +1435,22 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <connect gate="G$1" pin="2" pad="3"/>
 <connect gate="G$1" pin="3" pad="2"/>
 <connect gate="G$1" pin="MT" pad="MT1 MT2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPRING_2P">
+<gates>
+<gate name="G$1" symbol="2P" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPRING_2P">
+<connects>
+<connect gate="G$1" pin="1" pad="1A 1B"/>
+<connect gate="G$1" pin="2" pad="2A 2B"/>
 </connects>
 <technologies>
 <technology name=""/>

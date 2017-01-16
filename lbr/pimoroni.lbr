@@ -2376,8 +2376,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="P$7" x="0.215" y="0.615" dx="0.58" dy="0.25" layer="1" rot="R270" stop="no"/>
 <smd name="P$6" x="0.715" y="0.615" dx="0.58" dy="0.3" layer="1" rot="R270" stop="no"/>
 <circle x="-1.1985" y="-0.967" radius="0.05" width="0.127" layer="21"/>
-<text x="-0.935" y="1.17" size="0.8128" layer="21" font="vector" ratio="12">&gt;NAME</text>
-<text x="-0.935" y="-2.005" size="0.8128" layer="21" font="vector" ratio="12">&gt;VALUE</text>
+<text x="-0.935" y="1.17" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-0.935" y="-2.005" size="0.8128" layer="27" font="vector" ratio="12">&gt;VALUE</text>
 <rectangle x1="-0.9753625" y1="0.29971875" x2="-0.5943625" y2="0.93471875" layer="29"/>
 <rectangle x1="0.52831875" y1="0.2946375" x2="0.90931875" y2="0.9296375" layer="29"/>
 <rectangle x1="-1.08331875" y1="-0.372096875" x2="-0.68705625" y2="0.301003125" layer="29" rot="R90"/>
@@ -2428,7 +2428,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="6" x="0.325" y="2.8131" dx="0.25" dy="1" layer="1" rot="R180"/>
 <smd name="7" x="-0.325" y="2.8131" dx="0.25" dy="1" layer="1" rot="R180"/>
 <smd name="8" x="-0.975" y="2.8131" dx="0.25" dy="1" layer="1" rot="R180"/>
-<text x="-1.8" y="-2.9" size="1.016" layer="21" font="vector" rot="R90">&gt;NAME</text>
+<text x="-1.8" y="-2.9" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
 </package>
 <package name="SOT23-6">
 <wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
@@ -13894,8 +13894,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="5" x="0" y="-1.45" dx="0.6" dy="0.5" layer="1"/>
 <smd name="6" x="1.5" y="-1.45" dx="0.6" dy="0.5" layer="1"/>
 <smd name="7" x="1.55" y="0" dx="0.6" dy="0.5" layer="1" rot="R90"/>
-<text x="-3.1" y="2.3" size="1.27" layer="21">&gt;NAME</text>
-<text x="-3.1" y="-3.6" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-3.1" y="2.3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.1" y="-3.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="FLOTILLA-CONNECTOR-DEVICE">
 <smd name="TMISO" x="-1.17" y="-0.015" dx="1.75" dy="1.75" layer="16" roundness="20" cream="no"/>
@@ -17309,7 +17309,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
-<text x="-2.6" y="2" size="0.8128" layer="21" font="vector" ratio="14">&gt;NAME</text>
+<text x="-2.6" y="2" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
 </package>
 <package name="TSL2561">
 <smd name="VDD" x="-1.1" y="0.9" dx="1.25" dy="0.4" layer="1"/>
@@ -17322,7 +17322,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
-<text x="-2.6" y="2" size="0.8128" layer="21" font="vector" ratio="14">&gt;NAME</text>
+<text x="-2.6" y="2" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
 </package>
 <package name="VSMB10940">
 <smd name="ANODE" x="0" y="1.8" dx="1.5" dy="1.5" layer="1"/>
@@ -18067,7 +18067,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <smd name="GND_1" x="-4.75" y="-3.2" dx="0.7" dy="0.36" layer="1"/>
 <smd name="GND_2" x="-4.75" y="-4" dx="0.7" dy="0.36" layer="1"/>
 <circle x="-4.6" y="4.6" radius="0.25" width="0" layer="21"/>
-<text x="-5" y="5.75" size="1.27" layer="21">&gt;NAME</text>
+<text x="-5" y="5.75" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="GPS1003">
 <wire x1="-1.5" y1="5" x2="1.5" y2="5" width="0.127" layer="21"/>
@@ -18083,7 +18083,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <circle x="0" y="3" radius="0.5" width="0" layer="21"/>
 <smd name="RF_IN" x="0" y="5" dx="3" dy="1.4" layer="1"/>
 <smd name="SOLDER" x="0" y="-5" dx="3" dy="1.4" layer="1"/>
-<text x="-2.54" y="-5.08" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 <package name="GPS1004">
 <wire x1="-2" y1="5" x2="2" y2="5" width="0.127" layer="21"/>

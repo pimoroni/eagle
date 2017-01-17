@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1.45" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -36,10 +36,10 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
@@ -699,6 +699,52 @@
 <text x="3.25" y="-3.25" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <text x="-0.3" y="2.4" size="0.254" layer="21">LED</text>
 <text x="-0.7" y="-2.7" size="0.254" layer="21">SENSOR</text>
+</package>
+<package name="APA102-2020">
+<smd name="1_VDD" x="-1.05" y="0.9" dx="0.8" dy="0.5" layer="1"/>
+<smd name="3_SDO" x="-1.05" y="-0.9" dx="0.8" dy="0.5" layer="1"/>
+<smd name="2_CKO" x="-1.05" y="0" dx="0.8" dy="0.3" layer="1"/>
+<smd name="VDDPAD" x="0" y="1" dx="0.3" dy="1" layer="1"/>
+<smd name="GNDPAD" x="0" y="-0.75" dx="0.3" dy="1.5" layer="1"/>
+<wire x1="-0.45" y1="-0.15" x2="-0.45" y2="0.15" width="0.02" layer="51"/>
+<wire x1="-0.45" y1="0.15" x2="-0.95" y2="0.15" width="0.02" layer="51"/>
+<wire x1="-0.95" y1="0.15" x2="-0.95" y2="-0.15" width="0.02" layer="51"/>
+<wire x1="-0.95" y1="-0.15" x2="-0.45" y2="-0.15" width="0.02" layer="51"/>
+<wire x1="-0.45" y1="0.65" x2="-0.45" y2="0.95" width="0.02" layer="51"/>
+<wire x1="-0.45" y1="0.95" x2="-0.95" y2="0.95" width="0.02" layer="51"/>
+<wire x1="-0.95" y1="0.95" x2="-0.95" y2="0.65" width="0.02" layer="51"/>
+<wire x1="-0.95" y1="0.65" x2="-0.45" y2="0.65" width="0.02" layer="51"/>
+<wire x1="-0.45" y1="-0.65" x2="-0.95" y2="-0.65" width="0.02" layer="51"/>
+<wire x1="-0.95" y1="-0.65" x2="-0.95" y2="-0.95" width="0.02" layer="51"/>
+<wire x1="-0.95" y1="-0.95" x2="-0.45" y2="-0.95" width="0.02" layer="51"/>
+<wire x1="-0.45" y1="-0.95" x2="-0.45" y2="-0.65" width="0.02" layer="51"/>
+<wire x1="0.45" y1="0.65" x2="0.95" y2="0.65" width="0.02" layer="51"/>
+<wire x1="0.95" y1="0.65" x2="0.95" y2="0.95" width="0.02" layer="51"/>
+<wire x1="0.95" y1="0.95" x2="0.45" y2="0.95" width="0.02" layer="51"/>
+<wire x1="0.45" y1="0.95" x2="0.45" y2="0.65" width="0.02" layer="51"/>
+<wire x1="0.45" y1="0.15" x2="0.95" y2="0.15" width="0.02" layer="51"/>
+<wire x1="0.95" y1="0.15" x2="0.95" y2="-0.15" width="0.02" layer="51"/>
+<wire x1="0.95" y1="-0.15" x2="0.45" y2="-0.15" width="0.02" layer="51"/>
+<wire x1="0.45" y1="-0.15" x2="0.45" y2="0.15" width="0.02" layer="51"/>
+<wire x1="0.45" y1="-0.65" x2="0.95" y2="-0.65" width="0.02" layer="51"/>
+<wire x1="0.95" y1="-0.65" x2="0.95" y2="-0.95" width="0.02" layer="51"/>
+<wire x1="0.95" y1="-0.95" x2="0.45" y2="-0.95" width="0.02" layer="51"/>
+<wire x1="0.45" y1="-0.95" x2="0.45" y2="-0.65" width="0.02" layer="51"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.02" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.02" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.02" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.02" layer="51"/>
+<wire x1="-0.25" y1="0.9" x2="0.25" y2="0.9" width="0.02" layer="51"/>
+<wire x1="0.25" y1="0.9" x2="0.25" y2="0.35" width="0.02" layer="51"/>
+<wire x1="0.25" y1="0.35" x2="-0.25" y2="0.35" width="0.02" layer="51"/>
+<wire x1="-0.25" y1="0.35" x2="-0.25" y2="0.9" width="0.02" layer="51"/>
+<wire x1="-0.25" y1="-0.9" x2="-0.25" y2="0.1" width="0.02" layer="51"/>
+<wire x1="-0.25" y1="0.1" x2="0.25" y2="0.1" width="0.02" layer="51"/>
+<wire x1="0.25" y1="0.1" x2="0.25" y2="-0.9" width="0.02" layer="51"/>
+<wire x1="0.25" y1="-0.9" x2="-0.25" y2="-0.9" width="0.02" layer="51"/>
+<smd name="6_GND" x="1.05" y="0.9" dx="0.8" dy="0.5" layer="1"/>
+<smd name="5_CKI" x="1.05" y="0" dx="0.8" dy="0.3" layer="1"/>
+<smd name="4_SDI" x="1.05" y="-0.9" dx="0.8" dy="0.5" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -2392,6 +2438,18 @@
 <text x="-2.54" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-7.112" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="APA102">
+<pin name="VCC" x="-7.62" y="12.7" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="SDI" x="-12.7" y="7.62" visible="pad" length="short" direction="in"/>
+<pin name="GND" x="-7.62" y="0" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="SDO" x="0" y="7.62" visible="pad" length="short" direction="out" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="CKI" x="-12.7" y="5.08" visible="pad" length="short" direction="in"/>
+<pin name="CKO" x="0" y="5.08" visible="pad" length="short" direction="out" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TS-TSMD5050RGB">
@@ -2673,6 +2731,26 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connect gate="G$1" pin="SCLK" pad="10"/>
 <connect gate="G$1" pin="SDAT" pad="9"/>
 <connect gate="G$1" pin="VDD" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APA102">
+<gates>
+<gate name="G$1" symbol="APA102" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="APA102-2020">
+<connects>
+<connect gate="G$1" pin="CKI" pad="5_CKI"/>
+<connect gate="G$1" pin="CKO" pad="2_CKO"/>
+<connect gate="G$1" pin="GND" pad="6_GND GNDPAD"/>
+<connect gate="G$1" pin="SDI" pad="4_SDI"/>
+<connect gate="G$1" pin="SDO" pad="3_SDO"/>
+<connect gate="G$1" pin="VCC" pad="1_VDD VDDPAD"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -498,10 +498,22 @@
 <circle x="3.2" y="-3.8" radius="0.4" width="0.127" layer="21"/>
 </package>
 <package name="CR2032-SMD">
-<smd name="POS2" x="-11" y="0" dx="1.27" dy="5.08" layer="1" rot="R180"/>
-<smd name="POS1" x="11" y="0" dx="1.27" dy="5.08" layer="1" rot="R180"/>
+<smd name="POS2" x="-11.25" y="0" dx="1.77" dy="5.08" layer="1" rot="R180"/>
+<smd name="POS1" x="11.25" y="0" dx="1.77" dy="5.08" layer="1" rot="R180"/>
 <smd name="NEG" x="0" y="0" dx="3.96" dy="3.96" layer="1" rot="R180"/>
-<circle x="0" y="0" radius="10" width="0.127" layer="48"/>
+<circle x="0" y="0" radius="10" width="0.127" layer="51"/>
+<wire x1="10.5" y1="-4.6" x2="10.5" y2="4.6" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="-4.6" x2="-10.5" y2="4.6" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="4.6" x2="-7.75" y2="7.37" width="0.127" layer="51"/>
+<wire x1="-7.75" y1="7.37" x2="7.75" y2="7.37" width="0.127" layer="51"/>
+<wire x1="7.75" y1="7.37" x2="10.5" y2="4.6" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="-4.6" x2="-8" y2="-7.9" width="0.127" layer="51"/>
+<wire x1="10.5" y1="-4.6" x2="8" y2="-7.9" width="0.127" layer="51"/>
+<wire x1="8" y1="-7.9" x2="7" y2="-7.9" width="0.127" layer="51"/>
+<wire x1="7" y1="-7.9" x2="5.5" y2="-6.4" width="0.127" layer="51"/>
+<wire x1="-8" y1="-7.9" x2="-7" y2="-7.9" width="0.127" layer="51"/>
+<wire x1="-7" y1="-7.9" x2="-5.5" y2="-6.4" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-6.4" x2="5.5" y2="-6.4" width="0.127" layer="51"/>
 </package>
 <package name="SWITCH-DPDT">
 <smd name="1" x="3" y="2" dx="2" dy="0.7" layer="1"/>

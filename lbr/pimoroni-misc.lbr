@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -152,8 +152,6 @@
 <circle x="0" y="0" radius="3.2" width="0" layer="40"/>
 <circle x="0" y="0" radius="3.2" width="0" layer="41"/>
 <circle x="0" y="0" radius="3.2" width="0" layer="42"/>
-<circle x="0" y="0" radius="3" width="0" layer="29"/>
-<circle x="0" y="0" radius="3" width="0" layer="30"/>
 </package>
 <package name="PIMORONI.COM-17MM">
 <rectangle x1="-0.02031875" y1="-0.02108125" x2="2.43331875" y2="0.02108125" layer="21"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2862,6 +2862,88 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <wire x1="-12.7" y1="-25.4" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
 <text x="-12.7" y="27.94" size="1.27" layer="94">&gt;NAME</text>
 <text x="-12.7" y="-27.94" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F413XX">
+<pin name="VDD" x="-20.32" y="93.98" visible="pin" length="short" rot="R180"/>
+<pin name="VBAT" x="-20.32" y="91.44" visible="pin" length="short" rot="R180"/>
+<pin name="VREF-/VSSA" x="-20.32" y="81.28" visible="pin" length="short" rot="R180"/>
+<pin name="BOOT0" x="-20.32" y="76.2" visible="pin" length="short" rot="R180"/>
+<pin name="VCAP_1" x="-20.32" y="88.9" visible="pin" length="short" rot="R180"/>
+<pin name="VREF+/VDDA" x="-20.32" y="83.82" visible="pin" length="short" rot="R180"/>
+<pin name="!RESET" x="-20.32" y="73.66" visible="pin" length="short" rot="R180"/>
+<pin name="PH0/OSC_IN" x="-20.32" y="68.58" visible="pin" length="short" rot="R180"/>
+<pin name="PH1/OSC_OUT" x="-20.32" y="66.04" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-20.32" y="60.96" visible="pin" length="short" rot="R180"/>
+<pin name="SPI3_SCK/PB3" x="43.18" y="35.56" visible="pin" length="short" rot="R180"/>
+<pin name="SPI3_MISO/PB4" x="43.18" y="33.02" visible="pin" length="short" rot="R180"/>
+<pin name="SPI3_MOSI/PB5" x="43.18" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="I2C1_SCL/PB6" x="43.18" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="I2C1_SDA/PB7" x="43.18" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO_D4/PB8" x="43.18" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO_D5/PB9" x="43.18" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="PB10" x="43.18" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PB11" x="43.18" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="I2S2_WS/PB12" x="43.18" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="I2S2_CK/PB13" x="43.18" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO_D6/PB14" x="43.18" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO_CK/PB15" x="43.18" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PB2" x="43.18" y="38.1" visible="pin" length="short" rot="R180"/>
+<pin name="ADC9/PB1" x="43.18" y="40.64" visible="pin" length="short" rot="R180"/>
+<pin name="ADC8/PB0" x="43.18" y="43.18" visible="pin" length="short" rot="R180"/>
+<pin name="PA15" x="-20.32" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SYS_JTCK-SWCLK/PA14" x="-20.32" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SYS_JTMS-SWDIO/PA13" x="-20.32" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="OTG_FS_DP/PA12" x="-20.32" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="OTG_FS_DM/PA11" x="-20.32" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="OTG_FS_ID/PA10" x="-20.32" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="OTG_FS_VBUS/PA9" x="-20.32" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="PA8" x="-20.32" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="ADC7/PA7" x="-20.32" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO_CMD/ADC6/PA6" x="-20.32" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="DAC_OUT2/ADC5/PA5" x="-20.32" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="ADC4/PA4" x="-20.32" y="33.02" visible="pin" length="short" rot="R180"/>
+<pin name="USART2_RX/ADC3/PA3" x="-20.32" y="35.56" visible="pin" length="short" rot="R180"/>
+<pin name="USART2_TX/ADC2/PA2" x="-20.32" y="38.1" visible="pin" length="short" rot="R180"/>
+<pin name="USART2_RTS/ADC1/PA1" x="-20.32" y="40.64" visible="pin" length="short" rot="R180"/>
+<pin name="USART2_CTS/ADC0/PA0" x="-20.32" y="43.18" visible="pin" length="short" rot="R180"/>
+<pin name="PC12" x="43.18" y="63.5" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO_D3/PC11" x="43.18" y="66.04" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO_D2/PC10" x="43.18" y="68.58" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO_D1/PC9" x="43.18" y="71.12" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO_D0/PC8" x="43.18" y="73.66" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO_D7/PC7" x="43.18" y="76.2" visible="pin" length="short" rot="R180"/>
+<pin name="PC6" x="43.18" y="78.74" visible="pin" length="short" rot="R180"/>
+<pin name="ADC15/PC5" x="43.18" y="81.28" visible="pin" length="short" rot="R180"/>
+<pin name="ADC14/PC4" x="43.18" y="83.82" visible="pin" length="short" rot="R180"/>
+<pin name="I2S2_SD/ADC13/PC3" x="43.18" y="86.36" visible="pin" length="short" rot="R180"/>
+<pin name="I2S2_EXT_SD/ADC12/PC2" x="43.18" y="88.9" visible="pin" length="short" rot="R180"/>
+<pin name="ADC11/PC1" x="43.18" y="91.44" visible="pin" length="short" rot="R180"/>
+<pin name="ADC10/PC0" x="43.18" y="93.98" visible="pin" length="short" rot="R180"/>
+<pin name="ANTI_TAMP/PC13" x="43.18" y="60.96" visible="pin" length="short" rot="R180"/>
+<pin name="OSC32_IN/PC14" x="43.18" y="58.42" visible="pin" length="short" rot="R180"/>
+<pin name="OSC32_OUT/PC15" x="43.18" y="55.88" visible="pin" length="short" rot="R180"/>
+<text x="-25.4" y="101.6" size="1.778" layer="94" ratio="14">&gt;NAME</text>
+<text x="2.54" y="101.6" size="1.778" layer="94" ratio="14">&gt;VALUE</text>
+<pin name="PD2" x="43.18" y="-7.62" visible="pin" length="short" rot="R180"/>
+<wire x1="-25.4" y1="45.72" x2="-22.86" y2="45.72" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="45.72" x2="-22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="2.54" x2="-25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="38.1" y1="45.72" x2="40.64" y2="45.72" width="0.254" layer="94"/>
+<wire x1="40.64" y1="45.72" x2="40.64" y2="2.54" width="0.254" layer="94"/>
+<wire x1="40.64" y1="2.54" x2="38.1" y2="2.54" width="0.254" layer="94"/>
+<wire x1="38.1" y1="96.52" x2="40.64" y2="96.52" width="0.254" layer="94"/>
+<wire x1="40.64" y1="96.52" x2="40.64" y2="53.34" width="0.254" layer="94"/>
+<wire x1="40.64" y1="53.34" x2="38.1" y2="53.34" width="0.254" layer="94"/>
+<wire x1="38.1" y1="-5.08" x2="40.64" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="40.64" y1="-5.08" x2="40.64" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="40.64" y1="-10.16" x2="38.1" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="96.52" x2="-22.86" y2="96.52" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="96.52" x2="-22.86" y2="58.42" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="58.42" x2="-25.4" y2="58.42" width="0.254" layer="94"/>
+<text x="-30.48" y="48.26" size="1.778" layer="94" ratio="14">PORTA</text>
+<text x="33.02" y="48.26" size="1.778" layer="94" ratio="14">PORTC</text>
+<text x="33.02" y="-2.54" size="1.778" layer="94" ratio="14">PORTD</text>
+<text x="33.02" y="99.06" size="1.778" layer="94" ratio="14">PORTB</text>
 </symbol>
 </symbols>
 <devicesets>

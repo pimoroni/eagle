@@ -146,6 +146,13 @@
 <circle x="0" y="0" radius="3.1" width="0" layer="42"/>
 <hole x="0" y="0" drill="2.7"/>
 </package>
+<package name="PHAT-28-MOUNTING-HOLE">
+<circle x="0" y="0" radius="3.1" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.1" width="0" layer="40"/>
+<circle x="0" y="0" radius="3.1" width="0" layer="41"/>
+<circle x="0" y="0" radius="3.1" width="0" layer="42"/>
+<hole x="0" y="0" drill="2.8"/>
+</package>
 <package name="M3-MOUNTING-HOLE">
 <hole x="0" y="0" drill="3"/>
 <circle x="0" y="0" radius="3.2" width="0" layer="39"/>

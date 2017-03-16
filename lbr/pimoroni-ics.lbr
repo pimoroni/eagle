@@ -2981,6 +2981,44 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <text x="-7.62" y="17.78" size="1.27" layer="95">&gt;NAME</text>
 <pin name="VCC" x="-15.24" y="12.7" length="middle"/>
 </symbol>
+<symbol name="DMMT5401">
+<pin name="E1" x="-5.08" y="10.16" visible="pin" length="short" rot="R270"/>
+<pin name="E2" x="5.08" y="10.16" visible="pin" length="short" rot="R270"/>
+<pin name="C2" x="5.08" y="-10.16" visible="pin" length="short" rot="R90"/>
+<pin name="C1" x="-5.08" y="-10.16" visible="pin" length="short" rot="R90"/>
+<pin name="B1" x="-2.54" y="-10.16" visible="pin" length="short" rot="R90"/>
+<pin name="B2" x="2.54" y="-10.16" visible="pin" length="short" rot="R90"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-0.508" x2="-5.08" y2="-1.27" width="0.127" layer="97"/>
+<wire x1="-3.81" y1="-1.778" x2="-3.81" y2="-0.508" width="0.127" layer="97"/>
+<wire x1="-3.81" y1="-0.508" x2="-3.81" y2="-0.254" width="0.127" layer="97"/>
+<wire x1="-4.064" y1="0" x2="-5.08" y2="0.762" width="0.127" layer="97"/>
+<wire x1="-5.08" y1="0.762" x2="-5.08" y2="1.778" width="0.127" layer="97"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="-2.286" width="0.127" layer="97"/>
+<wire x1="-4.064" y1="0" x2="-4.572" y2="0.254" width="0.254" layer="97"/>
+<wire x1="-4.572" y1="0.254" x2="-4.318" y2="0.508" width="0.254" layer="97"/>
+<wire x1="-4.318" y1="0.508" x2="-4.064" y2="0" width="0.254" layer="97"/>
+<wire x1="-3.81" y1="-0.254" x2="-2.54" y2="-0.254" width="0.127" layer="97"/>
+<wire x1="-2.54" y1="-0.254" x2="-2.54" y2="-2.286" width="0.127" layer="97"/>
+<wire x1="-3.81" y1="-0.254" x2="-3.81" y2="1.27" width="0.127" layer="97"/>
+<wire x1="3.81" y1="-0.508" x2="5.08" y2="-1.27" width="0.127" layer="97"/>
+<wire x1="3.81" y1="-1.778" x2="3.81" y2="-0.508" width="0.127" layer="97"/>
+<wire x1="3.81" y1="-0.508" x2="3.81" y2="-0.254" width="0.127" layer="97"/>
+<wire x1="4.064" y1="0" x2="5.08" y2="0.762" width="0.127" layer="97"/>
+<wire x1="5.08" y1="0.762" x2="5.08" y2="1.778" width="0.127" layer="97"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="-2.286" width="0.127" layer="97"/>
+<wire x1="4.064" y1="0" x2="4.572" y2="0.254" width="0.254" layer="97"/>
+<wire x1="4.572" y1="0.254" x2="4.318" y2="0.508" width="0.254" layer="97"/>
+<wire x1="4.318" y1="0.508" x2="4.064" y2="0" width="0.254" layer="97"/>
+<wire x1="3.81" y1="-0.254" x2="2.54" y2="-0.254" width="0.127" layer="97"/>
+<wire x1="2.54" y1="-0.254" x2="2.54" y2="-2.286" width="0.127" layer="97"/>
+<wire x1="3.81" y1="-0.254" x2="3.81" y2="1.27" width="0.127" layer="97"/>
+<text x="-7.62" y="15.24" size="1.778" layer="97">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="97">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F030C6">
@@ -4741,6 +4779,26 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="SCL" pad="14"/>
 <connect gate="G$1" pin="SDA" pad="15"/>
 <connect gate="G$1" pin="VCC" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DMMT5401">
+<gates>
+<gate name="G$1" symbol="DMMT5401" x="10.16" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-6">
+<connects>
+<connect gate="G$1" pin="B1" pad="2"/>
+<connect gate="G$1" pin="B2" pad="3"/>
+<connect gate="G$1" pin="C1" pad="1"/>
+<connect gate="G$1" pin="C2" pad="4"/>
+<connect gate="G$1" pin="E1" pad="6"/>
+<connect gate="G$1" pin="E2" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>

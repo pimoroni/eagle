@@ -3161,6 +3161,19 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <wire x1="-12.7" y1="-40.64" x2="-15.24" y2="-40.64" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="93.98" x2="-12.7" y2="93.98" width="0.254" layer="94"/>
 </symbol>
+<symbol name="SPX3819">
+<pin name="IN" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="OUT" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="EN" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="BYP" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F030C6">
@@ -5018,6 +5031,25 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="VDD" pad="P$24 P$36 P$48"/>
 <connect gate="G$1" pin="VREF+/VDDA" pad="P$9"/>
 <connect gate="G$1" pin="VREF-/VSSA" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPX3819">
+<gates>
+<gate name="G$1" symbol="SPX3819" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="BYP" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>

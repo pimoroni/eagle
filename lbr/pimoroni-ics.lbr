@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -553,6 +553,27 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <wire x1="-1.5582" y1="1.524" x2="-1.5582" y2="1.3648" width="0.1524" layer="21"/>
 <wire x1="1.4918" y1="1.524" x2="1.4918" y2="1.3648" width="0.1524" layer="21"/>
 <wire x1="1.4918" y1="-1.376" x2="1.4918" y2="-1.5352" width="0.1524" layer="21"/>
+</package>
+<package name="HVSSOP-10">
+<wire x1="-1.5328" y1="-1.3854" x2="-1.5328" y2="-1.5446" width="0.1524" layer="51"/>
+<wire x1="1.5328" y1="-1.5446" x2="-1.5328" y2="-1.5446" width="0.1524" layer="51"/>
+<wire x1="-1.5328" y1="1.5146" x2="1.5328" y2="1.5146" width="0.1524" layer="51"/>
+<circle x="-0.7192" y="0.7256" radius="0.15" width="0.3" layer="21"/>
+<smd name="1" x="-2.2" y="1" dx="0.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="2" x="-2.2" y="0.5" dx="0.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="3" x="-2.2" y="0" dx="0.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="4" x="-2.2" y="-0.5" dx="0.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="5" x="-2.2" y="-1" dx="0.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="6" x="2.2" y="-1" dx="0.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="7" x="2.2" y="-0.5" dx="0.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="8" x="2.2" y="0" dx="0.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="9" x="2.2" y="0.5" dx="0.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="10" x="2.2" y="1" dx="0.3" dy="1.5" layer="1" rot="R270"/>
+<text x="0.0172" y="1.9956" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0.0172" y="-2.9162" size="0.8128" layer="27" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
+<wire x1="-1.5328" y1="1.5146" x2="-1.5328" y2="1.3554" width="0.1524" layer="51"/>
+<wire x1="1.5172" y1="1.5146" x2="1.5172" y2="1.3554" width="0.1524" layer="51"/>
+<wire x1="1.5172" y1="-1.3854" x2="1.5172" y2="-1.5446" width="0.1524" layer="51"/>
 </package>
 <package name="TQFP-44">
 <wire x1="-4.8" y1="4.2" x2="-4.2" y2="4.8" width="0.2032" layer="21"/>
@@ -3267,6 +3288,24 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <text x="-12.7" y="10.16" size="1.778" layer="94">&gt;NAME</text>
 <text x="-12.7" y="-12.7" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="BQ24092DGQR">
+<pin name="IN" x="-17.78" y="7.62" length="middle" direction="pwr"/>
+<pin name="ISET" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="VSS" x="-17.78" y="-2.54" length="middle" direction="pwr"/>
+<pin name="PRETERM" x="-17.78" y="-7.62" length="middle" direction="in"/>
+<pin name="!PG!" x="-17.78" y="-12.7" length="middle" direction="out"/>
+<pin name="NC" x="17.78" y="-12.7" length="middle" direction="nc" rot="R180"/>
+<pin name="ISET2" x="17.78" y="-7.62" length="middle" direction="in" rot="R180"/>
+<pin name="!CHG!" x="17.78" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="TS" x="17.78" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="OUT" x="17.78" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.254" layer="97"/>
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="97"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.254" layer="97"/>
+<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="97"/>
+<text x="0" y="12.7" size="1.27" layer="97" align="center">BQ24092 DGQR</text>
+<text x="-7.62" y="17.78" size="1.27" layer="97" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F030C6">
@@ -5219,6 +5258,30 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="SCL" pad="10"/>
 <connect gate="G$1" pin="SDA" pad="9"/>
 <connect gate="G$1" pin="XSHUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BQ24092DGQR" prefix="U">
+<gates>
+<gate name="G$1" symbol="BQ24092DGQR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HVSSOP-10">
+<connects>
+<connect gate="G$1" pin="!CHG!" pad="8"/>
+<connect gate="G$1" pin="!PG!" pad="5"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="ISET" pad="2"/>
+<connect gate="G$1" pin="ISET2" pad="7"/>
+<connect gate="G$1" pin="NC" pad="6"/>
+<connect gate="G$1" pin="OUT" pad="10"/>
+<connect gate="G$1" pin="PRETERM" pad="4"/>
+<connect gate="G$1" pin="TS" pad="9"/>
+<connect gate="G$1" pin="VSS" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.8" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -192,10 +192,12 @@
 <smd name="6" x="0.4" y="-0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
 <smd name="7" x="-0.4" y="-0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
 <smd name="8" x="-1.2" y="-0.875" dx="0.4" dy="0.85" layer="1" rot="R180"/>
-<wire x1="-1.55" y1="-0.275" x2="-1.55" y2="0.3" width="0.127" layer="51"/>
-<wire x1="1.55" y1="0.28" x2="1.55" y2="-0.27" width="0.127" layer="51"/>
 <text x="0" y="2" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.8" size="0.8128" layer="27" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
+<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.127" layer="51"/>
+<wire x1="1.6" y1="0.8" x2="-1.6" y2="0.8" width="0.127" layer="51"/>
 </package>
 <package name="IFSC-1515AH-ER-XXX-XXX">
 <smd name="P$1" x="-1.4" y="0" dx="3.8" dy="1" layer="1" rot="R270"/>

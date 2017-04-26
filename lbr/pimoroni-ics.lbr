@@ -559,16 +559,16 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1524" layer="51"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1524" layer="51"/>
 <circle x="-1.1192" y="1.0256" radius="0.15" width="0.3" layer="21"/>
-<smd name="1" x="-2.2" y="1" dx="0.25" dy="1.5" layer="1" rot="R270"/>
-<smd name="2" x="-2.2" y="0.5" dx="0.25" dy="1.5" layer="1" rot="R270"/>
-<smd name="3" x="-2.2" y="0" dx="0.25" dy="1.5" layer="1" rot="R270"/>
-<smd name="4" x="-2.2" y="-0.5" dx="0.25" dy="1.5" layer="1" rot="R270"/>
-<smd name="5" x="-2.2" y="-1" dx="0.25" dy="1.5" layer="1" rot="R270"/>
-<smd name="6" x="2.2" y="-1" dx="0.25" dy="1.5" layer="1" rot="R270"/>
-<smd name="7" x="2.2" y="-0.5" dx="0.25" dy="1.5" layer="1" rot="R270"/>
-<smd name="8" x="2.2" y="0" dx="0.25" dy="1.5" layer="1" rot="R270"/>
-<smd name="9" x="2.2" y="0.5" dx="0.25" dy="1.5" layer="1" rot="R270"/>
-<smd name="10" x="2.2" y="1" dx="0.25" dy="1.5" layer="1" rot="R270"/>
+<smd name="1" x="-2.3" y="1" dx="0.25" dy="1.3" layer="1" rot="R270"/>
+<smd name="2" x="-2.3" y="0.5" dx="0.25" dy="1.3" layer="1" rot="R270"/>
+<smd name="3" x="-2.3" y="0" dx="0.25" dy="1.3" layer="1" rot="R270"/>
+<smd name="4" x="-2.3" y="-0.5" dx="0.25" dy="1.3" layer="1" rot="R270"/>
+<smd name="5" x="-2.3" y="-1" dx="0.25" dy="1.3" layer="1" rot="R270"/>
+<smd name="6" x="2.3" y="-1" dx="0.25" dy="1.3" layer="1" rot="R270"/>
+<smd name="7" x="2.3" y="-0.5" dx="0.25" dy="1.3" layer="1" rot="R270"/>
+<smd name="8" x="2.3" y="0" dx="0.25" dy="1.3" layer="1" rot="R270"/>
+<smd name="9" x="2.3" y="0.5" dx="0.25" dy="1.3" layer="1" rot="R270"/>
+<smd name="10" x="2.3" y="1" dx="0.25" dy="1.3" layer="1" rot="R270"/>
 <text x="0.0172" y="1.9956" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <text x="0.0172" y="-2.9162" size="0.8128" layer="27" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.5" y1="1.5" x2="-1.5" y2="1.3554" width="0.1524" layer="51"/>

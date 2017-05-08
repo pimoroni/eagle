@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.77" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -320,6 +320,38 @@
 <wire x1="8.4" y1="-3.2" x2="8.6" y2="-3.2" width="0.127" layer="21"/>
 <wire x1="8.6" y1="-3.2" x2="8.6" y2="-2.6" width="0.127" layer="21"/>
 </package>
+<package name="FPC_0.5X24_CN">
+<smd name="1" x="5.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="2" x="5.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="3" x="4.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="4" x="4.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="5" x="3.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="6" x="3.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="7" x="2.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="8" x="2.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="9" x="1.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="10" x="1.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="11" x="0.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="12" x="0.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="13" x="-0.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="14" x="-0.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="15" x="-1.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="16" x="-1.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="17" x="-2.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="18" x="-2.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="19" x="-3.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="20" x="-3.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="21" x="-4.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="22" x="-4.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="23" x="-5.25" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<smd name="24" x="-5.75" y="0.625" dx="0.3" dy="1.25" layer="1"/>
+<text x="-3.4476" y="2.365" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.7476" y="-1.8258" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="MT1" x="-7.25" y="-2" dx="1.5" dy="2" layer="1"/>
+<smd name="MT2" x="7.25" y="-2" dx="1.5" dy="2" layer="1"/>
+<wire x1="7.7" y1="-0.77" x2="7.7" y2="-3.08" width="0.127" layer="21"/>
+<wire x1="-7.7" y1="-0.77" x2="-7.7" y2="-3.08" width="0.127" layer="21"/>
+</package>
 <package name="FPC_1.0X08">
 <smd name="1" x="-3.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
 <smd name="MT1" x="-6.3" y="1.5" dx="2" dy="2.5" layer="1"/>
@@ -482,8 +514,6 @@
 <smd name="MT2" x="-8.2" y="-2.925" dx="0.4" dy="0.95" layer="1"/>
 </package>
 <package name="FPC_0.5X30">
-<description>&lt;b&gt;0.5mm Pitch Connectors For FPC/FFC&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data sheet&lt;/a&gt;&lt;p&gt;</description>
 <wire x1="-11.45" y1="0.5" x2="-11.95" y2="0.5" width="0.2032" layer="51"/>
 <wire x1="-11.95" y1="0.5" x2="-11.95" y2="-0.5" width="0.2032" layer="51"/>
 <wire x1="-11.95" y1="-0.5" x2="-11.45" y2="-0.5" width="0.2032" layer="51"/>
@@ -1387,6 +1417,71 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <connect gate="-29" pin="1" pad="29"/>
 <connect gate="-3" pin="1" pad="3"/>
 <connect gate="-30" pin="1" pad="30"/>
+<connect gate="-4" pin="1" pad="4"/>
+<connect gate="-5" pin="1" pad="5"/>
+<connect gate="-6" pin="1" pad="6"/>
+<connect gate="-7" pin="1" pad="7"/>
+<connect gate="-8" pin="1" pad="8"/>
+<connect gate="-9" pin="1" pad="9"/>
+<connect gate="-MT1" pin="1" pad="MT1"/>
+<connect gate="-MT2" pin="1" pad="MT2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FPC_0.5X24_CN" prefix="X" uservalue="yes">
+<gates>
+<gate name="-1" symbol="PINV" x="0" y="48.26" addlevel="always"/>
+<gate name="-2" symbol="PIN" x="0" y="45.72" addlevel="always"/>
+<gate name="-3" symbol="PIN" x="0" y="43.18" addlevel="always"/>
+<gate name="-4" symbol="PIN" x="0" y="40.64" addlevel="always"/>
+<gate name="-5" symbol="PIN" x="0" y="38.1" addlevel="always"/>
+<gate name="-6" symbol="PIN" x="0" y="35.56" addlevel="always"/>
+<gate name="-7" symbol="PIN" x="0" y="33.02" addlevel="always"/>
+<gate name="-8" symbol="PIN" x="0" y="30.48" addlevel="always"/>
+<gate name="-9" symbol="PIN" x="0" y="27.94" addlevel="always"/>
+<gate name="-10" symbol="PIN" x="0" y="25.4" addlevel="always"/>
+<gate name="-11" symbol="PIN" x="0" y="22.86" addlevel="always"/>
+<gate name="-12" symbol="PIN" x="0" y="20.32" addlevel="always"/>
+<gate name="-13" symbol="PIN" x="0" y="17.78" addlevel="always"/>
+<gate name="-14" symbol="PIN" x="0" y="15.24" addlevel="always"/>
+<gate name="-15" symbol="PIN" x="0" y="12.7" addlevel="always"/>
+<gate name="-16" symbol="PIN" x="0" y="10.16" addlevel="always"/>
+<gate name="-17" symbol="PIN" x="0" y="7.62" addlevel="always"/>
+<gate name="-18" symbol="PIN" x="0" y="5.08" addlevel="always"/>
+<gate name="-19" symbol="PIN" x="0" y="2.54" addlevel="always"/>
+<gate name="-20" symbol="PIN" x="0" y="0" addlevel="always"/>
+<gate name="-21" symbol="PIN" x="0" y="-2.54" addlevel="always"/>
+<gate name="-22" symbol="PIN" x="0" y="-5.08" addlevel="always"/>
+<gate name="-23" symbol="PIN" x="0" y="-7.62" addlevel="always"/>
+<gate name="-24" symbol="PIN" x="0" y="-10.16" addlevel="always"/>
+<gate name="-MT1" symbol="PIN" x="0" y="-15.24" addlevel="always"/>
+<gate name="-MT2" symbol="PIN" x="0" y="-17.78" addlevel="always"/>
+</gates>
+<devices>
+<device name="H" package="FPC_0.5X24_CN">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-10" pin="1" pad="10"/>
+<connect gate="-11" pin="1" pad="11"/>
+<connect gate="-12" pin="1" pad="12"/>
+<connect gate="-13" pin="1" pad="13"/>
+<connect gate="-14" pin="1" pad="14"/>
+<connect gate="-15" pin="1" pad="15"/>
+<connect gate="-16" pin="1" pad="16"/>
+<connect gate="-17" pin="1" pad="17"/>
+<connect gate="-18" pin="1" pad="18"/>
+<connect gate="-19" pin="1" pad="19"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-20" pin="1" pad="20"/>
+<connect gate="-21" pin="1" pad="21"/>
+<connect gate="-22" pin="1" pad="22"/>
+<connect gate="-23" pin="1" pad="23"/>
+<connect gate="-24" pin="1" pad="24"/>
+<connect gate="-3" pin="1" pad="3"/>
 <connect gate="-4" pin="1" pad="4"/>
 <connect gate="-5" pin="1" pad="5"/>
 <connect gate="-6" pin="1" pad="6"/>

@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -982,7 +982,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="3" x="0" y="-1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
 <smd name="2" x="-0.5" y="-1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
 <smd name="1" x="-1" y="-1.6" dx="0.85" dy="0.28" layer="1" roundness="50" rot="R90"/>
-<circle x="-1.8" y="-1.8" radius="0.09" width="0.18" layer="21"/>
+<circle x="-1.5" y="-1.5" radius="0.09" width="0.18" layer="21"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>

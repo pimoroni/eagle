@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1859,6 +1859,19 @@ package type SS</description>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
 </package>
+<package name="TPS61230A">
+<smd name="3" x="0.25" y="1" dx="0.25" dy="0.8" layer="1"/>
+<smd name="2" x="-0.25" y="1" dx="0.25" dy="0.8" layer="1"/>
+<smd name="1" x="-0.75" y="1" dx="0.25" dy="0.8" layer="1"/>
+<smd name="4" x="0.75" y="1" dx="0.25" dy="0.8" layer="1"/>
+<smd name="5" x="0" y="0" dx="2.8" dy="0.25" layer="1"/>
+<smd name="7" x="-0.7" y="-0.54" dx="1.4" dy="0.3" layer="1"/>
+<smd name="6" x="0.85" y="-0.54" dx="1.1" dy="0.3" layer="1"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STP16CPC26XTR">
@@ -3421,6 +3434,21 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TPS61230A">
+<pin name="SW" x="-15.24" y="7.62" length="middle"/>
+<pin name="VIN" x="-15.24" y="-2.54" length="middle"/>
+<pin name="EN" x="-15.24" y="-7.62" length="middle"/>
+<pin name="VOUT" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="FB" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="CBST" x="-15.24" y="2.54" length="middle"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="12.7" size="2.54" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="2.54" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5489,6 +5517,27 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="SDO" pad="5"/>
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="VDDIO" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS61230A">
+<gates>
+<gate name="G$1" symbol="TPS61230A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TPS61230A">
+<connects>
+<connect gate="G$1" pin="CBST" pad="1"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="FB" pad="3"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="SW" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>

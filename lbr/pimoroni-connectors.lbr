@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -768,6 +768,13 @@
 <smd name="11" x="-3" y="-6.35" dx="4" dy="1" layer="1"/>
 <smd name="12" x="3" y="-6.35" dx="4" dy="1" layer="1"/>
 </package>
+<package name="1X5_SMT">
+<smd name="3" x="0" y="1.35" dx="1.2" dy="3.3" layer="1"/>
+<smd name="1" x="-5.08" y="1.35" dx="1.2" dy="3.3" layer="1"/>
+<smd name="5" x="5.08" y="1.35" dx="1.2" dy="3.3" layer="1"/>
+<smd name="2" x="-2.54" y="-1.35" dx="1.2" dy="3.3" layer="1"/>
+<smd name="4" x="2.54" y="-1.35" dx="1.2" dy="3.3" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -853,6 +860,18 @@
 <pin name="P$6" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="MT1" x="10.16" y="-7.62" length="short" rot="R180"/>
 <pin name="MT2" x="10.16" y="-10.16" length="short" rot="R180"/>
+</symbol>
+<symbol name="1X05">
+<pin name="P$1" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="P$2" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<text x="0" y="10.16" size="1.778" layer="94">&gt;NAME</text>
+<wire x1="7.62" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<pin name="P$3" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="P$4" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="P$5" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
+<text x="0" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="1X10_W_MOUNTS">
 <pin name="P$1" x="10.16" y="10.16" visible="pin" length="short" rot="R180"/>
@@ -1146,15 +1165,15 @@
 <text x="-3.81" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="2X06_SMT">
-<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-6.35" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="1.27" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-3.81" x2="-5.08" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.27" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="-3.81" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-6.35" x2="-5.08" y2="-6.35" width="0.254" layer="94"/>
 <pin name="1" x="-10.16" y="2.54" length="middle"/>
 <pin name="3" x="-10.16" y="0" length="middle"/>
 <pin name="5" x="-10.16" y="-2.54" length="middle"/>
@@ -1780,6 +1799,39 @@ push-push type</description>
 </gates>
 <devices>
 <device name="" package="2X06_SMT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X05_SMT">
+<gates>
+<gate name="G$1" symbol="1X05" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X5_SMT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

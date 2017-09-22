@@ -992,6 +992,19 @@
 <vertex x="-10" y="-15" curve="-90"/>
 </polygon>
 </package>
+<package name="LED-0404">
+<smd name="3" x="-0.425" y="0.425" dx="0.45" dy="0.45" layer="1"/>
+<smd name="2" x="0.425" y="0.425" dx="0.45" dy="0.45" layer="1"/>
+<smd name="1" x="0.425" y="-0.425" dx="0.45" dy="0.45" layer="1"/>
+<smd name="4" x="-0.425" y="-0.425" dx="0.45" dy="0.45" layer="1"/>
+<wire x1="-0.1" y1="0" x2="0" y2="0.1" width="0.05" layer="51"/>
+<wire x1="0" y1="0.1" x2="0.05" y2="-0.05" width="0.05" layer="51"/>
+<wire x1="0.05" y1="-0.05" x2="-0.1" y2="0" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="0.5" x2="0.5" y2="0.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0.5" x2="0.5" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-0.5" x2="-0.5" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED-RGB">
@@ -2986,17 +2999,28 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED_RGB_2121">
+<deviceset name="LED_RGB_4P">
 <gates>
 <gate name="G$1" symbol="LED-RGB-COMMON-ANODE" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="LED-2121">
+<device name="2121" package="LED-2121">
 <connects>
 <connect gate="G$1" pin="A" pad="4"/>
 <connect gate="G$1" pin="BC" pad="3"/>
 <connect gate="G$1" pin="GC" pad="2"/>
 <connect gate="G$1" pin="RC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0404" package="LED-0404">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="BC" pad="2"/>
+<connect gate="G$1" pin="GC" pad="3"/>
+<connect gate="G$1" pin="RC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

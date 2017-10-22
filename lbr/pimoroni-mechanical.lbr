@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -646,6 +646,21 @@
 <wire x1="-0.2742" y1="2.233221875" x2="-1.46856875" y2="1.703715625" width="0.5" layer="1" curve="-326.239284"/>
 <wire x1="-0.2742" y1="2.233221875" x2="-1.46856875" y2="1.703715625" width="0.6" layer="29" curve="-326.239284"/>
 </package>
+<package name="DOME_SWITCH">
+<smd name="D4" x="0" y="4.6" dx="3" dy="2" layer="1"/>
+<smd name="D2" x="0" y="-4.6" dx="3" dy="2" layer="1"/>
+<smd name="D1" x="-4.6" y="0" dx="2" dy="3" layer="1"/>
+<smd name="D3" x="4.6" y="0" dx="2" dy="3" layer="1"/>
+<smd name="M" x="0" y="0" dx="4.5" dy="4.5" layer="1" roundness="100" cream="no"/>
+<wire x1="-5" y1="-1" x2="-5" y2="1" width="0.127" layer="51"/>
+<wire x1="-1" y1="5" x2="1" y2="5" width="0.127" layer="51"/>
+<wire x1="5" y1="1" x2="5" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-5" x2="-1" y2="-5" width="0.127" layer="51"/>
+<wire x1="-5" y1="-1" x2="-1" y2="-5" width="0.127" layer="51" curve="-90"/>
+<wire x1="-1" y1="5" x2="-5" y2="1" width="0.127" layer="51" curve="-90"/>
+<wire x1="5" y1="1" x2="1" y2="5" width="0.127" layer="51" curve="-90"/>
+<wire x1="1" y1="-5" x2="5" y2="-1" width="0.127" layer="51" curve="-90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-DPDT">
@@ -1032,6 +1047,22 @@
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DOME_SWITCH" prefix="SW">
+<gates>
+<gate name="G$1" symbol="SWITCH-SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DOME_SWITCH">
+<connects>
+<connect gate="G$1" pin="1" pad="D1 D2 D3 D4"/>
+<connect gate="G$1" pin="2" pad="M"/>
 </connects>
 <technologies>
 <technology name=""/>

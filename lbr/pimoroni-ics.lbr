@@ -1883,6 +1883,21 @@ package type SS</description>
 </package>
 </packages>
 <symbols>
+<symbol name="OPAMP">
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="2.54" y2="0" width="0.254" layer="94"/>
+<pin name="+" x="-7.62" y="2.54" visible="off" length="short"/>
+<pin name="-" x="-7.62" y="-2.54" visible="off" length="short"/>
+<pin name="OUT" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<text x="-4.572" y="2.032" size="1.778" layer="94">+</text>
+<text x="-4.318" y="-3.302" size="1.778" layer="94">-</text>
+<text x="-2.54" y="-0.762" size="1.27" layer="94">OUT</text>
+<wire x1="2.54" y1="0" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<pin name="VCC" x="-2.54" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="GND" x="-2.54" y="-7.62" visible="pad" length="short" rot="R90"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="3.556" width="0.254" layer="94"/>
+</symbol>
 <symbol name="STP16CPC26XTR">
 <pin name="VDD" x="-17.78" y="17.78" length="middle"/>
 <pin name="SDI" x="-17.78" y="12.7" length="middle"/>
@@ -3500,6 +3515,37 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="OPAMP">
+<gates>
+<gate name="G$1" symbol="OPAMP" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="MCP6001" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="+" pad="3"/>
+<connect gate="G$1" pin="-" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LM321SN3T1G" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="STM32F030C6">
 <gates>
 <gate name="G$1" symbol="STM32F030C6" x="0" y="0"/>

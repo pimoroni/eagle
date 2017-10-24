@@ -3532,7 +3532,7 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <technology name=""/>
 </technologies>
 </device>
-<device name="LM321SN3T1G" package="SOT-23-5">
+<device name="LMV321ILT" package="SOT-23-5">
 <connects>
 <connect gate="G$1" pin="+" pad="1"/>
 <connect gate="G$1" pin="-" pad="3"/>

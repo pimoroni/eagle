@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -880,6 +880,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="1" x="0.95" y="1.1" dx="0.65" dy="1.1" layer="1"/>
 <smd name="3" x="-0.95" y="1.1" dx="0.65" dy="1.1" layer="1"/>
 <smd name="6" x="0.95" y="-1.1" dx="0.65" dy="1.1" layer="1"/>
+<circle x="0.9" y="0.4" radius="0.22360625" width="0.4" layer="21"/>
 </package>
 <package name="UQFN-28">
 <smd name="P$1" x="-2.1" y="1.2" dx="0.2" dy="0.8" layer="1" rot="R90"/>
@@ -3500,7 +3501,7 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <text x="-7.62" y="7.62" size="1.778" layer="94">&gt;NAME</text>
 <text x="-7.62" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
-<symbol name="TCR2LF33,LM(CT)">
+<symbol name="LDO_5PIN">
 <pin name="VIN" x="-15.24" y="5.08" length="middle" direction="pwr"/>
 <pin name="GND" x="-15.24" y="0" length="middle" direction="pwr"/>
 <pin name="CTRL" x="-15.24" y="-5.08" length="middle"/>
@@ -3512,6 +3513,20 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <wire x1="7.62" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <text x="-7.62" y="10.16" size="1.27" layer="94">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="INA181A3">
+<pin name="IN-" x="-15.24" y="2.54" length="middle"/>
+<pin name="IN+" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
+<pin name="VS" x="0" y="12.7" length="middle" rot="R270"/>
+<pin name="OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<text x="1.016" y="8.636" size="1.27" layer="95">&gt;NAME</text>
+<text x="1.016" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="REF" x="15.24" y="-2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5678,9 +5693,9 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 </device>
 </devices>
 </deviceset>
-<deviceset name="TCR2LF33,LM(CT)">
+<deviceset name="LDO" prefix="U" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="TCR2LF33,LM(CT)" x="0" y="0"/>
+<gate name="G$1" symbol="LDO_5PIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT-23-5">
@@ -5690,6 +5705,26 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="NC" pad="4"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INA181A3" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="INA181A3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-6">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="REF" pad="5"/>
+<connect gate="G$1" pin="VS" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>

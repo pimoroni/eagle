@@ -846,7 +846,7 @@
 <wire x1="27" y1="4" x2="27" y2="-7" width="0.127" layer="21"/>
 <wire x1="27" y1="-7" x2="-27" y2="-7" width="0.127" layer="21"/>
 <wire x1="-27" y1="-7" x2="-27" y2="4" width="0.127" layer="21"/>
-<circle x="-28" y="5" radius="0.282840625" width="0.5" layer="47"/>
+<circle x="27.88" y="5" radius="0.282840625" width="0.5" layer="47"/>
 </package>
 <package name="MICROBIT-EDGE-PCB">
 <smd name="22" x="24.7705" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>

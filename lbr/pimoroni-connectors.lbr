@@ -826,6 +826,128 @@
 <vertex x="1.4" y="1.4"/>
 </polygon>
 </package>
+<package name="MICROBIT-RIGHT-ANGLE-SMT">
+<smd name="1" x="-24.765" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-23.495" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-22.225" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-20.955" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="-19.685" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="-18.415" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="7" x="-17.145" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="-15.875" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="9" x="-14.605" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="10" x="-13.335" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="11" x="-12.065" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="12" x="-10.795" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="13" x="-9.525" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="14" x="-8.255" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="15" x="-6.985" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="16" x="-5.715" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="17" x="-4.445" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="18" x="-3.175" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="19" x="-1.905" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="20" x="-0.635" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="21" x="0.635" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="22" x="1.905" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="23" x="3.175" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="24" x="4.445" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="25" x="5.715" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="26" x="6.985" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="27" x="8.255" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="28" x="9.525" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="29" x="10.795" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="30" x="12.065" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="31" x="13.335" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="32" x="14.605" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="33" x="15.875" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="34" x="17.145" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="35" x="18.415" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="36" x="19.685" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="37" x="20.955" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="38" x="22.225" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="39" x="23.495" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<smd name="40" x="24.765" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
+<hole x="-12.78" y="-2.81" drill="1.75"/>
+<hole x="12.78" y="-2.81" drill="1.75"/>
+<wire x1="-27" y1="4" x2="-25.5" y2="4" width="0.127" layer="21"/>
+<wire x1="-25.5" y1="4" x2="-25.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-25.5" y1="2" x2="25.5" y2="2" width="0.127" layer="21"/>
+<wire x1="25.5" y1="2" x2="25.5" y2="4" width="0.127" layer="21"/>
+<wire x1="25.5" y1="4" x2="27" y2="4" width="0.127" layer="21"/>
+<wire x1="27" y1="4" x2="27" y2="-7" width="0.127" layer="21"/>
+<wire x1="27" y1="-7" x2="-27" y2="-7" width="0.127" layer="21"/>
+<wire x1="-27" y1="-7" x2="-27" y2="4" width="0.127" layer="21"/>
+<circle x="27.88" y="5" radius="0.282840625" width="0.5" layer="47"/>
+</package>
+<package name="MICROBIT-EDGE-PCB">
+<smd name="22" x="24.7705" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="3" x="-24.7595" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="0" x="-21.5845" y="2.9" dx="5.8" dy="4.71" layer="1" rot="R270"/>
+<smd name="4" x="-18.4095" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="5" x="-17.1395" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="6" x="-15.8695" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="7" x="-14.5995" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="1" x="-11.4245" y="2.9" dx="5.8" dy="4.71" layer="1" rot="R270"/>
+<smd name="8" x="-8.2495" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="10" x="-5.7095" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="11" x="-4.4395" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="12" x="-3.1695" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="2" x="0.0055" y="2.9" dx="5.8" dy="4.71" layer="1" rot="R270"/>
+<smd name="13" x="3.1805" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="14" x="4.4505" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="15" x="5.7205" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="17" x="8.2605" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="3V" x="11.4355" y="2.9" dx="5.8" dy="4.71" layer="1" rot="R270"/>
+<smd name="18" x="14.6105" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="19" x="15.8805" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="20" x="17.1505" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="21" x="18.4205" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="GND" x="21.5955" y="2.9" dx="5.8" dy="4.71" layer="1" rot="R270"/>
+<smd name="9" x="-6.9795" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<smd name="16" x="6.9905" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
+<pad name="HGND" x="21.6205" y="6.42" drill="4" diameter="5"/>
+<pad name="H3V3" x="11.4205" y="6.42" drill="4" diameter="5"/>
+<pad name="H2" x="0.0205" y="6.42" drill="4" diameter="5"/>
+<pad name="H1" x="-11.4295" y="6.42" drill="4" diameter="5"/>
+<pad name="H0" x="-21.5795" y="6.42" drill="4" diameter="5"/>
+<smd name="D1" x="-24.7595" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D25" x="24.7705" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D24" x="21.5955" y="2.9" dx="5.8" dy="4.71" layer="16" rot="R270"/>
+<smd name="D23" x="18.4205" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D22" x="17.1505" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D21" x="15.8805" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D20" x="14.6105" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D19" x="11.4355" y="2.9" dx="5.8" dy="4.71" layer="16" rot="R270"/>
+<smd name="D18" x="8.2605" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D16" x="5.7205" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D15" x="4.4505" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D14" x="3.1805" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D13" x="0.0055" y="2.9" dx="5.8" dy="4.71" layer="16" rot="R270"/>
+<smd name="D12" x="-3.1695" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D11" x="-4.4395" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D10" x="-5.7095" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D8" x="-8.2495" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D7" x="-11.4245" y="2.9" dx="5.8" dy="4.71" layer="16" rot="R270"/>
+<smd name="D6" x="-14.5995" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D5" x="-15.8695" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D4" x="-17.1395" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D3" x="-18.4095" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D2" x="-21.5845" y="2.9" dx="5.8" dy="4.71" layer="16" rot="R270"/>
+<smd name="D17" x="6.9905" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<smd name="D9" x="-6.9795" y="2.7" dx="5.4" dy="0.9" layer="16" rot="R270"/>
+<polygon width="0.127" layer="41">
+<vertex x="-25.2095" y="5.41"/>
+<vertex x="-25.2095" y="-0.01"/>
+<vertex x="25.2305" y="-0.01"/>
+<vertex x="25.2305" y="5.41"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="-25.2095" y="5.41"/>
+<vertex x="-25.2095" y="-0.01"/>
+<vertex x="25.2305" y="-0.01"/>
+<vertex x="25.2305" y="5.41"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -1253,6 +1375,35 @@
 <wire x1="-5.08" y1="2.54" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="12.7" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MICROBIT-EDGE-CONNECTOR">
+<pin name="ADC/P1" x="20.32" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="ADC/P2" x="20.32" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="LED_COL_1/ADC/P3" x="20.32" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="LED_COL_2/ADC/P4" x="20.32" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="BUTTON_A/P5" x="20.32" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="LED_COL_9/P6" x="20.32" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="LED_COL_8/P7" x="20.32" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="P8" x="20.32" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="LED_COL_7/P9" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="LED_COL_3/ADC/P10" x="20.32" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="BUTTON_B/P11" x="20.32" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="P12" x="20.32" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SCK/P13" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="MISO/P14" x="20.32" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="MOSI/P15" x="20.32" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="P16" x="20.32" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="SCL/P19" x="20.32" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="SDA/P20" x="20.32" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="ADC/P0" x="20.32" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="3V3" x="-12.7" y="20.32" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-27.94" visible="pin" length="short"/>
+<wire x1="-10.16" y1="22.86" x2="-10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-30.48" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-30.48" x2="17.78" y2="22.86" width="0.254" layer="94"/>
+<wire x1="17.78" y1="22.86" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
+<text x="-10.16" y="25.4" size="1.27" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-33.02" size="1.27" layer="94" rot="MR180">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1946,6 +2097,69 @@ push-push type</description>
 <connects>
 <connect gate="G$1" pin="GND" pad="MT1 MT2"/>
 <connect gate="G$1" pin="SIG" pad="SIG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICROBIT-EDGE-CONNECTOR">
+<gates>
+<gate name="G$1" symbol="MICROBIT-EDGE-CONNECTOR" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="RA-SMD" package="MICROBIT-RIGHT-ANGLE-SMT">
+<connects>
+<connect gate="G$1" pin="3V3" pad="9 10 11 12 13 14"/>
+<connect gate="G$1" pin="ADC/P0" pad="36 37 38 39"/>
+<connect gate="G$1" pin="ADC/P1" pad="28 29 30 31"/>
+<connect gate="G$1" pin="ADC/P2" pad="19 20 21 22"/>
+<connect gate="G$1" pin="BUTTON_A/P5" pad="34"/>
+<connect gate="G$1" pin="BUTTON_B/P11" pad="24"/>
+<connect gate="G$1" pin="GND" pad="1 2 3 4 5 6"/>
+<connect gate="G$1" pin="LED_COL_1/ADC/P3" pad="40"/>
+<connect gate="G$1" pin="LED_COL_2/ADC/P4" pad="35"/>
+<connect gate="G$1" pin="LED_COL_3/ADC/P10" pad="25"/>
+<connect gate="G$1" pin="LED_COL_7/P9" pad="26"/>
+<connect gate="G$1" pin="LED_COL_8/P7" pad="32"/>
+<connect gate="G$1" pin="LED_COL_9/P6" pad="33"/>
+<connect gate="G$1" pin="MISO/P14" pad="17"/>
+<connect gate="G$1" pin="MOSI/P15" pad="16"/>
+<connect gate="G$1" pin="P12" pad="23"/>
+<connect gate="G$1" pin="P16" pad="15"/>
+<connect gate="G$1" pin="P8" pad="27"/>
+<connect gate="G$1" pin="SCK/P13" pad="18"/>
+<connect gate="G$1" pin="SCL/P19" pad="8"/>
+<connect gate="G$1" pin="SDA/P20" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="EDGE-PCB" package="MICROBIT-EDGE-PCB">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3V 17 18 H3V3"/>
+<connect gate="G$1" pin="ADC/P0" pad="0 H0"/>
+<connect gate="G$1" pin="ADC/P1" pad="1 H1"/>
+<connect gate="G$1" pin="ADC/P2" pad="2 H2"/>
+<connect gate="G$1" pin="BUTTON_A/P5" pad="5"/>
+<connect gate="G$1" pin="BUTTON_B/P11" pad="11"/>
+<connect gate="G$1" pin="GND" pad="21 22 GND HGND"/>
+<connect gate="G$1" pin="LED_COL_1/ADC/P3" pad="3"/>
+<connect gate="G$1" pin="LED_COL_2/ADC/P4" pad="4"/>
+<connect gate="G$1" pin="LED_COL_3/ADC/P10" pad="10"/>
+<connect gate="G$1" pin="LED_COL_7/P9" pad="9"/>
+<connect gate="G$1" pin="LED_COL_8/P7" pad="7"/>
+<connect gate="G$1" pin="LED_COL_9/P6" pad="6"/>
+<connect gate="G$1" pin="MISO/P14" pad="14"/>
+<connect gate="G$1" pin="MOSI/P15" pad="15"/>
+<connect gate="G$1" pin="P12" pad="12"/>
+<connect gate="G$1" pin="P16" pad="16"/>
+<connect gate="G$1" pin="P8" pad="8"/>
+<connect gate="G$1" pin="SCK/P13" pad="13"/>
+<connect gate="G$1" pin="SCL/P19" pad="19"/>
+<connect gate="G$1" pin="SDA/P20" pad="20"/>
 </connects>
 <technologies>
 <technology name=""/>

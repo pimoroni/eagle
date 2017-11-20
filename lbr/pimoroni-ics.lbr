@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3659,7 +3659,7 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="VIN" x="-15.24" y="5.08" length="middle" direction="pwr"/>
 <pin name="GND" x="-15.24" y="0" length="middle" direction="pwr"/>
 <pin name="CTRL" x="-15.24" y="-5.08" length="middle"/>
-<pin name="NC" x="12.7" y="-2.54" length="middle" direction="nc" rot="R180"/>
+<pin name="ADJ" x="12.7" y="-2.54" length="middle" direction="nc" rot="R180"/>
 <pin name="VOUT" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
@@ -5947,9 +5947,9 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <devices>
 <device name="" package="SOT-23-5">
 <connects>
+<connect gate="G$1" pin="ADJ" pad="4"/>
 <connect gate="G$1" pin="CTRL" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="NC" pad="4"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1416,7 +1416,7 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="-2.3766" y1="2.2828" x2="-2.1734" y2="3.121" layer="51"/>
 <rectangle x1="-3.0266" y1="2.2828" x2="-2.8234" y2="3.121" layer="51"/>
 <rectangle x1="-3.6766" y1="2.2828" x2="-3.4734" y2="3.121" layer="51"/>
-<smd name="EP1" x="0" y="0" dx="5" dy="3.2" layer="1"/>
+<smd name="EP1" x="0" y="0" dx="5" dy="3.2" layer="1" thermals="no"/>
 </package>
 <package name="SQFP-S-7X7-48">
 <description>&lt;b&gt;QFP48&lt;/b&gt;&lt;p&gt;
@@ -1543,6 +1543,10 @@ shrink quad flat pack, square</description>
 <smd name="7" x="-0.635" y="2.875" dx="0.5" dy="2.2" layer="1"/>
 <smd name="8" x="-1.905" y="2.875" dx="0.5" dy="2.2" layer="1"/>
 <smd name="EP" x="0" y="0" dx="3.1" dy="2.4" layer="1"/>
+<wire x1="-2.5" y1="2" x2="2.5" y2="2" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2" x2="2.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2" x2="-2.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2" x2="-2.5" y2="2" width="0.127" layer="51"/>
 </package>
 <package name="SSOP28">
 <description>&lt;b&gt;Shrink Small Outline Package&lt;/b&gt;&lt;p&gt;
@@ -6122,6 +6126,26 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="SS" pad="6"/>
 <connect gate="G$1" pin="SW" pad="8"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TSL2591">
+<gates>
+<gate name="G$1" symbol="TSL2581" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FN-6-0.65MM">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="PIN4"/>
+<connect gate="G$1" pin="GND" pad="PIN3"/>
+<connect gate="G$1" pin="INT" pad="PIN2"/>
+<connect gate="G$1" pin="SCL" pad="PIN1"/>
+<connect gate="G$1" pin="SDA" pad="PIN6"/>
+<connect gate="G$1" pin="VCC" pad="PIN5"/>
 </connects>
 <technologies>
 <technology name=""/>

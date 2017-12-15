@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="3.495" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1004,6 +1004,29 @@
 <wire x1="-0.1" y1="0" x2="0" y2="0.1" width="0.05" layer="51"/>
 <wire x1="0" y1="0.1" x2="0.05" y2="-0.05" width="0.05" layer="51"/>
 <wire x1="0.05" y1="-0.05" x2="-0.1" y2="0" width="0.05" layer="51"/>
+</package>
+<package name="128X64_LCD_FRAME">
+<hole x="-28.45" y="19.45" drill="1.5"/>
+<hole x="28.45" y="19.45" drill="1.5"/>
+<hole x="28.45" y="-18.55" drill="1.5"/>
+<hole x="-28.45" y="-18.55" drill="1.5"/>
+<wire x1="-29.5" y1="-20.5" x2="-29.5" y2="20.5" width="0.127" layer="51"/>
+<wire x1="-29.5" y1="20.5" x2="29.5" y2="20.5" width="0.127" layer="51"/>
+<wire x1="29.5" y1="20.5" x2="29.5" y2="-20.5" width="0.127" layer="51"/>
+<wire x1="29.5" y1="-20.5" x2="21.5" y2="-20.5" width="0.127" layer="51"/>
+<wire x1="-21.5" y1="-20.5" x2="-29.5" y2="-20.5" width="0.127" layer="51"/>
+<wire x1="-21.5" y1="-20.5" x2="-21.5" y2="-19.5" width="0.127" layer="51"/>
+<wire x1="21.5" y1="-20.5" x2="21.5" y2="-19.5" width="0.127" layer="51"/>
+<wire x1="21.5" y1="-19.5" x2="5.5" y2="-19.5" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-19.5" x2="-5.5" y2="-19.5" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-19.5" x2="-21.5" y2="-19.5" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-19.5" x2="-5.5" y2="-20.5" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-19.5" x2="5.5" y2="-20.5" width="0.127" layer="51"/>
+<wire x1="-24.305" y1="-8.97" x2="24.305" y2="-8.97" width="0.127" layer="51"/>
+<wire x1="24.305" y1="-8.97" x2="24.305" y2="15.96" width="0.127" layer="51"/>
+<wire x1="24.305" y1="15.96" x2="-24.305" y2="15.96" width="0.127" layer="51"/>
+<wire x1="-24.305" y1="15.96" x2="-24.305" y2="-8.97" width="0.127" layer="51"/>
+<wire x1="-24.465" y1="3.495" x2="24.465" y2="3.495" width="0.127" layer="51" style="shortdash"/>
 </package>
 </packages>
 <symbols>

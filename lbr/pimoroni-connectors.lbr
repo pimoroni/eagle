@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -961,6 +961,19 @@
 <text x="0" y="-7.62" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <smd name="9" x="-2.5" y="-5.08" dx="3" dy="1" layer="1"/>
 <smd name="10" x="2.5" y="-5.08" dx="3" dy="1" layer="1"/>
+</package>
+<package name="FPC_0.5X05_NARROW">
+<smd name="1" x="-1" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+<smd name="2" x="-0.5" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+<smd name="3" x="0" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+<smd name="4" x="0.5" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+<smd name="MT1" x="-2.65" y="-2.95" dx="1.8" dy="2" layer="1"/>
+<smd name="MT2" x="2.65" y="-2.95" dx="1.8" dy="2" layer="1"/>
+<smd name="5" x="1" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+<wire x1="-3" y1="0" x2="-3" y2="-4.9" width="0.2" layer="21"/>
+<wire x1="-3" y1="-4.9" x2="3" y2="-4.9" width="0.2" layer="21"/>
+<wire x1="3" y1="-4.9" x2="3" y2="0" width="0.2" layer="21"/>
+<wire x1="3" y1="0" x2="-3" y2="0" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2112,6 +2125,18 @@ push-push type</description>
 </gates>
 <devices>
 <device name="" package="1X5_SMT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FPC_0.5X05_NARROW" package="FPC_0.5X05_NARROW">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>

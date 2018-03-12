@@ -828,48 +828,48 @@
 </polygon>
 </package>
 <package name="MICROBIT-RIGHT-ANGLE-SMT">
-<smd name="1" x="-24.765" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="2" x="-23.495" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="3" x="-22.225" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="4" x="-20.955" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="5" x="-19.685" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="6" x="-18.415" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="7" x="-17.145" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="8" x="-15.875" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="9" x="-14.605" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="10" x="-13.335" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="11" x="-12.065" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="12" x="-10.795" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="13" x="-9.525" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="14" x="-8.255" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="15" x="-6.985" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="16" x="-5.715" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="17" x="-4.445" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="18" x="-3.175" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="19" x="-1.905" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="20" x="-0.635" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="21" x="0.635" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="22" x="1.905" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="23" x="3.175" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="24" x="4.445" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="25" x="5.715" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="26" x="6.985" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="27" x="8.255" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="28" x="9.525" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="29" x="10.795" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="30" x="12.065" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="31" x="13.335" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="32" x="14.605" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="33" x="15.875" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="34" x="17.145" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="35" x="18.415" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="36" x="19.685" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="37" x="20.955" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="38" x="22.225" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="39" x="23.495" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="40" x="24.765" y="2.54" dx="2.2" dy="0.6" layer="1" rot="R90"/>
-<hole x="-12.78" y="-2.81" drill="1.75"/>
-<hole x="12.78" y="-2.81" drill="1.75"/>
+<smd name="1" x="-24.765" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="-23.495" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="-22.225" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="4" x="-20.955" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="5" x="-19.685" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="6" x="-18.415" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="7" x="-17.145" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="8" x="-15.875" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="9" x="-14.605" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="10" x="-13.335" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="11" x="-12.065" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="12" x="-10.795" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="13" x="-9.525" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="14" x="-8.255" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="15" x="-6.985" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="16" x="-5.715" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="17" x="-4.445" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="18" x="-3.175" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="19" x="-1.905" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="20" x="-0.635" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="21" x="0.635" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="22" x="1.905" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="23" x="3.175" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="24" x="4.445" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="25" x="5.715" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="26" x="6.985" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="27" x="8.255" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="28" x="9.525" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="29" x="10.795" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="30" x="12.065" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="31" x="13.335" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="32" x="14.605" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="33" x="15.875" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="34" x="17.145" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="35" x="18.415" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="36" x="19.685" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="37" x="20.955" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="38" x="22.225" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="39" x="23.495" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="40" x="24.765" y="2.74" dx="2.8" dy="0.7" layer="1" rot="R90"/>
+<hole x="-12.58" y="-2.81" drill="1.75"/>
+<hole x="12.58" y="-2.81" drill="1.75"/>
 <wire x1="-27" y1="4" x2="-25.5" y2="4" width="0.127" layer="21"/>
 <wire x1="-25.5" y1="4" x2="-25.5" y2="2" width="0.127" layer="21"/>
 <wire x1="-25.5" y1="2" x2="25.5" y2="2" width="0.127" layer="21"/>
@@ -878,7 +878,29 @@
 <wire x1="27" y1="4" x2="27" y2="-7" width="0.127" layer="21"/>
 <wire x1="27" y1="-7" x2="-27" y2="-7" width="0.127" layer="21"/>
 <wire x1="-27" y1="-7" x2="-27" y2="4" width="0.127" layer="21"/>
-<circle x="27.88" y="5" radius="0.282840625" width="0.5" layer="47"/>
+<circle x="26.229" y="3.222" radius="0.282840625" width="0.5" layer="47"/>
+<wire x1="-25.8" y1="-6.8" x2="-25.8" y2="-4.8" width="0.6" layer="21"/>
+<polygon width="0" layer="46">
+<vertex x="-25.3" y="-4.7"/>
+<vertex x="-25.3" y="-6.9" curve="-90"/>
+<vertex x="-25.8" y="-7.4" curve="-90"/>
+<vertex x="-26.3" y="-6.9"/>
+<vertex x="-26.3" y="-4.7" curve="-90"/>
+<vertex x="-25.8" y="-4.2" curve="-90"/>
+</polygon>
+<smd name="P$1" x="-25.8" y="-5" dx="5.6" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<wire x1="25.8" y1="-6.8" x2="25.8" y2="-4.8" width="0.6" layer="21"/>
+<polygon width="0" layer="46">
+<vertex x="26.3" y="-4.7"/>
+<vertex x="26.3" y="-6.9" curve="-90"/>
+<vertex x="25.8" y="-7.4" curve="-90"/>
+<vertex x="25.3" y="-6.9"/>
+<vertex x="25.3" y="-4.7" curve="-90"/>
+<vertex x="25.8" y="-4.2" curve="-90"/>
+</polygon>
+<smd name="P$2" x="25.8" y="-5" dx="5.6" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="P$3" x="-25.8" y="-5" dx="5.6" dy="2.4" layer="16" roundness="100" rot="R90"/>
+<smd name="P$4" x="25.8" y="-5" dx="5.6" dy="2.4" layer="16" roundness="100" rot="R90"/>
 </package>
 <package name="MICROBIT-EDGE-PCB">
 <smd name="22" x="24.7705" y="2.7" dx="5.4" dy="0.9" layer="1" rot="R270"/>
@@ -1001,6 +1023,24 @@
 <wire x1="-7.7" y1="0" x2="-6.4" y2="0" width="0.127" layer="21"/>
 <smd name="SHROUD_B" x="0" y="0" dx="2" dy="4" layer="16" roundness="100" rot="R180"/>
 <smd name="PIN_B" x="6" y="0" dx="2" dy="4.5" layer="16" roundness="100" rot="R180"/>
+</package>
+<package name="JST-ZH-4PIN-SMT">
+<smd name="1" x="-2.25" y="-2.15" dx="0.7" dy="2.6" layer="1"/>
+<smd name="MT1" x="-4" y="1.5" dx="1.1" dy="1.9" layer="1"/>
+<smd name="MT2" x="4" y="1.5" dx="1.1" dy="1.9" layer="1"/>
+<smd name="2" x="-0.75" y="-2.15" dx="0.7" dy="2.6" layer="1"/>
+<smd name="3" x="0.75" y="-2.15" dx="0.7" dy="2.6" layer="1"/>
+<smd name="4" x="2.25" y="-2.15" dx="0.7" dy="2.6" layer="1"/>
+<wire x1="-4.5" y1="-2" x2="4.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-2" x2="-4.5" y2="3" width="0.127" layer="51"/>
+<wire x1="4.5" y1="-2" x2="4.5" y2="3" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-2" x2="-4.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-3" x2="-4" y2="-3" width="0.127" layer="21"/>
+<wire x1="-4" y1="-3" x2="-4" y2="-2" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-2" x2="4.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-3" x2="4" y2="-3" width="0.127" layer="21"/>
+<wire x1="4" y1="-3" x2="4" y2="-2" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1492,6 +1532,17 @@
 <rectangle x1="-10.16" y1="6.858" x2="0" y2="8.382" layer="94"/>
 <pin name="GND" x="2.54" y="2.54" visible="off" length="short" rot="R180"/>
 <pin name="PWR" x="2.54" y="7.62" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="1X04">
+<pin name="P$1" x="10.16" y="3.81" visible="pin" length="short" rot="R180"/>
+<pin name="P$2" x="10.16" y="1.27" visible="pin" length="short" rot="R180"/>
+<wire x1="7.62" y1="6.35" x2="7.62" y2="-6.35" width="0.254" layer="94"/>
+<text x="0" y="8.89" size="1.778" layer="94">&gt;NAME</text>
+<wire x1="7.62" y1="6.35" x2="0" y2="6.35" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-6.35" x2="0" y2="-6.35" width="0.254" layer="94"/>
+<pin name="P$3" x="10.16" y="-1.27" visible="pin" length="short" rot="R180"/>
+<pin name="P$4" x="10.16" y="-3.81" visible="pin" length="short" rot="R180"/>
+<text x="0" y="-8.89" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2303,6 +2354,24 @@ push-push type</description>
 <connects>
 <connect gate="G$1" pin="GND" pad="SHROUD_B SHROUD_T"/>
 <connect gate="G$1" pin="PWR" pad="PIN_B PIN_T"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST-ZH-4PIN-SMT">
+<gates>
+<gate name="G$1" symbol="1X04" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST-ZH-4PIN-SMT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

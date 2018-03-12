@@ -3337,18 +3337,18 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <text x="-10.16" y="-10.16" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="FLASH">
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="VCC" x="-12.7" y="7.62" visible="pin" length="short"/>
-<pin name="MISO" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="MOSI" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="-12.7" y="-7.62" visible="pin" length="short"/>
-<pin name="SCLK" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="!WP" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="!HOLD" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="!CS" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="VCC" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="IO1/MISO" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="IO0/MOSI" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="SCK" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="IO2/!WP" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="IO3/!HOLD" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="!CS" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
 <text x="-10.16" y="12.7" size="1.778" layer="94">&gt;NAME</text>
 <text x="-10.16" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
@@ -4003,6 +4003,22 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="G" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
 <pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="TPA301">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="-10.16" y="5.08" length="short"/>
+<pin name="IN-" x="10.16" y="-5.08" length="short" rot="R180"/>
+<pin name="IN+" x="10.16" y="-7.62" length="short" rot="R180"/>
+<pin name="GND" x="-10.16" y="-7.62" length="short"/>
+<pin name="OUT-" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="OUT+" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="SHUTDOWN" x="-10.16" y="0" length="short"/>
+<pin name="BYPASS" x="-10.16" y="-2.54" length="short"/>
+<text x="-7.62" y="10.16" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5589,12 +5605,12 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <device name="" package="SOIC8-150MIL">
 <connects>
 <connect gate="G$1" pin="!CS" pad="1"/>
-<connect gate="G$1" pin="!HOLD" pad="7"/>
-<connect gate="G$1" pin="!WP" pad="3"/>
 <connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="MISO" pad="2"/>
-<connect gate="G$1" pin="MOSI" pad="5"/>
-<connect gate="G$1" pin="SCLK" pad="6"/>
+<connect gate="G$1" pin="IO0/MOSI" pad="5"/>
+<connect gate="G$1" pin="IO1/MISO" pad="2"/>
+<connect gate="G$1" pin="IO2/!WP" pad="3"/>
+<connect gate="G$1" pin="IO3/!HOLD" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
@@ -6451,6 +6467,28 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="-2" pin="D" pad="D2"/>
 <connect gate="-2" pin="G" pad="G2"/>
 <connect gate="-2" pin="S" pad="S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPA301">
+<gates>
+<gate name="G$1" symbol="TPA301" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8-150MIL">
+<connects>
+<connect gate="G$1" pin="BYPASS" pad="2"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="4"/>
+<connect gate="G$1" pin="OUT+" pad="5"/>
+<connect gate="G$1" pin="OUT-" pad="8"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>

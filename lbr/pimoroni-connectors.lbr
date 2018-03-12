@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="8.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -962,18 +963,44 @@
 <smd name="9" x="-2.5" y="-5.08" dx="3" dy="1" layer="1"/>
 <smd name="10" x="2.5" y="-5.08" dx="3" dy="1" layer="1"/>
 </package>
-<package name="FPC_0.5X05_NARROW">
-<smd name="1" x="-1" y="0.325" dx="0.25" dy="1.45" layer="1"/>
-<smd name="2" x="-0.5" y="0.325" dx="0.25" dy="1.45" layer="1"/>
-<smd name="3" x="0" y="0.325" dx="0.25" dy="1.45" layer="1"/>
-<smd name="4" x="0.5" y="0.325" dx="0.25" dy="1.45" layer="1"/>
-<smd name="MT1" x="-2.65" y="-2.95" dx="1.8" dy="2" layer="1"/>
-<smd name="MT2" x="2.65" y="-2.95" dx="1.8" dy="2" layer="1"/>
-<smd name="5" x="1" y="0.325" dx="0.25" dy="1.45" layer="1"/>
-<wire x1="-3" y1="0" x2="-3" y2="-4.9" width="0.2" layer="21"/>
-<wire x1="-3" y1="-4.9" x2="3" y2="-4.9" width="0.2" layer="21"/>
-<wire x1="3" y1="-4.9" x2="3" y2="0" width="0.2" layer="21"/>
-<wire x1="3" y1="0" x2="-3" y2="0" width="0.2" layer="21"/>
+<package name="FPC_0.5X06_NARROW">
+<smd name="1" x="-1.25" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+<smd name="2" x="-0.75" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+<smd name="3" x="-0.25" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+<smd name="4" x="0.25" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+<smd name="MT1" x="-2.9" y="-2.95" dx="1.8" dy="2" layer="1"/>
+<smd name="MT2" x="2.9" y="-2.95" dx="1.8" dy="2" layer="1"/>
+<smd name="5" x="0.75" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+<wire x1="-3.25" y1="0" x2="-3.25" y2="-4.9" width="0.2" layer="21"/>
+<wire x1="-3.25" y1="-4.9" x2="3.25" y2="-4.9" width="0.2" layer="21"/>
+<wire x1="3.25" y1="-4.9" x2="3.25" y2="0" width="0.2" layer="21"/>
+<wire x1="3.25" y1="0" x2="-3.25" y2="0" width="0.2" layer="21"/>
+<smd name="6" x="1.25" y="0.325" dx="0.25" dy="1.45" layer="1"/>
+</package>
+<package name="PJ-037AH">
+<wire x1="0" y1="-1.5" x2="-0.5" y2="-1" width="0.127" layer="46" curve="-90"/>
+<wire x1="-0.5" y1="-1" x2="-0.5" y2="1" width="0.127" layer="46"/>
+<wire x1="-0.5" y1="1" x2="0" y2="1.5" width="0.127" layer="46" curve="-90"/>
+<wire x1="0" y1="1.5" x2="0.5" y2="1" width="0.127" layer="46" curve="-90"/>
+<wire x1="0.5" y1="1" x2="0.5" y2="-1" width="0.127" layer="46"/>
+<wire x1="0.5" y1="-1" x2="0" y2="-1.5" width="0.127" layer="46" curve="-90"/>
+<wire x1="6" y1="-1.75" x2="5.5" y2="-1.25" width="0.127" layer="46" curve="-90"/>
+<wire x1="5.5" y1="-1.25" x2="5.5" y2="1.25" width="0.127" layer="46"/>
+<wire x1="5.5" y1="1.25" x2="6" y2="1.75" width="0.127" layer="46" curve="-90"/>
+<wire x1="6" y1="1.75" x2="6.5" y2="1.25" width="0.127" layer="46" curve="-90"/>
+<wire x1="6.5" y1="1.25" x2="6.5" y2="-1.25" width="0.127" layer="46"/>
+<wire x1="6.5" y1="-1.25" x2="6" y2="-1.75" width="0.127" layer="46" curve="-90"/>
+<wire x1="0" y1="-1.25" x2="0" y2="1.25" width="0.127" layer="51"/>
+<wire x1="6" y1="-1.5" x2="6" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-7.7" y1="-4.5" x2="-7.7" y2="4.5" width="0.127" layer="21"/>
+<wire x1="6.8" y1="-4.5" x2="6.8" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-7.7" y1="4.5" x2="6.8" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-7.7" y1="-4.5" x2="6.8" y2="-4.5" width="0.127" layer="21"/>
+<smd name="SHROUD_T" x="0" y="0" dx="2" dy="4" layer="1" roundness="100"/>
+<smd name="PIN_T" x="6" y="0" dx="2" dy="4.5" layer="1" roundness="100"/>
+<wire x1="-7.7" y1="0" x2="-6.4" y2="0" width="0.127" layer="21"/>
+<smd name="SHROUD_B" x="0" y="0" dx="2" dy="4" layer="16" roundness="100" rot="R180"/>
+<smd name="PIN_B" x="6" y="0" dx="2" dy="4.5" layer="16" roundness="100" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -1455,6 +1482,17 @@
 <pin name="10" x="10.16" y="-5.08" length="middle" rot="R180"/>
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
+<symbol name="DCJACK_2P">
+<wire x1="-10.16" y1="2.54" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<text x="-10.16" y="10.16" size="1.778" layer="96">&gt;Value</text>
+<text x="-10.16" y="0" size="1.778" layer="95">&gt;Name</text>
+<rectangle x1="-10.16" y1="6.858" x2="0" y2="8.382" layer="94"/>
+<pin name="GND" x="2.54" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="PWR" x="2.54" y="7.62" visible="off" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="USB">
@@ -1567,12 +1605,27 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="FPC-1.0X06" uservalue="yes">
+<deviceset name="FPC06" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="1X06_W_MOUNTS" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="FPC_1.0X06">
+<connects>
+<connect gate="G$1" pin="MT1" pad="MT1"/>
+<connect gate="G$1" pin="MT2" pad="MT2"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+<connect gate="G$1" pin="P$6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FPC_0.5X06_NARROW" package="FPC_0.5X06_NARROW">
 <connects>
 <connect gate="G$1" pin="MT1" pad="MT1"/>
 <connect gate="G$1" pin="MT2" pad="MT2"/>
@@ -2136,18 +2189,6 @@ push-push type</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="FPC_0.5X05_NARROW" package="FPC_0.5X05_NARROW">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 </devices>
 </deviceset>
 <deviceset name="ANTENNA">
@@ -2246,6 +2287,22 @@ push-push type</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCJACK_2P" prefix="DCJACK" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="DCJACK_2P" x="5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="PJ-037AH">
+<connects>
+<connect gate="G$1" pin="GND" pad="SHROUD_B SHROUD_T"/>
+<connect gate="G$1" pin="PWR" pad="PIN_B PIN_T"/>
 </connects>
 <technologies>
 <technology name=""/>

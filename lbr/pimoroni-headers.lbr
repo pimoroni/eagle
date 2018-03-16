@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.2">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -2207,7 +2207,7 @@ GND</text>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 </package>
 <package name="1X1-M2.0-THREADED-STUD">
-<pad name="P$1" x="0" y="0" drill="3.8" diameter="4"/>
+<pad name="P$1" x="0" y="0" drill="3.8" diameter="4.2"/>
 <polygon width="0.05" layer="31">
 <vertex x="-0.3" y="-2.3" curve="-75"/>
 <vertex x="-2.3" y="-0.3"/>
@@ -2232,8 +2232,8 @@ GND</text>
 <vertex x="-0.3" y="1.6" curve="70"/>
 <vertex x="-1.6" y="0.3"/>
 </polygon>
-<circle x="0" y="0" radius="2.5" width="0.05" layer="51"/>
-<circle x="0" y="0" radius="2.75" width="0.05" layer="51"/>
+<circle x="0" y="0" radius="2" width="0.05" layer="51"/>
+<circle x="0" y="0" radius="2.78" width="0.05" layer="51"/>
 <smd name="P$2" x="0" y="0" dx="4.7" dy="4.7" layer="1" roundness="100" cream="no"/>
 </package>
 <package name="2X8-SMD">
@@ -2408,6 +2408,36 @@ GND</text>
 <rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="1X1-M3.0-THREADED-STUD">
+<pad name="HOLE" x="0" y="0" drill="4.3" diameter="4.7"/>
+<polygon width="0.05" layer="31">
+<vertex x="-0.4" y="-3.05" curve="-75"/>
+<vertex x="-3.05" y="-0.4"/>
+<vertex x="-1.9" y="-0.4" curve="70"/>
+<vertex x="-0.4" y="-1.9"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="3.05" y="-0.4" curve="-75"/>
+<vertex x="0.4" y="-3.05"/>
+<vertex x="0.4" y="-1.9" curve="70"/>
+<vertex x="1.9" y="-0.4"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="0.4" y="3.05" curve="-75"/>
+<vertex x="3.05" y="0.4"/>
+<vertex x="1.9" y="0.4" curve="70"/>
+<vertex x="0.4" y="1.9"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="-3.05" y="0.3" curve="-75"/>
+<vertex x="-0.4" y="3.05"/>
+<vertex x="-0.4" y="1.9" curve="70"/>
+<vertex x="-1.9" y="0.3"/>
+</polygon>
+<circle x="0" y="0" radius="3" width="0.05" layer="51"/>
+<circle x="0" y="0" radius="2.78" width="0.05" layer="51"/>
+<smd name="PAD" x="0" y="0" dx="6.2" dy="6.2" layer="1" roundness="100" cream="no"/>
 </package>
 </packages>
 <symbols>
@@ -4076,9 +4106,17 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <gate name="G$1" symbol="1X1" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X1-M2.0-THREADED-STUD">
+<device name="M2" package="1X1-M2.0-THREADED-STUD">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M3" package="1X1-M3.0-THREADED-STUD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="HOLE PAD"/>
 </connects>
 <technologies>
 <technology name=""/>

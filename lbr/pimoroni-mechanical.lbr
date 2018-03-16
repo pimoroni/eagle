@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="3.26" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -761,6 +761,29 @@
 <smd name="MT1B" x="-5.7" y="0" dx="2.2" dy="4" layer="16" roundness="64" rot="R180" cream="no"/>
 <smd name="MT2B" x="5.7" y="0" dx="2.2" dy="4" layer="16" roundness="64" rot="R180" cream="no"/>
 </package>
+<package name="VIBRATION_MOTOR">
+<wire x1="-2.8" y1="-1.65" x2="-2.8" y2="1.65" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="1.65" x2="0" y2="1.65" width="0.127" layer="21"/>
+<wire x1="0" y1="1.65" x2="0" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0" y1="0.5" x2="0" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.5" x2="0" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.65" x2="-2.8" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-2.2" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-0.5" x2="0.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.5" x2="0.5" y2="2.2" width="0.127" layer="21"/>
+<wire x1="7.8" y1="-2.2" x2="7.8" y2="2.2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="2.2" x2="7.8" y2="2.2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-2.2" x2="7.8" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.5" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0" y1="0.5" x2="0.5" y2="0.5" width="0.127" layer="21"/>
+<smd name="MOTOR1" x="6.9" y="-1.7" dx="1.78" dy="1" layer="1"/>
+<smd name="MOTOR2" x="6.9" y="1.7" dx="1.78" dy="1" layer="1"/>
+<smd name="MT1" x="1.5" y="1.5" dx="1.6" dy="1" layer="1"/>
+<wire x1="5.3" y1="-2.2" x2="5.3" y2="2.2" width="0.127" layer="21"/>
+<smd name="MT2" x="1.5" y="-1.5" dx="1.6" dy="1" layer="1"/>
+<smd name="MT3" x="4.3" y="-1.5" dx="1.6" dy="1" layer="1"/>
+<smd name="MT4" x="4.3" y="1.5" dx="1.6" dy="1" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-DPDT">
@@ -977,6 +1000,17 @@
 <wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
 <wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+</symbol>
+<symbol name="VIBRATION_MOTOR">
+<pin name="MOTOR1" x="-10.16" y="5.08" length="middle"/>
+<pin name="MOTOR2" x="-10.16" y="-5.08" length="middle"/>
+<pin name="MOUNTS" x="-10.16" y="0" length="middle"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<text x="-4.318" y="-11.938" size="1.778" layer="94">VIBRATION
+MOTOR</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1273,7 +1307,30 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="VIBRATION_MOTOR">
+<gates>
+<gate name="G$1" symbol="VIBRATION_MOTOR" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="VIBRATION_MOTOR">
+<connects>
+<connect gate="G$1" pin="MOTOR1" pad="MOTOR1"/>
+<connect gate="G$1" pin="MOTOR2" pad="MOTOR2"/>
+<connect gate="G$1" pin="MOUNTS" pad="MT1 MT2 MT3 MT4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

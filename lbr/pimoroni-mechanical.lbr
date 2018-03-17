@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -813,12 +813,12 @@
 <text x="16.15" y="6.5" size="0.6096" layer="49" font="vector" rot="R90" align="top-center">Suitable Part:
 TE Connectivity/AMP
 1734592-6</text>
-<smd name="VDD" x="24.971" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
-<smd name="NC1" x="24.471" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
-<smd name="GND" x="23.971" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
-<smd name="Y" x="23.471" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
-<smd name="X" x="22.971" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
-<smd name="NC" x="22.471" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
+<smd name="VDD" x="22.431" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
+<smd name="NC1" x="22.971" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
+<smd name="GND" x="23.471" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
+<smd name="Y" x="23.971" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
+<smd name="X" x="24.471" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
+<smd name="NC" x="25.011" y="1" dx="1.1" dy="0.3" layer="16" rot="R270"/>
 <smd name="MOUNT1" x="26.717" y="2.7" dx="3.1" dy="2.3" layer="16" rot="R270"/>
 <smd name="MOUNT2" x="20.725" y="2.7" dx="3.1" dy="2.3" layer="16" rot="R270"/>
 <wire x1="25.471" y1="0.75" x2="25.471" y2="4.25" width="0.127" layer="21"/>

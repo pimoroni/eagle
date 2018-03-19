@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.2">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -839,6 +839,16 @@ TE Connectivity/AMP
 <text x="10" y="15.65" size="0.6096" layer="49" font="vector" rot="R180" align="top-center">Joystick module is
 undermounted!</text>
 </package>
+<package name="3006.2100">
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<smd name="2" x="-2.5" y="4" dx="1.3" dy="2" layer="1" rot="R90"/>
+<smd name="K" x="2.5" y="4" dx="1.3" dy="2" layer="1" rot="R90"/>
+<smd name="1" x="2.5" y="-4" dx="1.3" dy="2" layer="1" rot="R90"/>
+<smd name="A" x="-2.5" y="-4" dx="1.3" dy="2" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-DPDT">
@@ -1078,6 +1088,33 @@ MOTOR</text>
 <wire x1="-7.62" y1="-2.54" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="-7.62" y="10.16" size="1.778" layer="94">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="SWITCH-SPST-LED">
+<pin name="1" x="-7.62" y="0" visible="pad" length="short"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="short" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="2.032" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.359209375" width="0.254" layer="94"/>
+<text x="0" y="3.302" size="1.27" layer="94" align="bottom-center">&gt;NAME</text>
+<wire x1="-2.54" y1="10.16" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="0" y2="11.938" width="0.254" layer="94"/>
+<wire x1="0" y1="11.938" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="0" y2="8.382" width="0.254" layer="94"/>
+<wire x1="0" y1="8.382" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="11.938" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="8.382" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0.7112" y1="12.9032" x2="1.2192" y2="13.6652" width="0.1905" layer="94"/>
+<wire x1="1.2192" y1="13.6652" x2="0.762" y2="13.462" width="0.1905" layer="94"/>
+<wire x1="0.762" y1="13.462" x2="1.27" y2="13.208" width="0.1905" layer="94"/>
+<wire x1="1.27" y1="13.208" x2="1.2192" y2="13.6652" width="0.1905" layer="94"/>
+<wire x1="1.524" y1="12.446" x2="2.032" y2="13.208" width="0.1905" layer="94"/>
+<wire x1="2.032" y1="13.208" x2="1.5748" y2="13.0048" width="0.1905" layer="94"/>
+<wire x1="1.5748" y1="13.0048" x2="2.0828" y2="12.7508" width="0.1905" layer="94"/>
+<wire x1="2.0828" y1="12.7508" x2="2.032" y2="13.208" width="0.1905" layer="94"/>
+<pin name="A" x="-2.54" y="10.16" visible="off" length="short"/>
+<pin name="C" x="5.08" y="10.16" visible="off" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1402,6 +1439,24 @@ MOTOR</text>
 <connect gate="G$1" pin="VCC" pad="VDD"/>
 <connect gate="G$1" pin="X" pad="X"/>
 <connect gate="G$1" pin="Y" pad="Y"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3006.2100">
+<gates>
+<gate name="G$1" symbol="SWITCH-SPST-LED" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="3006.2100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>

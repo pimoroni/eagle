@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -29,7 +29,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -2188,6 +2188,22 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="-1.6" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
 <wire x1="-2" y1="-2" x2="-2" y2="-1.6" width="0.127" layer="21"/>
 </package>
+<package name="SPU0410HR5H">
+<wire x1="-1.4" y1="-1.55" x2="-1.4" y2="1.55" width="0.1524" layer="21"/>
+<wire x1="-1.4" y1="1.55" x2="-1.15" y2="1.8" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.4" y1="-1.55" x2="1.4" y2="1.55" width="0.1524" layer="21"/>
+<wire x1="1.4" y1="1.55" x2="1.15" y2="1.8" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.15" y1="1.8" x2="-1.15" y2="1.8" width="0.1524" layer="21"/>
+<wire x1="1.15" y1="-1.8" x2="-1.15" y2="-1.8" width="0.1524" layer="21"/>
+<wire x1="-1.15" y1="-1.8" x2="-1.4" y2="-1.55" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.15" y1="-1.8" x2="1.4" y2="-1.55" width="0.1524" layer="21" curve="90"/>
+<smd name="1" x="0.85" y="1.225" dx="0.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="4" x="-0.85" y="1.225" dx="0.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="2" x="0.85" y="-1.225" dx="0.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="3" x="-0.85" y="-1.225" dx="0.8" dy="0.8" layer="1" roundness="100"/>
+<circle x="0" y="0.575" radius="0.22360625" width="0.1" layer="21"/>
+<circle x="1.65" y="1.975" radius="0.07905625" width="0.15" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -4093,6 +4109,15 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <wire x1="-10.16" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
 <wire x1="12.7" y1="15.24" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-25.4" x2="-10.16" y2="-25.4" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MEMS-MICROPHONE-ANALOG">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="VDD" x="-7.62" y="2.54" visible="pin" length="short"/>
+<pin name="GND" x="-7.62" y="-2.54" visible="pin" length="short"/>
+<pin name="OUT" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6615,6 +6640,23 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="VFMAX" pad="12"/>
 <connect gate="G$1" pin="VFMIN" pad="11"/>
 <connect gate="G$1" pin="VIN" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPU0410HR5H">
+<gates>
+<gate name="G$1" symbol="MEMS-MICROPHONE-ANALOG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPU0410HR5H">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 3"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

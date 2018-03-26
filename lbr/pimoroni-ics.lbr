@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -2152,6 +2152,58 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <vertex x="-0.7874" y="1.2954"/>
 </polygon>
 </package>
+<package name="TQFN-16">
+<smd name="PAD" x="0" y="0" dx="2.23" dy="2.23" layer="1" roundness="10" cream="no"/>
+<rectangle x1="0.1" y1="0.1" x2="1" y2="1" layer="31"/>
+<rectangle x1="-1" y1="0.1" x2="-0.1" y2="1" layer="31"/>
+<rectangle x1="-1" y1="-1" x2="-0.1" y2="-0.1" layer="31"/>
+<rectangle x1="0.1" y1="-1" x2="1" y2="-0.1" layer="31"/>
+<smd name="13" x="-1.89" y="0.975" dx="0.95" dy="0.35" layer="1" roundness="25"/>
+<smd name="14" x="-1.89" y="0.325" dx="0.95" dy="0.35" layer="1" roundness="25"/>
+<smd name="15" x="-1.89" y="-0.325" dx="0.95" dy="0.35" layer="1" roundness="25"/>
+<smd name="16" x="-1.89" y="-0.975" dx="0.95" dy="0.35" layer="1" roundness="25"/>
+<smd name="1" x="-0.975" y="-1.89" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="2" x="-0.325" y="-1.89" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="3" x="0.325" y="-1.89" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="4" x="0.975" y="-1.89" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="5" x="1.89" y="-0.975" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="6" x="1.89" y="-0.325" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="7" x="1.89" y="0.325" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="8" x="1.89" y="0.975" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="12" x="-0.975" y="1.89" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="11" x="-0.325" y="1.89" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="10" x="0.325" y="1.89" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="9" x="0.975" y="1.89" dx="0.95" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<circle x="-1.705" y="-1.705" radius="0.1" width="0.5" layer="21"/>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="51"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="51"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="51"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="51"/>
+<wire x1="-2" y1="2" x2="-2" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-2" y1="2" x2="-1.6" y2="2" width="0.127" layer="21"/>
+<wire x1="1.6" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.6" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="1.6" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="-1.6" width="0.127" layer="21"/>
+</package>
+<package name="SPU0410HR5H">
+<wire x1="-1.4" y1="-1.55" x2="-1.4" y2="1.55" width="0.1524" layer="21"/>
+<wire x1="-1.4" y1="1.55" x2="-1.15" y2="1.8" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.4" y1="-1.55" x2="1.4" y2="1.55" width="0.1524" layer="21"/>
+<wire x1="1.4" y1="1.55" x2="1.15" y2="1.8" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.15" y1="1.8" x2="-1.15" y2="1.8" width="0.1524" layer="21"/>
+<wire x1="1.15" y1="-1.8" x2="-1.15" y2="-1.8" width="0.1524" layer="21"/>
+<wire x1="-1.15" y1="-1.8" x2="-1.4" y2="-1.55" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.15" y1="-1.8" x2="1.4" y2="-1.55" width="0.1524" layer="21" curve="90"/>
+<smd name="1" x="0.85" y="1.225" dx="0.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="4" x="-0.85" y="1.225" dx="0.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="2" x="0.85" y="-1.225" dx="0.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="3" x="-0.85" y="-1.225" dx="0.8" dy="0.8" layer="1" roundness="100"/>
+<circle x="0" y="0.575" radius="0.22360625" width="0.1" layer="21"/>
+<circle x="1.65" y="1.975" radius="0.07905625" width="0.15" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -4036,6 +4088,36 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <text x="-6.604" y="13.716" size="1.27" layer="94">&gt;NAME</text>
 <text x="-6.858" y="-11.938" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="CAT4106HV4-GT2">
+<pin name="SW" x="-15.24" y="12.7" length="middle"/>
+<pin name="VIN" x="-15.24" y="7.62" length="middle"/>
+<pin name="EN/PWM" x="-15.24" y="2.54" length="middle"/>
+<pin name="RSET" x="-15.24" y="-2.54" length="middle"/>
+<pin name="CTRL" x="-15.24" y="-7.62" length="middle"/>
+<pin name="FB" x="-15.24" y="-12.7" length="middle"/>
+<pin name="GND" x="-15.24" y="-17.78" length="middle"/>
+<pin name="PGND" x="-15.24" y="-22.86" length="middle"/>
+<pin name="VFMAX" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="VFMIN" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="LED1" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="LED2" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="LED3" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="LED4" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="!FAULT" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-25.4" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-25.4" x2="-10.16" y2="-25.4" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MEMS-MICROPHONE-ANALOG">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="VDD" x="-7.62" y="2.54" visible="pin" length="short"/>
+<pin name="GND" x="-7.62" y="-2.54" visible="pin" length="short"/>
+<pin name="OUT" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6529,6 +6611,52 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="SW" pad="6"/>
 <connect gate="G$1" pin="VIN" pad="8"/>
 <connect gate="G$1" pin="VREG5" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAT4106HV4-GT2">
+<gates>
+<gate name="G$1" symbol="CAT4106HV4-GT2" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="TQFN-16">
+<connects>
+<connect gate="G$1" pin="!FAULT" pad="3"/>
+<connect gate="G$1" pin="CTRL" pad="10"/>
+<connect gate="G$1" pin="EN/PWM" pad="7"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="GND" pad="2 PAD"/>
+<connect gate="G$1" pin="LED1" pad="1"/>
+<connect gate="G$1" pin="LED2" pad="16"/>
+<connect gate="G$1" pin="LED3" pad="15"/>
+<connect gate="G$1" pin="LED4" pad="14"/>
+<connect gate="G$1" pin="PGND" pad="4"/>
+<connect gate="G$1" pin="RSET" pad="13"/>
+<connect gate="G$1" pin="SW" pad="6"/>
+<connect gate="G$1" pin="VFMAX" pad="12"/>
+<connect gate="G$1" pin="VFMIN" pad="11"/>
+<connect gate="G$1" pin="VIN" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPU0410HR5H">
+<gates>
+<gate name="G$1" symbol="MEMS-MICROPHONE-ANALOG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPU0410HR5H">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 3"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

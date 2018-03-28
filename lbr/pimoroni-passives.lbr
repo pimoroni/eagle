@@ -1045,6 +1045,16 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="_SSM3K35AMFV,L3F" package="SOT-723">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CAP-7343" prefix="C" uservalue="yes">

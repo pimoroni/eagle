@@ -1055,12 +1055,12 @@
 <pad name="8" x="2.54" y="1.27" drill="1"/>
 <pad name="9" x="5.08" y="-1.27" drill="1"/>
 <pad name="10" x="5.08" y="1.27" drill="1"/>
-<wire x1="-9.5" y1="-4.6" x2="-9.5" y2="-3.75" width="0.2" layer="51"/>
-<wire x1="-9.5" y1="3.75" x2="-9.5" y2="4.6" width="0.2" layer="51"/>
-<wire x1="-9.5" y1="4.6" x2="9.5" y2="4.6" width="0.2" layer="51"/>
-<wire x1="9.5" y1="4.6" x2="9.5" y2="3.75" width="0.2" layer="51"/>
-<wire x1="9.5" y1="-3.75" x2="9.5" y2="-4.6" width="0.2" layer="51"/>
-<wire x1="9.5" y1="-4.6" x2="-9.5" y2="-4.6" width="0.2" layer="51"/>
+<wire x1="-9.5" y1="-4.65" x2="-9.5" y2="-3.75" width="0.2" layer="51"/>
+<wire x1="-9.5" y1="3.75" x2="-9.5" y2="4.65" width="0.2" layer="51"/>
+<wire x1="-9.5" y1="4.65" x2="9.5" y2="4.65" width="0.2" layer="51"/>
+<wire x1="9.5" y1="4.65" x2="9.5" y2="3.75" width="0.2" layer="51"/>
+<wire x1="9.5" y1="-3.75" x2="9.5" y2="-4.65" width="0.2" layer="51"/>
+<wire x1="9.5" y1="-4.65" x2="-9.5" y2="-4.65" width="0.2" layer="51"/>
 <wire x1="-7.8" y1="-0.95" x2="-7.8" y2="0.95" width="0.2" layer="51"/>
 <wire x1="-7.8" y1="0.95" x2="7.8" y2="0.95" width="0.2" layer="51"/>
 <wire x1="7.8" y1="0.95" x2="7.8" y2="-0.95" width="0.2" layer="51"/>
@@ -1079,6 +1079,10 @@
 <smd name="T8" x="2.54" y="2" dx="2" dy="3.5" layer="1" roundness="100"/>
 <smd name="T9" x="5.08" y="-2" dx="2" dy="3.5" layer="1" roundness="100"/>
 <smd name="T10" x="5.08" y="2" dx="2" dy="3.5" layer="1" roundness="100"/>
+<wire x1="-8.1" y1="1.35" x2="8.1" y2="1.35" width="0.127" layer="51"/>
+<wire x1="8.1" y1="1.35" x2="8.1" y2="-1.35" width="0.127" layer="51"/>
+<wire x1="8.1" y1="-1.35" x2="-8.1" y2="-1.35" width="0.127" layer="51"/>
+<wire x1="-8.1" y1="-1.35" x2="-8.1" y2="1.35" width="0.127" layer="51"/>
 </package>
 <package name="PJ-002BH-SMT-TR">
 <hole x="5" y="0" drill="1.7"/>
@@ -1152,6 +1156,25 @@
 <wire x1="-6.55" y1="-10.28" x2="-7.25" y2="-10.28" width="0.2" layer="51"/>
 <wire x1="6.55" y1="-10.28" x2="7.25" y2="-10.28" width="0.2" layer="51"/>
 <wire x1="-6.55" y1="3.72" x2="6.55" y2="3.72" width="0.2" layer="51"/>
+</package>
+<package name="2P_JST_PH_VERT">
+<smd name="1" x="-1" y="4.75" dx="1" dy="5.5" layer="1"/>
+<smd name="2" x="1" y="4.75" dx="1" dy="5.5" layer="1"/>
+<wire x1="-3.975" y1="0" x2="3.975" y2="0" width="0.1" layer="21"/>
+<smd name="P$1" x="-3.3" y="2.5" dx="1.6" dy="3" layer="1"/>
+<smd name="P$2" x="3.3" y="2.5" dx="1.6" dy="3" layer="1"/>
+<wire x1="-3.975" y1="0" x2="-3.975" y2="5" width="0.1" layer="21"/>
+<wire x1="-3.975" y1="5" x2="-1.25" y2="5" width="0.1" layer="21"/>
+<wire x1="-1.25" y1="5" x2="-1" y2="5" width="0.1" layer="21"/>
+<wire x1="-1" y1="5" x2="-0.75" y2="5" width="0.1" layer="21"/>
+<wire x1="-0.75" y1="5" x2="3.975" y2="5" width="0.1" layer="21"/>
+<wire x1="3.975" y1="5" x2="3.975" y2="0" width="0.1" layer="21"/>
+<wire x1="-1.25" y1="5" x2="-1.25" y2="7" width="0.1" layer="21"/>
+<wire x1="-1.25" y1="7" x2="-0.75" y2="7" width="0.1" layer="21"/>
+<wire x1="-0.75" y1="7" x2="-0.75" y2="5" width="0.1" layer="21"/>
+<wire x1="0.75" y1="5" x2="0.75" y2="7" width="0.1" layer="51"/>
+<wire x1="0.75" y1="7" x2="1.25" y2="7" width="0.1" layer="51"/>
+<wire x1="1.25" y1="7" x2="1.25" y2="5" width="0.1" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -2580,6 +2603,22 @@ push-push type</description>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="SHIELD" pad="MT1B MT1T MT2B MT2T"/>
 <connect gate="G$1" pin="VBUS" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST_2P_VERTICAL">
+<gates>
+<gate name="G$1" symbol="2P" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="2P_JST_PH_VERT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -2834,6 +2834,36 @@ GND</text>
 <wire x1="20.32" y1="2.54" x2="20.32" y2="-2.54" width="0.1524" layer="51"/>
 <wire x1="22.86" y1="2.54" x2="22.86" y2="-2.54" width="0.1524" layer="51"/>
 </package>
+<package name="1X1-M2.5-THREADED-STUD">
+<pad name="P$1" x="0" y="0" drill="4.2" diameter="4.7"/>
+<polygon width="0.05" layer="31">
+<vertex x="-0.3" y="-2.3" curve="-75"/>
+<vertex x="-2.3" y="-0.3"/>
+<vertex x="-1.6" y="-0.3" curve="70"/>
+<vertex x="-0.3" y="-1.6"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="2.3" y="-0.3" curve="-75"/>
+<vertex x="0.3" y="-2.3"/>
+<vertex x="0.3" y="-1.6" curve="70"/>
+<vertex x="1.6" y="-0.3"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="0.3" y="2.3" curve="-75"/>
+<vertex x="2.3" y="0.3"/>
+<vertex x="1.6" y="0.3" curve="70"/>
+<vertex x="0.3" y="1.6"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="-2.3" y="0.3" curve="-75"/>
+<vertex x="-0.3" y="2.3"/>
+<vertex x="-0.3" y="1.6" curve="70"/>
+<vertex x="-1.6" y="0.3"/>
+</polygon>
+<circle x="0" y="0" radius="2.5" width="0.05" layer="51"/>
+<circle x="0" y="0" radius="2.78" width="0.05" layer="51"/>
+<smd name="P$2" x="0" y="0" dx="4.7" dy="4.7" layer="1" roundness="100" rot="R90" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1X2">
@@ -4587,6 +4617,14 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <device name="M3" package="1X1-M3.0-THREADED-STUD">
 <connects>
 <connect gate="G$1" pin="P$1" pad="HOLE PAD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M2.5" package="1X1-M2.5-THREADED-STUD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

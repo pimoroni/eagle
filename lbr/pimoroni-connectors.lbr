@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1194,6 +1194,19 @@
 <wire x1="-3.5" y1="1.9" x2="-3.9" y2="1.9" width="0.1" layer="21" style="shortdash"/>
 <wire x1="-3.9" y1="1.9" x2="-4.2" y2="1.6" width="0.1" layer="21" style="shortdash"/>
 <wire x1="-4.2" y1="1.6" x2="-4.2" y2="-1.7" width="0.1" layer="21" style="shortdash"/>
+</package>
+<package name="KAILH_MX_NO_SOLDER">
+<smd name="S1" x="-6.544321875" y="1.23698125" dx="2.55" dy="2.5" layer="1"/>
+<hole x="-3.175" y="1.27" drill="3"/>
+<hole x="3.175" y="-1.27" drill="3"/>
+<smd name="S2" x="6.549384375" y="-1.209040625" dx="2.55" dy="2.5" layer="1"/>
+<wire x1="-5.4347625" y1="3.009059375" x2="-5.439159375" y2="-0.402571875" width="0.127" layer="45"/>
+<wire x1="-5.439159375" y1="-0.402571875" x2="-2.939159375" y2="-2.90491875" width="0.127" layer="45" curve="90.073912"/>
+<wire x1="-2.939159375" y1="-2.90491875" x2="5.457615625" y2="-2.90491875" width="0.127" layer="45"/>
+<wire x1="5.457615625" y1="-2.90491875" x2="5.465240625" y2="1.12268125" width="0.127" layer="45"/>
+<wire x1="5.465240625" y1="1.12268125" x2="0.0169375" y2="1.12268125" width="0.127" layer="45"/>
+<wire x1="0.0169375" y1="1.12268125" x2="-1.871140625" y2="3.009059375" width="0.127" layer="45" curve="-89.948412"/>
+<wire x1="-1.871140625" y1="3.009059375" x2="-5.4347625" y2="3.009059375" width="0.127" layer="45"/>
 </package>
 </packages>
 <symbols>
@@ -2682,6 +2695,22 @@ push-push type</description>
 <connect gate="G$1" pin="10" pad="10"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KAILH_MX_NO_SOLDER">
+<gates>
+<gate name="G$1" symbol="2P" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="KAILH_MX_NO_SOLDER">
+<connects>
+<connect gate="G$1" pin="1" pad="S1"/>
+<connect gate="G$1" pin="2" pad="S2"/>
 </connects>
 <technologies>
 <technology name=""/>

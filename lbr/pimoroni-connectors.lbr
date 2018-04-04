@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1273,6 +1273,56 @@
 <smd name="7" x="1.25" y="0.325" dx="0.25" dy="1.45" layer="1"/>
 <smd name="8" x="1.75" y="0.325" dx="0.25" dy="1.45" layer="1"/>
 </package>
+<package name="SJA-25923B-SMT">
+<smd name="1A" x="-2.5" y="3.2" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="4.6" y="3.2" dx="1.6" dy="1.8" layer="1"/>
+<smd name="1B" x="-2.5" y="-2.9" dx="1.6" dy="1.8" layer="1"/>
+<smd name="3" x="6.5" y="-2.9" dx="1.6" dy="1.8" layer="1"/>
+<smd name="10" x="6.8" y="2.7" dx="1.6" dy="2.3" layer="1"/>
+<hole x="-2.2" y="0" drill="1.8"/>
+<hole x="2.2" y="0" drill="1.4"/>
+<wire x1="-3.5" y1="2.6" x2="7.1" y2="2.6" width="0.1" layer="21" style="shortdash"/>
+<wire x1="7.1" y1="2.6" x2="7.1" y2="-2.3" width="0.1" layer="21" style="shortdash"/>
+<wire x1="7.1" y1="-2.3" x2="-3.5" y2="-2.3" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-3.5" y1="-2.3" x2="-3.5" y2="-2" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-3.5" y1="-2" x2="-3.9" y2="-2" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-3.9" y1="-2" x2="-4.2" y2="-1.7" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-3.5" y1="2.6" x2="-3.5" y2="1.9" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-3.5" y1="1.9" x2="-3.9" y2="1.9" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-3.9" y1="1.9" x2="-4.2" y2="1.6" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-4.2" y1="1.6" x2="-4.2" y2="-1.7" width="0.1" layer="21" style="shortdash"/>
+</package>
+<package name="KAILH_MX_NO_SOLDER">
+<smd name="S1" x="-6.544321875" y="1.23698125" dx="2.55" dy="2.5" layer="1"/>
+<hole x="-3.175" y="1.27" drill="3"/>
+<hole x="3.175" y="-1.27" drill="3"/>
+<smd name="S2" x="6.549384375" y="-1.209040625" dx="2.55" dy="2.5" layer="1"/>
+<wire x1="-5.4347625" y1="3.009059375" x2="-5.439159375" y2="-0.402571875" width="0.127" layer="45"/>
+<wire x1="-5.439159375" y1="-0.402571875" x2="-2.939159375" y2="-2.90491875" width="0.127" layer="45" curve="90.073912"/>
+<wire x1="-2.939159375" y1="-2.90491875" x2="5.457615625" y2="-2.90491875" width="0.127" layer="45"/>
+<wire x1="5.457615625" y1="-2.90491875" x2="5.465240625" y2="1.12268125" width="0.127" layer="45"/>
+<wire x1="5.465240625" y1="1.12268125" x2="0.0169375" y2="1.12268125" width="0.127" layer="45"/>
+<wire x1="0.0169375" y1="1.12268125" x2="-1.871140625" y2="3.009059375" width="0.127" layer="45" curve="-89.948412"/>
+<wire x1="-1.871140625" y1="3.009059375" x2="-5.4347625" y2="3.009059375" width="0.127" layer="45"/>
+</package>
+<package name="FPC_1.0X06_FLIP">
+<smd name="1" x="-2.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="MT1" x="-5.3" y="1.5" dx="2" dy="2.5" layer="1"/>
+<smd name="MT2" x="5.3" y="1.5" dx="2" dy="2.5" layer="1"/>
+<smd name="2" x="-1.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="3" x="-0.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="4" x="0.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="5" x="1.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<smd name="6" x="2.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
+<wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="51"/>
+<wire x1="-6.55" y1="5.3" x2="6.55" y2="5.3" width="0.127" layer="51"/>
+<wire x1="-6" y1="0" x2="-6" y2="4" width="0.127" layer="51"/>
+<wire x1="-6" y1="4" x2="-6.55" y2="4" width="0.127" layer="51"/>
+<wire x1="-6.55" y1="4" x2="-6.55" y2="5.3" width="0.127" layer="51"/>
+<wire x1="6" y1="0" x2="6" y2="4" width="0.127" layer="51"/>
+<wire x1="6" y1="4" x2="6.55" y2="4" width="0.127" layer="51"/>
+<wire x1="6.55" y1="4" x2="6.55" y2="5.3" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -1856,6 +1906,32 @@
 <pin name="P$43" x="10.16" y="-58.42" visible="pin" length="short" rot="R180"/>
 <pin name="P$44" x="10.16" y="-60.96" visible="pin" length="short" rot="R180"/>
 <pin name="P$45" x="10.16" y="-63.5" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="SJA-25923B-SMT">
+<pin name="1" x="7.62" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="2" x="7.62" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="3" x="7.62" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="5.08" y1="5.08" x2="-11.43" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-11.43" y1="5.08" x2="-11.43" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-11.43" y1="2.54" x2="-12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="2.54" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-11.43" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="-6.35" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="2.54" x2="-7.62" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="1.27" x2="-8.89" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-6.35" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-1.27" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<pin name="10" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
+<wire x1="5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2847,6 +2923,40 @@ push-push type</description>
 <connect gate="G$1" pin="P$7" pad="7"/>
 <connect gate="G$1" pin="P$8" pad="8"/>
 <connect gate="G$1" pin="P$9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SJA-25923B-SMT">
+<gates>
+<gate name="G$1" symbol="SJA-25923B-SMT" x="2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SJA-25923B-SMT">
+<connects>
+<connect gate="G$1" pin="1" pad="1A 1B"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KAILH_MX_NO_SOLDER">
+<gates>
+<gate name="G$1" symbol="2P" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="KAILH_MX_NO_SOLDER">
+<connects>
+<connect gate="G$1" pin="1" pad="S1"/>
+<connect gate="G$1" pin="2" pad="S2"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -2204,6 +2204,30 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <circle x="0" y="0.575" radius="0.22360625" width="0.1" layer="21"/>
 <circle x="1.65" y="1.975" radius="0.07905625" width="0.15" layer="21"/>
 </package>
+<package name="GPS_MODULE">
+<wire x1="-4.85" y1="5.05" x2="4.85" y2="5.05" width="0.127" layer="51"/>
+<wire x1="4.85" y1="5.05" x2="4.85" y2="-5.05" width="0.127" layer="51"/>
+<wire x1="4.85" y1="-5.05" x2="-4.85" y2="-5.05" width="0.127" layer="51"/>
+<wire x1="-4.85" y1="-5.05" x2="-4.85" y2="5.05" width="0.127" layer="51"/>
+<smd name="1" x="4.85" y="-4.4" dx="1.8" dy="0.7" layer="1"/>
+<smd name="2" x="4.85" y="-3.3" dx="1.8" dy="0.7" layer="1"/>
+<smd name="3" x="4.85" y="-2.2" dx="1.8" dy="0.7" layer="1"/>
+<smd name="4" x="4.85" y="-1.1" dx="1.8" dy="0.7" layer="1"/>
+<smd name="5" x="4.85" y="0" dx="1.8" dy="0.7" layer="1"/>
+<smd name="6" x="4.85" y="1.1" dx="1.8" dy="0.7" layer="1"/>
+<smd name="7" x="4.85" y="2.2" dx="1.8" dy="0.7" layer="1"/>
+<smd name="8" x="4.85" y="3.3" dx="1.8" dy="0.7" layer="1"/>
+<smd name="9" x="4.85" y="4.4" dx="1.8" dy="0.7" layer="1"/>
+<smd name="10" x="-4.85" y="4.4" dx="1.8" dy="0.7" layer="1" rot="R180"/>
+<smd name="11" x="-4.85" y="3.3" dx="1.8" dy="0.7" layer="1" rot="R180"/>
+<smd name="12" x="-4.85" y="2.2" dx="1.8" dy="0.7" layer="1" rot="R180"/>
+<smd name="13" x="-4.85" y="1.1" dx="1.8" dy="0.7" layer="1" rot="R180"/>
+<smd name="14" x="-4.85" y="0" dx="1.8" dy="0.7" layer="1" rot="R180"/>
+<smd name="15" x="-4.85" y="-1.1" dx="1.8" dy="0.7" layer="1" rot="R180"/>
+<smd name="16" x="-4.85" y="-2.2" dx="1.8" dy="0.7" layer="1" rot="R180"/>
+<smd name="17" x="-4.85" y="-3.3" dx="1.8" dy="0.7" layer="1" rot="R180"/>
+<smd name="18" x="-4.85" y="-4.4" dx="1.8" dy="0.7" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -4118,6 +4142,36 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <pin name="VDD" x="-7.62" y="2.54" visible="pin" length="short"/>
 <pin name="GND" x="-7.62" y="-2.54" visible="pin" length="short"/>
 <pin name="OUT" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="GPS_MODULE">
+<pin name="VCC" x="-17.78" y="10.16" length="middle"/>
+<pin name="!RESET" x="-17.78" y="7.62" length="middle"/>
+<pin name="1PPS" x="-17.78" y="2.54" length="middle"/>
+<pin name="TXD" x="-17.78" y="0" length="middle"/>
+<pin name="RXD" x="-17.78" y="-2.54" length="middle"/>
+<pin name="SCL" x="-17.78" y="-5.08" length="middle"/>
+<pin name="SDA" x="-17.78" y="-7.62" length="middle"/>
+<pin name="VBAT" x="-17.78" y="-10.16" length="middle"/>
+<pin name="GND" x="-17.78" y="-15.24" length="middle"/>
+<pin name="RF_IN" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="VCC_RF" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="ON/OFF" x="-17.78" y="5.08" length="middle"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+</symbol>
+<symbol name="DUALBUFFER">
+<pin name="1A" x="-12.7" y="2.54" length="middle"/>
+<pin name="2A" x="-12.7" y="0" length="middle"/>
+<pin name="1Y" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="2Y" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="VCC" x="-12.7" y="7.62" length="middle"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6301,6 +6355,18 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <technology name=""/>
 </technologies>
 </device>
+<device name="LP5907MFX" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="CTRL" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="INA181A3" uservalue="yes">
@@ -6657,6 +6723,52 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="GND" pad="2 3"/>
 <connect gate="G$1" pin="OUT" pad="4"/>
 <connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GPS_MODULE" prefix="GPS" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="GPS_MODULE" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="GPS_MODULE">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="9"/>
+<connect gate="G$1" pin="1PPS" pad="4"/>
+<connect gate="G$1" pin="GND" pad="1 10 12"/>
+<connect gate="G$1" pin="ON/OFF" pad="5"/>
+<connect gate="G$1" pin="RF_IN" pad="11"/>
+<connect gate="G$1" pin="RXD" pad="3"/>
+<connect gate="G$1" pin="SCL" pad="17"/>
+<connect gate="G$1" pin="SDA" pad="16"/>
+<connect gate="G$1" pin="TXD" pad="2"/>
+<connect gate="G$1" pin="VBAT" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VCC_RF" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LVC2G34GW,125">
+<gates>
+<gate name="G$1" symbol="DUALBUFFER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT363_INFINEON">
+<connects>
+<connect gate="G$1" pin="1A" pad="1"/>
+<connect gate="G$1" pin="1Y" pad="6"/>
+<connect gate="G$1" pin="2A" pad="3"/>
+<connect gate="G$1" pin="2Y" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>

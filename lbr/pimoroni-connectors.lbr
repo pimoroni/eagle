@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1045,16 +1045,16 @@
 <wire x1="4" y1="-3" x2="4" y2="-2" width="0.127" layer="21"/>
 </package>
 <package name="2X05_EDGE">
-<pad name="1" x="-5.08" y="-1.27" drill="1"/>
-<pad name="2" x="-5.08" y="1.27" drill="1"/>
-<pad name="3" x="-2.54" y="-1.27" drill="1"/>
-<pad name="4" x="-2.54" y="1.27" drill="1"/>
-<pad name="5" x="0" y="-1.27" drill="1"/>
-<pad name="6" x="0" y="1.27" drill="1"/>
-<pad name="7" x="2.54" y="-1.27" drill="1"/>
-<pad name="8" x="2.54" y="1.27" drill="1"/>
-<pad name="9" x="5.08" y="-1.27" drill="1"/>
-<pad name="10" x="5.08" y="1.27" drill="1"/>
+<pad name="1" x="-5.08" y="-2.54" drill="1"/>
+<pad name="2" x="-5.08" y="2.54" drill="1"/>
+<pad name="3" x="-2.54" y="-2.54" drill="1"/>
+<pad name="4" x="-2.54" y="2.54" drill="1"/>
+<pad name="5" x="0" y="-2.54" drill="1"/>
+<pad name="6" x="0" y="2.54" drill="1"/>
+<pad name="7" x="2.54" y="-2.54" drill="1"/>
+<pad name="8" x="2.54" y="2.54" drill="1"/>
+<pad name="9" x="5.08" y="-2.54" drill="1"/>
+<pad name="10" x="5.08" y="2.54" drill="1"/>
 <wire x1="-9.5" y1="-4.65" x2="-9.5" y2="-3.75" width="0.2" layer="51"/>
 <wire x1="-9.5" y1="3.75" x2="-9.5" y2="4.65" width="0.2" layer="51"/>
 <wire x1="-9.5" y1="4.65" x2="9.5" y2="4.65" width="0.2" layer="51"/>
@@ -1083,6 +1083,10 @@
 <wire x1="8.1" y1="1.35" x2="8.1" y2="-1.35" width="0.127" layer="51"/>
 <wire x1="8.1" y1="-1.35" x2="-8.1" y2="-1.35" width="0.127" layer="51"/>
 <wire x1="-8.1" y1="-1.35" x2="-8.1" y2="1.35" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="2.54" x2="-6.35" y2="2.54" width="0.2" layer="21"/>
+<wire x1="-7.62" y1="-2.54" x2="-6.35" y2="-2.54" width="0.2" layer="21"/>
+<wire x1="6.35" y1="-2.54" x2="7.62" y2="-2.54" width="0.2" layer="21"/>
+<wire x1="6.35" y1="2.54" x2="7.62" y2="2.54" width="0.2" layer="21"/>
 </package>
 <package name="PJ-002BH-SMT-TR">
 <hole x="5" y="0" drill="1.7"/>

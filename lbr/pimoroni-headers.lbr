@@ -2873,6 +2873,50 @@ GND</text>
 <pad name="1" x="-5.08" y="0" drill="1"/>
 <pad name="5" x="5.08" y="0" drill="1"/>
 </package>
+<package name="M3-SCREW-STUD">
+<wire x1="-3" y1="2.5" x2="-3" y2="-2.5" width="0.1" layer="21"/>
+<wire x1="-3" y1="-2.5" x2="3" y2="-2.5" width="0.1" layer="21"/>
+<wire x1="3" y1="-2.5" x2="3" y2="2.5" width="0.1" layer="21"/>
+<wire x1="3" y1="2.5" x2="-3" y2="2.5" width="0.1" layer="21"/>
+<pad name="HOLE" x="0" y="0" drill="3" diameter="3.2" stop="no" thermals="no"/>
+<smd name="PAD" x="0" y="0" dx="7" dy="6" layer="1" roundness="10" cream="no"/>
+<pad name="P$1" x="-2.5" y="2" drill="0.5" diameter="0.75"/>
+<pad name="P$2" x="2.5" y="2" drill="0.5" diameter="0.75"/>
+<pad name="P$3" x="2.5" y="-2" drill="0.5" diameter="0.75"/>
+<pad name="P$4" x="-2.5" y="-2" drill="0.5" diameter="0.75"/>
+<pad name="P$5" x="-2.5" y="0" drill="0.5" diameter="0.75"/>
+<pad name="P$6" x="2.5" y="0" drill="0.5" diameter="0.75"/>
+<pad name="P$8" x="0" y="-2" drill="0.5" diameter="0.75"/>
+<pad name="P$9" x="0" y="2" drill="0.5" diameter="0.75"/>
+<polygon width="0.1" layer="31">
+<vertex x="-3.25" y="2.75"/>
+<vertex x="-0.25" y="2.75"/>
+<vertex x="-0.25" y="1.5"/>
+<vertex x="-1.5" y="0.25"/>
+<vertex x="-3.25" y="0.25"/>
+</polygon>
+<polygon width="0.1" layer="31">
+<vertex x="3.25" y="-2.75"/>
+<vertex x="0.25" y="-2.75"/>
+<vertex x="0.25" y="-1.5"/>
+<vertex x="1.5" y="-0.25"/>
+<vertex x="3.25" y="-0.25"/>
+</polygon>
+<polygon width="0.1" layer="31">
+<vertex x="3.25" y="2.75"/>
+<vertex x="0.25" y="2.75"/>
+<vertex x="0.25" y="1.5"/>
+<vertex x="1.5" y="0.25"/>
+<vertex x="3.25" y="0.25"/>
+</polygon>
+<polygon width="0.1" layer="31">
+<vertex x="-3.25" y="-2.75"/>
+<vertex x="-0.25" y="-2.75"/>
+<vertex x="-0.25" y="-1.5"/>
+<vertex x="-1.5" y="-0.25"/>
+<vertex x="-3.25" y="-0.25"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="1X2">
@@ -4642,6 +4686,14 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <device name="" package="1X5-RAIL-EXPOSED-COPPER-BOTTOM">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1 2 3 4 5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M3-SCREW-STUD" package="M3-SCREW-STUD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="HOLE P$1 P$2 P$3 P$4 P$5 P$6 P$8 P$9 PAD"/>
 </connects>
 <technologies>
 <technology name=""/>

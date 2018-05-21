@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1386,6 +1386,10 @@
 <wire x1="-7.62" y1="-2.54" x2="-6.35" y2="-2.54" width="0.2" layer="21"/>
 <wire x1="6.35" y1="-2.54" x2="7.62" y2="-2.54" width="0.2" layer="21"/>
 <wire x1="6.35" y1="2.54" x2="7.62" y2="2.54" width="0.2" layer="21"/>
+</package>
+<package name="POGO_PIN_SMT">
+<pad name="P$1" x="0" y="0" drill="0.7"/>
+<smd name="P$2" x="0" y="0" dx="2.3" dy="2.3" layer="1" roundness="100"/>
 </package>
 </packages>
 <symbols>
@@ -3057,6 +3061,21 @@ push-push type</description>
 <connects>
 <connect gate="G$1" pin="1" pad="S1"/>
 <connect gate="G$1" pin="2" pad="S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X1">
+<gates>
+<gate name="G$1" symbol="PIN" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="POGO_PIN_SMT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1 P$2" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>

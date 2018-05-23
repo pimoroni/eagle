@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.001" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2290,11 +2290,11 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <smd name="3" x="0.42" y="0" dx="0.6" dy="0.72" layer="1" rot="R180"/>
 <smd name="2" x="0.42" y="0.97" dx="0.6" dy="0.72" layer="1" rot="R180"/>
 <smd name="1" x="0.42" y="1.94" dx="0.6" dy="0.72" layer="1" rot="R180"/>
-<wire x1="-1.35" y1="2.375" x2="0.8" y2="2.375" width="0.05" layer="21"/>
-<wire x1="0.8" y1="2.375" x2="0.8" y2="-1.4" width="0.05" layer="21"/>
-<wire x1="0.8" y1="-1.4" x2="-1.35" y2="-1.4" width="0.05" layer="21"/>
-<wire x1="-1.35" y1="-1.4" x2="-1.35" y2="2.375" width="0.05" layer="21"/>
-<circle x="1" y="2.6" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-1.35" y1="2.375" x2="0.8" y2="2.375" width="0.05" layer="51"/>
+<wire x1="0.8" y1="2.375" x2="0.8" y2="-1.4" width="0.05" layer="51"/>
+<wire x1="0.8" y1="-1.4" x2="-1.35" y2="-1.4" width="0.05" layer="51"/>
+<wire x1="-1.35" y1="-1.4" x2="-1.35" y2="2.375" width="0.05" layer="51"/>
+<circle x="-0.134" y="1.958" radius="0.05" width="0.2" layer="21"/>
 <text x="-0.25" y="3.1" size="0.8128" layer="21" align="bottom-center">&gt;NAME</text>
 <text x="-0.25" y="-2.05" size="0.8128" layer="21" align="top-center">&gt;VALUE</text>
 </package>

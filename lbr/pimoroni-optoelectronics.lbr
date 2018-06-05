@@ -1135,6 +1135,19 @@
 <circle x="-6.75" y="-13.975" radius="0.05" width="0.15" layer="21"/>
 <circle x="6.75" y="-13.975" radius="0.05" width="0.15" layer="21"/>
 </package>
+<package name="LED-0602-RIGHT-ANGLE">
+<smd name="1" x="-0.9" y="0" dx="1" dy="1" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="1" dy="1" layer="1"/>
+<wire x1="-0.85" y1="-0.3" x2="0.85" y2="-0.3" width="0.127" layer="51"/>
+<wire x1="0.85" y1="-0.3" x2="0.85" y2="0.3" width="0.127" layer="51"/>
+<wire x1="-0.85" y1="0.3" x2="-0.85" y2="-0.3" width="0.127" layer="51"/>
+<wire x1="-0.85" y1="0.3" x2="-0.6" y2="0.3" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="0.3" x2="-0.5" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0.8" x2="0.6" y2="0.3" width="0.127" layer="51"/>
+<wire x1="0.6" y1="0.3" x2="0.85" y2="0.3" width="0.127" layer="51"/>
+<circle x="0.2" y="0" radius="0.14141875" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED-RGB">
@@ -3370,6 +3383,15 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0602_RIGHT_ANGLE" package="LED-0602-RIGHT-ANGLE">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

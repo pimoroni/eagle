@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="2.57175" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
@@ -1080,6 +1080,33 @@
 <wire x1="2.65" y1="16.8" x2="5.45" y2="16.8" width="0.2" layer="51"/>
 <wire x1="32" y1="52" x2="33" y2="53" width="0.2" layer="51"/>
 <wire x1="33" y1="52" x2="32" y2="53" width="0.2" layer="51"/>
+</package>
+<package name="MICRO_BIT_DRAWING">
+<wire x1="-22.7175" y1="42" x2="22.7175" y2="42" width="0.2" layer="51"/>
+<wire x1="22.7175" y1="42" x2="25.7175" y2="39" width="0.2" layer="51" curve="-90"/>
+<wire x1="25.7175" y1="39" x2="25.7175" y2="3" width="0.2" layer="51"/>
+<wire x1="25.7175" y1="3" x2="22.7175" y2="0" width="0.2" layer="51" curve="-90"/>
+<wire x1="22.7175" y1="0" x2="-22.7175" y2="0" width="0.2" layer="51"/>
+<wire x1="-22.7175" y1="0" x2="-25.7175" y2="3" width="0.2" layer="51" curve="-90"/>
+<wire x1="-25.7175" y1="3" x2="-25.7175" y2="39" width="0.2" layer="51"/>
+<wire x1="-25.7175" y1="39" x2="-22.7175" y2="42" width="0.2" layer="51" curve="-90"/>
+<circle x="0" y="7" radius="2" width="0.2" layer="51"/>
+<text x="0" y="7" size="1.27" layer="51" align="center">2</text>
+<dimension x1="-21.59" y1="10" x2="-25.7175" y2="10" x3="-23.65375" y3="15" textsize="1.27" layer="51"/>
+<dimension x1="-11.43" y1="10" x2="-21.59" y2="10" x3="-16.51" y3="20" textsize="1.27" layer="51"/>
+<circle x="11.43" y="7" radius="2" width="0.2" layer="51"/>
+<text x="11.43" y="7" size="1.27" layer="51" align="center">3V</text>
+<circle x="-11.43" y="7" radius="2" width="0.2" layer="51"/>
+<text x="-11.43" y="7" size="1.27" layer="51" align="center">1</text>
+<circle x="-21.59" y="7" radius="2" width="0.2" layer="51"/>
+<text x="-21.59" y="7" size="1.27" layer="51" align="center">0</text>
+<circle x="21.59" y="7" radius="2" width="0.2" layer="51"/>
+<text x="21.59" y="7" size="1.27" layer="51" align="center">GND</text>
+<dimension x1="21.59" y1="10" x2="11.43" y2="10" x3="16.51" y3="20" textsize="1.27" layer="51"/>
+<dimension x1="0" y1="10" x2="-11.43" y2="10" x3="-5.715" y3="20" textsize="1.27" layer="51"/>
+<dimension x1="11.43" y1="10" x2="0" y2="10" x3="5.715" y3="20" textsize="1.27" layer="51"/>
+<dimension x1="25.7175" y1="10" x2="21.59" y2="10" x3="23.65375" y3="15" textsize="1.27" layer="51"/>
+<dimension x1="-25.7175" y1="15.4305" x2="25.7175" y2="15.4305" x3="0" y3="30.861" textsize="1.27" layer="21"/>
 </package>
 </packages>
 <symbols>

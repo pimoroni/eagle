@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="2.3" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2928,7 +2928,10 @@ GND</text>
 <package name="1X1-M2.0-THREADED-STUD-NO-HOLE">
 <circle x="0" y="0" radius="1.8" width="0.05" layer="51"/>
 <circle x="0" y="0" radius="2.78" width="0.05" layer="51"/>
-<smd name="1" x="0" y="0" dx="5.9" dy="5.9" layer="1" roundness="100"/>
+<smd name="1" x="0" y="0" dx="5.9" dy="5.9" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0" y="0" radius="1.25" width="0.05" layer="51"/>
+<circle x="0" y="0" radius="2.3" width="1.5" layer="29"/>
+<circle x="0" y="0" radius="2.3" width="1.2" layer="31"/>
 </package>
 </packages>
 <symbols>

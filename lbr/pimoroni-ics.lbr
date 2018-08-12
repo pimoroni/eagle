@@ -2435,6 +2435,200 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <rectangle x1="0.2" y1="-1.2" x2="1.6" y2="-0.2" layer="31"/>
 <rectangle x1="0.2" y1="0.2" x2="1.6" y2="1.2" layer="31"/>
 </package>
+<package name="LQFP-100">
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="21"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="21"/>
+<wire x1="7" y1="-7" x2="-6.5" y2="-7" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-7" x2="-7" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="-6.5" x2="-7" y2="7" width="0.127" layer="21"/>
+<circle x="-7.239" y="-7.239" radius="0.127" width="0.3" layer="21"/>
+<smd name="1" x="-6" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="2" x="-5.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="3" x="-5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="4" x="-4.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="5" x="-4" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="6" x="-3.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="7" x="-3" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="8" x="-2.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="9" x="-2" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="10" x="-1.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="11" x="-1" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="12" x="-0.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="13" x="0" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="14" x="0.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="15" x="1" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="16" x="1.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="17" x="2" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="18" x="2.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="19" x="3" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="20" x="3.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="21" x="4" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="22" x="4.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="23" x="5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="24" x="5.5" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="25" x="6" y="-7.6" dx="0.275" dy="1" layer="1" rot="R180"/>
+<smd name="26" x="7.6" y="-6" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="27" x="7.6" y="-5.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="28" x="7.6" y="-5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="29" x="7.6" y="-4.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="30" x="7.6" y="-4" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="31" x="7.6" y="-3.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="32" x="7.6" y="-3" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="33" x="7.6" y="-2.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="34" x="7.6" y="-2" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="35" x="7.6" y="-1.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="36" x="7.6" y="-1" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="37" x="7.6" y="-0.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="38" x="7.6" y="0" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="39" x="7.6" y="0.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="40" x="7.6" y="1" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="41" x="7.6" y="1.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="42" x="7.6" y="2" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="43" x="7.6" y="2.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="44" x="7.6" y="3" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="45" x="7.6" y="3.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="46" x="7.6" y="4" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="47" x="7.6" y="4.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="48" x="7.6" y="5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="49" x="7.6" y="5.5" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="50" x="7.6" y="6" dx="0.275" dy="1" layer="1" rot="R270"/>
+<smd name="51" x="6" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="52" x="5.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="53" x="5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="54" x="4.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="55" x="4" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="56" x="3.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="57" x="3" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="58" x="2.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="59" x="2" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="60" x="1.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="61" x="1" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="62" x="0.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="63" x="0" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="64" x="-0.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="65" x="-1" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="66" x="-1.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="67" x="-2" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="68" x="-2.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="69" x="-3" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="70" x="-3.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="71" x="-4" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="72" x="-4.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="73" x="-5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="74" x="-5.5" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="75" x="-6" y="7.6" dx="0.275" dy="1" layer="1"/>
+<smd name="76" x="-7.6" y="6" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="77" x="-7.6" y="5.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="78" x="-7.6" y="5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="79" x="-7.6" y="4.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="80" x="-7.6" y="4" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="81" x="-7.6" y="3.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="82" x="-7.6" y="3" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="83" x="-7.6" y="2.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="84" x="-7.6" y="2" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="85" x="-7.6" y="1.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="86" x="-7.6" y="1" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="87" x="-7.6" y="0.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="88" x="-7.6" y="0" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="89" x="-7.6" y="-0.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="90" x="-7.6" y="-1" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="91" x="-7.6" y="-1.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="92" x="-7.6" y="-2" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="93" x="-7.6" y="-2.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="94" x="-7.6" y="-3" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="95" x="-7.6" y="-3.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="96" x="-7.6" y="-4" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="97" x="-7.6" y="-4.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="98" x="-7.6" y="-5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="99" x="-7.6" y="-5.5" dx="0.275" dy="1" layer="1" rot="R90"/>
+<smd name="100" x="-7.6" y="-6" dx="0.275" dy="1" layer="1" rot="R90"/>
+<text x="0" y="9" size="0.75" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-9" size="0.75" layer="21" font="vector" ratio="14" rot="R180" align="bottom-center">&gt;VALUE</text>
+</package>
+<package name="64X8-CUSTOM-LCD">
+<pad name="1" x="44.45" y="12.7" drill="1.6" diameter="2"/>
+<pad name="2" x="41.91" y="12.7" drill="1.6" diameter="2"/>
+<pad name="3" x="39.37" y="12.7" drill="1.6" diameter="2"/>
+<pad name="4" x="36.83" y="12.7" drill="1.6" diameter="2"/>
+<pad name="5" x="34.29" y="12.7" drill="1.6" diameter="2"/>
+<pad name="6" x="31.75" y="12.7" drill="1.6" diameter="2"/>
+<pad name="7" x="29.21" y="12.7" drill="1.6" diameter="2"/>
+<pad name="8" x="26.67" y="12.7" drill="1.6" diameter="2"/>
+<pad name="9" x="24.13" y="12.7" drill="1.6" diameter="2"/>
+<pad name="10" x="21.59" y="12.7" drill="1.6" diameter="2"/>
+<pad name="11" x="19.05" y="12.7" drill="1.6" diameter="2"/>
+<pad name="12" x="16.51" y="12.7" drill="1.6" diameter="2"/>
+<pad name="13" x="13.97" y="12.7" drill="1.6" diameter="2"/>
+<pad name="14" x="11.43" y="12.7" drill="1.6" diameter="2"/>
+<pad name="15" x="8.89" y="12.7" drill="1.6" diameter="2"/>
+<pad name="16" x="6.35" y="12.7" drill="1.6" diameter="2"/>
+<pad name="17" x="3.81" y="12.7" drill="1.6" diameter="2"/>
+<pad name="18" x="1.27" y="12.7" drill="1.6" diameter="2"/>
+<pad name="19" x="-1.27" y="12.7" drill="1.6" diameter="2"/>
+<pad name="20" x="-3.81" y="12.7" drill="1.6" diameter="2"/>
+<pad name="21" x="-6.35" y="12.7" drill="1.6" diameter="2"/>
+<pad name="22" x="-8.89" y="12.7" drill="1.6" diameter="2"/>
+<pad name="23" x="-11.43" y="12.7" drill="1.6" diameter="2"/>
+<pad name="24" x="-13.97" y="12.7" drill="1.6" diameter="2"/>
+<pad name="25" x="-16.51" y="12.7" drill="1.6" diameter="2"/>
+<pad name="26" x="-19.05" y="12.7" drill="1.6" diameter="2"/>
+<pad name="27" x="-21.59" y="12.7" drill="1.6" diameter="2"/>
+<pad name="28" x="-24.13" y="12.7" drill="1.6" diameter="2"/>
+<pad name="29" x="-26.67" y="12.7" drill="1.6" diameter="2"/>
+<pad name="30" x="-29.21" y="12.7" drill="1.6" diameter="2"/>
+<pad name="31" x="-31.75" y="12.7" drill="1.6" diameter="2"/>
+<pad name="32" x="-34.29" y="12.7" drill="1.6" diameter="2"/>
+<pad name="33" x="-36.83" y="12.7" drill="1.6" diameter="2"/>
+<pad name="34" x="-39.37" y="12.7" drill="1.6" diameter="2"/>
+<pad name="35" x="-41.91" y="12.7" drill="1.6" diameter="2"/>
+<pad name="36" x="-44.45" y="12.7" drill="1.6" diameter="2"/>
+<pad name="37" x="44.45" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="38" x="41.91" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="39" x="39.37" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="40" x="36.83" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="41" x="34.29" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="42" x="31.75" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="43" x="29.21" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="44" x="26.67" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="45" x="24.13" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="46" x="21.59" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="47" x="19.05" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="48" x="16.51" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="49" x="13.97" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="50" x="11.43" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="51" x="8.89" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="52" x="6.35" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="53" x="3.81" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="54" x="1.27" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="55" x="-1.27" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="56" x="-3.81" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="57" x="-6.35" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="58" x="-8.89" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="59" x="-11.43" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="60" x="-13.97" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="61" x="-16.51" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="62" x="-19.05" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="63" x="-21.59" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="64" x="-24.13" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="65" x="-26.67" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="66" x="-29.21" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="67" x="-31.75" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="68" x="-34.29" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="69" x="-36.83" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="70" x="-39.37" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="71" x="-41.91" y="-12.7" drill="1.6" diameter="2"/>
+<pad name="72" x="-44.45" y="-12.7" drill="1.6" diameter="2"/>
+<wire x1="-66.04" y1="12.7" x2="66.04" y2="12.7" width="0.254" layer="21"/>
+<wire x1="-66.04" y1="12.7" x2="-66.04" y2="10.16" width="0.254" layer="21"/>
+<wire x1="-66.04" y1="10.16" x2="-66.04" y2="-10.16" width="0.254" layer="21"/>
+<wire x1="-66.04" y1="-10.16" x2="-66.04" y2="-12.7" width="0.254" layer="21"/>
+<wire x1="-66.04" y1="-12.7" x2="66.04" y2="-12.7" width="0.254" layer="21"/>
+<wire x1="66.04" y1="-12.7" x2="66.04" y2="-10.16" width="0.254" layer="21"/>
+<wire x1="66.04" y1="-10.16" x2="66.04" y2="10.16" width="0.254" layer="21"/>
+<wire x1="66.04" y1="10.16" x2="66.04" y2="12.7" width="0.254" layer="21"/>
+<wire x1="66.04" y1="-10.16" x2="-66.04" y2="-10.16" width="0.254" layer="21"/>
+<wire x1="-66.04" y1="10.16" x2="66.04" y2="10.16" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -4544,6 +4738,183 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <wire x1="-12.7" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+</symbol>
+<symbol name="HT1625">
+<pin name="!CS" x="-7.62" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="!WR" x="-7.62" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="!RD" x="-7.62" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="DATA" x="-7.62" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="VDD" x="-33.02" y="30.48" visible="pin" length="short"/>
+<pin name="GND" x="-33.02" y="10.16" visible="pin" length="short"/>
+<pin name="OSCI" x="-33.02" y="22.86" visible="pin" length="short"/>
+<pin name="OSCO" x="-33.02" y="20.32" visible="pin" length="short"/>
+<pin name="VLCD" x="-33.02" y="27.94" visible="pin" length="short"/>
+<pin name="!IRQ" x="-7.62" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="BZ" x="-7.62" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="!BZ" x="-7.62" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SEG0" x="-27.94" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SEG1" x="-27.94" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SEG2" x="-27.94" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SEG3" x="-27.94" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SEG4" x="-27.94" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SEG5" x="-27.94" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="SEG6" x="-27.94" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="SEG7" x="-27.94" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="SEG8" x="-27.94" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="SEG9" x="-27.94" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="SEG10" x="-27.94" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="SEG11" x="-27.94" y="-30.48" visible="pin" length="short" rot="R180"/>
+<pin name="SEG12" x="-27.94" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="SEG13" x="-27.94" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="SEG14" x="-27.94" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="SEG15" x="-27.94" y="-40.64" visible="pin" length="short" rot="R180"/>
+<wire x1="-30.48" y1="0" x2="-30.48" y2="-43.18" width="0.254" layer="94"/>
+<pin name="SEG16" x="-7.62" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SEG17" x="-7.62" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SEG18" x="-7.62" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SEG19" x="-7.62" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SEG20" x="-7.62" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SEG21" x="-7.62" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="SEG22" x="-7.62" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="SEG23" x="-7.62" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="SEG24" x="-7.62" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="SEG25" x="-7.62" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="SEG26" x="-7.62" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="SEG27" x="-7.62" y="-30.48" visible="pin" length="short" rot="R180"/>
+<pin name="SEG28" x="-7.62" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="SEG29" x="-7.62" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="SEG30" x="-7.62" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="SEG31" x="-7.62" y="-40.64" visible="pin" length="short" rot="R180"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="-43.18" width="0.254" layer="94"/>
+<pin name="SEG32" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SEG33" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SEG34" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SEG35" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SEG36" x="12.7" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SEG37" x="12.7" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="SEG38" x="12.7" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="SEG39" x="12.7" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="SEG40" x="12.7" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="SEG41" x="12.7" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="SEG42" x="12.7" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="SEG43" x="12.7" y="-30.48" visible="pin" length="short" rot="R180"/>
+<pin name="SEG44" x="12.7" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="SEG45" x="12.7" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="SEG46" x="12.7" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="SEG47" x="12.7" y="-40.64" visible="pin" length="short" rot="R180"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-43.18" width="0.254" layer="94"/>
+<pin name="SEG48" x="33.02" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SEG49" x="33.02" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SEG50" x="33.02" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SEG51" x="33.02" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SEG52" x="33.02" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SEG53" x="33.02" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="SEG54" x="33.02" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="SEG55" x="33.02" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="SEG56" x="33.02" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="SEG57" x="33.02" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="SEG58" x="33.02" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="SEG59" x="33.02" y="-30.48" visible="pin" length="short" rot="R180"/>
+<pin name="SEG60" x="33.02" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="SEG61" x="33.02" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="SEG62" x="33.02" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="SEG63" x="33.02" y="-40.64" visible="pin" length="short" rot="R180"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-43.18" width="0.254" layer="94"/>
+<pin name="COM0" x="33.02" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="COM1" x="33.02" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="COM2" x="33.02" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="COM3" x="33.02" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="COM4" x="33.02" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="COM5" x="33.02" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="COM6" x="33.02" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="COM7" x="33.02" y="12.7" visible="pin" length="short" rot="R180"/>
+<wire x1="30.48" y1="33.02" x2="30.48" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="33.02" x2="-10.16" y2="33.02" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="33.02" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-30.48" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="7.62" x2="-30.48" y2="33.02" width="0.254" layer="94"/>
+<text x="-20.32" y="35.56" size="2" layer="94" ratio="14" align="bottom-center">HT1625</text>
+<text x="-20.32" y="5.08" size="2" layer="94" ratio="14" rot="R180" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="64X8-CUSTOM-LCD">
+<pin name="SEG0" x="-33.02" y="-2.54" visible="pin" length="short"/>
+<pin name="SEG1" x="-33.02" y="-5.08" visible="pin" length="short"/>
+<pin name="SEG2" x="-33.02" y="-7.62" visible="pin" length="short"/>
+<pin name="SEG3" x="-33.02" y="-10.16" visible="pin" length="short"/>
+<pin name="SEG4" x="-33.02" y="-12.7" visible="pin" length="short"/>
+<pin name="SEG5" x="-33.02" y="-15.24" visible="pin" length="short"/>
+<pin name="SEG6" x="-33.02" y="-17.78" visible="pin" length="short"/>
+<pin name="SEG7" x="-33.02" y="-20.32" visible="pin" length="short"/>
+<pin name="SEG8" x="-33.02" y="-22.86" visible="pin" length="short"/>
+<pin name="SEG9" x="-33.02" y="-25.4" visible="pin" length="short"/>
+<pin name="SEG10" x="-33.02" y="-27.94" visible="pin" length="short"/>
+<pin name="SEG11" x="-33.02" y="-30.48" visible="pin" length="short"/>
+<pin name="SEG12" x="-33.02" y="-33.02" visible="pin" length="short"/>
+<pin name="SEG13" x="-33.02" y="-35.56" visible="pin" length="short"/>
+<pin name="SEG14" x="-33.02" y="-38.1" visible="pin" length="short"/>
+<pin name="SEG15" x="-33.02" y="-40.64" visible="pin" length="short"/>
+<wire x1="-30.48" y1="0" x2="-30.48" y2="-43.18" width="0.254" layer="94"/>
+<pin name="SEG16" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="SEG17" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="SEG18" x="-12.7" y="-7.62" visible="pin" length="short"/>
+<pin name="SEG19" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="SEG20" x="-12.7" y="-12.7" visible="pin" length="short"/>
+<pin name="SEG21" x="-12.7" y="-15.24" visible="pin" length="short"/>
+<pin name="SEG22" x="-12.7" y="-17.78" visible="pin" length="short"/>
+<pin name="SEG23" x="-12.7" y="-20.32" visible="pin" length="short"/>
+<pin name="SEG24" x="-12.7" y="-22.86" visible="pin" length="short"/>
+<pin name="SEG25" x="-12.7" y="-25.4" visible="pin" length="short"/>
+<pin name="SEG26" x="-12.7" y="-27.94" visible="pin" length="short"/>
+<pin name="SEG27" x="-12.7" y="-30.48" visible="pin" length="short"/>
+<pin name="SEG28" x="-12.7" y="-33.02" visible="pin" length="short"/>
+<pin name="SEG29" x="-12.7" y="-35.56" visible="pin" length="short"/>
+<pin name="SEG30" x="-12.7" y="-38.1" visible="pin" length="short"/>
+<pin name="SEG31" x="-12.7" y="-40.64" visible="pin" length="short"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="-43.18" width="0.254" layer="94"/>
+<pin name="SEG32" x="7.62" y="-2.54" visible="pin" length="short"/>
+<pin name="SEG33" x="7.62" y="-5.08" visible="pin" length="short"/>
+<pin name="SEG34" x="7.62" y="-7.62" visible="pin" length="short"/>
+<pin name="SEG35" x="7.62" y="-10.16" visible="pin" length="short"/>
+<pin name="SEG36" x="7.62" y="-12.7" visible="pin" length="short"/>
+<pin name="SEG37" x="7.62" y="-15.24" visible="pin" length="short"/>
+<pin name="SEG38" x="7.62" y="-17.78" visible="pin" length="short"/>
+<pin name="SEG39" x="7.62" y="-20.32" visible="pin" length="short"/>
+<pin name="SEG40" x="7.62" y="-22.86" visible="pin" length="short"/>
+<pin name="SEG41" x="7.62" y="-25.4" visible="pin" length="short"/>
+<pin name="SEG42" x="7.62" y="-27.94" visible="pin" length="short"/>
+<pin name="SEG43" x="7.62" y="-30.48" visible="pin" length="short"/>
+<pin name="SEG44" x="7.62" y="-33.02" visible="pin" length="short"/>
+<pin name="SEG45" x="7.62" y="-35.56" visible="pin" length="short"/>
+<pin name="SEG46" x="7.62" y="-38.1" visible="pin" length="short"/>
+<pin name="SEG47" x="7.62" y="-40.64" visible="pin" length="short"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-43.18" width="0.254" layer="94"/>
+<pin name="SEG48" x="27.94" y="-2.54" visible="pin" length="short"/>
+<pin name="SEG49" x="27.94" y="-5.08" visible="pin" length="short"/>
+<pin name="SEG50" x="27.94" y="-7.62" visible="pin" length="short"/>
+<pin name="SEG51" x="27.94" y="-10.16" visible="pin" length="short"/>
+<pin name="SEG52" x="27.94" y="-12.7" visible="pin" length="short"/>
+<pin name="SEG53" x="27.94" y="-15.24" visible="pin" length="short"/>
+<pin name="SEG54" x="27.94" y="-17.78" visible="pin" length="short"/>
+<pin name="SEG55" x="27.94" y="-20.32" visible="pin" length="short"/>
+<pin name="SEG56" x="27.94" y="-22.86" visible="pin" length="short"/>
+<pin name="SEG57" x="27.94" y="-25.4" visible="pin" length="short"/>
+<pin name="SEG58" x="27.94" y="-27.94" visible="pin" length="short"/>
+<pin name="SEG59" x="27.94" y="-30.48" visible="pin" length="short"/>
+<pin name="SEG60" x="27.94" y="-33.02" visible="pin" length="short"/>
+<pin name="SEG61" x="27.94" y="-35.56" visible="pin" length="short"/>
+<pin name="SEG62" x="27.94" y="-38.1" visible="pin" length="short"/>
+<pin name="SEG63" x="27.94" y="-40.64" visible="pin" length="short"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-43.18" width="0.254" layer="94"/>
+<pin name="COM0" x="27.94" y="30.48" visible="pin" length="short"/>
+<pin name="COM1" x="27.94" y="27.94" visible="pin" length="short"/>
+<pin name="COM2" x="27.94" y="25.4" visible="pin" length="short"/>
+<pin name="COM3" x="27.94" y="22.86" visible="pin" length="short"/>
+<pin name="COM4" x="27.94" y="20.32" visible="pin" length="short"/>
+<pin name="COM5" x="27.94" y="17.78" visible="pin" length="short"/>
+<pin name="COM6" x="27.94" y="15.24" visible="pin" length="short"/>
+<pin name="COM7" x="27.94" y="12.7" visible="pin" length="short"/>
+<wire x1="30.48" y1="33.02" x2="30.48" y2="10.16" width="0.254" layer="94"/>
+<text x="-25.4" y="5.08" size="1.27" layer="94" font="vector" ratio="14" align="bottom-center">64x8 CUSTOM LCD</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7360,6 +7731,190 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <connect gate="G$1" pin="PROG" pad="2"/>
 <connect gate="G$1" pin="TEMP" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HT1625">
+<gates>
+<gate name="G$1" symbol="HT1625" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LQFP-100">
+<connects>
+<connect gate="G$1" pin="!BZ" pad="12"/>
+<connect gate="G$1" pin="!CS" pad="1"/>
+<connect gate="G$1" pin="!IRQ" pad="10"/>
+<connect gate="G$1" pin="!RD" pad="2"/>
+<connect gate="G$1" pin="!WR" pad="3"/>
+<connect gate="G$1" pin="BZ" pad="11"/>
+<connect gate="G$1" pin="COM0" pad="17"/>
+<connect gate="G$1" pin="COM1" pad="18"/>
+<connect gate="G$1" pin="COM2" pad="19"/>
+<connect gate="G$1" pin="COM3" pad="20"/>
+<connect gate="G$1" pin="COM4" pad="25"/>
+<connect gate="G$1" pin="COM5" pad="27"/>
+<connect gate="G$1" pin="COM6" pad="29"/>
+<connect gate="G$1" pin="COM7" pad="31"/>
+<connect gate="G$1" pin="DATA" pad="4"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="OSCI" pad="6"/>
+<connect gate="G$1" pin="OSCO" pad="7"/>
+<connect gate="G$1" pin="SEG0" pad="34"/>
+<connect gate="G$1" pin="SEG1" pad="35"/>
+<connect gate="G$1" pin="SEG10" pad="44"/>
+<connect gate="G$1" pin="SEG11" pad="45"/>
+<connect gate="G$1" pin="SEG12" pad="46"/>
+<connect gate="G$1" pin="SEG13" pad="47"/>
+<connect gate="G$1" pin="SEG14" pad="48"/>
+<connect gate="G$1" pin="SEG15" pad="49"/>
+<connect gate="G$1" pin="SEG16" pad="50"/>
+<connect gate="G$1" pin="SEG17" pad="51"/>
+<connect gate="G$1" pin="SEG18" pad="52"/>
+<connect gate="G$1" pin="SEG19" pad="53"/>
+<connect gate="G$1" pin="SEG2" pad="36"/>
+<connect gate="G$1" pin="SEG20" pad="54"/>
+<connect gate="G$1" pin="SEG21" pad="57"/>
+<connect gate="G$1" pin="SEG22" pad="58"/>
+<connect gate="G$1" pin="SEG23" pad="59"/>
+<connect gate="G$1" pin="SEG24" pad="60"/>
+<connect gate="G$1" pin="SEG25" pad="61"/>
+<connect gate="G$1" pin="SEG26" pad="62"/>
+<connect gate="G$1" pin="SEG27" pad="63"/>
+<connect gate="G$1" pin="SEG28" pad="64"/>
+<connect gate="G$1" pin="SEG29" pad="65"/>
+<connect gate="G$1" pin="SEG3" pad="37"/>
+<connect gate="G$1" pin="SEG30" pad="66"/>
+<connect gate="G$1" pin="SEG31" pad="67"/>
+<connect gate="G$1" pin="SEG32" pad="68"/>
+<connect gate="G$1" pin="SEG33" pad="69"/>
+<connect gate="G$1" pin="SEG34" pad="70"/>
+<connect gate="G$1" pin="SEG35" pad="71"/>
+<connect gate="G$1" pin="SEG36" pad="72"/>
+<connect gate="G$1" pin="SEG37" pad="73"/>
+<connect gate="G$1" pin="SEG38" pad="74"/>
+<connect gate="G$1" pin="SEG39" pad="75"/>
+<connect gate="G$1" pin="SEG4" pad="38"/>
+<connect gate="G$1" pin="SEG40" pad="76"/>
+<connect gate="G$1" pin="SEG41" pad="77"/>
+<connect gate="G$1" pin="SEG42" pad="78"/>
+<connect gate="G$1" pin="SEG43" pad="80"/>
+<connect gate="G$1" pin="SEG44" pad="81"/>
+<connect gate="G$1" pin="SEG45" pad="82"/>
+<connect gate="G$1" pin="SEG46" pad="83"/>
+<connect gate="G$1" pin="SEG47" pad="84"/>
+<connect gate="G$1" pin="SEG48" pad="85"/>
+<connect gate="G$1" pin="SEG49" pad="86"/>
+<connect gate="G$1" pin="SEG5" pad="39"/>
+<connect gate="G$1" pin="SEG50" pad="87"/>
+<connect gate="G$1" pin="SEG51" pad="88"/>
+<connect gate="G$1" pin="SEG52" pad="89"/>
+<connect gate="G$1" pin="SEG53" pad="90"/>
+<connect gate="G$1" pin="SEG54" pad="91"/>
+<connect gate="G$1" pin="SEG55" pad="92"/>
+<connect gate="G$1" pin="SEG56" pad="93"/>
+<connect gate="G$1" pin="SEG57" pad="94"/>
+<connect gate="G$1" pin="SEG58" pad="95"/>
+<connect gate="G$1" pin="SEG59" pad="96"/>
+<connect gate="G$1" pin="SEG6" pad="40"/>
+<connect gate="G$1" pin="SEG60" pad="97"/>
+<connect gate="G$1" pin="SEG61" pad="98"/>
+<connect gate="G$1" pin="SEG62" pad="99"/>
+<connect gate="G$1" pin="SEG63" pad="100"/>
+<connect gate="G$1" pin="SEG7" pad="41"/>
+<connect gate="G$1" pin="SEG8" pad="42"/>
+<connect gate="G$1" pin="SEG9" pad="43"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VLCD" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="64X8-CUSTOM-LCD">
+<gates>
+<gate name="G$1" symbol="64X8-CUSTOM-LCD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="64X8-CUSTOM-LCD">
+<connects>
+<connect gate="G$1" pin="COM0" pad="4"/>
+<connect gate="G$1" pin="COM1" pad="3"/>
+<connect gate="G$1" pin="COM2" pad="2"/>
+<connect gate="G$1" pin="COM3" pad="1"/>
+<connect gate="G$1" pin="COM4" pad="37"/>
+<connect gate="G$1" pin="COM5" pad="38"/>
+<connect gate="G$1" pin="COM6" pad="39"/>
+<connect gate="G$1" pin="COM7" pad="40"/>
+<connect gate="G$1" pin="SEG0" pad="41"/>
+<connect gate="G$1" pin="SEG1" pad="42"/>
+<connect gate="G$1" pin="SEG10" pad="51"/>
+<connect gate="G$1" pin="SEG11" pad="52"/>
+<connect gate="G$1" pin="SEG12" pad="53"/>
+<connect gate="G$1" pin="SEG13" pad="54"/>
+<connect gate="G$1" pin="SEG14" pad="55"/>
+<connect gate="G$1" pin="SEG15" pad="56"/>
+<connect gate="G$1" pin="SEG16" pad="57"/>
+<connect gate="G$1" pin="SEG17" pad="58"/>
+<connect gate="G$1" pin="SEG18" pad="59"/>
+<connect gate="G$1" pin="SEG19" pad="60"/>
+<connect gate="G$1" pin="SEG2" pad="43"/>
+<connect gate="G$1" pin="SEG20" pad="61"/>
+<connect gate="G$1" pin="SEG21" pad="62"/>
+<connect gate="G$1" pin="SEG22" pad="63"/>
+<connect gate="G$1" pin="SEG23" pad="64"/>
+<connect gate="G$1" pin="SEG24" pad="65"/>
+<connect gate="G$1" pin="SEG25" pad="66"/>
+<connect gate="G$1" pin="SEG26" pad="67"/>
+<connect gate="G$1" pin="SEG27" pad="68"/>
+<connect gate="G$1" pin="SEG28" pad="69"/>
+<connect gate="G$1" pin="SEG29" pad="70"/>
+<connect gate="G$1" pin="SEG3" pad="44"/>
+<connect gate="G$1" pin="SEG30" pad="71"/>
+<connect gate="G$1" pin="SEG31" pad="72"/>
+<connect gate="G$1" pin="SEG32" pad="36"/>
+<connect gate="G$1" pin="SEG33" pad="35"/>
+<connect gate="G$1" pin="SEG34" pad="34"/>
+<connect gate="G$1" pin="SEG35" pad="33"/>
+<connect gate="G$1" pin="SEG36" pad="32"/>
+<connect gate="G$1" pin="SEG37" pad="31"/>
+<connect gate="G$1" pin="SEG38" pad="30"/>
+<connect gate="G$1" pin="SEG39" pad="29"/>
+<connect gate="G$1" pin="SEG4" pad="45"/>
+<connect gate="G$1" pin="SEG40" pad="28"/>
+<connect gate="G$1" pin="SEG41" pad="27"/>
+<connect gate="G$1" pin="SEG42" pad="26"/>
+<connect gate="G$1" pin="SEG43" pad="25"/>
+<connect gate="G$1" pin="SEG44" pad="24"/>
+<connect gate="G$1" pin="SEG45" pad="23"/>
+<connect gate="G$1" pin="SEG46" pad="22"/>
+<connect gate="G$1" pin="SEG47" pad="21"/>
+<connect gate="G$1" pin="SEG48" pad="20"/>
+<connect gate="G$1" pin="SEG49" pad="19"/>
+<connect gate="G$1" pin="SEG5" pad="46"/>
+<connect gate="G$1" pin="SEG50" pad="18"/>
+<connect gate="G$1" pin="SEG51" pad="17"/>
+<connect gate="G$1" pin="SEG52" pad="16"/>
+<connect gate="G$1" pin="SEG53" pad="15"/>
+<connect gate="G$1" pin="SEG54" pad="14"/>
+<connect gate="G$1" pin="SEG55" pad="13"/>
+<connect gate="G$1" pin="SEG56" pad="12"/>
+<connect gate="G$1" pin="SEG57" pad="11"/>
+<connect gate="G$1" pin="SEG58" pad="10"/>
+<connect gate="G$1" pin="SEG59" pad="9"/>
+<connect gate="G$1" pin="SEG6" pad="47"/>
+<connect gate="G$1" pin="SEG60" pad="8"/>
+<connect gate="G$1" pin="SEG61" pad="7"/>
+<connect gate="G$1" pin="SEG62" pad="6"/>
+<connect gate="G$1" pin="SEG63" pad="5"/>
+<connect gate="G$1" pin="SEG7" pad="48"/>
+<connect gate="G$1" pin="SEG8" pad="49"/>
+<connect gate="G$1" pin="SEG9" pad="50"/>
 </connects>
 <technologies>
 <technology name=""/>

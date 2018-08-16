@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1160,13 +1160,13 @@
 <wire x1="45.5" y1="0" x2="45.5" y2="77" width="0.2" layer="51"/>
 <wire x1="45.5" y1="77" x2="-45.5" y2="77" width="0.2" layer="51"/>
 <wire x1="-45.5" y1="77" x2="-45.5" y2="0" width="0.2" layer="51"/>
-<wire x1="-28.7" y1="14.5" x2="-28.7" y2="0" width="0.2" layer="51"/>
-<wire x1="-16.2" y1="14.5" x2="-16.2" y2="8" width="0.2" layer="51"/>
-<wire x1="-28.7" y1="14.5" x2="-22.45" y2="14.5" width="0.2" layer="51"/>
-<wire x1="-22.45" y1="14.5" x2="-16.2" y2="14.5" width="0.2" layer="51"/>
+<wire x1="-28.7" y1="15.6" x2="-28.7" y2="0" width="0.2" layer="51"/>
+<wire x1="-16.2" y1="15.6" x2="-16.2" y2="8" width="0.2" layer="51"/>
+<wire x1="-28.7" y1="15.6" x2="-22.45" y2="15.6" width="0.2" layer="51"/>
+<wire x1="-22.45" y1="15.6" x2="-16.2" y2="15.6" width="0.2" layer="51"/>
 <wire x1="8" y1="8" x2="8" y2="0" width="0.2" layer="51"/>
 <wire x1="-16.2" y1="8" x2="8" y2="8" width="0.2" layer="51"/>
-<wire x1="-22.45" y1="0" x2="-22.45" y2="14.5" width="0.2" layer="51" style="shortdash"/>
+<wire x1="-22.45" y1="0" x2="-22.45" y2="15.6" width="0.2" layer="51" style="shortdash"/>
 </package>
 </packages>
 <symbols>

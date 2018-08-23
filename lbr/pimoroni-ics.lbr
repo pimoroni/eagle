@@ -512,9 +512,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="P1" x="0.95" y="0.975" dx="0.8" dy="0.35" layer="1" roundness="20"/>
 <smd name="P4" x="0.95" y="-0.975" dx="0.8" dy="0.35" layer="1" roundness="20"/>
 <smd name="P5" x="-0.95" y="-0.975" dx="0.8" dy="0.35" layer="1" roundness="20"/>
-<wire x1="-1" y1="-1.35" x2="1" y2="-1.35" width="0.127" layer="21"/>
-<wire x1="-1" y1="1.35" x2="1" y2="1.35" width="0.127" layer="21"/>
-<circle x="1.925" y="1.15" radius="0.1" width="0.3" layer="21"/>
+<wire x1="-1" y1="-1.35" x2="1" y2="-1.35" width="0.127" layer="51"/>
+<wire x1="-1" y1="1.35" x2="1" y2="1.35" width="0.127" layer="51"/>
+<circle x="0.18288125" y="0.9525" radius="0.1" width="0.3" layer="21"/>
 <text x="0" y="1.9" size="0.8128" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <text x="0.018" y="-2.6632" size="0.8128" layer="27" font="vector" ratio="14" align="bottom-center">&gt;VALUE</text>
 </package>

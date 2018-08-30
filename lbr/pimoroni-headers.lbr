@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.75" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2963,6 +2963,27 @@ GND</text>
 <wire x1="12.065" y1="3.175" x2="10.795" y2="3.175" width="0.3" layer="21"/>
 <text x="-12.065" y="1.905" size="1.27" layer="51">Wires inserted from this side</text>
 </package>
+<package name="1X5_FEMALE_SMT_RIGHT_ANGLE">
+<smd name="A1" x="-5.08" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B1" x="-5.08" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A2" x="-2.54" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A3" x="0" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A4" x="2.54" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A5" x="5.08" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B2" x="-2.54" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B3" x="0" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B4" x="2.54" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B5" x="5.08" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<wire x1="6.35" y1="-4.05" x2="6.35" y2="4.05" width="0.2" layer="51"/>
+<wire x1="6.35" y1="4.05" x2="-6.35" y2="4.05" width="0.2" layer="51"/>
+<wire x1="-6.35" y1="4.05" x2="-6.35" y2="-4.05" width="0.2" layer="51"/>
+<wire x1="-6.35" y1="-4.05" x2="6.35" y2="-4.05" width="0.2" layer="51"/>
+<wire x1="4.445" y1="3.175" x2="5.08" y2="1.27" width="0.3" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.715" y2="3.175" width="0.3" layer="21"/>
+<wire x1="5.715" y1="3.175" x2="4.445" y2="3.175" width="0.3" layer="21"/>
+<text x="-5.715" y="0" size="1.27" layer="51">Wires inserted 
+from this side</text>
+</package>
 </packages>
 <symbols>
 <symbol name="1X2">
@@ -4116,7 +4137,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="5-WAY">
+<deviceset name="5-WAY" prefix="J">
 <gates>
 <gate name="G$1" symbol="1X5" x="-2.54" y="0"/>
 </gates>
@@ -4140,6 +4161,18 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="P$3" pad="3"/>
 <connect gate="G$1" pin="P$4" pad="4"/>
 <connect gate="G$1" pin="P$5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FEMALE_SMD_RA" package="1X5_FEMALE_SMT_RIGHT_ANGLE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="A1 B1" route="any"/>
+<connect gate="G$1" pin="P$2" pad="A2 B2" route="any"/>
+<connect gate="G$1" pin="P$3" pad="A3 B3" route="any"/>
+<connect gate="G$1" pin="P$4" pad="A4 B4" route="any"/>
+<connect gate="G$1" pin="P$5" pad="A5 B5" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>

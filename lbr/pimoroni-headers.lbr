@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2983,6 +2983,29 @@ GND</text>
 <wire x1="5.715" y1="3.175" x2="4.445" y2="3.175" width="0.3" layer="21"/>
 <text x="-5.715" y="0" size="1.27" layer="51">Wires inserted 
 from this side</text>
+</package>
+<package name="2X6_FEMALE_SMT_RIGHT_ANGLE">
+<smd name="A1" x="-6.35" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B1" x="-6.35" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A2" x="-3.81" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A3" x="-1.27" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A4" x="1.27" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A5" x="3.81" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B2" x="-3.81" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B3" x="-1.27" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B4" x="1.27" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B5" x="3.81" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<wire x1="7.62" y1="-4.05" x2="7.62" y2="4.05" width="0.2" layer="51"/>
+<wire x1="7.62" y1="4.05" x2="-7.62" y2="4.05" width="0.2" layer="51"/>
+<wire x1="-7.62" y1="4.05" x2="-7.62" y2="-4.05" width="0.2" layer="51"/>
+<wire x1="-7.62" y1="-4.05" x2="7.62" y2="-4.05" width="0.2" layer="51"/>
+<wire x1="5.715" y1="3.175" x2="6.35" y2="1.27" width="0.3" layer="21"/>
+<wire x1="6.35" y1="1.27" x2="6.985" y2="3.175" width="0.3" layer="21"/>
+<wire x1="6.985" y1="3.175" x2="5.715" y2="3.175" width="0.3" layer="21"/>
+<text x="-6.985" y="0" size="1.27" layer="51">Wires inserted 
+from this side</text>
+<smd name="A6" x="6.35" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B6" x="6.35" y="-5.05" dx="1" dy="2.9" layer="1"/>
 </package>
 </packages>
 <symbols>

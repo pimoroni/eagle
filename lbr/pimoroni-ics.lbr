@@ -8090,7 +8090,7 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 </device>
 </devices>
 </deviceset>
-<deviceset name="74LVC2G34GW,125">
+<deviceset name="74LVC2G17GW,125">
 <gates>
 <gate name="G$1" symbol="DUALBUFFER" x="0" y="0"/>
 </gates>

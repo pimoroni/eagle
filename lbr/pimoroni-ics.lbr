@@ -5521,10 +5521,10 @@ VDD_MIPI: 1.1-1.3V 21mA</text>
 <text x="17.78" y="-38.1" size="1.27" layer="97" align="bottom-right">MSEL high for normal mode</text>
 </symbol>
 <symbol name="ATSAMD11D14A">
-<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
 <pin name="PA02" x="-17.78" y="10.16" length="middle"/>
 <pin name="PA03" x="-17.78" y="7.62" length="middle"/>
 <pin name="PA04" x="-17.78" y="5.08" length="middle"/>
@@ -5532,8 +5532,8 @@ VDD_MIPI: 1.1-1.3V 21mA</text>
 <pin name="PA06" x="-17.78" y="0" length="middle"/>
 <pin name="PA07" x="-17.78" y="-2.54" length="middle"/>
 <pin name="PA14" x="-17.78" y="-15.24" length="middle"/>
-<pin name="PA31" x="17.78" y="10.16" length="middle" rot="R180"/>
-<pin name="PA30" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="PA31/SWDIO" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="PA30/SWCLK" x="17.78" y="7.62" length="middle" rot="R180"/>
 <pin name="PAD28/RST" x="17.78" y="5.08" length="middle" rot="R180"/>
 <pin name="PA25/UDP" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="PA24/UDM" x="17.78" y="-2.54" length="middle" rot="R180"/>
@@ -5541,14 +5541,16 @@ VDD_MIPI: 1.1-1.3V 21mA</text>
 <pin name="PA22" x="17.78" y="-7.62" length="middle" rot="R180"/>
 <pin name="PA16" x="17.78" y="-12.7" length="middle" rot="R180"/>
 <pin name="PA15" x="17.78" y="-15.24" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="-22.86" length="middle" rot="R90"/>
+<pin name="GND" x="-17.78" y="-20.32" length="middle"/>
 <pin name="PA09" x="-17.78" y="-7.62" length="middle"/>
-<pin name="VDD" x="0" y="17.78" length="middle" rot="R270"/>
+<pin name="VDD" x="-17.78" y="15.24" length="middle"/>
 <pin name="PA08" x="-17.78" y="-5.08" length="middle"/>
 <pin name="PA10" x="-17.78" y="-10.16" length="middle"/>
 <pin name="PA11" x="-17.78" y="-12.7" length="middle"/>
 <pin name="PA27" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="PA17" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<text x="-11.176" y="18.796" size="1.778" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-25.4" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="ATSAMD21J15B">
 <pin name="VDDIN" x="-17.78" y="40.64" visible="pin" length="short"/>
@@ -8234,7 +8236,7 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 </device>
 </devices>
 </deviceset>
-<deviceset name="74LVC2G34GW,125">
+<deviceset name="74LVC2G17GW,125">
 <gates>
 <gate name="G$1" symbol="DUALBUFFER" x="0" y="0"/>
 </gates>
@@ -8805,8 +8807,8 @@ Source:</description>
 <connect gate="G$1" pin="PA23/USOF" pad="D3"/>
 <connect gate="G$1" pin="PA24/UDM" pad="D1"/>
 <connect gate="G$1" pin="PA25/UDP" pad="C1"/>
-<connect gate="G$1" pin="PA30" pad="D2"/>
-<connect gate="G$1" pin="PA31" pad="E1"/>
+<connect gate="G$1" pin="PA30/SWCLK" pad="D2"/>
+<connect gate="G$1" pin="PA31/SWDIO" pad="E1"/>
 <connect gate="G$1" pin="PAD28/RST" pad="E2"/>
 <connect gate="G$1" pin="VDD" pad="B1"/>
 </connects>
@@ -8843,8 +8845,8 @@ Source:</description>
 <connect gate="G$1" pin="PA24/UDM" pad="21"/>
 <connect gate="G$1" pin="PA25/UDP" pad="22"/>
 <connect gate="G$1" pin="PA27" pad="17"/>
-<connect gate="G$1" pin="PA30" pad="19"/>
-<connect gate="G$1" pin="PA31" pad="20"/>
+<connect gate="G$1" pin="PA30/SWCLK" pad="19"/>
+<connect gate="G$1" pin="PA31/SWDIO" pad="20"/>
 <connect gate="G$1" pin="PAD28/RST" pad="18"/>
 <connect gate="G$1" pin="VDD" pad="24"/>
 </connects>

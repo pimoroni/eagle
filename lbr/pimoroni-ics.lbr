@@ -5642,12 +5642,13 @@ VDD_MIPI: 1.1-1.3V 21mA</text>
 <pin name="CLKOUT" x="15.24" y="0" length="middle" rot="R180"/>
 <pin name="!INT" x="15.24" y="-5.08" length="middle" rot="R180"/>
 <pin name="EVI" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="17.78" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="20.32" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
 <text x="0" y="12.7" size="1.778" layer="94" align="bottom-center">RV-3028 RTC
-1.2-5.5V</text>
+1.2-5.5V
+I2C 0x52</text>
 <text x="-2.54" y="-5.08" size="1.778" layer="94" align="center">Open drain</text>
 </symbol>
 </symbols>

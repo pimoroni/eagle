@@ -1000,6 +1000,89 @@ undermounted!</text>
 <wire x1="-1.05" y1="-3.2" x2="1.4" y2="-3.2" width="0.127" layer="51"/>
 <wire x1="1.4" y1="-3.2" x2="2.65" y2="-1.95" width="0.127" layer="51"/>
 </package>
+<package name="TRACKBALL">
+<hole x="0" y="-3.9" drill="0.85"/>
+<hole x="0" y="3.9" drill="0.85"/>
+<wire x1="4.65" y1="-4.55" x2="2.2" y2="-4.55" width="0.2" layer="51"/>
+<wire x1="2.2" y1="-4.55" x2="1.2" y2="-4.55" width="0.2" layer="51"/>
+<wire x1="1.2" y1="-4.55" x2="-1.2" y2="-4.55" width="0.2" layer="51"/>
+<wire x1="-1.2" y1="-4.55" x2="-2.2" y2="-4.55" width="0.2" layer="51"/>
+<wire x1="-2.2" y1="-4.55" x2="-4.65" y2="-4.55" width="0.2" layer="51"/>
+<wire x1="-4.65" y1="-4.55" x2="-4.65" y2="4.55" width="0.2" layer="51"/>
+<wire x1="-4.65" y1="4.55" x2="4.65" y2="4.55" width="0.2" layer="51"/>
+<wire x1="4.65" y1="4.55" x2="4.65" y2="-4.55" width="0.2" layer="51"/>
+<wire x1="2.2" y1="-4.55" x2="2.2" y2="-5.35" width="0.2" layer="51"/>
+<wire x1="2.2" y1="-5.35" x2="1.2" y2="-5.35" width="0.2" layer="51"/>
+<wire x1="1.2" y1="-5.35" x2="1.2" y2="-4.55" width="0.2" layer="51"/>
+<wire x1="-1.2" y1="-5.35" x2="-2.2" y2="-5.35" width="0.2" layer="51"/>
+<wire x1="-2.2" y1="-5.35" x2="-2.2" y2="-4.55" width="0.2" layer="51"/>
+<wire x1="-1.2" y1="-4.55" x2="-1.2" y2="-5.35" width="0.2" layer="51"/>
+<wire x1="-2.2" y1="4.55" x2="-2.2" y2="5.35" width="0.2" layer="51"/>
+<wire x1="-2.2" y1="5.35" x2="-1.2" y2="5.35" width="0.2" layer="51"/>
+<wire x1="-1.2" y1="5.35" x2="-1.2" y2="4.55" width="0.2" layer="51"/>
+<wire x1="1.2" y1="5.35" x2="2.2" y2="5.35" width="0.2" layer="51"/>
+<wire x1="2.2" y1="5.35" x2="2.2" y2="4.55" width="0.2" layer="51"/>
+<wire x1="1.2" y1="4.55" x2="1.2" y2="5.35" width="0.2" layer="51"/>
+<wire x1="3.33" y1="3.097" x2="3.33" y2="3.763" width="0.1" layer="51"/>
+<wire x1="3.663" y1="3.43" x2="2.997" y2="3.43" width="0.1" layer="51"/>
+<wire x1="3.33" y1="-3.763" x2="3.33" y2="-3.097" width="0.1" layer="51"/>
+<wire x1="3.663" y1="-3.43" x2="2.997" y2="-3.43" width="0.1" layer="51"/>
+<wire x1="-3.33" y1="3.097" x2="-3.33" y2="3.763" width="0.1" layer="51"/>
+<wire x1="-2.997" y1="3.43" x2="-3.663" y2="3.43" width="0.1" layer="51"/>
+<wire x1="-3.33" y1="-3.763" x2="-3.33" y2="-3.097" width="0.1" layer="51"/>
+<wire x1="-2.997" y1="-3.43" x2="-3.663" y2="-3.43" width="0.1" layer="51"/>
+<wire x1="-1.525" y1="-4.575" x2="-1.525" y2="-1.525" width="0.1" layer="51"/>
+<wire x1="-1.525" y1="-1.525" x2="-4.575" y2="-1.525" width="0.1" layer="51"/>
+<wire x1="-4.575" y1="1.525" x2="-1.525" y2="1.525" width="0.1" layer="51"/>
+<wire x1="-1.525" y1="1.525" x2="-1.525" y2="4.575" width="0.1" layer="51"/>
+<wire x1="1.525" y1="4.575" x2="1.525" y2="1.525" width="0.1" layer="51"/>
+<wire x1="1.525" y1="1.525" x2="4.575" y2="1.525" width="0.1" layer="51"/>
+<wire x1="4.575" y1="-1.525" x2="1.525" y2="-1.525" width="0.1" layer="51"/>
+<wire x1="1.525" y1="-1.525" x2="1.525" y2="-4.575" width="0.1" layer="51"/>
+<wire x1="-6" y1="-6" x2="-6" y2="-2" width="0.2" layer="51"/>
+<wire x1="-6" y1="-2" x2="-6" y2="2" width="0.2" layer="51"/>
+<wire x1="-6" y1="2" x2="-6" y2="6" width="0.2" layer="51"/>
+<wire x1="-6" y1="6" x2="6" y2="6" width="0.2" layer="51"/>
+<wire x1="6" y1="6" x2="6" y2="2" width="0.2" layer="51"/>
+<wire x1="6" y1="2" x2="6" y2="-2" width="0.2" layer="51"/>
+<wire x1="6" y1="-2" x2="6" y2="-6" width="0.2" layer="51"/>
+<wire x1="6" y1="-6" x2="-6" y2="-6" width="0.2" layer="51"/>
+<wire x1="-7" y1="-7" x2="7" y2="-7" width="0.2" layer="51"/>
+<wire x1="7" y1="-7" x2="7" y2="7" width="0.2" layer="51"/>
+<wire x1="7" y1="7" x2="-7" y2="7" width="0.2" layer="51"/>
+<wire x1="-7" y1="7" x2="-7" y2="-7" width="0.2" layer="51"/>
+<hole x="0" y="6.5" drill="1"/>
+<hole x="0" y="-6.5" drill="1"/>
+<wire x1="-7" y1="1.65" x2="-7" y2="-1.65" width="0" layer="20"/>
+<wire x1="-7" y1="-1.65" x2="-6.15" y2="-2.5" width="0" layer="20" curve="90"/>
+<wire x1="-6.15" y1="-2.5" x2="-5.3" y2="-1.65" width="0" layer="20" curve="90"/>
+<wire x1="-5.3" y1="-1.65" x2="-5.3" y2="1.65" width="0" layer="20"/>
+<wire x1="-5.3" y1="1.65" x2="-6.15" y2="2.5" width="0" layer="20" curve="90"/>
+<wire x1="-6.15" y1="2.5" x2="-7" y2="1.65" width="0" layer="20" curve="90"/>
+<wire x1="6.15" y1="2.5" x2="5.3" y2="1.65" width="0" layer="20" curve="90"/>
+<wire x1="5.3" y1="1.65" x2="5.3" y2="-1.65" width="0" layer="20"/>
+<wire x1="5.3" y1="-1.65" x2="6.15" y2="-2.5" width="0" layer="20" curve="90"/>
+<wire x1="6.15" y1="-2.5" x2="7" y2="-1.65" width="0" layer="20" curve="90"/>
+<wire x1="7" y1="-1.65" x2="7" y2="1.65" width="0" layer="20"/>
+<wire x1="7" y1="1.65" x2="6.15" y2="2.5" width="0" layer="20" curve="90"/>
+<wire x1="-6" y1="-2" x2="-7.5" y2="-2" width="0.2" layer="51"/>
+<wire x1="-7.5" y1="-2" x2="-7.5" y2="2" width="0.2" layer="51"/>
+<wire x1="-7.5" y1="2" x2="-6" y2="2" width="0.2" layer="51"/>
+<wire x1="6" y1="2" x2="7.5" y2="2" width="0.2" layer="51"/>
+<wire x1="7.5" y1="2" x2="7.5" y2="-2" width="0.2" layer="51"/>
+<wire x1="7.5" y1="-2" x2="6" y2="-2" width="0.2" layer="51"/>
+</package>
+<package name="MINI_TACT">
+<wire x1="-2.4" y1="-2.4" x2="-2.4" y2="2.4" width="0.2" layer="51"/>
+<wire x1="-2.4" y1="2.4" x2="2.4" y2="2.4" width="0.2" layer="51"/>
+<wire x1="2.4" y1="2.4" x2="2.4" y2="-2.4" width="0.2" layer="51"/>
+<wire x1="2.4" y1="-2.4" x2="-2.4" y2="-2.4" width="0.2" layer="51"/>
+<smd name="1A" x="-2.1" y="1.35" dx="1" dy="0.8" layer="1"/>
+<smd name="1B" x="2.1" y="1.35" dx="1" dy="0.8" layer="1"/>
+<smd name="2B" x="2.1" y="-1.35" dx="1" dy="0.8" layer="1"/>
+<smd name="2A" x="-2.1" y="-1.35" dx="1" dy="0.8" layer="1"/>
+<circle x="0" y="0" radius="2.1" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-DPDT">
@@ -1307,6 +1390,9 @@ MOTOR</text>
 <wire x1="-2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="10.16" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 </symbol>
+<symbol name="TRACKBALL">
+<circle x="0" y="0" radius="63.5" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FSMSM">
@@ -1585,7 +1671,7 @@ MOTOR</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SKRRABE010" prefix="SW" uservalue="yes">
+<deviceset name="TACT_SWITCH" prefix="SW" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="SWITCH-SPST" x="0" y="0"/>
 </gates>
@@ -1594,6 +1680,15 @@ MOTOR</text>
 <connects>
 <connect gate="G$1" pin="1" pad="1 3"/>
 <connect gate="G$1" pin="2" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MINI" package="MINI_TACT">
+<connects>
+<connect gate="G$1" pin="1" pad="1A 1B" route="any"/>
+<connect gate="G$1" pin="2" pad="2A 2B" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1712,6 +1807,18 @@ MOTOR</text>
 </gates>
 <devices>
 <device name="" package="KEY-SWITCH-MX-NO-VIA">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRACKBALL">
+<gates>
+<gate name="G$1" symbol="TRACKBALL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TRACKBALL">
 <technologies>
 <technology name=""/>
 </technologies>

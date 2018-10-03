@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2919,11 +2919,11 @@ GND</text>
 </package>
 <package name="CROC_CLIP_PAD">
 <pad name="H" x="0" y="0" drill="4" diameter="5.2"/>
-<smd name="PT" x="0" y="3.375" dx="4.826" dy="6.75" layer="1" cream="no"/>
-<wire x1="-4" y1="7" x2="4" y2="7" width="0.127" layer="51"/>
-<smd name="PB" x="0" y="3.375" dx="4.826" dy="6.75" layer="16" cream="no"/>
-<rectangle x1="-2.513" y1="6.7" x2="2.513" y2="7" layer="30"/>
-<rectangle x1="-2.513" y1="6.7" x2="2.513" y2="7" layer="29"/>
+<smd name="PT" x="0" y="2.375" dx="4.826" dy="4.75" layer="1" cream="no"/>
+<wire x1="-4" y1="5" x2="4" y2="5" width="0.127" layer="51"/>
+<smd name="PB" x="0" y="2.375" dx="4.826" dy="4.75" layer="16" cream="no"/>
+<rectangle x1="-2.513" y1="4.7" x2="2.513" y2="5" layer="30"/>
+<rectangle x1="-2.513" y1="4.7" x2="2.513" y2="5" layer="29"/>
 </package>
 <package name="1X1-M2.0-THREADED-STUD-NO-HOLE">
 <circle x="0" y="0" radius="1.8" width="0.05" layer="51"/>

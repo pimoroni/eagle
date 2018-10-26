@@ -977,8 +977,8 @@ undermounted!</text>
 <wire x1="5.35" y1="2.5" x2="5.35" y2="-2.5" width="0.127" layer="51"/>
 </package>
 <package name="BK-414-TR">
-<smd name="POS2" x="-3.45" y="0" dx="1.8" dy="3.2" layer="1" rot="R180"/>
-<smd name="POS1" x="3.45" y="0" dx="1.8" dy="3.2" layer="1" rot="R180"/>
+<smd name="POS2" x="-3.325" y="0" dx="1.55" dy="4" layer="1" rot="R180"/>
+<smd name="POS1" x="3.325" y="0" dx="1.55" dy="4" layer="1" rot="R180"/>
 <smd name="NEG" x="0" y="-0.35" dx="3.8" dy="4.5" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
 <circle x="0" y="0" radius="2.4" width="0.127" layer="51"/>
 <wire x1="-2.65" y1="1.9" x2="2.65" y2="1.9" width="0.127" layer="51"/>

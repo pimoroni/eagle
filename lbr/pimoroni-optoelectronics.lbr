@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -28,7 +28,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -54,12 +54,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -1198,6 +1198,26 @@
 <wire x1="1" y1="-0.5" x2="1" y2="1" width="0.127" layer="51"/>
 <wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="51"/>
 <wire x1="0.3" y1="1" x2="0.3" y2="-1" width="0.2" layer="21"/>
+</package>
+<package name="LCD_154">
+<wire x1="17.9" y1="36.8" x2="17.9" y2="3" width="0.1" layer="51"/>
+<wire x1="17.9" y1="3" x2="14.9" y2="0" width="0.1" layer="51" curve="-90"/>
+<wire x1="14.9" y1="0" x2="-14.9" y2="0" width="0.1" layer="51"/>
+<wire x1="-14.9" y1="0" x2="-17.9" y2="3" width="0.1" layer="51" curve="-90"/>
+<wire x1="-17.9" y1="3" x2="-17.9" y2="36.8" width="0.1" layer="51"/>
+<wire x1="-17.9" y1="36.8" x2="-14.9" y2="39.8" width="0.1" layer="51" curve="-90"/>
+<wire x1="-14.9" y1="39.8" x2="14.9" y2="39.8" width="0.1" layer="51"/>
+<wire x1="14.9" y1="39.8" x2="17.9" y2="36.8" width="0.1" layer="51" curve="-90"/>
+<wire x1="15.76" y1="38.33" x2="-15.74" y2="38.33" width="0.127" layer="51"/>
+<wire x1="-15.74" y1="38.33" x2="-15.74" y2="3.33" width="0.127" layer="51"/>
+<wire x1="-15.74" y1="3.33" x2="15.76" y2="3.33" width="0.127" layer="51"/>
+<wire x1="15.76" y1="3.33" x2="15.76" y2="38.33" width="0.127" layer="51"/>
+<wire x1="13.86" y1="36.09" x2="13.86" y2="8.37" width="0.127" layer="51"/>
+<wire x1="-13.86" y1="36.09" x2="-13.86" y2="8.37" width="0.127" layer="51"/>
+<wire x1="13.86" y1="8.37" x2="-13.86" y2="8.37" width="0.127" layer="51"/>
+<wire x1="-13.86" y1="36.09" x2="13.86" y2="36.09" width="0.127" layer="51"/>
+<wire x1="0" y1="39.8" x2="0" y2="0" width="0.127" layer="51" style="longdash"/>
+<wire x1="17.9" y1="22.23" x2="-17.9" y2="22.23" width="0.127" layer="51" style="longdash"/>
 </package>
 </packages>
 <symbols>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -933,7 +933,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="P$26" x="-0.4" y="2.1" dx="0.2" dy="0.8" layer="1"/>
 <smd name="P$27" x="-0.8" y="2.1" dx="0.2" dy="0.8" layer="1"/>
 <smd name="P$28" x="-1.2" y="2.1" dx="0.2" dy="0.8" layer="1"/>
-<smd name="P$29" x="0" y="0" dx="2.35" dy="2.35" layer="1" rot="R270"/>
+<smd name="PAD" x="0" y="0" dx="2.35" dy="2.35" layer="1" rot="R270"/>
 <wire x1="-1.6" y1="2.1" x2="-2.1" y2="2.1" width="0.127" layer="21"/>
 <wire x1="-2.1" y1="2.1" x2="-2.1" y2="1.6" width="0.127" layer="21"/>
 <wire x1="1.6" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="21"/>
@@ -942,7 +942,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <wire x1="2.1" y1="-2.1" x2="1.6" y2="-2.1" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="-2.1" x2="-2.1" y2="-2.1" width="0.127" layer="21"/>
 <wire x1="-2.1" y1="-2.1" x2="-2.1" y2="-1.6" width="0.127" layer="21"/>
-<circle x="-2.6" y="1.9" radius="0.1" width="0.127" layer="21"/>
+<circle x="-1.9" y="1.9" radius="0.1" width="0.2" layer="21"/>
 <text x="-2" y="3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2" y="-4" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -3105,6 +3105,49 @@ Source:</description>
 <wire x1="1.45" y1="-0.9" x2="-1.45" y2="-0.9" width="0.127" layer="51"/>
 <wire x1="-0.2" y1="0.2" x2="0.2" y2="0.2" width="0.127" layer="51"/>
 <wire x1="0" y1="0.4" x2="0" y2="0" width="0.127" layer="51"/>
+</package>
+<package name="UQFN-28-4X4-0.5MM">
+<smd name="P$1" x="-2.05" y="1.5" dx="0.25" dy="0.7" layer="1" roundness="100" rot="R90"/>
+<smd name="P$2" x="-2" y="1" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R90"/>
+<smd name="P$3" x="-2" y="0.5" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R90"/>
+<smd name="P$4" x="-2" y="0" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R90"/>
+<smd name="P$5" x="-2" y="-0.5" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R90"/>
+<smd name="P$6" x="-2" y="-1" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R90"/>
+<smd name="P$7" x="-2.05" y="-1.5" dx="0.25" dy="0.7" layer="1" roundness="100" rot="R90"/>
+<smd name="P$8" x="-1.5" y="-2.05" dx="0.25" dy="0.7" layer="1" roundness="100" rot="R180"/>
+<smd name="P$9" x="-1" y="-2" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R180"/>
+<smd name="P$10" x="-0.5" y="-2" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R180"/>
+<smd name="P$11" x="0" y="-2" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R180"/>
+<smd name="P$12" x="0.5" y="-2" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R180"/>
+<smd name="P$13" x="1" y="-2" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R180"/>
+<smd name="P$14" x="1.5" y="-2.05" dx="0.25" dy="0.7" layer="1" roundness="100" rot="R180"/>
+<smd name="P$15" x="2.05" y="-1.5" dx="0.25" dy="0.7" layer="1" roundness="100" rot="R90"/>
+<smd name="P$16" x="2" y="-1" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R90"/>
+<smd name="P$17" x="2" y="-0.5" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R90"/>
+<smd name="P$18" x="2" y="0" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R90"/>
+<smd name="P$19" x="2" y="0.5" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R90"/>
+<smd name="P$20" x="2" y="1" dx="0.25" dy="0.8" layer="1" roundness="100" rot="R90"/>
+<smd name="P$21" x="2.05" y="1.5" dx="0.25" dy="0.7" layer="1" roundness="100" rot="R90"/>
+<smd name="P$22" x="1.5" y="2.05" dx="0.25" dy="0.7" layer="1" roundness="100"/>
+<smd name="P$23" x="1" y="2" dx="0.25" dy="0.8" layer="1" roundness="100"/>
+<smd name="P$24" x="0.5" y="2" dx="0.25" dy="0.8" layer="1" roundness="100"/>
+<smd name="P$25" x="0" y="2" dx="0.25" dy="0.8" layer="1" roundness="100"/>
+<smd name="P$26" x="-0.5" y="2" dx="0.25" dy="0.8" layer="1" roundness="100"/>
+<smd name="P$27" x="-1" y="2" dx="0.25" dy="0.8" layer="1" roundness="100"/>
+<smd name="P$28" x="-1.5" y="2.05" dx="0.25" dy="0.7" layer="1" roundness="100"/>
+<text x="-2" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2" y1="2" x2="-1.6" y2="2" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="2" x2="-2" y2="2" width="0.127" layer="21"/>
+<wire x1="-2" y1="2" x2="-2" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.6" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="1.6" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-1.6" y2="-2" width="0.127" layer="21"/>
+<circle x="-1.2" y="1.25" radius="0.070709375" width="0.2" layer="21"/>
+<circle x="-1.9" y="1.9" radius="0.070709375" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -5716,8 +5759,8 @@ I2C 0x52</text>
 <pin name="PA7" x="-17.78" y="-7.62" visible="pin" length="short"/>
 <pin name="PA9/PA11/USB_DM" x="-17.78" y="-12.7" visible="pin" length="short"/>
 <pin name="PA10/PA12/USB_DP" x="-17.78" y="-15.24" visible="pin" length="short"/>
-<pin name="PA13" x="-17.78" y="-17.78" visible="pin" length="short"/>
-<pin name="PA14" x="-17.78" y="-20.32" visible="pin" length="short"/>
+<pin name="PA13/SWDIO" x="-17.78" y="-17.78" visible="pin" length="short"/>
+<pin name="PA14/SWCLK" x="-17.78" y="-20.32" visible="pin" length="short"/>
 <pin name="PA15/SPI1_NSS" x="-17.78" y="-22.86" visible="pin" length="short"/>
 <pin name="PB1" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
 <pin name="VDDIO2" x="-17.78" y="15.24" visible="pin" length="short"/>
@@ -6712,7 +6755,7 @@ ADDR -&gt; GND  = 0x76</description>
 <connects>
 <connect gate="G$1" pin="GND" pad="P$5 P$16"/>
 <connect gate="G$1" pin="INT" pad="P$8"/>
-<connect gate="G$1" pin="NC" pad="P$3 P$6 P$7 P$24 P$25 P$29" route="any"/>
+<connect gate="G$1" pin="NC" pad="P$3 P$6 P$7 P$24 P$25 PAD" route="any"/>
 <connect gate="G$1" pin="RESET" pad="P$26"/>
 <connect gate="G$1" pin="RX0" pad="P$13"/>
 <connect gate="G$1" pin="RX1" pad="P$14"/>
@@ -9096,20 +9139,20 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="STM32F042G4">
+<deviceset name="STM32F042G4" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="STM32F042G4" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="UQFN-28">
+<device name="QFN28" package="UQFN-28-4X4-0.5MM">
 <connects>
 <connect gate="G$1" pin="!RST" pad="P$4"/>
 <connect gate="G$1" pin="GND" pad="P$16"/>
 <connect gate="G$1" pin="PA0" pad="P$6"/>
 <connect gate="G$1" pin="PA1" pad="P$7"/>
 <connect gate="G$1" pin="PA10/PA12/USB_DP" pad="P$20"/>
-<connect gate="G$1" pin="PA13" pad="P$21"/>
-<connect gate="G$1" pin="PA14" pad="P$22"/>
+<connect gate="G$1" pin="PA13/SWDIO" pad="P$21"/>
+<connect gate="G$1" pin="PA14/SWCLK" pad="P$22"/>
 <connect gate="G$1" pin="PA15/SPI1_NSS" pad="P$23"/>
 <connect gate="G$1" pin="PA2" pad="P$8"/>
 <connect gate="G$1" pin="PA3" pad="P$9"/>

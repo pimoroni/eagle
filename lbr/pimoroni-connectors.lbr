@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1572,6 +1572,37 @@
 <smd name="MT1" x="2.8" y="-2.925" dx="0.4" dy="0.95" layer="1"/>
 <smd name="MT2" x="-2.8" y="-2.925" dx="0.4" dy="0.95" layer="1"/>
 </package>
+<package name="LCD_CONNECTOR_24P">
+<wire x1="-3.51" y1="1.5" x2="-3.51" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3.51" y1="-1.5" x2="3.51" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="3.51" y1="-1.5" x2="3.51" y2="1.5" width="0.127" layer="21"/>
+<wire x1="3.51" y1="1.5" x2="-3.51" y2="1.5" width="0.127" layer="21"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<smd name="1" x="2.2" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="2" x="1.8" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="3" x="1.4" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="4" x="1" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="5" x="0.6" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="6" x="0.2" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="7" x="-0.2" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="8" x="-0.6" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="9" x="-1" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="10" x="-1.4" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="11" x="-1.8" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="12" x="-2.2" y="1.4" dx="0.2" dy="0.8" layer="1"/>
+<smd name="13" x="-2.2" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="14" x="-1.8" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="15" x="-1.4" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="16" x="-1" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="17" x="-0.6" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="18" x="-0.2" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="19" x="0.2" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="20" x="0.6" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="21" x="1" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="22" x="1.4" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="23" x="1.8" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="24" x="2.2" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -2268,6 +2299,38 @@
 <pin name="P$13" x="10.16" y="-20.32" visible="pin" length="short" rot="R180"/>
 <pin name="P$14" x="10.16" y="-22.86" visible="pin" length="short" rot="R180"/>
 <pin name="P$15" x="10.16" y="-25.4" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="LCD_CONNECTOR_24P">
+<pin name="1" x="-12.7" y="12.7" length="middle"/>
+<pin name="2" x="-12.7" y="10.16" length="middle"/>
+<pin name="3" x="-12.7" y="7.62" length="middle"/>
+<pin name="4" x="-12.7" y="5.08" length="middle"/>
+<pin name="5" x="-12.7" y="2.54" length="middle"/>
+<pin name="6" x="-12.7" y="0" length="middle"/>
+<pin name="7" x="-12.7" y="-2.54" length="middle"/>
+<pin name="8" x="-12.7" y="-5.08" length="middle"/>
+<pin name="9" x="-12.7" y="-7.62" length="middle"/>
+<pin name="10" x="-12.7" y="-10.16" length="middle"/>
+<pin name="11" x="-12.7" y="-12.7" length="middle"/>
+<pin name="12" x="-12.7" y="-15.24" length="middle"/>
+<wire x1="-7.62" y1="-17.78" x2="-7.62" y2="15.24" width="0.254" layer="97"/>
+<wire x1="-7.62" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="97"/>
+<wire x1="7.62" y1="15.24" x2="7.62" y2="-17.78" width="0.254" layer="97"/>
+<wire x1="7.62" y1="-17.78" x2="-7.62" y2="-17.78" width="0.254" layer="97"/>
+<text x="-7.62" y="17.78" size="1.778" layer="97">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="97">&gt;VALUE</text>
+<pin name="13" x="12.7" y="-15.24" length="middle" rot="R180"/>
+<pin name="14" x="12.7" y="-12.7" length="middle" rot="R180"/>
+<pin name="15" x="12.7" y="-10.16" length="middle" rot="R180"/>
+<pin name="16" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="17" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="18" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="19" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="20" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="21" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="22" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="23" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="24" x="12.7" y="12.7" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3465,6 +3528,94 @@ push-push type</description>
 <connect gate="G$1" pin="P$7" pad="P$7"/>
 <connect gate="G$1" pin="P$8" pad="P$8"/>
 <connect gate="G$1" pin="P$9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LCD_CONNECTOR_24P" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="AXK7L70223G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AXK7L70223G">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="23" pad="23"/>
+<connect gate="G$1" pin="24" pad="24"/>
+<connect gate="G$1" pin="25" pad="25"/>
+<connect gate="G$1" pin="26" pad="26"/>
+<connect gate="G$1" pin="27" pad="27"/>
+<connect gate="G$1" pin="28" pad="28"/>
+<connect gate="G$1" pin="29" pad="29"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="30" pad="30"/>
+<connect gate="G$1" pin="31" pad="31"/>
+<connect gate="G$1" pin="32" pad="32"/>
+<connect gate="G$1" pin="33" pad="33"/>
+<connect gate="G$1" pin="34" pad="34"/>
+<connect gate="G$1" pin="35" pad="35"/>
+<connect gate="G$1" pin="36" pad="36"/>
+<connect gate="G$1" pin="37" pad="37"/>
+<connect gate="G$1" pin="38" pad="38"/>
+<connect gate="G$1" pin="39" pad="39"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="40" pad="40"/>
+<connect gate="G$1" pin="41" pad="41"/>
+<connect gate="G$1" pin="42" pad="42"/>
+<connect gate="G$1" pin="43" pad="43"/>
+<connect gate="G$1" pin="44" pad="44"/>
+<connect gate="G$1" pin="45" pad="45"/>
+<connect gate="G$1" pin="46" pad="46"/>
+<connect gate="G$1" pin="47" pad="47"/>
+<connect gate="G$1" pin="48" pad="48"/>
+<connect gate="G$1" pin="49" pad="49"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="50" pad="50"/>
+<connect gate="G$1" pin="51" pad="51"/>
+<connect gate="G$1" pin="52" pad="52"/>
+<connect gate="G$1" pin="53" pad="53"/>
+<connect gate="G$1" pin="54" pad="54"/>
+<connect gate="G$1" pin="55" pad="55"/>
+<connect gate="G$1" pin="56" pad="56"/>
+<connect gate="G$1" pin="57" pad="57"/>
+<connect gate="G$1" pin="58" pad="58"/>
+<connect gate="G$1" pin="59" pad="59"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="60" pad="60"/>
+<connect gate="G$1" pin="61" pad="61"/>
+<connect gate="G$1" pin="62" pad="62"/>
+<connect gate="G$1" pin="63" pad="63"/>
+<connect gate="G$1" pin="64" pad="64"/>
+<connect gate="G$1" pin="65" pad="65"/>
+<connect gate="G$1" pin="66" pad="66"/>
+<connect gate="G$1" pin="67" pad="67"/>
+<connect gate="G$1" pin="68" pad="68"/>
+<connect gate="G$1" pin="69" pad="69"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="70" pad="70"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="MT1" pad="MT1"/>
+<connect gate="G$1" pin="MT2" pad="MT2"/>
+<connect gate="G$1" pin="MT3" pad="MT3"/>
+<connect gate="G$1" pin="MT4" pad="MT4"/>
 </connects>
 <technologies>
 <technology name=""/>

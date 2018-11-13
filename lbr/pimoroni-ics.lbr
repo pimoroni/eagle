@@ -3445,10 +3445,10 @@ tolerant.</text>
 <text x="-7.62" y="-7.874" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="LSM303D">
-<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
 <pin name="VDD_IO" x="15.24" y="7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="SETC" x="-15.24" y="10.16" visible="pin" length="short"/>
 <pin name="SETP" x="-15.24" y="7.62" visible="pin" length="short"/>
@@ -3461,8 +3461,11 @@ tolerant.</text>
 <pin name="INT1" x="-15.24" y="-7.62" visible="pin" length="short"/>
 <pin name="VDD" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
 <pin name="C1" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
-<text x="-12.7" y="15.24" size="1.6764" layer="94">&gt;NAME</text>
-<text x="-12.7" y="-17.78" size="1.6764" layer="94">LSM303D</text>
+<text x="-11.43" y="21.336" size="1.6764" layer="94">&gt;NAME</text>
+<text x="-11.938" y="-15.494" size="1.6764" layer="94">LSM303D</text>
+<text x="-10.16" y="12.7" size="1.778" layer="94">VDD: 2.16-3.6V
+Calibrated at 2.5V
+VDDIO: 1.71-VDD</text>
 </symbol>
 <symbol name="CAP1166">
 <wire x1="-12.7" y1="17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
@@ -5811,43 +5814,109 @@ are 5V tolerant.</text>
 <pin name="48_VCAP" x="-38.1" y="33.02" length="middle"/>
 <pin name="73_VCAP" x="-38.1" y="30.48" length="middle"/>
 <pin name="94_BOOT0" x="-38.1" y="-2.54" length="middle"/>
-<pin name="08_PC14_OSC32_IN" x="-38.1" y="-20.32" length="middle"/>
 <pin name="14_NRST" x="-38.1" y="-5.08" length="middle"/>
-<pin name="09_PC15_OSC32_OUT" x="-38.1" y="-22.86" length="middle"/>
 <pin name="12_PH0_OSC_IN" x="-38.1" y="-10.16" length="middle"/>
 <pin name="13_PH1_OSC_OUT" x="-38.1" y="-12.7" length="middle"/>
-<pin name="22_PA0" x="-38.1" y="-38.1" length="middle"/>
-<pin name="23_PA1" x="-38.1" y="-40.64" length="middle"/>
-<pin name="24_PA2" x="-38.1" y="-43.18" length="middle"/>
-<pin name="25_PA3" x="-38.1" y="-45.72" length="middle"/>
-<pin name="28_PA4" x="-38.1" y="-48.26" length="middle"/>
-<pin name="29_PA5" x="-38.1" y="-50.8" length="middle"/>
-<pin name="30_PA6" x="-38.1" y="-53.34" length="middle"/>
-<pin name="31_PA7" x="-38.1" y="-55.88" length="middle"/>
-<pin name="67_PA8" x="-38.1" y="-58.42" length="middle"/>
-<pin name="68_PA9" x="-38.1" y="-60.96" length="middle"/>
-<pin name="69_PA10" x="-38.1" y="-63.5" length="middle"/>
-<pin name="70_PA11" x="-38.1" y="-66.04" length="middle"/>
-<pin name="71_PA12" x="-38.1" y="-68.58" length="middle"/>
-<pin name="72_PA13" x="-38.1" y="-71.12" length="middle"/>
-<pin name="76_PA14" x="-38.1" y="-73.66" length="middle"/>
-<pin name="77_PA15" x="-38.1" y="-76.2" length="middle"/>
-<pin name="34_PB0" x="38.1" y="63.5" length="middle" rot="R180"/>
-<pin name="35_PB1" x="38.1" y="60.96" length="middle" rot="R180"/>
-<pin name="36_PB2" x="38.1" y="58.42" length="middle" rot="R180"/>
+<pin name="22_PA0" x="-38.1" y="-20.32" length="middle"/>
+<pin name="23_PA1/LCD_R2" x="-38.1" y="-22.86" length="middle"/>
+<pin name="24_PA2" x="-38.1" y="-25.4" length="middle"/>
+<pin name="25_PA3/LCD_B5" x="-38.1" y="-27.94" length="middle"/>
+<pin name="28_PA4/LCD_VSYNC/DAC1_OUT1" x="-38.1" y="-30.48" length="middle"/>
+<pin name="29_PA5/DAC1_OUT2" x="-38.1" y="-33.02" length="middle"/>
+<pin name="30_PA6/LCD_G2" x="-38.1" y="-35.56" length="middle"/>
+<pin name="31_PA7" x="-38.1" y="-38.1" length="middle"/>
+<pin name="67_PA8/LCD_B3/I2C3_SCL" x="-38.1" y="-40.64" length="middle"/>
+<pin name="68_PA9/LCD_R5/I2C3_SDA" x="-38.1" y="-43.18" length="middle"/>
+<pin name="69_PA10" x="-38.1" y="-45.72" length="middle"/>
+<pin name="70_PA11/OTG_FS_DM/LCD_R4" x="-38.1" y="-48.26" length="middle"/>
+<pin name="71_PA12/OTG_FS_DP" x="-38.1" y="-50.8" length="middle"/>
+<pin name="72_PA13/SWDIO" x="-38.1" y="-53.34" length="middle"/>
+<pin name="76_PA14/SWCLK" x="-38.1" y="-55.88" length="middle"/>
+<pin name="77_PA15" x="-38.1" y="-58.42" length="middle"/>
+<pin name="34_PB0/LCD_R3" x="38.1" y="63.5" length="middle" rot="R180"/>
+<pin name="35_PB1/LCD_R6" x="38.1" y="60.96" length="middle" rot="R180"/>
+<pin name="36_PB2/QUADSPI_CLK" x="38.1" y="58.42" length="middle" rot="R180"/>
 <pin name="89_PB3" x="38.1" y="55.88" length="middle" rot="R180"/>
 <pin name="90_PB4" x="38.1" y="53.34" length="middle" rot="R180"/>
 <pin name="91_PB5" x="38.1" y="50.8" length="middle" rot="R180"/>
-<pin name="92_PB6" x="38.1" y="48.26" length="middle" rot="R180"/>
-<pin name="93_PB7" x="38.1" y="45.72" length="middle" rot="R180"/>
-<pin name="95_PB8" x="38.1" y="43.18" length="middle" rot="R180"/>
-<pin name="96_PB9" x="38.1" y="40.64" length="middle" rot="R180"/>
-<pin name="46_PB10" x="38.1" y="38.1" length="middle" rot="R180"/>
-<pin name="47_PB11" x="38.1" y="35.56" length="middle" rot="R180"/>
+<pin name="92_PB6/I2C1_SCL" x="38.1" y="48.26" length="middle" rot="R180"/>
+<pin name="93_PB7/I2C2_SDA" x="38.1" y="45.72" length="middle" rot="R180"/>
+<pin name="95_PB8/LCD_B6" x="38.1" y="43.18" length="middle" rot="R180"/>
+<pin name="96_PB9/LCD_B7" x="38.1" y="40.64" length="middle" rot="R180"/>
+<pin name="46_PB10/LCD_G4/I2C2_SCL" x="38.1" y="38.1" length="middle" rot="R180"/>
+<pin name="47_PB11/LCD_G5/I2C2_SDA" x="38.1" y="35.56" length="middle" rot="R180"/>
 <pin name="51_PB12" x="38.1" y="33.02" length="middle" rot="R180"/>
 <pin name="52_PB13" x="38.1" y="30.48" length="middle" rot="R180"/>
-<pin name="53_PB14" x="38.1" y="27.94" length="middle" rot="R180"/>
-<pin name="54_PB15" x="38.1" y="25.4" length="middle" rot="R180"/>
+<pin name="53_PB14/OTG_HS_DM" x="38.1" y="27.94" length="middle" rot="R180"/>
+<pin name="54_PB15/OTG_HS_DP" x="38.1" y="25.4" length="middle" rot="R180"/>
+<pin name="15_PC0/ADC3_INP10" x="38.1" y="17.78" length="middle" rot="R180"/>
+<pin name="16_PC1/ADC1_INP11" x="38.1" y="15.24" length="middle" rot="R180"/>
+<pin name="17_PC2_C" x="38.1" y="12.7" length="middle" rot="R180"/>
+<pin name="18_PC3_C" x="38.1" y="10.16" length="middle" rot="R180"/>
+<pin name="32_PC4" x="38.1" y="7.62" length="middle" rot="R180"/>
+<pin name="33_PC5" x="38.1" y="5.08" length="middle" rot="R180"/>
+<pin name="63_PC6/LCD_HSYNC" x="38.1" y="2.54" length="middle" rot="R180"/>
+<pin name="64_PC7/LCD_G6" x="38.1" y="0" length="middle" rot="R180"/>
+<pin name="65_PC8/SDMMC1_D0" x="38.1" y="-2.54" length="middle" rot="R180"/>
+<pin name="66_PC9" x="38.1" y="-5.08" length="middle" rot="R180"/>
+<pin name="78_PC10" x="38.1" y="-7.62" length="middle" rot="R180"/>
+<pin name="79_PC11/QUADSPI_BK2_NCS" x="38.1" y="-10.16" length="middle" rot="R180"/>
+<pin name="80_PC12/SDMMC1_CK" x="38.1" y="-12.7" length="middle" rot="R180"/>
+<pin name="07_PC13" x="38.1" y="-15.24" length="middle" rot="R180"/>
+<pin name="08_PC14_OSC32_IN" x="38.1" y="-17.78" length="middle" rot="R180"/>
+<pin name="09_PC15_OSC32_OUT" x="38.1" y="-20.32" length="middle" rot="R180"/>
+<pin name="81_PD0" x="38.1" y="-27.94" length="middle" rot="R180"/>
+<pin name="82_PD1" x="38.1" y="-30.48" length="middle" rot="R180"/>
+<pin name="83_PD2/SDMMC1_CMD" x="38.1" y="-33.02" length="middle" rot="R180"/>
+<pin name="84_PD3/LCD_G7" x="38.1" y="-35.56" length="middle" rot="R180"/>
+<pin name="85_PD4" x="38.1" y="-38.1" length="middle" rot="R180"/>
+<pin name="86_PD5" x="38.1" y="-40.64" length="middle" rot="R180"/>
+<pin name="87_PD6/LCD_B2" x="38.1" y="-43.18" length="middle" rot="R180"/>
+<pin name="88_PD7" x="38.1" y="-45.72" length="middle" rot="R180"/>
+<pin name="55_PD8" x="38.1" y="-48.26" length="middle" rot="R180"/>
+<pin name="56_PD9" x="38.1" y="-50.8" length="middle" rot="R180"/>
+<pin name="57_PD10" x="38.1" y="-53.34" length="middle" rot="R180"/>
+<pin name="58_PD11" x="38.1" y="-55.88" length="middle" rot="R180"/>
+<pin name="59_PD12/I2C4_SCL" x="38.1" y="-58.42" length="middle" rot="R180"/>
+<pin name="60_PD13/I2C4_SDA" x="38.1" y="-60.96" length="middle" rot="R180"/>
+<pin name="61_PD14" x="38.1" y="-63.5" length="middle" rot="R180"/>
+<pin name="62_PD15" x="38.1" y="-66.04" length="middle" rot="R180"/>
+<pin name="97_PE0" x="38.1" y="-73.66" length="middle" rot="R180"/>
+<pin name="98_PE1" x="38.1" y="-76.2" length="middle" rot="R180"/>
+<pin name="01_PE2" x="38.1" y="-78.74" length="middle" rot="R180"/>
+<pin name="02_PE3" x="38.1" y="-81.28" length="middle" rot="R180"/>
+<pin name="03_PE4" x="38.1" y="-83.82" length="middle" rot="R180"/>
+<pin name="04_PE5" x="38.1" y="-86.36" length="middle" rot="R180"/>
+<pin name="05_PE6" x="38.1" y="-88.9" length="middle" rot="R180"/>
+<pin name="37_PE7/QUADSPI_BK2_IO0" x="38.1" y="-91.44" length="middle" rot="R180"/>
+<pin name="38_PE8/QUADSPI_BK2_IO1" x="38.1" y="-93.98" length="middle" rot="R180"/>
+<pin name="39_PE9/QUADSPI_BK2_IO2" x="38.1" y="-96.52" length="middle" rot="R180"/>
+<pin name="40_PE10/QUADSPI_BK2_IO3" x="38.1" y="-99.06" length="middle" rot="R180"/>
+<pin name="41_PE11/LCD_G3" x="38.1" y="-101.6" length="middle" rot="R180"/>
+<pin name="42_PE12/LCD_B4" x="38.1" y="-104.14" length="middle" rot="R180"/>
+<pin name="43_PE13/LCD_DE" x="38.1" y="-106.68" length="middle" rot="R180"/>
+<pin name="44_PE14/LCD_CLK" x="38.1" y="-109.22" length="middle" rot="R180"/>
+<pin name="45_PE15/LCD_R7" x="38.1" y="-111.76" length="middle" rot="R180"/>
+<wire x1="33.02" y1="-114.3" x2="-33.02" y2="-114.3" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-114.3" x2="-33.02" y2="73.66" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="73.66" x2="33.02" y2="73.66" width="0.254" layer="94"/>
+<wire x1="33.02" y1="73.66" x2="33.02" y2="-114.3" width="0.254" layer="94"/>
+<text x="0" y="71.12" size="2.54" layer="94" align="top-center">STM32H750VB
+1.62-3.6V
+(Vbat 1.2-3.6V)</text>
+<wire x1="-34.29" y1="-59.69" x2="-34.29" y2="-39.37" width="1.016" layer="94"/>
+<wire x1="-34.29" y1="-36.83" x2="-34.29" y2="-34.29" width="1.016" layer="94"/>
+<wire x1="-34.29" y1="-29.21" x2="-34.29" y2="-19.05" width="1.016" layer="94"/>
+<wire x1="-34.29" y1="-13.97" x2="-34.29" y2="-8.89" width="1.016" layer="94"/>
+<wire x1="34.29" y1="-113.03" x2="34.29" y2="-97.79" width="1.016" layer="94"/>
+<wire x1="34.29" y1="-90.17" x2="34.29" y2="-72.39" width="1.016" layer="94"/>
+<wire x1="34.29" y1="-67.31" x2="34.29" y2="-26.67" width="1.016" layer="94"/>
+<wire x1="34.29" y1="-21.59" x2="34.29" y2="3.81" width="1.016" layer="94"/>
+<wire x1="34.29" y1="13.97" x2="34.29" y2="19.05" width="1.016" layer="94"/>
+<wire x1="34.29" y1="24.13" x2="34.29" y2="59.69" width="1.016" layer="94"/>
+<wire x1="34.29" y1="62.23" x2="34.29" y2="64.77" width="1.016" layer="94"/>
+<wire x1="-29.21" y1="-67.31" x2="-29.21" y2="-63.5" width="1.016" layer="94"/>
+<text x="-27.94" y="-66.04" size="1.27" layer="94">= 5V tolerant input</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9234,6 +9303,120 @@ Source:</description>
 <connect gate="G$1" pin="VDD" pad="P$17"/>
 <connect gate="G$1" pin="VDDA" pad="P$5"/>
 <connect gate="G$1" pin="VDDIO2" pad="P$18"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32H750VB" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="STM32H750VB" x="0" y="20.32"/>
+</gates>
+<devices>
+<device name="" package="LQFP-100">
+<connects>
+<connect gate="G$1" pin="01_PE2" pad="1"/>
+<connect gate="G$1" pin="02_PE3" pad="2"/>
+<connect gate="G$1" pin="03_PE4" pad="3"/>
+<connect gate="G$1" pin="04_PE5" pad="4"/>
+<connect gate="G$1" pin="05_PE6" pad="5"/>
+<connect gate="G$1" pin="06_VBAT" pad="6"/>
+<connect gate="G$1" pin="07_PC13" pad="7"/>
+<connect gate="G$1" pin="08_PC14_OSC32_IN" pad="8"/>
+<connect gate="G$1" pin="09_PC15_OSC32_OUT" pad="9"/>
+<connect gate="G$1" pin="100_VDD" pad="100"/>
+<connect gate="G$1" pin="10_VSS" pad="10"/>
+<connect gate="G$1" pin="11_VDD" pad="11"/>
+<connect gate="G$1" pin="12_PH0_OSC_IN" pad="12"/>
+<connect gate="G$1" pin="13_PH1_OSC_OUT" pad="13"/>
+<connect gate="G$1" pin="14_NRST" pad="14"/>
+<connect gate="G$1" pin="15_PC0/ADC3_INP10" pad="15"/>
+<connect gate="G$1" pin="16_PC1/ADC1_INP11" pad="16"/>
+<connect gate="G$1" pin="17_PC2_C" pad="17"/>
+<connect gate="G$1" pin="18_PC3_C" pad="18"/>
+<connect gate="G$1" pin="19_VSSA" pad="19"/>
+<connect gate="G$1" pin="20_VREF+" pad="20"/>
+<connect gate="G$1" pin="21_VDDA" pad="21"/>
+<connect gate="G$1" pin="22_PA0" pad="22"/>
+<connect gate="G$1" pin="23_PA1/LCD_R2" pad="23"/>
+<connect gate="G$1" pin="24_PA2" pad="24"/>
+<connect gate="G$1" pin="25_PA3/LCD_B5" pad="25"/>
+<connect gate="G$1" pin="26_VSS" pad="26"/>
+<connect gate="G$1" pin="27_VDD" pad="27"/>
+<connect gate="G$1" pin="28_PA4/LCD_VSYNC/DAC1_OUT1" pad="28"/>
+<connect gate="G$1" pin="29_PA5/DAC1_OUT2" pad="29"/>
+<connect gate="G$1" pin="30_PA6/LCD_G2" pad="30"/>
+<connect gate="G$1" pin="31_PA7" pad="31"/>
+<connect gate="G$1" pin="32_PC4" pad="32"/>
+<connect gate="G$1" pin="33_PC5" pad="33"/>
+<connect gate="G$1" pin="34_PB0/LCD_R3" pad="34"/>
+<connect gate="G$1" pin="35_PB1/LCD_R6" pad="35"/>
+<connect gate="G$1" pin="36_PB2/QUADSPI_CLK" pad="36"/>
+<connect gate="G$1" pin="37_PE7/QUADSPI_BK2_IO0" pad="37"/>
+<connect gate="G$1" pin="38_PE8/QUADSPI_BK2_IO1" pad="38"/>
+<connect gate="G$1" pin="39_PE9/QUADSPI_BK2_IO2" pad="39"/>
+<connect gate="G$1" pin="40_PE10/QUADSPI_BK2_IO3" pad="40"/>
+<connect gate="G$1" pin="41_PE11/LCD_G3" pad="41"/>
+<connect gate="G$1" pin="42_PE12/LCD_B4" pad="42"/>
+<connect gate="G$1" pin="43_PE13/LCD_DE" pad="43"/>
+<connect gate="G$1" pin="44_PE14/LCD_CLK" pad="44"/>
+<connect gate="G$1" pin="45_PE15/LCD_R7" pad="45"/>
+<connect gate="G$1" pin="46_PB10/LCD_G4/I2C2_SCL" pad="46"/>
+<connect gate="G$1" pin="47_PB11/LCD_G5/I2C2_SDA" pad="47"/>
+<connect gate="G$1" pin="48_VCAP" pad="48"/>
+<connect gate="G$1" pin="49_VSS" pad="49"/>
+<connect gate="G$1" pin="50_VDD" pad="50"/>
+<connect gate="G$1" pin="51_PB12" pad="51"/>
+<connect gate="G$1" pin="52_PB13" pad="52"/>
+<connect gate="G$1" pin="53_PB14/OTG_HS_DM" pad="53"/>
+<connect gate="G$1" pin="54_PB15/OTG_HS_DP" pad="54"/>
+<connect gate="G$1" pin="55_PD8" pad="55"/>
+<connect gate="G$1" pin="56_PD9" pad="56"/>
+<connect gate="G$1" pin="57_PD10" pad="57"/>
+<connect gate="G$1" pin="58_PD11" pad="58"/>
+<connect gate="G$1" pin="59_PD12/I2C4_SCL" pad="59"/>
+<connect gate="G$1" pin="60_PD13/I2C4_SDA" pad="60"/>
+<connect gate="G$1" pin="61_PD14" pad="61"/>
+<connect gate="G$1" pin="62_PD15" pad="62"/>
+<connect gate="G$1" pin="63_PC6/LCD_HSYNC" pad="63"/>
+<connect gate="G$1" pin="64_PC7/LCD_G6" pad="64"/>
+<connect gate="G$1" pin="65_PC8/SDMMC1_D0" pad="65"/>
+<connect gate="G$1" pin="66_PC9" pad="66"/>
+<connect gate="G$1" pin="67_PA8/LCD_B3/I2C3_SCL" pad="67"/>
+<connect gate="G$1" pin="68_PA9/LCD_R5/I2C3_SDA" pad="68"/>
+<connect gate="G$1" pin="69_PA10" pad="69"/>
+<connect gate="G$1" pin="70_PA11/OTG_FS_DM/LCD_R4" pad="70"/>
+<connect gate="G$1" pin="71_PA12/OTG_FS_DP" pad="71"/>
+<connect gate="G$1" pin="72_PA13/SWDIO" pad="72"/>
+<connect gate="G$1" pin="73_VCAP" pad="73"/>
+<connect gate="G$1" pin="74_VSS" pad="74"/>
+<connect gate="G$1" pin="75_VDD" pad="75"/>
+<connect gate="G$1" pin="76_PA14/SWCLK" pad="76"/>
+<connect gate="G$1" pin="77_PA15" pad="77"/>
+<connect gate="G$1" pin="78_PC10" pad="78"/>
+<connect gate="G$1" pin="79_PC11/QUADSPI_BK2_NCS" pad="79"/>
+<connect gate="G$1" pin="80_PC12/SDMMC1_CK" pad="80"/>
+<connect gate="G$1" pin="81_PD0" pad="81"/>
+<connect gate="G$1" pin="82_PD1" pad="82"/>
+<connect gate="G$1" pin="83_PD2/SDMMC1_CMD" pad="83"/>
+<connect gate="G$1" pin="84_PD3/LCD_G7" pad="84"/>
+<connect gate="G$1" pin="85_PD4" pad="85"/>
+<connect gate="G$1" pin="86_PD5" pad="86"/>
+<connect gate="G$1" pin="87_PD6/LCD_B2" pad="87"/>
+<connect gate="G$1" pin="88_PD7" pad="88"/>
+<connect gate="G$1" pin="89_PB3" pad="89"/>
+<connect gate="G$1" pin="90_PB4" pad="90"/>
+<connect gate="G$1" pin="91_PB5" pad="91"/>
+<connect gate="G$1" pin="92_PB6/I2C1_SCL" pad="92"/>
+<connect gate="G$1" pin="93_PB7/I2C2_SDA" pad="93"/>
+<connect gate="G$1" pin="94_BOOT0" pad="94"/>
+<connect gate="G$1" pin="95_PB8/LCD_B6" pad="95"/>
+<connect gate="G$1" pin="96_PB9/LCD_B7" pad="96"/>
+<connect gate="G$1" pin="97_PE0" pad="97"/>
+<connect gate="G$1" pin="98_PE1" pad="98"/>
+<connect gate="G$1" pin="99_VSS" pad="99"/>
 </connects>
 <technologies>
 <technology name=""/>

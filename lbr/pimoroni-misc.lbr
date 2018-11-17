@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1108,6 +1108,12 @@
 <dimension x1="25.7175" y1="10" x2="21.59" y2="10" x3="23.65375" y3="15" textsize="1.27" layer="51"/>
 <dimension x1="-25.7175" y1="15.4305" x2="25.7175" y2="15.4305" x3="0" y3="30.861" textsize="1.27" layer="21"/>
 </package>
+<package name="SMALL_SOLDER_JUMPER_CLOSED">
+<smd name="P$1" x="-0.635" y="0" dx="0.635" dy="0.635" layer="1" roundness="25"/>
+<smd name="P$2" x="0.635" y="0" dx="0.635" dy="0.635" layer="1" roundness="25"/>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.127" layer="1"/>
+<text x="0" y="0.492" size="0.5" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SOLDER_CATCHER">
@@ -1311,6 +1317,23 @@
 <wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
 </symbol>
+<symbol name="SMALL_SOLDER_JUMPER_CLOSED">
+<pin name="1" x="-2.54" y="0" visible="pad" length="point"/>
+<pin name="2" x="2.54" y="0" visible="pad" length="point" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="-0.3175" y="0.635"/>
+<vertex x="-0.3175" y="-0.635" curve="-90"/>
+<vertex x="-0.9525" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="0.3175" y="-0.635"/>
+<vertex x="0.3175" y="0.635" curve="-90"/>
+<vertex x="0.9525" y="0" curve="-90"/>
+</polygon>
+<wire x1="-0.9525" y1="0" x2="0.9525" y2="0" width="0.508" layer="94"/>
+<wire x1="-0.9525" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0.9525" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SOLDER_CATCHER">
@@ -1493,6 +1516,21 @@
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMALL_SOLDER_JUMPER_CLOSED">
+<gates>
+<gate name="G$1" symbol="SMALL_SOLDER_JUMPER_CLOSED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMALL_SOLDER_JUMPER_CLOSED">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1 P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

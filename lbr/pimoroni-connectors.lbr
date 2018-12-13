@@ -3464,20 +3464,20 @@ push-push type</description>
 <devices>
 <device name="" package="2X07_EDGE">
 <connects>
-<connect gate="G$1" pin="1" pad="1 T1"/>
-<connect gate="G$1" pin="10" pad="10 T10"/>
-<connect gate="G$1" pin="11" pad="11 T11"/>
-<connect gate="G$1" pin="12" pad="12 T12"/>
-<connect gate="G$1" pin="13" pad="13 T13"/>
-<connect gate="G$1" pin="14" pad="14 T14"/>
-<connect gate="G$1" pin="2" pad="2 T2"/>
-<connect gate="G$1" pin="3" pad="3 T3"/>
-<connect gate="G$1" pin="4" pad="4 T4"/>
-<connect gate="G$1" pin="5" pad="5 T5"/>
-<connect gate="G$1" pin="6" pad="6 T6"/>
-<connect gate="G$1" pin="7" pad="7 T7"/>
-<connect gate="G$1" pin="8" pad="8 T8"/>
-<connect gate="G$1" pin="9" pad="9 T9"/>
+<connect gate="G$1" pin="1" pad="1 T1" route="any"/>
+<connect gate="G$1" pin="10" pad="10 T10" route="any"/>
+<connect gate="G$1" pin="11" pad="11 T11" route="any"/>
+<connect gate="G$1" pin="12" pad="12 T12" route="any"/>
+<connect gate="G$1" pin="13" pad="13 T13" route="any"/>
+<connect gate="G$1" pin="14" pad="14 T14" route="any"/>
+<connect gate="G$1" pin="2" pad="2 T2" route="any"/>
+<connect gate="G$1" pin="3" pad="3 T3" route="any"/>
+<connect gate="G$1" pin="4" pad="4 T4" route="any"/>
+<connect gate="G$1" pin="5" pad="5 T5" route="any"/>
+<connect gate="G$1" pin="6" pad="6 T6" route="any"/>
+<connect gate="G$1" pin="7" pad="7 T7" route="any"/>
+<connect gate="G$1" pin="8" pad="8 T8" route="any"/>
+<connect gate="G$1" pin="9" pad="9 T9" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1298,8 +1298,8 @@
 </package>
 <package name="KAILH_MX_NO_SOLDER">
 <smd name="S1" x="-6.544321875" y="1.23698125" dx="2.55" dy="2.5" layer="1"/>
-<hole x="-3.175" y="1.27" drill="3"/>
-<hole x="3.175" y="-1.27" drill="3"/>
+<hole x="-3.175" y="1.27" drill="3.4"/>
+<hole x="3.175" y="-1.27" drill="3.4"/>
 <smd name="S2" x="6.549384375" y="-1.209040625" dx="2.55" dy="2.5" layer="1"/>
 <wire x1="-5.4347625" y1="3.009059375" x2="-5.439159375" y2="-0.402571875" width="0.127" layer="51"/>
 <wire x1="-5.439159375" y1="-0.402571875" x2="-2.939159375" y2="-2.90491875" width="0.127" layer="51" curve="90.073912"/>
@@ -1308,6 +1308,13 @@
 <wire x1="5.465240625" y1="1.12268125" x2="0.0169375" y2="1.12268125" width="0.127" layer="51"/>
 <wire x1="0.0169375" y1="1.12268125" x2="-1.871140625" y2="3.009059375" width="0.127" layer="51" curve="-89.948412"/>
 <wire x1="-1.871140625" y1="3.009059375" x2="-5.4347625" y2="3.009059375" width="0.127" layer="51"/>
+<wire x1="-4.4347625" y1="2.009059375" x2="-4.439159375" y2="-0.402571875" width="1" layer="21"/>
+<wire x1="-4.439159375" y1="-0.402571875" x2="-2.939159375" y2="-1.90491875" width="1" layer="21" curve="90.073912"/>
+<wire x1="-2.939159375" y1="-1.90491875" x2="4.457615625" y2="-1.90491875" width="1" layer="21"/>
+<wire x1="4.457615625" y1="-1.90491875" x2="4.465240625" y2="0.12268125" width="1" layer="21"/>
+<wire x1="4.465240625" y1="0.12268125" x2="-0.9830625" y2="0.12268125" width="1" layer="21"/>
+<wire x1="-0.9830625" y1="0.12268125" x2="-2.871140625" y2="2.009059375" width="1" layer="21" curve="-89.948412"/>
+<wire x1="-2.871140625" y1="2.009059375" x2="-4.4347625" y2="2.009059375" width="1" layer="21"/>
 </package>
 <package name="FPC_1.0X06_FLIP">
 <smd name="1" x="-2.5" y="-0.65" dx="0.6" dy="2" layer="1"/>

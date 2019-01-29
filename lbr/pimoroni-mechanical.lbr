@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1103,6 +1103,300 @@ undermounted!</text>
 <circle x="-1.4" y="1.8" radius="0.125" width="0.25" layer="21"/>
 <circle x="0" y="0" radius="1.62788125" width="0.127" layer="21"/>
 </package>
+<package name="DPAD">
+<smd name="GND1" x="-7" y="-3" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="LEFT" x="-7" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.05" layer="1">
+<vertex x="-7" y="-3" curve="-90"/>
+<vertex x="-10" y="0" curve="-90"/>
+<vertex x="-7" y="3" curve="-90"/>
+<vertex x="-4" y="0" curve="-90"/>
+<vertex x="-7" y="-3"/>
+<vertex x="-7" y="-2" curve="90"/>
+<vertex x="-5" y="0" curve="90"/>
+<vertex x="-7" y="2" curve="90"/>
+<vertex x="-9" y="0" curve="90"/>
+<vertex x="-7" y="-2"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-8.5" y="0" curve="-90"/>
+<vertex x="-7" y="1.5" curve="-90"/>
+<vertex x="-5.5" y="0" curve="-90"/>
+<vertex x="-7" y="-1.5" curve="-90"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="-3.5" y="0" curve="-90"/>
+<vertex x="-7" y="-3.5" curve="-90"/>
+<vertex x="-10.5" y="0" curve="-90"/>
+<vertex x="-7" y="3.5" curve="-90"/>
+</polygon>
+<smd name="GND2" x="7" y="-3" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="RIGHT" x="7" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.05" layer="1">
+<vertex x="7" y="-3" curve="-90"/>
+<vertex x="4" y="0" curve="-90"/>
+<vertex x="7" y="3" curve="-90"/>
+<vertex x="10" y="0" curve="-90"/>
+<vertex x="7" y="-3"/>
+<vertex x="7" y="-2" curve="90"/>
+<vertex x="9" y="0" curve="90"/>
+<vertex x="7" y="2" curve="90"/>
+<vertex x="5" y="0" curve="90"/>
+<vertex x="7" y="-2"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="5.5" y="0" curve="-90"/>
+<vertex x="7" y="1.5" curve="-90"/>
+<vertex x="8.5" y="0" curve="-90"/>
+<vertex x="7" y="-1.5" curve="-90"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="10.5" y="0" curve="-90"/>
+<vertex x="7" y="-3.5" curve="-90"/>
+<vertex x="3.5" y="0" curve="-90"/>
+<vertex x="7" y="3.5" curve="-90"/>
+</polygon>
+<smd name="GND3" x="0" y="4" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="UP" x="0" y="7" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.05" layer="1">
+<vertex x="0" y="4" curve="-90"/>
+<vertex x="-3" y="7" curve="-90"/>
+<vertex x="0" y="10" curve="-90"/>
+<vertex x="3" y="7" curve="-90"/>
+<vertex x="0" y="4"/>
+<vertex x="0" y="5" curve="90"/>
+<vertex x="2" y="7" curve="90"/>
+<vertex x="0" y="9" curve="90"/>
+<vertex x="-2" y="7" curve="90"/>
+<vertex x="0" y="5"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-1.5" y="7" curve="-90"/>
+<vertex x="0" y="8.5" curve="-90"/>
+<vertex x="1.5" y="7" curve="-90"/>
+<vertex x="0" y="5.5" curve="-90"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="3.5" y="7" curve="-90"/>
+<vertex x="0" y="3.5" curve="-90"/>
+<vertex x="-3.5" y="7" curve="-90"/>
+<vertex x="0" y="10.5" curve="-90"/>
+</polygon>
+<smd name="GND4" x="0" y="-10" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="DOWN" x="0" y="-7" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.05" layer="1">
+<vertex x="0" y="-10" curve="-90"/>
+<vertex x="-3" y="-7" curve="-90"/>
+<vertex x="0" y="-4" curve="-90"/>
+<vertex x="3" y="-7" curve="-90"/>
+<vertex x="0" y="-10"/>
+<vertex x="0" y="-9" curve="90"/>
+<vertex x="2" y="-7" curve="90"/>
+<vertex x="0" y="-5" curve="90"/>
+<vertex x="-2" y="-7" curve="90"/>
+<vertex x="0" y="-9"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-1.5" y="-7" curve="-90"/>
+<vertex x="0" y="-5.5" curve="-90"/>
+<vertex x="1.5" y="-7" curve="-90"/>
+<vertex x="0" y="-8.5" curve="-90"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="3.5" y="-7" curve="-90"/>
+<vertex x="0" y="-10.5" curve="-90"/>
+<vertex x="-3.5" y="-7" curve="-90"/>
+<vertex x="0" y="-3.5" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="0" y="-12" curve="-90"/>
+<vertex x="-5" y="-7" curve="90"/>
+<vertex x="-7" y="-5" curve="-90"/>
+<vertex x="-12" y="0" curve="-90"/>
+<vertex x="-7" y="5" curve="90"/>
+<vertex x="-5" y="7" curve="-90"/>
+<vertex x="0" y="12" curve="-90"/>
+<vertex x="5" y="7" curve="90"/>
+<vertex x="7" y="5" curve="-90"/>
+<vertex x="12" y="0" curve="-90"/>
+<vertex x="7" y="-5" curve="90"/>
+<vertex x="5" y="-7" curve="-90"/>
+<vertex x="0" y="-12"/>
+<vertex x="0" y="-14"/>
+<vertex x="1" y="-14" curve="90"/>
+<vertex x="7" y="-8" curve="-90"/>
+<vertex x="8" y="-7" curve="90"/>
+<vertex x="14" y="-1"/>
+<vertex x="14" y="1" curve="90"/>
+<vertex x="8" y="7" curve="-90"/>
+<vertex x="7" y="8" curve="90"/>
+<vertex x="1" y="14"/>
+<vertex x="-1" y="14" curve="90"/>
+<vertex x="-7" y="8" curve="-90"/>
+<vertex x="-8" y="7" curve="90"/>
+<vertex x="-14" y="1"/>
+<vertex x="-14" y="-1" curve="90"/>
+<vertex x="-8" y="-7" curve="-90"/>
+<vertex x="-7" y="-8" curve="90"/>
+<vertex x="-1" y="-14"/>
+<vertex x="0" y="-14"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="-0.3" y="0.5"/>
+<vertex x="0.3" y="0.5"/>
+<vertex x="0.1" y="1.7"/>
+<vertex x="0.55" y="1.75"/>
+<vertex x="0" y="2.5"/>
+<vertex x="-0.55" y="1.75"/>
+<vertex x="-0.1" y="1.7"/>
+</polygon>
+</package>
+<package name="ABXY">
+<smd name="GND1" x="-7.75" y="-3.5" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="Y" x="-7.75" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.05" layer="1">
+<vertex x="-7.75" y="-3.5" curve="-90"/>
+<vertex x="-11.25" y="0" curve="-90"/>
+<vertex x="-7.75" y="3.5" curve="-90"/>
+<vertex x="-4.25" y="0" curve="-90"/>
+<vertex x="-7.75" y="-3.5"/>
+<vertex x="-7.75" y="-2.5" curve="90"/>
+<vertex x="-5.25" y="0" curve="90"/>
+<vertex x="-7.75" y="2.5" curve="90"/>
+<vertex x="-10.25" y="0" curve="90"/>
+<vertex x="-7.75" y="-2.5"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="-7.75" y="-4" curve="-90"/>
+<vertex x="-11.75" y="0" curve="-90"/>
+<vertex x="-7.75" y="4" curve="-90"/>
+<vertex x="-3.75" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.05" layer="1">
+<vertex x="-9.25" y="0" curve="90"/>
+<vertex x="-7.75" y="-1.5" curve="90"/>
+<vertex x="-6.25" y="0" curve="90"/>
+<vertex x="-7.75" y="1.5" curve="90"/>
+</polygon>
+<smd name="GND2" x="7.75" y="-3.5" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="A" x="7.75" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.05" layer="1">
+<vertex x="7.75" y="-3.5" curve="-90"/>
+<vertex x="4.25" y="0" curve="-90"/>
+<vertex x="7.75" y="3.5" curve="-90"/>
+<vertex x="11.25" y="0" curve="-90"/>
+<vertex x="7.75" y="-3.5"/>
+<vertex x="7.75" y="-2.5" curve="90"/>
+<vertex x="10.25" y="0" curve="90"/>
+<vertex x="7.75" y="2.5" curve="90"/>
+<vertex x="5.25" y="0" curve="90"/>
+<vertex x="7.75" y="-2.5"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="7.75" y="-4" curve="-90"/>
+<vertex x="3.75" y="0" curve="-90"/>
+<vertex x="7.75" y="4" curve="-90"/>
+<vertex x="11.75" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.05" layer="1">
+<vertex x="6.25" y="0" curve="90"/>
+<vertex x="7.75" y="-1.5" curve="90"/>
+<vertex x="9.25" y="0" curve="90"/>
+<vertex x="7.75" y="1.5" curve="90"/>
+</polygon>
+<smd name="GND3" x="0" y="4.25" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="X" x="0" y="7.75" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.05" layer="1">
+<vertex x="0" y="4.25" curve="-90"/>
+<vertex x="-3.5" y="7.75" curve="-90"/>
+<vertex x="0" y="11.25" curve="-90"/>
+<vertex x="3.5" y="7.75" curve="-90"/>
+<vertex x="0" y="4.25"/>
+<vertex x="0" y="5.25" curve="90"/>
+<vertex x="2.5" y="7.75" curve="90"/>
+<vertex x="0" y="10.25" curve="90"/>
+<vertex x="-2.5" y="7.75" curve="90"/>
+<vertex x="0" y="5.25"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="0" y="3.75" curve="-90"/>
+<vertex x="-4" y="7.75" curve="-90"/>
+<vertex x="0" y="11.75" curve="-90"/>
+<vertex x="4" y="7.75" curve="-90"/>
+</polygon>
+<polygon width="0.05" layer="1">
+<vertex x="-1.5" y="7.75" curve="90"/>
+<vertex x="0" y="6.25" curve="90"/>
+<vertex x="1.5" y="7.75" curve="90"/>
+<vertex x="0" y="9.25" curve="90"/>
+</polygon>
+<smd name="GND4" x="0" y="-11.25" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="B" x="0" y="-7.75" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.05" layer="1">
+<vertex x="0" y="-11.25" curve="-90"/>
+<vertex x="-3.5" y="-7.75" curve="-90"/>
+<vertex x="0" y="-4.25" curve="-90"/>
+<vertex x="3.5" y="-7.75" curve="-90"/>
+<vertex x="0" y="-11.25"/>
+<vertex x="0" y="-10.25" curve="90"/>
+<vertex x="2.5" y="-7.75" curve="90"/>
+<vertex x="0" y="-5.25" curve="90"/>
+<vertex x="-2.5" y="-7.75" curve="90"/>
+<vertex x="0" y="-10.25"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="0" y="-11.75" curve="-90"/>
+<vertex x="-4" y="-7.75" curve="-90"/>
+<vertex x="0" y="-3.75" curve="-90"/>
+<vertex x="4" y="-7.75" curve="-90"/>
+</polygon>
+<polygon width="0.05" layer="1">
+<vertex x="-1.5" y="-7.75" curve="90"/>
+<vertex x="0" y="-9.25" curve="90"/>
+<vertex x="1.5" y="-7.75" curve="90"/>
+<vertex x="0" y="-6.25" curve="90"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="0" y="-14.75"/>
+<vertex x="0" y="-12.75" curve="90"/>
+<vertex x="5" y="-7.75"/>
+<vertex x="5" y="-7" curve="-90"/>
+<vertex x="7" y="-5"/>
+<vertex x="7.75" y="-5" curve="90"/>
+<vertex x="12.75" y="0" curve="90"/>
+<vertex x="7.75" y="5"/>
+<vertex x="7" y="5" curve="-90"/>
+<vertex x="5" y="7"/>
+<vertex x="5" y="7.75" curve="90"/>
+<vertex x="0" y="12.75" curve="90"/>
+<vertex x="-5" y="7.75"/>
+<vertex x="-5" y="7" curve="-90"/>
+<vertex x="-7" y="5"/>
+<vertex x="-7.75" y="5" curve="90"/>
+<vertex x="-12.75" y="0" curve="90"/>
+<vertex x="-7.75" y="-5"/>
+<vertex x="-7" y="-5" curve="-90"/>
+<vertex x="-5" y="-7"/>
+<vertex x="-5" y="-7.75" curve="90"/>
+<vertex x="0" y="-12.75"/>
+<vertex x="0" y="-14.75" curve="-90"/>
+<vertex x="-7" y="-7.75" curve="90"/>
+<vertex x="-7.75" y="-7" curve="-90"/>
+<vertex x="-14.75" y="0" curve="-90"/>
+<vertex x="-7.75" y="7" curve="90"/>
+<vertex x="-7" y="7.75" curve="-90"/>
+<vertex x="0" y="14.75" curve="-90"/>
+<vertex x="7" y="7.75" curve="90"/>
+<vertex x="7.75" y="7" curve="-90"/>
+<vertex x="14.75" y="0" curve="-90"/>
+<vertex x="7.75" y="-7" curve="90"/>
+<vertex x="7" y="-7.75" curve="-90"/>
+</polygon>
+<text x="-3" y="0" size="1.25" layer="21" font="vector" ratio="14" align="center-left">Y</text>
+<text x="3" y="0" size="1.25" layer="21" font="vector" ratio="14" align="center-right">A</text>
+<text x="0" y="-3" size="1.25" layer="21" font="vector" ratio="14" align="bottom-center">B</text>
+<text x="0" y="3" size="1.25" layer="21" font="vector" ratio="14" align="top-center">X</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-DPDT">
@@ -1412,6 +1706,28 @@ MOTOR</text>
 </symbol>
 <symbol name="TRACKBALL">
 <circle x="0" y="0" radius="63.5" width="0.254" layer="94"/>
+</symbol>
+<symbol name="DPAD">
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<pin name="UP" x="7.62" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="DOWN" x="7.62" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="LEFT" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="RIGHT" x="7.62" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="-7.62" visible="pin" length="short" rot="R180"/>
+<text x="-5.08" y="10.16" size="1.27" layer="94">&gt;NAME</text>
+</symbol>
+<symbol name="ABXY">
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<pin name="A" x="7.62" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="B" x="7.62" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="X" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="Y" x="7.62" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="-7.62" visible="pin" length="short" rot="R180"/>
+<text x="-5.08" y="10.16" size="1.27" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1854,6 +2170,44 @@ MOTOR</text>
 <connects>
 <connect gate="G$1" pin="1" pad="1 2"/>
 <connect gate="G$1" pin="2" pad="3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPAD">
+<gates>
+<gate name="G$1" symbol="DPAD" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="DPAD">
+<connects>
+<connect gate="G$1" pin="DOWN" pad="DOWN"/>
+<connect gate="G$1" pin="GND" pad="GND1 GND2 GND3 GND4"/>
+<connect gate="G$1" pin="LEFT" pad="LEFT"/>
+<connect gate="G$1" pin="RIGHT" pad="RIGHT"/>
+<connect gate="G$1" pin="UP" pad="UP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABXY">
+<gates>
+<gate name="G$1" symbol="ABXY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABXY">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="GND" pad="GND1 GND2 GND3 GND4"/>
+<connect gate="G$1" pin="X" pad="X"/>
+<connect gate="G$1" pin="Y" pad="Y"/>
 </connects>
 <technologies>
 <technology name=""/>

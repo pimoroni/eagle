@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6113,6 +6113,18 @@ Vref: 0.8V </text>
 <text x="-12.7" y="20.32" size="1.778" layer="94">&gt;NAME</text>
 <text x="-12.7" y="-22.86" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="AP2112">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="IN" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="EN" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="OUT" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<text x="-7.62" y="10.16" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OPAMP">
@@ -9822,6 +9834,24 @@ Source:</description>
 <connect gate="G$1" pin="GND" pad="6"/>
 <connect gate="G$1" pin="VIN" pad="5"/>
 <connect gate="G$1" pin="VOUT" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP2112">
+<gates>
+<gate name="G$1" symbol="AP2112" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>

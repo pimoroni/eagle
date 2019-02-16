@@ -3181,9 +3181,9 @@ Source:</description>
 <symbol name="OPAMP">
 <wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="5.08" x2="2.54" y2="0" width="0.254" layer="94"/>
-<pin name="+" x="-7.62" y="2.54" visible="off" length="short"/>
-<pin name="-" x="-7.62" y="-2.54" visible="off" length="short"/>
-<pin name="OUT" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="+" x="-7.62" y="2.54" visible="pad" length="short"/>
+<pin name="-" x="-7.62" y="-2.54" visible="pad" length="short"/>
+<pin name="OUT" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
 <text x="-4.572" y="2.032" size="1.778" layer="94">+</text>
 <text x="-4.318" y="-3.302" size="1.778" layer="94">-</text>
 <text x="-2.54" y="-0.762" size="1.27" layer="94">OUT</text>
@@ -6127,7 +6127,7 @@ Vref: 0.8V </text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OPAMP">
+<deviceset name="OPAMP" prefix="U">
 <gates>
 <gate name="G$1" symbol="OPAMP" x="2.54" y="0"/>
 </gates>
@@ -6144,12 +6144,12 @@ Vref: 0.8V </text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="LMV321ILT" package="SOT-23-5">
+<device name="_NCS325SN2T1G" package="SOT-23-5">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="3"/>
+<connect gate="G$1" pin="+" pad="3"/>
+<connect gate="G$1" pin="-" pad="4"/>
 <connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
 <technologies>

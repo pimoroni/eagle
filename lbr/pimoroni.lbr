@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -18651,24 +18651,27 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 </polygon>
 </package>
 <package name="AUDIO-JACK-3.5MM-SMD-6POLE">
-<wire x1="4.6878" y1="-3.2512" x2="11.1346" y2="-3.2512" width="0.254" layer="21"/>
-<wire x1="15.5288" y1="-1.035" x2="15.5288" y2="-3.302" width="0.254" layer="21"/>
-<wire x1="15.5288" y1="-3.302" x2="14.2572" y2="-3.302" width="0.254" layer="21"/>
-<wire x1="15.478" y1="2.4098" x2="15.478" y2="3.429" width="0.254" layer="21"/>
-<wire x1="15.478" y1="3.429" x2="6.6896" y2="3.429" width="0.254" layer="21"/>
-<wire x1="1.135" y1="3.3782" x2="0" y2="3.3782" width="0.254" layer="51"/>
-<wire x1="0" y1="3.3782" x2="0" y2="-2.2352" width="0.254" layer="51"/>
-<wire x1="-0.1524" y1="2.5908" x2="-2.7178" y2="2.5908" width="0.254" layer="51"/>
-<wire x1="-2.7178" y1="2.5908" x2="-2.7178" y2="-2.2352" width="0.254" layer="51"/>
-<wire x1="-2.7178" y1="-2.2352" x2="0" y2="-2.2352" width="0.254" layer="51"/>
-<smd name="SLEEVE" x="0.6" y="-3.65" dx="2" dy="2.8" layer="1"/>
-<smd name="TIP" x="12.8" y="-3.65" dx="2.8" dy="2.8" layer="1"/>
-<smd name="RING1" x="5.3" y="3.65" dx="2" dy="2.8" layer="1"/>
-<smd name="TSW" x="16.65" y="0.75" dx="2.8" dy="2.8" layer="1" rot="R90"/>
-<smd name="RSW" x="2.5" y="3.65" dx="2" dy="2.8" layer="1" rot="R180"/>
-<hole x="4.5" y="0" drill="2"/>
-<hole x="11.5" y="0" drill="2"/>
-<smd name="RING2" x="3.4" y="-3.65" dx="2" dy="2.8" layer="1"/>
+<wire x1="6.5878" y1="-3.0512" x2="9.4346" y2="-3.0512" width="0.254" layer="21"/>
+<wire x1="12.0288" y1="-3.102" x2="11.5572" y2="-3.102" width="0.254" layer="21"/>
+<wire x1="3.8902" y1="3.078" x2="8.171" y2="3.078" width="0.254" layer="21"/>
+<wire x1="1.735" y1="3.0782" x2="-0.02" y2="3.0582" width="0.254" layer="51"/>
+<wire x1="-0.02" y1="3.0582" x2="-0.02" y2="-2.0452" width="0.254" layer="51"/>
+<wire x1="-0.1524" y1="2.0008" x2="-2.0178" y2="2.0008" width="0.254" layer="51"/>
+<wire x1="-2.0178" y1="2.0008" x2="-2.0178" y2="-2.0252" width="0.254" layer="51"/>
+<wire x1="-2.0178" y1="-2.0252" x2="-0.02" y2="-2.0452" width="0.254" layer="51"/>
+<smd name="SLEEVE" x="2.8" y="-3.65" dx="1.5" dy="2.5" layer="1"/>
+<smd name="RSW" x="10.5" y="-3.65" dx="1.5" dy="2.5" layer="1"/>
+<smd name="TIP" x="9.3" y="3.65" dx="1.5" dy="2.5" layer="1"/>
+<smd name="TSW" x="11.45" y="3.2" dx="3.4" dy="1.5" layer="1" rot="R90"/>
+<smd name="RING2" x="2.79" y="3.2" dx="1.5" dy="3.4" layer="1" rot="R180"/>
+<hole x="10.5" y="0" drill="1.5"/>
+<smd name="RING1" x="5.5" y="-3.65" dx="1.5" dy="2.5" layer="1"/>
+<wire x1="12.0288" y1="1.065" x2="12.0288" y2="-3.102" width="0.254" layer="21"/>
+<wire x1="-0.002" y1="-3.1288" x2="0.018" y2="3.0828" width="0.254" layer="21"/>
+<wire x1="1.665" y1="-3.1288" x2="-0.002" y2="-3.1288" width="0.254" layer="21"/>
+<wire x1="0" y1="2" x2="1.2" y2="2" width="0.25" layer="21" style="shortdash"/>
+<wire x1="1.2" y1="2" x2="1.2" y2="-2" width="0.25" layer="21" style="shortdash"/>
+<wire x1="1.2" y1="-2" x2="0" y2="-2" width="0.25" layer="21" style="shortdash"/>
 </package>
 </packages>
 <symbols>
@@ -25400,7 +25403,7 @@ Joystick commonly found in PS2 controllers. Two pots and a select switch. Adapte
 </device>
 </devices>
 </deviceset>
-<deviceset name="AUDIO-JACK-6POLE-CUI">
+<deviceset name="AUDIO-JACK-6POLE">
 <description>Stereo audio jack with bypass switches.</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK-6POLE" x="0.508" y="0.762"/>

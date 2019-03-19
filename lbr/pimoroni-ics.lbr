@@ -4469,6 +4469,15 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <text x="-12.7" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
 <text x="0" y="7.62" size="2.286" layer="94" align="bottom-center">LIS2DW12
 1.62 - 3.6V</text>
+<text x="-5.08" y="-6.35" size="1.778" layer="94">with 
+internal 
+pull-up</text>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-7.62" x2="3.81" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-3.81" x2="13.97" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="13.97" y1="-3.81" x2="13.97" y2="1.27" width="0.254" layer="94"/>
+<wire x1="13.97" y1="1.27" x2="-6.35" y2="1.27" width="0.254" layer="94"/>
 </symbol>
 <symbol name="TC1047">
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -6390,6 +6399,93 @@ Vref: 0.8V </text>
 <text x="-22.86" y="-48.26" size="1.778" layer="94">SPIs double as I2S too
 NSS-&gt;LRCLK, SCK-&gt;BCLK
 MISO-&gt;MCLK, MOSI-&gt;SDATA</text>
+</symbol>
+<symbol name="STM32G070RB">
+<pin name="46_BOOT0/SWCLK/PA14" x="27.94" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="57_PB3" x="27.94" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="58_PB4" x="27.94" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="59_WKUP6/PB5" x="27.94" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="60_I2C1_SCL/PB6" x="27.94" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="61_I2C1_SDA/PB7" x="27.94" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="62_I2C1_SCL/PB8" x="27.94" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="63_I2C1_SDA/PB9" x="27.94" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="30_I2C2_SCL/ADC11/PB10" x="27.94" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="32_ADC16/PB12" x="27.94" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="33_I2C2_SCL/PB13" x="27.94" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="34_I2C2_SDA/PB14" x="27.94" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="35_PB15" x="27.94" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="29_ADC10/PB2" x="27.94" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="28_ADC9/PB1" x="27.94" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="27_ADC8/PB0" x="27.94" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="47_PA15" x="27.94" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="45_SWDIO/PA13" x="27.94" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="44_I2C2_SDA/PA12" x="27.94" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="43_I2C2_SCL/PA11" x="27.94" y="33.02" visible="pin" length="short" rot="R180"/>
+<pin name="42_I2C1_SDA/PA10" x="27.94" y="35.56" visible="pin" length="short" rot="R180"/>
+<pin name="37_I2C1_SCL/PA9" x="27.94" y="38.1" visible="pin" length="short" rot="R180"/>
+<pin name="36_PA8" x="27.94" y="40.64" visible="pin" length="short" rot="R180"/>
+<pin name="24_ADC7/PA7" x="27.94" y="43.18" visible="pin" length="short" rot="R180"/>
+<pin name="23_ADC6/PA6" x="27.94" y="45.72" visible="pin" length="short" rot="R180"/>
+<pin name="22_ADC5/PA5" x="27.94" y="48.26" visible="pin" length="short" rot="R180"/>
+<pin name="21_ADC4/PA4" x="27.94" y="50.8" visible="pin" length="short" rot="R180"/>
+<pin name="20_ADC3/PA3" x="27.94" y="53.34" visible="pin" length="short" rot="R180"/>
+<pin name="19_WKUP4/ADC2/PA2" x="27.94" y="55.88" visible="pin" length="short" rot="R180"/>
+<pin name="18_ADC1/PA1" x="27.94" y="58.42" visible="pin" length="short" rot="R180"/>
+<pin name="17_WKUP1/ADC0/PA0" x="27.94" y="60.96" visible="pin" length="short" rot="R180"/>
+<pin name="02_PC12" x="27.94" y="-58.42" visible="pin" length="short" rot="R180"/>
+<pin name="01_PC11" x="27.94" y="-55.88" visible="pin" length="short" rot="R180"/>
+<pin name="64_PC10" x="27.94" y="-53.34" visible="pin" length="short" rot="R180"/>
+<pin name="49_PC9" x="27.94" y="-50.8" visible="pin" length="short" rot="R180"/>
+<pin name="48_PC8" x="27.94" y="-48.26" visible="pin" length="short" rot="R180"/>
+<pin name="39_PC7" x="27.94" y="-45.72" visible="pin" length="short" rot="R180"/>
+<pin name="38_PC6" x="27.94" y="-43.18" visible="pin" length="short" rot="R180"/>
+<pin name="26_WKUP5/ADC18/PC5" x="27.94" y="-40.64" visible="pin" length="short" rot="R180"/>
+<pin name="25_ADC17/PC4" x="27.94" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="16_PC3" x="27.94" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="15_PC2" x="27.94" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="14_PC1" x="27.94" y="-30.48" visible="pin" length="short" rot="R180"/>
+<pin name="13_PC0" x="27.94" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="03_WKUP2/PC13" x="27.94" y="-60.96" visible="pin" length="short" rot="R180"/>
+<pin name="04_OSC32_IN/PC14" x="27.94" y="-63.5" visible="pin" length="short" rot="R180"/>
+<pin name="05_OSC32_OUT/PC15" x="27.94" y="-66.04" visible="pin" length="short" rot="R180"/>
+<pin name="08_VDD" x="-27.94" y="60.96" length="short"/>
+<pin name="07_VREF" x="-27.94" y="40.64" length="short"/>
+<pin name="06_VBAT" x="-27.94" y="20.32" length="short"/>
+<pin name="09_VSS" x="-27.94" y="-66.04" length="short"/>
+<pin name="31_I2C2_SDA/ADC15/PB11" x="27.94" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="10_PF0_OSC_IN" x="-27.94" y="-5.08" visible="pin" length="short"/>
+<pin name="11_PF1_OSC_OUT" x="-27.94" y="-7.62" visible="pin" length="short"/>
+<pin name="12_NRST" x="-27.94" y="2.54" visible="pin" length="short"/>
+<wire x1="-25.4" y1="-68.58" x2="-25.4" y2="63.5" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="63.5" x2="-25.4" y2="73.66" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="73.66" x2="25.4" y2="73.66" width="0.254" layer="94"/>
+<wire x1="25.4" y1="73.66" x2="25.4" y2="-68.58" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-68.58" x2="-25.4" y2="-68.58" width="0.254" layer="94"/>
+<text x="0" y="69.85" size="2.54" layer="94" align="bottom-center">STM32G070RB</text>
+<text x="0" y="63.5" size="1.778" layer="94" align="bottom-center">Normal: 2.0-3.6V, VBAT: 1.55-3.6V
+15mA max per IO, 80mA total</text>
+<pin name="52_PD2" x="-27.94" y="-22.86" visible="pin" length="short"/>
+<pin name="50_PD0" x="-27.94" y="-17.78" visible="pin" length="short"/>
+<pin name="51_PD1" x="-27.94" y="-20.32" visible="pin" length="short"/>
+<pin name="53_PD3" x="-27.94" y="-25.4" visible="pin" length="short"/>
+<pin name="54_PD4" x="-27.94" y="-27.94" visible="pin" length="short"/>
+<pin name="55_PD5" x="-27.94" y="-30.48" visible="pin" length="short"/>
+<pin name="56_PD6" x="-27.94" y="-33.02" visible="pin" length="short"/>
+<pin name="40_PD8" x="-27.94" y="-38.1" visible="pin" length="short"/>
+<pin name="41_PD9" x="-27.94" y="-40.64" visible="pin" length="short"/>
+<text x="-24.13" y="-54.61" size="1.778" layer="94">All IO are 5.5V tolerant, except:
+PA4/PA5: Vdd
+PA8/PB15/PD0/PD2: 5.0V</text>
+</symbol>
+<symbol name="TPS3839">
+<text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">TPS3839</text>
+<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
+<pin name="!RESET" x="15.24" y="0" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10258,6 +10354,101 @@ Source:</description>
 <connect gate="G$1" pin="62_SPI2_NSS/PB9" pad="62"/>
 <connect gate="G$1" pin="63_VSS" pad="63"/>
 <connect gate="G$1" pin="64_VDD" pad="64"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32G070RB" prefix="U">
+<gates>
+<gate name="G$1" symbol="STM32G070RB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFP-64">
+<connects>
+<connect gate="G$1" pin="01_PC11" pad="1"/>
+<connect gate="G$1" pin="02_PC12" pad="2"/>
+<connect gate="G$1" pin="03_WKUP2/PC13" pad="3"/>
+<connect gate="G$1" pin="04_OSC32_IN/PC14" pad="4"/>
+<connect gate="G$1" pin="05_OSC32_OUT/PC15" pad="5"/>
+<connect gate="G$1" pin="06_VBAT" pad="6"/>
+<connect gate="G$1" pin="07_VREF" pad="7"/>
+<connect gate="G$1" pin="08_VDD" pad="8"/>
+<connect gate="G$1" pin="09_VSS" pad="9"/>
+<connect gate="G$1" pin="10_PF0_OSC_IN" pad="10"/>
+<connect gate="G$1" pin="11_PF1_OSC_OUT" pad="11"/>
+<connect gate="G$1" pin="12_NRST" pad="12"/>
+<connect gate="G$1" pin="13_PC0" pad="13"/>
+<connect gate="G$1" pin="14_PC1" pad="14"/>
+<connect gate="G$1" pin="15_PC2" pad="15"/>
+<connect gate="G$1" pin="16_PC3" pad="16"/>
+<connect gate="G$1" pin="17_WKUP1/ADC0/PA0" pad="17"/>
+<connect gate="G$1" pin="18_ADC1/PA1" pad="18"/>
+<connect gate="G$1" pin="19_WKUP4/ADC2/PA2" pad="19"/>
+<connect gate="G$1" pin="20_ADC3/PA3" pad="20"/>
+<connect gate="G$1" pin="21_ADC4/PA4" pad="21"/>
+<connect gate="G$1" pin="22_ADC5/PA5" pad="22"/>
+<connect gate="G$1" pin="23_ADC6/PA6" pad="23"/>
+<connect gate="G$1" pin="24_ADC7/PA7" pad="24"/>
+<connect gate="G$1" pin="25_ADC17/PC4" pad="25"/>
+<connect gate="G$1" pin="26_WKUP5/ADC18/PC5" pad="26"/>
+<connect gate="G$1" pin="27_ADC8/PB0" pad="27"/>
+<connect gate="G$1" pin="28_ADC9/PB1" pad="28"/>
+<connect gate="G$1" pin="29_ADC10/PB2" pad="29"/>
+<connect gate="G$1" pin="30_I2C2_SCL/ADC11/PB10" pad="30"/>
+<connect gate="G$1" pin="31_I2C2_SDA/ADC15/PB11" pad="31"/>
+<connect gate="G$1" pin="32_ADC16/PB12" pad="32"/>
+<connect gate="G$1" pin="33_I2C2_SCL/PB13" pad="33"/>
+<connect gate="G$1" pin="34_I2C2_SDA/PB14" pad="34"/>
+<connect gate="G$1" pin="35_PB15" pad="35"/>
+<connect gate="G$1" pin="36_PA8" pad="36"/>
+<connect gate="G$1" pin="37_I2C1_SCL/PA9" pad="37"/>
+<connect gate="G$1" pin="38_PC6" pad="38"/>
+<connect gate="G$1" pin="39_PC7" pad="39"/>
+<connect gate="G$1" pin="40_PD8" pad="40"/>
+<connect gate="G$1" pin="41_PD9" pad="41"/>
+<connect gate="G$1" pin="42_I2C1_SDA/PA10" pad="42"/>
+<connect gate="G$1" pin="43_I2C2_SCL/PA11" pad="43"/>
+<connect gate="G$1" pin="44_I2C2_SDA/PA12" pad="44"/>
+<connect gate="G$1" pin="45_SWDIO/PA13" pad="45"/>
+<connect gate="G$1" pin="46_BOOT0/SWCLK/PA14" pad="46"/>
+<connect gate="G$1" pin="47_PA15" pad="47"/>
+<connect gate="G$1" pin="48_PC8" pad="48"/>
+<connect gate="G$1" pin="49_PC9" pad="49"/>
+<connect gate="G$1" pin="50_PD0" pad="50"/>
+<connect gate="G$1" pin="51_PD1" pad="51"/>
+<connect gate="G$1" pin="52_PD2" pad="52"/>
+<connect gate="G$1" pin="53_PD3" pad="53"/>
+<connect gate="G$1" pin="54_PD4" pad="54"/>
+<connect gate="G$1" pin="55_PD5" pad="55"/>
+<connect gate="G$1" pin="56_PD6" pad="56"/>
+<connect gate="G$1" pin="57_PB3" pad="57"/>
+<connect gate="G$1" pin="58_PB4" pad="58"/>
+<connect gate="G$1" pin="59_WKUP6/PB5" pad="59"/>
+<connect gate="G$1" pin="60_I2C1_SCL/PB6" pad="60"/>
+<connect gate="G$1" pin="61_I2C1_SDA/PB7" pad="61"/>
+<connect gate="G$1" pin="62_I2C1_SCL/PB8" pad="62"/>
+<connect gate="G$1" pin="63_I2C1_SDA/PB9" pad="63"/>
+<connect gate="G$1" pin="64_PC10" pad="64"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS3839" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="TPS3839" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-AH3582-SA-7">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

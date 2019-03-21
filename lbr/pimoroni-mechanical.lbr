@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1398,6 +1398,36 @@ undermounted!</text>
 <text x="0" y="-3" size="1.25" layer="21" font="vector" ratio="14" align="bottom-center">B</text>
 <text x="0" y="3" size="1.25" layer="21" font="vector" ratio="14" align="top-center">X</text>
 </package>
+<package name="ELV-1411A">
+<wire x1="7" y1="5.5" x2="7" y2="-5.5" width="0.2" layer="51"/>
+<wire x1="7" y1="-5.5" x2="-7" y2="-5.5" width="0.2" layer="51"/>
+<wire x1="-7" y1="-5.5" x2="-7" y2="5.5" width="0.2" layer="51"/>
+<wire x1="-7" y1="5.5" x2="7" y2="5.5" width="0.2" layer="51"/>
+<smd name="S1" x="-6.15" y="3.45" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="S6" x="6.15" y="3.45" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="S7" x="6.15" y="-3.45" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="S12" x="-6.15" y="-3.45" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="S2" x="-3.5" y="3.35" dx="2.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="S5" x="3.5" y="3.35" dx="2.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="S11" x="-3.5" y="-3.35" dx="2.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="S8" x="3.5" y="-3.35" dx="2.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="S10" x="-0.85" y="-3.35" dx="2.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="S9" x="0.85" y="-3.35" dx="2.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="S4" x="0.85" y="3.35" dx="2.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="S3" x="-0.85" y="3.35" dx="2.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="LRA_P1" x="-0.85" y="0.85" dx="1.2" dy="1" layer="1"/>
+<smd name="LRA_P2" x="0.85" y="0.85" dx="1.2" dy="1" layer="1"/>
+<smd name="LRA_N2" x="0.85" y="-0.85" dx="1.2" dy="1" layer="1"/>
+<smd name="LRA_N1" x="-0.85" y="-0.85" dx="1.2" dy="1" layer="1"/>
+<wire x1="-7" y1="5" x2="-7" y2="5.5" width="0.2" layer="21"/>
+<wire x1="-7" y1="5.5" x2="-6.5" y2="5.5" width="0.2" layer="21"/>
+<wire x1="6.5" y1="5.5" x2="7" y2="5.5" width="0.2" layer="21"/>
+<wire x1="7" y1="5.5" x2="7" y2="5" width="0.2" layer="21"/>
+<wire x1="7" y1="-5" x2="7" y2="-5.5" width="0.2" layer="21"/>
+<wire x1="7" y1="-5.5" x2="6.5" y2="-5.5" width="0.2" layer="21"/>
+<wire x1="-7" y1="-5" x2="-7" y2="-5.5" width="0.2" layer="21"/>
+<wire x1="-7" y1="-5.5" x2="-6.5" y2="-5.5" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-DPDT">
@@ -2052,7 +2082,7 @@ MOTOR</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="VIBRATION_MOTOR">
+<deviceset name="VIBRATION_MOTOR" prefix="VIBE">
 <gates>
 <gate name="G$1" symbol="VIBRATION_MOTOR" x="-2.54" y="0"/>
 </gates>
@@ -2062,6 +2092,16 @@ MOTOR</text>
 <connect gate="G$1" pin="MOTOR1" pad="MOTOR1"/>
 <connect gate="G$1" pin="MOTOR2" pad="MOTOR2"/>
 <connect gate="G$1" pin="MOUNTS" pad="MT1 MT2 MT3 MT4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ELV-1411A" package="ELV-1411A">
+<connects>
+<connect gate="G$1" pin="MOTOR1" pad="LRA_P1 LRA_P2"/>
+<connect gate="G$1" pin="MOTOR2" pad="LRA_N1 LRA_N2"/>
+<connect gate="G$1" pin="MOUNTS" pad="S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>

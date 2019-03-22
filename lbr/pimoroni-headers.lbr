@@ -3078,6 +3078,31 @@ from this side</text>
 <smd name="B6" x="5.08" y="-5.05" dx="1" dy="2.9" layer="1"/>
 <smd name="B7" x="7.62" y="-5.05" dx="1" dy="2.9" layer="1"/>
 </package>
+<package name="1X6_FEMALE_SMT_RIGHT_ANGLE">
+<smd name="A1" x="-6.35" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B1" x="-6.35" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A2" x="-3.81" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A3" x="-1.27" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A4" x="1.27" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A5" x="3.81" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B2" x="-3.81" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B3" x="-1.27" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B4" x="1.27" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B5" x="3.81" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<wire x1="7.62" y1="-4.05" x2="7.62" y2="4.05" width="0.2" layer="51"/>
+<wire x1="7.62" y1="4.05" x2="-7.62" y2="4.05" width="0.2" layer="51"/>
+<wire x1="-7.62" y1="4.05" x2="-7.62" y2="-4.05" width="0.2" layer="51"/>
+<wire x1="-7.62" y1="-4.05" x2="7.62" y2="-4.05" width="0.2" layer="51"/>
+<wire x1="3.175" y1="3.175" x2="3.81" y2="1.27" width="0.3" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="4.445" y2="3.175" width="0.3" layer="21"/>
+<wire x1="4.445" y1="3.175" x2="3.175" y2="3.175" width="0.3" layer="21"/>
+<text x="-7.27" y="0" size="1.1" layer="51">Wires inserted 
+from this side</text>
+<text x="0" y="7.5" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="-1.27" y="-3" size="2" layer="21" font="vector" ratio="14" align="bottom-center">1X6</text>
+<smd name="A6" x="6.35" y="5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="B6" x="6.35" y="-5.05" dx="1" dy="2.9" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1X2">
@@ -5049,6 +5074,26 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="7" pad="A4"/>
 <connect gate="G$1" pin="8" pad="B4"/>
 <connect gate="G$1" pin="9" pad="A5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="6-WAY">
+<gates>
+<gate name="G$1" symbol="1X6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X6_FEMALE_SMT_RIGHT_ANGLE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="A1 B1"/>
+<connect gate="G$1" pin="P$2" pad="A2 B2"/>
+<connect gate="G$1" pin="P$3" pad="A3 B3"/>
+<connect gate="G$1" pin="P$4" pad="A4 B4"/>
+<connect gate="G$1" pin="P$5" pad="A5 B5"/>
+<connect gate="G$1" pin="P$6" pad="A6 B6"/>
 </connects>
 <technologies>
 <technology name=""/>

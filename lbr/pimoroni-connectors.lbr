@@ -1297,24 +1297,24 @@
 <wire x1="-4.2" y1="1.6" x2="-4.2" y2="-1.7" width="0.1" layer="21" style="shortdash"/>
 </package>
 <package name="KAILH_MX_NO_SOLDER">
-<smd name="S1" x="-6.544321875" y="1.23698125" dx="2.55" dy="2.5" layer="1"/>
-<hole x="-3.175" y="1.27" drill="3.4"/>
-<hole x="3.175" y="-1.27" drill="3.4"/>
-<smd name="S2" x="6.549384375" y="-1.209040625" dx="2.55" dy="2.5" layer="1"/>
-<wire x1="-5.4347625" y1="3.009059375" x2="-5.439159375" y2="-0.402571875" width="0.127" layer="51"/>
-<wire x1="-5.439159375" y1="-0.402571875" x2="-2.939159375" y2="-2.90491875" width="0.127" layer="51" curve="90.073912"/>
-<wire x1="-2.939159375" y1="-2.90491875" x2="5.457615625" y2="-2.90491875" width="0.127" layer="51"/>
-<wire x1="5.457615625" y1="-2.90491875" x2="5.465240625" y2="1.12268125" width="0.127" layer="51"/>
-<wire x1="5.465240625" y1="1.12268125" x2="0.0169375" y2="1.12268125" width="0.127" layer="51"/>
-<wire x1="0.0169375" y1="1.12268125" x2="-1.871140625" y2="3.009059375" width="0.127" layer="51" curve="-89.948412"/>
-<wire x1="-1.871140625" y1="3.009059375" x2="-5.4347625" y2="3.009059375" width="0.127" layer="51"/>
-<wire x1="-4.4347625" y1="2.009059375" x2="-4.439159375" y2="-0.402571875" width="1" layer="21"/>
-<wire x1="-4.439159375" y1="-0.402571875" x2="-2.939159375" y2="-1.90491875" width="1" layer="21" curve="90.073912"/>
-<wire x1="-2.939159375" y1="-1.90491875" x2="4.457615625" y2="-1.90491875" width="1" layer="21"/>
-<wire x1="4.457615625" y1="-1.90491875" x2="4.465240625" y2="0.12268125" width="1" layer="21"/>
-<wire x1="4.465240625" y1="0.12268125" x2="-0.9830625" y2="0.12268125" width="1" layer="21"/>
-<wire x1="-0.9830625" y1="0.12268125" x2="-2.871140625" y2="2.009059375" width="1" layer="21" curve="-89.948412"/>
-<wire x1="-2.871140625" y1="2.009059375" x2="-4.4347625" y2="2.009059375" width="1" layer="21"/>
+<smd name="S1" x="-7.179321875" y="-2.57301875" dx="2.55" dy="2.5" layer="1"/>
+<hole x="-3.81" y="-2.54" drill="3.4"/>
+<hole x="2.54" y="-5.08" drill="3.4"/>
+<smd name="S2" x="5.914384375" y="-5.019040625" dx="2.55" dy="2.5" layer="1"/>
+<wire x1="-6.0697625" y1="-0.800940625" x2="-6.074159375" y2="-4.212571875" width="0.127" layer="51"/>
+<wire x1="-6.074159375" y1="-4.212571875" x2="-3.574159375" y2="-6.71491875" width="0.127" layer="51" curve="90.073912"/>
+<wire x1="-3.574159375" y1="-6.71491875" x2="4.822615625" y2="-6.71491875" width="0.127" layer="51"/>
+<wire x1="4.822615625" y1="-6.71491875" x2="4.830240625" y2="-2.68731875" width="0.127" layer="51"/>
+<wire x1="4.830240625" y1="-2.68731875" x2="-0.6180625" y2="-2.68731875" width="0.127" layer="51"/>
+<wire x1="-0.6180625" y1="-2.68731875" x2="-2.506140625" y2="-0.800940625" width="0.127" layer="51" curve="-89.948412"/>
+<wire x1="-2.506140625" y1="-0.800940625" x2="-6.0697625" y2="-0.800940625" width="0.127" layer="51"/>
+<wire x1="-5.0697625" y1="-1.800940625" x2="-5.074159375" y2="-4.212571875" width="1" layer="21"/>
+<wire x1="-5.074159375" y1="-4.212571875" x2="-3.574159375" y2="-5.71491875" width="1" layer="21" curve="90.073912"/>
+<wire x1="-3.574159375" y1="-5.71491875" x2="3.822615625" y2="-5.71491875" width="1" layer="21"/>
+<wire x1="3.822615625" y1="-5.71491875" x2="3.830240625" y2="-3.68731875" width="1" layer="21"/>
+<wire x1="3.830240625" y1="-3.68731875" x2="-1.6180625" y2="-3.68731875" width="1" layer="21"/>
+<wire x1="-1.6180625" y1="-3.68731875" x2="-3.506140625" y2="-1.800940625" width="1" layer="21" curve="-89.948412"/>
+<wire x1="-3.506140625" y1="-1.800940625" x2="-5.0697625" y2="-1.800940625" width="1" layer="21"/>
 </package>
 <package name="FPC_1.0X06_FLIP">
 <smd name="1" x="-2.5" y="-0.65" dx="0.6" dy="2" layer="1"/>
@@ -1671,6 +1671,17 @@
 <wire x1="3" y1="-2.6" x2="-3" y2="-2.6" width="0.1" layer="21"/>
 <wire x1="-3" y1="-2.6" x2="-3" y2="-1.7" width="0.1" layer="21"/>
 <wire x1="-3" y1="-1.7" x2="-3.6" y2="-1.7" width="0.1" layer="21"/>
+</package>
+<package name="PICOBLADE_1.25MM_2P">
+<smd name="1" x="-0.625" y="0.8" dx="0.8" dy="1.6" layer="1"/>
+<smd name="2" x="0.625" y="0.8" dx="0.8" dy="1.6" layer="1"/>
+<smd name="MT1" x="-3.175" y="-2.1" dx="2.1" dy="3" layer="1"/>
+<smd name="MT2" x="3.175" y="-2.1" dx="2.1" dy="3" layer="1"/>
+<wire x1="-3.675" y1="0.3" x2="3.675" y2="0.3" width="0.127" layer="51"/>
+<wire x1="3.675" y1="0.3" x2="3.675" y2="-4" width="0.127" layer="51"/>
+<wire x1="3.675" y1="-4" x2="-3.675" y2="-4" width="0.127" layer="51"/>
+<wire x1="-3.675" y1="-4" x2="-3.675" y2="0.3" width="0.127" layer="51"/>
+<text x="0" y="-3" size="1.2" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2401,6 +2412,16 @@
 <pin name="22" x="12.7" y="7.62" length="middle" rot="R180"/>
 <pin name="23" x="12.7" y="10.16" length="middle" rot="R180"/>
 <pin name="24" x="12.7" y="12.7" length="middle" rot="R180"/>
+</symbol>
+<symbol name="1X02_W_MOUNTS">
+<pin name="1" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="2" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<text x="0" y="8.382" size="2.54" layer="95" font="vector" ratio="14">&gt;NAME</text>
+<wire x1="7.62" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<pin name="MT1" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="MT2" x="10.16" y="-5.08" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3662,6 +3683,24 @@ push-push type</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X02" prefix="J">
+<gates>
+<gate name="G$1" symbol="1X02_W_MOUNTS" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="PICOBLADE" package="PICOBLADE_1.25MM_2P">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="MT1" pad="MT1"/>
+<connect gate="G$1" pin="MT2" pad="MT2"/>
 </connects>
 <technologies>
 <technology name=""/>

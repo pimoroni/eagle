@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4878,7 +4878,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="2-WAY">
+<deviceset name="2-WAY" prefix="J">
 <gates>
 <gate name="G$1" symbol="1X2" x="-2.54" y="0"/>
 </gates>
@@ -5088,12 +5088,12 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <devices>
 <device name="" package="1X6_FEMALE_SMT_RIGHT_ANGLE">
 <connects>
-<connect gate="G$1" pin="P$1" pad="A1 B1"/>
-<connect gate="G$1" pin="P$2" pad="A2 B2"/>
-<connect gate="G$1" pin="P$3" pad="A3 B3"/>
-<connect gate="G$1" pin="P$4" pad="A4 B4"/>
-<connect gate="G$1" pin="P$5" pad="A5 B5"/>
-<connect gate="G$1" pin="P$6" pad="A6 B6"/>
+<connect gate="G$1" pin="P$1" pad="A1 B1" route="any"/>
+<connect gate="G$1" pin="P$2" pad="A2 B2" route="any"/>
+<connect gate="G$1" pin="P$3" pad="A3 B3" route="any"/>
+<connect gate="G$1" pin="P$4" pad="A4 B4" route="any"/>
+<connect gate="G$1" pin="P$5" pad="A5 B5" route="any"/>
+<connect gate="G$1" pin="P$6" pad="A6 B6" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>

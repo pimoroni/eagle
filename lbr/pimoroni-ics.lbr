@@ -1374,8 +1374,8 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <smd name="7" x="2.54" y="0.585" dx="0.6" dy="1.2" layer="1" rot="R90"/>
 <smd name="8" x="2.54" y="1.855" dx="0.6" dy="1.2" layer="1" rot="R90"/>
 <circle x="-0.93" y="1.525" radius="0.2" width="0.4" layer="21"/>
-<text x="-2" y="3.46" size="0.8128" layer="21" font="vector" ratio="14">&gt;NAME</text>
-<text x="-2" y="-4.54" size="0.8128" layer="21" font="vector" ratio="14">&gt;VALUE</text>
+<text x="0" y="0" size="0.8128" layer="25" font="vector" ratio="14" align="center">&gt;NAME</text>
+<text x="-2" y="-3.651" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
 </package>
 <package name="TSSOP24_WITH_PAD">
 <description>&lt;b&gt;Thin Shrink Small Outline Plastic 24&lt;/b&gt;&lt;p&gt;
@@ -3450,10 +3450,10 @@ Source: RSB_TPS65023RSB_Land_Pattern.pdf</description>
 <pin name="SPI1_MOSI/PB15" x="22.86" y="-43.18" visible="pin" length="short" rot="R180"/>
 <pin name="PC15/OSC32_OUT" x="-25.4" y="10.16" visible="pin" length="short"/>
 <pin name="5V_PB2" x="22.86" y="-7.62" visible="pin" length="short" rot="R180"/>
-<text x="-17.78" y="-10.16" size="1.778" layer="94">Non-ADC 
-pins on 
-ports A,B and F 
-are 5V 
+<text x="-17.78" y="-10.16" size="1.778" layer="94">Non-ADC
+pins on
+ports A,B and F
+are 5V
 tolerant.</text>
 </symbol>
 <symbol name="TPS54332DDAR">
@@ -4502,8 +4502,8 @@ The MMA8653FC is an intelligent, low-power, three-axis, capacitive micromachined
 <text x="-12.7" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
 <text x="0" y="7.62" size="2.286" layer="94" align="bottom-center">LIS2DW12
 1.62 - 3.6V</text>
-<text x="-5.08" y="-6.35" size="1.778" layer="94">with 
-internal 
+<text x="-5.08" y="-6.35" size="1.778" layer="94">with
+internal
 pull-up</text>
 <wire x1="-6.35" y1="1.27" x2="-6.35" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-6.35" y1="-7.62" x2="3.81" y2="-7.62" width="0.254" layer="94"/>
@@ -4697,7 +4697,7 @@ pull-up</text>
 <wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="15.24" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<text x="-7.62" y="27.94" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="16.256" size="2.54" layer="95" align="bottom-center">&gt;NAME</text>
 <pin name="VCC" x="-15.24" y="12.7" length="middle"/>
 </symbol>
 <symbol name="DMMT5401">
@@ -5455,7 +5455,7 @@ pull-up</text>
 <wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
 <wire x1="12.7" y1="22.86" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<text x="-10.16" y="10.16" size="2.54" layer="94">AAT3176IDH 
+<text x="-10.16" y="10.16" size="2.54" layer="94">AAT3176IDH
 2.7V-5.5V</text>
 <text x="-12.7" y="25.4" size="2.54" layer="94">&gt;NAME</text>
 </symbol>
@@ -5543,7 +5543,7 @@ pull-up</text>
 2.7V-5.5V
 256 PWM
 38mA/ch max</text>
-<text x="-8.89" y="-45.72" size="1.778" layer="94">Rext = 
+<text x="-8.89" y="-45.72" size="1.778" layer="94">Rext =
 (58.5 * 1.3) / Imax
 Example:
 3.3kohm-&gt;23mA/ch</text>
@@ -6005,8 +6005,8 @@ I2C 0x52</text>
 <wire x1="7.62" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="97"/>
 <wire x1="5.08" y1="12.7" x2="5.08" y2="5.08" width="0.254" layer="97"/>
 <wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="97"/>
-<text x="-12.7" y="-30.48" size="1.27" layer="94">Non-analog pins 
-(PF0-1,PA9-15, PB3-8) 
+<text x="-12.7" y="-30.48" size="1.27" layer="94">Non-analog pins
+(PF0-1,PA9-15, PB3-8)
 are 5V tolerant.</text>
 </symbol>
 <symbol name="STM32H750VB">
@@ -6550,6 +6550,43 @@ PA8/PB15/PD0/PD2: 5.0V</text>
 <wire x1="-20.32" y1="0" x2="-19.304" y2="0" width="0.254" layer="94"/>
 <pin name="VCC" x="-10.16" y="15.24" visible="pin" length="short" rot="R270"/>
 <pin name="GND" x="-10.16" y="-5.08" visible="pin" length="short" rot="R90"/>
+</symbol>
+<symbol name="MSA300">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="VDD" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="VDDIO" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="INT1" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="INT2" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="SDO/ADDR" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SDIO/SDA" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="!CS" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PS" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<text x="-12.7" y="12.7" size="1.27" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-12.7" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="HT0740">
+<pin name="VIN" x="-17.78" y="5.08" length="middle"/>
+<pin name="GND" x="-17.78" y="-5.08" length="middle"/>
+<pin name="VOUT_P" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="VOUT_N" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94" style="shortdash"/>
+<text x="0" y="0" size="1.778" layer="97" rot="R90" align="bottom-center">ISOLATION</text>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="13.97" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="13.97" x2="12.7" y2="13.97" width="0.254" layer="94"/>
+<wire x1="12.7" y1="13.97" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="10.668" size="2.54" layer="94" align="bottom-center">HT0740</text>
+<text x="0" y="8.128" size="1.778" layer="94" align="bottom-center">3.15 - 5.5V</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8344,7 +8381,7 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 </device>
 </devices>
 </deviceset>
-<deviceset name="TCA9554ADBQR">
+<deviceset name="TCA9554ADBQR" prefix="U">
 <gates>
 <gate name="G$1" symbol="TCA9554ADBQR" x="0" y="0"/>
 </gates>
@@ -10543,6 +10580,7 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
+
 <deviceset name="SN74AHC1G02">
 <gates>
 <gate name="G$1" symbol="NOR" x="0" y="0"/>
@@ -10555,6 +10593,42 @@ Source:</description>
 <connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
 <connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MSA300">
+<gates>
+<gate name="G$1" symbol="MSA300" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-12">
+<connects>
+<connect gate="G$1" pin="!CS" pad="10"/>
+<connect gate="G$1" pin="GND" pad="4 8 9"/>
+<connect gate="G$1" pin="INT1" pad="5"/>
+<connect gate="G$1" pin="INT2" pad="6"/>
+<connect gate="G$1" pin="PS" pad="11"/>
+<connect gate="G$1" pin="SCL" pad="12"/>
+<connect gate="G$1" pin="SDIO/SDA" pad="2"/>
+<connect gate="G$1" pin="SDO/ADDR" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VDDIO" pad="3"/>
+</connects>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HT0740" prefix="U">
+<gates>
+<gate name="G$1" symbol="HT0740" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8-150MIL">
+<connects>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT_N" pad="3"/>
+<connect gate="G$1" pin="VOUT_P" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

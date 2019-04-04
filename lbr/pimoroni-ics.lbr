@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6596,6 +6596,66 @@ PA8/PB15/PD0/PD2: 5.0V</text>
 <wire x1="15.24" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
 <text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">HY2111</text>
 </symbol>
+<symbol name="STM32F072CB">
+<pin name="44_BOOT0" x="-27.94" y="-2.54" length="short"/>
+<pin name="39_SPI1_SCK/PB3" x="27.94" y="10.16" length="short" rot="R180"/>
+<pin name="40_SPI1_MISO/PB4" x="27.94" y="7.62" length="short" rot="R180"/>
+<pin name="41_SPI1_MOSI/PB5" x="27.94" y="5.08" length="short" rot="R180"/>
+<pin name="42_PB6" x="27.94" y="2.54" length="short" rot="R180"/>
+<pin name="43_PB7" x="27.94" y="0" length="short" rot="R180"/>
+<pin name="45_PB8" x="27.94" y="-2.54" length="short" rot="R180"/>
+<pin name="46_SPI2_NSS/PB9" x="27.94" y="-5.08" length="short" rot="R180"/>
+<pin name="21_SPI2_SCK/PB10" x="27.94" y="-7.62" length="short" rot="R180"/>
+<pin name="25_SPI2_NSS/PB12" x="27.94" y="-12.7" length="short" rot="R180"/>
+<pin name="26_SPI2_SCK/PB13" x="27.94" y="-15.24" length="short" rot="R180"/>
+<pin name="27_SPI2_MISO/PB14" x="27.94" y="-17.78" length="short" rot="R180"/>
+<pin name="28_SPI2_MOSI/PB15" x="27.94" y="-20.32" length="short" rot="R180"/>
+<pin name="20_PB2" x="27.94" y="12.7" length="short" rot="R180"/>
+<pin name="19_ADC9/PB1" x="27.94" y="15.24" length="short" rot="R180"/>
+<pin name="18_ADC8/PB0" x="27.94" y="17.78" length="short" rot="R180"/>
+<pin name="38_SPI1_NSS/PA15" x="27.94" y="22.86" length="short" rot="R180"/>
+<pin name="37_SWCLK/PA14" x="27.94" y="25.4" length="short" rot="R180"/>
+<pin name="34_SWDIO/PA13" x="27.94" y="27.94" length="short" rot="R180"/>
+<pin name="33_USB_DP/PA12" x="27.94" y="30.48" length="short" rot="R180"/>
+<pin name="32_USB_DM/PA11" x="27.94" y="33.02" length="short" rot="R180"/>
+<pin name="31_PA10" x="27.94" y="35.56" length="short" rot="R180"/>
+<pin name="30_PA9" x="27.94" y="38.1" length="short" rot="R180"/>
+<pin name="29_TIM1_CH1/PA8" x="27.94" y="40.64" length="short" rot="R180"/>
+<pin name="17_ADC7/SPI1_MOSI/PA7" x="27.94" y="43.18" length="short" rot="R180"/>
+<pin name="16_ADC6/SPI1_MISO/PA6" x="27.94" y="45.72" length="short" rot="R180"/>
+<pin name="15_DAC2/ADC5/SPI1_SCK/PA5" x="27.94" y="48.26" length="short" rot="R180"/>
+<pin name="14_DAC1/ADC4/SPI1_NSS/PA4" x="27.94" y="50.8" length="short" rot="R180"/>
+<pin name="13_ADC3/PA3" x="27.94" y="53.34" length="short" rot="R180"/>
+<pin name="12_ADC2/PA2" x="27.94" y="55.88" length="short" rot="R180"/>
+<pin name="11_ADC1/PA1" x="27.94" y="58.42" length="short" rot="R180"/>
+<pin name="10_WKUP1/ADC0/PA0" x="27.94" y="60.96" length="short" rot="R180"/>
+<pin name="02_WKUP2/PC13" x="27.94" y="-60.96" length="short" rot="R180"/>
+<pin name="03_OSC32_IN/PC14" x="27.94" y="-63.5" length="short" rot="R180"/>
+<pin name="04_OSC32_OUT/PC15" x="27.94" y="-66.04" length="short" rot="R180"/>
+<pin name="01_VBAT" x="-27.94" y="60.96" length="short"/>
+<pin name="24_VDD" x="-27.94" y="58.42" length="short"/>
+<pin name="48_VDD" x="-27.94" y="55.88" length="short"/>
+<pin name="36_VDDIO2" x="-27.94" y="17.78" length="short"/>
+<pin name="09_VDDA" x="-27.94" y="35.56" length="short"/>
+<pin name="08_VSSA" x="-27.94" y="-53.34" length="short"/>
+<pin name="23_VSS" x="-27.94" y="-58.42" length="short"/>
+<pin name="35_VSS" x="-27.94" y="-60.96" length="short"/>
+<pin name="47_VSS" x="-27.94" y="-63.5" length="short"/>
+<pin name="22_PB11" x="27.94" y="-10.16" length="short" rot="R180"/>
+<pin name="05_PF0_OSC_IN" x="-27.94" y="-25.4" length="short"/>
+<pin name="06_PF1_OSC_OUT" x="-27.94" y="-27.94" length="short"/>
+<pin name="07_NRST" x="-27.94" y="-5.08" length="short"/>
+<wire x1="-25.4" y1="-68.58" x2="-25.4" y2="63.5" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="63.5" x2="-25.4" y2="71.12" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="71.12" x2="25.4" y2="71.12" width="0.254" layer="94"/>
+<wire x1="25.4" y1="71.12" x2="25.4" y2="-68.58" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-68.58" x2="-25.4" y2="-68.58" width="0.254" layer="94"/>
+<text x="0" y="67.31" size="2.54" layer="94" align="bottom-center">STM32F072CB</text>
+<text x="0" y="63.5" size="1.778" layer="94" align="bottom-center">2.0 - 3.6V</text>
+<text x="-22.86" y="-48.26" size="1.778" layer="94">SPIs double as I2S too
+NSS-&gt;LRCLK, SCK-&gt;BCLK
+MISO-&gt;MCLK, MOSI-&gt;SDATA</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OPAMP" prefix="U">
@@ -10657,6 +10717,68 @@ Source:</description>
 <connect gate="G$1" pin="OD" pad="1"/>
 <connect gate="G$1" pin="VDD" pad="5"/>
 <connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32F072CB" prefix="U">
+<gates>
+<gate name="G$2" symbol="STM32F072CB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UFQFN48-0.5MM">
+<connects>
+<connect gate="G$2" pin="01_VBAT" pad="P$1"/>
+<connect gate="G$2" pin="02_WKUP2/PC13" pad="P$2"/>
+<connect gate="G$2" pin="03_OSC32_IN/PC14" pad="P$3"/>
+<connect gate="G$2" pin="04_OSC32_OUT/PC15" pad="P$4"/>
+<connect gate="G$2" pin="05_PF0_OSC_IN" pad="P$5"/>
+<connect gate="G$2" pin="06_PF1_OSC_OUT" pad="P$6"/>
+<connect gate="G$2" pin="07_NRST" pad="P$7"/>
+<connect gate="G$2" pin="08_VSSA" pad="P$8"/>
+<connect gate="G$2" pin="09_VDDA" pad="P$9"/>
+<connect gate="G$2" pin="10_WKUP1/ADC0/PA0" pad="P$10"/>
+<connect gate="G$2" pin="11_ADC1/PA1" pad="P$11"/>
+<connect gate="G$2" pin="12_ADC2/PA2" pad="P$12"/>
+<connect gate="G$2" pin="13_ADC3/PA3" pad="P$13"/>
+<connect gate="G$2" pin="14_DAC1/ADC4/SPI1_NSS/PA4" pad="P$14"/>
+<connect gate="G$2" pin="15_DAC2/ADC5/SPI1_SCK/PA5" pad="P$15"/>
+<connect gate="G$2" pin="16_ADC6/SPI1_MISO/PA6" pad="P$16"/>
+<connect gate="G$2" pin="17_ADC7/SPI1_MOSI/PA7" pad="P$17"/>
+<connect gate="G$2" pin="18_ADC8/PB0" pad="P$18"/>
+<connect gate="G$2" pin="19_ADC9/PB1" pad="P$19"/>
+<connect gate="G$2" pin="20_PB2" pad="P$20"/>
+<connect gate="G$2" pin="21_SPI2_SCK/PB10" pad="P$21"/>
+<connect gate="G$2" pin="22_PB11" pad="P$22"/>
+<connect gate="G$2" pin="23_VSS" pad="P$23"/>
+<connect gate="G$2" pin="24_VDD" pad="P$24"/>
+<connect gate="G$2" pin="25_SPI2_NSS/PB12" pad="P$25"/>
+<connect gate="G$2" pin="26_SPI2_SCK/PB13" pad="P$26"/>
+<connect gate="G$2" pin="27_SPI2_MISO/PB14" pad="P$27"/>
+<connect gate="G$2" pin="28_SPI2_MOSI/PB15" pad="P$28"/>
+<connect gate="G$2" pin="29_TIM1_CH1/PA8" pad="P$29"/>
+<connect gate="G$2" pin="30_PA9" pad="P$30"/>
+<connect gate="G$2" pin="31_PA10" pad="P$31"/>
+<connect gate="G$2" pin="32_USB_DM/PA11" pad="P$32"/>
+<connect gate="G$2" pin="33_USB_DP/PA12" pad="P$33"/>
+<connect gate="G$2" pin="34_SWDIO/PA13" pad="P$34"/>
+<connect gate="G$2" pin="35_VSS" pad="P$35"/>
+<connect gate="G$2" pin="36_VDDIO2" pad="P$36"/>
+<connect gate="G$2" pin="37_SWCLK/PA14" pad="P$37"/>
+<connect gate="G$2" pin="38_SPI1_NSS/PA15" pad="P$38"/>
+<connect gate="G$2" pin="39_SPI1_SCK/PB3" pad="P$39"/>
+<connect gate="G$2" pin="40_SPI1_MISO/PB4" pad="P$40"/>
+<connect gate="G$2" pin="41_SPI1_MOSI/PB5" pad="P$41"/>
+<connect gate="G$2" pin="42_PB6" pad="P$42"/>
+<connect gate="G$2" pin="43_PB7" pad="P$43"/>
+<connect gate="G$2" pin="44_BOOT0" pad="P$44"/>
+<connect gate="G$2" pin="45_PB8" pad="P$45"/>
+<connect gate="G$2" pin="46_SPI2_NSS/PB9" pad="P$46"/>
+<connect gate="G$2" pin="47_VSS" pad="P$47 PAD"/>
+<connect gate="G$2" pin="48_VDD" pad="P$48"/>
 </connects>
 <technologies>
 <technology name=""/>

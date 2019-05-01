@@ -1334,6 +1334,56 @@
 <smd name="6" x="-2.2" y="-2.65" dx="1.5" dy="2.4" layer="1"/>
 <circle x="-2.2" y="0.7" radius="0.2" width="0.5" layer="21"/>
 </package>
+<package name="LED-6028_REVERSE_RGB">
+<wire x1="-1.6" y1="-1.4" x2="-1.6" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.1" x2="-1.6" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.6" x2="-1.6" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.4" x2="-1.6" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="0.4" x2="-1.6" y2="1.1" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.1" x2="-1.6" y2="1.4" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.4" x2="1.6" y2="1.4" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.4" x2="1.6" y2="1.1" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.1" x2="1.6" y2="0.4" width="0.127" layer="51"/>
+<wire x1="1.6" y1="0.4" x2="1.6" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.4" x2="1.6" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.1" x2="1.6" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.4" x2="-0.8" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-1.4" x2="-1.6" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.1" x2="-2.9" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="-2.9" y1="-1.1" x2="-2.9" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-2.9" y1="-0.4" x2="-1.6" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="0.4" x2="-2.9" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-2.9" y1="0.4" x2="-2.9" y2="1.1" width="0.127" layer="51"/>
+<wire x1="-2.9" y1="1.1" x2="-1.6" y2="1.1" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.1" x2="2.9" y2="1.1" width="0.127" layer="51"/>
+<wire x1="2.9" y1="1.1" x2="2.9" y2="0.4" width="0.127" layer="51"/>
+<wire x1="2.9" y1="0.4" x2="1.6" y2="0.4" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.4" x2="2.9" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="2.9" y1="-0.4" x2="2.9" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="2.9" y1="-1.1" x2="1.6" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.6" x2="-0.8" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-0.6" x2="-2.5" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-0.9" x2="-2.4" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-0.9" x2="-2.4" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-0.6" x2="-2.5" y2="-0.6" width="0.127" layer="51"/>
+<circle x="-2.25" y="-1.9" radius="0.1" width="0.3" layer="21"/>
+<wire x1="-1.9" y1="1.2" x2="-1.4" y2="1.7" width="0" layer="20" curve="-90"/>
+<wire x1="-1.4" y1="1.7" x2="1.4" y2="1.7" width="0" layer="20"/>
+<wire x1="1.4" y1="1.7" x2="1.9" y2="1.2" width="0" layer="20" curve="-90"/>
+<wire x1="1.9" y1="1.2" x2="1.9" y2="-1.2" width="0" layer="20"/>
+<wire x1="1.9" y1="-1.2" x2="1.4" y2="-1.7" width="0" layer="20" curve="-90"/>
+<wire x1="-1.9" y1="1.2" x2="-1.9" y2="-1.2" width="0" layer="20"/>
+<wire x1="-1.9" y1="-1.2" x2="-1.4" y2="-1.7" width="0" layer="20" curve="90"/>
+<wire x1="-1.4" y1="-1.7" x2="1.4" y2="-1.7" width="0" layer="20"/>
+<smd name="1" x="-2.75" y="-0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="4" x="-2.75" y="0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="2" x="2.75" y="-0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="3" x="2.75" y="0.75" dx="1.2" dy="1.2" layer="1"/>
+<rectangle x1="-2.1" y1="-1.45" x2="2.1" y2="1.45" layer="29"/>
+<text x="0" y="0" size="0.4" layer="29" align="center">REVERSE
+MOUNT
+RGB LED</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED-RGB">
@@ -3467,6 +3517,17 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connect gate="G$1" pin="BC" pad="3"/>
 <connect gate="G$1" pin="GC" pad="1"/>
 <connect gate="G$1" pin="RC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="6028_REVERSE" package="LED-6028_REVERSE_RGB">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="BC" pad="3"/>
+<connect gate="G$1" pin="GC" pad="4"/>
+<connect gate="G$1" pin="RC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

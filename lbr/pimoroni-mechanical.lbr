@@ -29,7 +29,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -1657,6 +1657,15 @@ undermounted!</text>
 <wire x1="3.7" y1="-3.6" x2="3.7" y2="-6.6" width="0.127" layer="51"/>
 <wire x1="-3.7" y1="-6.6" x2="-3.7" y2="-3.6" width="0.127" layer="51"/>
 <wire x1="-3.7" y1="-3.6" x2="-6.2" y2="-3.6" width="0.127" layer="51"/>
+</package>
+<package name="30MM_FAN">
+<circle x="0" y="0" radius="15.2" width="0.2" layer="21"/>
+<circle x="0" y="18" radius="1.25" width="0.05" layer="21"/>
+<circle x="0" y="-18" radius="1.25" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="7.5" width="0.2" layer="21"/>
+<circle x="0" y="18" radius="2.05" width="0.05" layer="21"/>
+<circle x="0" y="-18" radius="2.05" width="0.05" layer="21"/>
+<wire x1="10.8" y1="-10.8" x2="11.8" y2="-11.8" width="0.1" layer="21"/>
 </package>
 </packages>
 <symbols>

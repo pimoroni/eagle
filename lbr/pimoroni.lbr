@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9578,10 +9578,10 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <vertex x="0" y="1" curve="90"/>
 </polygon>
 <polygon width="0.127" layer="41">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
+<vertex x="-1.1" y="0" curve="90"/>
+<vertex x="0" y="-1.1" curve="90"/>
+<vertex x="1.1" y="0" curve="90"/>
+<vertex x="0" y="1.1" curve="90"/>
 </polygon>
 </package>
 <package name="TSSOP-16">
@@ -18662,10 +18662,10 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <vertex x="0" y="0.5" curve="90"/>
 </polygon>
 <polygon width="0.127" layer="41">
-<vertex x="-0.5" y="0" curve="90"/>
-<vertex x="0" y="-0.5" curve="90"/>
-<vertex x="0.5" y="0" curve="90"/>
-<vertex x="0" y="0.5" curve="90"/>
+<vertex x="-0.6" y="0" curve="90"/>
+<vertex x="0" y="-0.6" curve="90"/>
+<vertex x="0.6" y="0" curve="90"/>
+<vertex x="0" y="0.6" curve="90"/>
 </polygon>
 </package>
 <package name="AUDIO-JACK-3.5MM-SMD-6POLE">

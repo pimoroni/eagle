@@ -7,9 +7,9 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -2528,6 +2528,30 @@
 <wire x1="-0.2" y1="0.2" x2="0.2" y2="0.2" width="0.127" layer="21"/>
 <text x="0" y="2.159" size="1" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="1X4_SMT_SPRING">
+<hole x="-3.39" y="4.25" drill="1.2"/>
+<hole x="-3.39" y="-4.25" drill="1.2"/>
+<smd name="MT1" x="-4.85" y="2.5" dx="2" dy="1" layer="1"/>
+<smd name="MT2" x="-4.85" y="-2.5" dx="2" dy="1" layer="1"/>
+<wire x1="-5.3" y1="-5" x2="-5.3" y2="5" width="0.2" layer="51"/>
+<wire x1="-5.3" y1="5" x2="-1.2" y2="5" width="0.2" layer="51"/>
+<wire x1="-1.2" y1="5" x2="-0.5" y2="5" width="0.2" layer="51"/>
+<wire x1="-0.5" y1="5" x2="0" y2="5" width="0.2" layer="51"/>
+<wire x1="0" y1="5" x2="0" y2="-5" width="0.2" layer="51"/>
+<wire x1="0" y1="-5" x2="-0.5" y2="-5" width="0.2" layer="51"/>
+<smd name="1" x="-0.5" y="3.75" dx="1.8" dy="1.4" layer="1"/>
+<smd name="2" x="-0.5" y="1.25" dx="1.8" dy="1.4" layer="1"/>
+<smd name="3" x="-0.5" y="-1.25" dx="1.8" dy="1.4" layer="1"/>
+<smd name="4" x="-0.5" y="-3.75" dx="1.8" dy="1.4" layer="1"/>
+<wire x1="-0.5" y1="-5" x2="-1.2" y2="-5" width="0.2" layer="51"/>
+<wire x1="-1.2" y1="-5" x2="-5.3" y2="-5" width="0.2" layer="51"/>
+<wire x1="-1.2" y1="-5" x2="-1.2" y2="5" width="0.2" layer="51" style="shortdash"/>
+<wire x1="-0.5" y1="5" x2="-0.5" y2="-5" width="0.2" layer="51" style="shortdash"/>
+<wire x1="0.24" y1="4" x2="0.24" y2="3.5" width="0.2" layer="51"/>
+<wire x1="0.24" y1="1.5" x2="0.24" y2="1" width="0.2" layer="51"/>
+<wire x1="0.24" y1="-1" x2="0.24" y2="-1.5" width="0.2" layer="51"/>
+<wire x1="0.24" y1="-3.5" x2="0.24" y2="-4" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -4557,6 +4581,25 @@ push-push type</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="MT1" pad="MT1"/>
 <connect gate="G$1" pin="MT2" pad="MT2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X4" prefix="J">
+<gates>
+<gate name="G$1" symbol="1X04" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X4_SMT_SPRING">
+<connects>
+<connect gate="G$1" pin="MT" pad="MT1 MT2"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

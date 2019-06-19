@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -947,27 +947,27 @@
 </package>
 <package name="SOLDER_JUMPER_CLOSED">
 <polygon width="0.2" layer="1">
-<vertex x="-0.4" y="-0.8" curve="-90"/>
-<vertex x="-1.2" y="0" curve="-90"/>
-<vertex x="-0.4" y="0.8"/>
+<vertex x="-0.4" y="-0.7" curve="-90"/>
+<vertex x="-1.1" y="0" curve="-90"/>
+<vertex x="-0.4" y="0.7"/>
 </polygon>
-<smd name="1" x="-0.9" y="0" dx="0.4" dy="1" layer="1" stop="no" cream="no"/>
-<smd name="2" x="0.9" y="0" dx="0.4" dy="1" layer="1" stop="no" cream="no"/>
+<smd name="1" x="-0.7" y="0" dx="0.4" dy="1" layer="1" stop="no" cream="no"/>
+<smd name="2" x="0.7" y="0" dx="0.4" dy="1" layer="1" stop="no" cream="no"/>
 <wire x1="-0.3" y1="0" x2="0.3" y2="0" width="0.2" layer="1"/>
 <polygon width="0.2" layer="1">
-<vertex x="0.4" y="0.8" curve="-90"/>
-<vertex x="1.2" y="0" curve="-90"/>
-<vertex x="0.4" y="-0.8"/>
+<vertex x="0.4" y="0.7" curve="-90"/>
+<vertex x="1.1" y="0" curve="-90"/>
+<vertex x="0.4" y="-0.7"/>
 </polygon>
 <polygon width="0.4" layer="29">
-<vertex x="-0.4" y="-0.8"/>
-<vertex x="-0.4" y="0.8" curve="90"/>
-<vertex x="-1.2" y="0" curve="90"/>
+<vertex x="-0.4" y="-0.7"/>
+<vertex x="-0.4" y="0.7" curve="90"/>
+<vertex x="-1.1" y="0" curve="90"/>
 </polygon>
 <polygon width="0.4" layer="29">
-<vertex x="0.4" y="0.8"/>
-<vertex x="0.4" y="-0.8" curve="90"/>
-<vertex x="1.2" y="0" curve="90"/>
+<vertex x="0.4" y="0.7"/>
+<vertex x="0.4" y="-0.7" curve="90"/>
+<vertex x="1.1" y="0" curve="90"/>
 </polygon>
 <polygon width="0.2" layer="29">
 <vertex x="-0.8" y="0.3"/>
@@ -1121,6 +1121,13 @@
 <vertex x="0.508" y="-0.254"/>
 <vertex x="-0.508" y="-0.254"/>
 </polygon>
+</package>
+<package name="2.7MM-MOUNTING-HOLE">
+<circle x="0" y="0" radius="3.1" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.1" width="0" layer="40"/>
+<circle x="0" y="0" radius="3.1" width="0" layer="41"/>
+<circle x="0" y="0" radius="3.1" width="0" layer="42"/>
+<hole x="0" y="0" drill="2.75"/>
 </package>
 </packages>
 <symbols>

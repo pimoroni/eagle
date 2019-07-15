@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
@@ -28,7 +28,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -53,13 +53,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -1233,39 +1233,6 @@ undermounted!</text>
 <vertex x="-3.5" y="-7" curve="-90"/>
 <vertex x="0" y="-3.5" curve="-90"/>
 </polygon>
-<polygon width="0.2" layer="21">
-<vertex x="0" y="-12" curve="-90"/>
-<vertex x="-5" y="-7" curve="90"/>
-<vertex x="-7" y="-5" curve="-90"/>
-<vertex x="-12" y="0" curve="-90"/>
-<vertex x="-7" y="5" curve="90"/>
-<vertex x="-5" y="7" curve="-90"/>
-<vertex x="0" y="12" curve="-90"/>
-<vertex x="5" y="7" curve="90"/>
-<vertex x="7" y="5" curve="-90"/>
-<vertex x="12" y="0" curve="-90"/>
-<vertex x="7" y="-5" curve="90"/>
-<vertex x="5" y="-7" curve="-90"/>
-<vertex x="0" y="-12"/>
-<vertex x="0" y="-14"/>
-<vertex x="1" y="-14" curve="90"/>
-<vertex x="7" y="-8" curve="-90"/>
-<vertex x="8" y="-7" curve="90"/>
-<vertex x="14" y="-1"/>
-<vertex x="14" y="1" curve="90"/>
-<vertex x="8" y="7" curve="-90"/>
-<vertex x="7" y="8" curve="90"/>
-<vertex x="1" y="14"/>
-<vertex x="-1" y="14" curve="90"/>
-<vertex x="-7" y="8" curve="-90"/>
-<vertex x="-8" y="7" curve="90"/>
-<vertex x="-14" y="1"/>
-<vertex x="-14" y="-1" curve="90"/>
-<vertex x="-8" y="-7" curve="-90"/>
-<vertex x="-7" y="-8" curve="90"/>
-<vertex x="-1" y="-14"/>
-<vertex x="0" y="-14"/>
-</polygon>
 <polygon width="0.127" layer="21">
 <vertex x="-0.3" y="0.5"/>
 <vertex x="0.3" y="0.5"/>
@@ -1381,42 +1348,6 @@ undermounted!</text>
 <vertex x="1.5" y="-7.75" curve="90"/>
 <vertex x="0" y="-6.25" curve="90"/>
 </polygon>
-<polygon width="0.2" layer="21">
-<vertex x="0" y="-14.75"/>
-<vertex x="0" y="-12.75" curve="90"/>
-<vertex x="5" y="-7.75"/>
-<vertex x="5" y="-7" curve="-90"/>
-<vertex x="7" y="-5"/>
-<vertex x="7.75" y="-5" curve="90"/>
-<vertex x="12.75" y="0" curve="90"/>
-<vertex x="7.75" y="5"/>
-<vertex x="7" y="5" curve="-90"/>
-<vertex x="5" y="7"/>
-<vertex x="5" y="7.75" curve="90"/>
-<vertex x="0" y="12.75" curve="90"/>
-<vertex x="-5" y="7.75"/>
-<vertex x="-5" y="7" curve="-90"/>
-<vertex x="-7" y="5"/>
-<vertex x="-7.75" y="5" curve="90"/>
-<vertex x="-12.75" y="0" curve="90"/>
-<vertex x="-7.75" y="-5"/>
-<vertex x="-7" y="-5" curve="-90"/>
-<vertex x="-5" y="-7"/>
-<vertex x="-5" y="-7.75" curve="90"/>
-<vertex x="0" y="-12.75"/>
-<vertex x="0" y="-14.75" curve="-90"/>
-<vertex x="-7" y="-7.75" curve="90"/>
-<vertex x="-7.75" y="-7" curve="-90"/>
-<vertex x="-14.75" y="0" curve="-90"/>
-<vertex x="-7.75" y="7" curve="90"/>
-<vertex x="-7" y="7.75" curve="-90"/>
-<vertex x="0" y="14.75" curve="-90"/>
-<vertex x="7" y="7.75" curve="90"/>
-<vertex x="7.75" y="7" curve="-90"/>
-<vertex x="14.75" y="0" curve="-90"/>
-<vertex x="7.75" y="-7" curve="90"/>
-<vertex x="7" y="-7.75" curve="-90"/>
-</polygon>
 <text x="-3" y="0" size="1.25" layer="21" font="vector" ratio="14" align="center-left">Y</text>
 <text x="3" y="0" size="1.25" layer="21" font="vector" ratio="14" align="center-right">A</text>
 <text x="0" y="-3" size="1.25" layer="21" font="vector" ratio="14" align="bottom-center">B</text>
@@ -1505,22 +1436,6 @@ undermounted!</text>
 <vertex x="-3.1" y="-5" curve="-90"/>
 <vertex x="0" y="-1.9" curve="-90"/>
 </polygon>
-<polygon width="0.127" layer="21">
-<vertex x="0" y="-10" curve="-90"/>
-<vertex x="-5" y="-5"/>
-<vertex x="-5" y="5" curve="-90"/>
-<vertex x="0" y="10" curve="-90"/>
-<vertex x="5" y="5"/>
-<vertex x="5" y="-5" curve="-90"/>
-<vertex x="0" y="-10"/>
-<vertex x="0" y="-12" curve="90"/>
-<vertex x="7" y="-5"/>
-<vertex x="7" y="5" curve="90"/>
-<vertex x="0" y="12" curve="90"/>
-<vertex x="-7" y="5"/>
-<vertex x="-7" y="-5" curve="90"/>
-<vertex x="0" y="-12"/>
-</polygon>
 <circle x="0" y="-5" radius="3.8" width="2" layer="41"/>
 <circle x="0" y="5" radius="3.8" width="2" layer="41"/>
 </package>
@@ -1542,7 +1457,7 @@ undermounted!</text>
 <wire x1="10.5" y1="-10" x2="9.5" y2="-9" width="0" layer="52" style="shortdash" curve="-90"/>
 <wire x1="9.5" y1="-9" x2="9.5" y2="-8.5" width="0" layer="52" style="shortdash"/>
 <text x="12" y="-12" size="0.75" layer="52" font="vector" ratio="14" rot="MR0" align="bottom-center">Joystick FPC</text>
-<circle x="0.5" y="0" radius="8" width="0.3" layer="204"/>
+<circle x="0" y="0" radius="8" width="0.3" layer="204"/>
 <wire x1="9.5" y1="8.5" x2="9.5" y2="-8.5" width="0.3" layer="203"/>
 <wire x1="9.5" y1="-8.5" x2="-9.5" y2="-8.5" width="0.3" layer="203"/>
 <wire x1="-9.5" y1="-8.5" x2="-9.5" y2="8.5" width="0.3" layer="203"/>

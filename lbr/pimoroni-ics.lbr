@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -7250,6 +7250,23 @@ Mux/Demux</text>
 <text x="-5.08" y="10.16" size="1.778" layer="94">&gt;NAME</text>
 <text x="-5.08" y="-12.7" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="AP2502KTR-G1">
+<pin name="EN" x="-15.24" y="5.08" length="middle"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
+<pin name="LED1" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="LED2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="LED3" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="LED4" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<text x="1.27" y="15.24" size="2.54" layer="94" align="bottom-center">AP2502</text>
+<text x="1.27" y="12.7" size="1.778" layer="94" align="bottom-center">EN: 2-6V, &lt;180uA</text>
+<text x="1.27" y="10.16" size="1.778" layer="94" align="bottom-center">20mA sink per ch</text>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="19.05" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="19.05" x2="12.7" y2="19.05" width="0.254" layer="94"/>
+<wire x1="12.7" y1="19.05" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<text x="1.27" y="7.62" size="1.778" layer="94" align="bottom-center">Marking: GEE</text>
+<text x="-8.89" y="20.32" size="2.54" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OPAMP" prefix="U">
@@ -11825,6 +11842,26 @@ Source:</description>
 <connect gate="G$1" pin="SW" pad="8"/>
 <connect gate="G$1" pin="VBAT" pad="7"/>
 <connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP2502KTR-G1" prefix="U">
+<gates>
+<gate name="G$1" symbol="AP2502KTR-G1" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-6">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="LED1" pad="6"/>
+<connect gate="G$1" pin="LED2" pad="5"/>
+<connect gate="G$1" pin="LED3" pad="4"/>
+<connect gate="G$1" pin="LED4" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

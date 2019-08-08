@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6196,27 +6196,27 @@ are 5V tolerant.</text>
 <pin name="36_PB2/QUADSPI_CLK" x="38.1" y="58.42" length="middle" rot="R180"/>
 <pin name="89_PB3/SPI1_SCLK" x="38.1" y="55.88" length="middle" rot="R180"/>
 <pin name="90_PB4/SPI1_MISO" x="38.1" y="53.34" length="middle" rot="R180"/>
-<pin name="91_PB5" x="38.1" y="50.8" length="middle" rot="R180"/>
-<pin name="92_PB6/I2C1_SCL" x="38.1" y="48.26" length="middle" rot="R180"/>
+<pin name="91_PB5/TIM3_CH2" x="38.1" y="50.8" length="middle" rot="R180"/>
+<pin name="92_PB6/I2C1_SCL/TIM4_CH1" x="38.1" y="48.26" length="middle" rot="R180"/>
 <pin name="93_PB7/I2C2_SDA" x="38.1" y="45.72" length="middle" rot="R180"/>
 <pin name="95_PB8/LCD_B6" x="38.1" y="43.18" length="middle" rot="R180"/>
 <pin name="96_PB9/LCD_B7" x="38.1" y="40.64" length="middle" rot="R180"/>
 <pin name="46_PB10/LCD_G4/I2C2_SCL" x="38.1" y="38.1" length="middle" rot="R180"/>
 <pin name="47_PB11/LCD_G5/I2C2_SDA" x="38.1" y="35.56" length="middle" rot="R180"/>
-<pin name="51_PB12" x="38.1" y="33.02" length="middle" rot="R180"/>
+<pin name="51_PB12/OTG_HS_ID" x="38.1" y="33.02" length="middle" rot="R180"/>
 <pin name="52_PB13" x="38.1" y="30.48" length="middle" rot="R180"/>
 <pin name="53_PB14/OTG_HS_DM" x="38.1" y="27.94" length="middle" rot="R180"/>
 <pin name="54_PB15/OTG_HS_DP" x="38.1" y="25.4" length="middle" rot="R180"/>
 <pin name="15_PC0/ADC3_INP10" x="38.1" y="17.78" length="middle" rot="R180"/>
 <pin name="16_PC1/ADC1_INP11" x="38.1" y="15.24" length="middle" rot="R180"/>
 <pin name="17_PC2_C" x="38.1" y="12.7" length="middle" rot="R180"/>
-<pin name="18_PC3_C" x="38.1" y="10.16" length="middle" rot="R180"/>
-<pin name="32_PC4" x="38.1" y="7.62" length="middle" rot="R180"/>
-<pin name="33_PC5" x="38.1" y="5.08" length="middle" rot="R180"/>
+<pin name="18_PC3_C/ADC3_INP1" x="38.1" y="10.16" length="middle" rot="R180"/>
+<pin name="32_PC4/ADC12_INP4" x="38.1" y="7.62" length="middle" rot="R180"/>
+<pin name="33_PC5/ADC12_INP8" x="38.1" y="5.08" length="middle" rot="R180"/>
 <pin name="63_PC6/LCD_HSYNC" x="38.1" y="2.54" length="middle" rot="R180"/>
 <pin name="64_PC7/LCD_G6" x="38.1" y="0" length="middle" rot="R180"/>
-<pin name="65_PC8/SDMMC1_D0" x="38.1" y="-2.54" length="middle" rot="R180"/>
-<pin name="66_PC9" x="38.1" y="-5.08" length="middle" rot="R180"/>
+<pin name="65_PC8/SDMMC1_D0/TIM3_CH3" x="38.1" y="-2.54" length="middle" rot="R180"/>
+<pin name="66_PC9/TIM3_CH4" x="38.1" y="-5.08" length="middle" rot="R180"/>
 <pin name="78_PC10" x="38.1" y="-7.62" length="middle" rot="R180"/>
 <pin name="79_PC11/QUADSPI_BK2_NCS" x="38.1" y="-10.16" length="middle" rot="R180"/>
 <pin name="80_PC12/SDMMC1_CK" x="38.1" y="-12.7" length="middle" rot="R180"/>
@@ -6241,11 +6241,11 @@ are 5V tolerant.</text>
 <pin name="62_PD15" x="38.1" y="-66.04" length="middle" rot="R180"/>
 <pin name="97_PE0" x="38.1" y="-73.66" length="middle" rot="R180"/>
 <pin name="98_PE1" x="38.1" y="-76.2" length="middle" rot="R180"/>
-<pin name="01_PE2" x="38.1" y="-78.74" length="middle" rot="R180"/>
+<pin name="01_PE2/SPI4_SCK" x="38.1" y="-78.74" length="middle" rot="R180"/>
 <pin name="02_PE3" x="38.1" y="-81.28" length="middle" rot="R180"/>
-<pin name="03_PE4" x="38.1" y="-83.82" length="middle" rot="R180"/>
-<pin name="04_PE5" x="38.1" y="-86.36" length="middle" rot="R180"/>
-<pin name="05_PE6" x="38.1" y="-88.9" length="middle" rot="R180"/>
+<pin name="03_PE4/SPI4_NSS" x="38.1" y="-83.82" length="middle" rot="R180"/>
+<pin name="04_PE5/SPI4_MISO/TIM15_CH2" x="38.1" y="-86.36" length="middle" rot="R180"/>
+<pin name="05_PE6/SPI4_MOSI" x="38.1" y="-88.9" length="middle" rot="R180"/>
 <pin name="37_PE7/QUADSPI_BK2_IO0" x="38.1" y="-91.44" length="middle" rot="R180"/>
 <pin name="38_PE8/QUADSPI_BK2_IO1" x="38.1" y="-93.98" length="middle" rot="R180"/>
 <pin name="39_PE9/QUADSPI_BK2_IO2" x="38.1" y="-96.52" length="middle" rot="R180"/>
@@ -10711,11 +10711,11 @@ Source:</description>
 <devices>
 <device name="" package="LQFP-100">
 <connects>
-<connect gate="G$1" pin="01_PE2" pad="1"/>
+<connect gate="G$1" pin="01_PE2/SPI4_SCK" pad="1"/>
 <connect gate="G$1" pin="02_PE3" pad="2"/>
-<connect gate="G$1" pin="03_PE4" pad="3"/>
-<connect gate="G$1" pin="04_PE5" pad="4"/>
-<connect gate="G$1" pin="05_PE6" pad="5"/>
+<connect gate="G$1" pin="03_PE4/SPI4_NSS" pad="3"/>
+<connect gate="G$1" pin="04_PE5/SPI4_MISO/TIM15_CH2" pad="4"/>
+<connect gate="G$1" pin="05_PE6/SPI4_MOSI" pad="5"/>
 <connect gate="G$1" pin="06_VBAT" pad="6"/>
 <connect gate="G$1" pin="07_PC13" pad="7"/>
 <connect gate="G$1" pin="08_PC14_OSC32_IN" pad="8"/>
@@ -10729,7 +10729,7 @@ Source:</description>
 <connect gate="G$1" pin="15_PC0/ADC3_INP10" pad="15"/>
 <connect gate="G$1" pin="16_PC1/ADC1_INP11" pad="16"/>
 <connect gate="G$1" pin="17_PC2_C" pad="17"/>
-<connect gate="G$1" pin="18_PC3_C" pad="18"/>
+<connect gate="G$1" pin="18_PC3_C/ADC3_INP1" pad="18"/>
 <connect gate="G$1" pin="19_VSSA" pad="19"/>
 <connect gate="G$1" pin="20_VREF+" pad="20"/>
 <connect gate="G$1" pin="21_VDDA" pad="21"/>
@@ -10743,8 +10743,8 @@ Source:</description>
 <connect gate="G$1" pin="29_PA5/DAC1_OUT2" pad="29"/>
 <connect gate="G$1" pin="30_PA6/LCD_G2" pad="30"/>
 <connect gate="G$1" pin="31_PA7/SPI1_MOSI" pad="31"/>
-<connect gate="G$1" pin="32_PC4" pad="32"/>
-<connect gate="G$1" pin="33_PC5" pad="33"/>
+<connect gate="G$1" pin="32_PC4/ADC12_INP4" pad="32"/>
+<connect gate="G$1" pin="33_PC5/ADC12_INP8" pad="33"/>
 <connect gate="G$1" pin="34_PB0/LCD_R3" pad="34"/>
 <connect gate="G$1" pin="35_PB1/LCD_R6" pad="35"/>
 <connect gate="G$1" pin="36_PB2/QUADSPI_CLK" pad="36"/>
@@ -10762,7 +10762,7 @@ Source:</description>
 <connect gate="G$1" pin="48_VCAP" pad="48"/>
 <connect gate="G$1" pin="49_VSS" pad="49"/>
 <connect gate="G$1" pin="50_VDD" pad="50"/>
-<connect gate="G$1" pin="51_PB12" pad="51"/>
+<connect gate="G$1" pin="51_PB12/OTG_HS_ID" pad="51"/>
 <connect gate="G$1" pin="52_PB13" pad="52"/>
 <connect gate="G$1" pin="53_PB14/OTG_HS_DM" pad="53"/>
 <connect gate="G$1" pin="54_PB15/OTG_HS_DP" pad="54"/>
@@ -10776,8 +10776,8 @@ Source:</description>
 <connect gate="G$1" pin="62_PD15" pad="62"/>
 <connect gate="G$1" pin="63_PC6/LCD_HSYNC" pad="63"/>
 <connect gate="G$1" pin="64_PC7/LCD_G6" pad="64"/>
-<connect gate="G$1" pin="65_PC8/SDMMC1_D0" pad="65"/>
-<connect gate="G$1" pin="66_PC9" pad="66"/>
+<connect gate="G$1" pin="65_PC8/SDMMC1_D0/TIM3_CH3" pad="65"/>
+<connect gate="G$1" pin="66_PC9/TIM3_CH4" pad="66"/>
 <connect gate="G$1" pin="67_PA8/LCD_B3/I2C3_SCL" pad="67"/>
 <connect gate="G$1" pin="68_PA9/LCD_R5/I2C3_SDA" pad="68"/>
 <connect gate="G$1" pin="69_PA10" pad="69"/>
@@ -10802,8 +10802,8 @@ Source:</description>
 <connect gate="G$1" pin="88_PD7" pad="88"/>
 <connect gate="G$1" pin="89_PB3/SPI1_SCLK" pad="89"/>
 <connect gate="G$1" pin="90_PB4/SPI1_MISO" pad="90"/>
-<connect gate="G$1" pin="91_PB5" pad="91"/>
-<connect gate="G$1" pin="92_PB6/I2C1_SCL" pad="92"/>
+<connect gate="G$1" pin="91_PB5/TIM3_CH2" pad="91"/>
+<connect gate="G$1" pin="92_PB6/I2C1_SCL/TIM4_CH1" pad="92"/>
 <connect gate="G$1" pin="93_PB7/I2C2_SDA" pad="93"/>
 <connect gate="G$1" pin="94_BOOT0" pad="94"/>
 <connect gate="G$1" pin="95_PB8/LCD_B6" pad="95"/>

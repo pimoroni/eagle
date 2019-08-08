@@ -6209,7 +6209,7 @@ are 5V tolerant.</text>
 <pin name="54_PB15/OTG_HS_DP" x="38.1" y="25.4" length="middle" rot="R180"/>
 <pin name="15_PC0/ADC3_INP10" x="38.1" y="17.78" length="middle" rot="R180"/>
 <pin name="16_PC1/ADC1_INP11" x="38.1" y="15.24" length="middle" rot="R180"/>
-<pin name="17_PC2_C" x="38.1" y="12.7" length="middle" rot="R180"/>
+<pin name="17_PC2_C/ADC3_INP0" x="38.1" y="12.7" length="middle" rot="R180"/>
 <pin name="18_PC3_C/ADC3_INP1" x="38.1" y="10.16" length="middle" rot="R180"/>
 <pin name="32_PC4/ADC12_INP4" x="38.1" y="7.62" length="middle" rot="R180"/>
 <pin name="33_PC5/ADC12_INP8" x="38.1" y="5.08" length="middle" rot="R180"/>
@@ -10728,7 +10728,7 @@ Source:</description>
 <connect gate="G$1" pin="14_NRST" pad="14"/>
 <connect gate="G$1" pin="15_PC0/ADC3_INP10" pad="15"/>
 <connect gate="G$1" pin="16_PC1/ADC1_INP11" pad="16"/>
-<connect gate="G$1" pin="17_PC2_C" pad="17"/>
+<connect gate="G$1" pin="17_PC2_C/ADC3_INP0" pad="17"/>
 <connect gate="G$1" pin="18_PC3_C/ADC3_INP1" pad="18"/>
 <connect gate="G$1" pin="19_VSSA" pad="19"/>
 <connect gate="G$1" pin="20_VREF+" pad="20"/>

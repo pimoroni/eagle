@@ -6204,7 +6204,7 @@ are 5V tolerant.</text>
 <pin name="46_PB10/LCD_G4/I2C2_SCL" x="38.1" y="38.1" length="middle" rot="R180"/>
 <pin name="47_PB11/LCD_G5/I2C2_SDA" x="38.1" y="35.56" length="middle" rot="R180"/>
 <pin name="51_PB12/OTG_HS_ID" x="38.1" y="33.02" length="middle" rot="R180"/>
-<pin name="52_PB13" x="38.1" y="30.48" length="middle" rot="R180"/>
+<pin name="52_PB13/OTG_HS_VBUS" x="38.1" y="30.48" length="middle" rot="R180"/>
 <pin name="53_PB14/OTG_HS_DM" x="38.1" y="27.94" length="middle" rot="R180"/>
 <pin name="54_PB15/OTG_HS_DP" x="38.1" y="25.4" length="middle" rot="R180"/>
 <pin name="15_PC0/ADC3_INP10" x="38.1" y="17.78" length="middle" rot="R180"/>
@@ -10763,7 +10763,7 @@ Source:</description>
 <connect gate="G$1" pin="49_VSS" pad="49"/>
 <connect gate="G$1" pin="50_VDD" pad="50"/>
 <connect gate="G$1" pin="51_PB12/OTG_HS_ID" pad="51"/>
-<connect gate="G$1" pin="52_PB13" pad="52"/>
+<connect gate="G$1" pin="52_PB13/OTG_HS_VBUS" pad="52"/>
 <connect gate="G$1" pin="53_PB14/OTG_HS_DM" pad="53"/>
 <connect gate="G$1" pin="54_PB15/OTG_HS_DP" pad="54"/>
 <connect gate="G$1" pin="55_PD8" pad="55"/>

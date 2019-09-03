@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -7562,6 +7562,204 @@ Mux/Demux</text>
 <text x="-10.16" y="25.4" size="1.778" layer="94">PAM8901/8908</text>
 <text x="7.62" y="-22.86" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
+<symbol name="STM32F730Z8_1">
+<pin name="17_VDD" x="-27.94" y="58.42" length="middle"/>
+<pin name="30_VDD" x="-27.94" y="55.88" length="middle"/>
+<pin name="39_VDD" x="-27.94" y="53.34" length="middle"/>
+<pin name="52_VDD" x="-27.94" y="50.8" length="middle"/>
+<pin name="62_VDD" x="-27.94" y="48.26" length="middle"/>
+<pin name="72_VDD" x="-27.94" y="45.72" length="middle"/>
+<pin name="86_VDD" x="-27.94" y="43.18" length="middle"/>
+<pin name="131_VDD" x="-27.94" y="40.64" length="middle"/>
+<pin name="144_VDD" x="-27.94" y="38.1" length="middle"/>
+<pin name="6_VBAT" x="-27.94" y="27.94" length="middle"/>
+<pin name="121_VDDSDMMC" x="-27.94" y="22.86" length="middle"/>
+<pin name="138_BOOT0" x="-27.94" y="-27.94" length="middle"/>
+<pin name="71_VCAP_1" x="-27.94" y="-7.62" length="middle"/>
+<pin name="76_VDD12OTGHS" x="-27.94" y="7.62" length="middle"/>
+<pin name="25_NRST" x="-27.94" y="-22.86" length="middle"/>
+<pin name="16_VSS" x="-27.94" y="-40.64" length="middle"/>
+<pin name="32_VREF+" x="-27.94" y="30.48" length="middle"/>
+<pin name="38_VSS" x="-27.94" y="-43.18" length="middle"/>
+<pin name="51_VSS" x="-27.94" y="-45.72" length="middle"/>
+<pin name="61_VSS" x="-27.94" y="-48.26" length="middle"/>
+<pin name="85_VSS" x="-27.94" y="-50.8" length="middle"/>
+<pin name="94_VSS" x="-27.94" y="-53.34" length="middle"/>
+<pin name="107_VSS" x="-27.94" y="-55.88" length="middle"/>
+<pin name="120_VSS" x="-27.94" y="-58.42" length="middle"/>
+<pin name="31_VSSA" x="-27.94" y="-63.5" length="middle"/>
+<pin name="33_VDDA" x="-27.94" y="33.02" length="middle"/>
+<pin name="130_VSS" x="-27.94" y="-60.96" length="middle"/>
+<pin name="95_VDDUSB" x="-27.94" y="12.7" length="middle"/>
+<pin name="106_VCAP_2" x="-27.94" y="-12.7" length="middle"/>
+<pin name="143_PDR_ON" x="-27.94" y="-33.02" length="middle"/>
+<pin name="75_OTG_HS_REXT" x="-27.94" y="2.54" length="middle"/>
+<pin name="108_VDD" x="-27.94" y="60.96" length="middle"/>
+<pin name="34_PA0" x="27.94" y="60.96" length="middle" rot="R180"/>
+<pin name="35_PA1" x="27.94" y="58.42" length="middle" rot="R180"/>
+<pin name="36_PA2" x="27.94" y="55.88" length="middle" rot="R180"/>
+<pin name="37_PA3" x="27.94" y="53.34" length="middle" rot="R180"/>
+<pin name="40_PA4" x="27.94" y="50.8" length="middle" rot="R180"/>
+<pin name="41_PA5" x="27.94" y="48.26" length="middle" rot="R180"/>
+<pin name="42_PA6" x="27.94" y="45.72" length="middle" rot="R180"/>
+<pin name="43_PA7" x="27.94" y="43.18" length="middle" rot="R180"/>
+<pin name="100_PA8" x="27.94" y="40.64" length="middle" rot="R180"/>
+<pin name="101_PA9" x="27.94" y="38.1" length="middle" rot="R180"/>
+<pin name="102_PA10" x="27.94" y="35.56" length="middle" rot="R180"/>
+<pin name="103_PA11" x="27.94" y="33.02" length="middle" rot="R180"/>
+<pin name="104_PA12" x="27.94" y="30.48" length="middle" rot="R180"/>
+<pin name="105_PA13" x="27.94" y="27.94" length="middle" rot="R180"/>
+<pin name="109_PA14" x="27.94" y="25.4" length="middle" rot="R180"/>
+<pin name="110_PA15" x="27.94" y="22.86" length="middle" rot="R180"/>
+<pin name="46_PB0" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="47_PB1" x="27.94" y="15.24" length="middle" rot="R180"/>
+<pin name="48_PB2" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="133_PB3" x="27.94" y="10.16" length="middle" rot="R180"/>
+<pin name="134_PB4" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="135_PB5" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="136_PB6" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="137_PB7" x="27.94" y="0" length="middle" rot="R180"/>
+<pin name="139_PB8" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="140_PB9" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="69_PB10" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="70_PB11" x="27.94" y="-10.16" length="middle" rot="R180"/>
+<pin name="73_PB12" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="74_PB13" x="27.94" y="-15.24" length="middle" rot="R180"/>
+<pin name="77_PB14" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="78_PB15" x="27.94" y="-20.32" length="middle" rot="R180"/>
+<pin name="26_PC0" x="27.94" y="-25.4" length="middle" rot="R180"/>
+<pin name="27_PC1" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="28_PC2" x="27.94" y="-30.48" length="middle" rot="R180"/>
+<pin name="29_PC3" x="27.94" y="-33.02" length="middle" rot="R180"/>
+<pin name="44_PC4" x="27.94" y="-35.56" length="middle" rot="R180"/>
+<pin name="45_PC5" x="27.94" y="-38.1" length="middle" rot="R180"/>
+<pin name="96_PC6" x="27.94" y="-40.64" length="middle" rot="R180"/>
+<pin name="97_PC7" x="27.94" y="-43.18" length="middle" rot="R180"/>
+<pin name="98_PC8" x="27.94" y="-45.72" length="middle" rot="R180"/>
+<pin name="99_PC9" x="27.94" y="-48.26" length="middle" rot="R180"/>
+<pin name="111_PC10" x="27.94" y="-50.8" length="middle" rot="R180"/>
+<pin name="112_PC11" x="27.94" y="-53.34" length="middle" rot="R180"/>
+<pin name="113_PC12" x="27.94" y="-55.88" length="middle" rot="R180"/>
+<pin name="7_PC13" x="27.94" y="-58.42" length="middle" rot="R180"/>
+<pin name="8_PC14" x="27.94" y="-60.96" length="middle" rot="R180"/>
+<pin name="9_PC15" x="27.94" y="-63.5" length="middle" rot="R180"/>
+<wire x1="22.86" y1="-66.04" x2="-22.86" y2="-66.04" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-66.04" x2="-22.86" y2="71.12" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="71.12" x2="22.86" y2="71.12" width="0.254" layer="94"/>
+<wire x1="22.86" y1="71.12" x2="22.86" y2="-66.04" width="0.254" layer="94"/>
+<text x="0" y="66.04" size="2.54" layer="94" align="bottom-center">STM32F730Z8 1/2</text>
+</symbol>
+<symbol name="STM32F730Z8_2">
+<pin name="114_PD0" x="27.94" y="40.64" length="middle" rot="R180"/>
+<pin name="115_PD1" x="27.94" y="38.1" length="middle" rot="R180"/>
+<pin name="116_PD2" x="27.94" y="35.56" length="middle" rot="R180"/>
+<pin name="117_PD3" x="27.94" y="33.02" length="middle" rot="R180"/>
+<pin name="118_PD4" x="27.94" y="30.48" length="middle" rot="R180"/>
+<pin name="119_PD5" x="27.94" y="27.94" length="middle" rot="R180"/>
+<pin name="122_PD6" x="27.94" y="25.4" length="middle" rot="R180"/>
+<pin name="123_PD7" x="27.94" y="22.86" length="middle" rot="R180"/>
+<pin name="79_PD8" x="27.94" y="20.32" length="middle" rot="R180"/>
+<pin name="80_PD9" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="81_PD10" x="27.94" y="15.24" length="middle" rot="R180"/>
+<pin name="82_PD11" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="83_PD12" x="27.94" y="10.16" length="middle" rot="R180"/>
+<pin name="84_PD13" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="87_PD14" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="88_PD15" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="141_PE0" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="142_PE1" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="1_PE2" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="2_PE3" x="27.94" y="-10.16" length="middle" rot="R180"/>
+<pin name="3_PE4" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="4_PE5" x="27.94" y="-15.24" length="middle" rot="R180"/>
+<pin name="5_PE6" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="58_PE7" x="27.94" y="-20.32" length="middle" rot="R180"/>
+<pin name="59_PE8" x="27.94" y="-22.86" length="middle" rot="R180"/>
+<pin name="60_PE9" x="27.94" y="-25.4" length="middle" rot="R180"/>
+<pin name="63_PE10" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="64_PE11" x="27.94" y="-30.48" length="middle" rot="R180"/>
+<pin name="65_PE12" x="27.94" y="-33.02" length="middle" rot="R180"/>
+<pin name="66_PE13" x="27.94" y="-35.56" length="middle" rot="R180"/>
+<pin name="67_PE14" x="27.94" y="-38.1" length="middle" rot="R180"/>
+<pin name="68_PE15" x="27.94" y="-40.64" length="middle" rot="R180"/>
+<wire x1="-22.86" y1="-50.8" x2="-22.86" y2="48.26" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="48.26" x2="22.86" y2="48.26" width="0.254" layer="94"/>
+<wire x1="22.86" y1="48.26" x2="22.86" y2="-50.8" width="0.254" layer="94"/>
+<text x="0" y="43.18" size="2.54" layer="94" align="bottom-center">STM32F730Z8 2/2</text>
+<pin name="10_PF0" x="-27.94" y="40.64" length="middle"/>
+<pin name="11_PF1" x="-27.94" y="38.1" length="middle"/>
+<pin name="12_PF2" x="-27.94" y="35.56" length="middle"/>
+<pin name="13_PF3" x="-27.94" y="33.02" length="middle"/>
+<pin name="14_PF4" x="-27.94" y="30.48" length="middle"/>
+<pin name="15_PF5" x="-27.94" y="27.94" length="middle"/>
+<pin name="18_PF6" x="-27.94" y="25.4" length="middle"/>
+<pin name="19_PF7" x="-27.94" y="22.86" length="middle"/>
+<pin name="20_PF8" x="-27.94" y="20.32" length="middle"/>
+<pin name="21_PF9" x="-27.94" y="17.78" length="middle"/>
+<pin name="22_PF10" x="-27.94" y="15.24" length="middle"/>
+<pin name="49_PF11" x="-27.94" y="12.7" length="middle"/>
+<pin name="50_PF12" x="-27.94" y="10.16" length="middle"/>
+<pin name="53_PF13" x="-27.94" y="7.62" length="middle"/>
+<pin name="54_PF14" x="-27.94" y="5.08" length="middle"/>
+<pin name="55_PF15" x="-27.94" y="2.54" length="middle"/>
+<pin name="56_PG0" x="-27.94" y="-2.54" length="middle"/>
+<pin name="57_PG1" x="-27.94" y="-5.08" length="middle"/>
+<pin name="89_PG2" x="-27.94" y="-7.62" length="middle"/>
+<pin name="90_PG3" x="-27.94" y="-10.16" length="middle"/>
+<pin name="91_PG4" x="-27.94" y="-12.7" length="middle"/>
+<pin name="92_PG5" x="-27.94" y="-15.24" length="middle"/>
+<pin name="93_PG8" x="-27.94" y="-22.86" length="middle"/>
+<pin name="124_PG9" x="-27.94" y="-25.4" length="middle"/>
+<pin name="125_PG10" x="-27.94" y="-27.94" length="middle"/>
+<pin name="126_PG11" x="-27.94" y="-30.48" length="middle"/>
+<pin name="127_PG12" x="-27.94" y="-33.02" length="middle"/>
+<pin name="128_PG13" x="-27.94" y="-35.56" length="middle"/>
+<pin name="129_PG14" x="-27.94" y="-38.1" length="middle"/>
+<pin name="132_PG15" x="-27.94" y="-40.64" length="middle"/>
+<wire x1="-22.86" y1="-50.8" x2="22.86" y2="-50.8" width="0.254" layer="94"/>
+<pin name="23_PH0" x="-27.94" y="-45.72" length="middle"/>
+<pin name="24_PH1" x="-27.94" y="-48.26" length="middle"/>
+</symbol>
+<symbol name="74VHC4052AFT">
+<text x="0" y="22.86" size="2.54" layer="94" align="bottom-center">74VHC4052AFT</text>
+<text x="0" y="17.78" size="1.778" layer="94" align="bottom-center">Dual 4-Channel Analog 
+Mux/Demux</text>
+<text x="0" y="15.24" size="1.778" layer="94" align="bottom-center">2.0V - 5.5V</text>
+<pin name="X-COM" x="-17.78" y="7.62" length="short"/>
+<pin name="0X" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="1X" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="A" x="-17.78" y="-17.78" length="short"/>
+<wire x1="-5.08" y1="7.62" x2="-1.27" y2="7.62" width="0.254" layer="94"/>
+<wire x1="8.89" y1="10.16" x2="4.318" y2="10.16" width="0.254" layer="94"/>
+<wire x1="8.89" y1="7.62" x2="4.318" y2="7.62" width="0.254" layer="94"/>
+<pin name="Y-COM" x="-17.78" y="-10.16" length="short"/>
+<pin name="0Y" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="1Y" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="B" x="-17.78" y="-20.32" length="short"/>
+<wire x1="-5.08" y1="-10.16" x2="-1.27" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="1.27" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="8.89" y1="-7.62" x2="4.318" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-33.02" x2="-15.24" y2="26.162" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="26.162" x2="15.24" y2="26.162" width="0.254" layer="94"/>
+<wire x1="15.24" y1="26.162" x2="15.24" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-33.02" x2="-15.24" y2="-33.02" width="0.254" layer="94"/>
+<pin name="INHIBIT" x="-17.78" y="-27.94" length="short"/>
+<pin name="GND" x="-17.78" y="-30.48" length="short"/>
+<pin name="VCC" x="-17.78" y="12.7" length="short"/>
+<wire x1="-10.16" y1="-17.78" x2="1.27" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-20.32" x2="1.27" y2="8.89" width="0.254" layer="94" style="shortdash"/>
+<pin name="2X" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="3X" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="2Y" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="3Y" x="17.78" y="-15.24" length="short" rot="R180"/>
+<wire x1="8.89" y1="5.08" x2="4.318" y2="5.08" width="0.254" layer="94"/>
+<wire x1="8.89" y1="2.54" x2="4.318" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="3.81" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-10.16" x2="3.81" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="8.89" y1="-10.16" x2="4.318" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="8.89" y1="-12.7" x2="4.318" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="8.89" y1="-15.24" x2="4.318" y2="-15.24" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OPAMP" prefix="U">
@@ -12270,6 +12468,194 @@ Source:</description>
 <connect gate="G$1" pin="RIN+" pad="3"/>
 <connect gate="G$1" pin="RIN-" pad="4"/>
 <connect gate="G$1" pin="SGND" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32F730Z8" prefix="U">
+<gates>
+<gate name="G$1" symbol="STM32F730Z8_1" x="-43.18" y="0"/>
+<gate name="G$2" symbol="STM32F730Z8_2" x="43.18" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFP-144_20MM">
+<connects>
+<connect gate="G$1" pin="100_PA8" pad="100"/>
+<connect gate="G$1" pin="101_PA9" pad="101"/>
+<connect gate="G$1" pin="102_PA10" pad="102"/>
+<connect gate="G$1" pin="103_PA11" pad="103"/>
+<connect gate="G$1" pin="104_PA12" pad="104"/>
+<connect gate="G$1" pin="105_PA13" pad="105"/>
+<connect gate="G$1" pin="106_VCAP_2" pad="106"/>
+<connect gate="G$1" pin="107_VSS" pad="107"/>
+<connect gate="G$1" pin="108_VDD" pad="108"/>
+<connect gate="G$1" pin="109_PA14" pad="109"/>
+<connect gate="G$1" pin="110_PA15" pad="110"/>
+<connect gate="G$1" pin="111_PC10" pad="111"/>
+<connect gate="G$1" pin="112_PC11" pad="112"/>
+<connect gate="G$1" pin="113_PC12" pad="113"/>
+<connect gate="G$1" pin="120_VSS" pad="120"/>
+<connect gate="G$1" pin="121_VDDSDMMC" pad="121"/>
+<connect gate="G$1" pin="130_VSS" pad="130"/>
+<connect gate="G$1" pin="131_VDD" pad="131"/>
+<connect gate="G$1" pin="133_PB3" pad="133"/>
+<connect gate="G$1" pin="134_PB4" pad="134"/>
+<connect gate="G$1" pin="135_PB5" pad="135"/>
+<connect gate="G$1" pin="136_PB6" pad="136"/>
+<connect gate="G$1" pin="137_PB7" pad="137"/>
+<connect gate="G$1" pin="138_BOOT0" pad="138"/>
+<connect gate="G$1" pin="139_PB8" pad="139"/>
+<connect gate="G$1" pin="140_PB9" pad="140"/>
+<connect gate="G$1" pin="143_PDR_ON" pad="143"/>
+<connect gate="G$1" pin="144_VDD" pad="144"/>
+<connect gate="G$1" pin="16_VSS" pad="16"/>
+<connect gate="G$1" pin="17_VDD" pad="17"/>
+<connect gate="G$1" pin="25_NRST" pad="25"/>
+<connect gate="G$1" pin="26_PC0" pad="26"/>
+<connect gate="G$1" pin="27_PC1" pad="27"/>
+<connect gate="G$1" pin="28_PC2" pad="28"/>
+<connect gate="G$1" pin="29_PC3" pad="29"/>
+<connect gate="G$1" pin="30_VDD" pad="30"/>
+<connect gate="G$1" pin="31_VSSA" pad="31"/>
+<connect gate="G$1" pin="32_VREF+" pad="32"/>
+<connect gate="G$1" pin="33_VDDA" pad="33"/>
+<connect gate="G$1" pin="34_PA0" pad="34"/>
+<connect gate="G$1" pin="35_PA1" pad="35"/>
+<connect gate="G$1" pin="36_PA2" pad="36"/>
+<connect gate="G$1" pin="37_PA3" pad="37"/>
+<connect gate="G$1" pin="38_VSS" pad="38"/>
+<connect gate="G$1" pin="39_VDD" pad="39"/>
+<connect gate="G$1" pin="40_PA4" pad="40"/>
+<connect gate="G$1" pin="41_PA5" pad="41"/>
+<connect gate="G$1" pin="42_PA6" pad="42"/>
+<connect gate="G$1" pin="43_PA7" pad="43"/>
+<connect gate="G$1" pin="44_PC4" pad="44"/>
+<connect gate="G$1" pin="45_PC5" pad="45"/>
+<connect gate="G$1" pin="46_PB0" pad="46"/>
+<connect gate="G$1" pin="47_PB1" pad="47"/>
+<connect gate="G$1" pin="48_PB2" pad="48"/>
+<connect gate="G$1" pin="51_VSS" pad="51"/>
+<connect gate="G$1" pin="52_VDD" pad="52"/>
+<connect gate="G$1" pin="61_VSS" pad="61"/>
+<connect gate="G$1" pin="62_VDD" pad="62"/>
+<connect gate="G$1" pin="69_PB10" pad="69"/>
+<connect gate="G$1" pin="6_VBAT" pad="6"/>
+<connect gate="G$1" pin="70_PB11" pad="70"/>
+<connect gate="G$1" pin="71_VCAP_1" pad="71"/>
+<connect gate="G$1" pin="72_VDD" pad="72"/>
+<connect gate="G$1" pin="73_PB12" pad="73"/>
+<connect gate="G$1" pin="74_PB13" pad="74"/>
+<connect gate="G$1" pin="75_OTG_HS_REXT" pad="75"/>
+<connect gate="G$1" pin="76_VDD12OTGHS" pad="76"/>
+<connect gate="G$1" pin="77_PB14" pad="77"/>
+<connect gate="G$1" pin="78_PB15" pad="78"/>
+<connect gate="G$1" pin="7_PC13" pad="7"/>
+<connect gate="G$1" pin="85_VSS" pad="85"/>
+<connect gate="G$1" pin="86_VDD" pad="86"/>
+<connect gate="G$1" pin="8_PC14" pad="8"/>
+<connect gate="G$1" pin="94_VSS" pad="94"/>
+<connect gate="G$1" pin="95_VDDUSB" pad="95"/>
+<connect gate="G$1" pin="96_PC6" pad="96"/>
+<connect gate="G$1" pin="97_PC7" pad="97"/>
+<connect gate="G$1" pin="98_PC8" pad="98"/>
+<connect gate="G$1" pin="99_PC9" pad="99"/>
+<connect gate="G$1" pin="9_PC15" pad="9"/>
+<connect gate="G$2" pin="10_PF0" pad="10"/>
+<connect gate="G$2" pin="114_PD0" pad="114"/>
+<connect gate="G$2" pin="115_PD1" pad="115"/>
+<connect gate="G$2" pin="116_PD2" pad="116"/>
+<connect gate="G$2" pin="117_PD3" pad="117"/>
+<connect gate="G$2" pin="118_PD4" pad="118"/>
+<connect gate="G$2" pin="119_PD5" pad="119"/>
+<connect gate="G$2" pin="11_PF1" pad="11"/>
+<connect gate="G$2" pin="122_PD6" pad="122"/>
+<connect gate="G$2" pin="123_PD7" pad="123"/>
+<connect gate="G$2" pin="124_PG9" pad="124"/>
+<connect gate="G$2" pin="125_PG10" pad="125"/>
+<connect gate="G$2" pin="126_PG11" pad="126"/>
+<connect gate="G$2" pin="127_PG12" pad="127"/>
+<connect gate="G$2" pin="128_PG13" pad="128"/>
+<connect gate="G$2" pin="129_PG14" pad="129"/>
+<connect gate="G$2" pin="12_PF2" pad="12"/>
+<connect gate="G$2" pin="132_PG15" pad="132"/>
+<connect gate="G$2" pin="13_PF3" pad="13"/>
+<connect gate="G$2" pin="141_PE0" pad="141"/>
+<connect gate="G$2" pin="142_PE1" pad="142"/>
+<connect gate="G$2" pin="14_PF4" pad="14"/>
+<connect gate="G$2" pin="15_PF5" pad="15"/>
+<connect gate="G$2" pin="18_PF6" pad="18"/>
+<connect gate="G$2" pin="19_PF7" pad="19"/>
+<connect gate="G$2" pin="1_PE2" pad="1"/>
+<connect gate="G$2" pin="20_PF8" pad="20"/>
+<connect gate="G$2" pin="21_PF9" pad="21"/>
+<connect gate="G$2" pin="22_PF10" pad="22"/>
+<connect gate="G$2" pin="23_PH0" pad="23"/>
+<connect gate="G$2" pin="24_PH1" pad="24"/>
+<connect gate="G$2" pin="2_PE3" pad="2"/>
+<connect gate="G$2" pin="3_PE4" pad="3"/>
+<connect gate="G$2" pin="49_PF11" pad="49"/>
+<connect gate="G$2" pin="4_PE5" pad="4"/>
+<connect gate="G$2" pin="50_PF12" pad="50"/>
+<connect gate="G$2" pin="53_PF13" pad="53"/>
+<connect gate="G$2" pin="54_PF14" pad="54"/>
+<connect gate="G$2" pin="55_PF15" pad="55"/>
+<connect gate="G$2" pin="56_PG0" pad="56"/>
+<connect gate="G$2" pin="57_PG1" pad="57"/>
+<connect gate="G$2" pin="58_PE7" pad="58"/>
+<connect gate="G$2" pin="59_PE8" pad="59"/>
+<connect gate="G$2" pin="5_PE6" pad="5"/>
+<connect gate="G$2" pin="60_PE9" pad="60"/>
+<connect gate="G$2" pin="63_PE10" pad="63"/>
+<connect gate="G$2" pin="64_PE11" pad="64"/>
+<connect gate="G$2" pin="65_PE12" pad="65"/>
+<connect gate="G$2" pin="66_PE13" pad="66"/>
+<connect gate="G$2" pin="67_PE14" pad="67"/>
+<connect gate="G$2" pin="68_PE15" pad="68"/>
+<connect gate="G$2" pin="79_PD8" pad="79"/>
+<connect gate="G$2" pin="80_PD9" pad="80"/>
+<connect gate="G$2" pin="81_PD10" pad="81"/>
+<connect gate="G$2" pin="82_PD11" pad="82"/>
+<connect gate="G$2" pin="83_PD12" pad="83"/>
+<connect gate="G$2" pin="84_PD13" pad="84"/>
+<connect gate="G$2" pin="87_PD14" pad="87"/>
+<connect gate="G$2" pin="88_PD15" pad="88"/>
+<connect gate="G$2" pin="89_PG2" pad="89"/>
+<connect gate="G$2" pin="90_PG3" pad="90"/>
+<connect gate="G$2" pin="91_PG4" pad="91"/>
+<connect gate="G$2" pin="92_PG5" pad="92"/>
+<connect gate="G$2" pin="93_PG8" pad="93"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74VHC4052AFT" prefix="U">
+<gates>
+<gate name="G$1" symbol="74VHC4052AFT" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-16-TI">
+<connects>
+<connect gate="G$1" pin="0X" pad="12"/>
+<connect gate="G$1" pin="0Y" pad="1"/>
+<connect gate="G$1" pin="1X" pad="14"/>
+<connect gate="G$1" pin="1Y" pad="5"/>
+<connect gate="G$1" pin="2X" pad="15"/>
+<connect gate="G$1" pin="2Y" pad="2"/>
+<connect gate="G$1" pin="3X" pad="11"/>
+<connect gate="G$1" pin="3Y" pad="4"/>
+<connect gate="G$1" pin="A" pad="10"/>
+<connect gate="G$1" pin="B" pad="9"/>
+<connect gate="G$1" pin="GND" pad="7 8"/>
+<connect gate="G$1" pin="INHIBIT" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="16"/>
+<connect gate="G$1" pin="X-COM" pad="13"/>
+<connect gate="G$1" pin="Y-COM" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

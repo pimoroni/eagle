@@ -2965,16 +2965,16 @@ GND</text>
 <text x="0" y="-3" size="2" layer="21" font="vector" ratio="14" align="bottom-center">1X10</text>
 </package>
 <package name="1X5_FEMALE_SMT_RIGHT_ANGLE">
-<smd name="A1" x="-5.08" y="5.05" dx="1" dy="2.9" layer="1"/>
-<smd name="B1" x="-5.08" y="-5.05" dx="1" dy="2.9" layer="1"/>
-<smd name="A2" x="-2.54" y="5.05" dx="1" dy="2.9" layer="1"/>
-<smd name="A3" x="0" y="5.05" dx="1" dy="2.9" layer="1"/>
-<smd name="A4" x="2.54" y="5.05" dx="1" dy="2.9" layer="1"/>
-<smd name="A5" x="5.08" y="5.05" dx="1" dy="2.9" layer="1"/>
-<smd name="B2" x="-2.54" y="-5.05" dx="1" dy="2.9" layer="1"/>
-<smd name="B3" x="0" y="-5.05" dx="1" dy="2.9" layer="1"/>
-<smd name="B4" x="2.54" y="-5.05" dx="1" dy="2.9" layer="1"/>
-<smd name="B5" x="5.08" y="-5.05" dx="1" dy="2.9" layer="1"/>
+<smd name="A1" x="-5.08" y="4.8" dx="1" dy="2.4" layer="1"/>
+<smd name="B1" x="-5.08" y="-4.8" dx="1" dy="2.4" layer="1"/>
+<smd name="A2" x="-2.54" y="4.8" dx="1" dy="2.4" layer="1"/>
+<smd name="A3" x="0" y="4.8" dx="1" dy="2.4" layer="1"/>
+<smd name="A4" x="2.54" y="4.8" dx="1" dy="2.4" layer="1"/>
+<smd name="A5" x="5.08" y="4.8" dx="1" dy="2.4" layer="1"/>
+<smd name="B2" x="-2.54" y="-4.8" dx="1" dy="2.4" layer="1"/>
+<smd name="B3" x="0" y="-4.8" dx="1" dy="2.4" layer="1"/>
+<smd name="B4" x="2.54" y="-4.8" dx="1" dy="2.4" layer="1"/>
+<smd name="B5" x="5.08" y="-4.8" dx="1" dy="2.4" layer="1"/>
 <wire x1="6.35" y1="-4.05" x2="6.35" y2="4.05" width="0.2" layer="51"/>
 <wire x1="6.35" y1="4.05" x2="-6.35" y2="4.05" width="0.2" layer="51"/>
 <wire x1="-6.35" y1="4.05" x2="-6.35" y2="-4.05" width="0.2" layer="51"/>

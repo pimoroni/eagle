@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1137,7 +1137,7 @@ undermounted!</text>
 <smd name="UP" x="0" y="7" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
 <smd name="GND4" x="0" y="-10.5" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
 <smd name="DOWN" x="0" y="-7" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
-<polygon width="0.127" layer="21">
+<polygon width="0.127" layer="51">
 <vertex x="-0.3" y="0.5"/>
 <vertex x="0.3" y="0.5"/>
 <vertex x="0.1" y="1.7"/>
@@ -1354,10 +1354,10 @@ undermounted!</text>
 <vertex x="1.5" y="-8.1" curve="90"/>
 <vertex x="0" y="-6.6" curve="90"/>
 </polygon>
-<text x="-3.85" y="0" size="1.25" layer="21" font="vector" ratio="14" align="center-left">Y</text>
-<text x="3.85" y="0" size="1.25" layer="21" font="vector" ratio="14" align="center-right">A</text>
-<text x="0" y="-3.35" size="1.25" layer="21" font="vector" ratio="14" align="bottom-center">B</text>
-<text x="0" y="3.35" size="1.25" layer="21" font="vector" ratio="14" align="top-center">X</text>
+<text x="-3.85" y="0" size="1.25" layer="51" font="vector" ratio="14" align="center-left">Y</text>
+<text x="3.85" y="0" size="1.25" layer="51" font="vector" ratio="14" align="center-right">A</text>
+<text x="0" y="-3.35" size="1.25" layer="51" font="vector" ratio="14" align="bottom-center">B</text>
+<text x="0" y="3.35" size="1.25" layer="51" font="vector" ratio="14" align="top-center">X</text>
 <hole x="-6" y="6" drill="2"/>
 <hole x="6" y="-6" drill="2"/>
 <circle x="-8.6" y="0" radius="4.2" width="0.7" layer="41"/>
@@ -1673,14 +1673,14 @@ undermounted!</text>
 <wire x1="-0.4" y1="-1.1" x2="-1.5" y2="0" width="0.127" layer="51" curve="-90"/>
 </package>
 <package name="3020_SPEAKER">
-<wire x1="5" y1="-10" x2="-5" y2="-10" width="0.3" layer="21"/>
-<wire x1="-5" y1="-10" x2="-15" y2="0" width="0.3" layer="21" curve="-90"/>
-<wire x1="-15" y1="0" x2="-5" y2="10" width="0.3" layer="21" curve="-90"/>
-<wire x1="-5" y1="10" x2="5" y2="10" width="0.3" layer="21"/>
-<wire x1="5" y1="10" x2="15" y2="0" width="0.3" layer="21" curve="-90"/>
-<wire x1="15" y1="0" x2="5" y2="-10" width="0.3" layer="21" curve="-90"/>
-<wire x1="14.7" y1="-2.5" x2="20" y2="-2.5" width="0.3" layer="21"/>
-<wire x1="14.7" y1="2.5" x2="20" y2="2.5" width="0.3" layer="21"/>
+<wire x1="5" y1="-10" x2="-5" y2="-10" width="0.2" layer="21"/>
+<wire x1="-5" y1="-10" x2="-15" y2="0" width="0.2" layer="21" curve="-90"/>
+<wire x1="-15" y1="0" x2="-5" y2="10" width="0.2" layer="21" curve="-90"/>
+<wire x1="-5" y1="10" x2="5" y2="10" width="0.2" layer="21"/>
+<wire x1="5" y1="10" x2="15" y2="0" width="0.2" layer="21" curve="-90"/>
+<wire x1="15" y1="0" x2="5" y2="-10" width="0.2" layer="21" curve="-90"/>
+<wire x1="14.7" y1="-2.5" x2="20" y2="-2.5" width="0.3" layer="51"/>
+<wire x1="14.7" y1="2.5" x2="20" y2="2.5" width="0.3" layer="51"/>
 </package>
 </packages>
 <symbols>

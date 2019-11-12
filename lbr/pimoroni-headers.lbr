@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -3163,6 +3163,313 @@ from this side</text>
 <wire x1="-5.472" y1="-2.254" x2="5.528" y2="-2.254" width="0.127" layer="51"/>
 <text x="0" y="1.292" size="1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="FCI_89898_313LF_40P_CONNECTOR_SMT_FLIPPED">
+<smd name="P1_3V3" x="24.13" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P2_5V" x="24.13" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P3_GPIO2_SDA" x="21.59" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P4_5V" x="21.59" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P5_GPIO3_SCL" x="19.05" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P6_GND" x="19.05" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P7_GPIO4" x="16.51" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P8_GPIO14_UART0_TXD" x="16.51" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P9_GND" x="13.97" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P10_GPIO15_UART0_RXD" x="13.97" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P11_GPIO17" x="11.43" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P12_GPIO18" x="11.43" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P13_GPIO27" x="8.89" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P14_GND" x="8.89" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P15_GPIO22" x="6.35" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P16_GPIO23" x="6.35" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P17_3V3" x="3.81" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P18_GPIO24" x="3.81" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P19_GPIO10_SPI0_MOSI" x="1.27" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P20_GND" x="1.27" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P21_GPIO9_SPI0_MISO" x="-1.27" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P22_GPIO25" x="-1.27" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P23_GPIO11_SPI0_SCLK" x="-3.81" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P24_GPIO8_SPI0_CE0" x="-3.81" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P25_GND" x="-6.35" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P26_GPIO7_SPI0_CE1" x="-6.35" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P40_GPIO21" x="-24.13" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P39_GND" x="-24.13" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P38_GPIO20" x="-21.59" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P36_GPIO16" x="-19.05" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P34_GND" x="-16.51" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P32_GPIO12" x="-13.97" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P30_GND" x="-11.43" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P28_IDSC" x="-8.89" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P37_GPIO26" x="-21.59" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P35_GPIO19" x="-19.05" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P33_GPIO13" x="-16.51" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P31_GPIO6" x="-13.97" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P29_GPIO5" x="-11.43" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P27_IDSD" x="-8.89" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<polygon width="0.2" layer="41">
+<vertex x="-24.73" y="1.27" curve="-90"/>
+<vertex x="-24.13" y="1.87" curve="-90"/>
+<vertex x="-23.53" y="1.27" curve="-90"/>
+<vertex x="-24.13" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-24.73" y="-1.27" curve="-90"/>
+<vertex x="-24.13" y="-0.67" curve="-90"/>
+<vertex x="-23.53" y="-1.27" curve="-90"/>
+<vertex x="-24.13" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-22.19" y="1.27" curve="-90"/>
+<vertex x="-21.59" y="1.87" curve="-90"/>
+<vertex x="-20.99" y="1.27" curve="-90"/>
+<vertex x="-21.59" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-22.19" y="-1.27" curve="-90"/>
+<vertex x="-21.59" y="-0.67" curve="-90"/>
+<vertex x="-20.99" y="-1.27" curve="-90"/>
+<vertex x="-21.59" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-19.65" y="1.27" curve="-90"/>
+<vertex x="-19.05" y="1.87" curve="-90"/>
+<vertex x="-18.45" y="1.27" curve="-90"/>
+<vertex x="-19.05" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-19.65" y="-1.27" curve="-90"/>
+<vertex x="-19.05" y="-0.67" curve="-90"/>
+<vertex x="-18.45" y="-1.27" curve="-90"/>
+<vertex x="-19.05" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-17.11" y="1.27" curve="-90"/>
+<vertex x="-16.51" y="1.87" curve="-90"/>
+<vertex x="-15.91" y="1.27" curve="-90"/>
+<vertex x="-16.51" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-17.11" y="-1.27" curve="-90"/>
+<vertex x="-16.51" y="-0.67" curve="-90"/>
+<vertex x="-15.91" y="-1.27" curve="-90"/>
+<vertex x="-16.51" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-14.57" y="1.27" curve="-90"/>
+<vertex x="-13.97" y="1.87" curve="-90"/>
+<vertex x="-13.37" y="1.27" curve="-90"/>
+<vertex x="-13.97" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-14.57" y="-1.27" curve="-90"/>
+<vertex x="-13.97" y="-0.67" curve="-90"/>
+<vertex x="-13.37" y="-1.27" curve="-90"/>
+<vertex x="-13.97" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-12.03" y="1.27" curve="-90"/>
+<vertex x="-11.43" y="1.87" curve="-90"/>
+<vertex x="-10.83" y="1.27" curve="-90"/>
+<vertex x="-11.43" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-12.03" y="-1.27" curve="-90"/>
+<vertex x="-11.43" y="-0.67" curve="-90"/>
+<vertex x="-10.83" y="-1.27" curve="-90"/>
+<vertex x="-11.43" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-9.49" y="1.27" curve="-90"/>
+<vertex x="-8.89" y="1.87" curve="-90"/>
+<vertex x="-8.29" y="1.27" curve="-90"/>
+<vertex x="-8.89" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-9.49" y="-1.27" curve="-90"/>
+<vertex x="-8.89" y="-0.67" curve="-90"/>
+<vertex x="-8.29" y="-1.27" curve="-90"/>
+<vertex x="-8.89" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-6.95" y="1.27" curve="-90"/>
+<vertex x="-6.35" y="1.87" curve="-90"/>
+<vertex x="-5.75" y="1.27" curve="-90"/>
+<vertex x="-6.35" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-6.95" y="-1.27" curve="-90"/>
+<vertex x="-6.35" y="-0.67" curve="-90"/>
+<vertex x="-5.75" y="-1.27" curve="-90"/>
+<vertex x="-6.35" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-4.41" y="1.27" curve="-90"/>
+<vertex x="-3.81" y="1.87" curve="-90"/>
+<vertex x="-3.21" y="1.27" curve="-90"/>
+<vertex x="-3.81" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-4.41" y="-1.27" curve="-90"/>
+<vertex x="-3.81" y="-0.67" curve="-90"/>
+<vertex x="-3.21" y="-1.27" curve="-90"/>
+<vertex x="-3.81" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-1.87" y="1.27" curve="-90"/>
+<vertex x="-1.27" y="1.87" curve="-90"/>
+<vertex x="-0.67" y="1.27" curve="-90"/>
+<vertex x="-1.27" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-1.87" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="-0.67" curve="-90"/>
+<vertex x="-0.67" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="0.67" y="1.27" curve="-90"/>
+<vertex x="1.27" y="1.87" curve="-90"/>
+<vertex x="1.87" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="0.67" y="-1.27" curve="-90"/>
+<vertex x="1.27" y="-0.67" curve="-90"/>
+<vertex x="1.87" y="-1.27" curve="-90"/>
+<vertex x="1.27" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="3.21" y="1.27" curve="-90"/>
+<vertex x="3.81" y="1.87" curve="-90"/>
+<vertex x="4.41" y="1.27" curve="-90"/>
+<vertex x="3.81" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="3.21" y="-1.27" curve="-90"/>
+<vertex x="3.81" y="-0.67" curve="-90"/>
+<vertex x="4.41" y="-1.27" curve="-90"/>
+<vertex x="3.81" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="5.75" y="1.27" curve="-90"/>
+<vertex x="6.35" y="1.87" curve="-90"/>
+<vertex x="6.95" y="1.27" curve="-90"/>
+<vertex x="6.35" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="5.75" y="-1.27" curve="-90"/>
+<vertex x="6.35" y="-0.67" curve="-90"/>
+<vertex x="6.95" y="-1.27" curve="-90"/>
+<vertex x="6.35" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="8.29" y="1.27" curve="-90"/>
+<vertex x="8.89" y="1.87" curve="-90"/>
+<vertex x="9.49" y="1.27" curve="-90"/>
+<vertex x="8.89" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="8.29" y="-1.27" curve="-90"/>
+<vertex x="8.89" y="-0.67" curve="-90"/>
+<vertex x="9.49" y="-1.27" curve="-90"/>
+<vertex x="8.89" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="10.83" y="1.27" curve="-90"/>
+<vertex x="11.43" y="1.87" curve="-90"/>
+<vertex x="12.03" y="1.27" curve="-90"/>
+<vertex x="11.43" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="10.83" y="-1.27" curve="-90"/>
+<vertex x="11.43" y="-0.67" curve="-90"/>
+<vertex x="12.03" y="-1.27" curve="-90"/>
+<vertex x="11.43" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="13.37" y="1.27" curve="-90"/>
+<vertex x="13.97" y="1.87" curve="-90"/>
+<vertex x="14.57" y="1.27" curve="-90"/>
+<vertex x="13.97" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="13.37" y="-1.27" curve="-90"/>
+<vertex x="13.97" y="-0.67" curve="-90"/>
+<vertex x="14.57" y="-1.27" curve="-90"/>
+<vertex x="13.97" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="15.91" y="1.27" curve="-90"/>
+<vertex x="16.51" y="1.87" curve="-90"/>
+<vertex x="17.11" y="1.27" curve="-90"/>
+<vertex x="16.51" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="15.91" y="-1.27" curve="-90"/>
+<vertex x="16.51" y="-0.67" curve="-90"/>
+<vertex x="17.11" y="-1.27" curve="-90"/>
+<vertex x="16.51" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="18.45" y="1.27" curve="-90"/>
+<vertex x="19.05" y="1.87" curve="-90"/>
+<vertex x="19.65" y="1.27" curve="-90"/>
+<vertex x="19.05" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="18.45" y="-1.27" curve="-90"/>
+<vertex x="19.05" y="-0.67" curve="-90"/>
+<vertex x="19.65" y="-1.27" curve="-90"/>
+<vertex x="19.05" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="20.99" y="1.27" curve="-90"/>
+<vertex x="21.59" y="1.87" curve="-90"/>
+<vertex x="22.19" y="1.27" curve="-90"/>
+<vertex x="21.59" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="20.99" y="-1.27" curve="-90"/>
+<vertex x="21.59" y="-0.67" curve="-90"/>
+<vertex x="22.19" y="-1.27" curve="-90"/>
+<vertex x="21.59" y="-1.87" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="23.53" y="1.27" curve="-90"/>
+<vertex x="24.13" y="1.87" curve="-90"/>
+<vertex x="24.73" y="1.27" curve="-90"/>
+<vertex x="24.13" y="0.67" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="23.53" y="-1.27" curve="-90"/>
+<vertex x="24.13" y="-0.67" curve="-90"/>
+<vertex x="24.73" y="-1.27" curve="-90"/>
+<vertex x="24.13" y="-1.87" curve="-90"/>
+</polygon>
+<circle x="-29" y="-6.14" radius="1.796" width="0.127" layer="51"/>
+<polygon width="0.2" layer="41">
+<vertex x="-30.97" y="-4.87" curve="-90"/>
+<vertex x="-30.27" y="-4.17" curve="-90"/>
+<vertex x="-29.57" y="-4.87" curve="-90"/>
+<vertex x="-30.27" y="-5.57" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-28.43" y="-4.87" curve="-90"/>
+<vertex x="-27.73" y="-4.17" curve="-90"/>
+<vertex x="-27.03" y="-4.87" curve="-90"/>
+<vertex x="-27.73" y="-5.57" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-28.43" y="-7.41" curve="-90"/>
+<vertex x="-27.73" y="-6.71" curve="-90"/>
+<vertex x="-27.03" y="-7.41" curve="-90"/>
+<vertex x="-27.73" y="-8.11" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-30.97" y="-7.41" curve="-90"/>
+<vertex x="-30.27" y="-6.71" curve="-90"/>
+<vertex x="-29.57" y="-7.41" curve="-90"/>
+<vertex x="-30.27" y="-8.11" curve="-90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="1X2">
@@ -4789,7 +5096,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="RASPBERRY-PI-GPIO-SEPARATE">
+<deviceset name="RASPBERRY-PI-GPIO-SEPARATE" prefix="PI">
 <gates>
 <gate name="G$1" symbol="RASPBERRY-PI-GPIO-SEPARATE" x="0" y="0"/>
 </gates>
@@ -4842,6 +5149,100 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </technologies>
 </device>
 <device name="IRF" package="2X20_IRF">
+<connects>
+<connect gate="G$1" pin="0_ID_SC" pad="27"/>
+<connect gate="G$1" pin="10" pad="19"/>
+<connect gate="G$1" pin="11" pad="23"/>
+<connect gate="G$1" pin="12" pad="32"/>
+<connect gate="G$1" pin="13" pad="33"/>
+<connect gate="G$1" pin="14" pad="8"/>
+<connect gate="G$1" pin="15" pad="10"/>
+<connect gate="G$1" pin="16" pad="36"/>
+<connect gate="G$1" pin="17" pad="11"/>
+<connect gate="G$1" pin="18" pad="12"/>
+<connect gate="G$1" pin="19" pad="35"/>
+<connect gate="G$1" pin="1_ID_SD" pad="28"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="20" pad="38"/>
+<connect gate="G$1" pin="21" pad="40"/>
+<connect gate="G$1" pin="22" pad="15"/>
+<connect gate="G$1" pin="23" pad="16"/>
+<connect gate="G$1" pin="24" pad="18"/>
+<connect gate="G$1" pin="25" pad="22"/>
+<connect gate="G$1" pin="26" pad="37"/>
+<connect gate="G$1" pin="27" pad="13"/>
+<connect gate="G$1" pin="3" pad="5"/>
+<connect gate="G$1" pin="3V1_2" pad="17"/>
+<connect gate="G$1" pin="3V3_1" pad="1"/>
+<connect gate="G$1" pin="4" pad="7"/>
+<connect gate="G$1" pin="5" pad="29"/>
+<connect gate="G$1" pin="5V_1" pad="2"/>
+<connect gate="G$1" pin="5V_2" pad="4"/>
+<connect gate="G$1" pin="6" pad="31"/>
+<connect gate="G$1" pin="7" pad="26"/>
+<connect gate="G$1" pin="8" pad="24"/>
+<connect gate="G$1" pin="9" pad="21"/>
+<connect gate="G$1" pin="GND_1" pad="6"/>
+<connect gate="G$1" pin="GND_2" pad="14"/>
+<connect gate="G$1" pin="GND_3" pad="20"/>
+<connect gate="G$1" pin="GND_4" pad="30"/>
+<connect gate="G$1" pin="GND_5" pad="34"/>
+<connect gate="G$1" pin="GND_6" pad="9"/>
+<connect gate="G$1" pin="GND_7" pad="25"/>
+<connect gate="G$1" pin="GND_8" pad="39"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMT_F" package="FCI_89898_313LF_40P_CONNECTOR_SMT_FLIPPED">
+<connects>
+<connect gate="G$1" pin="0_ID_SC" pad="P27_IDSD"/>
+<connect gate="G$1" pin="10" pad="P19_GPIO10_SPI0_MOSI"/>
+<connect gate="G$1" pin="11" pad="P23_GPIO11_SPI0_SCLK"/>
+<connect gate="G$1" pin="12" pad="P32_GPIO12"/>
+<connect gate="G$1" pin="13" pad="P33_GPIO13"/>
+<connect gate="G$1" pin="14" pad="P8_GPIO14_UART0_TXD"/>
+<connect gate="G$1" pin="15" pad="P10_GPIO15_UART0_RXD"/>
+<connect gate="G$1" pin="16" pad="P36_GPIO16"/>
+<connect gate="G$1" pin="17" pad="P11_GPIO17"/>
+<connect gate="G$1" pin="18" pad="P12_GPIO18"/>
+<connect gate="G$1" pin="19" pad="P35_GPIO19"/>
+<connect gate="G$1" pin="1_ID_SD" pad="P28_IDSC"/>
+<connect gate="G$1" pin="2" pad="P3_GPIO2_SDA"/>
+<connect gate="G$1" pin="20" pad="P38_GPIO20"/>
+<connect gate="G$1" pin="21" pad="P40_GPIO21"/>
+<connect gate="G$1" pin="22" pad="P15_GPIO22"/>
+<connect gate="G$1" pin="23" pad="P16_GPIO23"/>
+<connect gate="G$1" pin="24" pad="P18_GPIO24"/>
+<connect gate="G$1" pin="25" pad="P22_GPIO25"/>
+<connect gate="G$1" pin="26" pad="P37_GPIO26"/>
+<connect gate="G$1" pin="27" pad="P13_GPIO27"/>
+<connect gate="G$1" pin="3" pad="P5_GPIO3_SCL"/>
+<connect gate="G$1" pin="3V1_2" pad="P17_3V3"/>
+<connect gate="G$1" pin="3V3_1" pad="P1_3V3"/>
+<connect gate="G$1" pin="4" pad="P7_GPIO4"/>
+<connect gate="G$1" pin="5" pad="P29_GPIO5"/>
+<connect gate="G$1" pin="5V_1" pad="P2_5V"/>
+<connect gate="G$1" pin="5V_2" pad="P4_5V"/>
+<connect gate="G$1" pin="6" pad="P31_GPIO6"/>
+<connect gate="G$1" pin="7" pad="P26_GPIO7_SPI0_CE1"/>
+<connect gate="G$1" pin="8" pad="P24_GPIO8_SPI0_CE0"/>
+<connect gate="G$1" pin="9" pad="P21_GPIO9_SPI0_MISO"/>
+<connect gate="G$1" pin="GND_1" pad="P6_GND"/>
+<connect gate="G$1" pin="GND_2" pad="P14_GND"/>
+<connect gate="G$1" pin="GND_3" pad="P20_GND"/>
+<connect gate="G$1" pin="GND_4" pad="P30_GND"/>
+<connect gate="G$1" pin="GND_5" pad="P34_GND"/>
+<connect gate="G$1" pin="GND_6" pad="P9_GND"/>
+<connect gate="G$1" pin="GND_7" pad="P25_GND"/>
+<connect gate="G$1" pin="GND_8" pad="P39_GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMT_M" package="2X20-MALE-SMT">
 <connects>
 <connect gate="G$1" pin="0_ID_SC" pad="27"/>
 <connect gate="G$1" pin="10" pad="19"/>

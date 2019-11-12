@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1580,7 +1580,7 @@ undermounted!</text>
 <wire x1="-3.7" y1="-3.6" x2="-6.2" y2="-3.6" width="0.127" layer="51"/>
 </package>
 <package name="30MM_FAN">
-<circle x="0" y="0" radius="15.2" width="0.2" layer="51"/>
+<circle x="0" y="0" radius="15.4" width="0.2" layer="51"/>
 <circle x="0" y="18" radius="1.25" width="0.05" layer="51"/>
 <circle x="0" y="-18" radius="1.25" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="7.5" width="0.2" layer="51"/>
@@ -1592,6 +1592,16 @@ undermounted!</text>
 <circle x="0" y="18" radius="2.5" width="0.05" layer="51"/>
 <pad name="1" x="0" y="18" drill="2.5" diameter="2.9"/>
 <pad name="2" x="0" y="-18" drill="2.5" diameter="2.9"/>
+<wire x1="3.3503125" y1="15.033790625" x2="2.088446875" y2="16.835925" width="0.1" layer="51"/>
+<wire x1="2.088446875" y1="16.835925" x2="2.907596875" y2="17.409503125" width="0.1" layer="51"/>
+<wire x1="2.907596875" y1="17.409503125" x2="4.85775625" y2="14.624384375" width="0.1" layer="51"/>
+<wire x1="-3.3503125" y1="-15.033790625" x2="-2.088446875" y2="-16.835925" width="0.1" layer="51"/>
+<wire x1="-2.088446875" y1="-16.835925" x2="-2.907596875" y2="-17.409503125" width="0.1" layer="51"/>
+<wire x1="-2.907596875" y1="-17.409503125" x2="-4.85775625" y2="-14.624384375" width="0.1" layer="51"/>
+<wire x1="2.8" y1="15.35" x2="1.980725" y2="16.522725" width="0" layer="51"/>
+<wire x1="1.980725" y1="16.522725" x2="2.164909375" y2="17.567271875" width="0" layer="51" curve="-90"/>
+<wire x1="2.164909375" y1="17.567271875" x2="3.209453125" y2="17.383090625" width="0" layer="51" curve="-90"/>
+<wire x1="3.209453125" y1="17.383090625" x2="5.05" y2="14.75" width="0" layer="51"/>
 </package>
 <package name="TACT_RIGHT_ANGLE_LOW_PROFILE">
 <hole x="0" y="1.35" drill="0.8"/>

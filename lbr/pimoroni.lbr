@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2151,11 +2151,11 @@ Source: &lt;a href="http://www.cirrus.com/en/pubs/proDatasheet/CS1610-11-12-13_F
 <rectangle x1="-4.6901" y1="1.8951" x2="-4.1999" y2="2.921" layer="51"/>
 </package>
 <package name="1X05NOSILK">
-<pad name="1" x="0" y="0" drill="1.2" diameter="2" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.2" diameter="2" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.2" diameter="2" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1.2" diameter="2" rot="R90"/>
-<pad name="5" x="10.16" y="0" drill="1.2" diameter="2" rot="R90"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="2" shape="square" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.2" diameter="2" shape="square" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.2" diameter="2" shape="square" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.2" diameter="2" shape="square" rot="R90"/>
+<pad name="5" x="10.16" y="0" drill="1.2" diameter="2" shape="square" rot="R90"/>
 </package>
 <package name="1X05-1.27MM">
 <description>Header for OS4000-T</description>

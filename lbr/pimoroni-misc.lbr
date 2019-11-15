@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -176,22 +176,22 @@
 <vertex x="-3" y="0" curve="-90"/>
 <vertex x="0" y="3" curve="-90"/>
 <vertex x="3" y="0"/>
-<vertex x="3" y="-5" curve="-90"/>
-<vertex x="0" y="-8" curve="-90"/>
-<vertex x="-3" y="-5"/>
+<vertex x="3" y="-5.5" curve="-90"/>
+<vertex x="0" y="-8.5" curve="-90"/>
+<vertex x="-3" y="-5.5"/>
 </polygon>
 <polygon width="0.2" layer="42">
 <vertex x="-3" y="0" curve="-90"/>
 <vertex x="0" y="3" curve="-90"/>
 <vertex x="3" y="0"/>
-<vertex x="3" y="-5" curve="-90"/>
-<vertex x="0" y="-8" curve="-90"/>
-<vertex x="-3" y="-5"/>
+<vertex x="3" y="-5.5" curve="-90"/>
+<vertex x="0" y="-8.5" curve="-90"/>
+<vertex x="-3" y="-5.5"/>
 </polygon>
-<wire x1="-1.4" y1="0" x2="-1.4" y2="-5" width="0.01" layer="20"/>
-<wire x1="-1.4" y1="-5" x2="0" y2="-6.4" width="0.01" layer="20" curve="90"/>
-<wire x1="0" y1="-6.4" x2="1.4" y2="-5" width="0.01" layer="20" curve="90"/>
-<wire x1="1.4" y1="-5" x2="1.4" y2="0" width="0.01" layer="20"/>
+<wire x1="-1.4" y1="0" x2="-1.4" y2="-5.5" width="0.01" layer="20"/>
+<wire x1="-1.4" y1="-5.5" x2="0" y2="-6.9" width="0.01" layer="20" curve="90"/>
+<wire x1="0" y1="-6.9" x2="1.4" y2="-5.5" width="0.01" layer="20" curve="90"/>
+<wire x1="1.4" y1="-5.5" x2="1.4" y2="0" width="0.01" layer="20"/>
 <wire x1="1.4" y1="0" x2="0" y2="1.4" width="0.01" layer="20" curve="90"/>
 <wire x1="0" y1="1.4" x2="-1.4" y2="0" width="0.01" layer="20" curve="90"/>
 </package>

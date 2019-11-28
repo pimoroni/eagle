@@ -8189,11 +8189,14 @@ DIR=VCCA, A in -&gt; B out</text>
 <pin name="C1" x="-17.78" y="0" length="middle"/>
 <text x="0" y="15.24" size="2.54" layer="94" ratio="14" align="center">LIS3MDLTR
 1.9-3.6V</text>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
-<wire x1="12.7" y1="20.32" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
 <pin name="INT" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<text x="-10.16" y="-20.32" size="1.778" layer="94">I2C address:
+SA1=high -&gt; 0x1E
+SA1=low -&gt; 0x1C</text>
 </symbol>
 </symbols>
 <devicesets>

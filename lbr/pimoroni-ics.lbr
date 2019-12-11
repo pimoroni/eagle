@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -33,7 +33,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -3902,6 +3902,38 @@ shrink quad flat pack, square</description>
 <smd name="13" x="0" y="1.1" dx="0.9" dy="0.25" layer="1" rot="R90"/>
 <smd name="14" x="-0.5" y="1.1" dx="0.9" dy="0.25" layer="1" rot="R90"/>
 <circle x="-1.9" y="1.4" radius="0.05" width="0.3" layer="21"/>
+</package>
+<package name="SO24-300MIL">
+<wire x1="-7.53" y1="-3.5" x2="7.53" y2="-3.5" width="0.4064" layer="51"/>
+<wire x1="7.53" y1="3.5" x2="-7.53" y2="3.5" width="0.4064" layer="21"/>
+<wire x1="-7.53" y1="3.5" x2="-7.53" y2="-3.5" width="0.4064" layer="21"/>
+<wire x1="7.53" y1="-3.5" x2="7.53" y2="3.5" width="0.4064" layer="21"/>
+<circle x="-8.35" y="-4.386" radius="0.254" width="0.5" layer="21"/>
+<smd name="P$1" x="-6.985" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$2" x="-5.715" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$3" x="-4.445" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$4" x="-3.175" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$5" x="-1.905" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$6" x="-0.635" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$7" x="0.635" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$8" x="1.905" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$9" x="3.175" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$10" x="4.445" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$11" x="5.715" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$12" x="6.985" y="-4.68" dx="0.635" dy="1.8" layer="1"/>
+<smd name="P$14" x="6.985" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<text x="-6.35" y="7.112" size="1.3" layer="27" font="vector" ratio="14">&gt;NAME</text>
+<smd name="P$13" x="5.715" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$15" x="4.445" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$16" x="3.175" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$17" x="1.905" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$18" x="0.635" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$19" x="-0.635" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$20" x="-1.905" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$21" x="-3.175" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$22" x="-4.445" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$23" x="-5.715" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
+<smd name="P$24" x="-6.985" y="4.68" dx="0.635" dy="1.8" layer="1" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -8197,6 +8229,39 @@ DIR=VCCA, A in -&gt; B out</text>
 <text x="-10.16" y="-20.32" size="1.778" layer="94">I2C address:
 SA1=high -&gt; 0x1E
 SA1=low -&gt; 0x1C</text>
+</symbol>
+<symbol name="74HCT4067D,112">
+<pin name="!E" x="-20.32" y="7.62" length="middle"/>
+<pin name="Y1" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="Y2" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="Y3" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="Y4" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="Y5" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="Y6" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="Y7" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="Y8" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="Y9" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="Y10" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="Y11" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="Y12" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="Y13" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="Y14" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="Y15" x="20.32" y="-17.78" length="middle" rot="R180"/>
+<pin name="Y0" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="VCC" x="-20.32" y="20.32" length="middle"/>
+<pin name="GND" x="-20.32" y="-17.78" length="middle"/>
+<pin name="S0" x="-20.32" y="-2.54" length="middle"/>
+<pin name="S3" x="-20.32" y="-10.16" length="middle"/>
+<pin name="S2" x="-20.32" y="-7.62" length="middle"/>
+<pin name="S1" x="-20.32" y="-5.08" length="middle"/>
+<pin name="COM" x="-20.32" y="12.7" length="middle"/>
+<text x="0" y="27.94" size="2.54" layer="94" align="bottom-center">74HCT4067D,112</text>
+<text x="0" y="25.4" size="1.778" layer="94" align="bottom-center">4.5-5.5V Vcc</text>
+<text x="0" y="22.86" size="1.778" layer="94" align="bottom-center">Vinput = 0-Vcc</text>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="33.02" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="33.02" x2="15.24" y2="33.02" width="0.254" layer="94"/>
+<wire x1="15.24" y1="33.02" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13401,6 +13466,44 @@ Source:</description>
 <connect gate="G$1" pin="SDA/SDI/SDO" pad="11"/>
 <connect gate="G$1" pin="VDD" pad="5"/>
 <connect gate="G$1" pin="VDDIO" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74HCT4067D,112" prefix="U">
+<gates>
+<gate name="G$1" symbol="74HCT4067D,112" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO24-300MIL">
+<connects>
+<connect gate="G$1" pin="!E" pad="P$15"/>
+<connect gate="G$1" pin="COM" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$12"/>
+<connect gate="G$1" pin="S0" pad="P$10"/>
+<connect gate="G$1" pin="S1" pad="P$11"/>
+<connect gate="G$1" pin="S2" pad="P$14"/>
+<connect gate="G$1" pin="S3" pad="P$13"/>
+<connect gate="G$1" pin="VCC" pad="P$24"/>
+<connect gate="G$1" pin="Y0" pad="P$9"/>
+<connect gate="G$1" pin="Y1" pad="P$8"/>
+<connect gate="G$1" pin="Y10" pad="P$21"/>
+<connect gate="G$1" pin="Y11" pad="P$20"/>
+<connect gate="G$1" pin="Y12" pad="P$19"/>
+<connect gate="G$1" pin="Y13" pad="P$18"/>
+<connect gate="G$1" pin="Y14" pad="P$17"/>
+<connect gate="G$1" pin="Y15" pad="P$16"/>
+<connect gate="G$1" pin="Y2" pad="P$7"/>
+<connect gate="G$1" pin="Y3" pad="P$6"/>
+<connect gate="G$1" pin="Y4" pad="P$5"/>
+<connect gate="G$1" pin="Y5" pad="P$4"/>
+<connect gate="G$1" pin="Y6" pad="P$3"/>
+<connect gate="G$1" pin="Y7" pad="P$2"/>
+<connect gate="G$1" pin="Y8" pad="P$23"/>
+<connect gate="G$1" pin="Y9" pad="P$22"/>
 </connects>
 <technologies>
 <technology name=""/>

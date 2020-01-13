@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1425,14 +1425,14 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="2" y1="2.46" x2="2" y2="-2.46" width="0.127" layer="51"/>
 <wire x1="2" y1="-2.46" x2="-2" y2="-2.46" width="0.127" layer="51"/>
 <wire x1="-2" y1="-2.46" x2="-2" y2="2.46" width="0.127" layer="51"/>
-<smd name="1" x="-2.54" y="1.855" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="2" x="-2.54" y="0.585" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="3" x="-2.54" y="-0.685" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="4" x="-2.54" y="-1.955" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="5" x="2.54" y="-1.955" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="6" x="2.54" y="-0.685" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="7" x="2.54" y="0.585" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="8" x="2.54" y="1.855" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="1" x="-2.54" y="1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="-2.54" y="-0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="-2.54" y="-1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="2.54" y="-1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="2.54" y="-0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="7" x="2.54" y="0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="8" x="2.54" y="1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
 <circle x="-0.93" y="1.525" radius="0.2" width="0.4" layer="21"/>
 <text x="0" y="0" size="0.8128" layer="25" font="vector" ratio="14" align="center">&gt;NAME</text>
 <text x="-2" y="-3.651" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
@@ -3950,6 +3950,7 @@ shrink quad flat pack, square</description>
 <smd name="6" x="0.25" y="1.5" dx="0.25" dy="0.8" layer="1"/>
 <smd name="7" x="-0.25" y="1.5" dx="0.25" dy="0.8" layer="1"/>
 <smd name="8" x="-0.75" y="1.5" dx="0.25" dy="0.8" layer="1"/>
+<circle x="-1.5" y="-1.6" radius="0.05" width="0.3" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -8302,6 +8303,22 @@ A1,A2 high</text>
 <wire x1="-12.7" y1="16.51" x2="12.7" y2="16.51" width="0.254" layer="94"/>
 <wire x1="12.7" y1="16.51" x2="12.7" y2="-29.21" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-29.21" x2="-12.7" y2="-29.21" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TLC555CDR">
+<pin name="VDD" x="-17.78" y="12.7" length="middle"/>
+<pin name="DISCH" x="-17.78" y="5.08" length="middle"/>
+<pin name="THRES" x="-17.78" y="0" length="middle"/>
+<pin name="GND" x="-17.78" y="-15.24" length="middle"/>
+<pin name="OUT" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="RESET" x="-17.78" y="10.16" length="middle"/>
+<pin name="TRIG" x="-17.78" y="-5.08" length="middle"/>
+<pin name="CONT" x="-17.78" y="-10.16" length="middle"/>
+<text x="0" y="17.78" size="2.54" layer="94" align="bottom-center">TLC555CDR</text>
+<text x="0" y="15.24" size="1.778" layer="94" align="bottom-center">2-15V</text>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="21.59" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="21.59" x2="12.7" y2="21.59" width="0.254" layer="94"/>
+<wire x1="12.7" y1="21.59" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13566,6 +13583,28 @@ Source:</description>
 <connect gate="G$1" pin="SCL" pad="2"/>
 <connect gate="G$1" pin="SDA" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLC555CDR" prefix="U">
+<gates>
+<gate name="G$1" symbol="TLC555CDR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8-150MIL">
+<connects>
+<connect gate="G$1" pin="CONT" pad="5"/>
+<connect gate="G$1" pin="DISCH" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="RESET" pad="4"/>
+<connect gate="G$1" pin="THRES" pad="6"/>
+<connect gate="G$1" pin="TRIG" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>

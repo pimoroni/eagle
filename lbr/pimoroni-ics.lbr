@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -37,7 +37,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -3972,81 +3972,48 @@ shrink quad flat pack, square</description>
 <circle x="-1.4" y="1" radius="0.15" width="0.127" layer="21"/>
 </package>
 <package name="QFN-32-0.4MM">
-<smd name="1" x="-2" y="1.4" dx="0.8" dy="0.2" layer="1" roundness="100" stop="no"/>
-<smd name="2" x="-2" y="1" dx="0.8" dy="0.2" layer="1" roundness="100" stop="no"/>
-<smd name="3" x="-2" y="0.6" dx="0.8" dy="0.2" layer="1" roundness="100" stop="no"/>
-<smd name="4" x="-2" y="0.2" dx="0.8" dy="0.2" layer="1" roundness="100" stop="no"/>
-<smd name="5" x="-2" y="-0.2" dx="0.8" dy="0.2" layer="1" roundness="100" stop="no"/>
-<smd name="6" x="-2" y="-0.6" dx="0.8" dy="0.2" layer="1" roundness="100" stop="no"/>
-<smd name="7" x="-2" y="-1" dx="0.8" dy="0.2" layer="1" roundness="100" stop="no"/>
-<smd name="8" x="-2" y="-1.4" dx="0.8" dy="0.2" layer="1" roundness="100" stop="no"/>
-<smd name="9" x="-1.4" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" stop="no"/>
-<smd name="10" x="-1" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" stop="no"/>
-<smd name="11" x="-0.6" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" stop="no"/>
-<smd name="12" x="-0.2" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" stop="no"/>
-<smd name="13" x="0.2" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" stop="no"/>
-<smd name="14" x="0.6" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" stop="no"/>
-<smd name="15" x="1" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" stop="no"/>
-<smd name="16" x="1.4" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" stop="no"/>
-<smd name="17" x="2" y="-1.4" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" stop="no"/>
-<smd name="18" x="2" y="-1" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" stop="no"/>
-<smd name="19" x="2" y="-0.6" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" stop="no"/>
-<smd name="20" x="2" y="-0.2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" stop="no"/>
-<smd name="21" x="2" y="0.2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" stop="no"/>
-<smd name="22" x="2" y="0.6" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" stop="no"/>
-<smd name="23" x="2" y="1" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" stop="no"/>
-<smd name="24" x="2" y="1.4" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" stop="no"/>
-<smd name="25" x="1.4" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270" stop="no"/>
-<smd name="26" x="1" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270" stop="no"/>
-<smd name="27" x="0.6" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270" stop="no"/>
-<smd name="28" x="0.2" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270" stop="no"/>
-<smd name="29" x="-0.2" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270" stop="no"/>
-<smd name="30" x="-0.6" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270" stop="no"/>
-<smd name="31" x="-1" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270" stop="no"/>
-<smd name="32" x="-1.4" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270" stop="no"/>
-<smd name="EP" x="0" y="0" dx="2.7" dy="2.7" layer="1" roundness="10" stop="no" thermals="no" cream="no"/>
+<smd name="1" x="-2" y="1.4" dx="0.8" dy="0.2" layer="1" roundness="100"/>
+<smd name="2" x="-2" y="1" dx="0.8" dy="0.2" layer="1" roundness="100"/>
+<smd name="3" x="-2" y="0.6" dx="0.8" dy="0.2" layer="1" roundness="100"/>
+<smd name="4" x="-2" y="0.2" dx="0.8" dy="0.2" layer="1" roundness="100"/>
+<smd name="5" x="-2" y="-0.2" dx="0.8" dy="0.2" layer="1" roundness="100"/>
+<smd name="6" x="-2" y="-0.6" dx="0.8" dy="0.2" layer="1" roundness="100"/>
+<smd name="7" x="-2" y="-1" dx="0.8" dy="0.2" layer="1" roundness="100"/>
+<smd name="8" x="-2" y="-1.4" dx="0.8" dy="0.2" layer="1" roundness="100"/>
+<smd name="9" x="-1.4" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="10" x="-1" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="11" x="-0.6" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="12" x="-0.2" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="13" x="0.2" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="14" x="0.6" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="15" x="1" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="16" x="1.4" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="17" x="2" y="-1.4" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="18" x="2" y="-1" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="19" x="2" y="-0.6" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="20" x="2" y="-0.2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="21" x="2" y="0.2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="22" x="2" y="0.6" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="23" x="2" y="1" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="24" x="2" y="1.4" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="25" x="1.4" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="26" x="1" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="27" x="0.6" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="28" x="0.2" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="29" x="-0.2" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="30" x="-0.6" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="31" x="-1" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="32" x="-1.4" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="EP" x="0" y="0" dx="2.7" dy="2.7" layer="1" roundness="10" thermals="no" cream="no"/>
 <circle x="-2.3" y="2.3" radius="0.1" width="0.2" layer="21"/>
 <wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="51"/>
 <wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="51"/>
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="51"/>
 <wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="51"/>
-<rectangle x1="-1.4" y1="-1.4" x2="1.4" y2="1.4" layer="29"/>
 <rectangle x1="-1.2" y1="0.1" x2="-0.1" y2="1.2" layer="31"/>
 <rectangle x1="0.1" y1="0.1" x2="1.2" y2="1.2" layer="31"/>
 <rectangle x1="0.1" y1="-1.2" x2="1.2" y2="-0.1" layer="31"/>
 <rectangle x1="-1.2" y1="-1.2" x2="-0.1" y2="-0.1" layer="31"/>
-<rectangle x1="-2.4" y1="1.3" x2="-1.6" y2="1.5" layer="29"/>
-<rectangle x1="-2.4" y1="0.9" x2="-1.6" y2="1.1" layer="29"/>
-<rectangle x1="-2.4" y1="0.5" x2="-1.6" y2="0.7" layer="29"/>
-<rectangle x1="-2.4" y1="0.1" x2="-1.6" y2="0.3" layer="29"/>
-<rectangle x1="-2.4" y1="-0.3" x2="-1.6" y2="-0.1" layer="29"/>
-<rectangle x1="-2.4" y1="-0.7" x2="-1.6" y2="-0.5" layer="29"/>
-<rectangle x1="-2.4" y1="-1.1" x2="-1.6" y2="-0.9" layer="29"/>
-<rectangle x1="-2.4" y1="-1.5" x2="-1.6" y2="-1.3" layer="29"/>
-<rectangle x1="-1.8" y1="-2.1" x2="-1" y2="-1.9" layer="29" rot="R90"/>
-<rectangle x1="-1.4" y1="-2.1" x2="-0.6" y2="-1.9" layer="29" rot="R90"/>
-<rectangle x1="-1" y1="-2.1" x2="-0.2" y2="-1.9" layer="29" rot="R90"/>
-<rectangle x1="-0.6" y1="-2.1" x2="0.2" y2="-1.9" layer="29" rot="R90"/>
-<rectangle x1="-0.2" y1="-2.1" x2="0.6" y2="-1.9" layer="29" rot="R90"/>
-<rectangle x1="0.2" y1="-2.1" x2="1" y2="-1.9" layer="29" rot="R90"/>
-<rectangle x1="0.6" y1="-2.1" x2="1.4" y2="-1.9" layer="29" rot="R90"/>
-<rectangle x1="1" y1="-2.1" x2="1.8" y2="-1.9" layer="29" rot="R90"/>
-<rectangle x1="1.6" y1="-1.5" x2="2.4" y2="-1.3" layer="29" rot="R180"/>
-<rectangle x1="1.6" y1="-1.1" x2="2.4" y2="-0.9" layer="29" rot="R180"/>
-<rectangle x1="1.6" y1="-0.7" x2="2.4" y2="-0.5" layer="29" rot="R180"/>
-<rectangle x1="1.6" y1="-0.3" x2="2.4" y2="-0.1" layer="29" rot="R180"/>
-<rectangle x1="1.6" y1="0.1" x2="2.4" y2="0.3" layer="29" rot="R180"/>
-<rectangle x1="1.6" y1="0.5" x2="2.4" y2="0.7" layer="29" rot="R180"/>
-<rectangle x1="1.6" y1="0.9" x2="2.4" y2="1.1" layer="29" rot="R180"/>
-<rectangle x1="1.6" y1="1.3" x2="2.4" y2="1.5" layer="29" rot="R180"/>
-<rectangle x1="1" y1="1.9" x2="1.8" y2="2.1" layer="29" rot="R270"/>
-<rectangle x1="0.6" y1="1.9" x2="1.4" y2="2.1" layer="29" rot="R270"/>
-<rectangle x1="0.2" y1="1.9" x2="1" y2="2.1" layer="29" rot="R270"/>
-<rectangle x1="-0.2" y1="1.9" x2="0.6" y2="2.1" layer="29" rot="R270"/>
-<rectangle x1="-0.6" y1="1.9" x2="0.2" y2="2.1" layer="29" rot="R270"/>
-<rectangle x1="-1" y1="1.9" x2="-0.2" y2="2.1" layer="29" rot="R270"/>
-<rectangle x1="-1.4" y1="1.9" x2="-0.6" y2="2.1" layer="29" rot="R270"/>
-<rectangle x1="-1.8" y1="1.9" x2="-1" y2="2.1" layer="29" rot="R270"/>
 </package>
 </packages>
 <symbols>
@@ -8417,45 +8384,45 @@ A1,A2 high</text>
 <wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
 </symbol>
 <symbol name="MS51TC0AE">
-<pin name="2_P3.0/SPI0_MOSI/UART2_TXD/INT0/OSCIN/ADC_CH1" x="71.12" y="-5.08" length="middle" rot="R180"/>
-<pin name="3_P1.7/SPI0_CLK/UART2_RXD/INT1/ADC_CH0" x="-73.66" y="-22.86" length="middle"/>
-<pin name="4_GND" x="-73.66" y="-27.94" length="middle"/>
-<pin name="5_P1.6/UART1_TXD/I2C0_SDA/ICE_DAT" x="-73.66" y="-20.32" length="middle"/>
-<pin name="6_VDD" x="-73.66" y="27.94" length="middle"/>
-<pin name="7_P1.5/PWM3_CH1/UART3_TXD/IC7/SPI0_SS/PWM0_CH5" x="-73.66" y="-17.78" length="middle"/>
-<pin name="8_P2.5/SPI0_MISO/UART3_RXD/ADC_CH15" x="71.12" y="7.62" length="middle" rot="R180"/>
-<pin name="9_P3.7/UART1_TXD" x="71.12" y="-22.86" length="middle" rot="R180"/>
-<pin name="10_P3.6/UART1_RXD]" x="71.12" y="-20.32" length="middle" rot="R180"/>
-<pin name="11_P1.4/PWM0_CH1/I2C0_SDA/PWM0_BRAKE/ADC_CH14/PWM1_CH1" x="-73.66" y="-15.24" length="middle"/>
-<pin name="12_P1.3/STADC/I2C0_SCL/ADC_CH13" x="-73.66" y="-12.7" length="middle"/>
-<pin name="13_P2.4/ADC_CH12/T0" x="71.12" y="10.16" length="middle" rot="R180"/>
-<pin name="14_P2.3/ADC_CH11/PWM1_CH0/UART4_TXD" x="71.12" y="12.7" length="middle" rot="R180"/>
-<pin name="15_P2.2/ADC_CH10/PWM1_CH1/UART4_RXD" x="71.12" y="15.24" length="middle" rot="R180"/>
-<pin name="16_P2.1/ADC_CH9/PWM2_CH0" x="71.12" y="17.78" length="middle" rot="R180"/>
-<pin name="17_P3.5/SPI0_SS" x="71.12" y="-17.78" length="middle" rot="R180"/>
-<pin name="1_P2.0/!RST" x="71.12" y="20.32" length="middle" rot="R180"/>
-<pin name="19_P3.2/PWM3_CH0" x="71.12" y="-10.16" length="middle" rot="R180"/>
-<pin name="20_P1.2/PWM0_CH0/IC0/UART3_TXD/PWM1_CH0" x="-73.66" y="-10.16" length="middle"/>
-<wire x1="-68.58" y1="-30.48" x2="-68.58" y2="30.48" width="0.254" layer="94"/>
-<wire x1="-68.58" y1="30.48" x2="66.04" y2="30.48" width="0.254" layer="94"/>
-<wire x1="66.04" y1="30.48" x2="66.04" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="66.04" y1="-30.48" x2="-68.58" y2="-30.48" width="0.254" layer="94"/>
-<text x="-68.58" y="30.48" size="2.54" layer="95">&gt;NAME</text>
-<text x="63.5" y="25.4" size="1.524" layer="95" align="bottom-right">Vin: 2.4V-5.5V, (ADC 2.7-5.5V)</text>
-<text x="-66.04" y="-33.02" size="2.032" layer="95">&gt;VALUE</text>
-<pin name="18_P3.1/PWM2_CH1" x="71.12" y="-7.62" length="middle" rot="R180"/>
-<pin name="21_P1.1/ADC_CH7/CLKO/IC1/PWM0_CH1/UART3_RXD/PWM1_CH1" x="-73.66" y="-7.62" length="middle"/>
-<pin name="22_P1.0/PWM0_CH2/SPI0_CLK/IC2/UART1_TXD/PWM2_CH0" x="-73.66" y="-5.08" length="middle"/>
-<pin name="23_P0.0/PWM0_CH3/SPI0_MOSI/IC3/UART1_RXD/T1/HXTIN/PWM2_CH1" x="-73.66" y="20.32" length="middle"/>
-<pin name="24_P0.1/PWM0_CH4/SPI0_MISO/IC4/HXTOUT/PWM3_CH0" x="-73.66" y="17.78" length="middle"/>
-<pin name="25_P3.3/PWM0_BRAKE/CLKO/PWM0_CH0" x="71.12" y="-12.7" length="middle" rot="R180"/>
-<pin name="26_P0.2/UART1_RXD/I2C0_SCL/ICE_CLK" x="-73.66" y="15.24" length="middle"/>
-<pin name="27_P0.3/PWM3_CH1/UART2_TXD/PWM0_CH5/IC5/ADC_CH6" x="-73.66" y="12.7" length="middle"/>
-<pin name="28_P0.4/PWM2_CH1/UART2_RXD/STADC/PWM0_CH3/IC3/ADC_CH5" x="-73.66" y="10.16" length="middle"/>
-<pin name="29_P0.5/PWM2_CH0/UART3_TXD/T0/PWM0_CH2/IC6/ADC_CH4" x="-73.66" y="7.62" length="middle"/>
-<pin name="30_P0.6/UART0_TXD/ADC_CH3" x="-73.66" y="5.08" length="middle"/>
-<pin name="31_P0.7/UART0_RXD/ADC_CH2" x="-73.66" y="2.54" length="middle"/>
-<pin name="32_P3.4/UART3_RXD/PWM3_CH1" x="71.12" y="-15.24" length="middle" rot="R180"/>
+<pin name="2_P3.0/SPI0_MOSI/INT0/ADC_CH1" x="50.8" y="-5.08" length="middle" rot="R180"/>
+<pin name="3_P1.7/SPI0_CLK/ADC_CH0" x="-50.8" y="-22.86" length="middle"/>
+<pin name="4_GND" x="-50.8" y="-27.94" length="middle"/>
+<pin name="5_P1.6/I2C0_SDA/ICE_DAT" x="-50.8" y="-20.32" length="middle"/>
+<pin name="6_VDD" x="-50.8" y="27.94" length="middle"/>
+<pin name="7_P1.5/PWM3_CH1/SPI0_SS/PWM0_CH5" x="-50.8" y="-17.78" length="middle"/>
+<pin name="8_P2.5/SPI0_MISO/ADC_CH15" x="50.8" y="7.62" length="middle" rot="R180"/>
+<pin name="9_P3.7" x="50.8" y="-22.86" length="middle" rot="R180"/>
+<pin name="10_P3.6" x="50.8" y="-20.32" length="middle" rot="R180"/>
+<pin name="11_P1.4/PWM0_CH1/I2C0_SDAADC_CH14/PWM1_CH1" x="-50.8" y="-15.24" length="middle"/>
+<pin name="12_P1.3/STADC/I2C0_SCL/ADC_CH13" x="-50.8" y="-12.7" length="middle"/>
+<pin name="13_P2.4/ADC_CH12/T0" x="50.8" y="10.16" length="middle" rot="R180"/>
+<pin name="14_P2.3/ADC_CH11/PWM1_CH0" x="50.8" y="12.7" length="middle" rot="R180"/>
+<pin name="15_P2.2/ADC_CH10/PWM1_CH1" x="50.8" y="15.24" length="middle" rot="R180"/>
+<pin name="16_P2.1/ADC_CH9/PWM2_CH0" x="50.8" y="17.78" length="middle" rot="R180"/>
+<pin name="17_P3.5/SPI0_SS" x="50.8" y="-17.78" length="middle" rot="R180"/>
+<pin name="1_P2.0/!RST" x="50.8" y="20.32" length="middle" rot="R180"/>
+<pin name="19_P3.2/PWM3_CH0" x="50.8" y="-10.16" length="middle" rot="R180"/>
+<pin name="20_P1.2/PWM0_CH0/PWM1_CH0" x="-50.8" y="-10.16" length="middle"/>
+<wire x1="-45.72" y1="-30.48" x2="-45.72" y2="30.48" width="0.254" layer="94"/>
+<wire x1="-45.72" y1="30.48" x2="45.72" y2="30.48" width="0.254" layer="94"/>
+<wire x1="45.72" y1="30.48" x2="45.72" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="45.72" y1="-30.48" x2="-45.72" y2="-30.48" width="0.254" layer="94"/>
+<text x="-45.72" y="30.48" size="2.54" layer="95">&gt;NAME</text>
+<text x="43.18" y="27.94" size="1.524" layer="95" align="bottom-right">Vin: 2.4V-5.5V, (ADC 2.7-5.5V)</text>
+<text x="-43.18" y="-33.02" size="2.032" layer="95">&gt;VALUE</text>
+<pin name="18_P3.1/PWM2_CH1" x="50.8" y="-7.62" length="middle" rot="R180"/>
+<pin name="21_P1.1/ADC_CH7/PWM0_CH1/PWM1_CH1" x="-50.8" y="-7.62" length="middle"/>
+<pin name="22_P1.0/PWM0_CH2/SPI0_CLK/PWM2_CH0" x="-50.8" y="-5.08" length="middle"/>
+<pin name="23_P0.0/PWM0_CH3/SPI0_MOSI/T1/HXTIN/PWM2_CH1" x="-50.8" y="20.32" length="middle"/>
+<pin name="24_P0.1/PWM0_CH4/SPI0_MISO/HXTOUT/PWM3_CH0" x="-50.8" y="17.78" length="middle"/>
+<pin name="25_P3.3/CLKO/PWM0_CH0" x="50.8" y="-12.7" length="middle" rot="R180"/>
+<pin name="26_P0.2/I2C0_SCL/ICE_CLK" x="-50.8" y="15.24" length="middle"/>
+<pin name="27_P0.3/PWM3_CH1/PWM0_CH5/ADC_CH6" x="-50.8" y="12.7" length="middle"/>
+<pin name="28_P0.4/PWM2_CH1/STADC/PWM0_CH3/ADC_CH5" x="-50.8" y="10.16" length="middle"/>
+<pin name="29_P0.5/PWM2_CH0/T0/PWM0_CH2/ADC_CH4" x="-50.8" y="7.62" length="middle"/>
+<pin name="30_P0.6/ADC_CH3" x="-50.8" y="5.08" length="middle"/>
+<pin name="31_P0.7/ADC_CH2" x="-50.8" y="2.54" length="middle"/>
+<pin name="32_P3.4/PWM3_CH1" x="50.8" y="-15.24" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13762,45 +13729,45 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MS51TC0AE">
+<deviceset name="MS51TC0AE" prefix="U">
 <gates>
 <gate name="G$1" symbol="MS51TC0AE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="QFN-32-0.4MM">
 <connects>
-<connect gate="G$1" pin="10_P3.6/UART1_RXD]" pad="10"/>
-<connect gate="G$1" pin="11_P1.4/PWM0_CH1/I2C0_SDA/PWM0_BRAKE/ADC_CH14/PWM1_CH1" pad="11"/>
+<connect gate="G$1" pin="10_P3.6" pad="10"/>
+<connect gate="G$1" pin="11_P1.4/PWM0_CH1/I2C0_SDAADC_CH14/PWM1_CH1" pad="11"/>
 <connect gate="G$1" pin="12_P1.3/STADC/I2C0_SCL/ADC_CH13" pad="12"/>
 <connect gate="G$1" pin="13_P2.4/ADC_CH12/T0" pad="13"/>
-<connect gate="G$1" pin="14_P2.3/ADC_CH11/PWM1_CH0/UART4_TXD" pad="14"/>
-<connect gate="G$1" pin="15_P2.2/ADC_CH10/PWM1_CH1/UART4_RXD" pad="15"/>
+<connect gate="G$1" pin="14_P2.3/ADC_CH11/PWM1_CH0" pad="14"/>
+<connect gate="G$1" pin="15_P2.2/ADC_CH10/PWM1_CH1" pad="15"/>
 <connect gate="G$1" pin="16_P2.1/ADC_CH9/PWM2_CH0" pad="16"/>
 <connect gate="G$1" pin="17_P3.5/SPI0_SS" pad="17"/>
 <connect gate="G$1" pin="18_P3.1/PWM2_CH1" pad="18"/>
 <connect gate="G$1" pin="19_P3.2/PWM3_CH0" pad="19"/>
 <connect gate="G$1" pin="1_P2.0/!RST" pad="1"/>
-<connect gate="G$1" pin="20_P1.2/PWM0_CH0/IC0/UART3_TXD/PWM1_CH0" pad="20"/>
-<connect gate="G$1" pin="21_P1.1/ADC_CH7/CLKO/IC1/PWM0_CH1/UART3_RXD/PWM1_CH1" pad="21"/>
-<connect gate="G$1" pin="22_P1.0/PWM0_CH2/SPI0_CLK/IC2/UART1_TXD/PWM2_CH0" pad="22"/>
-<connect gate="G$1" pin="23_P0.0/PWM0_CH3/SPI0_MOSI/IC3/UART1_RXD/T1/HXTIN/PWM2_CH1" pad="23"/>
-<connect gate="G$1" pin="24_P0.1/PWM0_CH4/SPI0_MISO/IC4/HXTOUT/PWM3_CH0" pad="24"/>
-<connect gate="G$1" pin="25_P3.3/PWM0_BRAKE/CLKO/PWM0_CH0" pad="25"/>
-<connect gate="G$1" pin="26_P0.2/UART1_RXD/I2C0_SCL/ICE_CLK" pad="26"/>
-<connect gate="G$1" pin="27_P0.3/PWM3_CH1/UART2_TXD/PWM0_CH5/IC5/ADC_CH6" pad="27"/>
-<connect gate="G$1" pin="28_P0.4/PWM2_CH1/UART2_RXD/STADC/PWM0_CH3/IC3/ADC_CH5" pad="28"/>
-<connect gate="G$1" pin="29_P0.5/PWM2_CH0/UART3_TXD/T0/PWM0_CH2/IC6/ADC_CH4" pad="29"/>
-<connect gate="G$1" pin="2_P3.0/SPI0_MOSI/UART2_TXD/INT0/OSCIN/ADC_CH1" pad="2"/>
-<connect gate="G$1" pin="30_P0.6/UART0_TXD/ADC_CH3" pad="30"/>
-<connect gate="G$1" pin="31_P0.7/UART0_RXD/ADC_CH2" pad="31"/>
-<connect gate="G$1" pin="32_P3.4/UART3_RXD/PWM3_CH1" pad="32"/>
-<connect gate="G$1" pin="3_P1.7/SPI0_CLK/UART2_RXD/INT1/ADC_CH0" pad="3"/>
+<connect gate="G$1" pin="20_P1.2/PWM0_CH0/PWM1_CH0" pad="20"/>
+<connect gate="G$1" pin="21_P1.1/ADC_CH7/PWM0_CH1/PWM1_CH1" pad="21"/>
+<connect gate="G$1" pin="22_P1.0/PWM0_CH2/SPI0_CLK/PWM2_CH0" pad="22"/>
+<connect gate="G$1" pin="23_P0.0/PWM0_CH3/SPI0_MOSI/T1/HXTIN/PWM2_CH1" pad="23"/>
+<connect gate="G$1" pin="24_P0.1/PWM0_CH4/SPI0_MISO/HXTOUT/PWM3_CH0" pad="24"/>
+<connect gate="G$1" pin="25_P3.3/CLKO/PWM0_CH0" pad="25"/>
+<connect gate="G$1" pin="26_P0.2/I2C0_SCL/ICE_CLK" pad="26"/>
+<connect gate="G$1" pin="27_P0.3/PWM3_CH1/PWM0_CH5/ADC_CH6" pad="27"/>
+<connect gate="G$1" pin="28_P0.4/PWM2_CH1/STADC/PWM0_CH3/ADC_CH5" pad="28"/>
+<connect gate="G$1" pin="29_P0.5/PWM2_CH0/T0/PWM0_CH2/ADC_CH4" pad="29"/>
+<connect gate="G$1" pin="2_P3.0/SPI0_MOSI/INT0/ADC_CH1" pad="2"/>
+<connect gate="G$1" pin="30_P0.6/ADC_CH3" pad="30"/>
+<connect gate="G$1" pin="31_P0.7/ADC_CH2" pad="31"/>
+<connect gate="G$1" pin="32_P3.4/PWM3_CH1" pad="32"/>
+<connect gate="G$1" pin="3_P1.7/SPI0_CLK/ADC_CH0" pad="3"/>
 <connect gate="G$1" pin="4_GND" pad="4 EP"/>
-<connect gate="G$1" pin="5_P1.6/UART1_TXD/I2C0_SDA/ICE_DAT" pad="5"/>
+<connect gate="G$1" pin="5_P1.6/I2C0_SDA/ICE_DAT" pad="5"/>
 <connect gate="G$1" pin="6_VDD" pad="6"/>
-<connect gate="G$1" pin="7_P1.5/PWM3_CH1/UART3_TXD/IC7/SPI0_SS/PWM0_CH5" pad="7"/>
-<connect gate="G$1" pin="8_P2.5/SPI0_MISO/UART3_RXD/ADC_CH15" pad="8"/>
-<connect gate="G$1" pin="9_P3.7/UART1_TXD" pad="9"/>
+<connect gate="G$1" pin="7_P1.5/PWM3_CH1/SPI0_SS/PWM0_CH5" pad="7"/>
+<connect gate="G$1" pin="8_P2.5/SPI0_MISO/ADC_CH15" pad="8"/>
+<connect gate="G$1" pin="9_P3.7" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>

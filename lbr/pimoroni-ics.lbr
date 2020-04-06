@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4066,6 +4066,22 @@ shrink quad flat pack, square</description>
 <rectangle x1="2.570459375" y1="0.3" x2="3.020459375" y2="1.65" layer="29" rot="R90"/>
 <rectangle x1="2.570459375" y1="0.95" x2="3.020459375" y2="2.3" layer="29" rot="R90"/>
 <rectangle x1="2.570459375" y1="1.6" x2="3.020459375" y2="2.95" layer="29" rot="R90"/>
+</package>
+<package name="SOT-23-CC6101ST">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<smd name="3" x="0" y="1.15" dx="1" dy="1" layer="1"/>
+<smd name="2" x="0.95" y="-1.15" dx="1" dy="1" layer="1"/>
+<smd name="1" x="-0.95" y="-1.15" dx="1" dy="1" layer="1"/>
+<text x="0" y="1.87" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-0.2286" y1="0.8112" x2="0.2286" y2="1.3954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.3954" x2="1.1684" y2="-0.8112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.3954" x2="-0.7112" y2="-0.8112" layer="51"/>
+<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.127" layer="51"/>
+<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="-0.16" x2="0.2" y2="-0.16" width="0.127" layer="51"/>
+<wire x1="0" y1="0.04" x2="0" y2="-0.36" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -8499,6 +8515,42 @@ A1,A2 high</text>
 <pin name="SCL" x="27.94" y="-10.16" length="middle" rot="R180"/>
 <text x="17.78" y="20.32" size="1.778" layer="94">&gt;NAME</text>
 <text x="20.32" y="-25.4" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="CC6101ST">
+<pin name="VCC" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
+<pin name="OUT" x="12.7" y="0" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<text x="0" y="5.08" size="1.651" layer="94" align="bottom-center">CC6101ST
+2.5-28V</text>
+<text x="0" y="10.922" size="1.27" layer="94" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.842" size="1.27" layer="94" align="top-center">&gt;VALUE</text>
+</symbol>
+<symbol name="APT8L08SE">
+<pin name="VDD" x="-15.24" y="12.7" length="middle"/>
+<pin name="C0" x="-15.24" y="-7.62" length="middle"/>
+<pin name="INT" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SCL" x="-15.24" y="0" length="middle"/>
+<pin name="SDA" x="-15.24" y="2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="-15.24" length="middle"/>
+<pin name="K0" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="K1" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="K2" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="K3" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="K4" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="K5" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="K6" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="K7" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="25.4" x2="10.16" y2="25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="25.4" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<text x="0" y="21.59" size="2.54" layer="94" align="bottom-center">APT8L08</text>
+<text x="0" y="17.78" size="1.778" layer="94" align="bottom-center">2.2 - 5.5V</text>
+<text x="0" y="15.24" size="1.778" layer="94" align="bottom-center">I2C: 0x56</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -13874,6 +13926,51 @@ Source:</description>
 <connect gate="G$1" pin="SDA" pad="15"/>
 <connect gate="G$1" pin="_DRDY" pad="14"/>
 <connect gate="G$1" pin="_RESET" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CC6101ST" prefix="U">
+<gates>
+<gate name="G$1" symbol="CC6101ST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-CC6101ST">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APT8L08" prefix="U">
+<gates>
+<gate name="G$1" symbol="APT8L08SE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP14-150MIL">
+<connects>
+<connect gate="G$1" pin="C0" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="INT" pad="13"/>
+<connect gate="G$1" pin="K0" pad="3"/>
+<connect gate="G$1" pin="K1" pad="4"/>
+<connect gate="G$1" pin="K2" pad="5"/>
+<connect gate="G$1" pin="K3" pad="6"/>
+<connect gate="G$1" pin="K4" pad="7"/>
+<connect gate="G$1" pin="K5" pad="8"/>
+<connect gate="G$1" pin="K6" pad="9"/>
+<connect gate="G$1" pin="K7" pad="10"/>
+<connect gate="G$1" pin="SCL" pad="11"/>
+<connect gate="G$1" pin="SDA" pad="12"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
 </connects>
 <technologies>
 <technology name=""/>

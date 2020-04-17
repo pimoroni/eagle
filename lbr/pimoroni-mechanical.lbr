@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.7" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1711,6 +1711,128 @@ undermounted!</text>
 <wire x1="14.7" y1="-2.5" x2="20" y2="-2.5" width="0.3" layer="51"/>
 <wire x1="14.7" y1="2.5" x2="20" y2="2.5" width="0.3" layer="51"/>
 </package>
+<package name="DPAD_HOLES_MOVED">
+<smd name="GND1" x="-7" y="-3.5" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="LEFT" x="-7" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="GND2" x="7" y="-3.5" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="RIGHT" x="7" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="GND3" x="0" y="3.5" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="UP" x="0" y="7" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="GND4" x="0" y="-10.5" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<smd name="DOWN" x="0" y="-7" dx="0.5" dy="0.5" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.127" layer="51">
+<vertex x="-0.3" y="0.5"/>
+<vertex x="0.3" y="0.5"/>
+<vertex x="0.1" y="1.7"/>
+<vertex x="0.55" y="1.75"/>
+<vertex x="0" y="2.5"/>
+<vertex x="-0.55" y="1.75"/>
+<vertex x="-0.1" y="1.7"/>
+</polygon>
+<hole x="-5" y="-5" drill="2"/>
+<hole x="5" y="-5" drill="2"/>
+<polygon width="0.2" layer="1">
+<vertex x="-0.1" y="3.5" curve="-90"/>
+<vertex x="-3.5" y="7" curve="-90"/>
+<vertex x="0" y="10.5" curve="-90"/>
+<vertex x="3.5" y="7" curve="-90"/>
+<vertex x="0.1" y="3.5"/>
+<vertex x="0.1" y="4.5" curve="90"/>
+<vertex x="2.5" y="7" curve="90"/>
+<vertex x="0" y="9.5" curve="90"/>
+<vertex x="-2.5" y="7" curve="90"/>
+<vertex x="-0.1" y="4.5"/>
+</polygon>
+<polygon width="0.2" layer="29">
+<vertex x="0" y="3" curve="-90"/>
+<vertex x="-4" y="7" curve="-90"/>
+<vertex x="0" y="11" curve="-90"/>
+<vertex x="4" y="7" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="1">
+<vertex x="-1.5" y="7" curve="90"/>
+<vertex x="0" y="5.5" curve="89.999881"/>
+<vertex x="1.5" y="7" curve="90"/>
+<vertex x="0" y="8.5" curve="90"/>
+</polygon>
+<circle x="0" y="7" radius="4.2" width="0.7" layer="41"/>
+<polygon width="0.2" layer="1">
+<vertex x="6.9" y="-3.5" curve="-90"/>
+<vertex x="3.5" y="0" curve="-90"/>
+<vertex x="7" y="3.5" curve="-90"/>
+<vertex x="10.5" y="0" curve="-90"/>
+<vertex x="7.1" y="-3.5"/>
+<vertex x="7.1" y="-2.5" curve="90"/>
+<vertex x="9.5" y="0" curve="90"/>
+<vertex x="7" y="2.5" curve="90"/>
+<vertex x="4.5" y="0" curve="90"/>
+<vertex x="6.9" y="-2.5"/>
+</polygon>
+<polygon width="0.2" layer="29">
+<vertex x="7" y="-4" curve="-90"/>
+<vertex x="3" y="0" curve="-90"/>
+<vertex x="7" y="4" curve="-90"/>
+<vertex x="11" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="1">
+<vertex x="5.5" y="0" curve="90"/>
+<vertex x="7" y="-1.5" curve="89.999881"/>
+<vertex x="8.5" y="0" curve="90"/>
+<vertex x="7" y="1.5" curve="90"/>
+</polygon>
+<circle x="7" y="0" radius="4.2" width="0.7" layer="41"/>
+<polygon width="0.2" layer="1">
+<vertex x="-7.1" y="-3.5" curve="-90"/>
+<vertex x="-10.5" y="0" curve="-90"/>
+<vertex x="-7" y="3.5" curve="-90"/>
+<vertex x="-3.5" y="0" curve="-90"/>
+<vertex x="-6.9" y="-3.5"/>
+<vertex x="-6.9" y="-2.5" curve="90"/>
+<vertex x="-4.5" y="0" curve="90"/>
+<vertex x="-7" y="2.5" curve="90"/>
+<vertex x="-9.5" y="0" curve="90"/>
+<vertex x="-7.1" y="-2.5"/>
+</polygon>
+<polygon width="0.2" layer="29">
+<vertex x="-7" y="-4" curve="-90"/>
+<vertex x="-11" y="0" curve="-90"/>
+<vertex x="-7" y="4" curve="-90"/>
+<vertex x="-3" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="1">
+<vertex x="-8.5" y="0" curve="90"/>
+<vertex x="-7" y="-1.5" curve="89.999881"/>
+<vertex x="-5.5" y="0" curve="90"/>
+<vertex x="-7" y="1.5" curve="90"/>
+</polygon>
+<circle x="-7" y="0" radius="4.2" width="0.7" layer="41"/>
+<polygon width="0.2" layer="1">
+<vertex x="-0.1" y="-10.5" curve="-90"/>
+<vertex x="-3.5" y="-7" curve="-90"/>
+<vertex x="0" y="-3.5" curve="-90"/>
+<vertex x="3.5" y="-7" curve="-90"/>
+<vertex x="0.1" y="-10.5"/>
+<vertex x="0.1" y="-9.5" curve="90"/>
+<vertex x="2.5" y="-7" curve="90"/>
+<vertex x="0" y="-4.5" curve="90"/>
+<vertex x="-2.5" y="-7" curve="90"/>
+<vertex x="-0.1" y="-9.5"/>
+</polygon>
+<polygon width="0.2" layer="29">
+<vertex x="0" y="-11" curve="-90"/>
+<vertex x="-4" y="-7" curve="-90"/>
+<vertex x="0" y="-3" curve="-90"/>
+<vertex x="4" y="-7" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="1">
+<vertex x="-1.5" y="-7" curve="90"/>
+<vertex x="0" y="-8.5" curve="89.999881"/>
+<vertex x="1.5" y="-7" curve="90"/>
+<vertex x="0" y="-5.5" curve="90"/>
+</polygon>
+<circle x="0" y="-7" radius="4.2" width="0.7" layer="41"/>
+<hole x="0" y="12.5" drill="2"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-DPDT">
@@ -2565,12 +2687,24 @@ MOTOR</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DPAD">
+<deviceset name="DPAD" prefix="DPAD">
 <gates>
 <gate name="G$1" symbol="DPAD" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="DPAD">
+<connects>
+<connect gate="G$1" pin="DOWN" pad="DOWN"/>
+<connect gate="G$1" pin="GND" pad="GND1 GND2 GND3 GND4"/>
+<connect gate="G$1" pin="LEFT" pad="LEFT"/>
+<connect gate="G$1" pin="RIGHT" pad="RIGHT"/>
+<connect gate="G$1" pin="UP" pad="UP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HOLES_MOVED" package="DPAD_HOLES_MOVED">
 <connects>
 <connect gate="G$1" pin="DOWN" pad="DOWN"/>
 <connect gate="G$1" pin="GND" pad="GND1 GND2 GND3 GND4"/>

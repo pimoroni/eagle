@@ -7,10 +7,10 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -14584,6 +14584,50 @@
 <vertex x="3.87" y="-0.128"/>
 <vertex x="3.794" y="-0.502" curve="29"/>
 <vertex x="1.6" y="0.778"/>
+</polygon>
+</package>
+<package name="LED_SHINE_THROUGH">
+<circle x="0" y="0" radius="1" width="0" layer="41"/>
+<circle x="0" y="0" radius="0.8" width="0" layer="29"/>
+<polygon width="0.2" layer="2" pour="cutout">
+<vertex x="0.05" y="-2"/>
+<vertex x="-0.05" y="-2" curve="-90"/>
+<vertex x="-1" y="-1.05"/>
+<vertex x="-1" y="0.05" curve="-90"/>
+<vertex x="-0.05" y="1"/>
+<vertex x="0.05" y="1" curve="-90"/>
+<vertex x="1" y="0.05"/>
+<vertex x="1" y="-1.05" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="15" pour="cutout">
+<vertex x="0.05" y="-2"/>
+<vertex x="-0.05" y="-2" curve="-90"/>
+<vertex x="-1" y="-1.05"/>
+<vertex x="-1" y="0.05" curve="-90"/>
+<vertex x="-0.05" y="1"/>
+<vertex x="0.05" y="1" curve="-90"/>
+<vertex x="1" y="0.05"/>
+<vertex x="1" y="-1.05" curve="-90"/>
+</polygon>
+<polygon width="0.15" layer="30" pour="cutout">
+<vertex x="0.05" y="-2"/>
+<vertex x="-0.05" y="-2" curve="-90"/>
+<vertex x="-1" y="-1.05"/>
+<vertex x="-1" y="0.05" curve="-90"/>
+<vertex x="-0.05" y="1"/>
+<vertex x="0.05" y="1" curve="-90"/>
+<vertex x="1" y="0.05"/>
+<vertex x="1" y="-1.05" curve="-90"/>
+</polygon>
+<polygon width="0.55" layer="42" pour="cutout">
+<vertex x="0.05" y="-2"/>
+<vertex x="-0.05" y="-2" curve="-90"/>
+<vertex x="-1" y="-1.05"/>
+<vertex x="-1" y="0.05" curve="-90"/>
+<vertex x="-0.05" y="1"/>
+<vertex x="0.05" y="1" curve="-90"/>
+<vertex x="1" y="0.05"/>
+<vertex x="1" y="-1.05" curve="-90"/>
 </polygon>
 </package>
 </packages>

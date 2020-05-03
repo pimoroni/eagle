@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -37,7 +37,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
@@ -3821,14 +3821,13 @@ shrink quad flat pack, square</description>
 <wire x1="0.8" y1="0.6" x2="0.8" y2="-0.6" width="0.127" layer="51"/>
 <wire x1="0.8" y1="-0.6" x2="-0.8" y2="-0.6" width="0.127" layer="51"/>
 <wire x1="-0.8" y1="-0.6" x2="-0.8" y2="0.6" width="0.127" layer="51"/>
-<smd name="D2" x="-0.5" y="0.85" dx="0.3" dy="0.5" layer="1"/>
-<smd name="G1" x="0" y="0.85" dx="0.3" dy="0.5" layer="1"/>
-<smd name="S1" x="0.5" y="0.85" dx="0.3" dy="0.5" layer="1"/>
-<smd name="D1" x="0.5" y="-0.85" dx="0.3" dy="0.5" layer="1"/>
-<smd name="G2" x="0" y="-0.85" dx="0.3" dy="0.5" layer="1"/>
-<smd name="S2" x="-0.5" y="-0.85" dx="0.3" dy="0.5" layer="1"/>
-<text x="-1.3" y="1.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.3" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="6" x="-0.5" y="0.75" dx="0.3" dy="0.7" layer="1"/>
+<smd name="5" x="0" y="0.75" dx="0.3" dy="0.7" layer="1"/>
+<smd name="4" x="0.5" y="0.75" dx="0.3" dy="0.7" layer="1"/>
+<smd name="3" x="0.5" y="-0.75" dx="0.3" dy="0.7" layer="1"/>
+<smd name="2" x="0" y="-0.75" dx="0.3" dy="0.7" layer="1"/>
+<smd name="1" x="-0.5" y="-0.75" dx="0.3" dy="0.7" layer="1"/>
+<text x="0" y="1.4" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <circle x="-0.6" y="-0.2" radius="0.1" width="0.3" layer="21"/>
 </package>
 <package name="WSON-6-2.1MM-NO-PAD">
@@ -4133,6 +4132,21 @@ shrink quad flat pack, square</description>
 <circle x="1" y="0.3" radius="0.1" width="0.4" layer="31"/>
 <circle x="0.8" y="-0.4" radius="0.1" width="0.4" layer="31"/>
 <circle x="1" y="-1.1" radius="0.1" width="0.4" layer="31"/>
+</package>
+<package name="SOT353">
+<description>&lt;b&gt;Small Outline Transistor; 6 leads&lt;/b&gt; Reflow soldering&lt;p&gt;
+INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
+<circle x="-0.7" y="-0.2" radius="0.2" width="0" layer="21"/>
+<smd name="1" x="-0.65" y="-1.1" dx="0.35" dy="0.85" layer="1"/>
+<smd name="2" x="0" y="-1.1" dx="0.35" dy="0.85" layer="1"/>
+<smd name="3" x="0.65" y="-1.1" dx="0.35" dy="0.85" layer="1"/>
+<smd name="4" x="0.65" y="1.1" dx="0.35" dy="0.85" layer="1"/>
+<smd name="5" x="-0.65" y="1.1" dx="0.35" dy="0.85" layer="1"/>
+<text x="0" y="1.9" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<wire x1="-1.075" y1="0.7" x2="1.075" y2="0.7" width="0.127" layer="51"/>
+<wire x1="1.075" y1="0.7" x2="1.075" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="1.075" y1="-0.7" x2="-1.075" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-1.075" y1="-0.7" x2="-1.075" y2="0.7" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -4835,11 +4849,11 @@ VDDIO: 1.71-VDD</text>
 <text x="-12.7" y="-15.24" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="M74VHC1GT125DT1G">
-<pin name="VCC" x="-17.78" y="5.08" visible="pin" length="short"/>
-<pin name="GND" x="-17.78" y="-2.54" visible="pin" length="short"/>
-<pin name="IN" x="7.62" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="OUT" x="7.62" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="!OE" x="7.62" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="-17.78" y="5.08" length="short"/>
+<pin name="GND" x="-17.78" y="-2.54" length="short"/>
+<pin name="IN" x="7.62" y="5.08" length="short" rot="R180"/>
+<pin name="OUT" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="!OE" x="7.62" y="-2.54" length="short" rot="R180"/>
 <wire x1="-15.24" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="-15.24" y2="-5.08" width="0.254" layer="94"/>
@@ -8624,6 +8638,23 @@ A1,A2 high</text>
 <text x="0" y="17.78" size="1.778" layer="94" align="bottom-center">Vin 4V - 28V
 FB: 0.8V</text>
 </symbol>
+<symbol name="TPS61023">
+<pin name="VIN" x="-15.24" y="5.08" length="middle"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
+<pin name="EN" x="-15.24" y="0" length="middle"/>
+<pin name="SW" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="VOUT" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="FB" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<text x="0" y="17.78" size="2.54" layer="94" align="bottom-center">TPS61023</text>
+<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">Boost
+Vin 0.5V-5.5V
+Vout 2.2V-5.5V
+FB: 0.6V</text>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="21.336" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="21.336" x2="10.16" y2="21.336" width="0.254" layer="94"/>
+<wire x1="10.16" y1="21.336" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAMD20E" prefix="MCU" library_version="19" library_locally_modified="yes">
@@ -9581,12 +9612,24 @@ ADDR -&gt; GND  = 0x76</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M74VHC1GT125DT1G">
+<deviceset name="BUFFER_SINGLE" prefix="U">
 <gates>
 <gate name="G$1" symbol="M74VHC1GT125DT1G" x="5.08" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="SOT-23-5">
+<device name="NON_INVERTING_M74VHC1GT125DT1G" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="!OE" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="INVERTING_SN74LVC1G240DCKR" package="SOT353">
 <connects>
 <connect gate="G$1" pin="!OE" pad="1"/>
 <connect gate="G$1" pin="GND" pad="3"/>
@@ -13730,12 +13773,12 @@ Source:</description>
 <devices>
 <device name="" package="SOT563-ORI">
 <connects>
-<connect gate="N-CHAN" pin="D" pad="D1"/>
-<connect gate="N-CHAN" pin="G" pad="G1"/>
-<connect gate="N-CHAN" pin="S" pad="S1"/>
-<connect gate="P-CHAN" pin="D" pad="D2"/>
-<connect gate="P-CHAN" pin="G" pad="G2"/>
-<connect gate="P-CHAN" pin="S" pad="S2"/>
+<connect gate="N-CHAN" pin="D" pad="3"/>
+<connect gate="N-CHAN" pin="G" pad="5"/>
+<connect gate="N-CHAN" pin="S" pad="4"/>
+<connect gate="P-CHAN" pin="D" pad="6"/>
+<connect gate="P-CHAN" pin="G" pad="2"/>
+<connect gate="P-CHAN" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14069,6 +14112,26 @@ Source:</description>
 <connect gate="G$1" pin="SS" pad="22"/>
 <connect gate="G$1" pin="TON" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="21"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS61023DRLR" prefix="U">
+<gates>
+<gate name="G$1" symbol="TPS61023" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT563-ORI">
+<connects>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="FB" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SW" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>

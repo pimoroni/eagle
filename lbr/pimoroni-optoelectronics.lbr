@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1465,6 +1465,10 @@ AA: 52.56x70.08mm</text>
 <wire x1="2.81" y1="0" x2="2.81" y2="16.86" width="0.2" layer="52" style="shortdash"/>
 <wire x1="-13.08" y1="22.04" x2="13.08" y2="22.04" width="0.05" layer="51" style="shortdash"/>
 <wire x1="-13.08" y1="10.34" x2="13.08" y2="10.34" width="0.05" layer="51" style="shortdash"/>
+<wire x1="-5" y1="10" x2="-5" y2="20" width="0.127" layer="21" style="dashdot"/>
+<wire x1="-5" y1="20" x2="5" y2="20" width="0.127" layer="21" style="dashdot"/>
+<wire x1="5" y1="20" x2="5" y2="10" width="0.127" layer="21" style="dashdot"/>
+<wire x1="5" y1="10" x2="-5" y2="10" width="0.127" layer="21" style="dashdot"/>
 </package>
 <package name="FCR684208T/R">
 <wire x1="0" y1="4.85" x2="0" y2="-4.85" width="0.127" layer="51"/>

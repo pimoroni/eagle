@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.3" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1854,7 +1854,7 @@ undermounted!</text>
 <wire x1="0" y1="1.5" x2="-12" y2="1.5" width="0.2" layer="51"/>
 <wire x1="-12" y1="1.5" x2="-12" y2="-1.5" width="0.2" layer="51"/>
 <wire x1="-12" y1="-1.5" x2="0" y2="-1.5" width="0.2" layer="51"/>
-<wire x1="29.5" y1="0.5" x2="29.5" y2="-0.5" width="0.2" layer="51"/>
+<wire x1="29.2" y1="0.5" x2="29.2" y2="-0.5" width="0.2" layer="51"/>
 <wire x1="26" y1="0" x2="26" y2="4.75" width="0.2" layer="51"/>
 <wire x1="26" y1="4.75" x2="28" y2="4.75" width="0.2" layer="51"/>
 <wire x1="28" y1="4.75" x2="28" y2="-4.75" width="0.2" layer="51"/>
@@ -1865,8 +1865,8 @@ undermounted!</text>
 <wire x1="25" y1="0.5" x2="25" y2="-0.5" width="0.2" layer="51"/>
 <wire x1="25" y1="-0.5" x2="25" y2="-2.5" width="0.2" layer="51"/>
 <wire x1="25" y1="-2.5" x2="24" y2="-2.5" width="0.2" layer="51"/>
-<wire x1="25" y1="0.5" x2="29.5" y2="0.5" width="0.2" layer="51"/>
-<wire x1="29.5" y1="-0.5" x2="25" y2="-0.5" width="0.2" layer="51"/>
+<wire x1="25" y1="0.5" x2="29.2" y2="0.5" width="0.2" layer="51"/>
+<wire x1="29.2" y1="-0.5" x2="25" y2="-0.5" width="0.2" layer="51"/>
 <wire x1="24" y1="3.675" x2="25.5" y2="3.675" width="0.2" layer="51"/>
 <wire x1="24" y1="-3.675" x2="25.5" y2="-3.675" width="0.2" layer="51"/>
 <wire x1="0" y1="7.5" x2="8.5" y2="7.5" width="0.2" layer="51"/>

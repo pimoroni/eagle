@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4147,6 +4147,22 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="1.075" y1="0.7" x2="1.075" y2="-0.7" width="0.127" layer="51"/>
 <wire x1="1.075" y1="-0.7" x2="-1.075" y2="-0.7" width="0.127" layer="51"/>
 <wire x1="-1.075" y1="-0.7" x2="-1.075" y2="0.7" width="0.127" layer="51"/>
+</package>
+<package name="SOT833-1">
+<wire x1="-0.975" y1="0.5" x2="0.975" y2="0.5" width="0.127" layer="51"/>
+<wire x1="0.975" y1="0.5" x2="0.975" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0.975" y1="-0.5" x2="-0.975" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-0.975" y1="-0.5" x2="-0.975" y2="0.5" width="0.127" layer="51"/>
+<text x="0" y="1" size="1.1" layer="51" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<smd name="1" x="-0.75" y="-0.5" dx="0.25" dy="0.7" layer="1"/>
+<smd name="2" x="-0.25" y="-0.5" dx="0.25" dy="0.7" layer="1"/>
+<smd name="3" x="0.25" y="-0.5" dx="0.25" dy="0.7" layer="1"/>
+<smd name="4" x="0.75" y="-0.5" dx="0.25" dy="0.7" layer="1"/>
+<smd name="5" x="0.75" y="0.5" dx="0.25" dy="0.7" layer="1"/>
+<smd name="6" x="0.25" y="0.5" dx="0.25" dy="0.7" layer="1"/>
+<smd name="7" x="-0.25" y="0.5" dx="0.25" dy="0.7" layer="1"/>
+<smd name="8" x="-0.75" y="0.5" dx="0.25" dy="0.7" layer="1"/>
+<circle x="-1.3" y="-0.5" radius="0.1" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -8580,6 +8596,9 @@ A1,A2 high</text>
 <pin name="SCL" x="27.94" y="-10.16" length="middle" rot="R180"/>
 <text x="17.78" y="20.32" size="1.778" layer="94">&gt;NAME</text>
 <text x="20.32" y="-25.4" size="1.778" layer="94">&gt;VALUE</text>
+<text x="0" y="5.08" size="2.54" layer="94" align="bottom-center">ADS122C04</text>
+<text x="0" y="0" size="1.778" layer="94" align="bottom-center">AVDD and DVDD: 
+2.3V - 5.5V</text>
 </symbol>
 <symbol name="CC6102ST">
 <pin name="VCC" x="-12.7" y="2.54" length="middle"/>
@@ -8654,6 +8673,40 @@ FB: 0.6V</text>
 <wire x1="-10.16" y1="21.336" x2="10.16" y2="21.336" width="0.254" layer="94"/>
 <wire x1="10.16" y1="21.336" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="AOZ2255LQI-30">
+<pin name="IN" x="-20.32" y="15.24" length="middle"/>
+<pin name="TON" x="-20.32" y="10.16" length="middle"/>
+<pin name="VCC" x="-20.32" y="5.08" length="middle"/>
+<pin name="EN" x="-20.32" y="-5.08" length="middle"/>
+<pin name="SS" x="-20.32" y="-10.16" length="middle"/>
+<pin name="BST" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="LX" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="FB" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="AGND" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="PGND" x="20.32" y="-17.78" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="26.162" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="26.162" x2="15.24" y2="26.162" width="0.254" layer="94"/>
+<wire x1="15.24" y1="26.162" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<text x="0" y="22.86" size="2.54" layer="94" align="bottom-center">AOZ2255LQI-30</text>
+<text x="0" y="17.78" size="1.778" layer="94" align="bottom-center">Vin 6.5V - 28V
+FB: 0.6V</text>
+<pin name="AIN" x="-20.32" y="12.7" length="middle"/>
+</symbol>
+<symbol name="FLIP_FLOP_SET_RESET">
+<pin name="VDD" x="-15.24" y="12.7" length="middle"/>
+<pin name="SET" x="-15.24" y="7.62" length="middle"/>
+<pin name="RESET" x="-15.24" y="2.54" length="middle"/>
+<pin name="CLOCK" x="-15.24" y="-2.54" length="middle"/>
+<pin name="DATA" x="-15.24" y="-7.62" length="middle"/>
+<pin name="GND" x="-15.24" y="-12.7" length="middle"/>
+<pin name="Q" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="!Q" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9099,6 +9152,16 @@ Built-in current-limit and thermal-shutdown functions prevent IC from damage in 
 <connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="AP7380-XXWR" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14132,6 +14195,53 @@ Source:</description>
 <connect gate="G$1" pin="SW" pad="5"/>
 <connect gate="G$1" pin="VIN" pad="3"/>
 <connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AOZ2255LQI-30" prefix="U">
+<gates>
+<gate name="G$1" symbol="AOZ2255LQI-30" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN22-4X4-EP2">
+<connects>
+<connect gate="G$1" pin="AGND" pad="3"/>
+<connect gate="G$1" pin="AIN" pad="6"/>
+<connect gate="G$1" pin="BST" pad="20"/>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="FB" pad="2"/>
+<connect gate="G$1" pin="IN" pad="7 8 9 IN"/>
+<connect gate="G$1" pin="LX" pad="10 11 16 17 18 LX"/>
+<connect gate="G$1" pin="PGND" pad="12 13 14 15 PGND"/>
+<connect gate="G$1" pin="SS" pad="22"/>
+<connect gate="G$1" pin="TON" pad="19"/>
+<connect gate="G$1" pin="VCC" pad="21"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FLIP_FLOP_SET_RESET" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="FLIP_FLOP_SET_RESET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT833-1">
+<connects>
+<connect gate="G$1" pin="!Q" pad="3"/>
+<connect gate="G$1" pin="CLOCK" pad="1"/>
+<connect gate="G$1" pin="DATA" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="Q" pad="5"/>
+<connect gate="G$1" pin="RESET" pad="6"/>
+<connect gate="G$1" pin="SET" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>

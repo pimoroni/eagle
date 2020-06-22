@@ -19174,6 +19174,28 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <hole x="24.13" y="-1.27" drill="1"/>
 <hole x="24.13" y="1.27" drill="1"/>
 </package>
+<package name="AUDIO-JACK-3.5MM-SMD-6POLE-NARROW">
+<smd name="SLEEVE" x="2.8" y="-3.6" dx="1.5" dy="2.4" layer="1"/>
+<smd name="RSW" x="10.5" y="-3.6" dx="1.5" dy="2.4" layer="1"/>
+<smd name="TIP" x="9.3" y="3.6" dx="1.5" dy="2.4" layer="1"/>
+<smd name="TSW" x="11.45" y="3.15" dx="3.3" dy="1.5" layer="1" rot="R90"/>
+<smd name="RING2" x="2.8" y="3.15" dx="1.5" dy="3.3" layer="1" rot="R180"/>
+<hole x="10.5" y="0" drill="1.5"/>
+<smd name="RING1" x="5.5" y="-3.6" dx="1.5" dy="2.4" layer="1"/>
+<wire x1="0" y1="1.65" x2="1.2" y2="1.65" width="0.2" layer="51"/>
+<wire x1="1.2" y1="1.65" x2="1.2" y2="-1.65" width="0.2" layer="51"/>
+<wire x1="1.2" y1="-1.65" x2="0" y2="-1.65" width="0.2" layer="51"/>
+<wire x1="0" y1="3.1" x2="12" y2="3.1" width="0.2" layer="51"/>
+<wire x1="12" y1="3.1" x2="12" y2="-3.1" width="0.2" layer="51"/>
+<wire x1="12" y1="-3.1" x2="0" y2="-3.1" width="0.2" layer="51"/>
+<wire x1="-0.1" y1="1.8" x2="-2" y2="1.8" width="0.2" layer="51"/>
+<wire x1="-2" y1="1.8" x2="-2" y2="-1.8" width="0.2" layer="51"/>
+<wire x1="-2" y1="-1.8" x2="0" y2="-1.8" width="0.2" layer="51"/>
+<wire x1="0" y1="-3.1" x2="0" y2="-1.8" width="0.2" layer="51"/>
+<wire x1="0" y1="1.8" x2="0" y2="3.1" width="0.2" layer="51"/>
+<wire x1="0" y1="-1.8" x2="0" y2="1.8" width="0.2" layer="51"/>
+<wire x1="0" y1="1.8" x2="-0.1" y2="1.8" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FCI_89898_313LF_26P_CONNECTOR_SMT_FLIPPED">
@@ -25942,13 +25964,26 @@ Joystick commonly found in PS2 controllers. Two pots and a select switch. Adapte
 </device>
 </devices>
 </deviceset>
-<deviceset name="AUDIO-JACK-6POLE">
+<deviceset name="AUDIO-JACK-6POLE" prefix="J">
 <description>Stereo audio jack with bypass switches.</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK-6POLE" x="0.508" y="0.762"/>
 </gates>
 <devices>
 <device name="" package="AUDIO-JACK-3.5MM-SMD-6POLE">
+<connects>
+<connect gate="G$1" pin="RING1" pad="RING1"/>
+<connect gate="G$1" pin="RING2" pad="RING2"/>
+<connect gate="G$1" pin="RSW" pad="RSW"/>
+<connect gate="G$1" pin="SLEEVE" pad="SLEEVE"/>
+<connect gate="G$1" pin="TIP" pad="TIP"/>
+<connect gate="G$1" pin="TSW" pad="TSW"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="6P_NARROW" package="AUDIO-JACK-3.5MM-SMD-6POLE-NARROW">
 <connects>
 <connect gate="G$1" pin="RING1" pad="RING1"/>
 <connect gate="G$1" pin="RING2" pad="RING2"/>

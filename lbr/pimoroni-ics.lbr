@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1026,9 +1026,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 </package>
 <package name="TSSOP-20">
 <wire x1="-2.2828" y1="3.4896" x2="-2.2828" y2="-3.3996" width="0.1524" layer="51"/>
-<wire x1="2.2828" y1="-3.4996" x2="-2.2828" y2="-3.4996" width="0.1524" layer="21"/>
+<wire x1="2.2828" y1="-3.4996" x2="-2.2828" y2="-3.4996" width="0.1524" layer="51"/>
 <wire x1="2.2828" y1="-3.3996" x2="2.2828" y2="3.4896" width="0.1524" layer="51"/>
-<wire x1="-2.2828" y1="3.4896" x2="2.2828" y2="3.4896" width="0.1524" layer="21"/>
+<wire x1="-2.2828" y1="3.4896" x2="2.2828" y2="3.4896" width="0.1524" layer="51"/>
 <circle x="-2.8192" y="4.0006" radius="0.1" width="0.3" layer="21"/>
 <smd name="1" x="-2.9178" y="2.925" dx="0.3" dy="1.4" layer="1" rot="R270"/>
 <smd name="2" x="-2.9178" y="2.275" dx="0.3" dy="1.4" layer="1" rot="R270"/>
@@ -1302,10 +1302,10 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
 </package>
 <package name="SOP14-150MIL">
-<wire x1="-1.9" y1="4.25" x2="1.9" y2="4.25" width="0.127" layer="21"/>
-<wire x1="1.9" y1="4.25" x2="1.9" y2="-4.25" width="0.127" layer="21"/>
-<wire x1="1.9" y1="-4.25" x2="-1.9" y2="-4.25" width="0.127" layer="21"/>
-<wire x1="-1.9" y1="-4.25" x2="-1.9" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="4.25" x2="1.9" y2="4.25" width="0.127" layer="51"/>
+<wire x1="1.9" y1="4.25" x2="1.9" y2="-4.25" width="0.127" layer="51"/>
+<wire x1="1.9" y1="-4.25" x2="-1.9" y2="-4.25" width="0.127" layer="51"/>
+<wire x1="-1.9" y1="-4.25" x2="-1.9" y2="4.25" width="0.127" layer="51"/>
 <smd name="1" x="-2.54" y="3.81" dx="0.6" dy="1.2" layer="1" rot="R90"/>
 <smd name="2" x="-2.54" y="2.54" dx="0.6" dy="1.2" layer="1" rot="R90"/>
 <smd name="3" x="-2.54" y="1.27" dx="0.6" dy="1.2" layer="1" rot="R90"/>
@@ -8853,6 +8853,18 @@ FB: 1.244V</text>
 <pin name="SCL" x="-15.24" y="12.7" visible="pin" length="short"/>
 <pin name="INTN" x="-15.24" y="7.62" visible="pin" length="short"/>
 </symbol>
+<symbol name="VSOP38338">
+<pin name="OUT" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="IN" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="VDD" x="-15.24" y="5.08" length="middle"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="13.462" width="0.254" layer="94"/>
+<wire x1="10.16" y1="13.462" x2="-10.16" y2="13.462" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="13.462" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<text x="0" y="10.16" size="2.54" layer="94" align="bottom-center">VSOP38338</text>
+<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">2.5-5.5V</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAMD20E" prefix="MCU" library_version="19" library_locally_modified="yes">
@@ -14556,6 +14568,24 @@ Source:</description>
 <connect gate="G$1" pin="SCL" pad="19"/>
 <connect gate="G$1" pin="SDA" pad="20"/>
 <connect gate="G$1" pin="VCC" pad="21"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VSOP38338" prefix="U">
+<gates>
+<gate name="G$1" symbol="VSOP38338" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DFN-8-2X2">
+<connects>
+<connect gate="G$1" pin="GND" pad="6 8"/>
+<connect gate="G$1" pin="IN" pad="7"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

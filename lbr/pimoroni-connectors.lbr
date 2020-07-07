@@ -2790,11 +2790,40 @@
 <smd name="MT2" x="4.425" y="-2.1" dx="2.1" dy="3" layer="1"/>
 <wire x1="-4.925" y1="0.3" x2="4.925" y2="0.3" width="0.127" layer="51"/>
 <wire x1="4.925" y1="0.3" x2="4.925" y2="-4" width="0.127" layer="51"/>
-<wire x1="4.925" y1="-4" x2="-4.925" y2="-4" width="0.127" layer="51"/>
+<wire x1="4.925" y1="-4" x2="3.7" y2="-4" width="0.127" layer="51"/>
+<wire x1="3.7" y1="-4" x2="-3.7" y2="-4" width="0.127" layer="51"/>
+<wire x1="-3.7" y1="-4" x2="-4.925" y2="-4" width="0.127" layer="51"/>
 <wire x1="-4.925" y1="-4" x2="-4.925" y2="0.3" width="0.127" layer="51"/>
 <text x="0" y="-3" size="1.2" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <smd name="3" x="0.625" y="0.8" dx="0.8" dy="1.6" layer="1"/>
 <smd name="4" x="1.875" y="0.8" dx="0.8" dy="1.6" layer="1"/>
+<wire x1="-3.7" y1="-6.4" x2="-2.7" y2="-6.4" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-2.7" y1="-6.4" x2="2.7" y2="-6.4" width="0.127" layer="51" style="shortdash"/>
+<wire x1="2.7" y1="-6.4" x2="3.7" y2="-6.4" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-3.7" y1="-6.4" x2="-3.7" y2="-4" width="0.127" layer="51" style="shortdash"/>
+<wire x1="3.7" y1="-6.4" x2="3.7" y2="-4" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-2.7" y1="-6.4" x2="-2.7" y2="-8.6" width="0.127" layer="51" style="shortdash"/>
+<wire x1="2.7" y1="-6.4" x2="2.7" y2="-8.6" width="0.127" layer="51" style="shortdash"/>
+</package>
+<package name="2X04_SMT_SMALL">
+<smd name="1" x="-2" y="3.81" dx="3" dy="1.5" layer="1"/>
+<smd name="2" x="2" y="3.81" dx="3" dy="1.5" layer="1"/>
+<smd name="3" x="-2" y="1.27" dx="3" dy="1.5" layer="1"/>
+<smd name="4" x="2" y="1.27" dx="3" dy="1.5" layer="1"/>
+<smd name="5" x="-2" y="-1.27" dx="3" dy="1.5" layer="1"/>
+<smd name="6" x="2" y="-1.27" dx="3" dy="1.5" layer="1"/>
+<smd name="7" x="-2" y="-3.81" dx="3" dy="1.5" layer="1"/>
+<smd name="8" x="2" y="-3.81" dx="3" dy="1.5" layer="1"/>
+<text x="0" y="5.75" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-5.75" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
+<package name="2X02_SMT_SMALL">
+<smd name="1" x="-2" y="1.27" dx="3" dy="1.5" layer="1"/>
+<smd name="2" x="2" y="1.27" dx="3" dy="1.5" layer="1"/>
+<smd name="3" x="-2" y="-1.27" dx="3" dy="1.5" layer="1"/>
+<smd name="4" x="2" y="-1.27" dx="3" dy="1.5" layer="1"/>
+<text x="0" y="3.21" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-3.21" size="1.27" layer="27" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -3548,6 +3577,20 @@
 <pin name="MT2" x="10.16" y="-7.62" length="short" rot="R180"/>
 <pin name="3" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
 </symbol>
+<symbol name="2X02">
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<pin name="1" x="-10.16" y="2.54" length="middle"/>
+<pin name="3" x="-10.16" y="0" length="middle"/>
+<pin name="2" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="4" x="10.16" y="0" length="middle" rot="R180"/>
+<text x="-3.81" y="6.35" size="1.27" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="USB" prefix="USB">
@@ -4275,6 +4318,21 @@ push-push type</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SMALL" package="2X04_SMT_SMALL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="2X06">
@@ -4971,6 +5029,24 @@ push-push type</description>
 <connects>
 <connect gate="G$1" pin="1" pad="S1"/>
 <connect gate="G$1" pin="2" pad="S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2X02_SMT" prefix="J">
+<gates>
+<gate name="G$1" symbol="2X02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X02_SMT_SMALL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

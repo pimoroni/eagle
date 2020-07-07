@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -8865,6 +8865,20 @@ FB: 1.244V</text>
 <text x="0" y="10.16" size="2.54" layer="94" align="bottom-center">VSOP38338</text>
 <text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">2.5-5.5V</text>
 </symbol>
+<symbol name="TPS22919DCKR">
+<pin name="IN" x="-15.24" y="5.08" length="middle"/>
+<pin name="ON" x="-15.24" y="0" length="middle"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
+<pin name="OUT" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="QOD" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="13.462" width="0.254" layer="94"/>
+<wire x1="10.16" y1="13.462" x2="-10.16" y2="13.462" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="13.462" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<text x="0" y="10.16" size="2.54" layer="94" align="bottom-center">TPS22919</text>
+<text x="-9.398" y="14.224" size="2.54" layer="95">&gt;NAME</text>
+<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">1.6 - 5.5V</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAMD20E" prefix="MCU" library_version="19" library_locally_modified="yes">
@@ -13991,7 +14005,7 @@ Source:</description>
 <gate name="P-CHAN" symbol="MOSFET-PCHANNEL" x="15.24" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT563-ORI">
+<device name="DMC2400UV" package="SOT563-ORI">
 <connects>
 <connect gate="N-CHAN" pin="D" pad="3"/>
 <connect gate="N-CHAN" pin="G" pad="5"/>
@@ -14586,6 +14600,25 @@ Source:</description>
 <connect gate="G$1" pin="IN" pad="7"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
 <connect gate="G$1" pin="VDD" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS22919DCKR" prefix="U">
+<gates>
+<gate name="G$1" symbol="TPS22919DCKR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT363_INFINEON">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="ON" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="QOD" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>

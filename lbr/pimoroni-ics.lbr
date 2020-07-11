@@ -14667,7 +14667,7 @@ Source:</description>
 <gate name="G$1" symbol="PCF85063ATL/1,118" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DFN-10">
+<device name="2626" package="DFN2626-10">
 <connects>
 <connect gate="G$1" pin="!INT" pad="4"/>
 <connect gate="G$1" pin="CLKOE" pad="3"/>

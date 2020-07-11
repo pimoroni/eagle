@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -14668,6 +14668,17 @@ Source:</description>
 </gates>
 <devices>
 <device name="" package="DFN-10">
+<connects>
+<connect gate="G$1" pin="!INT" pad="4"/>
+<connect gate="G$1" pin="CLKOE" pad="3"/>
+<connect gate="G$1" pin="CLKOUT" pad="9"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="OSCI" pad="1"/>
+<connect gate="G$1" pin="OSCO" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="7"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="10"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

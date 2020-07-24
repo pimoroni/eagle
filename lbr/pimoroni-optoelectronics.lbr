@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1279,6 +1279,11 @@
 <wire x1="-6.93" y1="35.93" x2="-6.93" y2="-3.87" width="0.03" layer="51" style="longdash"/>
 <wire x1="-6.2" y1="8.5" x2="-6.2" y2="13" width="0.1" layer="51"/>
 <wire x1="-2.2" y1="8.5" x2="-2.2" y2="13" width="0.1" layer="51"/>
+<text x="5.79881875" y="11.01598125" size="0.508" layer="51" rot="R90">pin1</text>
+<circle x="-15.76" y="33.72" radius="0.05" width="0.1" layer="21"/>
+<circle x="15.76" y="33.72" radius="0.05" width="0.1" layer="21"/>
+<circle x="-15.76" y="0" radius="0.05" width="0.1" layer="21"/>
+<circle x="15.76" y="0" radius="0.05" width="0.1" layer="21"/>
 </package>
 <package name="PMW3901MB">
 <wire x1="-3" y1="-3" x2="-3" y2="3" width="0.2" layer="51"/>

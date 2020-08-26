@@ -8644,6 +8644,21 @@ A1,A2 high</text>
 <pin name="30_P0.6/ADC_CH3" x="-50.8" y="5.08" length="middle"/>
 <pin name="31_P0.7/ADC_CH2" x="-50.8" y="2.54" length="middle"/>
 <pin name="32_P3.4/PWM3_CH1" x="50.8" y="-15.24" length="middle" rot="R180"/>
+<circle x="-44.958" y="-22.86" radius="0.254" width="0.508" layer="97"/>
+<circle x="-44.958" y="-15.24" radius="0.254" width="0.508" layer="97"/>
+<circle x="-44.958" y="-12.7" radius="0.254" width="0.508" layer="97"/>
+<circle x="-44.958" y="-7.62" radius="0.254" width="0.508" layer="97"/>
+<circle x="-44.958" y="2.54" radius="0.254" width="0.508" layer="97"/>
+<circle x="-44.958" y="5.08" radius="0.254" width="0.508" layer="97"/>
+<circle x="-44.958" y="7.62" radius="0.254" width="0.508" layer="97"/>
+<circle x="-44.958" y="10.16" radius="0.254" width="0.508" layer="97"/>
+<circle x="-44.958" y="12.7" radius="0.254" width="0.508" layer="97"/>
+<circle x="44.958" y="17.78" radius="0.254" width="0.508" layer="97"/>
+<circle x="44.958" y="15.24" radius="0.254" width="0.508" layer="97"/>
+<circle x="44.958" y="12.7" radius="0.254" width="0.508" layer="97"/>
+<circle x="44.958" y="10.16" radius="0.254" width="0.508" layer="97"/>
+<circle x="44.958" y="7.62" radius="0.254" width="0.508" layer="97"/>
+<circle x="44.958" y="-5.08" radius="0.254" width="0.508" layer="97"/>
 </symbol>
 <symbol name="ADS122C04I">
 <wire x1="-25.4" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>

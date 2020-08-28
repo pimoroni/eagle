@@ -5264,7 +5264,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="RASPBERRY-PI-GPIO" prefix="J">
+<deviceset name="RASPBERRY-PI-GPIO" prefix="PI">
 <gates>
 <gate name="G$1" symbol="RASPBERRY-PI-GPIO" x="0" y="0"/>
 </gates>

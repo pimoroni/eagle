@@ -2454,7 +2454,7 @@ MOTOR</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CPT-9019S-SMT">
+<deviceset name="CPT-9019S-SMT" prefix="PIEZO">
 <gates>
 <gate name="G$1" symbol="PIEZO-TRANSDUCER" x="0" y="0"/>
 </gates>

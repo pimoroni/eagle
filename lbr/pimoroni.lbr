@@ -25998,7 +25998,7 @@ Joystick commonly found in PS2 controllers. Two pots and a select switch. Adapte
 </device>
 </devices>
 </deviceset>
-<deviceset name="RPIGPIOPINHD-2X20-SMD-FLIPPED-COMBO">
+<deviceset name="RPIGPIOPINHD-2X20-SMD-FLIPPED-COMBO" prefix="PI">
 <gates>
 <gate name="G$1" symbol="FCI_89898_313LF_40P_CONNECTOR_SMT_FLIPPED" x="0" y="0"/>
 </gates>

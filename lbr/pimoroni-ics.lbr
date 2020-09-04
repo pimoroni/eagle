@@ -6165,9 +6165,13 @@ pull-up</text>
 <rectangle x1="-2.794" y1="-2.54" x2="-2.032" y2="-1.27" layer="94"/>
 <rectangle x1="-2.794" y1="1.27" x2="-2.032" y2="2.54" layer="94"/>
 <rectangle x1="-2.794" y1="-0.889" x2="-2.032" y2="0.889" layer="94"/>
-<pin name="G" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
-<pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="D" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<text x="-6.604" y="-2.794" size="1.27" layer="94">G</text>
+<text x="-2.794" y="-5.08" size="1.27" layer="94">S</text>
+<text x="-2.794" y="3.302" size="1.27" layer="94">D</text>
+<text x="0.254" y="-0.762" size="1.27" layer="94">N</text>
 </symbol>
 <symbol name="TPA301">
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
@@ -8438,12 +8442,13 @@ DIR=VCCA, A in -&gt; B out</text>
 <rectangle x1="-2.794" y1="-2.54" x2="-2.032" y2="-1.27" layer="94"/>
 <rectangle x1="-2.794" y1="1.27" x2="-2.032" y2="2.54" layer="94"/>
 <rectangle x1="-2.794" y1="-0.889" x2="-2.032" y2="0.889" layer="94"/>
-<pin name="G" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
-<pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="D" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <text x="-7.62" y="-2.54" size="1.27" layer="94">G</text>
 <text x="-2.54" y="-5.08" size="1.27" layer="94">S</text>
 <text x="-2.032" y="3.81" size="1.27" layer="94">D</text>
+<text x="0.508" y="-0.508" size="1.27" layer="94">P</text>
 </symbol>
 <symbol name="TMP117">
 <pin name="VDD" x="-15.24" y="7.62" length="middle"/>
@@ -11497,7 +11502,7 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <gate name="G$1" symbol="SHUNT_REFERENCE" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="_AZ431AN-ATRG1" package="SOT-23">
+<device name="_AZ431LANTR-G1" package="SOT-23">
 <connects>
 <connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="VOUT" pad="2"/>
@@ -11749,7 +11754,7 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTR-559ALS-01">
+<deviceset name="LTR-559ALS-01" prefix="U">
 <gates>
 <gate name="G$1" symbol="LTR-559ALS-01" x="0" y="2.54"/>
 </gates>

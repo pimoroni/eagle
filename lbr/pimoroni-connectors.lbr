@@ -4254,7 +4254,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPRING_2P">
+<deviceset name="SPRING_2P" prefix="J">
 <gates>
 <gate name="G$1" symbol="2P" x="-2.54" y="0"/>
 </gates>

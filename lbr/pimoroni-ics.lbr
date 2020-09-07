@@ -14065,12 +14065,12 @@ Source:</description>
 <devices>
 <device name="DMC2400UV" package="SOT563-ORI">
 <connects>
-<connect gate="N-CHAN" pin="D" pad="3"/>
-<connect gate="N-CHAN" pin="G" pad="5"/>
-<connect gate="N-CHAN" pin="S" pad="4"/>
-<connect gate="P-CHAN" pin="D" pad="6"/>
-<connect gate="P-CHAN" pin="G" pad="2"/>
-<connect gate="P-CHAN" pin="S" pad="1"/>
+<connect gate="N-CHAN" pin="D" pad="6"/>
+<connect gate="N-CHAN" pin="G" pad="2"/>
+<connect gate="N-CHAN" pin="S" pad="1"/>
+<connect gate="P-CHAN" pin="D" pad="3"/>
+<connect gate="P-CHAN" pin="G" pad="5"/>
+<connect gate="P-CHAN" pin="S" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

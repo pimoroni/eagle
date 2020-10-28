@@ -89,55 +89,55 @@
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">1V8</text>
-<pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="1V8" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="2V0">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">2V0</text>
-<pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="2V0" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="2V5">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">2V5</text>
-<pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="2V5" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="2V8">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">2V8</text>
-<pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="2V8" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="3V0">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">3V0</text>
-<pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="3V0" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="5V">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">3V0</text>
-<pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="VBUS">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">VBUS</text>
-<pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="VBUS" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="VBAT">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">VBAT</text>
-<pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="VBAT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="VCC">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">VCC</text>
-<pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="1V1">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
@@ -149,7 +149,13 @@
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">ADC3V3</text>
-<pin name="1V1" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="ADC3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VSYS">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">VSYS</text>
+<pin name="VSYS" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -322,9 +328,6 @@
 </device>
 </devices>
 </deviceset>
-
-
-
 </devicesets>
 </library>
 </drawing>

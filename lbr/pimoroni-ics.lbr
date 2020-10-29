@@ -15032,7 +15032,7 @@ Source:</description>
 <device name="" package="QFN-24">
 <connects>
 <connect gate="G$1" pin="BLANK" pad="18"/>
-<connect gate="G$1" pin="GND" pad="22"/>
+<connect gate="G$1" pin="GND" pad="22 PAD"/>
 <connect gate="G$1" pin="IREF" pad="20"/>
 <connect gate="G$1" pin="LATCH" pad="1"/>
 <connect gate="G$1" pin="OUT0" pad="2"/>

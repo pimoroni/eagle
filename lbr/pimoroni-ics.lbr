@@ -9151,6 +9151,37 @@ Vref: 0.1-0.5V</text>
 <pin name="OUT15" x="15.24" y="-22.86" visible="pin" length="short" rot="R180"/>
 <pin name="OUT0" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
 </symbol>
+<symbol name="PFET">
+<pin name="S1" x="0" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="G1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="D1" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="97"/>
+<wire x1="-2.032" y1="3.048" x2="-2.032" y2="2.032" width="0.254" layer="97"/>
+<wire x1="-2.032" y1="-2.794" x2="-2.032" y2="-2.286" width="0.254" layer="97"/>
+<wire x1="-2.032" y1="-2.286" x2="-2.032" y2="-1.778" width="0.254" layer="97"/>
+<wire x1="-2.032" y1="-0.508" x2="-2.032" y2="0" width="0.254" layer="97"/>
+<wire x1="-2.032" y1="0" x2="-2.032" y2="0.508" width="0.254" layer="97"/>
+<wire x1="-2.032" y1="0" x2="-0.254" y2="0" width="0.254" layer="97"/>
+<wire x1="-0.254" y1="0" x2="-1.016" y2="0.254" width="0.254" layer="97"/>
+<wire x1="-1.016" y1="0.254" x2="-1.016" y2="-0.254" width="0.254" layer="97"/>
+<wire x1="-1.016" y1="-0.254" x2="-0.254" y2="0" width="0.254" layer="97"/>
+<wire x1="-2.032" y1="2.54" x2="0" y2="2.54" width="0.254" layer="97"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="97"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="0.254" width="0.254" layer="97"/>
+<wire x1="1.27" y1="0.254" x2="1.27" y2="-2.286" width="0.254" layer="97"/>
+<wire x1="1.27" y1="-2.286" x2="-2.032" y2="-2.286" width="0.254" layer="97"/>
+<wire x1="-0.254" y1="0" x2="0" y2="0" width="0.254" layer="97"/>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="97"/>
+<circle x="0" y="2.54" radius="0.254" width="0.254" layer="97"/>
+<circle x="0" y="-2.286" radius="0.254" width="0.254" layer="97"/>
+<wire x1="1.016" y1="-0.254" x2="1.27" y2="0.254" width="0.254" layer="97"/>
+<wire x1="1.27" y1="0.254" x2="1.524" y2="-0.254" width="0.254" layer="97"/>
+<wire x1="1.016" y1="-0.254" x2="1.524" y2="-0.254" width="0.254" layer="97"/>
+<wire x1="1.016" y1="0.508" x2="1.524" y2="0.508" width="0.254" layer="97"/>
+<wire x1="1.524" y1="0.508" x2="1.778" y2="0.254" width="0.254" layer="97"/>
+<wire x1="1.016" y1="0.508" x2="0.762" y2="0.762" width="0.254" layer="97"/>
+<text x="0.508" y="-1.016" size="1.016" layer="97" font="vector" ratio="14" align="center">P</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAMD20E" prefix="MCU" library_version="19" library_locally_modified="yes">
@@ -15055,6 +15086,27 @@ Source:</description>
 <connect gate="G$1" pin="SIN" pad="23"/>
 <connect gate="G$1" pin="SOUT" pad="19"/>
 <connect gate="G$1" pin="VCC" pad="21"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DMP2075UFDB">
+<gates>
+<gate name="G$1" symbol="PFET" x="0" y="10.16"/>
+<gate name="G$2" symbol="PFET" x="0" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="DFN2020-6L">
+<connects>
+<connect gate="G$1" pin="D1" pad="6 EXP1"/>
+<connect gate="G$1" pin="G1" pad="2"/>
+<connect gate="G$1" pin="S1" pad="1"/>
+<connect gate="G$2" pin="D1" pad="3 EXP2"/>
+<connect gate="G$2" pin="G1" pad="5"/>
+<connect gate="G$2" pin="S1" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

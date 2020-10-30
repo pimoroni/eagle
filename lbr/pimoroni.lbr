@@ -24040,7 +24040,7 @@ Built-in current-limit and thermal-shutdown functions prevent IC from damage in 
 </device>
 </devices>
 </deviceset>
-<deviceset name="DRV8833">
+<deviceset name="DRV8833" prefix="U">
 <gates>
 <gate name="G$1" symbol="DRV8833" x="0" y="0"/>
 </gates>

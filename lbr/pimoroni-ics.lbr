@@ -15123,13 +15123,13 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DMP2075UFDB">
+<deviceset name="MOSFET-P-DUAL" prefix="U">
 <gates>
 <gate name="G$1" symbol="PFET" x="0" y="10.16"/>
 <gate name="G$2" symbol="PFET" x="0" y="-10.16"/>
 </gates>
 <devices>
-<device name="" package="DFN2020-6L">
+<device name="_DMP2075UFDB" package="DFN2020-6L">
 <connects>
 <connect gate="G$1" pin="D1" pad="6 EXP1"/>
 <connect gate="G$1" pin="G1" pad="2"/>

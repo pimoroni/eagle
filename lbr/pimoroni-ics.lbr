@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -9180,20 +9180,21 @@ Trigger: 2.9V</text>
 <wire x1="-1.016" y1="-0.254" x2="-0.254" y2="0" width="0.254" layer="94"/>
 <wire x1="-2.032" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="0.254" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0.254" x2="1.27" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="0.508" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.508" x2="1.27" y2="-2.286" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-2.286" x2="-2.032" y2="-2.286" width="0.254" layer="94"/>
 <wire x1="-0.254" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
 <circle x="0" y="2.54" radius="0.254" width="0.254" layer="94"/>
 <circle x="0" y="-2.286" radius="0.254" width="0.254" layer="94"/>
-<wire x1="1.016" y1="-0.254" x2="1.27" y2="0.254" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0.254" x2="1.524" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="1.016" y1="-0.254" x2="1.524" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="1.016" y1="0.508" x2="1.524" y2="0.508" width="0.254" layer="94"/>
-<wire x1="1.524" y1="0.508" x2="1.778" y2="0.254" width="0.254" layer="94"/>
-<wire x1="1.016" y1="0.508" x2="0.762" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-0.254" x2="1.27" y2="0.508" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.508" x2="1.778" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-0.254" x2="1.778" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="1.778" y2="0.762" width="0.254" layer="94"/>
+<wire x1="1.778" y1="0.762" x2="2.032" y2="0.508" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="0.508" y2="1.016" width="0.254" layer="94"/>
 <text x="0.508" y="-1.016" size="1.016" layer="94" font="vector" ratio="14" align="center">P</text>
+<text x="2.54" y="0" size="1.524" layer="95" font="vector" ratio="14" rot="R270" align="bottom-center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14349,6 +14350,19 @@ Source:</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="_DMC1030UFDB" package="DFN2020-6L">
+<connects>
+<connect gate="N-CHAN" pin="D" pad="6 EXP1"/>
+<connect gate="N-CHAN" pin="G" pad="2"/>
+<connect gate="N-CHAN" pin="S" pad="1"/>
+<connect gate="P-CHAN" pin="D" pad="3 EXP2"/>
+<connect gate="P-CHAN" pin="G" pad="5"/>
+<connect gate="P-CHAN" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="TMP117" prefix="U" uservalue="yes">
@@ -15125,18 +15139,18 @@ Source:</description>
 </deviceset>
 <deviceset name="MOSFET-P-DUAL" prefix="U">
 <gates>
-<gate name="G$1" symbol="PFET" x="0" y="10.16"/>
-<gate name="G$2" symbol="PFET" x="0" y="-10.16"/>
+<gate name="_1" symbol="PFET" x="0" y="10.16"/>
+<gate name="_2" symbol="PFET" x="0" y="-10.16"/>
 </gates>
 <devices>
 <device name="_DMP2075UFDB" package="DFN2020-6L">
 <connects>
-<connect gate="G$1" pin="D1" pad="6 EXP1"/>
-<connect gate="G$1" pin="G1" pad="2"/>
-<connect gate="G$1" pin="S1" pad="1"/>
-<connect gate="G$2" pin="D1" pad="3 EXP2"/>
-<connect gate="G$2" pin="G1" pad="5"/>
-<connect gate="G$2" pin="S1" pad="4"/>
+<connect gate="_1" pin="D1" pad="6 EXP1"/>
+<connect gate="_1" pin="G1" pad="2"/>
+<connect gate="_1" pin="S1" pad="1"/>
+<connect gate="_2" pin="D1" pad="3 EXP2"/>
+<connect gate="_2" pin="G1" pad="5"/>
+<connect gate="_2" pin="S1" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

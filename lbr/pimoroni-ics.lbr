@@ -15064,12 +15064,12 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LDO_4PIN" prefix="U" uservalue="yes">
+<deviceset name="LDO_4PIN" prefix="U">
 <gates>
 <gate name="G$1" symbol="LDO_4PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DFN-4_1X1">
+<device name="_NCP115AMX330TCG" package="DFN-4_1X1">
 <connects>
 <connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2 PAD"/>

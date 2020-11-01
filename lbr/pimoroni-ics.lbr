@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9196,6 +9196,59 @@ Trigger: 2.9V</text>
 <text x="0.508" y="-1.016" size="1.016" layer="94" font="vector" ratio="14" align="center">P</text>
 <text x="2.54" y="0" size="1.524" layer="95" font="vector" ratio="14" rot="R270" align="bottom-center">&gt;NAME</text>
 </symbol>
+<symbol name="IQS550">
+<wire x1="-12.7" y1="50.8" x2="-12.7" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-50.8" x2="12.7" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-50.8" x2="12.7" y2="50.8" width="0.254" layer="94"/>
+<wire x1="12.7" y1="50.8" x2="-12.7" y2="50.8" width="0.254" layer="94"/>
+<pin name="TX0" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="TX1" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="TX2" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="TX3" x="15.24" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="TX4" x="15.24" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="TX5" x="15.24" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="TX6" x="15.24" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="TX7" x="15.24" y="-30.48" visible="pin" length="short" rot="R180"/>
+<pin name="TX8" x="15.24" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="TX9" x="15.24" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="TX10" x="15.24" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="TX11" x="15.24" y="-40.64" visible="pin" length="short" rot="R180"/>
+<pin name="TX12" x="15.24" y="-43.18" visible="pin" length="short" rot="R180"/>
+<pin name="TX13" x="15.24" y="-45.72" visible="pin" length="short" rot="R180"/>
+<pin name="TX14" x="15.24" y="-48.26" visible="pin" length="short" rot="R180"/>
+<pin name="RXA1" x="15.24" y="45.72" visible="pin" length="short" rot="R180"/>
+<pin name="RXA2" x="15.24" y="43.18" visible="pin" length="short" rot="R180"/>
+<pin name="RXA3" x="15.24" y="40.64" visible="pin" length="short" rot="R180"/>
+<pin name="RXA4" x="15.24" y="38.1" visible="pin" length="short" rot="R180"/>
+<pin name="RXA5" x="15.24" y="35.56" visible="pin" length="short" rot="R180"/>
+<pin name="RXA6" x="15.24" y="33.02" visible="pin" length="short" rot="R180"/>
+<pin name="RXA7" x="15.24" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="RXA8" x="15.24" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="RXA9" x="15.24" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="RXA0" x="15.24" y="48.26" visible="pin" length="short" rot="R180"/>
+<pin name="RXB0" x="15.24" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="RXB1" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="RXB2" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="RXB3" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="RXB4" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="RXB5" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="RXB6" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="RXB7" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="RXB8" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="RXB9" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SW_IN" x="-15.24" y="25.4" visible="pin" length="short"/>
+<pin name="PGM" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="SDA" x="-15.24" y="35.56" visible="pin" length="short"/>
+<pin name="SCL" x="-15.24" y="33.02" visible="pin" length="short"/>
+<pin name="VDD" x="-15.24" y="48.26" visible="pin" length="short"/>
+<pin name="GND" x="-15.24" y="-48.26" visible="pin" length="short"/>
+<pin name="VREG" x="-15.24" y="43.18" visible="pin" length="short"/>
+<pin name="!RESET" x="-15.24" y="15.24" visible="pin" length="short"/>
+<pin name="VDDIO" x="-15.24" y="45.72" visible="pin" length="short"/>
+<text x="0" y="53.34" size="1.524" layer="94" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-53.34" size="1.524" layer="94" font="vector" ratio="14" rot="R180" align="bottom-center">&gt;VALUE</text>
+<pin name="RDY" x="-15.24" y="22.86" visible="pin" length="short"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAMD20E" prefix="MCU" library_version="19" library_locally_modified="yes">
@@ -15151,6 +15204,65 @@ Source:</description>
 <connect gate="_2" pin="D1" pad="3 EXP2"/>
 <connect gate="_2" pin="G1" pad="5"/>
 <connect gate="_2" pin="S1" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IQS550">
+<gates>
+<gate name="G$1" symbol="IQS550" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="UFQFN48-0.5MM">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="10"/>
+<connect gate="G$1" pin="GND" pad="8 37 PAD"/>
+<connect gate="G$1" pin="PGM" pad="2"/>
+<connect gate="G$1" pin="RDY" pad="11"/>
+<connect gate="G$1" pin="RXA0" pad="13"/>
+<connect gate="G$1" pin="RXA1" pad="15"/>
+<connect gate="G$1" pin="RXA2" pad="17"/>
+<connect gate="G$1" pin="RXA3" pad="19"/>
+<connect gate="G$1" pin="RXA4" pad="21"/>
+<connect gate="G$1" pin="RXA5" pad="23"/>
+<connect gate="G$1" pin="RXA6" pad="25"/>
+<connect gate="G$1" pin="RXA7" pad="27"/>
+<connect gate="G$1" pin="RXA8" pad="29"/>
+<connect gate="G$1" pin="RXA9" pad="31"/>
+<connect gate="G$1" pin="RXB0" pad="14"/>
+<connect gate="G$1" pin="RXB1" pad="16"/>
+<connect gate="G$1" pin="RXB2" pad="18"/>
+<connect gate="G$1" pin="RXB3" pad="20"/>
+<connect gate="G$1" pin="RXB4" pad="22"/>
+<connect gate="G$1" pin="RXB5" pad="24"/>
+<connect gate="G$1" pin="RXB6" pad="26"/>
+<connect gate="G$1" pin="RXB7" pad="28"/>
+<connect gate="G$1" pin="RXB8" pad="30"/>
+<connect gate="G$1" pin="RXB9" pad="32"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="SW_IN" pad="3"/>
+<connect gate="G$1" pin="TX0" pad="33"/>
+<connect gate="G$1" pin="TX1" pad="34"/>
+<connect gate="G$1" pin="TX10" pad="45"/>
+<connect gate="G$1" pin="TX11" pad="46"/>
+<connect gate="G$1" pin="TX12" pad="47"/>
+<connect gate="G$1" pin="TX13" pad="48"/>
+<connect gate="G$1" pin="TX14" pad="1"/>
+<connect gate="G$1" pin="TX2" pad="35"/>
+<connect gate="G$1" pin="TX3" pad="36"/>
+<connect gate="G$1" pin="TX4" pad="39"/>
+<connect gate="G$1" pin="TX5" pad="40"/>
+<connect gate="G$1" pin="TX6" pad="41"/>
+<connect gate="G$1" pin="TX7" pad="42"/>
+<connect gate="G$1" pin="TX8" pad="43"/>
+<connect gate="G$1" pin="TX9" pad="44"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VDDIO" pad="38"/>
+<connect gate="G$1" pin="VREG" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>

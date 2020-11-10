@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1268,20 +1268,20 @@
 <circle x="15.76" y="33.72" radius="0.05" width="0.1" layer="21"/>
 <circle x="-15.76" y="0" radius="0.05" width="0.1" layer="21"/>
 <circle x="15.76" y="0" radius="0.05" width="0.1" layer="21"/>
-<wire x1="1.38" y1="13.8" x2="-1.38" y2="13.8" width="0.127" layer="52" style="shortdash"/>
-<wire x1="-7" y1="9" x2="-4" y2="9" width="0.127" layer="52"/>
-<wire x1="4" y1="9" x2="7" y2="9" width="0.127" layer="52"/>
-<wire x1="-4" y1="9" x2="-4" y2="15.8" width="0.127" layer="52"/>
-<wire x1="4" y1="9" x2="4" y2="15.8" width="0.127" layer="52"/>
-<wire x1="4" y1="15.8" x2="-4" y2="15.8" width="0.127" layer="52"/>
-<wire x1="7" y1="9" x2="12.2" y2="9" width="0.127" layer="52"/>
-<wire x1="12.2" y1="9" x2="12.2" y2="0" width="0.127" layer="52"/>
-<wire x1="-7" y1="9" x2="-8.3" y2="9" width="0.127" layer="52"/>
-<wire x1="-8.3" y1="9" x2="-8.3" y2="2" width="0.127" layer="52"/>
+<wire x1="1.38" y1="13.3" x2="-1.38" y2="13.3" width="0.127" layer="52" style="shortdash"/>
+<wire x1="-7" y1="8.5" x2="-4" y2="8.5" width="0.127" layer="52"/>
+<wire x1="4" y1="8.5" x2="7" y2="8.5" width="0.127" layer="52"/>
+<wire x1="-4" y1="8.5" x2="-4" y2="15.3" width="0.127" layer="52"/>
+<wire x1="4" y1="8.5" x2="4" y2="15.3" width="0.127" layer="52"/>
+<wire x1="4" y1="15.3" x2="-4" y2="15.3" width="0.127" layer="52"/>
+<wire x1="7" y1="8.5" x2="12.2" y2="8.5" width="0.127" layer="52"/>
+<wire x1="12.2" y1="8.5" x2="12.2" y2="0" width="0.127" layer="52"/>
+<wire x1="-7" y1="8.5" x2="-8.3" y2="8.5" width="0.127" layer="52"/>
+<wire x1="-8.3" y1="8.5" x2="-8.3" y2="2" width="0.127" layer="52"/>
 <wire x1="-8.3" y1="2" x2="-10.6" y2="2" width="0.127" layer="52"/>
 <wire x1="-10.6" y1="2" x2="-10.6" y2="0" width="0.127" layer="52"/>
-<text x="3.7" y="11.1" size="0.254" layer="52" rot="MR0">pin 1</text>
-<text x="3.7" y="15.3" size="0.254" layer="52" rot="MR0">pin 24</text>
+<text x="3.7" y="10.6" size="0.254" layer="52" rot="MR0">pin 1</text>
+<text x="3.7" y="14.8" size="0.254" layer="52" rot="MR0">pin 24</text>
 </package>
 <package name="PMW3901MB">
 <wire x1="-3" y1="-3" x2="-3" y2="3" width="0.2" layer="51"/>

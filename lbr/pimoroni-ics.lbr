@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14056,7 +14056,7 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PAM8901/8908">
+<deviceset name="PAM8901/8908" prefix="U">
 <gates>
 <gate name="G$1" symbol="PAM8901/8908" x="0" y="0"/>
 </gates>

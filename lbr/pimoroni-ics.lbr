@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3950,12 +3950,12 @@ shrink quad flat pack, square</description>
 <circle x="-1.5" y="-1.6" radius="0.05" width="0.3" layer="21"/>
 </package>
 <package name="DFN2020-6L">
-<smd name="2" x="-0.95" y="0" dx="0.4" dy="0.4" layer="1"/>
-<smd name="5" x="0.95" y="0" dx="0.4" dy="0.4" layer="1"/>
-<smd name="1" x="-0.95" y="0.65" dx="0.4" dy="0.4" layer="1"/>
-<smd name="3" x="-0.95" y="-0.65" dx="0.4" dy="0.4" layer="1"/>
-<smd name="6" x="0.95" y="0.65" dx="0.4" dy="0.4" layer="1"/>
-<smd name="4" x="0.95" y="-0.65" dx="0.4" dy="0.4" layer="1"/>
+<smd name="2" x="-1" y="0" dx="0.5" dy="0.4" layer="1"/>
+<smd name="5" x="1" y="0" dx="0.5" dy="0.4" layer="1"/>
+<smd name="1" x="-1" y="0.65" dx="0.5" dy="0.4" layer="1"/>
+<smd name="3" x="-1" y="-0.65" dx="0.5" dy="0.4" layer="1"/>
+<smd name="6" x="1" y="0.65" dx="0.5" dy="0.4" layer="1"/>
+<smd name="4" x="1" y="-0.65" dx="0.5" dy="0.4" layer="1"/>
 <smd name="EXP1" x="0" y="0.5" dx="1" dy="0.7" layer="1"/>
 <smd name="EXP2" x="0" y="-0.5" dx="1" dy="0.7" layer="1"/>
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.2" layer="51"/>
@@ -9248,16 +9248,17 @@ Trigger: 2.9V</text>
 <text x="0" y="-53.34" size="1.524" layer="94" font="vector" ratio="14" rot="R180" align="bottom-center">&gt;VALUE</text>
 <pin name="RDY" x="-15.24" y="22.86" visible="pin" length="short"/>
 </symbol>
-<symbol name="XB6096IS">
+<symbol name="XB6096I2S">
 <pin name="VDD" x="-15.24" y="5.08" length="middle"/>
 <pin name="BAT_GND" x="-15.24" y="-5.08" length="middle"/>
 <pin name="SYS_GND" x="15.24" y="0" length="middle" rot="R180"/>
-<text x="0" y="7.62" size="2.54" layer="94" align="bottom-center">XB6096IS</text>
+<text x="0" y="10.16" size="2.54" layer="94" align="bottom-center">XB6096I2S</text>
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="10.922" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.922" x2="-10.16" y2="10.922" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.922" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<text x="-9.144" y="11.684" size="2.54" layer="95">&gt;NAME</text>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="13.462" width="0.254" layer="94"/>
+<wire x1="10.16" y1="13.462" x2="-10.16" y2="13.462" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="13.462" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<text x="-9.144" y="14.224" size="2.54" layer="95">&gt;NAME</text>
+<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">Ron: 52mOhm</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -15280,9 +15281,9 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="XB6096IS" prefix="U">
+<deviceset name="XB6096I2S" prefix="U">
 <gates>
-<gate name="G$1" symbol="XB6096IS" x="0" y="0"/>
+<gate name="G$1" symbol="XB6096I2S" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="UDFN-6">

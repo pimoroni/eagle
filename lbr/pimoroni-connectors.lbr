@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2922,20 +2922,20 @@
 <wire x1="-1" y1="-5.25" x2="-2" y2="-5.25" width="0" layer="20"/>
 <wire x1="-2" y1="-5.25" x2="-2.5" y2="-4.75" width="0" layer="20" curve="-90"/>
 <wire x1="-2.5" y1="-4.75" x2="-2" y2="-4.25" width="0" layer="20" curve="-90"/>
-<smd name="T1A" x="0.873" y="-4.75" dx="7.5" dy="1.5" layer="1" roundness="100"/>
+<smd name="T1A" x="0.873" y="-4.75" dx="8" dy="2" layer="1" roundness="100" thermals="no"/>
 <hole x="-4.25" y="0" drill="1.5" locked="yes"/>
 <hole x="5" y="0" drill="1.7" locked="yes"/>
-<smd name="B1A" x="0.873" y="-4.75" dx="7.5" dy="1.5" layer="16" roundness="100" rot="R180"/>
-<smd name="T1B" x="0.873" y="4.75" dx="7.5" dy="1.5" layer="1" roundness="100"/>
-<smd name="B1B" x="0.873" y="4.75" dx="7.5" dy="1.5" layer="16" roundness="100" rot="R180"/>
+<smd name="B1A" x="0.873" y="-4.75" dx="8" dy="2" layer="16" roundness="100" rot="R180" thermals="no"/>
+<smd name="T1B" x="0.873" y="4.75" dx="8" dy="2" layer="1" roundness="100" thermals="no"/>
+<smd name="B1B" x="0.873" y="4.75" dx="8" dy="2" layer="16" roundness="100" rot="R180" thermals="no"/>
 <wire x1="-2.25" y1="0.75" x2="-2.25" y2="-0.75" width="0" layer="20"/>
 <wire x1="-2.25" y1="-0.75" x2="-1.75" y2="-1.25" width="0" layer="20" curve="90"/>
 <wire x1="-1.75" y1="-1.25" x2="-1.25" y2="-0.75" width="0" layer="20" curve="90"/>
 <wire x1="-1.25" y1="-0.75" x2="-1.25" y2="0.75" width="0" layer="20"/>
 <wire x1="-1.25" y1="0.75" x2="-1.75" y2="1.25" width="0" layer="20" curve="90"/>
 <wire x1="-1.75" y1="1.25" x2="-2.25" y2="0.75" width="0" layer="20" curve="90"/>
-<smd name="B2" x="-1.75" y="-0.004" dx="3" dy="1.5" layer="16" roundness="100" rot="R270"/>
-<smd name="T2" x="-1.75" y="-0.004" dx="3" dy="1.5" layer="1" roundness="100" rot="R270"/>
+<smd name="B2" x="-1.75" y="-0.004" dx="3.5" dy="2" layer="16" roundness="100" rot="R270" thermals="no"/>
+<smd name="T2" x="-1.75" y="-0.004" dx="3.5" dy="2" layer="1" roundness="100" rot="R270" thermals="no"/>
 <wire x1="4.25" y1="5" x2="4.25" y2="2.75" width="0.127" layer="21" locked="yes"/>
 <wire x1="4.25" y1="2.75" x2="4.25" y2="-2.5" width="0.127" layer="21" locked="yes"/>
 <wire x1="4.25" y1="-2.5" x2="4.25" y2="-5" width="0.127" layer="21" locked="yes"/>

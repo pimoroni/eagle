@@ -1,4 +1,4 @@
-description[en] = \n\n\n\n\n\n\n<b>Pimoroni 4-layer tough board design rules</b>\n
+description[en] = <b>Pimoroni 4-layer tough board design rules</b>
 layerSetup = (1*2*15*16)
 mtCopper = 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm
 mtIsolate = 0.2mm 1.5mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm

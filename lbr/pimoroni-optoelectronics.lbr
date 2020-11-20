@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="2.79" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2423,6 +2423,19 @@ AA: 52.56x70.08mm</text>
 <rectangle x1="17.08965" y1="31.214646875" x2="18.10565" y2="31.256809375" layer="21"/>
 <rectangle x1="-17.97253125" y1="31.286809375" x2="-17.29435" y2="31.329228125" layer="21"/>
 <rectangle x1="17.25983125" y1="31.256809375" x2="17.93546875" y2="31.299228125" layer="21"/>
+</package>
+<package name="LCD_31">
+<wire x1="-37.36" y1="21.74" x2="37.36" y2="21.74" width="0.2" layer="51"/>
+<wire x1="37.36" y1="21.74" x2="37.36" y2="-21.74" width="0.2" layer="51"/>
+<wire x1="37.36" y1="-21.74" x2="-37.36" y2="-21.74" width="0.2" layer="51"/>
+<wire x1="-37.36" y1="-21.74" x2="-37.36" y2="21.74" width="0.2" layer="51"/>
+<wire x1="35.74" y1="20.16" x2="35.74" y2="-20.16" width="0.2" layer="51"/>
+<wire x1="-31.46" y1="20.16" x2="-31.46" y2="-20.16" width="0.2" layer="51"/>
+<wire x1="-31.46" y1="20.16" x2="35.74" y2="20.16" width="0.2" layer="51"/>
+<wire x1="35.74" y1="-20.16" x2="-31.46" y2="-20.16" width="0.2" layer="51"/>
+<wire x1="-19.45" y1="-15.74" x2="-19.45" y2="-7.17" width="0.2" layer="51"/>
+<wire x1="-30.45" y1="-15.74" x2="-30.45" y2="-7.17" width="0.2" layer="51"/>
+<wire x1="-20.64" y1="-4.24" x2="-29.36" y2="-4.24" width="0.2" layer="51"/>
 </package>
 </packages>
 <symbols>

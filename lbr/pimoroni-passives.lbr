@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.35" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -620,6 +620,14 @@
 <wire x1="2.45" y1="-2.45" x2="-2.45" y2="-2.45" width="0.2" layer="51"/>
 <wire x1="-2.45" y1="-2.45" x2="-2.45" y2="2.45" width="0.2" layer="51"/>
 <text x="0.6" y="0" size="1.1" layer="51" font="vector" ratio="14" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="2520">
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<smd name="1" x="-1" y="0" dx="0.8" dy="2.3" layer="1"/>
+<smd name="2" x="1" y="0" dx="0.8" dy="2.3" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -1474,6 +1482,15 @@
 </gates>
 <devices>
 <device name="SDEI054T" package="SDEI054T">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2520" package="2520">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

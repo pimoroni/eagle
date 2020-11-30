@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1935,6 +1935,14 @@ undermounted!</text>
 <circle x="-3.81" y="2.54" radius="1.17088125" width="0.0254" layer="51"/>
 <circle x="2.54" y="5.08" radius="0.71841875" width="0.0762" layer="51"/>
 <circle x="2.54" y="5.08" radius="1.17088125" width="0.0254" layer="51"/>
+</package>
+<package name="FOOT_MARK">
+<wire x1="-0.6" y1="-0.6" x2="0.6" y2="0.6" width="0.3" layer="21"/>
+<wire x1="0.6" y1="-0.6" x2="-0.6" y2="0.6" width="0.3" layer="21"/>
+<wire x1="-2.5" y1="0" x2="-2" y2="0" width="0.3" layer="21"/>
+<wire x1="2" y1="0" x2="2.5" y2="0" width="0.3" layer="21"/>
+<wire x1="-2" y1="0" x2="2" y2="0" width="0.3" layer="21" curve="-180"/>
+<circle x="0" y="0" radius="3" width="0.3" layer="51"/>
 </package>
 </packages>
 <symbols>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.075" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -24,11 +24,11 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -2992,6 +2992,45 @@
 <smd name="39" x="3.4" y="-1.075" dx="0.2" dy="0.65" layer="1" rot="R180"/>
 <smd name="40" x="3.8" y="-1.075" dx="0.2" dy="0.65" layer="1" rot="R180"/>
 </package>
+<package name="DB15">
+<hole x="-8" y="1.8" drill="1.5"/>
+<hole x="8" y="1.8" drill="2"/>
+<wire x1="-13.6" y1="2.1" x2="-11.4" y2="2.1" width="0" layer="20"/>
+<wire x1="-11.4" y1="2.1" x2="-10.9" y2="1.6" width="0" layer="20" curve="-90"/>
+<wire x1="-10.9" y1="1.6" x2="-11.4" y2="1.1" width="0" layer="20" curve="-90"/>
+<wire x1="-11.4" y1="1.1" x2="-13.6" y2="1.1" width="0" layer="20"/>
+<wire x1="-13.6" y1="1.1" x2="-14.1" y2="1.6" width="0" layer="20" curve="-90"/>
+<wire x1="-14.1" y1="1.6" x2="-13.6" y2="2.1" width="0" layer="20" curve="-90"/>
+<wire x1="10.9" y1="1.6" x2="11.4" y2="2.1" width="0" layer="20" curve="-90"/>
+<wire x1="11.4" y1="2.1" x2="13.6" y2="2.1" width="0" layer="20"/>
+<wire x1="13.6" y1="2.1" x2="14.1" y2="1.6" width="0" layer="20" curve="-90"/>
+<wire x1="14.1" y1="1.6" x2="13.6" y2="1.1" width="0" layer="20" curve="-90"/>
+<wire x1="13.6" y1="1.1" x2="11.4" y2="1.1" width="0" layer="20"/>
+<wire x1="11.4" y1="1.1" x2="10.9" y2="1.6" width="0" layer="20" curve="-90"/>
+<pad name="6" x="5.465" y="2.3" drill="0.65"/>
+<pad name="1" x="4.703" y="3.8" drill="0.65"/>
+<pad name="2" x="2.417" y="2.3" drill="0.65"/>
+<pad name="3" x="0.131" y="3.8" drill="0.65"/>
+<pad name="4" x="-2.155" y="2.3" drill="0.65"/>
+<pad name="5" x="-4.441" y="3.8" drill="0.65"/>
+<pad name="7" x="3.179" y="3.8" drill="0.65"/>
+<pad name="8" x="0.893" y="2.3" drill="0.65"/>
+<pad name="9" x="-1.393" y="3.8" drill="0.65"/>
+<pad name="10" x="-3.679" y="2.3" drill="0.65"/>
+<pad name="11" x="3.941" y="2.3" drill="0.65"/>
+<pad name="12" x="1.655" y="3.8" drill="0.65"/>
+<pad name="13" x="-0.631" y="2.3" drill="0.65"/>
+<pad name="14" x="-2.917" y="3.8" drill="0.65"/>
+<pad name="15" x="-5.203" y="2.3" drill="0.65"/>
+<wire x1="-15.4" y1="0" x2="15.4" y2="0" width="0.2" layer="51" style="shortdash"/>
+<wire x1="-15.4" y1="0" x2="-15.4" y2="4.5" width="0.2" layer="51"/>
+<wire x1="15.4" y1="0" x2="15.4" y2="4.5" width="0.2" layer="51"/>
+<wire x1="-15.4" y1="4.5" x2="15.4" y2="4.5" width="0.2" layer="51"/>
+<smd name="MT1T" x="-12.5" y="1.6" dx="4.2" dy="2" layer="1" roundness="100"/>
+<smd name="MT1B" x="-12.5" y="1.6" dx="4.2" dy="2" layer="16" roundness="100"/>
+<smd name="MT2T" x="12.5" y="1.6" dx="4.2" dy="2" layer="1" roundness="100"/>
+<smd name="MT2B" x="12.5" y="1.6" dx="4.2" dy="2" layer="16" roundness="100"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -3836,6 +3875,43 @@
 <pin name="38" x="20.32" y="17.78" length="middle" rot="R180"/>
 <pin name="39" x="20.32" y="20.32" length="middle" rot="R180"/>
 <pin name="40" x="20.32" y="22.86" length="middle" rot="R180"/>
+</symbol>
+<symbol name="DB15">
+<pin name="1" x="-7.62" y="7.62" visible="pad" length="middle"/>
+<pin name="2" x="-7.62" y="2.54" visible="pad" length="middle"/>
+<pin name="3" x="-7.62" y="-2.54" visible="pad" length="middle"/>
+<pin name="4" x="-7.62" y="-7.62" visible="pad" length="middle"/>
+<pin name="5" x="-7.62" y="-12.7" visible="pad" length="middle"/>
+<pin name="6" x="-7.62" y="10.16" visible="pad"/>
+<pin name="7" x="-7.62" y="5.08" visible="pad"/>
+<pin name="8" x="-7.62" y="0" visible="pad"/>
+<pin name="9" x="-7.62" y="-5.08" visible="pad"/>
+<pin name="10" x="-7.62" y="-10.16" visible="pad"/>
+<pin name="11" x="7.62" y="7.62" visible="pad" length="middle" rot="R180"/>
+<pin name="12" x="7.62" y="2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="13" x="7.62" y="-2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="14" x="7.62" y="-7.62" visible="pad" length="middle" rot="R180"/>
+<pin name="15" x="7.62" y="-12.7" visible="pad" length="middle" rot="R180"/>
+<circle x="0" y="10.16" radius="1.016" width="0.254" layer="94"/>
+<circle x="-2.54" y="7.62" radius="1.016" width="0.254" layer="94"/>
+<circle x="2.54" y="7.62" radius="1.016" width="0.254" layer="94"/>
+<circle x="0" y="5.08" radius="1.016" width="0.254" layer="94"/>
+<circle x="-2.54" y="2.54" radius="1.016" width="0.254" layer="94"/>
+<circle x="2.54" y="2.54" radius="1.016" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.016" width="0.254" layer="94"/>
+<circle x="-2.54" y="-2.54" radius="1.016" width="0.254" layer="94"/>
+<circle x="2.54" y="-2.54" radius="1.016" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="1.016" width="0.254" layer="94"/>
+<circle x="-2.54" y="-7.62" radius="1.016" width="0.254" layer="94"/>
+<circle x="2.54" y="-7.62" radius="1.016" width="0.254" layer="94"/>
+<circle x="0" y="-10.16" radius="1.016" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.7" radius="1.016" width="0.254" layer="94"/>
+<circle x="2.54" y="-12.7" radius="1.016" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-20.32" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="17.78" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="-5.08" y2="-20.32" width="0.254" layer="94"/>
+<pin name="MT" x="-7.62" y="-20.32" visible="pad" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5407,6 +5483,36 @@ push-push type</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DB15" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="DB15" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="DB15">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="MT" pad="MT1B MT1T MT2B MT2T"/>
 </connects>
 <technologies>
 <technology name=""/>

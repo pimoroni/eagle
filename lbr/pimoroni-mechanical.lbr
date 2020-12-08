@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -59,8 +59,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -1937,7 +1937,7 @@ undermounted!</text>
 <circle x="2.54" y="5.08" radius="1.17088125" width="0.0254" layer="51"/>
 </package>
 <package name="FOOT_MARK">
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="0.64565" y="2.50505"/>
 <vertex x="0.673059375" y="2.54651875"/>
 <vertex x="0.6822" y="2.59371875"/>
@@ -1953,7 +1953,7 @@ undermounted!</text>
 <vertex x="-0.398740625" y="1.54968125"/>
 <vertex x="-0.3709" y="1.48863125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="-1.23088125" y="0.983709375"/>
 <vertex x="-1.61963125" y="0.595"/>
 <vertex x="-1.599309375" y="0.559"/>
@@ -1969,7 +1969,7 @@ undermounted!</text>
 <vertex x="-1.17643125" y="0.861"/>
 <vertex x="-1.2059" y="0.92048125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="-2.336009375" y="-0.1213"/>
 <vertex x="-2.66813125" y="-0.453390625"/>
 <vertex x="-2.695740625" y="-0.49495"/>
@@ -1993,7 +1993,7 @@ undermounted!</text>
 <vertex x="-2.26496875" y="-0.20568125"/>
 <vertex x="-2.30151875" y="-0.16495"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="-1.27425" y="1.388190625"/>
 <vertex x="-1.26" y="1.473790625"/>
 <vertex x="-1.237640625" y="1.55471875"/>
@@ -2007,7 +2007,6 @@ undermounted!</text>
 <vertex x="-0.84821875" y="1.876290625"/>
 <vertex x="-0.8194" y="1.87506875"/>
 <vertex x="-0.790540625" y="1.871890625"/>
-<vertex x="-0.618940625" y="2.043490625"/>
 <vertex x="-0.10415" y="2.558290625"/>
 <vertex x="-0.076740625" y="2.59975"/>
 <vertex x="-0.0676" y="2.64695"/>
@@ -2023,7 +2022,7 @@ undermounted!</text>
 <vertex x="-1.89341875" y="0.87091875"/>
 <vertex x="-1.830309375" y="0.832109375"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="-2.50256875" y="0.514690625"/>
 <vertex x="-2.72136875" y="0.295859375"/>
 <vertex x="-2.74898125" y="0.254390625"/>
@@ -2045,7 +2044,7 @@ undermounted!</text>
 <vertex x="-2.5074" y="0.352509375"/>
 <vertex x="-2.509309375" y="0.43458125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="-2.258140625" y="1.2589"/>
 <vertex x="-2.23418125" y="1.2612"/>
 <vertex x="-2.210959375" y="1.268109375"/>
@@ -2069,7 +2068,7 @@ undermounted!</text>
 <vertex x="-2.30533125" y="1.268109375"/>
 <vertex x="-2.282109375" y="1.2612"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="0.4311" y="0.68521875"/>
 <vertex x="0.405340625" y="0.716140625"/>
 <vertex x="0.38126875" y="0.74936875"/>
@@ -2089,7 +2088,7 @@ undermounted!</text>
 <vertex x="-0.067340625" y="0.1868"/>
 <vertex x="0.264959375" y="0.51908125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="-2.14735" y="-1.538109375"/>
 <vertex x="-2.174959375" y="-1.57966875"/>
 <vertex x="-2.18416875" y="-1.62695"/>
@@ -2109,7 +2108,7 @@ undermounted!</text>
 <vertex x="-1.298159375" y="-0.74403125"/>
 <vertex x="-1.21978125" y="-0.61058125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="1.23848125" y="1.492559375"/>
 <vertex x="1.73006875" y="1.98413125"/>
 <vertex x="1.757490625" y="2.025590625"/>
@@ -2129,7 +2128,7 @@ undermounted!</text>
 <vertex x="1.202740625" y="1.60121875"/>
 <vertex x="1.222340625" y="1.548159375"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="0.81731875" y="1.87421875"/>
 <vertex x="1.23885" y="2.29575"/>
 <vertex x="1.26626875" y="2.337209375"/>
@@ -2157,9 +2156,6 @@ undermounted!</text>
 <vertex x="-0.79333125" y="0.54986875"/>
 <vertex x="-0.82108125" y="0.55565"/>
 <vertex x="-0.8487" y="0.563190625"/>
-<vertex x="-1.02361875" y="0.38828125"/>
-<vertex x="-1.198540625" y="0.213359375"/>
-<vertex x="-1.373459375" y="0.03845"/>
 <vertex x="-1.54838125" y="-0.13646875"/>
 <vertex x="-1.58715" y="-0.20448125"/>
 <vertex x="-1.6353" y="-0.262890625"/>
@@ -2179,9 +2175,6 @@ undermounted!</text>
 <vertex x="-2.34618125" y="-1.2589"/>
 <vertex x="-2.322959375" y="-1.25198125"/>
 <vertex x="-2.301159375" y="-1.24051875"/>
-<vertex x="-2.28148125" y="-1.22458125"/>
-<vertex x="-1.63138125" y="-0.574490625"/>
-<vertex x="-0.981290625" y="0.0756"/>
 <vertex x="0.3189" y="1.37578125"/>
 <vertex x="0.35035" y="1.4741"/>
 <vertex x="0.39036875" y="1.56616875"/>
@@ -2191,7 +2184,7 @@ undermounted!</text>
 <vertex x="0.65055" y="1.83431875"/>
 <vertex x="0.73303125" y="1.863309375"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="2.15285" y="-1.251540625"/>
 <vertex x="1.265809375" y="-2.1382"/>
 <vertex x="1.238390625" y="-2.179759375"/>
@@ -2215,7 +2208,7 @@ undermounted!</text>
 <vertex x="2.241690625" y="-1.21525"/>
 <vertex x="2.19441875" y="-1.22431875"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="-1.326040625" y="-1.519640625"/>
 <vertex x="-1.74583125" y="-1.93943125"/>
 <vertex x="-1.773440625" y="-1.981"/>
@@ -2235,7 +2228,7 @@ undermounted!</text>
 <vertex x="-1.25498125" y="-1.621409375"/>
 <vertex x="-1.29316875" y="-1.57191875"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="0.96245" y="0.625590625"/>
 <vertex x="0.90906875" y="0.59333125"/>
 <vertex x="0.8542" y="0.570009375"/>
@@ -2263,7 +2256,7 @@ undermounted!</text>
 <vertex x="1.123090625" y="0.79756875"/>
 <vertex x="1.04895" y="0.70153125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="2.705259375" y="-0.073840625"/>
 <vertex x="2.663690625" y="-0.04661875"/>
 <vertex x="2.61641875" y="-0.037540625"/>
@@ -2292,7 +2285,7 @@ undermounted!</text>
 <vertex x="2.74181875" y="-0.16268125"/>
 <vertex x="2.73268125" y="-0.1154"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="-0.224040625" y="-2.02286875"/>
 <vertex x="-0.66123125" y="-2.46001875"/>
 <vertex x="-0.688840625" y="-2.50158125"/>
@@ -2316,7 +2309,7 @@ undermounted!</text>
 <vertex x="-0.11806875" y="-2.02971875"/>
 <vertex x="-0.17121875" y="-2.026440625"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="1.58125" y="-0.21776875"/>
 <vertex x="1.19781875" y="-0.601159375"/>
 <vertex x="1.234090625" y="-0.65786875"/>
@@ -2332,7 +2325,7 @@ undermounted!</text>
 <vertex x="1.6598" y="-0.29961875"/>
 <vertex x="1.6181" y="-0.261590625"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="2.496509375" y="0.34241875"/>
 <vertex x="2.53546875" y="0.38138125"/>
 <vertex x="2.574440625" y="0.42033125"/>
@@ -2358,7 +2351,7 @@ undermounted!</text>
 <vertex x="2.498540625" y="0.465090625"/>
 <vertex x="2.49976875" y="0.404309375"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="-1.254609375" y="-2.25088125"/>
 <vertex x="-1.28221875" y="-2.29245"/>
 <vertex x="-1.29141875" y="-2.33971875"/>
@@ -2378,7 +2371,7 @@ undermounted!</text>
 <vertex x="-0.823209375" y="-1.906840625"/>
 <vertex x="-0.8855" y="-1.881790625"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="0.9938" y="-0.35748125"/>
 <vertex x="1.476640625" y="0.125359375"/>
 <vertex x="1.478740625" y="0.202140625"/>
@@ -2394,7 +2387,7 @@ undermounted!</text>
 <vertex x="0.89823125" y="-0.27601875"/>
 <vertex x="0.94711875" y="-0.31586875"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.03" layer="21">
 <vertex x="2.216909375" y="0.90646875"/>
 <vertex x="2.2238" y="0.90338125"/>
 <vertex x="2.23036875" y="0.899659375"/>

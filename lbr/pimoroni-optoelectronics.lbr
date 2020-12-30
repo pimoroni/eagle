@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2568,6 +2568,7 @@ AA: 52.56x70.08mm</text>
 <wire x1="-2.032" y1="-2.54" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="-2.54" x2="-3.81" y2="0" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.32258125" layer="94"/>
+<text x="-2.54" y="4.826" size="2.54" layer="95" align="bottom-center">&gt;NAME</text>
 </symbol>
 <symbol name="SEGMENT_8X8_CATHODEROW">
 <wire x1="-3.81" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>

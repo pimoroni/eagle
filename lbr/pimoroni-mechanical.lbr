@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -59,8 +59,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -1685,15 +1685,15 @@ undermounted!</text>
 <wire x1="2.15" y1="1.075" x2="2.15" y2="-1.075" width="0.127" layer="51"/>
 <wire x1="2.15" y1="-1.075" x2="2.15" y2="-1.6" width="0.127" layer="51"/>
 <wire x1="2.15" y1="-1.6" x2="-2.15" y2="-1.6" width="0.127" layer="51"/>
-<smd name="1" x="-2.25" y="1.075" dx="1.4" dy="0.9" layer="1"/>
-<smd name="2" x="2.25" y="1.075" dx="1.4" dy="0.9" layer="1"/>
-<smd name="3" x="-2.25" y="-1.075" dx="1.4" dy="0.9" layer="1"/>
-<smd name="4" x="2.25" y="-1.075" dx="1.4" dy="0.9" layer="1"/>
+<smd name="1" x="-2.15" y="1.075" dx="1.2" dy="0.7" layer="1"/>
+<smd name="2" x="2.15" y="1.075" dx="1.2" dy="0.7" layer="1"/>
+<smd name="3" x="-2.15" y="-1.075" dx="1.2" dy="0.7" layer="1"/>
+<smd name="4" x="2.15" y="-1.075" dx="1.2" dy="0.7" layer="1"/>
 <wire x1="-2.15" y1="1.075" x2="-2.55" y2="1.075" width="0.127" layer="51"/>
 <wire x1="-2.15" y1="-1.075" x2="-2.55" y2="-1.075" width="0.127" layer="51"/>
 <wire x1="2.15" y1="-1.075" x2="2.55" y2="-1.075" width="0.127" layer="51"/>
 <wire x1="2.15" y1="1.075" x2="2.55" y2="1.075" width="0.127" layer="51"/>
-<text x="0" y="0" size="0.9" layer="25" font="vector" ratio="14" align="center">&gt;NAME</text>
+<text x="0" y="0.9" size="0.9" layer="25" font="vector" ratio="14" align="center">&gt;NAME</text>
 <wire x1="-1.5" y1="0" x2="-0.4" y2="1.1" width="0.127" layer="51" curve="-90"/>
 <wire x1="-0.4" y1="1.1" x2="0.4" y2="1.1" width="0.127" layer="51"/>
 <wire x1="0.4" y1="1.1" x2="1.5" y2="0" width="0.127" layer="51" curve="-90"/>

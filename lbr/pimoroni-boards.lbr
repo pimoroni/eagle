@@ -205,25 +205,25 @@
 <wire x1="19.92" y1="-9" x2="0.4" y2="-9" width="0.2" layer="21"/>
 <wire x1="0.4" y1="-9" x2="0" y2="-8.6" width="0.2" layer="21" curve="-90"/>
 <wire x1="20.32" y1="-8.6" x2="20.32" y2="8.6" width="0.2" layer="21"/>
-<smd name="0" x="1.27" y="8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="1" x="3.81" y="8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="2" x="6.35" y="8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="3" x="8.89" y="8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="4" x="11.43" y="8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="5" x="13.97" y="8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="6" x="16.51" y="8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="7" x="19.05" y="8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="5V" x="1.27" y="-8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="GND1" x="3.81" y="-8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="3V3" x="6.35" y="-8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="A0" x="16.51" y="-8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="A1" x="13.97" y="-8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="A2" x="11.43" y="-8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="A3" x="8.89" y="-8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="GND2" x="19.05" y="-8.42" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R90"/>
-<smd name="GND3" x="19.74" y="0" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R180"/>
-<smd name="SWCLK" x="19.74" y="-2.54" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R180"/>
-<smd name="SWDIO" x="19.74" y="2.54" dx="3.5" dy="1.9" layer="1" roundness="30" rot="R180"/>
+<smd name="0" x="1.27" y="8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="1" x="3.81" y="8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="2" x="6.35" y="8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="3" x="8.89" y="8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="4" x="11.43" y="8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="5" x="13.97" y="8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="6" x="16.51" y="8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="7" x="19.05" y="8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="5V" x="1.27" y="-8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="GND1" x="3.81" y="-8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="3V3" x="6.35" y="-8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="A0" x="16.51" y="-8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="A1" x="13.97" y="-8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="A2" x="11.43" y="-8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="A3" x="8.89" y="-8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="GND2" x="19.05" y="-8.17" dx="3" dy="1.9" layer="1" roundness="30" rot="R90"/>
+<smd name="GND3" x="19.49" y="0" dx="3" dy="1.9" layer="1" roundness="30" rot="R180"/>
+<smd name="SWCLK" x="19.49" y="-2.54" dx="3" dy="1.9" layer="1" roundness="30" rot="R180"/>
+<smd name="SWDIO" x="19.49" y="2.54" dx="3" dy="1.9" layer="1" roundness="30" rot="R180"/>
 <wire x1="1" y1="6.3" x2="16.62" y2="6.3" width="0.1" layer="20"/>
 <wire x1="16.62" y1="6.3" x2="17.62" y2="5.3" width="0.1" layer="20" curve="-90"/>
 <wire x1="17.62" y1="5.3" x2="17.62" y2="-5.3" width="0.1" layer="20"/>
@@ -244,25 +244,25 @@
 </packages>
 <symbols>
 <symbol name="TINY2040">
-<pin name="SWCLK" x="-2.54" y="-12.7" length="short" rot="R90"/>
-<pin name="GND3" x="0" y="-12.7" length="short" rot="R90"/>
-<pin name="SWDIO" x="2.54" y="-12.7" length="short" rot="R90"/>
-<pin name="5V" x="-15.24" y="10.16" length="short"/>
-<pin name="GND1" x="-15.24" y="7.62" length="short"/>
-<pin name="3V3" x="-15.24" y="5.08" length="short"/>
-<pin name="A3" x="-15.24" y="2.54" length="short"/>
-<pin name="A2" x="-15.24" y="0" length="short"/>
-<pin name="A1" x="-15.24" y="-2.54" length="short"/>
-<pin name="A0" x="-15.24" y="-5.08" length="short"/>
-<pin name="GND2" x="-15.24" y="-7.62" length="short"/>
-<pin name="0" x="15.24" y="10.16" length="short" rot="R180"/>
-<pin name="1" x="15.24" y="7.62" length="short" rot="R180"/>
-<pin name="2" x="15.24" y="5.08" length="short" rot="R180"/>
-<pin name="3" x="15.24" y="2.54" length="short" rot="R180"/>
-<pin name="4" x="15.24" y="0" length="short" rot="R180"/>
-<pin name="5" x="15.24" y="-2.54" length="short" rot="R180"/>
-<pin name="6" x="15.24" y="-5.08" length="short" rot="R180"/>
-<pin name="7" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="SWCLK" x="-2.54" y="-12.7" visible="pin" length="short" rot="R90"/>
+<pin name="GND3" x="0" y="-12.7" visible="pin" length="short" rot="R90"/>
+<pin name="SWDIO" x="2.54" y="-12.7" visible="pin" length="short" rot="R90"/>
+<pin name="5V" x="-15.24" y="10.16" visible="pin" length="short"/>
+<pin name="GND1" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="3V3" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="A3" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="A2" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="A1" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="A0" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="GND2" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="0" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="1" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="2" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="3" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="4" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="5" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="6" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="7" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
 <wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-10.16" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>

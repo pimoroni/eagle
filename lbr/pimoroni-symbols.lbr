@@ -182,6 +182,12 @@
 <text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">VLED</text>
 <pin name="VLED" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="3V3_EPD">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">3V3_EPD</text>
+<pin name="3V3_EPD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -409,6 +415,19 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VLED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3V3_EPD" prefix="3V3_EPD">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="3V3_EPD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

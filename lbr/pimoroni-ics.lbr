@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -39,7 +39,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -1963,7 +1963,7 @@ package type SS</description>
 <smd name="11" x="0.9375" y="0.5" dx="1.425" dy="0.13" layer="1"/>
 <smd name="10" x="0.7" y="0" dx="1.9" dy="0.13" layer="1"/>
 </package>
-<package name="BME680">
+<package name="BME688">
 <smd name="1" x="1.2" y="1.2" dx="0.4" dy="0.4" layer="1"/>
 <smd name="2" x="1.2" y="0.4" dx="0.4" dy="0.4" layer="1"/>
 <smd name="3" x="1.2" y="-0.4" dx="0.4" dy="0.4" layer="1"/>
@@ -4546,7 +4546,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <circle x="-1.37" y="-1.805" radius="0.05" width="0.3" layer="21"/>
 </package>
 <package name="DFN2020-6-LDO">
-<smd name="PAD1" x="0" y="0" dx="1.67" dy="0.8" layer="1" roundness="20" cream="no"/>
+<smd name="PAD1" x="0" y="0" dx="1.67" dy="0.8" layer="1" roundness="20" thermals="no" cream="no"/>
 <smd name="5" x="0" y="0.975" dx="0.37" dy="0.65" layer="1" roundness="20"/>
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
 <wire x1="1" y1="1" x2="1" y2="0.6" width="0.127" layer="51"/>
@@ -4557,7 +4557,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <smd name="4" x="0.65" y="0.975" dx="0.37" dy="0.65" layer="1" roundness="20"/>
 <smd name="6" x="-0.65" y="0.975" dx="0.37" dy="0.65" layer="1" roundness="20"/>
 <smd name="1" x="-0.65" y="-0.975" dx="0.37" dy="0.65" layer="1" roundness="20"/>
-<smd name="2" x="0" y="-0.675" dx="0.37" dy="1.25" layer="1" roundness="20"/>
+<smd name="2" x="0" y="-0.675" dx="0.37" dy="1.25" layer="1" roundness="20" thermals="no"/>
 <smd name="3" x="0.65" y="-0.975" dx="0.37" dy="0.65" layer="1" roundness="20"/>
 <wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="51"/>
 <wire x1="-1" y1="0.6" x2="-1" y2="1" width="0.127" layer="51"/>
@@ -4566,6 +4566,46 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.02" layer="51"/>
 <rectangle x1="-0.8" y1="-0.2" x2="0.8" y2="0.2" layer="31"/>
 <text x="0" y="1.6" size="1.1" layer="21" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="SCD4X">
+<wire x1="-5.05" y1="5.05" x2="5.05" y2="5.05" width="0.127" layer="51"/>
+<wire x1="5.05" y1="5.05" x2="5.05" y2="-5.05" width="0.127" layer="51"/>
+<wire x1="5.05" y1="-5.05" x2="-5.05" y2="-5.05" width="0.127" layer="51"/>
+<wire x1="-5.05" y1="-5.05" x2="-5.05" y2="5.05" width="0.127" layer="51"/>
+<wire x1="-5.05" y1="5.05" x2="-4.85" y2="5.05" width="0.2" layer="21"/>
+<wire x1="-5.05" y1="5.05" x2="-5.05" y2="4.85" width="0.2" layer="21"/>
+<wire x1="5.05" y1="5.05" x2="4.85" y2="5.05" width="0.2" layer="21"/>
+<wire x1="5.05" y1="5.05" x2="5.05" y2="4.85" width="0.2" layer="21"/>
+<wire x1="5.05" y1="-5.05" x2="5.05" y2="-4.85" width="0.2" layer="21"/>
+<wire x1="5.05" y1="-5.05" x2="4.85" y2="-5.05" width="0.2" layer="21"/>
+<wire x1="-5.05" y1="-5.05" x2="-5.05" y2="-4.85" width="0.2" layer="21"/>
+<wire x1="-5.05" y1="-5.05" x2="-4.85" y2="-5.05" width="0.2" layer="21"/>
+<circle x="-4.2" y="4.2" radius="0.4" width="0" layer="21"/>
+<smd name="3" x="-4" y="0" dx="1.5" dy="0.8" layer="1"/>
+<smd name="13" x="4" y="0" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="18" x="0" y="4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="8" x="0" y="-4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$5" x="0" y="0" dx="4.8" dy="4.8" layer="1" rot="R270" cream="no"/>
+<smd name="1" x="-4" y="2.5" dx="1.5" dy="0.8" layer="1"/>
+<smd name="2" x="-4" y="1.25" dx="1.5" dy="0.8" layer="1"/>
+<smd name="4" x="-4" y="-1.25" dx="1.5" dy="0.8" layer="1"/>
+<smd name="5" x="-4" y="-2.5" dx="1.5" dy="0.8" layer="1"/>
+<smd name="6" x="-2.5" y="-4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="7" x="-1.25" y="-4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="9" x="1.25" y="-4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="10" x="2.5" y="-4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="11" x="4" y="-2.5" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="12" x="4" y="-1.25" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="14" x="4" y="1.25" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="15" x="4" y="2.5" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="16" x="2.5" y="4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="17" x="1.25" y="4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="19" x="-1.25" y="4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="20" x="-2.5" y="4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<rectangle x1="-2.2" y1="0.4" x2="-0.4" y2="2.2" layer="31"/>
+<rectangle x1="0.4" y1="0.4" x2="2.2" y2="2.2" layer="31"/>
+<rectangle x1="0.4" y1="-2.2" x2="2.2" y2="-0.4" layer="31"/>
+<rectangle x1="-2.2" y1="-2.2" x2="-0.4" y2="-0.4" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -6187,7 +6227,7 @@ pull-up</text>
 <wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
 <wire x1="12.7" y1="12.7" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
 </symbol>
-<symbol name="BME680">
+<symbol name="BME688">
 <pin name="GND1" x="15.24" y="7.62" length="middle" rot="R180"/>
 <pin name="CSB" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="SDI" x="15.24" y="-2.54" length="middle" rot="R180"/>
@@ -9795,6 +9835,20 @@ Vfb: 0.5V</text>
 active low</text>
 <text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">Iq: max 230nA</text>
 </symbol>
+<symbol name="SCD4X">
+<pin name="VDD" x="-15.24" y="10.16" length="middle"/>
+<pin name="VDDH" x="-15.24" y="7.62" length="middle"/>
+<pin name="GND" x="-15.24" y="2.54" length="middle"/>
+<pin name="SDA" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="20.828" width="0.254" layer="94"/>
+<wire x1="10.16" y1="20.828" x2="-10.16" y2="20.828" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="20.828" x2="-10.16" y2="0" width="0.254" layer="94"/>
+<text x="0" y="17.78" size="2.54" layer="94" align="bottom-center">SCD40/41</text>
+<text x="0" y="15.24" size="1.778" layer="94" align="bottom-center">Vdd: 2.4-5.5V</text>
+<text x="0" y="12.7" size="1.778" layer="94" align="bottom-center">I2C: 0x62</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAMD20E" prefix="MCU" library_version="19" library_locally_modified="yes">
@@ -12082,12 +12136,12 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 </device>
 </devices>
 </deviceset>
-<deviceset name="BME680" uservalue="yes">
+<deviceset name="BME688" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="BME680" x="0" y="0"/>
+<gate name="G$1" symbol="BME688" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="BME680">
+<device name="" package="BME688">
 <connects>
 <connect gate="G$1" pin="CSB" pad="2"/>
 <connect gate="G$1" pin="GND1" pad="1"/>
@@ -16060,6 +16114,25 @@ Source:</description>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="5"/>
 <connect gate="G$1" pin="OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCD4X" prefix="A">
+<gates>
+<gate name="G$1" symbol="SCD4X" x="0" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="SCD4X">
+<connects>
+<connect gate="G$1" pin="GND" pad="6 20 P$5"/>
+<connect gate="G$1" pin="SCL" pad="9"/>
+<connect gate="G$1" pin="SDA" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VDDH" pad="19"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2499,16 +2499,15 @@ AA: 52.56x70.08mm</text>
 <wire x1="-1.9" y1="1.2" x2="-1.9" y2="-1.2" width="0" layer="20"/>
 <wire x1="-1.9" y1="-1.2" x2="-1.4" y2="-1.7" width="0" layer="20" curve="90"/>
 <wire x1="-1.4" y1="-1.7" x2="1.4" y2="-1.7" width="0" layer="20"/>
-<smd name="1_RED" x="-2.75" y="-0.75" dx="1.2" dy="1.2" layer="1"/>
-<smd name="4_GREEN" x="-2.75" y="0.75" dx="1.2" dy="1.2" layer="1"/>
-<smd name="2_ANODE" x="2.75" y="-0.75" dx="1.2" dy="1.2" layer="1"/>
-<smd name="3_BLUE" x="2.75" y="0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="1_BLUE" x="-2.75" y="-0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="3_ANODE" x="-2.75" y="0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="2_RED" x="2.75" y="-0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="4_GREEN" x="2.75" y="0.75" dx="1.2" dy="1.2" layer="1"/>
 <rectangle x1="-2.1" y1="-1.45" x2="2.1" y2="1.45" layer="29"/>
 <text x="0" y="0" size="0.4" layer="29" align="center">REVERSE
 MOUNT
 RGB LED</text>
 <text x="0" y="2" size="1.27" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
-<text x="-6.35" y="-2.54" size="1.27" layer="21">TODO: FIX PINOUT</text>
 </package>
 </packages>
 <symbols>
@@ -2572,10 +2571,10 @@ RGB LED</text>
 <text x="-1.778" y="-2.794" size="0.6096" layer="94" ratio="14">B</text>
 </symbol>
 <symbol name="LED-RGB-COMMON-ANODE">
-<pin name="A" x="-5.08" y="0" visible="pad" length="point"/>
-<pin name="RC" x="0" y="2.54" visible="pad" length="point" rot="R180"/>
-<pin name="GC" x="0" y="0" visible="pad" length="point" rot="R180"/>
-<pin name="BC" x="0" y="-2.54" visible="pad" length="point" rot="R180"/>
+<pin name="A" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="RC" x="0" y="2.54" visible="off" length="point" rot="R180"/>
+<pin name="GC" x="0" y="0" visible="off" length="point" rot="R180"/>
+<pin name="BC" x="0" y="-2.54" visible="off" length="point" rot="R180"/>
 <wire x1="-2.032" y1="-2.54" x2="-2.032" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="-2.032" y1="-1.524" x2="-0.508" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-0.508" y1="-2.54" x2="-2.032" y2="-3.556" width="0.254" layer="94"/>
@@ -4739,7 +4738,7 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <technology name=""/>
 </technologies>
 </device>
-<device name="6028_REVERSE" package="LED-RGB_6028_REVERSE_OLD">
+<device name="6028_REVERSE_OLD" package="LED-RGB_6028_REVERSE_OLD">
 <connects>
 <connect gate="G$1" pin="A" pad="2_ANODE"/>
 <connect gate="G$1" pin="BC" pad="3_BLUE"/>
@@ -4767,6 +4766,17 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connect gate="G$1" pin="BC" pad="2"/>
 <connect gate="G$1" pin="GC" pad="1"/>
 <connect gate="G$1" pin="RC" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="6028_REVERSE_NEW" package="LED-RGB_6028_REVERSE">
+<connects>
+<connect gate="G$1" pin="A" pad="3_ANODE"/>
+<connect gate="G$1" pin="BC" pad="1_BLUE"/>
+<connect gate="G$1" pin="GC" pad="4_GREEN"/>
+<connect gate="G$1" pin="RC" pad="2_RED"/>
 </connects>
 <technologies>
 <technology name=""/>

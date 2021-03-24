@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1451,10 +1451,10 @@
 <wire x1="-1.9" y1="1.2" x2="-1.9" y2="-1.2" width="0" layer="20"/>
 <wire x1="-1.9" y1="-1.2" x2="-1.4" y2="-1.7" width="0" layer="20" curve="90"/>
 <wire x1="-1.4" y1="-1.7" x2="1.4" y2="-1.7" width="0" layer="20"/>
-<smd name="1_RED" x="-2.75" y="-0.75" dx="1.2" dy="1.2" layer="1"/>
-<smd name="4_GREEN" x="-2.75" y="0.75" dx="1.2" dy="1.2" layer="1"/>
-<smd name="2_ANODE" x="2.75" y="-0.75" dx="1.2" dy="1.2" layer="1"/>
-<smd name="3_BLUE" x="2.75" y="0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="1R" x="-2.75" y="-0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="4G" x="-2.75" y="0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="2A" x="2.75" y="-0.75" dx="1.2" dy="1.2" layer="1"/>
+<smd name="3B" x="2.75" y="0.75" dx="1.2" dy="1.2" layer="1"/>
 <rectangle x1="-2.1" y1="-1.45" x2="2.1" y2="1.45" layer="29"/>
 <text x="0" y="0" size="0.4" layer="29" align="center">REVERSE
 MOUNT
@@ -4740,10 +4740,10 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 </device>
 <device name="6028_REVERSE_OLD" package="LED-RGB_6028_REVERSE_OLD">
 <connects>
-<connect gate="G$1" pin="A" pad="2_ANODE"/>
-<connect gate="G$1" pin="BC" pad="3_BLUE"/>
-<connect gate="G$1" pin="GC" pad="4_GREEN"/>
-<connect gate="G$1" pin="RC" pad="1_RED"/>
+<connect gate="G$1" pin="A" pad="2A"/>
+<connect gate="G$1" pin="BC" pad="3B"/>
+<connect gate="G$1" pin="GC" pad="4G"/>
+<connect gate="G$1" pin="RC" pad="1R"/>
 </connects>
 <technologies>
 <technology name=""/>

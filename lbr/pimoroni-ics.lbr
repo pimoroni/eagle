@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4633,6 +4633,38 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="0.8" y1="-0.8" x2="-0.8" y2="-0.8" width="0.05" layer="51"/>
 <wire x1="-0.8" y1="0.5" x2="0.8" y2="0.5" width="0.05" layer="51"/>
 <wire x1="0.8" y1="-0.5" x2="-0.8" y2="-0.5" width="0.05" layer="51"/>
+</package>
+<package name="WQFN24-4X4MM">
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="51"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="51"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="51"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="51"/>
+<smd name="PAD" x="0" y="0" dx="2.45" dy="2.45" layer="1" roundness="5"/>
+<smd name="1" x="-1.9" y="1.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="2" x="-1.9" y="0.75" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="3" x="-1.9" y="0.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="4" x="-1.9" y="-0.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="5" x="-1.9" y="-0.75" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="6" x="-1.9" y="-1.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="7" x="-1.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
+<smd name="8" x="-0.75" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
+<smd name="9" x="-0.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
+<smd name="10" x="0.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
+<smd name="11" x="0.75" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
+<smd name="12" x="1.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
+<smd name="13" x="1.9" y="-1.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
+<smd name="14" x="1.9" y="-0.75" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
+<smd name="15" x="1.9" y="-0.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
+<smd name="16" x="1.9" y="0.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
+<smd name="17" x="1.9" y="0.75" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
+<smd name="18" x="1.9" y="1.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
+<smd name="19" x="1.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
+<smd name="20" x="0.75" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
+<smd name="21" x="0.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
+<smd name="22" x="-0.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
+<smd name="23" x="-0.75" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
+<smd name="24" x="-1.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
+<circle x="-1.9" y="1.8" radius="0.2" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -9875,6 +9907,27 @@ active low</text>
 <text x="0" y="17.78" size="2.54" layer="94" align="bottom-center">SCD40/41</text>
 <text x="0" y="15.24" size="1.778" layer="94" align="bottom-center">Vdd: 2.4-5.5V</text>
 <text x="0" y="12.7" size="1.778" layer="94" align="bottom-center">I2C: 0x62</text>
+</symbol>
+<symbol name="TPS54A24">
+<pin name="VIN" x="-15.24" y="5.08" length="middle"/>
+<pin name="EN" x="-15.24" y="0" length="middle"/>
+<pin name="PGOOD" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SS/TRK" x="-15.24" y="-5.08" length="middle"/>
+<pin name="RT/CLK" x="-15.24" y="-7.62" length="middle"/>
+<pin name="COMP" x="-15.24" y="-10.16" length="middle"/>
+<pin name="PGND" x="-15.24" y="-15.24" length="middle"/>
+<pin name="AGND" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="FB" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="SW" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="BOOT" x="15.24" y="5.08" length="middle" rot="R180"/>
+<text x="0" y="15.24" size="2.54" layer="94" align="bottom-center">TPS54A24</text>
+<text x="0" y="12.7" size="1.778" layer="94" align="bottom-center">Vin: 4.5 - 17V</text>
+<text x="0" y="10.16" size="1.778" layer="94" align="bottom-center">Vout: 0.6 - 12V</text>
+<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">Iout: 10A max</text>
+<wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="18.542" width="0.254" layer="94"/>
+<wire x1="10.16" y1="18.542" x2="-10.16" y2="18.542" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="18.542" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16172,6 +16225,31 @@ Source:</description>
 <connect gate="G$1" pin="SDA" pad="10"/>
 <connect gate="G$1" pin="VDD" pad="7"/>
 <connect gate="G$1" pin="VDDH" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS54A24" prefix="U">
+<gates>
+<gate name="G$1" symbol="TPS54A24" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WQFN24-4X4MM">
+<connects>
+<connect gate="G$1" pin="AGND" pad="1"/>
+<connect gate="G$1" pin="BOOT" pad="18"/>
+<connect gate="G$1" pin="COMP" pad="22"/>
+<connect gate="G$1" pin="EN" pad="20"/>
+<connect gate="G$1" pin="FB" pad="23"/>
+<connect gate="G$1" pin="PGND" pad="4 5 6 7 12 13 14 15 PAD"/>
+<connect gate="G$1" pin="PGOOD" pad="19"/>
+<connect gate="G$1" pin="RT/CLK" pad="24"/>
+<connect gate="G$1" pin="SS/TRK" pad="21"/>
+<connect gate="G$1" pin="SW" pad="8 9 10 11"/>
+<connect gate="G$1" pin="VIN" pad="2 3 16 17"/>
 </connects>
 <technologies>
 <technology name=""/>

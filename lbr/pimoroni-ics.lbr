@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -9929,6 +9929,37 @@ active low</text>
 <wire x1="10.16" y1="18.542" x2="-10.16" y2="18.542" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="18.542" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
 </symbol>
+<symbol name="DRV8424PRGER">
+<pin name="VM" x="-15.24" y="35.56" length="middle"/>
+<pin name="VCP" x="-15.24" y="30.48" length="middle"/>
+<pin name="CPH" x="-15.24" y="25.4" length="middle"/>
+<pin name="CPL" x="-15.24" y="20.32" length="middle"/>
+<pin name="AIN1" x="-15.24" y="7.62" length="middle"/>
+<pin name="AIN2" x="-15.24" y="5.08" length="middle"/>
+<pin name="BIN1" x="-15.24" y="2.54" length="middle"/>
+<pin name="BIN2" x="-15.24" y="0" length="middle"/>
+<pin name="NSLEEP" x="-15.24" y="-5.08" length="middle"/>
+<pin name="ADECAY" x="-15.24" y="-10.16" length="middle"/>
+<pin name="BDECAY" x="-15.24" y="-12.7" length="middle"/>
+<pin name="TOFF" x="-15.24" y="-15.24" length="middle"/>
+<pin name="VREFA" x="-15.24" y="-20.32" length="middle"/>
+<pin name="VREFB" x="-15.24" y="-22.86" length="middle"/>
+<pin name="GND" x="-15.24" y="-33.02" length="middle"/>
+<pin name="NFAULT" x="-15.24" y="-27.94" length="middle"/>
+<pin name="DVDD" x="-15.24" y="15.24" length="middle"/>
+<pin name="AOUT1" x="15.24" y="27.94" length="middle" rot="R180"/>
+<pin name="AOUT2" x="15.24" y="22.86" length="middle" rot="R180"/>
+<pin name="BOUT1" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="BOUT2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-35.56" x2="10.16" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-35.56" x2="10.16" y2="48.768" width="0.254" layer="94"/>
+<wire x1="10.16" y1="48.768" x2="-10.16" y2="48.768" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="48.768" x2="-10.16" y2="-35.56" width="0.254" layer="94"/>
+<text x="0" y="45.72" size="2.54" layer="94" align="bottom-center">DRV8424P</text>
+<text x="0" y="43.18" size="1.778" layer="94" align="bottom-center">Vm: 4.5 - 33V</text>
+<text x="0" y="40.64" size="1.778" layer="94" align="bottom-center">Vref: 0.05 - 3.3V</text>
+<text x="0" y="38.1" size="1.778" layer="94" align="bottom-center">Vl: 0 - 5.5V</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAMD20E" prefix="MCU" library_version="19" library_locally_modified="yes">
@@ -16250,6 +16281,41 @@ Source:</description>
 <connect gate="G$1" pin="SS/TRK" pad="21"/>
 <connect gate="G$1" pin="SW" pad="8 9 10 11"/>
 <connect gate="G$1" pin="VIN" pad="2 3 16 17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DRV8424PRGER" prefix="U">
+<gates>
+<gate name="G$1" symbol="DRV8424PRGER" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="WQFN24-4X4MM">
+<connects>
+<connect gate="G$1" pin="ADECAY" pad="16"/>
+<connect gate="G$1" pin="AIN1" pad="20"/>
+<connect gate="G$1" pin="AIN2" pad="19"/>
+<connect gate="G$1" pin="AOUT1" pad="3"/>
+<connect gate="G$1" pin="AOUT2" pad="4"/>
+<connect gate="G$1" pin="BDECAY" pad="15"/>
+<connect gate="G$1" pin="BIN1" pad="18"/>
+<connect gate="G$1" pin="BIN2" pad="17"/>
+<connect gate="G$1" pin="BOUT1" pad="6"/>
+<connect gate="G$1" pin="BOUT2" pad="5"/>
+<connect gate="G$1" pin="CPH" pad="23"/>
+<connect gate="G$1" pin="CPL" pad="22"/>
+<connect gate="G$1" pin="DVDD" pad="10"/>
+<connect gate="G$1" pin="GND" pad="2 7 9 PAD"/>
+<connect gate="G$1" pin="NFAULT" pad="11"/>
+<connect gate="G$1" pin="NSLEEP" pad="21"/>
+<connect gate="G$1" pin="TOFF" pad="14"/>
+<connect gate="G$1" pin="VCP" pad="24"/>
+<connect gate="G$1" pin="VM" pad="1 8"/>
+<connect gate="G$1" pin="VREFA" pad="13"/>
+<connect gate="G$1" pin="VREFB" pad="12"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4639,31 +4639,31 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="51"/>
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="51"/>
 <wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="51"/>
-<smd name="PAD" x="0" y="0" dx="2.45" dy="2.45" layer="1" roundness="5"/>
-<smd name="1" x="-1.9" y="1.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
-<smd name="2" x="-1.9" y="0.75" dx="0.6" dy="0.24" layer="1" roundness="30"/>
-<smd name="3" x="-1.9" y="0.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
-<smd name="4" x="-1.9" y="-0.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
-<smd name="5" x="-1.9" y="-0.75" dx="0.6" dy="0.24" layer="1" roundness="30"/>
-<smd name="6" x="-1.9" y="-1.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
-<smd name="7" x="-1.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
-<smd name="8" x="-0.75" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
-<smd name="9" x="-0.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
-<smd name="10" x="0.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
-<smd name="11" x="0.75" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
-<smd name="12" x="1.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90"/>
-<smd name="13" x="1.9" y="-1.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
-<smd name="14" x="1.9" y="-0.75" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
-<smd name="15" x="1.9" y="-0.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
-<smd name="16" x="1.9" y="0.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
-<smd name="17" x="1.9" y="0.75" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
-<smd name="18" x="1.9" y="1.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180"/>
-<smd name="19" x="1.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
-<smd name="20" x="0.75" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
-<smd name="21" x="0.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
-<smd name="22" x="-0.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
-<smd name="23" x="-0.75" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
-<smd name="24" x="-1.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270"/>
+<smd name="PAD" x="0" y="0" dx="2.45" dy="2.45" layer="1" roundness="5" thermals="no"/>
+<smd name="1" x="-1.9" y="1.25" dx="0.6" dy="0.24" layer="1" roundness="30" thermals="no"/>
+<smd name="2" x="-1.9" y="0.75" dx="0.6" dy="0.24" layer="1" roundness="30" thermals="no"/>
+<smd name="3" x="-1.9" y="0.25" dx="0.6" dy="0.24" layer="1" roundness="30" thermals="no"/>
+<smd name="4" x="-1.9" y="-0.25" dx="0.6" dy="0.24" layer="1" roundness="30" thermals="no"/>
+<smd name="5" x="-1.9" y="-0.75" dx="0.6" dy="0.24" layer="1" roundness="30" thermals="no"/>
+<smd name="6" x="-1.9" y="-1.25" dx="0.6" dy="0.24" layer="1" roundness="30" thermals="no"/>
+<smd name="7" x="-1.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90" thermals="no"/>
+<smd name="8" x="-0.75" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90" thermals="no"/>
+<smd name="9" x="-0.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90" thermals="no"/>
+<smd name="10" x="0.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90" thermals="no"/>
+<smd name="11" x="0.75" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90" thermals="no"/>
+<smd name="12" x="1.25" y="-1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R90" thermals="no"/>
+<smd name="13" x="1.9" y="-1.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180" thermals="no"/>
+<smd name="14" x="1.9" y="-0.75" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180" thermals="no"/>
+<smd name="15" x="1.9" y="-0.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180" thermals="no"/>
+<smd name="16" x="1.9" y="0.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180" thermals="no"/>
+<smd name="17" x="1.9" y="0.75" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180" thermals="no"/>
+<smd name="18" x="1.9" y="1.25" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R180" thermals="no"/>
+<smd name="19" x="1.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270" thermals="no"/>
+<smd name="20" x="0.75" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270" thermals="no"/>
+<smd name="21" x="0.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270" thermals="no"/>
+<smd name="22" x="-0.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270" thermals="no"/>
+<smd name="23" x="-0.75" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270" thermals="no"/>
+<smd name="24" x="-1.25" y="1.9" dx="0.6" dy="0.24" layer="1" roundness="30" rot="R270" thermals="no"/>
 <circle x="-1.9" y="1.8" radius="0.2" width="0" layer="21"/>
 </package>
 </packages>

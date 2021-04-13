@@ -10932,7 +10932,7 @@ ADDR -&gt; GND  = 0x76</description>
 <gate name="G$1" symbol="M74VHC1GT125DT1G" x="5.08" y="-2.54"/>
 </gates>
 <devices>
-<device name="NON_INVERTING_M74VHC1GT125DT1G" package="SOT-23-5">
+<device name="NON_INVERTING_SN74LVC1G125DBVR" package="SOT-23-5">
 <connects>
 <connect gate="G$1" pin="!OE" pad="1"/>
 <connect gate="G$1" pin="GND" pad="3"/>
@@ -12334,19 +12334,7 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 <gate name="G$1" symbol="LDO_5PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="AP7380-XXW5" package="SOT-23-5">
-<connects>
-<connect gate="G$1" pin="CTRL" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="NC" pad="4"/>
-<connect gate="G$1" pin="VIN" pad="1"/>
-<connect gate="G$1" pin="VOUT" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="LP5907MFX" package="SOT-23-5">
+<device name="SOT-23-5" package="SOT-23-5">
 <connects>
 <connect gate="G$1" pin="CTRL" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>

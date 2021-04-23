@@ -1774,7 +1774,7 @@ package type SS</description>
 <wire x1="2.45" y1="1.95" x2="2.45" y2="-1.95" width="0.2032" layer="51"/>
 <wire x1="2.45" y1="-1.95" x2="-2.45" y2="-1.95" width="0.2032" layer="51"/>
 <wire x1="-2.45" y1="-1.95" x2="-2.45" y2="1.95" width="0.2032" layer="51"/>
-<circle x="-1.685" y="-0.495" radius="0.39" width="0.2032" layer="21"/>
+<circle x="-1.7713625" y="-1.14778125" radius="0.39" width="0" layer="21"/>
 <smd name="1" x="-2.2225" y="-2.7" dx="0.3" dy="1.6" layer="1"/>
 <smd name="2" x="-1.5875" y="-2.7" dx="0.3" dy="1.6" layer="1"/>
 <smd name="3" x="-0.9525" y="-2.7" dx="0.3" dy="1.6" layer="1"/>
@@ -10414,6 +10414,16 @@ Built-in current-limit and thermal-shutdown functions prevent IC from damage in 
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="2"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_AP2138N-3.3TRG1" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

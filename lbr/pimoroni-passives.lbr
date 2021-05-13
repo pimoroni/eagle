@@ -1520,7 +1520,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAPACITOR" prefix="C" uservalue="yes">
+<deviceset name="CAPACITOR-POLARISED" prefix="C" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CPOL" x="0" y="0"/>
 </gates>

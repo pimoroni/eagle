@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -4106,6 +4106,8 @@ from this side</text>
 <text x="-3.3" y="0" size="1" layer="25" font="vector" ratio="14" rot="R90" align="bottom-center">&gt;NAME</text>
 <pad name="PTH" x="0" y="0" drill="1"/>
 <wire x1="1.27" y1="-0.95" x2="1.27" y2="0.95" width="0.127" layer="52"/>
+<rectangle x1="-1.85" y1="0.95" x2="0.95" y2="1.35" layer="42"/>
+<rectangle x1="-1.85" y1="-1.35" x2="0.95" y2="-0.95" layer="42"/>
 <rectangle x1="-1.85" y1="0.95" x2="0.95" y2="1.35" layer="41"/>
 <rectangle x1="-1.85" y1="-1.35" x2="0.95" y2="-0.95" layer="41"/>
 </package>

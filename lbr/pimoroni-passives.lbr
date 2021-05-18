@@ -29,7 +29,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -634,6 +634,41 @@
 <smd name="2" x="2.85" y="0" dx="1.9" dy="3.5" layer="1"/>
 <wire x1="-2.05" y1="1.5" x2="-2.05" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="2.05" y1="1.5" x2="2.05" y2="-1.5" width="0.127" layer="51"/>
+</package>
+<package name="DFN3X3_1212-8">
+<smd name="1" x="-1.53" y="0.975" dx="0.8" dy="0.4" layer="1" thermals="no"/>
+<smd name="2" x="-1.53" y="0.325" dx="0.8" dy="0.4" layer="1" thermals="no"/>
+<smd name="3" x="-1.53" y="-0.325" dx="0.8" dy="0.4" layer="1" thermals="no"/>
+<smd name="4" x="-1.53" y="-0.975" dx="0.8" dy="0.4" layer="1" thermals="no"/>
+<smd name="5" x="1.43" y="-0.975" dx="1" dy="0.4" layer="1" thermals="no" cream="no"/>
+<smd name="6" x="1.43" y="-0.325" dx="1" dy="0.4" layer="1" thermals="no" cream="no"/>
+<smd name="7" x="1.43" y="0.325" dx="1" dy="0.4" layer="1" thermals="no" cream="no"/>
+<smd name="8" x="1.43" y="0.975" dx="1" dy="0.4" layer="1" thermals="no" cream="no"/>
+<smd name="PAD" x="0.45" y="0" dx="1.725" dy="2.235" layer="1" thermals="no" cream="no"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<rectangle x1="1.425" y1="0.825" x2="1.875" y2="1.125" layer="31"/>
+<rectangle x1="1.425" y1="0.175" x2="1.875" y2="0.475" layer="31"/>
+<rectangle x1="1.425" y1="-0.475" x2="1.875" y2="-0.175" layer="31"/>
+<rectangle x1="1.425" y1="-1.125" x2="1.875" y2="-0.825" layer="31"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="1.35" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.2" y2="1.5" width="0.2" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="1.35" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.2" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="-1.35" width="0.2" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.2" y2="1.5" width="0.2" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.2" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="-1.35" width="0.2" layer="21"/>
+<text x="0" y="1.882" size="1.27" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<smd name="PAD2" x="-0.2" y="0" dx="0.43" dy="3.2" layer="1" thermals="no" cream="no"/>
+<rectangle x1="-0.3" y1="-0.3" x2="0.3" y2="0.3" layer="31"/>
+<rectangle x1="0.6" y1="-0.3" x2="1.2" y2="0.3" layer="31"/>
+<rectangle x1="-0.3" y1="0.6" x2="0.3" y2="1" layer="31"/>
+<rectangle x1="0.6" y1="0.6" x2="1.2" y2="1" layer="31"/>
+<rectangle x1="0.6" y1="-1" x2="1.2" y2="-0.6" layer="31"/>
+<rectangle x1="-0.3" y1="-1" x2="0.3" y2="-0.6" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -1435,6 +1470,16 @@
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SISA40DN-T1-GE3" package="DFN3X3_1212-8">
+<connects>
+<connect gate="G$1" pin="D" pad="5 6 7 8 PAD PAD2"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>

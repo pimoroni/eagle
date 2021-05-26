@@ -207,6 +207,12 @@
 <wire x1="0" y1="-1.778" x2="1.778" y2="0" width="0.254" layer="94"/>
 <text x="0" y="-3.81" size="1.778" layer="95" align="bottom-center">AGND</text>
 </symbol>
+<symbol name="V+_AO">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="0" y="0.508" size="1.524" layer="96" font="vector" ratio="14" align="bottom-center">V+_AO</text>
+<pin name="V+_AO" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -485,6 +491,18 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="AGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="V+_ALWAYS_ON">
+<gates>
+<gate name="G$1" symbol="V+_AO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

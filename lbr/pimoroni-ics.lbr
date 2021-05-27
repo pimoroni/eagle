@@ -5999,14 +5999,15 @@ pull-up</text>
 <pin name="SW" x="15.24" y="0" length="middle" rot="R180"/>
 <pin name="BST" x="15.24" y="5.08" length="middle" rot="R180"/>
 <pin name="GND" x="-15.24" y="-5.08" length="middle"/>
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="16.002" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="16.002" x2="10.16" y2="16.002" width="0.254" layer="94"/>
-<wire x1="10.16" y1="16.002" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="18.542" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="18.542" x2="10.16" y2="18.542" width="0.254" layer="94"/>
+<wire x1="10.16" y1="18.542" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<text x="-8.89" y="17.018" size="2.54" layer="97">&gt;NAME</text>
-<text x="0" y="12.7" size="2.54" layer="94" align="bottom-center">AP62150</text>
-<text x="0" y="10.16" size="1.778" layer="94" align="bottom-center">Vin: 4.2-18V</text>
-<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">Vout: 0.8 - 7V</text>
+<text x="-8.89" y="19.558" size="2.54" layer="97">&gt;NAME</text>
+<text x="0" y="15.24" size="2.54" layer="94" align="bottom-center">AP62150</text>
+<text x="0" y="12.7" size="1.778" layer="94" align="bottom-center">Vin: 4.2-18V</text>
+<text x="0" y="10.16" size="1.778" layer="94" align="bottom-center">Vout: 0.8 - 7V</text>
+<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">Iout max: 1.5A</text>
 </symbol>
 <symbol name="IS31FL3731-SALS2">
 <pin name="CA1" x="17.78" y="22.86" length="middle" rot="R180"/>

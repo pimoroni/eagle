@@ -241,7 +241,7 @@
 <wire x1="5.645" y1="4.32" x2="5.645" y2="-4.32" width="0.1524" layer="51"/>
 <wire x1="5.645" y1="-4.32" x2="-2.175" y2="-4.32" width="0.1524" layer="51"/>
 </package>
-<package name="PGA204_PTH_NO_SLOT">
+<package name="PGA2040_PTH_NO_SLOT">
 <pad name="A1" x="-8.89" y="8.89" drill="1.016" diameter="1.778"/>
 <pad name="A2" x="-6.35" y="8.89" drill="1.016" diameter="1.778"/>
 <pad name="A3" x="-3.81" y="8.89" drill="1.016" diameter="1.778"/>
@@ -416,7 +416,7 @@
 <wire x1="10.16" y1="8.89" x2="10.16" y2="-8.89" width="0.2" layer="21"/>
 <wire x1="10.16" y1="-8.89" x2="8.89" y2="-10.16" width="0.2" layer="21" curve="-90"/>
 </package>
-<package name="PGA204_PTH_WITH_SLOT">
+<package name="PGA2040_PTH_WITH_SLOT">
 <pad name="A1" x="-8.89" y="8.89" drill="1.016" diameter="1.778"/>
 <pad name="A2" x="-6.35" y="8.89" drill="1.016" diameter="1.778"/>
 <pad name="A3" x="-3.81" y="8.89" drill="1.016" diameter="1.778"/>
@@ -599,7 +599,7 @@
 <wire x1="-4.08" y1="-5.08" x2="4.08" y2="-5.08" width="0.127" layer="20"/>
 <wire x1="4.08" y1="-5.08" x2="5.08" y2="-4.08" width="0.127" layer="20" curve="90"/>
 </package>
-<package name="PGA204_SMT_WITH_SLOT">
+<package name="PGA2040_SMT_WITH_SLOT">
 <wire x1="-3.269771875" y1="9.430228125" x2="-2.729540625" y2="8.89" width="0.25" layer="220"/>
 <wire x1="-2.729540625" y1="8.89" x2="-3.269771875" y2="8.349771875" width="0.25" layer="220"/>
 <wire x1="-2.729540625" y1="8.89" x2="-3.269771875" y2="8.89" width="0.25" layer="220"/>
@@ -906,7 +906,7 @@
 <gate name="G$1" symbol="PGA2040" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_PTH_NO_SLOT" package="PGA204_PTH_NO_SLOT">
+<device name="_PTH_NO_SLOT" package="PGA2040_PTH_NO_SLOT">
 <connects>
 <connect gate="G$1" pin="3V3" pad="B3"/>
 <connect gate="G$1" pin="3V3_EN" pad="A3"/>
@@ -954,7 +954,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="_PTH_WITH_SLOT" package="PGA204_PTH_WITH_SLOT">
+<device name="_PTH_WITH_SLOT" package="PGA2040_PTH_WITH_SLOT">
 <connects>
 <connect gate="G$1" pin="3V3" pad="B3"/>
 <connect gate="G$1" pin="3V3_EN" pad="A3"/>
@@ -1002,7 +1002,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="_SMT_WITH_SLOT" package="PGA204_SMT_WITH_SLOT">
+<device name="_SMT_WITH_SLOT" package="PGA2040_SMT_WITH_SLOT">
 <connects>
 <connect gate="G$1" pin="3V3" pad="B3"/>
 <connect gate="G$1" pin="3V3_EN" pad="A3"/>

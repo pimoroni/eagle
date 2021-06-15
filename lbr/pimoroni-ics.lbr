@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -430,7 +430,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="22" x="-0.25" y="2" dx="0.8" dy="0.23" layer="1" roundness="25" rot="R270"/>
 <smd name="23" x="-0.75" y="2" dx="0.8" dy="0.23" layer="1" roundness="25" rot="R270"/>
 <smd name="24" x="-1.25" y="2" dx="0.8" dy="0.23" layer="1" roundness="25" rot="R270"/>
-<smd name="PAD" x="0" y="0" dx="2.6" dy="2.6" layer="1" cream="no"/>
+<smd name="PAD" x="0" y="0" dx="2.6" dy="2.6" layer="1" thermals="no" cream="no"/>
 <text x="0" y="2.7" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.1" y1="0.3" x2="-0.3" y2="1.1" layer="31"/>
 <rectangle x1="0.3" y1="0.3" x2="1.1" y2="1.1" layer="31"/>
@@ -10507,7 +10507,7 @@ Vdvdd: 3-5.5V</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN3218A">
+<deviceset name="SN3218A" prefix="U">
 <gates>
 <gate name="G$1" symbol="SN3218A" x="0" y="2.54"/>
 </gates>
@@ -13006,7 +13006,7 @@ The IC is available in a 14-pin TDFN (3mm x 3mm x
 </device>
 </devices>
 </deviceset>
-<deviceset name="74LVC2G17GW,125" prefix="U" uservalue="yes">
+<deviceset name="74LVC2G17GW,125" prefix="U">
 <gates>
 <gate name="G$1" symbol="DUALBUFFER" x="0" y="0"/>
 </gates>

@@ -13887,6 +13887,11 @@
 <vertex x="0.5" y="0.2"/>
 </polygon>
 </package>
+<package name="M2/#2-MOUNTING-HOLE-WITH-MASK">
+<hole x="0" y="0" drill="2.3"/>
+<circle x="0" y="0" radius="2.6" width="0" layer="41"/>
+<circle x="0" y="0" radius="2.6" width="0" layer="42"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SOLDER_CATCHER">

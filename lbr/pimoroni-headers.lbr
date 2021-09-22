@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="3.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4297,6 +4297,12 @@ from this side</text>
 <wire x1="2.54" y1="-3.81" x2="-2.54" y2="-3.81" width="0.127" layer="51"/>
 <wire x1="-2.54" y1="-3.81" x2="-2.54" y2="3.81" width="0.127" layer="51"/>
 </package>
+<package name="1X1-M2.5-THREADED-STUD-NO-HOLE">
+<smd name="1" x="0" y="0" dx="5.6" dy="5.6" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="1.5" width="0.05" layer="51"/>
+<circle x="0" y="0" radius="1.92" width="0.8" layer="29"/>
+<circle x="0" y="0" radius="1.92" width="0.6" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1X2">
@@ -6615,6 +6621,14 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <device name="M2-MINI" package="1X1-M2.0-THREADED-STUD-MINI">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M2.5-NO-HOLE" package="1X1-M2.5-THREADED-STUD-NO-HOLE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

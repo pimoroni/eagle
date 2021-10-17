@@ -29,7 +29,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -4736,6 +4736,37 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="1.75" y1="-1.25" x2="1.5" y2="-1.25" width="0.2" layer="21"/>
 <wire x1="-1.5" y1="-1.25" x2="-1.75" y2="-1.25" width="0.2" layer="21"/>
 <wire x1="-1.75" y1="-1.25" x2="-1.75" y2="-1" width="0.2" layer="21"/>
+</package>
+<package name="LORA-E5">
+<smd name="25" x="0" y="6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="11" x="0" y="-6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="4" x="-6" y="0" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="18" x="6" y="0" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="5" x="-6" y="-1.25" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="3" x="-6" y="1.25" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="2" x="-6" y="2.5" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="6" x="-6" y="-2.5" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="7" x="-6" y="-3.75" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="1" x="-6" y="3.75" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="10" x="-1.25" y="-6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="9" x="-2.5" y="-6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="8" x="-3.75" y="-6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="12" x="1.25" y="-6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="13" x="2.5" y="-6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="14" x="3.75" y="-6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="19" x="6" y="1.25" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="20" x="6" y="2.5" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="21" x="6" y="3.75" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="17" x="6" y="-1.25" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="16" x="6" y="-2.5" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="15" x="6" y="-3.75" dx="2.3" dy="1" layer="1" rot="R180"/>
+<smd name="26" x="-1.25" y="6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="27" x="-2.5" y="6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="28" x="-3.75" y="6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="24" x="1.25" y="6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="23" x="2.5" y="6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<smd name="22" x="3.75" y="6" dx="2.3" dy="1" layer="1" rot="R90"/>
+<circle x="-3.5" y="3.5" radius="0.70710625" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -10185,6 +10216,38 @@ I2C 0x51</text>
 <wire x1="-10.16" y1="19.05" x2="12.7" y2="19.05" width="0.254" layer="94"/>
 <wire x1="12.7" y1="19.05" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
 <text x="-8.89" y="20.32" size="2.54" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="LORA-E5">
+<wire x1="-17.78" y1="20.32" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="20.32" x2="17.78" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-22.86" x2="-17.78" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-22.86" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<text x="10.16" y="-25.4" size="1.778" layer="94">LoRa-E5</text>
+<pin name="PA2" x="-22.86" y="5.08" length="middle"/>
+<pin name="PA3" x="-22.86" y="2.54" length="middle"/>
+<pin name="PA9" x="-22.86" y="0" length="middle"/>
+<pin name="PA10" x="-22.86" y="-2.54" length="middle"/>
+<pin name="PA13" x="-22.86" y="-5.08" length="middle"/>
+<pin name="PA14" x="-22.86" y="-7.62" length="middle"/>
+<pin name="PA15" x="-22.86" y="-10.16" length="middle"/>
+<pin name="PB0" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="PB3" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="PB4" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="PA0" x="-22.86" y="7.62" length="middle"/>
+<pin name="PB5" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="PB6" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="PB7" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="PB9" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="PB10" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="VCC" x="0" y="25.4" length="middle" rot="R270"/>
+<pin name="RFIO" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-27.94" length="middle" rot="R90"/>
+<pin name="PB13" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="PB14" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="PB15" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="PC0" x="-22.86" y="-12.7" length="middle"/>
+<pin name="PC1" x="-22.86" y="-15.24" length="middle"/>
+<pin name="RESET" x="-22.86" y="15.24" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16749,6 +16812,45 @@ Source:</description>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="SW" pad="5"/>
 <connect gate="G$1" pin="VIN" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LORA-E5">
+<gates>
+<gate name="G$1" symbol="LORA-E5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LORA-E5">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 14 16 22"/>
+<connect gate="G$1" pin="PA0" pad="23"/>
+<connect gate="G$1" pin="PA10" pad="27"/>
+<connect gate="G$1" pin="PA13" pad="3"/>
+<connect gate="G$1" pin="PA14" pad="4"/>
+<connect gate="G$1" pin="PA15" pad="6"/>
+<connect gate="G$1" pin="PA2" pad="19"/>
+<connect gate="G$1" pin="PA3" pad="18"/>
+<connect gate="G$1" pin="PA9" pad="21"/>
+<connect gate="G$1" pin="PB0" pad="28"/>
+<connect gate="G$1" pin="PB10" pad="20"/>
+<connect gate="G$1" pin="PB13" pad="24"/>
+<connect gate="G$1" pin="PB14" pad="26"/>
+<connect gate="G$1" pin="PB15" pad="5"/>
+<connect gate="G$1" pin="PB3" pad="8"/>
+<connect gate="G$1" pin="PB4" pad="7"/>
+<connect gate="G$1" pin="PB5" pad="11"/>
+<connect gate="G$1" pin="PB6" pad="10"/>
+<connect gate="G$1" pin="PB7" pad="9"/>
+<connect gate="G$1" pin="PB9" pad="25"/>
+<connect gate="G$1" pin="PC0" pad="13"/>
+<connect gate="G$1" pin="PC1" pad="12"/>
+<connect gate="G$1" pin="RESET" pad="17"/>
+<connect gate="G$1" pin="RFIO" pad="15"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

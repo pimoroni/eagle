@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -28,7 +28,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -59,8 +59,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -2556,6 +2556,33 @@ RGB LED</text>
 MOUNT
 RGB LED</text>
 <text x="0" y="2" size="1.27" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="EPD_29">
+<wire x1="-33.45" y1="14.53" x2="33.45" y2="14.53" width="0.2" layer="51"/>
+<wire x1="33.45" y1="14.53" x2="33.45" y2="-14.53" width="0.2" layer="51"/>
+<wire x1="33.45" y1="-14.53" x2="-33.45" y2="-14.53" width="0.2" layer="51"/>
+<wire x1="-33.45" y1="-14.53" x2="-33.45" y2="14.53" width="0.2" layer="51"/>
+<wire x1="36.8" y1="18.35" x2="36.8" y2="-18.35" width="0.2" layer="51"/>
+<wire x1="-42.2" y1="18.35" x2="-42.2" y2="-18.35" width="0.2" layer="51"/>
+<wire x1="-42.2" y1="18.35" x2="36.8" y2="18.35" width="0.2" layer="51"/>
+<wire x1="-42.2" y1="-18.35" x2="36.8" y2="-18.35" width="0.2" layer="51"/>
+<wire x1="-50.855" y1="7.265" x2="43.59" y2="7.265" width="0.05" layer="51" style="shortdash"/>
+<wire x1="-50.855" y1="0" x2="43.59" y2="0" width="0.05" layer="51" style="shortdash"/>
+<wire x1="-50.855" y1="-7.265" x2="43.59" y2="-7.265" width="0.05" layer="51" style="shortdash"/>
+<wire x1="16.725" y1="25" x2="16.725" y2="-25" width="0.05" layer="51" style="shortdash"/>
+<wire x1="0" y1="25" x2="0" y2="-25" width="0.05" layer="51" style="shortdash"/>
+<wire x1="-16.725" y1="25" x2="-16.725" y2="-25" width="0.05" layer="51" style="shortdash"/>
+<wire x1="-42.2" y1="8" x2="-40" y2="5.68" width="0.2" layer="52"/>
+<wire x1="-42.2" y1="-8" x2="-40" y2="-6.82" width="0.2" layer="52"/>
+<wire x1="-40" y1="-6.82" x2="-36.2" y2="-6.82" width="0.2" layer="52"/>
+<wire x1="-40" y1="5.68" x2="-36.2" y2="5.68" width="0.2" layer="52"/>
+<wire x1="-36.2" y1="5.68" x2="-36.2" y2="-0.57" width="0.2" layer="52"/>
+<wire x1="-36.2" y1="-0.57" x2="-36.2" y2="-6.82" width="0.2" layer="52"/>
+<wire x1="-40" y1="-0.57" x2="-36.2" y2="-0.57" width="0.03" layer="52" style="shortdash"/>
+<wire x1="-42.7" y1="8" x2="-42.7" y2="-8" width="0.03" layer="52" style="shortdash"/>
+<text x="-37" y="5" size="0.5" layer="52" rot="MR0">pin 1 NC</text>
+<text x="-36.8" y="-6.4" size="0.5" layer="52" rot="MR0">pin 24 VCOM</text>
+<text x="-38.9" y="-7.6" size="0.5" layer="52" rot="MR180">Bottom contact</text>
 </package>
 </packages>
 <symbols>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10249,6 +10249,32 @@ I2C 0x51</text>
 <pin name="PC1" x="-22.86" y="-15.24" length="middle"/>
 <pin name="RESET" x="-22.86" y="15.24" length="middle"/>
 </symbol>
+<symbol name="NAU8325">
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<pin name="SPK_VDD" x="-15.24" y="15.24" visible="pin" length="short" direction="pwr"/>
+<pin name="SPK_GND" x="-15.24" y="-5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="IO_GND" x="-15.24" y="-7.62" visible="pin" length="short" direction="pwr"/>
+<pin name="IO_VDD" x="-15.24" y="12.7" visible="pin" length="short" direction="pwr"/>
+<pin name="SPK_RP" x="15.24" y="15.24" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="SPK_RN" x="15.24" y="12.7" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="SPK_LP" x="15.24" y="7.62" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="SPK_LN" x="15.24" y="5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="LRCK" x="15.24" y="-7.62" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="DACDAT" x="15.24" y="-10.16" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="BCK" x="15.24" y="-12.7" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="MCLK" x="15.24" y="-15.24" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="PAD" x="-15.24" y="-15.24" visible="pin" length="short" direction="pwr"/>
+<pin name="A_GND" x="-15.24" y="-10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="VREF" x="-15.24" y="7.62" visible="pin" length="short" direction="pwr"/>
+<pin name="SDA" x="-15.24" y="0" visible="pin" length="short" direction="in"/>
+<pin name="SCL" x="-15.24" y="2.54" visible="pin" length="short" direction="in"/>
+<pin name="A_VDD" x="-15.24" y="10.16" visible="pin" length="short" direction="pwr"/>
+<text x="-12.7" y="20.32" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAMD20E" prefix="MCU" library_version="19" library_locally_modified="yes">
@@ -16851,6 +16877,38 @@ Source:</description>
 <connect gate="G$1" pin="RESET" pad="17"/>
 <connect gate="G$1" pin="RFIO" pad="15"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NAU8325">
+<gates>
+<gate name="G$1" symbol="NAU8325" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-20">
+<connects>
+<connect gate="G$1" pin="A_GND" pad="3"/>
+<connect gate="G$1" pin="A_VDD" pad="5"/>
+<connect gate="G$1" pin="BCK" pad="8"/>
+<connect gate="G$1" pin="DACDAT" pad="7"/>
+<connect gate="G$1" pin="IO_GND" pad="13"/>
+<connect gate="G$1" pin="IO_VDD" pad="9"/>
+<connect gate="G$1" pin="LRCK" pad="6"/>
+<connect gate="G$1" pin="MCLK" pad="10"/>
+<connect gate="G$1" pin="PAD" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="11"/>
+<connect gate="G$1" pin="SDA" pad="12"/>
+<connect gate="G$1" pin="SPK_GND" pad="16 20"/>
+<connect gate="G$1" pin="SPK_LN" pad="17"/>
+<connect gate="G$1" pin="SPK_LP" pad="15"/>
+<connect gate="G$1" pin="SPK_RN" pad="19"/>
+<connect gate="G$1" pin="SPK_RP" pad="1"/>
+<connect gate="G$1" pin="SPK_VDD" pad="2 14 18"/>
+<connect gate="G$1" pin="VREF" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

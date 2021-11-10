@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -24,11 +24,11 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="4" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -39,7 +39,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -3431,8 +3431,8 @@
 <wire x1="-5.45" y1="-1.55" x2="-6.1" y2="-1.55" width="0" layer="20"/>
 <wire x1="-6.1" y1="-1.55" x2="-6.6" y2="-1.05" width="0" layer="20" curve="-90"/>
 <wire x1="-6.6" y1="-1.05" x2="-6.6" y2="0" width="0" layer="20"/>
-<smd name="MT1T" x="-5.6" y="0" dx="2.4" dy="3.5" layer="1" roundness="50"/>
-<smd name="MT1B" x="-5.6" y="0" dx="2.6" dy="3.7" layer="16" roundness="72"/>
+<smd name="MT1T" x="-5.6" y="0" dx="2.4" dy="3.5" layer="1" roundness="50" cream="no"/>
+<smd name="MT1B" x="-5.6" y="0" dx="2.6" dy="3.7" layer="16" roundness="72" cream="no"/>
 <wire x1="4.6" y1="1.05" x2="5.1" y2="1.55" width="0" layer="103" curve="-90"/>
 <wire x1="5.1" y1="1.55" x2="5.05" y2="1.55" width="0" layer="103"/>
 <wire x1="5.05" y1="1.55" x2="6.1" y2="1.55" width="0" layer="103"/>
@@ -3443,8 +3443,8 @@
 <wire x1="6.1" y1="-1.55" x2="5.75" y2="-1.55" width="0" layer="103"/>
 <wire x1="5.75" y1="-1.55" x2="5.1" y2="-1.55" width="0" layer="103"/>
 <wire x1="5.1" y1="-1.55" x2="4.6" y2="-1.05" width="0" layer="103" curve="-90"/>
-<smd name="MT2T" x="5.6" y="0" dx="2.4" dy="3.5" layer="1" roundness="50"/>
-<smd name="MT2B" x="5.6" y="0" dx="2.6" dy="3.7" layer="16" roundness="72"/>
+<smd name="MT2T" x="5.6" y="0" dx="2.4" dy="3.5" layer="1" roundness="50" cream="no"/>
+<smd name="MT2B" x="5.6" y="0" dx="2.6" dy="3.7" layer="16" roundness="72" cream="no"/>
 <wire x1="-6.2" y1="3.6" x2="-3.7" y2="3.6" width="0.127" layer="51"/>
 <wire x1="-3.7" y1="3.6" x2="-3.7" y2="6.6" width="0.127" layer="51"/>
 <wire x1="3.7" y1="6.6" x2="3.7" y2="3.6" width="0.127" layer="51"/>
@@ -3519,10 +3519,10 @@
 <wire x1="4.6" y1="-0.8" x2="4.15" y2="0" width="0" layer="20" curve="-58"/>
 <wire x1="4.15" y1="0" x2="4.6" y2="0.8" width="0" layer="20" curve="-58"/>
 <wire x1="4.6" y1="0.8" x2="4.6" y2="1.05" width="0" layer="20"/>
-<smd name="MT3T" x="-5.08" y="0" dx="2.3" dy="2.3" layer="1" roundness="100"/>
-<smd name="MT4T" x="5.08" y="0" dx="2.3" dy="2.3" layer="1" roundness="100"/>
-<smd name="MT3B" x="-5.08" y="0" dx="2.5" dy="2.5" layer="16" roundness="100"/>
-<smd name="MT4B" x="5.08" y="0" dx="2.5" dy="2.5" layer="16" roundness="100"/>
+<smd name="MT3T" x="-5.08" y="0" dx="2.3" dy="2.3" layer="1" roundness="100" cream="no"/>
+<smd name="MT4T" x="5.08" y="0" dx="2.3" dy="2.3" layer="1" roundness="100" cream="no"/>
+<smd name="MT3B" x="-5.08" y="0" dx="2.5" dy="2.5" layer="16" roundness="100" cream="no"/>
+<smd name="MT4B" x="5.08" y="0" dx="2.5" dy="2.5" layer="16" roundness="100" cream="no"/>
 </package>
 </packages>
 <symbols>

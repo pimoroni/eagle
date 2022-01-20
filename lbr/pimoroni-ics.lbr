@@ -17039,7 +17039,7 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN74HCT165">
+<deviceset name="SN74HCT165" prefix="U">
 <gates>
 <gate name="G$1" symbol="74HCT165" x="0" y="2.54"/>
 </gates>

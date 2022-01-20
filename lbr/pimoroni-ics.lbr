@@ -10315,6 +10315,30 @@ I2C 0x51</text>
 <text x="-10.16" y="17.78" size="1.778" layer="94">&gt;NAME</text>
 <text x="-10.16" y="-22.86" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="74HCT165">
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="10.16" visible="pin" length="short"/>
+<pin name="!LATCH" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="!OUT" x="-12.7" y="-7.62" visible="pin" length="short"/>
+<pin name="OUT" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="IN" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="!CS" x="-12.7" y="-12.7" visible="pin" length="short"/>
+<pin name="CLK" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-17.78" visible="pin" length="short"/>
+<pin name="A" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="B" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="C" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="D" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="E" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="F" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="G" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="H" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="15.24" size="1.778" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-25.4" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAMD20E" prefix="MCU" library_version="19" library_locally_modified="yes">
@@ -17006,6 +17030,36 @@ Source:</description>
 <connect gate="G$1" pin="H" pad="7"/>
 <connect gate="G$1" pin="IN" pad="14"/>
 <connect gate="G$1" pin="LATCH" pad="12"/>
+<connect gate="G$1" pin="OUT" pad="9"/>
+<connect gate="G$1" pin="VCC" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74HCT165">
+<gates>
+<gate name="G$1" symbol="74HCT165" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-16">
+<connects>
+<connect gate="G$1" pin="!CS" pad="15"/>
+<connect gate="G$1" pin="!LATCH" pad="1"/>
+<connect gate="G$1" pin="!OUT" pad="7"/>
+<connect gate="G$1" pin="A" pad="11"/>
+<connect gate="G$1" pin="B" pad="12"/>
+<connect gate="G$1" pin="C" pad="13"/>
+<connect gate="G$1" pin="CLK" pad="2"/>
+<connect gate="G$1" pin="D" pad="14"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="F" pad="4"/>
+<connect gate="G$1" pin="G" pad="5"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="H" pad="6"/>
+<connect gate="G$1" pin="IN" pad="10"/>
 <connect gate="G$1" pin="OUT" pad="9"/>
 <connect gate="G$1" pin="VCC" pad="16"/>
 </connects>

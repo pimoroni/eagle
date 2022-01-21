@@ -406,7 +406,7 @@ chip</description>
 <text x="0" y="1.27" size="1.778" layer="95" font="vector" ratio="14" rot="MR180" align="top-center">&gt;NAME</text>
 <text x="0" y="-1.27" size="1.778" layer="96" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
 </symbol>
-<symbol name="RESISTOR-1">
+<symbol name="RESISTOR-SMALL">
 <pin name="P$1" x="-5.08" y="0" visible="pad" length="short"/>
 <pin name="P$2" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
 <wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.254" layer="94"/>
@@ -428,7 +428,7 @@ chip</description>
 <text x="-2.032" y="-1.27" size="1.778" layer="95" font="vector" ratio="14" rot="MR90" align="top-center">&gt;NAME</text>
 <text x="2.032" y="-1.27" size="1.778" layer="96" font="vector" ratio="14" rot="R90" align="top-center">&gt;VALUE</text>
 </symbol>
-<symbol name="R-EU">
+<symbol name="RESISTOR_SENSE">
 <wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
@@ -439,6 +439,16 @@ chip</description>
 <pin name="2S" x="2.54" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <text x="0" y="1.27" size="1.778" layer="95" font="vector" ratio="14" rot="MR180" align="top-center">&gt;NAME</text>
 <text x="0" y="5.08" size="1.778" layer="96" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
+</symbol>
+<symbol name="INDUCTOR">
+<pin name="1" x="-7.62" y="0" visible="pin" length="short" direction="pas"/>
+<pin name="2" x="7.62" y="0" visible="pin" length="short" direction="pas" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<text x="0" y="1.778" size="1.778" layer="95" font="vector" ratio="14" rot="MR180" align="top-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.778" layer="96" font="vector" ratio="14" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -566,10 +576,10 @@ chip</description>
 </deviceset>
 <deviceset name="RESISTOR_NET_4" prefix="RN" uservalue="yes">
 <gates>
-<gate name="-1" symbol="RESISTOR-1" x="0" y="7.62" addlevel="always"/>
-<gate name="-2" symbol="RESISTOR-1" x="0" y="2.54" addlevel="always"/>
-<gate name="-3" symbol="RESISTOR-1" x="0" y="-2.54" addlevel="always"/>
-<gate name="-4" symbol="RESISTOR-1" x="0" y="-7.62" addlevel="always"/>
+<gate name="-1" symbol="RESISTOR-SMALL" x="0" y="7.62" addlevel="always"/>
+<gate name="-2" symbol="RESISTOR-SMALL" x="0" y="2.54" addlevel="always"/>
+<gate name="-3" symbol="RESISTOR-SMALL" x="0" y="-2.54" addlevel="always"/>
+<gate name="-4" symbol="RESISTOR-SMALL" x="0" y="-7.62" addlevel="always"/>
 </gates>
 <devices>
 <device name="" package="1206_RESISTOR_NET">
@@ -649,7 +659,7 @@ chip</description>
 </deviceset>
 <deviceset name="RESISTOR_SENSE" prefix="R" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="R-EU" x="0" y="0"/>
+<gate name="G$1" symbol="RESISTOR_SENSE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="1206" package="1206_SENSE">
@@ -680,6 +690,22 @@ chip</description>
 <connect gate="G$1" pin="1S" pad="1S"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="2S" pad="2S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INDUCTOR" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0805" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

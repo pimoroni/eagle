@@ -1684,7 +1684,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="DUAL-MOSFET-NCHANNEL">
+<deviceset name="DUAL-MOSFET-NCHANNEL" prefix="U">
 <gates>
 <gate name="G$1" symbol="MOSFET-NCHANNEL" x="0" y="10.16"/>
 <gate name="G$2" symbol="MOSFET-NCHANNEL" x="0" y="-10.16"/>

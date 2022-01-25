@@ -9637,6 +9637,8 @@ Trigger: 2.9V</text>
 <pin name="OUT14" x="15.24" y="-20.32" visible="pin" length="short" rot="R180"/>
 <pin name="OUT15" x="15.24" y="-22.86" visible="pin" length="short" rot="R180"/>
 <pin name="OUT0" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<text x="-11.43" y="24.13" size="2.54" layer="95" font="vector" ratio="14">&gt;NAME</text>
+<text x="-11.43" y="-26.67" size="2.54" layer="96" font="vector" ratio="14" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="PFET">
 <pin name="S" x="0" y="5.08" visible="off" length="short" rot="R270"/>

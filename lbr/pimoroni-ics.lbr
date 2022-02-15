@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -9624,30 +9624,30 @@ Trigger: 2.9V</text>
 <wire x1="-12.7" y1="-25.4" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-25.4" x2="12.7" y2="22.86" width="0.254" layer="94"/>
 <wire x1="12.7" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
-<pin name="VCC" x="-15.24" y="20.32" visible="pin" length="short"/>
-<pin name="GND" x="-15.24" y="-22.86" visible="pin" length="short"/>
-<pin name="IREF" x="-15.24" y="-5.08" visible="pin" length="short"/>
-<pin name="BLANK" x="-15.24" y="5.08" visible="pin" length="short"/>
-<pin name="LATCH" x="-15.24" y="10.16" visible="pin" length="short"/>
-<pin name="SCLK" x="-15.24" y="12.7" visible="pin" length="short"/>
-<pin name="SIN" x="-15.24" y="15.24" visible="pin" length="short"/>
-<pin name="OUT1" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="OUT2" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="OUT3" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="OUT4" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="OUT5" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="OUT6" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="OUT7" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="OUT8" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="OUT9" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="OUT10" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="OUT11" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="OUT12" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
-<pin name="OUT13" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
-<pin name="SOUT" x="15.24" y="20.32" visible="pin" length="short" rot="R180"/>
-<pin name="OUT14" x="15.24" y="-20.32" visible="pin" length="short" rot="R180"/>
-<pin name="OUT15" x="15.24" y="-22.86" visible="pin" length="short" rot="R180"/>
-<pin name="OUT0" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="-15.24" y="20.32" length="short"/>
+<pin name="GND" x="-15.24" y="-22.86" length="short"/>
+<pin name="IREF" x="-15.24" y="-5.08" length="short"/>
+<pin name="BLANK" x="-15.24" y="5.08" length="short"/>
+<pin name="LATCH" x="-15.24" y="10.16" length="short"/>
+<pin name="SCLK" x="-15.24" y="12.7" length="short"/>
+<pin name="SIN" x="-15.24" y="15.24" length="short"/>
+<pin name="OUT1" x="15.24" y="12.7" length="short" rot="R180"/>
+<pin name="OUT2" x="15.24" y="10.16" length="short" rot="R180"/>
+<pin name="OUT3" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="OUT4" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="OUT5" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="OUT6" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="OUT7" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="OUT8" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="OUT9" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="OUT10" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="OUT11" x="15.24" y="-12.7" length="short" rot="R180"/>
+<pin name="OUT12" x="15.24" y="-15.24" length="short" rot="R180"/>
+<pin name="OUT13" x="15.24" y="-17.78" length="short" rot="R180"/>
+<pin name="SOUT" x="15.24" y="20.32" length="short" rot="R180"/>
+<pin name="OUT14" x="15.24" y="-20.32" length="short" rot="R180"/>
+<pin name="OUT15" x="15.24" y="-22.86" length="short" rot="R180"/>
+<pin name="OUT0" x="15.24" y="15.24" length="short" rot="R180"/>
 <text x="-11.43" y="24.13" size="2.54" layer="95" font="vector" ratio="14">&gt;NAME</text>
 <text x="-11.43" y="-26.67" size="2.54" layer="96" font="vector" ratio="14" align="top-left">&gt;VALUE</text>
 </symbol>

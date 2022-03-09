@@ -7,9 +7,9 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
@@ -24,11 +24,11 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -39,7 +39,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -53,7 +53,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -3589,14 +3589,14 @@ from this side</text>
 <circle x="3.81" y="2.54" radius="0.8" width="0" layer="31"/>
 </package>
 <package name="SLOT_PLATED">
-<wire x1="-0.5" y1="0.5" x2="0.5" y2="0.5" width="0" layer="20"/>
-<wire x1="0.5" y1="0.5" x2="1" y2="0" width="0" layer="20" curve="-90"/>
-<wire x1="1" y1="0" x2="0.5" y2="-0.5" width="0" layer="20" curve="-90"/>
-<wire x1="0.5" y1="-0.5" x2="-0.5" y2="-0.5" width="0" layer="20"/>
-<wire x1="-0.5" y1="-0.5" x2="-1" y2="0" width="0" layer="20" curve="-90"/>
-<wire x1="-1" y1="0" x2="-0.5" y2="0.5" width="0" layer="20" curve="-90"/>
-<smd name="TOP" x="0" y="0" dx="2.4" dy="1.4" layer="1" roundness="100" cream="no"/>
-<smd name="BOT" x="0" y="0" dx="2.4" dy="1.4" layer="16" roundness="100" cream="no"/>
+<wire x1="-0.6" y1="0.5" x2="0.6" y2="0.5" width="0" layer="20"/>
+<wire x1="0.6" y1="0.5" x2="1.1" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="1.1" y1="0" x2="0.6" y2="-0.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.6" y1="-0.5" x2="-0.6" y2="-0.5" width="0" layer="20"/>
+<wire x1="-0.6" y1="-0.5" x2="-1.1" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="-1.1" y1="0" x2="-0.6" y2="0.5" width="0" layer="20" curve="-90"/>
+<smd name="TOP" x="0" y="0.15" dx="2.8" dy="1.6" layer="1" roundness="100" cream="no"/>
+<smd name="BOT" x="0" y="0.15" dx="2.8" dy="1.6" layer="16" roundness="100" cream="no"/>
 </package>
 <package name="2X20_POGO_SMT">
 <text x="-25.4762" y="3.0988" size="1.27" layer="25" ratio="10">&gt;NAME</text>

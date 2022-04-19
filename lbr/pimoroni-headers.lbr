@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4282,32 +4282,32 @@ from this side</text>
 <package name="1X1-M2.0-THREADED-STUD-MINI">
 <pad name="P$1" x="0" y="0" drill="3.3" diameter="4.2"/>
 <polygon width="0.05" layer="31">
-<vertex x="-0.3" y="-2.3" curve="-75"/>
-<vertex x="-2.3" y="-0.3"/>
-<vertex x="-1.1" y="-0.3" curve="70"/>
-<vertex x="-0.3" y="-1.1"/>
-</polygon>
-<polygon width="0.05" layer="31">
-<vertex x="2.3" y="-0.3" curve="-75"/>
-<vertex x="0.3" y="-2.3"/>
-<vertex x="0.3" y="-1.1" curve="70"/>
-<vertex x="1.1" y="-0.3"/>
-</polygon>
-<polygon width="0.05" layer="31">
-<vertex x="0.3" y="2.3" curve="-75"/>
-<vertex x="2.3" y="0.3"/>
-<vertex x="1.1" y="0.3" curve="70"/>
-<vertex x="0.3" y="1.1"/>
-</polygon>
-<polygon width="0.05" layer="31">
-<vertex x="-2.3" y="0.3" curve="-75"/>
-<vertex x="-0.3" y="2.3"/>
-<vertex x="-0.3" y="1.1" curve="70"/>
-<vertex x="-1.1" y="0.3"/>
+<vertex x="-2.4" y="0.4" curve="-70"/>
+<vertex x="-0.4" y="2.4"/>
+<vertex x="-0.4" y="1.7" curve="65"/>
+<vertex x="-1.7" y="0.4"/>
 </polygon>
 <circle x="0" y="0" radius="1.55" width="0.05" layer="51"/>
 <circle x="0" y="0" radius="2.25" width="0.05" layer="51"/>
 <smd name="P$2" x="0" y="0" dx="5" dy="5" layer="1" roundness="100" cream="no"/>
+<polygon width="0.05" layer="31">
+<vertex x="-0.4" y="-2.4" curve="-70"/>
+<vertex x="-2.4" y="-0.4"/>
+<vertex x="-1.7" y="-0.4" curve="65"/>
+<vertex x="-0.4" y="-1.7"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="2.4" y="-0.4" curve="-70"/>
+<vertex x="0.4" y="-2.4"/>
+<vertex x="0.4" y="-1.7" curve="65"/>
+<vertex x="1.7" y="-0.4"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="0.4" y="2.4" curve="-70"/>
+<vertex x="2.4" y="0.4"/>
+<vertex x="1.7" y="0.4" curve="65"/>
+<vertex x="0.4" y="1.7"/>
+</polygon>
 </package>
 <package name="1X9_FEMALE_SMT_RIGHT_ANGLE">
 <smd name="A1" x="-10.16" y="4.8" dx="1" dy="2.4" layer="1"/>
@@ -4478,6 +4478,17 @@ from this side</text>
 <circle x="-2.5" y="0" radius="1.2" width="0" layer="31"/>
 <rectangle x1="-2.8" y1="-0.5" x2="-2.2" y2="0.5" layer="51"/>
 <rectangle x1="2.2" y1="-0.5" x2="2.8" y2="0.5" layer="51"/>
+</package>
+<package name="1X1-M2.0-THREADED-STUD-NO-HOLE-LARGE">
+<smd name="1" x="0" y="0" dx="6" dy="6" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="1" width="0.05" layer="51"/>
+<circle x="0" y="0" radius="2.05" width="1.8" layer="29"/>
+<circle x="0" y="0" radius="2.2" width="1" layer="51"/>
+<wire x1="-1.99" y1="0.9" x2="-0.9" y2="1.99" width="1" layer="31" curve="-43"/>
+<circle x="0" y="0" radius="3" width="0.05" layer="51"/>
+<wire x1="-0.9" y1="-1.99" x2="-1.99" y2="-0.9" width="1" layer="31" curve="-43"/>
+<wire x1="1.99" y1="-0.9" x2="0.9" y2="-1.99" width="1" layer="31" curve="-43"/>
+<wire x1="0.9" y1="1.99" x2="1.99" y2="0.9" width="1" layer="31" curve="-43"/>
 </package>
 </packages>
 <symbols>
@@ -6829,6 +6840,14 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </technologies>
 </device>
 <device name="M2.5-NO-HOLE" package="1X1-M2.0-THREADED-STUD-NO-HOLE-SMALL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M2-NO-HOLE-LARGE" package="1X1-M2.0-THREADED-STUD-NO-HOLE-LARGE">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>

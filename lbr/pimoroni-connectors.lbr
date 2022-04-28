@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2015,7 +2015,7 @@
 <wire x1="-6.55" y1="-10.28" x2="-7.25" y2="-10.28" width="0.2" layer="51"/>
 <wire x1="6.55" y1="-10.28" x2="7.25" y2="-10.28" width="0.2" layer="51"/>
 <wire x1="-6.55" y1="3.72" x2="6.55" y2="3.72" width="0.2" layer="51"/>
-<text x="0" y="-2.54" size="1.27" layer="21" font="vector" ratio="14" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="25" font="vector" ratio="14" align="center">&gt;NAME</text>
 </package>
 <package name="2P_JST_PH_VERT">
 <smd name="1" x="-1" y="4.75" dx="1" dy="5.5" layer="1"/>

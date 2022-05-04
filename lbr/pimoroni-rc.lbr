@@ -414,6 +414,49 @@ chip</description>
 <rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
 </package>
+<package name="ALU_6.3MM">
+<description>&lt;b&gt;Aluminum electrolytic capacitors&lt;/b&gt;&lt;p&gt;
+SMD (Chip) Long Life Vertical 153 CLV&lt;p&gt;
+http://www.bccomponents.com/</description>
+<wire x1="2.4" y1="-3.3" x2="-3.3" y2="-3.3" width="0.2032" layer="51"/>
+<wire x1="-3.3" y1="-3.3" x2="-3.3" y2="-1.1" width="0.2032" layer="51"/>
+<wire x1="-3.3" y1="-1.1" x2="-3.3" y2="-0.4" width="0.2032" layer="51"/>
+<wire x1="-3.3" y1="-0.4" x2="-3.3" y2="0.4" width="0.2032" layer="51"/>
+<wire x1="-3.3" y1="0.4" x2="-3.3" y2="1.1" width="0.2032" layer="51"/>
+<wire x1="-3.3" y1="1.1" x2="-3.3" y2="3.3" width="0.2032" layer="51"/>
+<wire x1="-3.3" y1="3.3" x2="2.4" y2="3.3" width="0.2032" layer="51"/>
+<wire x1="3.3" y1="2.4" x2="3.3" y2="1.1" width="0.2032" layer="51"/>
+<wire x1="3.3" y1="1.1" x2="3.3" y2="0.4" width="0.2032" layer="51"/>
+<wire x1="3.3" y1="0.4" x2="3.3" y2="-0.4" width="0.2032" layer="51"/>
+<wire x1="3.3" y1="-0.4" x2="3.3" y2="-1.1" width="0.2032" layer="51"/>
+<wire x1="3.3" y1="-1.1" x2="3.3" y2="-2.4" width="0.2032" layer="51"/>
+<wire x1="3.3" y1="-2.4" x2="2.4" y2="-3.3" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="3.3" x2="3.3" y2="2.4" width="0.2032" layer="51"/>
+<smd name="+" x="2.5" y="0" dx="3.1" dy="1.5" layer="1"/>
+<smd name="-" x="-2.5" y="0" dx="3.1" dy="1.5" layer="1"/>
+<text x="0" y="1.5" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<wire x1="-3.3" y1="3.3" x2="-2.9" y2="3.3" width="0.2" layer="21"/>
+<wire x1="-3.3" y1="3.3" x2="-3.3" y2="2.9" width="0.2" layer="21"/>
+<wire x1="-3.3" y1="-3.3" x2="-3.3" y2="-2.9" width="0.2" layer="21"/>
+<wire x1="-3.3" y1="-3.3" x2="-2.9" y2="-3.3" width="0.2" layer="21"/>
+<wire x1="3.3" y1="-1.2" x2="3.3" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="3.3" y1="1.2" x2="3.3" y2="1.5" width="0.2" layer="21"/>
+<wire x1="-0.6" y1="0.7" x2="-0.6" y2="-0.7" width="0.2" layer="21"/>
+<wire x1="-0.6" y1="0.7" x2="0.2" y2="0.7" width="0.2" layer="21"/>
+<wire x1="0.2" y1="0.7" x2="0.6" y2="0.3" width="0.2" layer="21"/>
+<wire x1="0.6" y1="0.3" x2="0.6" y2="0" width="0.2" layer="21"/>
+<wire x1="0.6" y1="0" x2="0.6" y2="-0.3" width="0.2" layer="21"/>
+<wire x1="0.6" y1="-0.3" x2="0.2" y2="-0.7" width="0.2" layer="21"/>
+<wire x1="0.2" y1="-0.7" x2="-0.6" y2="-0.7" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="3.15" width="0.2" layer="51"/>
+<wire x1="3.6" y1="0.4" x2="3.6" y2="-0.4" width="0.2" layer="51"/>
+<wire x1="3.6" y1="-0.4" x2="3.3" y2="-0.4" width="0.2" layer="51"/>
+<wire x1="3.6" y1="0.4" x2="3.4" y2="0.4" width="0.2" layer="51"/>
+<wire x1="3.4" y1="0.4" x2="3.3" y2="0.4" width="0.2" layer="51"/>
+<wire x1="-3.6" y1="0.4" x2="-3.6" y2="-0.4" width="0.2" layer="51"/>
+<wire x1="-3.6" y1="-0.4" x2="-3.3" y2="-0.4" width="0.2" layer="51"/>
+<wire x1="-3.6" y1="0.4" x2="-3.3" y2="0.4" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -716,6 +759,15 @@ chip</description>
 </technologies>
 </device>
 <device name="A768KE" package="A768KE">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ALU_6.3MM" package="ALU_6.3MM">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>

@@ -1878,8 +1878,8 @@
 </package>
 <package name="JST-ZH-4PIN-SMT">
 <smd name="1" x="-2.25" y="-2.15" dx="0.7" dy="2.6" layer="1"/>
-<smd name="MT1" x="-4" y="1.5" dx="1.1" dy="1.9" layer="1"/>
-<smd name="MT2" x="4" y="1.5" dx="1.1" dy="1.9" layer="1"/>
+<smd name="MT1" x="-4" y="1.5" dx="1.1" dy="1.9" layer="1" thermals="no"/>
+<smd name="MT2" x="4" y="1.5" dx="1.1" dy="1.9" layer="1" thermals="no"/>
 <smd name="2" x="-0.75" y="-2.15" dx="0.7" dy="2.6" layer="1"/>
 <smd name="3" x="0.75" y="-2.15" dx="0.7" dy="2.6" layer="1"/>
 <smd name="4" x="2.25" y="-2.15" dx="0.7" dy="2.6" layer="1"/>

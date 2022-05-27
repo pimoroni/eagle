@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2982,6 +2982,18 @@ undermounted!</text>
 <wire x1="-0.3" y1="-6" x2="0.3" y2="-6" width="0.2" layer="21"/>
 <wire x1="6" y1="-0.3" x2="6" y2="0.3" width="0.2" layer="21"/>
 <wire x1="-6" y1="-0.3" x2="-6" y2="0.3" width="0.2" layer="21"/>
+</package>
+<package name="PM_SENSOR">
+<wire x1="-19" y1="17.5" x2="19" y2="17.5" width="0.2" layer="51"/>
+<wire x1="19" y1="17.5" x2="19" y2="-17.5" width="0.2" layer="51"/>
+<wire x1="19" y1="-17.5" x2="-19" y2="-17.5" width="0.2" layer="51"/>
+<wire x1="-19" y1="-17.5" x2="-19" y2="17.5" width="0.2" layer="51"/>
+<wire x1="-11.5" y1="10" x2="-11.5" y2="14" width="0.2" layer="51"/>
+<wire x1="-15.5" y1="12" x2="-7.5" y2="12" width="0.2" layer="51"/>
+<wire x1="15.5" y1="14" x2="17.5" y2="16" width="0.2" layer="51"/>
+<wire x1="17.5" y1="14" x2="15.5" y2="16" width="0.2" layer="51"/>
+<wire x1="-17.5" y1="-16" x2="-15.5" y2="-14" width="0.2" layer="51"/>
+<wire x1="-15.5" y1="-16" x2="-17.5" y2="-14" width="0.2" layer="51"/>
 </package>
 </packages>
 <symbols>

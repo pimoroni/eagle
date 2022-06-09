@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1704,6 +1704,8 @@ AA: 52.56x70.08mm</text>
 <wire x1="-9.4" y1="-20.5" x2="-9.4" y2="-12.5" width="0.127" layer="51"/>
 <wire x1="9.2" y1="-20.5" x2="9.2" y2="-9" width="0.127" layer="51"/>
 <wire x1="-9.4" y1="-12.5" x2="-6.7" y2="-12.5" width="0.127" layer="51"/>
+<dimension x1="16.2" y1="0" x2="-16.2" y2="0" x3="0" y3="20.32" textsize="1.27" layer="47" dtype="diameter"/>
+<dimension x1="-17.75" y1="0" x2="17.75" y2="0" x3="0" y3="24.13" textsize="1.27" layer="47" dtype="diameter"/>
 </package>
 <package name="LCD_114">
 <wire x1="-8.78" y1="-15.535" x2="8.78" y2="-15.535" width="0.1" layer="51"/>

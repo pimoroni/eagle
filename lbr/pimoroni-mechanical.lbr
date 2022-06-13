@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -29,7 +29,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -2994,6 +2994,9 @@ undermounted!</text>
 <wire x1="17.5" y1="14" x2="15.5" y2="16" width="0.2" layer="51"/>
 <wire x1="-17.5" y1="-16" x2="-15.5" y2="-14" width="0.2" layer="51"/>
 <wire x1="-15.5" y1="-16" x2="-17.5" y2="-14" width="0.2" layer="51"/>
+<text x="-15.875" y="10.287" size="0.508" layer="51" rot="R90">pin 1-2 Vcc 5V</text>
+<text x="-6.985" y="12.827" size="0.508" layer="51" rot="R90">pin 9 SDA</text>
+<text x="-6.985" y="7.747" size="0.508" layer="51" rot="R90">pin 10 Set</text>
 </package>
 </packages>
 <symbols>

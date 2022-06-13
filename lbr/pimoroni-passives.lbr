@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.36" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -218,6 +218,12 @@
 <wire x1="1.45" y1="1.05" x2="-1.45" y2="1.05" width="0.127" layer="51"/>
 <wire x1="-1.45" y1="1.05" x2="-1.45" y2="-1.05" width="0.127" layer="51"/>
 <wire x1="-0.4" y1="1.1" x2="-0.4" y2="-1.1" width="0.3" layer="21"/>
+<wire x1="-1.3" y1="0.9" x2="1.3" y2="0.9" width="0.05" layer="51"/>
+<wire x1="1.3" y1="0.9" x2="1.3" y2="-0.9" width="0.05" layer="51"/>
+<wire x1="1.3" y1="-0.9" x2="-1.3" y2="-0.9" width="0.05" layer="51"/>
+<wire x1="-1.3" y1="-0.9" x2="-1.3" y2="0.9" width="0.05" layer="51"/>
+<wire x1="-1.8" y1="0.5" x2="-1.8" y2="-0.5" width="0.05" layer="51"/>
+<wire x1="1.8" y1="-0.5" x2="1.8" y2="0.5" width="0.05" layer="51"/>
 </package>
 <package name="SOT-23">
 <smd name="3" x="0" y="1" dx="0.8" dy="0.9" layer="1"/>

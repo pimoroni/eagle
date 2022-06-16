@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4532,6 +4532,42 @@ VDDIO: 1.8-3.6V</text>
 &gt;VALUE</text>
 <text x="15.24" y="20.32" size="1.778" layer="94">ADPS-9500</text>
 </symbol>
+<symbol name="PHOTOTRANSISTOR">
+<wire x1="-4.953" y1="2.54" x2="-3.175" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="0.762" x2="-4.318" y2="1.143" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="1.143" x2="-3.556" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="1.905" x2="-3.175" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-2.286" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<text x="0.0044" y="5.0822" size="1.778" layer="95" font="vector" ratio="14" align="bottom-right">&gt;NAME</text>
+<polygon width="0.1524" layer="94">
+<vertex x="-4.318" y="1.143"/>
+<vertex x="-3.175" y="0.762"/>
+<vertex x="-3.556" y="1.905"/>
+</polygon>
+<circle x="1.27" y="0" radius="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.635" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.635" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="0.635" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="2.54" y="-2.54"/>
+<vertex x="2.286" y="-1.524"/>
+<vertex x="1.524" y="-2.54"/>
+</polygon>
+<wire x1="-4.953" y1="0.635" x2="-3.175" y2="-1.143" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="-1.143" x2="-4.318" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="-0.762" x2="-3.556" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="0" x2="-3.175" y2="-1.143" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-4.318" y="-0.762"/>
+<vertex x="-3.175" y="-1.143"/>
+<vertex x="-3.556" y="0"/>
+</polygon>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<text x="0.0044" y="-5.0778" size="1.778" layer="96" font="vector" ratio="14" align="top-right">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TS-TSMD5050RGB">
@@ -5273,6 +5309,22 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connect gate="G$1" pin="VDDAY_I/O" pad="11"/>
 <connect gate="G$1" pin="VDDA_I/O" pad="10"/>
 <connect gate="G$1" pin="VIO" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PHOTOTRANSISTOR" prefix="PHOTOTRANSISTOR">
+<gates>
+<gate name="G$1" symbol="PHOTOTRANSISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="E" pad="A"/>
 </connects>
 <technologies>
 <technology name=""/>

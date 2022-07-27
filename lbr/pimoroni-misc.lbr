@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.12" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -136,6 +136,8 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="188" name="188bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
@@ -14140,6 +14142,14 @@
 <circle x="0" y="0" radius="2" width="0.05" layer="51"/>
 <circle x="0" y="0" radius="2.3" width="0" layer="41"/>
 <circle x="0" y="0" radius="2.3" width="0" layer="42"/>
+</package>
+<package name="LED_SHINE_THROUGH_MECH">
+<circle x="0" y="0" radius="1.5" width="0" layer="30"/>
+<circle x="0" y="0" radius="2" width="0" layer="42"/>
+<wire x1="0" y1="-0.5" x2="0" y2="0.5" width="0.1524" layer="51"/>
+<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="1" width="0" layer="29"/>
+<circle x="0" y="0" radius="1.2" width="0" layer="41"/>
 </package>
 </packages>
 <symbols>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="6.07625" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1403,14 +1403,18 @@
 <circle x="-0.1" y="0.3" radius="0.1" width="0.3" layer="21"/>
 </package>
 <package name="PIR_SENSOR">
-<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.2" layer="51"/>
-<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.2" layer="51"/>
 <wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.2" layer="51"/>
 <wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.2" layer="51"/>
-<wire x1="-3.9" y1="3.9" x2="3.9" y2="3.9" width="0.2" layer="51"/>
-<wire x1="3.9" y1="3.9" x2="3.9" y2="-3.9" width="0.2" layer="51"/>
-<wire x1="3.9" y1="-3.9" x2="-3.9" y2="-3.9" width="0.2" layer="51"/>
-<wire x1="-3.9" y1="-3.9" x2="-3.9" y2="3.9" width="0.2" layer="51"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.2" layer="51"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.2" layer="51"/>
+<wire x1="2.3" y1="-3.9" x2="-2.3" y2="-3.9" width="0.2" layer="51"/>
+<wire x1="-2.3" y1="-3.9" x2="-3.9" y2="-2.3" width="0.2" layer="51" curve="-90"/>
+<wire x1="-3.9" y1="-2.3" x2="-3.9" y2="2.3" width="0.2" layer="51"/>
+<wire x1="-3.9" y1="2.3" x2="-2.3" y2="3.9" width="0.2" layer="51" curve="-90"/>
+<wire x1="-2.3" y1="3.9" x2="2.3" y2="3.9" width="0.2" layer="51"/>
+<wire x1="2.3" y1="3.9" x2="3.9" y2="2.3" width="0.2" layer="51" curve="-90"/>
+<wire x1="3.9" y1="2.3" x2="3.9" y2="-2.3" width="0.2" layer="51"/>
+<wire x1="3.9" y1="-2.3" x2="2.3" y2="-3.9" width="0.2" layer="51" curve="-90"/>
 <smd name="2" x="0" y="-2.65" dx="1.5" dy="2.4" layer="1"/>
 <smd name="5" x="0" y="2.65" dx="1.5" dy="2.4" layer="1"/>
 <smd name="3" x="2.2" y="-2.65" dx="1.5" dy="2.4" layer="1"/>

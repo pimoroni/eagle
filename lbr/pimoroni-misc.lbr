@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="2.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4432,6 +4432,18 @@
 <circle x="0" y="0" radius="2" width="0.05" layer="51"/>
 <circle x="0" y="0" radius="2.3" width="0" layer="41"/>
 <circle x="0" y="0" radius="2.3" width="0" layer="42"/>
+<polygon width="0.127" layer="2" pour="cutout">
+<vertex x="0" y="-2.5" curve="-90"/>
+<vertex x="-2.5" y="0" curve="-90"/>
+<vertex x="0" y="2.5" curve="-90"/>
+<vertex x="2.5" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="15" pour="cutout">
+<vertex x="0" y="-2.5" curve="-90"/>
+<vertex x="-2.5" y="0" curve="-90"/>
+<vertex x="0" y="2.5" curve="-90"/>
+<vertex x="2.5" y="0" curve="-90"/>
+</polygon>
 </package>
 <package name="LED_SHINE_THROUGH_MECH">
 <circle x="0" y="0" radius="1.5" width="0" layer="30"/>

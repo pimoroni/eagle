@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -40,7 +40,7 @@
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
@@ -3552,14 +3552,14 @@ from this side</text>
 </polygon>
 </package>
 <package name="3X4">
-<pad name="MID1" x="-3.81" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="1" x="-3.81" y="2.54" drill="1.016" diameter="1.8796"/>
-<pad name="MID2" x="-1.27" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="2" x="-1.27" y="2.54" drill="1.016" diameter="1.8796"/>
-<pad name="MID3" x="1.27" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="1.27" y="2.54" drill="1.016" diameter="1.8796"/>
-<pad name="MID4" x="3.81" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="4" x="3.81" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="MID1" x="-3.81" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="1" x="-3.81" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="MID2" x="-1.27" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="2" x="-1.27" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="MID3" x="1.27" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="3" x="1.27" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="MID4" x="3.81" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="4" x="3.81" y="2.54" drill="1.016" diameter="1.6764"/>
 <text x="0" y="3.81" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <rectangle x1="-4.064" y1="2.286" x2="-3.556" y2="2.794" layer="51"/>
@@ -3569,10 +3569,10 @@ from this side</text>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="3.556" y1="2.286" x2="4.064" y2="2.794" layer="51"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<pad name="BOT1" x="-3.81" y="-2.54" drill="1.016" diameter="1.8796"/>
-<pad name="BOT2" x="-1.27" y="-2.54" drill="1.016" diameter="1.8796"/>
-<pad name="BOT3" x="1.27" y="-2.54" drill="1.016" diameter="1.8796"/>
-<pad name="BOT4" x="3.81" y="-2.54" drill="1.016" diameter="1.8796"/>
+<pad name="BOT1" x="-3.81" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="BOT2" x="-1.27" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="BOT3" x="1.27" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="BOT4" x="3.81" y="-2.54" drill="1.016" diameter="1.6764"/>
 <rectangle x1="-4.064" y1="-2.794" x2="-3.556" y2="-2.286" layer="51"/>
 <rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51"/>
 <rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51"/>
@@ -3581,18 +3581,18 @@ from this side</text>
 <wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="51"/>
 <wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="51"/>
 <wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="51"/>
-<circle x="-3.81" y="2.54" radius="0.8" width="0" layer="31"/>
-<circle x="-1.27" y="2.54" radius="0.8" width="0" layer="31"/>
-<circle x="-3.81" y="0" radius="0.8" width="0" layer="31"/>
-<circle x="-1.27" y="0" radius="0.8" width="0" layer="31"/>
-<circle x="1.27" y="2.54" radius="0.8" width="0" layer="31"/>
-<circle x="1.27" y="0" radius="0.8" width="0" layer="31"/>
-<circle x="-3.81" y="-2.54" radius="0.8" width="0" layer="31"/>
-<circle x="-1.27" y="-2.54" radius="0.8" width="0" layer="31"/>
-<circle x="1.27" y="-2.54" radius="0.8" width="0" layer="31"/>
-<circle x="3.81" y="-2.54" radius="0.8" width="0" layer="31"/>
-<circle x="3.81" y="0" radius="0.8" width="0" layer="31"/>
-<circle x="3.81" y="2.54" radius="0.8" width="0" layer="31"/>
+<circle x="-3.81" y="2.54" radius="0.762" width="0" layer="31"/>
+<circle x="-1.27" y="2.54" radius="0.762" width="0" layer="31"/>
+<circle x="-3.81" y="0" radius="0.762" width="0" layer="31"/>
+<circle x="-1.27" y="0" radius="0.762" width="0" layer="31"/>
+<circle x="1.27" y="2.54" radius="0.762" width="0" layer="31"/>
+<circle x="1.27" y="0" radius="0.762" width="0" layer="31"/>
+<circle x="-3.81" y="-2.54" radius="0.762" width="0" layer="31"/>
+<circle x="-1.27" y="-2.54" radius="0.762" width="0" layer="31"/>
+<circle x="1.27" y="-2.54" radius="0.762" width="0" layer="31"/>
+<circle x="3.81" y="-2.54" radius="0.762" width="0" layer="31"/>
+<circle x="3.81" y="0" radius="0.762" width="0" layer="31"/>
+<circle x="3.81" y="2.54" radius="0.762" width="0" layer="31"/>
 </package>
 <package name="SLOT_PLATED">
 <wire x1="-0.6" y1="0.5" x2="0.6" y2="0.5" width="0" layer="20"/>
@@ -4807,6 +4807,192 @@ from this side</text>
 <wire x1="-1.75" y1="-3.25" x2="-1.75" y2="-6" width="0.127" layer="51" style="shortdash"/>
 <wire x1="1.75" y1="-3.25" x2="1.75" y2="-6" width="0.127" layer="51" style="shortdash"/>
 <wire x1="3.5" y1="-4.3" x2="-3.5" y2="-4.3" width="0.127" layer="51" style="shortdash"/>
+</package>
+<package name="3X4_NO_CREAM">
+<pad name="MID1" x="-3.81" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="1" x="-3.81" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="MID2" x="-1.27" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="-1.27" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="MID3" x="1.27" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="1.27" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="MID4" x="3.81" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="3.81" y="2.54" drill="1.016" diameter="1.8796"/>
+<text x="0" y="3.81" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="2.286" x2="-3.556" y2="2.794" layer="51"/>
+<rectangle x1="-1.524" y1="2.286" x2="-1.016" y2="2.794" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="2.286" x2="1.524" y2="2.794" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="2.286" x2="4.064" y2="2.794" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<pad name="BOT1" x="-3.81" y="-2.54" drill="1.016" diameter="1.8796"/>
+<pad name="BOT2" x="-1.27" y="-2.54" drill="1.016" diameter="1.8796"/>
+<pad name="BOT3" x="1.27" y="-2.54" drill="1.016" diameter="1.8796"/>
+<pad name="BOT4" x="3.81" y="-2.54" drill="1.016" diameter="1.8796"/>
+<rectangle x1="-4.064" y1="-2.794" x2="-3.556" y2="-2.286" layer="51"/>
+<rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51"/>
+<rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51"/>
+<rectangle x1="3.556" y1="-2.794" x2="4.064" y2="-2.286" layer="51"/>
+<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.127" layer="51"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="51"/>
+</package>
+<package name="3X6_NO_CREAM">
+<pad name="MID1" x="-6.35" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="1" x="-6.35" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="MID2" x="-3.81" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="-3.81" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="MID3" x="-1.27" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="-1.27" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="MID4" x="1.27" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="1.27" y="2.54" drill="1.016" diameter="1.8796"/>
+<text x="0" y="3.81" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="2.286" x2="-6.096" y2="2.794" layer="51"/>
+<rectangle x1="-4.064" y1="2.286" x2="-3.556" y2="2.794" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="2.286" x2="-1.016" y2="2.794" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="2.286" x2="1.524" y2="2.794" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<pad name="BOT1" x="-6.35" y="-2.54" drill="1.016" diameter="1.8796"/>
+<pad name="BOT2" x="-3.81" y="-2.54" drill="1.016" diameter="1.8796"/>
+<pad name="BOT3" x="-1.27" y="-2.54" drill="1.016" diameter="1.8796"/>
+<pad name="BOT4" x="1.27" y="-2.54" drill="1.016" diameter="1.8796"/>
+<rectangle x1="-6.604" y1="-2.794" x2="-6.096" y2="-2.286" layer="51"/>
+<rectangle x1="-4.064" y1="-2.794" x2="-3.556" y2="-2.286" layer="51"/>
+<rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51"/>
+<rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51"/>
+<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="3.81" x2="7.62" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-3.81" x2="-7.62" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="-3.81" x2="-7.62" y2="3.81" width="0.127" layer="51"/>
+<pad name="MID5" x="3.81" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="3.81" y="2.54" drill="1.016" diameter="1.8796"/>
+<rectangle x1="3.556" y1="2.286" x2="4.064" y2="2.794" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<pad name="BOT5" x="3.81" y="-2.54" drill="1.016" diameter="1.8796"/>
+<rectangle x1="3.556" y1="-2.794" x2="4.064" y2="-2.286" layer="51"/>
+<pad name="MID6" x="6.35" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="6.35" y="2.54" drill="1.016" diameter="1.8796"/>
+<rectangle x1="6.096" y1="2.286" x2="6.604" y2="2.794" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+<pad name="BOT6" x="6.35" y="-2.54" drill="1.016" diameter="1.8796"/>
+<rectangle x1="6.096" y1="-2.794" x2="6.604" y2="-2.286" layer="51"/>
+</package>
+<package name="3X2_NO_CREAM">
+<pad name="MID1" x="-1.27" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="1" x="-1.27" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="MID2" x="1.27" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="1.27" y="2.54" drill="1.016" diameter="1.8796"/>
+<text x="0" y="3.81" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="2.286" x2="-1.016" y2="2.794" layer="51"/>
+<rectangle x1="1.016" y1="2.286" x2="1.524" y2="2.794" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<pad name="BOT1" x="-1.27" y="-2.54" drill="1.016" diameter="1.8796"/>
+<pad name="BOT2" x="1.27" y="-2.54" drill="1.016" diameter="1.8796"/>
+<rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51"/>
+<rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51"/>
+<wire x1="-2.54" y1="3.81" x2="2.54" y2="3.81" width="0.127" layer="51"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="2.54" y1="-3.81" x2="-2.54" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="3.81" width="0.127" layer="51"/>
+</package>
+<package name="3X2_NO_CREAM_SMALL">
+<pad name="MID1" x="-1.27" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="1" x="-1.27" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="MID2" x="1.27" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="2" x="1.27" y="2.54" drill="1.016" diameter="1.6764"/>
+<text x="0" y="3.81" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="2.286" x2="-1.016" y2="2.794" layer="51"/>
+<rectangle x1="1.016" y1="2.286" x2="1.524" y2="2.794" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<pad name="BOT1" x="-1.27" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="BOT2" x="1.27" y="-2.54" drill="1.016" diameter="1.6764"/>
+<rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51"/>
+<rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51"/>
+<wire x1="-2.54" y1="3.81" x2="2.54" y2="3.81" width="0.127" layer="51"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="2.54" y1="-3.81" x2="-2.54" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="3.81" width="0.127" layer="51"/>
+</package>
+<package name="3X4_NO_CREAM_SMALL">
+<pad name="MID1" x="-3.81" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="1" x="-3.81" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="MID2" x="-1.27" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="2" x="-1.27" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="MID3" x="1.27" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="3" x="1.27" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="MID4" x="3.81" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="4" x="3.81" y="2.54" drill="1.016" diameter="1.6764"/>
+<text x="0" y="3.81" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="2.286" x2="-3.556" y2="2.794" layer="51"/>
+<rectangle x1="-1.524" y1="2.286" x2="-1.016" y2="2.794" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="2.286" x2="1.524" y2="2.794" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="2.286" x2="4.064" y2="2.794" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<pad name="BOT1" x="-3.81" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="BOT2" x="-1.27" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="BOT3" x="1.27" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="BOT4" x="3.81" y="-2.54" drill="1.016" diameter="1.6764"/>
+<rectangle x1="-4.064" y1="-2.794" x2="-3.556" y2="-2.286" layer="51"/>
+<rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51"/>
+<rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51"/>
+<rectangle x1="3.556" y1="-2.794" x2="4.064" y2="-2.286" layer="51"/>
+<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.127" layer="51"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="51"/>
+</package>
+<package name="3X6_NO_CREAM_SMALL">
+<pad name="MID1" x="-6.35" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="1" x="-6.35" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="MID2" x="-3.81" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="2" x="-3.81" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="MID3" x="-1.27" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="3" x="-1.27" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="MID4" x="1.27" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="4" x="1.27" y="2.54" drill="1.016" diameter="1.6764"/>
+<text x="0" y="3.81" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="2.286" x2="-6.096" y2="2.794" layer="51"/>
+<rectangle x1="-4.064" y1="2.286" x2="-3.556" y2="2.794" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="2.286" x2="-1.016" y2="2.794" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="2.286" x2="1.524" y2="2.794" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<pad name="BOT1" x="-6.35" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="BOT2" x="-3.81" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="BOT3" x="-1.27" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="BOT4" x="1.27" y="-2.54" drill="1.016" diameter="1.6764"/>
+<rectangle x1="-6.604" y1="-2.794" x2="-6.096" y2="-2.286" layer="51"/>
+<rectangle x1="-4.064" y1="-2.794" x2="-3.556" y2="-2.286" layer="51"/>
+<rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51"/>
+<rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51"/>
+<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="3.81" x2="7.62" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-3.81" x2="-7.62" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="-3.81" x2="-7.62" y2="3.81" width="0.127" layer="51"/>
+<pad name="MID5" x="3.81" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="5" x="3.81" y="2.54" drill="1.016" diameter="1.6764"/>
+<rectangle x1="3.556" y1="2.286" x2="4.064" y2="2.794" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<pad name="BOT5" x="3.81" y="-2.54" drill="1.016" diameter="1.6764"/>
+<rectangle x1="3.556" y1="-2.794" x2="4.064" y2="-2.286" layer="51"/>
+<pad name="MID6" x="6.35" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="6" x="6.35" y="2.54" drill="1.016" diameter="1.6764"/>
+<rectangle x1="6.096" y1="2.286" x2="6.604" y2="2.794" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+<pad name="BOT6" x="6.35" y="-2.54" drill="1.016" diameter="1.6764"/>
+<rectangle x1="6.096" y1="-2.794" x2="6.604" y2="-2.286" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -7435,6 +7621,32 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <technology name=""/>
 </technologies>
 </device>
+<device name="3X4_NO_CREAM" package="3X4_NO_CREAM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="COM_BOT" pad="BOT1 BOT2 BOT3 BOT4"/>
+<connect gate="G$1" pin="COM_MID" pad="MID1 MID2 MID3 MID4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X4_NO_CREAM_SMALL" package="3X4_NO_CREAM_SMALL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="COM_BOT" pad="BOT1 BOT2 BOT3 BOT4"/>
+<connect gate="G$1" pin="COM_MID" pad="MID1 MID2 MID3 MID4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="3X6_SERVO" prefix="J">
@@ -7443,6 +7655,36 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </gates>
 <devices>
 <device name="" package="3X6">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="COM_BOT" pad="BOT1 BOT2 BOT3 BOT4 BOT5 BOT6"/>
+<connect gate="G$1" pin="COM_MID" pad="MID1 MID2 MID3 MID4 MID5 MID6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X6_NO_CREAM" package="3X6_NO_CREAM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="COM_BOT" pad="BOT1 BOT2 BOT3 BOT4 BOT5 BOT6"/>
+<connect gate="G$1" pin="COM_MID" pad="MID1 MID2 MID3 MID4 MID5 MID6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X6_NO_CREAM_SMALL" package="3X6_NO_CREAM_SMALL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -7525,6 +7767,28 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </gates>
 <devices>
 <device name="" package="3X2">
+<connects>
+<connect gate="G$2" pin="1" pad="1"/>
+<connect gate="G$2" pin="2" pad="2"/>
+<connect gate="G$2" pin="COM_BOT" pad="BOT1 BOT2"/>
+<connect gate="G$2" pin="COM_MID" pad="MID1 MID2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X2_NO_CREAM" package="3X2_NO_CREAM">
+<connects>
+<connect gate="G$2" pin="1" pad="1"/>
+<connect gate="G$2" pin="2" pad="2"/>
+<connect gate="G$2" pin="COM_BOT" pad="BOT1 BOT2"/>
+<connect gate="G$2" pin="COM_MID" pad="MID1 MID2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X2_NO_CREAM_SMALL" package="3X2_NO_CREAM_SMALL">
 <connects>
 <connect gate="G$2" pin="1" pad="1"/>
 <connect gate="G$2" pin="2" pad="2"/>

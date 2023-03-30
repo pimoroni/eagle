@@ -7909,7 +7909,7 @@ are 5V tolerant.</text>
 <wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <text x="-7.62" y="11.43" size="2.54" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-13.97" size="2.54" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="-13.97" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32L072RB">
 <pin name="60_BOOT0" x="-27.94" y="-2.54" visible="pin" length="short"/>
@@ -18046,7 +18046,7 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TS3DV642">
+<deviceset name="TS3DV642" prefix="U">
 <gates>
 <gate name="G$1" symbol="TS3DV642" x="0" y="0"/>
 </gates>

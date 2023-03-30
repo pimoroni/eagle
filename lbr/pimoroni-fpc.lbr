@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -7190,30 +7190,30 @@ FPC CONN</text>
 <wire x1="-6.385" y1="-3.46" x2="-6.185" y2="-3.46" width="0.127" layer="21"/>
 </package>
 <package name="OV2640">
-<smd name="1" x="-5.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="2" x="-5.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="3" x="-4.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="4" x="-4.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="5" x="-3.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="6" x="-3.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="7" x="-2.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="8" x="-2.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="9" x="-1.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="10" x="-1.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="11" x="-0.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="12" x="-0.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="13" x="0.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="14" x="0.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="15" x="1.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="16" x="1.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="17" x="2.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="18" x="2.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="19" x="3.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="20" x="3.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="21" x="4.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="22" x="4.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="23" x="5.25" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
-<smd name="24" x="5.75" y="-18.59" dx="0.25" dy="1.4" layer="1" rot="R180"/>
+<smd name="1" x="-5.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="2" x="-5.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="3" x="-4.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="4" x="-4.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="5" x="-3.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="6" x="-3.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="7" x="-2.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="8" x="-2.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="9" x="-1.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="10" x="-1.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="11" x="-0.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="12" x="-0.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="13" x="0.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="14" x="0.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="15" x="1.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="16" x="1.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="17" x="2.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="18" x="2.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="19" x="3.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="20" x="3.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="21" x="4.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="22" x="4.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="23" x="5.25" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
+<smd name="24" x="5.75" y="-18.59" dx="0.24" dy="1.4" layer="1" rot="R180"/>
 <smd name="MT1" x="7.4" y="-15.54" dx="1.8" dy="2.4" layer="1" rot="R180"/>
 <smd name="MT2" x="-7.4" y="-15.54" dx="1.8" dy="2.4" layer="1" rot="R180"/>
 <wire x1="7.8" y1="-18.29" x2="7.8" y2="-13.39" width="0.2" layer="51"/>
@@ -7288,14 +7288,22 @@ pin 24 = d0</text>
 <wire x1="5.7735" y1="10" x2="0" y2="0" width="0.127" layer="51"/>
 <wire x1="-5.7735" y1="10" x2="0" y2="0" width="0.127" layer="51"/>
 <wire x1="-10" y1="0" x2="10" y2="0" width="0.127" layer="51"/>
-<wire x1="-3" y1="3.5" x2="-3.5" y2="3.5" width="0.2" layer="21"/>
-<wire x1="-3.5" y1="3.5" x2="-3.5" y2="3" width="0.2" layer="21"/>
-<wire x1="3.5" y1="3.5" x2="3" y2="3.5" width="0.2" layer="21"/>
-<wire x1="3.5" y1="3" x2="3.5" y2="3.5" width="0.2" layer="21"/>
-<wire x1="-3.5" y1="-3" x2="-3.5" y2="-3.5" width="0.2" layer="21"/>
-<wire x1="-3.5" y1="-3.5" x2="-3" y2="-3.5" width="0.2" layer="21"/>
-<wire x1="3.5" y1="-3" x2="3.5" y2="-3.5" width="0.2" layer="21"/>
-<wire x1="3.5" y1="-3.5" x2="3" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="-3.1" y1="3.6" x2="-3.6" y2="3.6" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="3.6" x2="-3.6" y2="3.1" width="0.2" layer="21"/>
+<wire x1="3.6" y1="3.6" x2="3.1" y2="3.6" width="0.2" layer="21"/>
+<wire x1="3.6" y1="3.1" x2="3.6" y2="3.6" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="-3.1" x2="-3.6" y2="-3.6" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="-3.6" x2="-3.1" y2="-3.6" width="0.2" layer="21"/>
+<wire x1="3.6" y1="-3.1" x2="3.6" y2="-3.6" width="0.2" layer="21"/>
+<wire x1="3.6" y1="-3.6" x2="3.1" y2="-3.6" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="12" width="0.127" layer="51"/>
+<wire x1="0" y1="-10" x2="0" y2="0" width="0.127" layer="51" style="shortdash"/>
+<wire x1="0" y1="0" x2="0" y2="10" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-10" y1="5.7735" x2="0" y2="0" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-10" y1="-5.7735" x2="0" y2="0" width="0.127" layer="51" style="shortdash"/>
+<wire x1="0" y1="0" x2="10" y2="5.7735" width="0.127" layer="51" style="shortdash"/>
+<wire x1="0" y1="0" x2="10" y2="-5.7735" width="0.127" layer="51" style="shortdash"/>
+<circle x="0" y="0" radius="9" width="0.05" layer="51"/>
 </package>
 </packages>
 <symbols>

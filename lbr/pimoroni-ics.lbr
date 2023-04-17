@@ -981,8 +981,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="2" x="0" y="1.1" dx="0.65" dy="1.1" layer="1" thermals="no"/>
 <smd name="5" x="0.95" y="-1.1" dx="0.65" dy="1.1" layer="1" thermals="no"/>
 <smd name="4" x="-0.95" y="-1.1" dx="0.65" dy="1.1" layer="1" thermals="no"/>
-<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.905" y="2.54" size="1.1" layer="25" font="vector" ratio="14">&gt;NAME</text>
 <smd name="1" x="0.95" y="1.1" dx="0.65" dy="1.1" layer="1" thermals="no"/>
 <smd name="3" x="-0.95" y="1.1" dx="0.65" dy="1.1" layer="1" thermals="no"/>
 </package>
@@ -2275,10 +2274,10 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="0.7874" y1="1.5748" x2="0.7874" y2="1.2954" width="0.1998" layer="51"/>
 <wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.1998" layer="51"/>
 <wire x1="-0.7874" y1="1.2954" x2="-0.7874" y2="1.5748" width="0.1998" layer="51"/>
-<smd name="1" x="-1.499" y="-1.981" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
-<smd name="3" x="1.499" y="-1.981" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
-<smd name="2" x="0" y="-1.727" dx="1" dy="2" layer="1" stop="no" cream="no"/>
-<smd name="2@1" x="0" y="0.94" dx="2.2" dy="3.7" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="-1.499" y="-1.981" dx="1" dy="1.5" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="3" x="1.499" y="-1.981" dx="1" dy="1.5" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="0" y="-1.727" dx="1" dy="2" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="2@1" x="0" y="0.94" dx="2.2" dy="3.7" layer="1" roundness="100" thermals="no" cream="no"/>
 <text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.4051" y="-4.3449" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
@@ -9431,7 +9430,7 @@ A1,A2 high</text>
 <pin name="10_P2.5/SPI0_MISO/ADC_CH15" x="50.8" y="7.62" length="middle" rot="R180"/>
 <pin name="2_P3.6" x="50.8" y="-22.86" length="middle" rot="R180"/>
 <pin name="INT_P3.7" x="50.8" y="-20.32" length="middle" rot="R180"/>
-<pin name="18_P1.4/PWM0_CH1/I2C0_SDAADC_CH14/PWM1_CH1" x="-50.8" y="-15.24" length="middle"/>
+<pin name="18_P1.4/PWM0_CH1/I2C0_SDA/ADC_CH14/PWM1_CH1" x="-50.8" y="-15.24" length="middle"/>
 <pin name="9_P1.3/STADC/I2C0_SCL/ADC_CH13" x="-50.8" y="-12.7" length="middle"/>
 <pin name="13_P2.4/ADC_CH12/T0" x="50.8" y="10.16" length="middle" rot="R180"/>
 <pin name="14_P2.3/ADC_CH11/PWM1_CH0" x="50.8" y="12.7" length="middle" rot="R180"/>
@@ -11468,6 +11467,16 @@ Built-in current-limit and thermal-shutdown functions prevent IC from damage in 
 <connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="AP7381-33Y" package="SOT89">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 2@1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16452,7 +16461,7 @@ Source:</description>
 <connect gate="G$1" pin="15_P3.3/CLKO/PWM0_CH0" pad="25"/>
 <connect gate="G$1" pin="16_P0.1/PWM0_CH4/SPI0_MISO/HXTOUT/PWM3_CH0" pad="24"/>
 <connect gate="G$1" pin="17_P1.5/PWM3_CH1/SPI0_SS/PWM0_CH5" pad="7"/>
-<connect gate="G$1" pin="18_P1.4/PWM0_CH1/I2C0_SDAADC_CH14/PWM1_CH1" pad="11"/>
+<connect gate="G$1" pin="18_P1.4/PWM0_CH1/I2C0_SDA/ADC_CH14/PWM1_CH1" pad="11"/>
 <connect gate="G$1" pin="19_P0.0/PWM0_CH3/SPI0_MOSI/T1/HXTIN/PWM2_CH1" pad="23"/>
 <connect gate="G$1" pin="1_P2.0/!RST" pad="1"/>
 <connect gate="G$1" pin="1_P3.5/SPI0_SS" pad="17"/>

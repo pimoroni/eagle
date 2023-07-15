@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3035,8 +3035,8 @@ undermounted!</text>
 <smd name="B" x="0" y="-3" dx="2" dy="2" layer="1"/>
 </package>
 <package name="SMT_EC11">
-<smd name="MT1" x="-6.75" y="0" dx="2.5" dy="3" layer="1"/>
-<smd name="MT2" x="6.75" y="0" dx="2.5" dy="3" layer="1"/>
+<smd name="MT1" x="-6.75" y="0" dx="2.5" dy="3" layer="1" thermals="no"/>
+<smd name="MT2" x="6.75" y="0" dx="2.5" dy="3" layer="1" thermals="no"/>
 <hole x="0" y="0" drill="2.1"/>
 <wire x1="0" y1="-5.6" x2="-0.8" y2="-4.8" width="0" layer="20" curve="-90"/>
 <wire x1="-0.8" y1="-4.8" x2="-0.8" y2="-4.2" width="0" layer="20"/>
@@ -3053,6 +3053,20 @@ undermounted!</text>
 <wire x1="6" y1="6" x2="6" y2="-6" width="0.2" layer="51"/>
 <wire x1="6" y1="-6" x2="-6" y2="-6" width="0.2" layer="51"/>
 <wire x1="-6" y1="-6" x2="-6" y2="6" width="0.2" layer="51"/>
+</package>
+<package name="TACT_MEDI">
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.2" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.2" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.2" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.2" layer="51"/>
+<wire x1="0.7" y1="3.3" x2="-0.7" y2="3.3" width="0.2" layer="51"/>
+<wire x1="0.7" y1="-3.3" x2="-0.7" y2="-3.3" width="0.2" layer="51"/>
+<smd name="A" x="0" y="3" dx="3.5" dy="3.5" layer="1" stop="no" cream="no"/>
+<smd name="B" x="0" y="-3" dx="3.5" dy="3.5" layer="1" stop="no" cream="no"/>
+<rectangle x1="-1" y1="2" x2="1" y2="4" layer="29"/>
+<rectangle x1="-1" y1="-4" x2="1" y2="-2" layer="29"/>
+<rectangle x1="-0.9" y1="2.1" x2="0.9" y2="3.9" layer="31"/>
+<rectangle x1="-0.9" y1="-3.9" x2="0.9" y2="-2.1" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -3275,6 +3289,7 @@ undermounted!</text>
 <wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
 <wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<pin name="MT" x="-10.16" y="-15.24" length="short" rot="R90"/>
 </symbol>
 <symbol name="VIBRATION_MOTOR">
 <pin name="MOTOR1" x="-10.16" y="5.08" length="middle"/>
@@ -3844,6 +3859,15 @@ MOTOR</text>
 <technology name=""/>
 </technologies>
 </device>
+<device name="MEDI" package="TACT_MEDI">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="ENCODER" prefix="ENCODER">
@@ -3858,6 +3882,7 @@ MOTOR</text>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="B" pad="B"/>
 <connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="MT" pad="MT1B MT1T MT2B MT2T"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3870,6 +3895,7 @@ MOTOR</text>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="B" pad="B"/>
 <connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="MT" pad="MT1 MT2"/>
 </connects>
 <technologies>
 <technology name=""/>

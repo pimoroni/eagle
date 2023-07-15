@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3239,6 +3239,8 @@
 <wire x1="-1.5" y1="0" x2="-1.5" y2="4" width="0.2" layer="51"/>
 <wire x1="1.5" y1="0" x2="1.5" y2="4" width="0.2" layer="51"/>
 <wire x1="3.5" y1="0" x2="3.5" y2="4" width="0.2" layer="51"/>
+<circle x="2.5" y="0" radius="2" width="0.127" layer="39"/>
+<circle x="-2.5" y="0" radius="2" width="0.127" layer="39"/>
 </package>
 <package name="JST-ZH-2PIN-SMT">
 <smd name="1" x="-0.75" y="-2.15" dx="0.7" dy="2.6" layer="1"/>
@@ -3535,6 +3537,33 @@
 <wire x1="0.675" y1="-0.325" x2="0.35" y2="0" width="0" layer="20" curve="-90"/>
 <wire x1="0.35" y1="0" x2="0.675" y2="0.325" width="0" layer="20" curve="-90"/>
 <smd name="T2" x="1.2" y="0" dx="2" dy="0.95" layer="1" roundness="100"/>
+</package>
+<package name="54-00164">
+<hole x="5" y="0" drill="1.6"/>
+<hole x="9.5" y="0" drill="1.8"/>
+<wire x1="0" y1="4.5" x2="0" y2="2.8" width="0.2" layer="51"/>
+<wire x1="0" y1="2.8" x2="0" y2="-2.8" width="0.2" layer="51"/>
+<wire x1="0" y1="-2.8" x2="0" y2="-4.5" width="0.2" layer="51"/>
+<wire x1="0" y1="4.5" x2="14.7" y2="4.5" width="0.2" layer="51"/>
+<wire x1="0" y1="-4.5" x2="14.7" y2="-4.5" width="0.2" layer="51"/>
+<wire x1="14.7" y1="-4.5" x2="14.7" y2="4.5" width="0.2" layer="51"/>
+<text x="1.7" y="0" size="0.7" layer="51" rot="R90" align="center">Connector center 
+Z=6.5mm</text>
+<smd name="B" x="5" y="-5.5" dx="3.5" dy="3.5" layer="1" stop="no" cream="no"/>
+<smd name="C" x="11.2" y="-5.5" dx="3.5" dy="3.5" layer="1" stop="no" cream="no"/>
+<smd name="A1" x="5" y="5.5" dx="3.5" dy="3.5" layer="1" stop="no" cream="no"/>
+<smd name="A2" x="11.2" y="5.5" dx="3.5" dy="3.5" layer="1" stop="no" cream="no"/>
+<rectangle x1="4" y1="4.5" x2="6" y2="6.5" layer="29"/>
+<rectangle x1="10.2" y1="4.5" x2="12.2" y2="6.5" layer="29"/>
+<rectangle x1="4" y1="-6.5" x2="6" y2="-4.5" layer="29"/>
+<rectangle x1="10.2" y1="-6.5" x2="12.2" y2="-4.5" layer="29"/>
+<rectangle x1="4.05" y1="4.55" x2="5.95" y2="6.45" layer="31"/>
+<rectangle x1="10.25" y1="4.55" x2="12.15" y2="6.45" layer="31"/>
+<rectangle x1="10.25" y1="-6.45" x2="12.15" y2="-4.55" layer="31"/>
+<rectangle x1="4.05" y1="-6.45" x2="5.95" y2="-4.55" layer="31"/>
+<wire x1="0" y1="2.8" x2="0.4" y2="2.8" width="0.2" layer="51"/>
+<wire x1="0.4" y1="2.8" x2="0.4" y2="-2.8" width="0.2" layer="51"/>
+<wire x1="0.4" y1="-2.8" x2="0" y2="-2.8" width="0.2" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -4055,6 +4084,7 @@
 <vertex x="2.54" y="-1.27"/>
 <vertex x="1.905" y="-2.54"/>
 </polygon>
+<text x="-3.81" y="3.81" size="1.778" layer="95" font="vector" ratio="14">&gt;NAME</text>
 </symbol>
 <symbol name="USB_4P">
 <pin name="VBUS" x="7.62" y="5.08" visible="pin" length="short" rot="R180"/>
@@ -5543,6 +5573,16 @@ push-push type</description>
 <connect gate="G$1" pin="1" pad="1A 1B"/>
 <connect gate="G$1" pin="2" pad="3"/>
 <connect gate="G$1" pin="3" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2.1MM/5.5MM" package="54-00164">
+<connects>
+<connect gate="G$1" pin="1" pad="A1 A2"/>
+<connect gate="G$1" pin="2" pad="C"/>
+<connect gate="G$1" pin="3" pad="B"/>
 </connects>
 <technologies>
 <technology name=""/>

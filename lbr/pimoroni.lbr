@@ -17992,6 +17992,31 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <vertex x="-29.57" y="-7.41" curve="-90"/>
 <vertex x="-30.27" y="-8.11" curve="-90"/>
 </polygon>
+<circle x="-29" y="-43" radius="1.796" width="0.127" layer="51"/>
+<polygon width="0.2" layer="41">
+<vertex x="-30.97" y="-41.73" curve="-90"/>
+<vertex x="-30.27" y="-41.03" curve="-90"/>
+<vertex x="-29.57" y="-41.73" curve="-90"/>
+<vertex x="-30.27" y="-42.43" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-28.43" y="-41.73" curve="-90"/>
+<vertex x="-27.73" y="-41.03" curve="-90"/>
+<vertex x="-27.03" y="-41.73" curve="-90"/>
+<vertex x="-27.73" y="-42.43" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-28.43" y="-44.27" curve="-90"/>
+<vertex x="-27.73" y="-43.57" curve="-90"/>
+<vertex x="-27.03" y="-44.27" curve="-90"/>
+<vertex x="-27.73" y="-44.97" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-30.97" y="-44.27" curve="-90"/>
+<vertex x="-30.27" y="-43.57" curve="-90"/>
+<vertex x="-29.57" y="-44.27" curve="-90"/>
+<vertex x="-30.27" y="-44.97" curve="-90"/>
+</polygon>
 </package>
 <package name="SN74LV1T34">
 </package>

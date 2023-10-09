@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10000" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -19201,6 +19201,31 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <hole x="21.59" y="-1.27" drill="1"/>
 <hole x="24.13" y="-1.27" drill="1"/>
 <hole x="24.13" y="1.27" drill="1"/>
+<circle x="-29" y="-43" radius="1.796" width="0.127" layer="51"/>
+<polygon width="0.2" layer="41">
+<vertex x="-30.97" y="-41.73" curve="-90"/>
+<vertex x="-30.27" y="-41.03" curve="-90"/>
+<vertex x="-29.57" y="-41.73" curve="-90"/>
+<vertex x="-30.27" y="-42.43" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-28.43" y="-41.73" curve="-90"/>
+<vertex x="-27.73" y="-41.03" curve="-90"/>
+<vertex x="-27.03" y="-41.73" curve="-90"/>
+<vertex x="-27.73" y="-42.43" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-28.43" y="-44.27" curve="-90"/>
+<vertex x="-27.73" y="-43.57" curve="-90"/>
+<vertex x="-27.03" y="-44.27" curve="-90"/>
+<vertex x="-27.73" y="-44.97" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-30.97" y="-44.27" curve="-90"/>
+<vertex x="-30.27" y="-43.57" curve="-90"/>
+<vertex x="-29.57" y="-44.27" curve="-90"/>
+<vertex x="-30.27" y="-44.97" curve="-90"/>
+</polygon>
 </package>
 <package name="AUDIO-JACK-3.5MM-SMD-6POLE-NARROW">
 <smd name="SLEEVE" x="2.8" y="-3.6" dx="1.5" dy="2.4" layer="1"/>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3218,11 +3218,11 @@
 <smd name="14" x="6.5" y="4.775" dx="0.6" dy="1.55" layer="1"/>
 </package>
 <package name="XT30PW-M">
-<pad name="V+" x="-2.5" y="0" drill="1.7" thermals="no"/>
-<pad name="GND" x="2.5" y="0" drill="1.7" thermals="no"/>
+<pad name="V+" x="-2.5" y="0" drill="1.7" diameter="3" thermals="no"/>
+<pad name="GND" x="2.5" y="0" drill="1.7" diameter="3" thermals="no"/>
 <text x="0" y="9" size="1.27" layer="51" align="center">Z=5mm</text>
-<pad name="MT2" x="5.5" y="10" drill="1"/>
-<pad name="MT1" x="-5.5" y="10" drill="1"/>
+<pad name="MT2" x="5.5" y="10" drill="1" diameter="1.7"/>
+<pad name="MT1" x="-5.5" y="10" drill="1" diameter="1.7"/>
 <wire x1="4.95" y1="4" x2="4.95" y2="13" width="0.2" layer="51"/>
 <wire x1="-4.95" y1="4" x2="-4.95" y2="13" width="0.2" layer="51"/>
 <wire x1="-4.95" y1="13" x2="4.95" y2="13" width="0.2" layer="51"/>
@@ -3241,6 +3241,10 @@
 <wire x1="3.5" y1="0" x2="3.5" y2="4" width="0.2" layer="51"/>
 <circle x="2.5" y="0" radius="2" width="0.127" layer="39"/>
 <circle x="-2.5" y="0" radius="2" width="0.127" layer="39"/>
+<circle x="-2.5" y="0" radius="1.45" width="0" layer="31"/>
+<circle x="2.5" y="0" radius="1.45" width="0" layer="31"/>
+<circle x="-5.5" y="10" radius="0.8" width="0" layer="31"/>
+<circle x="5.5" y="10" radius="0.8" width="0" layer="31"/>
 </package>
 <package name="JST-ZH-2PIN-SMT">
 <smd name="1" x="-0.75" y="-2.15" dx="0.7" dy="2.6" layer="1"/>

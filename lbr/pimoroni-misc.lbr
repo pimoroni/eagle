@@ -4167,8 +4167,8 @@
 <vertex x="0" y="1.5" curve="-90"/>
 <vertex x="1.5" y="0" curve="-90"/>
 </polygon>
-<circle x="0" y="0" radius="2" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="2.9" width="0.1" layer="51"/>
+<circle x="0" y="0" radius="2" width="0.05" layer="51"/>
+<circle x="0" y="0" radius="2.9" width="0.05" layer="51"/>
 </package>
 <package name="M2.5-HOLE-WITH-MASK-FOR-STANDOFF">
 <hole x="0" y="0" drill="2.5"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -493,6 +493,15 @@ http://www.bccomponents.com/</description>
 <wire x1="5.15" y1="1.66" x2="5.15" y2="1.445" width="0.2" layer="21"/>
 <wire x1="5.15" y1="-1.445" x2="5.15" y2="-1.66" width="0.2" layer="21"/>
 </package>
+<package name="1008(2520)">
+<smd name="1" x="-1" y="0" dx="0.8" dy="2" layer="1"/>
+<smd name="2" x="1" y="0" dx="0.8" dy="2" layer="1"/>
+<text x="0" y="1.089" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.15" layer="21"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.15" layer="21"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.15" layer="21"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.15" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -896,6 +905,15 @@ http://www.bccomponents.com/</description>
 </technologies>
 </device>
 <device name="0201" package="0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1008" package="1008(2520)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

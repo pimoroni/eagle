@@ -743,7 +743,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="1V2" prefix="1V1">
+<deviceset name="1V2" prefix="1V2">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="1V2" x="0" y="0"/>

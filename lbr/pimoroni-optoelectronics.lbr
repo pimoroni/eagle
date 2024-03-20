@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1070,7 +1070,7 @@
 <wire x1="0.5" y1="-0.5" x2="-0.5" y2="-0.5" width="0.127" layer="51"/>
 <wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.127" layer="51"/>
 <wire x1="0.06" y1="-0.06" x2="-0.09" y2="0.03" width="0.07" layer="21"/>
-<circle x="0.9" y="-2.1" radius="0.1" width="0" layer="21"/>
+<circle x="0.9" y="-0.9" radius="0.1" width="0" layer="21"/>
 </package>
 <package name="128X64_LCD_FRAME">
 <hole x="-28.3" y="39.9" drill="1.5"/>
@@ -2731,6 +2731,38 @@ Z-mid=0.8mm</text>
 <smd name="A" x="1" y="0" dx="1.1" dy="1.2" layer="1"/>
 <smd name="C" x="-1" y="0" dx="1.1" dy="1.2" layer="1"/>
 <wire x1="-0.2" y1="0.5" x2="-0.2" y2="-0.5" width="0.2" layer="21"/>
+</package>
+<package name="LCD_2.8IN">
+<wire x1="-23.5" y1="0" x2="-23.5" y2="65.14" width="0.2" layer="51"/>
+<wire x1="23.5" y1="0" x2="23.5" y2="65.14" width="0.2" layer="51"/>
+<wire x1="-23.5" y1="0" x2="23.5" y2="0" width="0.2" layer="51"/>
+<wire x1="-23.5" y1="65.14" x2="23.5" y2="65.14" width="0.2" layer="51"/>
+<wire x1="-21.6" y1="63.38" x2="21.6" y2="63.38" width="0.2" layer="51"/>
+<wire x1="-21.6" y1="5.78" x2="21.6" y2="5.78" width="0.2" layer="51"/>
+<wire x1="-21.6" y1="5.78" x2="-21.6" y2="63.38" width="0.2" layer="51"/>
+<wire x1="21.6" y1="5.78" x2="21.6" y2="63.38" width="0.2" layer="51"/>
+<dimension x1="-21.6" y1="5.78" x2="-21.6" y2="63.38" x3="-25.92" y3="34.58" textsize="1.27" layer="47" dtype="horizontal"/>
+<dimension x1="-23.5" y1="0" x2="-23.5" y2="65.14" x3="-29.9" y3="32.57" textsize="1.27" layer="47" dtype="horizontal"/>
+<dimension x1="-21.6" y1="63.38" x2="21.6" y2="63.38" x3="0" y3="68.9" textsize="1.27" layer="47" dtype="horizontal"/>
+<dimension x1="-23.5" y1="65.14" x2="23.5" y2="65.14" x3="0" y3="72.14" textsize="1.27" layer="47" dtype="horizontal"/>
+<dimension x1="-21.6" y1="63.38" x2="-23.5" y2="65.14" x3="-27.4" y3="64.26" textsize="1.27" layer="47" dtype="vertical"/>
+<dimension x1="-21.6" y1="63.38" x2="-23.5" y2="65.14" x3="-22.55" y3="66.36" textsize="1.27" layer="47" dtype="horizontal"/>
+<wire x1="-36" y1="48.98" x2="36" y2="48.98" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-36" y1="34.58" x2="36" y2="34.58" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-36" y1="20.18" x2="36" y2="20.18" width="0.1" layer="51" style="shortdash"/>
+<wire x1="10.8" y1="-5.02" x2="10.8" y2="74.18" width="0.1" layer="51" style="shortdash"/>
+<wire x1="0" y1="-5.02" x2="0" y2="74.18" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-10.8" y1="-5.02" x2="-10.8" y2="74.18" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-5.75" y1="4.25" x2="-5.75" y2="18.5" width="0.1" layer="52"/>
+<wire x1="5.75" y1="7.5" x2="5.75" y2="18.5" width="0.1" layer="52"/>
+<wire x1="-5.75" y1="4.25" x2="-10.25" y2="-0.25" width="0.1" layer="52"/>
+<wire x1="-5.75" y1="18.5" x2="5.75" y2="18.5" width="0.1" layer="52"/>
+<wire x1="-10.5" y1="-0.5" x2="15.75" y2="-0.5" width="0.1" layer="51" style="shortdash"/>
+<wire x1="15.75" y1="-0.25" x2="15.75" y2="7.5" width="0.1" layer="52"/>
+<wire x1="5.75" y1="7.5" x2="15.75" y2="7.5" width="0.1" layer="52"/>
+<text x="-5.25" y="18" size="0.5" layer="52" rot="MR270" align="top-left">pin 1 LED_A</text>
+<text x="5.25" y="18" size="0.5" layer="52" rot="MR270">pin 22 GND</text>
+<text x="0" y="39.25" size="2" layer="51" align="center">2.8" 240x320 LCD</text>
 </package>
 </packages>
 <symbols>

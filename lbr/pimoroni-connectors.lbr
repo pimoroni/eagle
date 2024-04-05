@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3662,6 +3662,23 @@ Z=6.5mm</text>
 <smd name="3" x="0.4" y="0.975" dx="0.5" dy="1" layer="1" rot="R180"/>
 <smd name="4" x="1.2" y="0.975" dx="0.5" dy="1" layer="1" rot="R180"/>
 </package>
+<package name="JST_SH_1.0MM_3P_ALT">
+<smd name="1" x="-1" y="0" dx="0.6" dy="1.35" layer="1"/>
+<smd name="3" x="1" y="0" dx="0.6" dy="1.35" layer="1"/>
+<smd name="MT1" x="-2.3" y="-3.675" dx="1.2" dy="2" layer="1"/>
+<smd name="MT2" x="2.3" y="-3.675" dx="1.2" dy="2" layer="1"/>
+<wire x1="-2.5" y1="-4.6" x2="-2.5" y2="-0.35" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-0.35" x2="2.5" y2="-0.35" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-0.35" x2="2.5" y2="-4.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-4.6" x2="-2.5" y2="-4.6" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-0.35" x2="-2.15" y2="-0.35" width="0.25" layer="21"/>
+<wire x1="-2.5" y1="-0.35" x2="-2.5" y2="-0.7" width="0.25" layer="21"/>
+<wire x1="2.5" y1="-0.35" x2="2.15" y2="-0.35" width="0.25" layer="21"/>
+<wire x1="2.5" y1="-0.35" x2="2.5" y2="-0.7" width="0.25" layer="21"/>
+<wire x1="-0.2" y1="-4.6" x2="0.2" y2="-4.6" width="0.25" layer="21"/>
+<text x="0" y="-2.641" size="1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<smd name="2" x="0" y="0" dx="0.6" dy="1.35" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -6193,6 +6210,18 @@ push-push type</description>
 </technologies>
 </device>
 <device name="JST_SUR" package="JST_SUR_0.8MM_3P">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="MT1" pad="MT1"/>
+<connect gate="G$1" pin="MT2" pad="MT2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ALT" package="JST_SH_1.0MM_3P_ALT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

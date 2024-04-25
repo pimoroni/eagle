@@ -3035,15 +3035,8 @@ undermounted!</text>
 <smd name="B" x="0" y="-3" dx="2" dy="2" layer="1"/>
 </package>
 <package name="SMT_EC11">
-<smd name="MT1" x="-6.75" y="0" dx="2.5" dy="3" layer="1" thermals="no"/>
-<smd name="MT2" x="6.75" y="0" dx="2.5" dy="3" layer="1" thermals="no"/>
-<hole x="0" y="0" drill="2.1"/>
-<wire x1="0" y1="-5.6" x2="-0.8" y2="-4.8" width="0" layer="20" curve="-90"/>
-<wire x1="-0.8" y1="-4.8" x2="-0.8" y2="-4.2" width="0" layer="20"/>
-<wire x1="-0.8" y1="-4.2" x2="0" y2="-3.4" width="0" layer="20" curve="-90"/>
-<wire x1="0" y1="-3.4" x2="0.8" y2="-4.2" width="0" layer="20" curve="-90"/>
-<wire x1="0.8" y1="-4.2" x2="0.8" y2="-4.8" width="0" layer="20"/>
-<wire x1="0.8" y1="-4.8" x2="0" y2="-5.6" width="0" layer="20" curve="-90"/>
+<smd name="MT1" x="-7.2" y="0" dx="3" dy="5" layer="1" thermals="no"/>
+<smd name="MT2" x="7.2" y="0" dx="3" dy="5" layer="1" thermals="no"/>
 <smd name="C" x="0" y="-8" dx="2" dy="1.5" layer="1" rot="R90"/>
 <smd name="A" x="-2.5" y="-8" dx="2" dy="1.5" layer="1" rot="R90"/>
 <smd name="B" x="2.5" y="-8" dx="2" dy="1.5" layer="1" rot="R90"/>
@@ -3053,6 +3046,8 @@ undermounted!</text>
 <wire x1="6" y1="6" x2="6" y2="-6" width="0.2" layer="51"/>
 <wire x1="6" y1="-6" x2="-6" y2="-6" width="0.2" layer="51"/>
 <wire x1="-6" y1="-6" x2="-6" y2="6" width="0.2" layer="51"/>
+<hole x="2.5" y="0" drill="1.05"/>
+<hole x="-2" y="0" drill="1.25"/>
 </package>
 <package name="TACT_MEDI">
 <wire x1="-3" y1="3" x2="3" y2="3" width="0.2" layer="51"/>

@@ -2753,15 +2753,15 @@ Z-mid=0.8mm</text>
 <wire x1="10.8" y1="-5.02" x2="10.8" y2="74.18" width="0.1" layer="51" style="shortdash"/>
 <wire x1="0" y1="-5.02" x2="0" y2="74.18" width="0.1" layer="51" style="shortdash"/>
 <wire x1="-10.8" y1="-5.02" x2="-10.8" y2="74.18" width="0.1" layer="51" style="shortdash"/>
-<wire x1="-5.75" y1="4.25" x2="-5.75" y2="18.5" width="0.1" layer="52"/>
-<wire x1="5.75" y1="7.5" x2="5.75" y2="18.5" width="0.1" layer="52"/>
+<wire x1="-5.75" y1="4.25" x2="-5.75" y2="19.25" width="0.1" layer="52"/>
+<wire x1="5.75" y1="7.5" x2="5.75" y2="19.25" width="0.1" layer="52"/>
 <wire x1="-5.75" y1="4.25" x2="-10.25" y2="-0.25" width="0.1" layer="52"/>
-<wire x1="-5.75" y1="18.5" x2="5.75" y2="18.5" width="0.1" layer="52"/>
+<wire x1="-5.75" y1="19.25" x2="5.75" y2="19.25" width="0.1" layer="52"/>
 <wire x1="-10.5" y1="-0.5" x2="15.75" y2="-0.5" width="0.1" layer="51" style="shortdash"/>
 <wire x1="15.75" y1="-0.25" x2="15.75" y2="7.5" width="0.1" layer="52"/>
 <wire x1="5.75" y1="7.5" x2="15.75" y2="7.5" width="0.1" layer="52"/>
-<text x="-5.25" y="18" size="0.5" layer="52" rot="MR270" align="top-left">pin 1 LED_A</text>
-<text x="5.25" y="18" size="0.5" layer="52" rot="MR270">pin 22 GND</text>
+<text x="-5.25" y="18.5" size="0.5" layer="52" rot="MR270" align="top-left">pin 1 LED_A</text>
+<text x="5.25" y="18.5" size="0.5" layer="52" rot="MR270">pin 22 GND</text>
 <text x="0" y="39.25" size="2" layer="51" align="center">2.8" 240x320 LCD</text>
 </package>
 </packages>

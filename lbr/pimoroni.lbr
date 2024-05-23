@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10000" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -19257,6 +19257,113 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <package name="FIDUCIAL-0.5MM-SOLDERMASK-DEFINED">
 <circle x="0" y="0" radius="0.25" width="0" layer="29"/>
 </package>
+<package name="FCI_89898_313LF_40P_CONNECTOR_SMT_FLIPPED_PASSTHROUGH_FOR_MINI_HAT">
+<smd name="P1_3V3" x="24.13" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P2_5V" x="24.13" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P3_GPIO2_SDA" x="21.59" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P4_5V" x="21.59" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P5_GPIO3_SCL" x="19.05" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P6_GND" x="19.05" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P7_GPIO4" x="16.51" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P8_GPIO14_UART0_TXD" x="16.51" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P9_GND" x="13.97" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P10_GPIO15_UART0_RXD" x="13.97" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P11_GPIO17" x="11.43" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P12_GPIO18" x="11.43" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P13_GPIO27" x="8.89" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P14_GND" x="8.89" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P15_GPIO22" x="6.35" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P16_GPIO23" x="6.35" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P17_3V3" x="3.81" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P18_GPIO24" x="3.81" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P19_GPIO10_SPI0_MOSI" x="1.27" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P20_GND" x="1.27" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P21_GPIO9_SPI0_MISO" x="-1.27" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P22_GPIO25" x="-1.27" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P23_GPIO11_SPI0_SCLK" x="-3.81" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P24_GPIO8_SPI0_CE0" x="-3.81" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P25_GND" x="-6.35" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P26_GPIO7_SPI0_CE1" x="-6.35" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P40_GPIO21" x="-24.13" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P39_GND" x="-24.13" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P38_GPIO20" x="-21.59" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P36_GPIO16" x="-19.05" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P34_GND" x="-16.51" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P32_GPIO12" x="-13.97" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P30_GND" x="-11.43" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P28_IDSC" x="-8.89" y="2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P37_GPIO26" x="-21.59" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P35_GPIO19" x="-19.05" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P33_GPIO13" x="-16.51" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P31_GPIO6" x="-13.97" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P29_GPIO5" x="-11.43" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<smd name="P27_IDSD" x="-8.89" y="-2.81" dx="1.57" dy="1.27" layer="1" rot="R90"/>
+<circle x="-29" y="-6.14" radius="1.796" width="0.127" layer="51"/>
+<polygon width="0.2" layer="41">
+<vertex x="-30.97" y="-4.87" curve="-90"/>
+<vertex x="-30.27" y="-4.17" curve="-90"/>
+<vertex x="-29.57" y="-4.87" curve="-90"/>
+<vertex x="-30.27" y="-5.57" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-28.43" y="-4.87" curve="-90"/>
+<vertex x="-27.73" y="-4.17" curve="-90"/>
+<vertex x="-27.03" y="-4.87" curve="-90"/>
+<vertex x="-27.73" y="-5.57" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-28.43" y="-7.41" curve="-90"/>
+<vertex x="-27.73" y="-6.71" curve="-90"/>
+<vertex x="-27.03" y="-7.41" curve="-90"/>
+<vertex x="-27.73" y="-8.11" curve="-90"/>
+</polygon>
+<polygon width="0.2" layer="41">
+<vertex x="-30.97" y="-7.41" curve="-90"/>
+<vertex x="-30.27" y="-6.71" curve="-90"/>
+<vertex x="-29.57" y="-7.41" curve="-90"/>
+<vertex x="-30.27" y="-8.11" curve="-90"/>
+</polygon>
+<hole x="-24.13" y="1.27" drill="1"/>
+<hole x="-24.13" y="-1.27" drill="1"/>
+<hole x="-21.59" y="-1.27" drill="1"/>
+<hole x="-21.59" y="1.27" drill="1"/>
+<hole x="-19.05" y="1.27" drill="1"/>
+<hole x="-19.05" y="-1.27" drill="1"/>
+<hole x="-16.51" y="-1.27" drill="1"/>
+<hole x="-16.51" y="1.27" drill="1"/>
+<hole x="-13.97" y="1.27" drill="1"/>
+<hole x="-13.97" y="-1.27" drill="1"/>
+<hole x="-11.43" y="-1.27" drill="1"/>
+<hole x="-11.43" y="1.27" drill="1"/>
+<hole x="-8.89" y="1.27" drill="1"/>
+<hole x="-8.89" y="-1.27" drill="1"/>
+<hole x="-6.35" y="-1.27" drill="1"/>
+<hole x="-6.35" y="1.27" drill="1"/>
+<hole x="-3.81" y="1.27" drill="1"/>
+<hole x="-3.81" y="-1.27" drill="1"/>
+<hole x="-1.27" y="-1.27" drill="1"/>
+<hole x="-1.27" y="1.27" drill="1"/>
+<hole x="1.27" y="1.27" drill="1"/>
+<hole x="1.27" y="-1.27" drill="1"/>
+<hole x="3.81" y="-1.27" drill="1"/>
+<hole x="3.81" y="1.27" drill="1"/>
+<hole x="6.35" y="1.27" drill="1"/>
+<hole x="6.35" y="-1.27" drill="1"/>
+<hole x="8.89" y="-1.27" drill="1"/>
+<hole x="8.89" y="1.27" drill="1"/>
+<hole x="11.43" y="1.27" drill="1"/>
+<hole x="11.43" y="-1.27" drill="1"/>
+<hole x="13.97" y="-1.27" drill="1"/>
+<hole x="13.97" y="1.27" drill="1"/>
+<hole x="16.51" y="1.27" drill="1"/>
+<hole x="16.51" y="-1.27" drill="1"/>
+<hole x="19.05" y="-1.27" drill="1"/>
+<hole x="19.05" y="1.27" drill="1"/>
+<hole x="21.59" y="1.27" drill="1"/>
+<hole x="21.59" y="-1.27" drill="1"/>
+<hole x="24.13" y="-1.27" drill="1"/>
+<hole x="24.13" y="1.27" drill="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FCI_89898_313LF_26P_CONNECTOR_SMT_FLIPPED">
@@ -25476,6 +25583,44 @@ Joystick commonly found in PS2 controllers. Two pots and a select switch. Adapte
 </technologies>
 </device>
 <device name="PASSTHROUGH" package="FCI_89898_313LF_40P_CONNECTOR_SMT_FLIPPED_PASSTHROUGH">
+<connects>
+<connect gate="G$1" pin="10" pad="P19_GPIO10_SPI0_MOSI"/>
+<connect gate="G$1" pin="11" pad="P23_GPIO11_SPI0_SCLK"/>
+<connect gate="G$1" pin="12" pad="P32_GPIO12"/>
+<connect gate="G$1" pin="13" pad="P33_GPIO13"/>
+<connect gate="G$1" pin="14" pad="P8_GPIO14_UART0_TXD"/>
+<connect gate="G$1" pin="15" pad="P10_GPIO15_UART0_RXD"/>
+<connect gate="G$1" pin="16" pad="P36_GPIO16"/>
+<connect gate="G$1" pin="17" pad="P11_GPIO17"/>
+<connect gate="G$1" pin="18" pad="P12_GPIO18"/>
+<connect gate="G$1" pin="19" pad="P35_GPIO19"/>
+<connect gate="G$1" pin="2" pad="P3_GPIO2_SDA"/>
+<connect gate="G$1" pin="20" pad="P38_GPIO20"/>
+<connect gate="G$1" pin="21" pad="P40_GPIO21"/>
+<connect gate="G$1" pin="22" pad="P15_GPIO22"/>
+<connect gate="G$1" pin="23" pad="P16_GPIO23"/>
+<connect gate="G$1" pin="24" pad="P18_GPIO24"/>
+<connect gate="G$1" pin="25" pad="P22_GPIO25"/>
+<connect gate="G$1" pin="26" pad="P37_GPIO26"/>
+<connect gate="G$1" pin="27" pad="P13_GPIO27"/>
+<connect gate="G$1" pin="3" pad="P5_GPIO3_SCL"/>
+<connect gate="G$1" pin="3V3" pad="P1_3V3 P17_3V3"/>
+<connect gate="G$1" pin="4" pad="P7_GPIO4"/>
+<connect gate="G$1" pin="5" pad="P29_GPIO5"/>
+<connect gate="G$1" pin="5V" pad="P2_5V P4_5V"/>
+<connect gate="G$1" pin="6" pad="P31_GPIO6"/>
+<connect gate="G$1" pin="7" pad="P26_GPIO7_SPI0_CE1"/>
+<connect gate="G$1" pin="8" pad="P24_GPIO8_SPI0_CE0"/>
+<connect gate="G$1" pin="9" pad="P21_GPIO9_SPI0_MISO"/>
+<connect gate="G$1" pin="GND" pad="P6_GND P9_GND P14_GND P20_GND P25_GND P30_GND P34_GND P39_GND"/>
+<connect gate="G$1" pin="ID_SC" pad="P28_IDSC"/>
+<connect gate="G$1" pin="ID_SD" pad="P27_IDSD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PASSTHROUGH_FOR_MINI_HAT" package="FCI_89898_313LF_40P_CONNECTOR_SMT_FLIPPED_PASSTHROUGH_FOR_MINI_HAT">
 <connects>
 <connect gate="G$1" pin="10" pad="P19_GPIO10_SPI0_MOSI"/>
 <connect gate="G$1" pin="11" pad="P23_GPIO11_SPI0_SCLK"/>

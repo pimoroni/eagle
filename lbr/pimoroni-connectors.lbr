@@ -3724,6 +3724,7 @@ Z=6.5mm</text>
 <wire x1="-1.25" y1="-2" x2="-1.85" y2="-0.8" width="0.2" layer="21"/>
 <wire x1="-1.85" y1="-0.8" x2="-0.65" y2="-0.8" width="0.2" layer="21"/>
 <wire x1="-0.65" y1="-0.8" x2="-1.25" y2="-2" width="0.2" layer="21"/>
+</package>
 <package name="TILDAGON-HEXPANSION">
 <wire x1="0.50004375" y1="-3.063190625" x2="0.51144375" y2="-3.005790625" width="0" layer="52"/>
 <wire x1="0.51144375" y1="-3.005790625" x2="0.54394375" y2="-2.957090625" width="0" layer="52"/>
@@ -5707,6 +5708,7 @@ Z=6.5mm</text>
 <pin name="MT1" x="10.16" y="-12.7" visible="pin" length="short" rot="R180"/>
 <pin name="MT2" x="10.16" y="-15.24" visible="pin" length="short" rot="R180"/>
 <text x="5.08" y="13.462" size="2.54" layer="94" align="center-right">SP/CE</text>
+</symbol>
 <symbol name="TILDAGON-HEXPANSION">
 <pin name="GND" x="-20.32" y="12.7" length="middle" direction="pwr"/>
 <pin name="LS1" x="-20.32" y="10.16" length="middle"/>
@@ -7706,6 +7708,10 @@ push-push type</description>
 <connect gate="G$1" pin="8_VDD(5V)" pad="8"/>
 <connect gate="G$1" pin="MT1" pad="MT1"/>
 <connect gate="G$1" pin="MT2" pad="MT2"/>
+</connects>
+</device>
+</devices>
+</deviceset>
 <deviceset name="TILDAGON-HEXPANSION">
 <gates>
 <gate name="G$1" symbol="TILDAGON-HEXPANSION" x="0" y="0"/>

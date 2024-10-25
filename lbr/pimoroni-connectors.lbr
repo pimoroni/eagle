@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2960,7 +2960,7 @@
 <wire x1="-2" y1="-5.25" x2="-2.5" y2="-4.75" width="0" layer="20" curve="-90"/>
 <wire x1="-2.5" y1="-4.75" x2="-2" y2="-4.25" width="0" layer="20" curve="-90"/>
 <smd name="M4" x="0.873" y="-4.75" dx="8" dy="2" layer="1" roundness="100" thermals="no"/>
-<hole x="-4.25" y="0" drill="1.5" locked="yes"/>
+<hole x="-4.25" y="0" drill="1.6" locked="yes"/>
 <smd name="M3" x="0.873" y="-4.75" dx="8" dy="2" layer="16" roundness="100" rot="R180" thermals="no" cream="no"/>
 <smd name="M2" x="0.873" y="4.75" dx="8" dy="2" layer="1" roundness="100" thermals="no"/>
 <smd name="M1" x="0.873" y="4.75" dx="8" dy="2" layer="16" roundness="100" rot="R180" thermals="no" cream="no"/>
@@ -7709,6 +7709,9 @@ push-push type</description>
 <connect gate="G$1" pin="MT1" pad="MT1"/>
 <connect gate="G$1" pin="MT2" pad="MT2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
 </device>
 </devices>
 </deviceset>

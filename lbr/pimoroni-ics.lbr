@@ -5218,6 +5218,37 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <smd name="67" x="-2.8" y="4" dx="0.6" dy="0.2" layer="1" rot="R270"/>
 <smd name="68" x="-3.2" y="4" dx="0.6" dy="0.2" layer="1" rot="R270"/>
 </package>
+<package name="QFN-24-2X4">
+<wire x1="-1" y1="2" x2="1" y2="2" width="0.01" layer="51"/>
+<wire x1="1" y1="2" x2="1" y2="-2" width="0.01" layer="51"/>
+<wire x1="1" y1="-2" x2="-1" y2="-2" width="0.01" layer="51"/>
+<wire x1="-1" y1="-2" x2="-1" y2="2" width="0.01" layer="51"/>
+<smd name="P5" x="-1" y="0.2" dx="0.5" dy="0.2" layer="1"/>
+<smd name="P6" x="-1" y="-0.2" dx="0.5" dy="0.2" layer="1"/>
+<smd name="P4" x="-1" y="0.6" dx="0.5" dy="0.2" layer="1"/>
+<smd name="P3" x="-1" y="1" dx="0.5" dy="0.2" layer="1"/>
+<smd name="P2" x="-1" y="1.4" dx="0.5" dy="0.2" layer="1"/>
+<smd name="P1" x="-1" y="1.8" dx="0.5" dy="0.2" layer="1"/>
+<smd name="P7" x="-1" y="-0.6" dx="0.5" dy="0.2" layer="1"/>
+<smd name="P8" x="-1" y="-1" dx="0.5" dy="0.2" layer="1"/>
+<smd name="P9" x="-1" y="-1.4" dx="0.5" dy="0.2" layer="1"/>
+<smd name="P10" x="-1" y="-1.8" dx="0.5" dy="0.2" layer="1"/>
+<smd name="P22" x="1" y="1.8" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="P21" x="1" y="1.4" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="P20" x="1" y="1" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="P19" x="1" y="0.6" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="P18" x="1" y="0.2" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="P17" x="1" y="-0.2" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="P16" x="1" y="-0.6" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="P15" x="1" y="-1" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="P14" x="1" y="-1.4" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="P13" x="1" y="-1.8" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="P24" x="-0.2" y="2" dx="0.5" dy="0.2" layer="1" rot="R270"/>
+<smd name="P23" x="0.2" y="2" dx="0.5" dy="0.2" layer="1" rot="R270"/>
+<smd name="P11" x="-0.2" y="-2" dx="0.5" dy="0.2" layer="1" rot="R270"/>
+<smd name="P12" x="0.2" y="-2" dx="0.5" dy="0.2" layer="1" rot="R270"/>
+<smd name="PAD" x="0" y="0" dx="0.9" dy="2.7" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATSAMD20E" library_version="3">
@@ -11344,6 +11375,37 @@ Vcs: 120mV</text>
 <pin name="DS4_TXM" x="-27.94" y="-20.32" length="middle"/>
 <pin name="DS4_DP" x="-27.94" y="-22.86" length="middle"/>
 <pin name="DS4_DM" x="-27.94" y="-25.4" length="middle"/>
+</symbol>
+<symbol name="PI5USB20213A">
+<pin name="AN" x="-20.32" y="12.7" length="middle"/>
+<pin name="BP" x="-20.32" y="7.62" length="middle"/>
+<pin name="VCONN" x="-20.32" y="20.32" length="middle"/>
+<pin name="VDD" x="-20.32" y="22.86" length="middle"/>
+<pin name="ADDR" x="-20.32" y="0" length="middle"/>
+<pin name="PORT" x="-20.32" y="-2.54" length="middle"/>
+<pin name="INTB" x="-20.32" y="-15.24" length="middle"/>
+<pin name="SDA" x="-20.32" y="-7.62" length="middle"/>
+<pin name="SCL" x="-20.32" y="-10.16" length="middle"/>
+<pin name="VBUSDET" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="A2P" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="B2P" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="B2N" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="A1N" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="B1P" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="B1N" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="CC2\" x="20.32" y="-17.78" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="25.4" x2="15.24" y2="25.4" width="0.254" layer="97"/>
+<wire x1="15.24" y1="25.4" x2="15.24" y2="-25.4" width="0.254" layer="97"/>
+<wire x1="15.24" y1="-25.4" x2="-15.24" y2="-25.4" width="0.254" layer="97"/>
+<wire x1="-15.24" y1="-25.4" x2="-15.24" y2="25.4" width="0.254" layer="97"/>
+<pin name="BN" x="-20.32" y="5.08" length="middle"/>
+<pin name="AP" x="-20.32" y="15.24" length="middle"/>
+<pin name="ID" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="A2N" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="A1P" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="CC1" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="ENB" x="-20.32" y="-17.78" length="middle"/>
+<pin name="GND" x="-20.32" y="-22.86" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -18722,6 +18784,45 @@ Source:</description>
 <connect gate="G$1" pin="VDD_IO" pad="28"/>
 <connect gate="G$1" pin="XTL_IN" pad="55"/>
 <connect gate="G$1" pin="XTL_OUT" pad="54"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PI5USB20213A">
+<gates>
+<gate name="G$1" symbol="PI5USB20213A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-24-2X4">
+<connects>
+<connect gate="G$1" pin="A1N" pad="P17"/>
+<connect gate="G$1" pin="A1P" pad="P16"/>
+<connect gate="G$1" pin="A2N" pad="P20"/>
+<connect gate="G$1" pin="A2P" pad="P21"/>
+<connect gate="G$1" pin="ADDR" pad="P22"/>
+<connect gate="G$1" pin="AN" pad="P5"/>
+<connect gate="G$1" pin="AP" pad="P4"/>
+<connect gate="G$1" pin="B1N" pad="P15"/>
+<connect gate="G$1" pin="B1P" pad="P14"/>
+<connect gate="G$1" pin="B2N" pad="P18"/>
+<connect gate="G$1" pin="B2P" pad="P19"/>
+<connect gate="G$1" pin="BN" pad="P7"/>
+<connect gate="G$1" pin="BP" pad="P8"/>
+<connect gate="G$1" pin="CC1" pad="P11"/>
+<connect gate="G$1" pin="CC2\" pad="P12"/>
+<connect gate="G$1" pin="ENB" pad="P13"/>
+<connect gate="G$1" pin="GND" pad="PAD"/>
+<connect gate="G$1" pin="ID" pad="P9"/>
+<connect gate="G$1" pin="INTB" pad="P2"/>
+<connect gate="G$1" pin="PORT" pad="P3"/>
+<connect gate="G$1" pin="SCL" pad="P1"/>
+<connect gate="G$1" pin="SDA" pad="P24"/>
+<connect gate="G$1" pin="VBUSDET" pad="P23"/>
+<connect gate="G$1" pin="VCONN" pad="P10"/>
+<connect gate="G$1" pin="VDD" pad="P6"/>
 </connects>
 <technologies>
 <technology name=""/>

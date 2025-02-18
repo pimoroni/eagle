@@ -18705,7 +18705,6 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
-</devicesets>
 <deviceset name="VL805">
 <gates>
 <gate name="G$1" symbol="VL805" x="0" y="0"/>

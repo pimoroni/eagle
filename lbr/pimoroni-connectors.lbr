@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4796,11 +4796,11 @@ Z=6.5mm</text>
 <smd name="M2" x="-4.8" y="-2.525" dx="1.2" dy="1.8" layer="1"/>
 <text x="6.04" y="-1.905" size="1.016" layer="25" rot="R270" align="bottom-center">&gt;NAME</text>
 <text x="3.5" y="1.27" size="1.016" layer="27" align="bottom-right">&gt;VALUE</text>
-<wire x1="-5" y1="-0.325" x2="-4" y2="-0.325" width="0.1524" layer="21"/>
-<wire x1="4" y1="-0.325" x2="5" y2="-0.325" width="0.1524" layer="21"/>
-<wire x1="5" y1="-0.325" x2="5" y2="-1.45" width="0.1524" layer="21"/>
-<wire x1="4" y1="-3.225" x2="-4" y2="-3.225" width="0.1524" layer="21"/>
-<wire x1="-5" y1="-1.45" x2="-5" y2="-0.325" width="0.1524" layer="21"/>
+<wire x1="-5" y1="-0.325" x2="-4.8" y2="-0.325" width="0.1524" layer="21"/>
+<wire x1="4.8" y1="-0.325" x2="5" y2="-0.325" width="0.1524" layer="21"/>
+<wire x1="5" y1="-0.325" x2="5" y2="-0.525" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="-3.225" x2="-0.1" y2="-3.225" width="0.1524" layer="21"/>
+<wire x1="-5" y1="-0.525" x2="-5" y2="-0.325" width="0.1524" layer="21"/>
 <wire x1="-5" y1="-0.325" x2="5" y2="-0.325" width="0.1524" layer="51"/>
 <wire x1="5" y1="-0.325" x2="5" y2="-3.225" width="0.1524" layer="51"/>
 <wire x1="5" y1="-3.225" x2="-5" y2="-3.225" width="0.1524" layer="51"/>

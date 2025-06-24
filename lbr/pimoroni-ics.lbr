@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11269,10 +11269,10 @@ Vcs: 120mV</text>
 <wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-<text x="-7.62" y="15.24" size="1.778" layer="95">TC7559C/QC</text>
-<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-8.89" y="-14.224" size="1.778" layer="96" font="vector" ratio="14" rot="MR180">&gt;VALUE</text>
 <pin name="11(NC)" x="-15.24" y="-2.54" length="middle"/>
 <pin name="12(NC)" x="-15.24" y="-5.08" length="middle"/>
+<text x="-8.89" y="13.97" size="2.54" layer="95" font="vector" ratio="14">&gt;NAME</text>
 </symbol>
 <symbol name="VL805">
 <pin name="SSTX_P1" x="-27.94" y="40.64" length="middle"/>
@@ -18690,7 +18690,7 @@ Source:</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TC7559C/QC" uservalue="yes">
+<deviceset name="TC7559C/QC" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="TC7559C/QC" x="0" y="0"/>
 </gates>

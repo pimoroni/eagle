@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5057,6 +5057,37 @@ Z=6.5mm</text>
 <smd name="3" x="-1" y="-3.7" dx="1" dy="4.6" layer="1"/>
 <smd name="4" x="-3" y="-3.7" dx="1" dy="4.6" layer="1"/>
 </package>
+<package name="2X10_SMT_SHROUDED">
+<smd name="1" x="-3" y="11.43" dx="4" dy="1" layer="1"/>
+<smd name="2" x="3" y="11.43" dx="4" dy="1" layer="1"/>
+<smd name="3" x="-3" y="8.89" dx="4" dy="1" layer="1"/>
+<smd name="4" x="3" y="8.89" dx="4" dy="1" layer="1"/>
+<smd name="5" x="-3" y="6.35" dx="4" dy="1" layer="1"/>
+<smd name="6" x="3" y="6.35" dx="4" dy="1" layer="1"/>
+<smd name="7" x="-3" y="3.81" dx="4" dy="1" layer="1"/>
+<smd name="8" x="3" y="3.81" dx="4" dy="1" layer="1"/>
+<wire x1="-4.5" y1="16.62" x2="4.5" y2="16.62" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-16.62" x2="4.5" y2="-16.62" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="16.62" x2="-4.5" y2="-16.62" width="0.127" layer="51"/>
+<wire x1="4.5" y1="-16.62" x2="4.5" y2="16.62" width="0.127" layer="51"/>
+<wire x1="-4" y1="2.5" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="-1.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2.5" x2="-4" y2="-2.5" width="0.127" layer="21"/>
+<text x="0" y="13.97" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-13.97" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<smd name="9" x="-3" y="1.27" dx="4" dy="1" layer="1"/>
+<smd name="10" x="3" y="1.27" dx="4" dy="1" layer="1"/>
+<smd name="11" x="-3" y="-1.27" dx="4" dy="1" layer="1"/>
+<smd name="12" x="3" y="-1.27" dx="4" dy="1" layer="1"/>
+<smd name="13" x="-3" y="-3.81" dx="4" dy="1" layer="1"/>
+<smd name="14" x="3" y="-3.81" dx="4" dy="1" layer="1"/>
+<smd name="15" x="-3" y="-6.35" dx="4" dy="1" layer="1"/>
+<smd name="16" x="3" y="-6.35" dx="4" dy="1" layer="1"/>
+<smd name="17" x="-3" y="-8.89" dx="4" dy="1" layer="1"/>
+<smd name="18" x="3" y="-8.89" dx="4" dy="1" layer="1"/>
+<smd name="19" x="-3" y="-11.43" dx="4" dy="1" layer="1"/>
+<smd name="20" x="3" y="-11.43" dx="4" dy="1" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -6191,6 +6222,40 @@ Z=6.5mm</text>
 <wire x1="8.89" y1="0" x2="11.43" y2="0" width="0.254" layer="97"/>
 <wire x1="11.43" y1="0" x2="10.16" y2="-2.54" width="0.254" layer="97"/>
 <wire x1="8.89" y1="-2.54" x2="11.43" y2="-2.54" width="0.254" layer="97"/>
+</symbol>
+<symbol name="2X10">
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="3.81" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<pin name="1" x="-10.16" y="12.7" visible="pin" length="middle"/>
+<pin name="3" x="-10.16" y="10.16" visible="pin" length="middle"/>
+<pin name="5" x="-10.16" y="7.62" visible="pin" length="middle"/>
+<pin name="7" x="-10.16" y="5.08" visible="pin" length="middle"/>
+<pin name="2" x="10.16" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="4" x="10.16" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="6" x="10.16" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="8" x="10.16" y="5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-3.81" y="16.51" size="1.27" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="9" x="-10.16" y="2.54" visible="pin" length="middle"/>
+<pin name="10" x="10.16" y="2.54" visible="pin" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<pin name="11" x="-10.16" y="0" visible="pin" length="middle"/>
+<pin name="12" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="13" x="-10.16" y="-2.54" visible="pin" length="middle"/>
+<pin name="14" x="10.16" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<pin name="15" x="-10.16" y="-5.08" visible="pin" length="middle"/>
+<pin name="16" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="17" x="-10.16" y="-7.62" visible="pin" length="middle"/>
+<pin name="18" x="10.16" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="19" x="-10.16" y="-10.16" visible="pin" length="middle"/>
+<pin name="20" x="10.16" y="-10.16" visible="pin" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8369,6 +8434,40 @@ push-push type</description>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="MT" pad="NC1 NC2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2X10">
+<gates>
+<gate name="G$1" symbol="2X10" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X10_SMT_SHROUDED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>

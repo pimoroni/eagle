@@ -7326,6 +7326,54 @@ pin 24 = d0</text>
 <wire x1="4.25" y1="1.45" x2="4.25" y2="-1.45" width="0.05" layer="51"/>
 <wire x1="-4.25" y1="-1.45" x2="4.25" y2="-1.45" width="0.05" layer="51"/>
 </package>
+<package name="FPC-0.5MM-24WAY_H1.0">
+<smd name="1" x="5.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="2" x="5.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="3" x="4.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="4" x="4.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="5" x="3.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="6" x="3.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="7" x="2.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="8" x="2.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="9" x="1.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="10" x="1.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="11" x="0.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="12" x="0.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="13" x="-0.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="14" x="-0.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="15" x="-1.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="16" x="-1.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="17" x="-2.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="18" x="-2.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="19" x="-3.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="20" x="-3.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="21" x="-4.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="22" x="-4.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="MT1" x="-6.635" y="-2.485" dx="0.4" dy="1.15" layer="1"/>
+<smd name="MT2" x="6.635" y="-2.485" dx="0.4" dy="1.15" layer="1"/>
+<wire x1="-6.385" y1="-0.11" x2="6.385" y2="-0.11" width="0.127" layer="51"/>
+<wire x1="6.385" y1="-0.11" x2="6.385" y2="-3.01" width="0.127" layer="51"/>
+<wire x1="6.385" y1="-3.01" x2="6.385" y2="-3.46" width="0.127" layer="51"/>
+<wire x1="6.385" y1="-3.46" x2="-6.385" y2="-3.46" width="0.127" layer="51"/>
+<wire x1="-6.385" y1="-3.46" x2="-6.385" y2="-3.01" width="0.127" layer="51"/>
+<wire x1="-6.385" y1="-3.01" x2="-6.385" y2="-0.11" width="0.127" layer="51"/>
+<wire x1="6.385" y1="-3.01" x2="-6.385" y2="-3.01" width="0.07" layer="51"/>
+<wire x1="5.8" y1="-0.66" x2="-5.8" y2="-0.66" width="0.07" layer="51" style="shortdash"/>
+<wire x1="-5.8" y1="-0.7" x2="-5.8" y2="-3.4" width="0.07" layer="51" style="shortdash"/>
+<wire x1="5.8" y1="-0.7" x2="5.8" y2="-3.4" width="0.07" layer="51" style="shortdash"/>
+<text x="0" y="-1.77" size="1" layer="21" font="vector" ratio="14" align="center">1.0MM THIN 
+FPC CONN</text>
+<wire x1="-6.885" y1="-0.31" x2="-6.885" y2="-0.11" width="0.127" layer="21"/>
+<wire x1="-6.885" y1="-3.46" x2="-6.885" y2="-3.26" width="0.127" layer="21"/>
+<wire x1="6.885" y1="-3.46" x2="6.685" y2="-3.46" width="0.127" layer="21"/>
+<wire x1="-6.885" y1="-0.11" x2="-6.685" y2="-0.11" width="0.127" layer="21"/>
+<wire x1="6.885" y1="-3.46" x2="6.885" y2="-3.26" width="0.127" layer="21"/>
+<wire x1="6.885" y1="-0.31" x2="6.885" y2="-0.11" width="0.127" layer="21"/>
+<wire x1="6.885" y1="-0.11" x2="6.685" y2="-0.11" width="0.127" layer="21"/>
+<wire x1="-6.885" y1="-3.46" x2="-6.685" y2="-3.46" width="0.127" layer="21"/>
+<smd name="23" x="-5.25" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+<smd name="24" x="-5.75" y="0.325" dx="0.25" dy="0.65" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="04WAY">
@@ -10819,6 +10867,38 @@ Avdd: 2.8V (2.5-3.0V) 40mA</text>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
 <connect gate="G$1" pin="MT" pad="MT1 MT2" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="FPC-0.5MM-24WAY_H1.0">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="23" pad="23"/>
+<connect gate="G$1" pin="24" pad="24"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="MT" pad="MT1 MT2"/>
 </connects>
 <technologies>
 <technology name=""/>

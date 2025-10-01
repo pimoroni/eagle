@@ -5071,6 +5071,26 @@ from this side</text>
 <circle x="5" y="0" radius="0.6" width="0" layer="31"/>
 <circle x="3" y="0" radius="0.6" width="0" layer="31"/>
 </package>
+<package name="1X8_2MM">
+<pad name="1" x="-7" y="0" drill="0.8"/>
+<wire x1="-8" y1="1" x2="8" y2="1" width="0.15" layer="21"/>
+<wire x1="8" y1="1" x2="8" y2="-1" width="0.15" layer="21"/>
+<wire x1="8" y1="-1" x2="-8" y2="-1" width="0.15" layer="21"/>
+<wire x1="-8" y1="-1" x2="-8" y2="1" width="0.15" layer="21"/>
+<pad name="2" x="-5" y="0" drill="0.8"/>
+<pad name="3" x="-3" y="0" drill="0.8"/>
+<pad name="4" x="-1" y="0" drill="0.8"/>
+<pad name="5" x="1" y="0" drill="0.8"/>
+<pad name="6" x="3" y="0" drill="0.8"/>
+<circle x="-7" y="0" radius="0.6" width="0" layer="31"/>
+<circle x="-5" y="0" radius="0.6" width="0" layer="31"/>
+<circle x="-3" y="0" radius="0.6" width="0" layer="31"/>
+<circle x="-1" y="0" radius="0.6" width="0" layer="31"/>
+<circle x="3" y="0" radius="0.6" width="0" layer="31"/>
+<circle x="1" y="0" radius="0.6" width="0" layer="31"/>
+<pad name="7" x="5" y="0" drill="0.8"/>
+<pad name="8" x="7" y="0" drill="0.8"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1X2">
@@ -6537,6 +6557,21 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </technologies>
 </device>
 <device name="" package="1X8">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+<connect gate="G$1" pin="P$6" pad="6"/>
+<connect gate="G$1" pin="P$7" pad="7"/>
+<connect gate="G$1" pin="P$8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2MM" package="1X8_2MM">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>

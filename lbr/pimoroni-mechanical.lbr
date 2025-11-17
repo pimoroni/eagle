@@ -7,10 +7,10 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
@@ -23,13 +23,13 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -3088,6 +3088,32 @@ undermounted!</text>
 <wire x1="-0.3" y1="0" x2="0.3" y2="0" width="0.2" layer="21"/>
 <wire x1="0" y1="-0.3" x2="0" y2="0.3" width="0.2" layer="21"/>
 </package>
+<package name="KEY-SWITCH-M">
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<wire x1="-7" y1="-7.2" x2="-6.5" y2="-7.7" width="0.1" layer="51" curve="90"/>
+<wire x1="6.5" y1="-7.7" x2="7" y2="-7.2" width="0.1" layer="51" curve="90"/>
+<wire x1="7" y1="7.2" x2="6.5" y2="7.7" width="0.1" layer="51" curve="90"/>
+<wire x1="-6.5" y1="7.7" x2="-7" y2="7.2" width="0.1" layer="51" curve="90"/>
+<wire x1="9.2" y1="-8.7" x2="8.7" y2="-9.2" width="0.1" layer="51" curve="-90"/>
+<wire x1="-8.7" y1="-9.2" x2="-9.2" y2="-8.7" width="0.1" layer="51" curve="-90"/>
+<wire x1="-9.2" y1="8.7" x2="-8.7" y2="9.2" width="0.1" layer="51" curve="-90"/>
+<wire x1="8.7" y1="9.2" x2="9.2" y2="8.7" width="0.1" layer="51" curve="-90"/>
+<circle x="0" y="0" radius="4" width="0" layer="41"/>
+<circle x="0" y="0" radius="4" width="0" layer="42"/>
+<polygon width="0.127" layer="2" pour="cutout">
+<vertex x="0" y="-4" curve="-90"/>
+<vertex x="-4" y="0" curve="-90"/>
+<vertex x="0" y="4" curve="-90"/>
+<vertex x="4" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="15" pour="cutout">
+<vertex x="0" y="-4" curve="-90"/>
+<vertex x="-4" y="0" curve="-90"/>
+<vertex x="0" y="4" curve="-90"/>
+<vertex x="4" y="0" curve="-90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-DPDT">
@@ -4025,6 +4051,11 @@ MOTOR</text>
 </gates>
 <devices>
 <device name="" package="KEY-SWITCH-MX-NO-VIA">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M" package="KEY-SWITCH-M">
 <technologies>
 <technology name=""/>
 </technologies>

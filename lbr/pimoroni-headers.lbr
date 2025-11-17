@@ -5091,6 +5091,13 @@ from this side</text>
 <pad name="7" x="5" y="0" drill="0.8"/>
 <pad name="8" x="7" y="0" drill="0.8"/>
 </package>
+<package name="CROC_CLIP_PAD_SMALL">
+<smd name="PT" x="0" y="2.375" dx="4.826" dy="4.75" layer="1" cream="no"/>
+<wire x1="-4" y1="5" x2="4" y2="5" width="0.127" layer="51"/>
+<smd name="PB" x="0" y="2.375" dx="4.826" dy="4.75" layer="16" cream="no"/>
+<rectangle x1="-2.513" y1="4.7" x2="2.513" y2="5" layer="30"/>
+<rectangle x1="-2.513" y1="4.7" x2="2.513" y2="5" layer="29"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1X2">
@@ -7546,6 +7553,14 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <device name="CASTELLATED-ROUNDED" package="1X1-0.1&quot;-CASTELLATED-ROUNDED">
 <connects>
 <connect gate="G$1" pin="1" pad="B PTH T" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CROC_CLIP_SMALL" package="CROC_CLIP_PAD_SMALL">
+<connects>
+<connect gate="G$1" pin="1" pad="PB PT"/>
 </connects>
 <technologies>
 <technology name=""/>

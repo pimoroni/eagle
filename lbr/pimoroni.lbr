@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -18710,7 +18710,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <smd name="TIP" x="9.3" y="3.65" dx="1.5" dy="2.5" layer="1"/>
 <smd name="TSW" x="11.45" y="3.2" dx="3.4" dy="1.5" layer="1" rot="R90"/>
 <smd name="RING2" x="2.8" y="3.2" dx="1.5" dy="3.4" layer="1" rot="R180"/>
-<hole x="10.5" y="0" drill="1.5"/>
+<hole x="10.5" y="0" drill="2"/>
 <smd name="RING1" x="5.5" y="-3.65" dx="1.5" dy="2.5" layer="1"/>
 <wire x1="0" y1="1.65" x2="1.2" y2="1.65" width="0.2" layer="51"/>
 <wire x1="1.2" y1="1.65" x2="1.2" y2="-1.65" width="0.2" layer="51"/>

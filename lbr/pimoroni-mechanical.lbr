@@ -23,7 +23,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
@@ -3100,14 +3100,14 @@ undermounted!</text>
 <wire x1="-9.2" y1="8.7" x2="-8.7" y2="9.2" width="0.1" layer="51" curve="-90"/>
 <wire x1="8.7" y1="9.2" x2="9.2" y2="8.7" width="0.1" layer="51" curve="-90"/>
 <circle x="0" y="0" radius="4" width="0" layer="41"/>
-<circle x="0" y="0" radius="4" width="0" layer="42"/>
-<polygon width="0.127" layer="2" pour="cutout">
-<vertex x="0" y="-4" curve="-90"/>
-<vertex x="-4" y="0" curve="-90"/>
-<vertex x="0" y="4" curve="-90"/>
-<vertex x="4" y="0" curve="-90"/>
+<rectangle x1="-1.2" y1="-0.4" x2="1.2" y2="0.4" layer="42"/>
+<polygon width="0.127" layer="15">
+<vertex x="0" y="-2" curve="-90"/>
+<vertex x="-2" y="0" curve="-90"/>
+<vertex x="0" y="2" curve="-90"/>
+<vertex x="2" y="0" curve="-90"/>
 </polygon>
-<polygon width="0.127" layer="15" pour="cutout">
+<polygon width="0.127" layer="2">
 <vertex x="0" y="-4" curve="-90"/>
 <vertex x="-4" y="0" curve="-90"/>
 <vertex x="0" y="4" curve="-90"/>

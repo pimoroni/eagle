@@ -7,10 +7,10 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
@@ -29,7 +29,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -50,7 +50,7 @@
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -3099,8 +3099,7 @@ undermounted!</text>
 <wire x1="-8.7" y1="-9.2" x2="-9.2" y2="-8.7" width="0.1" layer="51" curve="-90"/>
 <wire x1="-9.2" y1="8.7" x2="-8.7" y2="9.2" width="0.1" layer="51" curve="-90"/>
 <wire x1="8.7" y1="9.2" x2="9.2" y2="8.7" width="0.1" layer="51" curve="-90"/>
-<circle x="0" y="0" radius="4" width="0" layer="41"/>
-<rectangle x1="-1.2" y1="-0.4" x2="1.2" y2="0.4" layer="42"/>
+<circle x="0" y="0" radius="3" width="0" layer="41"/>
 <polygon width="0.127" layer="15">
 <vertex x="0" y="-2" curve="-90"/>
 <vertex x="-2" y="0" curve="-90"/>
@@ -3108,11 +3107,17 @@ undermounted!</text>
 <vertex x="2" y="0" curve="-90"/>
 </polygon>
 <polygon width="0.127" layer="2">
-<vertex x="0" y="-4" curve="-90"/>
-<vertex x="-4" y="0" curve="-90"/>
-<vertex x="0" y="4" curve="-90"/>
-<vertex x="4" y="0" curve="-90"/>
+<vertex x="0" y="-2" curve="-90"/>
+<vertex x="-2" y="0" curve="-90"/>
+<vertex x="0" y="2" curve="-90"/>
+<vertex x="2" y="0" curve="-90"/>
 </polygon>
+<rectangle x1="-2" y1="-1.3" x2="-0.6" y2="-0.4" layer="42"/>
+<rectangle x1="0.6" y1="-1.3" x2="2" y2="-0.4" layer="42"/>
+<rectangle x1="-0.4" y1="0.4" x2="0.4" y2="1.3" layer="42"/>
+<rectangle x1="1.6" y1="0.4" x2="2" y2="1.3" layer="42"/>
+<rectangle x1="-2" y1="0.8" x2="-1.6" y2="1.3" layer="42"/>
+<rectangle x1="-2" y1="-0.3" x2="2" y2="0.3" layer="42"/>
 </package>
 </packages>
 <symbols>

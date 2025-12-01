@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -948,25 +948,25 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <wire x1="1.5" y1="-1.3" x2="1.5" y2="-1.5" width="0.2" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="1.3" y2="-1.5" width="0.2" layer="21"/>
 <circle x="-1.6" y="1.6" radius="0.25" width="0" layer="21"/>
-<smd name="1" x="-1.5052" y="0.75" dx="0.8" dy="0.25" layer="1" roundness="25"/>
-<smd name="2" x="-1.5052" y="0.252" dx="0.8" dy="0.25" layer="1" roundness="25"/>
-<smd name="3" x="-1.5052" y="-0.246" dx="0.8" dy="0.25" layer="1" roundness="25"/>
-<smd name="4" x="-1.5052" y="-0.754" dx="0.8" dy="0.25" layer="1" roundness="25"/>
-<smd name="5" x="-0.748" y="-1.5052" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R90"/>
+<smd name="1" x="-1.5" y="0.75" dx="0.8" dy="0.25" layer="1" roundness="25"/>
+<smd name="2" x="-1.5" y="0.25" dx="0.8" dy="0.25" layer="1" roundness="25"/>
+<smd name="3" x="-1.5" y="-0.25" dx="0.8" dy="0.25" layer="1" roundness="25"/>
+<smd name="4" x="-1.5" y="-0.75" dx="0.8" dy="0.25" layer="1" roundness="25"/>
+<smd name="5" x="-0.75" y="-1.5" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R90"/>
 <smd name="PAD" x="0" y="0" dx="1.7" dy="1.7" layer="1" thermals="no" cream="no"/>
 <text x="-0.006" y="2.18" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
 <rectangle x1="0.15" y1="0.15" x2="0.8" y2="0.8" layer="31"/>
-<smd name="6" x="-0.25" y="-1.5052" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R90"/>
-<smd name="7" x="0.248" y="-1.5052" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R90"/>
-<smd name="8" x="0.746" y="-1.5052" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R90"/>
-<smd name="9" x="1.5052" y="-0.746" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R180"/>
-<smd name="10" x="1.5052" y="-0.248" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R180"/>
-<smd name="11" x="1.5052" y="0.26" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R180"/>
-<smd name="12" x="1.5052" y="0.758" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R180"/>
-<smd name="13" x="0.744" y="1.5052" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R270"/>
-<smd name="14" x="0.236" y="1.5052" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R270"/>
-<smd name="15" x="-0.262" y="1.5052" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R270"/>
-<smd name="16" x="-0.75" y="1.5052" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R270"/>
+<smd name="6" x="-0.25" y="-1.5" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R90"/>
+<smd name="7" x="0.25" y="-1.5" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R90"/>
+<smd name="8" x="0.75" y="-1.5" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R90"/>
+<smd name="9" x="1.5" y="-0.75" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R180"/>
+<smd name="10" x="1.5" y="-0.25" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R180"/>
+<smd name="11" x="1.5" y="0.25" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R180"/>
+<smd name="12" x="1.5" y="0.75" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R180"/>
+<smd name="13" x="0.75" y="1.5" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R270"/>
+<smd name="14" x="0.25" y="1.5" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R270"/>
+<smd name="15" x="-0.25" y="1.5" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R270"/>
+<smd name="16" x="-0.75" y="1.5" dx="0.8" dy="0.25" layer="1" roundness="25" rot="R270"/>
 <rectangle x1="-0.8" y1="0.15" x2="-0.15" y2="0.8" layer="31"/>
 <rectangle x1="0.15" y1="-0.8" x2="0.8" y2="-0.15" layer="31"/>
 <rectangle x1="-0.8" y1="-0.8" x2="-0.15" y2="-0.15" layer="31"/>
@@ -11516,6 +11516,27 @@ or 4.5 - 5.5V</text>
 <pin name="OUT" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <text x="-8.89" y="14.732" size="2.54" layer="95" font="vector" ratio="14">&gt;NAME</text>
 </symbol>
+<symbol name="BQ25302">
+<pin name="REGN" x="20.32" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="ICHG" x="-20.32" y="0" length="middle"/>
+<pin name="STAT" x="-20.32" y="-10.16" length="middle" direction="oc"/>
+<pin name="VSET" x="-20.32" y="-2.54" length="middle" direction="in"/>
+<pin name="BAT" x="20.32" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="TS" x="20.32" y="-20.32" length="middle" direction="in" rot="R180"/>
+<pin name="GND" x="-20.32" y="-20.32" length="middle" direction="pwr"/>
+<pin name="SW" x="20.32" y="17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="BTST" x="20.32" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="PMID" x="-20.32" y="7.62" length="middle" direction="out"/>
+<pin name="VBUS" x="-20.32" y="17.78" length="middle" direction="pwr"/>
+<wire x1="-15.24" y1="-22.86" x2="15.24" y2="-22.86" width="0.2032" layer="94"/>
+<wire x1="15.24" y1="-22.86" x2="15.24" y2="22.86" width="0.2032" layer="94"/>
+<wire x1="15.24" y1="22.86" x2="-15.24" y2="22.86" width="0.2032" layer="94"/>
+<wire x1="-15.24" y1="22.86" x2="-15.24" y2="-22.86" width="0.2032" layer="94"/>
+<text x="-13.97" y="24.13" size="2.54" layer="95" font="vector" ratio="14">&gt;NAME</text>
+<text x="-14.224" y="-25.4" size="1.778" layer="96" font="vector" ratio="14">&gt;VALUE</text>
+<pin name="POL" x="-20.32" y="-15.24" length="middle" direction="in"/>
+<pin name="EN" x="-20.32" y="12.7" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATSAMD20E" prefix="MCU" library_version="19" library_locally_modified="yes">
@@ -19067,6 +19088,33 @@ Source:</description>
 <connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BQ25302" prefix="U">
+<gates>
+<gate name="A" symbol="BQ25302" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-16">
+<connects>
+<connect gate="A" pin="BAT" pad="10"/>
+<connect gate="A" pin="BTST" pad="15"/>
+<connect gate="A" pin="EN" pad="6"/>
+<connect gate="A" pin="GND" pad="11 12 PAD"/>
+<connect gate="A" pin="ICHG" pad="4"/>
+<connect gate="A" pin="PMID" pad="16"/>
+<connect gate="A" pin="POL" pad="5"/>
+<connect gate="A" pin="REGN" pad="2"/>
+<connect gate="A" pin="STAT" pad="3"/>
+<connect gate="A" pin="SW" pad="13 14"/>
+<connect gate="A" pin="TS" pad="7"/>
+<connect gate="A" pin="VBUS" pad="1"/>
+<connect gate="A" pin="VSET" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>

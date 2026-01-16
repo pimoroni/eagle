@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -5230,6 +5230,36 @@ Z=6.5mm</text>
 <rectangle x1="0" y1="-2.14" x2="5" y2="-0.59" layer="41"/>
 <rectangle x1="0" y1="-4.68" x2="5" y2="-3.13" layer="41"/>
 </package>
+<package name="RJ45">
+<hole x="6.25" y="-11.8" drill="3.2"/>
+<hole x="-6.25" y="-11.8" drill="3.2"/>
+<smd name="1" x="-3.57" y="-2.175" dx="4.35" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="-2.55" y="-2.175" dx="4.35" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="-1.53" y="-2.175" dx="4.35" dy="0.7" layer="1" rot="R90"/>
+<smd name="4" x="-0.51" y="-2.175" dx="4.35" dy="0.7" layer="1" rot="R90"/>
+<smd name="5" x="0.51" y="-2.175" dx="4.35" dy="0.7" layer="1" rot="R90"/>
+<smd name="6" x="1.53" y="-2.175" dx="4.35" dy="0.7" layer="1" rot="R90"/>
+<smd name="7" x="2.55" y="-2.175" dx="4.35" dy="0.7" layer="1" rot="R90"/>
+<smd name="8" x="3.57" y="-2.175" dx="4.35" dy="0.7" layer="1" rot="R90"/>
+<smd name="12" x="-6.95" y="-1.275" dx="2.55" dy="0.8" layer="1" rot="R90"/>
+<smd name="9" x="6.95" y="-1.275" dx="2.55" dy="0.8" layer="1" rot="R90"/>
+<smd name="11" x="-5.74" y="-1.275" dx="2.55" dy="0.8" layer="1" rot="R90"/>
+<smd name="10" x="5.74" y="-1.275" dx="2.55" dy="0.8" layer="1" rot="R90"/>
+<smd name="SHIELD1" x="-8.975" y="-11.55" dx="3.5" dy="1.9" layer="1" rot="R90"/>
+<smd name="SHIELD2" x="8.975" y="-11.55" dx="3.5" dy="1.9" layer="1" rot="R90"/>
+<wire x1="-8.3" y1="-1.5" x2="-8.3" y2="-17.1" width="0.127" layer="51"/>
+<wire x1="8.3" y1="-1.5" x2="8.3" y2="-17.1" width="0.127" layer="51"/>
+<wire x1="-8.3" y1="-1.5" x2="8.3" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="8.3" y1="-17.1" x2="-8.3" y2="-17.1" width="0.127" layer="51"/>
+<wire x1="-8.3" y1="-17.1" x2="-8.3" y2="-16.6" width="0.2" layer="21"/>
+<wire x1="-8.3" y1="-17.1" x2="-7.8" y2="-17.1" width="0.2" layer="21"/>
+<wire x1="8.3" y1="-17.1" x2="7.8" y2="-17.1" width="0.2" layer="21"/>
+<wire x1="8.3" y1="-17.1" x2="8.3" y2="-16.6" width="0.2" layer="21"/>
+<wire x1="8.3" y1="-1.5" x2="8.3" y2="-2" width="0.2" layer="21"/>
+<wire x1="8.3" y1="-1.5" x2="7.8" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="-8.3" y1="-1.5" x2="-7.8" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="-8.3" y1="-1.5" x2="-8.3" y2="-2" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -6486,6 +6516,40 @@ Z=6.5mm</text>
 <pin name="VPP" x="-12.7" y="-5.08" length="middle"/>
 <pin name="I/O" x="-12.7" y="-7.62" length="middle"/>
 <pin name="SHIELD" x="-12.7" y="-10.16" visible="pad" length="middle"/>
+</symbol>
+<symbol name="RJ45">
+<text x="0" y="12.7" size="1.778" layer="94" align="bottom-center">RJ45</text>
+<pin name="1" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="2" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="3" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="4" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="5" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="6" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="7" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="8" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="SHIELD" x="-20.32" y="-10.16" length="middle"/>
+<pin name="LED_GREEN_C" x="-20.32" y="-5.08" length="middle"/>
+<pin name="LED_GREEN_A" x="-20.32" y="-2.54" length="middle"/>
+<pin name="LED_YELLOW_C" x="-20.32" y="5.08" length="middle"/>
+<pin name="LED_YELLOW_A" x="-20.32" y="7.62" length="middle"/>
+<wire x1="-15.24" y1="-12.7" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="97"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="5.08" width="0.254" layer="97"/>
+<wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="97"/>
+<wire x1="10.16" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="97"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="-7.62" width="0.254" layer="97"/>
+<wire x1="7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="97"/>
+<wire x1="10.16" y1="0" x2="7.62" y2="0" width="0.254" layer="97"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.254" layer="97"/>
+<wire x1="7.62" y1="-2.54" x2="10.16" y2="-2.54" width="0.254" layer="97"/>
+<wire x1="10.16" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="97"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.254" layer="97"/>
+<wire x1="5.08" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="97"/>
+<text x="-13.97" y="16.51" size="1.778" layer="95">&gt;NAME</text>
+<text x="-13.97" y="-14.224" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8669,7 +8733,7 @@ push-push type</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JST-PH-4PIN-SMT">
+<deviceset name="JST-PH-4PIN-SMT" prefix="J">
 <gates>
 <gate name="G$1" symbol="1X04" x="0" y="0"/>
 </gates>
@@ -8827,6 +8891,33 @@ push-push type</description>
 <connect gate="G$1" pin="SHIELD" pad="MT1 MT2 MT3 MT4"/>
 <connect gate="G$1" pin="VCC" pad="C1"/>
 <connect gate="G$1" pin="VPP" pad="C6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RJ45" prefix="RJ">
+<gates>
+<gate name="G$1" symbol="RJ45" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RJ45">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="LED_GREEN_A" pad="10"/>
+<connect gate="G$1" pin="LED_GREEN_C" pad="9"/>
+<connect gate="G$1" pin="LED_YELLOW_A" pad="12"/>
+<connect gate="G$1" pin="LED_YELLOW_C" pad="11"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2"/>
 </connects>
 <technologies>
 <technology name=""/>

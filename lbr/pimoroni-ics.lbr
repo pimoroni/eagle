@@ -4441,6 +4441,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <vertex x="-0.2" y="-0.6"/>
 </polygon>
 <text x="0" y="0.8" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
+<circle x="-0.7" y="-0.8" radius="0.15" width="0" layer="21"/>
 </package>
 <package name="DHVQFN20_SOT764-1">
 <text x="0" y="2.1" size="1.1" layer="25" font="vector" ratio="14" align="bottom-center">&gt;NAME</text>
@@ -10042,8 +10043,8 @@ Vref: 0.1-0.5V</text>
 <wire x1="-10.16" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="8.636" size="2.54" layer="94">&gt;NAME</text>
-<text x="-7.62" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-7.62" y="8.636" size="2.54" layer="95" font="vector" ratio="14">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96" font="vector" ratio="14">&gt;VALUE</text>
 </symbol>
 <symbol name="BD49K29G">
 <pin name="VIN" x="-15.24" y="5.08" length="middle"/>
